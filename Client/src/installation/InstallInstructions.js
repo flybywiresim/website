@@ -21,7 +21,7 @@ const InstallInstructions = () => (
         <br />
         <div className="row justify-content-center pad-top">
             <div className="col-lg-8 text-center">
-                <h5 className="instruction-step">Step 1. Download either the <a href={stable_release_url}>Stable</a> or <a href={pre_release_url}>Pre-Release</a> build.</h5>
+                <h5 className="instruction-step">Step 1. Download either the <a href={stable_release_url} className="link-text-stable">Stable</a> or <a href={pre_release_url} className="link-text-pre">Pre-Release</a> build.</h5>
             </div>
         </div>
         <div className="row justify-content-center pad-top-large">

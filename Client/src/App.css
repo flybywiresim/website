@@ -55,3 +55,13 @@
   margin-top: -25px;
   width: 80%;
 }
+
+.link-text-stable {
+  text-decoration: underline;
+  text-decoration-color: #09ff00;
+}
+
+.link-text-pre {
+  text-decoration: underline;
+  text-decoration-color: #ff0000;
+}
