@@ -30,7 +30,7 @@ const InstallInstructions = () => (
                 <div className="instruction-step">
                     <h6 className="pad-top">Default install directories:</h6>
                     <div className="row justify-content-center">
-                        <div className="card border-primary mb-3" style={{ "width": "100%" }}>
+                        <div className="card border-primary mb-3" style={{ "width": "80%" }}>
                             <div className="card-body">
                                 <h4 className="card-title">Microsoft Store</h4>
                                 <p className="card-text">C:/Users/&lt;name&gt;/Appdata/Local/Packages/Microsoft.FlightSimulator_&lt;random&gt;/LocalCache/Packages/</p>
@@ -38,7 +38,7 @@ const InstallInstructions = () => (
                         </div>
                     </div>
 	                <div className="row justify-content-center">
-                        <div className="card border-primary mb-3" style={{ "width": "100%" }}>
+                        <div className="card border-primary mb-3" style={{ "width": "80%" }}>
                             <div className="card-body">
                                 <h4 className="card-title">Steam</h4>
                                 <p className="card-text">C:/Program Files(x86)/Steam/steamapps/common/Microsoft Flight Simulator/</p>
