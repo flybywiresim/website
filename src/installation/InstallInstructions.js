@@ -4,7 +4,7 @@ import { stable_release_url, pre_release_url } from '../utils/constants';
 const InstallInstructions = () => (
     <div className="pad-top">
         <div className="row justify-content-center">
-            <h1 className="text-center pad-top">Installation Instructions</h1>
+            <h1 className="text-center pad-top display-4">Installation Instructions</h1>
         </div>
         <div className="row justify-content-center pad-top">
             <div className="col-lg-10 text-center">

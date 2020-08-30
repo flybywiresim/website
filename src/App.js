@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Navbar from './navbar/Navbar';
 import Home from './home/Home';
+import About from './about/About';
 import InstallInstructions from './installation/InstallInstructions';
 import "bootswatch/dist/lux/bootstrap.min.css"; 
 import './App.css';
@@ -23,6 +24,9 @@ function App() {
         </Route>
         <Route exact path="/download/instructions">
           <InstallInstructions />
+        </Route>
+        <Route exact path="/about">
+          <About />
         </Route>
       </Switch>
     </Router>
