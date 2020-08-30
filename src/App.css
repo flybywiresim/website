@@ -37,3 +37,16 @@
   }
 }
 
+.pad-top {
+  padding-top: 15px;
+}
+
+.pad-top-large {
+  padding-top: 30px;
+}
+
+.danger {
+  color: red;
+  font-weight: bold;
+  font-size: 1.5em;
+}

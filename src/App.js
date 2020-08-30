@@ -10,13 +10,6 @@ import InstallInstructions from './installation/InstallInstructions';
 import "bootswatch/dist/lux/bootstrap.min.css"; 
 import './App.css';
 
-const routes = [
-  {
-    path: "/download/instructions",
-    component: InstallInstructions,
-  }
-]
-
 function App() {
   return (
     <Router>
