@@ -9,6 +9,7 @@ import Home from './home/Home';
 import About from './about/About';
 import Downloads from './downloads/Downloads';
 import A32NXInstallInstructions from './installation/A32NXInstallInstructions';
+import DevKitInstallInstructions from './installation/DevKitInstallInstructions';
 import "bootswatch/dist/lux/bootstrap.min.css"; 
 import './App.css';
 
@@ -27,7 +28,10 @@ function App() {
           <Downloads />
         </Route>
         <Route path="/a32nx">
-            <A32NXInstallInstructions />
+          <A32NXInstallInstructions />
+        </Route>
+        <Route path="/msfs-webui-devkit">
+          <DevKitInstallInstructions />
         </Route>
         <Route exact path="/about">
           <About />

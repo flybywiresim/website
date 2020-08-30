@@ -1,4 +1,7 @@
 import React from 'react';
+import {
+    Link
+} from 'react-router-dom';
 
 const Home = () => (
     <div className="container">
@@ -6,10 +9,14 @@ const Home = () => (
             <img src={require('../logo_wide.png')} alt="flybywire-logo" className="main-logo" />
         </div>
         <div className="row justify-content-center pad-top">
-            <h1>Welcome to FlyByWire Simulations</h1>
+            <h1 className="display-3">Simulations</h1>
+        </div>
+        <hr />
+        <div className="row justify-content-center pad-top-large">
+            <h1 className="display-4">Our Latest Project</h1>
         </div>
         <div className="row justify-content-center">
-            <h5>Creators of the A32NX Mod for Microsoft Flight Simulator</h5>
+            <Link to="/a32nx" className="justify-content-center"><img src="logos/A32NX_logo.png" width="100%" alt="fbw-huge" /></Link>
         </div>
     </div>
 );

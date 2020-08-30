@@ -17,7 +17,7 @@ export const releases = [
     },
     {
         name: "MSFS WebUI DevKit",
-        logoUrl: "",
+        logoUrl: "logos/community_logo_wide.png",
         release_types: {
             stable: {
                 url: "https://github.com/dga711/msfs-webui-devkit/zipball/master",
