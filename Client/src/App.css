@@ -50,3 +50,8 @@
   font-weight: bold;
   font-size: 1.5em;
 }
+
+.main-logo {
+  margin-top: -25px;
+  width: 80%;
+}
