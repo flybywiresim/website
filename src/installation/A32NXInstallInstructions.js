@@ -1,10 +1,10 @@
 import React from 'react';
 import { stable_release_url, pre_release_url } from '../utils/constants';
 
-const InstallInstructions = () => (
+const A32NXInstallInstructions = () => (
     <div className="pad-top">
         <div className="row justify-content-center">
-            <h1 className="text-center pad-top display-4">Installation Instructions</h1>
+            <img className="margin-right-5" src="/logos/flybywire-huge.png" width="25%" />
         </div>
         <div className="row justify-content-center pad-top">
             <div className="col-lg-10 text-center">
@@ -57,15 +57,4 @@ const InstallInstructions = () => (
     </div>
 );
 
-export default InstallInstructions;
-
-/*
-
-
-Step 4) Copy and paste the “A32NX” folder from the zip file into your “Community” folder.
-
-
-When in sim, load into the default A320 and enjoy the new features :)
-
-
-*/
+export default A32NXInstallInstructions;

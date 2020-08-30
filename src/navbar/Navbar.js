@@ -2,12 +2,12 @@ import React from 'react';
 import {
     Link
   } from "react-router-dom";
-import { stable_release_url, pre_release_url } from '../utils/constants';
+import { releases } from '../utils/constants';
 
 const Navbar = () => (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <Link className="navbar-brand" to="/">
-            <img src={require("../flybywire-huge.png")} width="135" height="60" className="home-logo" alt="flybywire-logo" />
+            <img src={require("../logo_wide_transparent.png")} width="175" height="50" className="home-logo" alt="flybywire-logo" />
         </Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -22,11 +22,12 @@ const Navbar = () => (
                     <Link className="nav-link" to="/about">About</Link>
                 </li>
                 <li className="nav-item dropdown">
-                    <Link className="nav-link dropdown-toggle" data-toggle="dropdown" to="#" role="button" aria-haspopup="true" aria-expanded="false">Download</Link>
+                    <Link className="nav-link dropdown-toggle" data-toggle="dropdown" to="#" role="button" aria-haspopup="true" aria-expanded="false">Downloads</Link>
                     <div className="dropdown-menu">
-                        <Link className="dropdown-item" to="/download/instructions">Instructions</Link>
-                        <a className="dropdown-item" href={stable_release_url} download>Stable</a>
-                        <a className="dropdown-item" href={pre_release_url} download>Pre-Release</a>
+                        <Link className="dropdown-item" to="/downloads">All Downloads</Link>
+                        { releases.map((release) => (
+                            <Link className="dropdown-item" to={release.instructionLink}>{release.name}</Link>
+                        ))}
                     </div>
                 </li>
             </ul>

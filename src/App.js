@@ -7,7 +7,8 @@ import {
 import Navbar from './navbar/Navbar';
 import Home from './home/Home';
 import About from './about/About';
-import InstallInstructions from './installation/InstallInstructions';
+import Downloads from './downloads/Downloads';
+import A32NXInstallInstructions from './installation/A32NXInstallInstructions';
 import "bootswatch/dist/lux/bootstrap.min.css"; 
 import './App.css';
 
@@ -22,8 +23,11 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/download/instructions">
-          <InstallInstructions />
+        <Route exact path="/downloads">
+          <Downloads />
+        </Route>
+        <Route path="/a32nx">
+            <A32NXInstallInstructions />
         </Route>
         <Route exact path="/about">
           <About />
