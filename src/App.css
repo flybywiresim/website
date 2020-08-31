@@ -69,3 +69,23 @@
 .margin-right-5 {
   margin-right: 5%;
 }
+
+.margin-minus-top {
+  margin-top: -10%;
+}
+
+.card-image {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.nav-link {
+  font-size: 2em;
+  padding: 0 !important;
+  margin-top: 10px;
+}
+
+.home-logo {
+  margin-left: 10px;
+}

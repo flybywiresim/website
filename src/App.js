@@ -8,6 +8,8 @@ import Navbar from './navbar/Navbar';
 import Home from './home/Home';
 import About from './about/About';
 import Downloads from './downloads/Downloads';
+import Changelog from './changelog';
+import Media from './media/Media';
 import A32NXInstallInstructions from './installation/A32NXInstallInstructions';
 import DevKitInstallInstructions from './installation/DevKitInstallInstructions';
 import "bootswatch/dist/lux/bootstrap.min.css"; 
@@ -35,6 +37,12 @@ function App() {
         </Route>
         <Route exact path="/about">
           <About />
+        </Route>
+        <Route exact path="/changelog">
+          <Changelog />
+        </Route>
+        <Route exact path="/media">
+          <Media />
         </Route>
       </Switch>
     </Router>

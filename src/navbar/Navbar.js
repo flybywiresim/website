@@ -21,6 +21,12 @@ const Navbar = () => (
                 <li className="nav-item">
                     <Link className="nav-link" to="/about">About</Link>
                 </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/changelog">Changelog</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/media">Media</Link>
+                </li>
                 <li className="nav-item dropdown">
                     <Link className="nav-link dropdown-toggle" data-toggle="dropdown" to="#" role="button" aria-haspopup="true" aria-expanded="false">Downloads</Link>
                     <div className="dropdown-menu">

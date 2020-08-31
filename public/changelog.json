@@ -1,0 +1,109 @@
+{
+    "title": "A32NX CHANGELOG",
+    "list": [
+      {
+        "version": "0.1.2",
+        "date": "2020-09-01",
+        "fixes": [
+            "**[APU]** APU start logic adjusted",
+            "**[APU]** APU EGT is now adjusted for ambient temperature",
+            "**[APU]** Smoothened APU EGT curve",
+            "**[APU]** APU bleed now momentarily drops when bleed valve is opened",
+            "**[BRAKES]** Fixed accumulator pressure changing when on battery",
+            "**[ECAM]** Bleed ECAM page implemented",
+            "**[ECAM]** Initializes on DOOR page instead of FUEL",
+            "**[ELEC]** Battery display is now always on and displays battery voltage instead of main bus voltage",
+            "**[FCU]** Altitude selection knob no longer requires explicit push/pull interaction to update new altitude target",
+            "**[FCU]** Increased size of managed mode indicators",
+            "**[FCU]** Adjusted alignment of altitude and vertical speed displays",
+            "**[FMA]** Corrected '1FD2' to '1 FD 2' on FMA",
+            "**[FMA]** Fixed 'SPEED' appearing whilst on the ground and A/THR requiring AP",
+            "**[FMA]** Fixed various issues with thrust modes appearing incorrectly",
+            "**[FMA]** Fixed thrust modes appearing when in GS or VS modes",
+            "**[FMA]** Fixed 'SRS' appearing as armed, fixed 'SRS' disengagement conditions",
+            "**[FMA]** 'SPEED' no longer appears with autopilot/auto-throttle disengaged",
+            "**[FMA]** 'NAV', 'CLB', and 'DES' no longer appear with flight directors disabled",
+            "**[FMA]** Fixed 'SPEED' and 'MACH' flickering at cruise",
+            "**[FMA]** Improved 'OP DES' and 'OP CLB' trigger logic",
+            "**[FMA]** Fixed 'CLB' and 'DES' appearing at incorrect times as well as on ground",
+            "**[FMA]** Fixed 'NAV' not appearing with AP disengaged",
+            "**[FMA]** Fixed 'ALT' in blue not appearing when changing altitudes",
+            "**[FMA]** Fixed 'ROLLOUT' appearing after leaving the runway",
+            "**[FMA]** Fixed 'GS' appearing with no FD's active",
+            "**[FMA]** Fixed 'A/THR' appearing enabled on the ground",
+            "**[FMA]** Fixed 'MACH' appearing on the ground",
+            "**[FMA]** Fixed 'SPEED' and 'MACH' not appearing in some situations",
+            "**[FMA]** Fixed 'THR LVR' and 'THR IDLE' not appearing in some situations",
+            "**[FMA]** Decreased sensitivity for 'THR CLB' appearing on the FMA.",
+            "**[FMA]** Fixed 'THR IDLE' not appearing when descending",
+            "**[FMA]** Fixed 'THR LVR' appearing when in cruise phase",
+            "**[FMA]** Fixed 'SPEED' not appearing with AP off but A/THR on",
+            "**[FMA]** Fixed AP and FD FMA modes appearing green instead of white.",
+            "**[FMA]** Fixed 'FINAL APP', 'LAND', 'FLARE', 'ROLLOUT' appearing with FD off",
+            "**[FMA]** Fixed a situation where 'SPEED' wouldn't appear",
+            "**[FMA]** Fixed 'HDG' appearing when on the ground",
+            "**[FMA]** Fixed 'SINGLE' and 'DUAL' not appearing on ILS approaches",
+            "**[FMA]** Fixed 'CAT' not appearing on FMA, improved logic to match ICAO criteria.",
+            "**[FMA]** Corrected logic for engaging ILS categories.",
+            "**[LIGHTS]** Brightness knobs for PFD, MFD, ECAM, FCU, and overhead panel are turned down when spawning cold-and-dark",
+            "**[LIGHTS]** Reduced ambient cockpit lighting",
+            "**[MFD]** Adjusted look of wind arrow on navigation display",
+            "**[PERF]** Overpowered engine thrust reduced",
+            "**[PERF]** Fuel consumption improved",
+            "**[TEXTURES]** Adjusted textures for panels, pedestal, and cockpit decals",
+            "**[TEXTURES]** Adjusted colors on overhead panel"
+        ],
+        "features": [
+            "**[ADIRS]** Added ADIRS knob functionality",
+            "**[ADIRS]** Added ADIRS ALIGN light functionality",
+            "**[ADIRS]** IRS alignment affects PFD and MFD displays and indicators",
+            "**[ADIRS]** IRS alignment affects TAT and SAT indicators on lower ECAM",
+            "**[ADIRS]** IRS alignment time dependent on latitude",
+            "**[ADIRS]** IRS alignment time remaining displays on upper ECAM",
+            "**[BRAKES]** Brake gauge now properly reflects status of toe brakes and parking brakes",
+            "**[ECAM]** Added F/CTL ECAM page with support for elevator, aileron, and pitch trim movements",
+            "**[ECAM]** F/CTL ECAM reflects current ELAC and SEC status",
+            "**[ECAM]** Lower ECAM automatically switches to DOOR page when a door is opened",
+            "**[ECAM]** Lower ECAM automatically switches to APU page when APU master is switched on",
+            "**[ECAM]** Added ECAM memos 'GND SPLRS ARMED', 'SEAT BELTS', and 'NO SMOKING'",
+            "**[MFD]** Added range change indicator to navigation display",
+            "**[MISC]** PFD, MFD, and ECAM displays now present a self-test upon powering up",
+            "**[MISC]** PFD, MFD, ECAM, and MCDU displays no longer work only on battery - require external power or APU/engine generators",
+            "**[MISC]** Added seatbelt sign switch functionality",
+            "**[MISC]** Added no smoking sign switch functionality (full range of motion currently restricted)",
+            "**[MISC]** Added moveable dummy knobs for cockpit, fwd, and aft cabin air conditioning controls",
+            "**[SOUND]** Added chimes for seatbelt and no smoking switches"
+        ],
+        "improvements": [
+            "**[LIGHTS]** Taxi light no longer bleeds into cockpit",
+            "**[SOUND]** Removed 70ft and 60ft radio altimeter callouts"
+        ]
+      },
+      {
+        "version": "0.1.1",
+        "date": "2020-08-24",
+        "fixes": [],
+        "features": [],
+        "improvements": [
+            "**[MISC]** Re-organized into standalone community package"
+        ]
+      },
+      {
+        "version": "0.1.0",
+        "date": "2020-08-23",
+        "fixes": [
+            "**[ECAM]** Removed INOP property from all ECAM page buttons"
+        ],
+        "features": [
+            "**[ECAM]** APU ECAM page",
+            "**[ECAM]** Door ECAM page",
+            "**[ECAM]** Bleed ECAM page placeholder",
+            "**[MFD]** MODE change indication in navigation display"
+        ],
+        "improvements": [
+            "**[PERF]** Decreased fuel consumption",
+            "**[PERF]** Increased APU startup time"
+        ]
+      }
+    ]
+  }

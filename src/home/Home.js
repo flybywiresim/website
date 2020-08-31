@@ -12,10 +12,10 @@ const Home = () => (
             <h1 className="display-3">Simulations</h1>
         </div>
         <hr />
-        <div className="row justify-content-center pad-top-large">
+        <div className="row justify-content-center pad-top">
             <h1 className="display-4">Our Latest Project</h1>
         </div>
-        <div className="row justify-content-center">
+        <div className="row justify-content-center margin-minus-top">
             <Link to="/a32nx" className="justify-content-center"><img src="logos/A32NX_logo.png" width="100%" alt="fbw-huge" /></Link>
         </div>
     </div>
