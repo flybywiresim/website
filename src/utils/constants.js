@@ -1,16 +1,13 @@
-export const stable_release_url = "http://github.com/wpine215/msfs-a320neo/zipball/master";
-export const pre_release_url = "http://github.com/wpine215/msfs-a320neo/zipball/v0.1.2-rc.1";
-
 export const releases = [
     {
         name: "A32NX",
         logoUrl: "logos/logo_wide_transparent.png",
         release_types: {
             stable: {
-                url: "http://github.com/wpine215/msfs-a320neo/zipball/master",
+                url: process.env.REACT_APP_STABLE_URL,
             },
             preRelease: {
-                url: "http://github.com/wpine215/msfs-a320neo/zipball/v0.1.2-rc.1",
+                url: process.env.REACT_APP_PRE_RELEASE_URL,
             }
         },
         instructionLink: "/a32nx",

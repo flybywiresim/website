@@ -2,8 +2,8 @@
     "title": "A32NX CHANGELOG",
     "list": [
       {
-        "version": "0.1.2",
-        "date": "2020-09-01",
+        "version": "0.2.0",
+        "date": "2020-09-04",
         "fixes": [
             "**[APU]** APU start logic adjusted",
             "**[APU]** APU EGT is now adjusted for ambient temperature",

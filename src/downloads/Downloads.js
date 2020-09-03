@@ -16,8 +16,8 @@ const Downloads = () => (
                         <tr className="" key={`${release.name}-${release.logoUrl}`}>
                             <td>{release.logoUrl && <img src={release.logoUrl} alt="logo" width="150px" />}</td>
                             <td>{release.name}</td>
-                            <td><a href={release.release_types.stable && release.release_types.stable.url}>Stable</a></td>
-                            <td><a href={release.release_types.preRelease && release.release_types.preRelease.url}>Pre-Release</a></td>
+                            {release.release_types.stable ? <td><a href={release.release_types.stable.url}>Stable</a></td> : <td></td>}
+                            {release.release_types.preRelease ? <td><a href={release.release_types.preRelease.url}>Pre-Release</a></td> : <td></td>}
                             <td><Link to={release.instructionLink}>Install Instructions</Link></td>
                         </tr>
                     ))}

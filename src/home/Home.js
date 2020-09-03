@@ -16,7 +16,7 @@ const Home = () => (
             <h1 className="display-4">Our Latest Project</h1>
         </div>
         <div className="row justify-content-center margin-minus-top">
-            <Link to="/a32nx" className="justify-content-center"><img src="logos/A32NX_logo.png" width="100%" alt="fbw-huge" /></Link>
+            <Link to="/a32nx" className="justify-content-center"><img src="screenshots/flyby-3.png" width="100%" alt="fbw-huge" /></Link>
         </div>
     </div>
 );

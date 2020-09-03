@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { stable_release_url, pre_release_url } from '../utils/constants';
+import React from 'react';
 
 
 const DevKitInstallInstructions = () => (
@@ -56,7 +55,7 @@ const DevKitInstallInstructions = () => (
         </div>
         <div className="row justify-content-center pad-top">
             <div className="col-lg-8 text-center">
-                <h5 className="instruction-step"><a href="https://github.com/dga711/msfs-webui-devkit" target="_blank" >Click here</a> for usage instructions.</h5>
+                <h5 className="instruction-step"><a href="https://github.com/dga711/msfs-webui-devkit" target="_blank" rel="noopener noreferrer">Click here</a> for usage instructions.</h5>
             </div>
         </div>
     </div>
