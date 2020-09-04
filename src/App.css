@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -81,12 +82,17 @@
 }
 
 .nav-link {
-  font-size: 2em;
+  font-size: 1.2em;
   margin-top: 10px;
   padding: 0 !important;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .home-logo {
   margin-left: 10px;
+}
+
+.nav-item {
+  font-size: 0.8rem;
+  font-weight: 300;
 }
