@@ -18,7 +18,7 @@ const About = () => (
         </div>
         <div className="row justify-content-center pad-top">
             <ul>
-                <li>Our <a href="https://www.github.com/wpine215/msfs-a320neo">github page</a> has been visited over 35,000 times since then.</li>
+                <li>Our <a href="https://github.com/flybywiresim/a32nx">github page</a> has been visited over 35,000 times since then.</li>
                 <li>Over 300 commits have been made since Microsoft Flight Simulator released on August 18th, 2020</li>
                 <li>On August 22nd, 2020, we successfully released v0.1.1 of the A320 realism mod.</li>
                 <li>More than 20 systems have already been modified and brought up to a functional state</li>
