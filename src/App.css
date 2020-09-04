@@ -153,3 +153,7 @@ only screen and (max-width: 760px),
     max-height: 200px;
   }
 }
+
+.test {
+  visibility: visible;
+}
