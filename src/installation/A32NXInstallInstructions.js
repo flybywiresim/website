@@ -8,11 +8,14 @@ const A32NXInstallInstructions = () => (
         <div className="row justify-content-center pad-top">
             <div className="col-lg-10 text-center">
                 <div className="warning">
-                    <span className="danger">**WARNING**:
-                        <br />
-                        Use the pre-release build at your own risk, it can be very unstable. Some features may be incomplete or not function properly.
-                        <br />
-                        WE ARE NOT RESPONSIBLE IF YOUR SIMULATOR BREAKS.
+                    <span className="danger">
+                        <div className="row justify-content-center">**WARNING**:</div>
+                        <div className="row justify-content-center">
+                            Use the pre-release build at your own risk, it can be very unstable. Some features may be incomplete or not function properly.
+                        </div>
+                        <div className="row justify-content-center">
+                            WE ARE NOT RESPONSIBLE IF YOUR SIMULATOR BREAKS.
+                        </div>
                     </span>
                 </div>
             </div>

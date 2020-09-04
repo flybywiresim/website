@@ -40,7 +40,7 @@ const Navbar = () => (
         </div>
 
         <div className="nav-item nav-item-right">
-            <div className="row justify-content-center">
+            <div className="row justify-content-center white-text">
                 Join our Discord!
             </div>
             <div className="row justify-content-center pad-top">
