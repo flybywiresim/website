@@ -40,12 +40,9 @@ const Navbar = () => (
         </div>
 
         <div className="nav-item nav-item-right">
-            <div className="row justify-content-center white-text">
-                Join our Discord!
-            </div>
-            <div className="row justify-content-center pad-top">
+            <div className="row justify-content-center pad-top discord-logo">
                 <a href="https://discord.gg/UjzuHMU">
-                    <img src="https://img.shields.io/discord/738864299392630914.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2" />
+                    <img src="https://img.shields.io/discord/738864299392630914.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2" alt="discord-logo" />
                 </a>
             </div>
         </div>

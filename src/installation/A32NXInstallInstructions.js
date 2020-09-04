@@ -1,9 +1,9 @@
 import React from 'react';
 
 const A32NXInstallInstructions = () => (
-    <div className="pad-top">
+    <div className="pad-top container">
         <div className="row justify-content-center">
-            <img className="margin-right-5" src="/logos/flybywire-huge.png" width="25%" />
+            <img className="margin-right-5 install-logo" src="/logos/flybywire-huge.png" alt="flybywire-logo"/>
         </div>
         <div className="row justify-content-center pad-top">
             <div className="col-lg-10 text-center">

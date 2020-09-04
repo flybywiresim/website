@@ -3,6 +3,7 @@ import {
     Link
 } from 'react-router-dom';
 import { releases } from '../utils/constants';
+import './downloads.css';
 
 const Downloads = () => (
     <div className="container">

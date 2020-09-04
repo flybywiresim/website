@@ -54,8 +54,18 @@
 }
 
 .main-logo {
-  margin-top: -25px;
-  width: 80%;
+  max-width: 80%;
+}
+
+.main-logo-text {
+  font-size: 1.5rem !important;
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+
+.promo-image {
+  max-width: 60%;
+  padding-top: 15vh;
 }
 
 .link-text-stable {
@@ -100,4 +110,31 @@
 
 .white-text {
   color: white;
+}
+
+.install-logo {
+  max-width: 25%;
+}
+
+.container {
+  max-width: 90%;
+}
+
+.large-pad-bottom {
+  padding-bottom: 50px;
+}
+
+.third-party-header {
+  font-weight: normal;
+  font-size: 3rem;
+  max-width: 80%;
+  text-align: center;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+	.discord-logo {
+    margin-left: 50%;
+  }
 }

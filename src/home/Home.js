@@ -8,15 +8,12 @@ const Home = () => (
         <div className="row justify-content-center pad-top">
             <img src={require('../logo_wide.png')} alt="flybywire-logo" className="main-logo" />
         </div>
-        <div className="row justify-content-center pad-top">
-            <h1 className="display-3">Simulations</h1>
-        </div>
         <hr />
         <div className="row justify-content-center pad-top">
-            <h1 className="display-4">Our Latest Project</h1>
+            <h1 className="display-4 main-logo-text">Our Latest Project</h1>
         </div>
-        <div className="row justify-content-center margin-minus-top">
-            <Link to="/a32nx" className="justify-content-center"><img src="screenshots/flyby-3.png" width="100%" alt="fbw-huge" /></Link>
+        <div className="row justify-content-center margin-minus-top large-pad-bottom">
+            <Link to="/a32nx" className="justify-content-center promo-image"><img src="screenshots/flyby-3.png" width="100%" alt="fbw-huge" /></Link>
         </div>
     </div>
 );

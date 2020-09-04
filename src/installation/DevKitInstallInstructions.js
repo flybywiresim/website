@@ -2,9 +2,9 @@ import React from 'react';
 
 
 const DevKitInstallInstructions = () => (
-    <div className="pad-top">
+    <div className="pad-top container">
         <div className="row justify-content-center pad-top">
-            <h1 className="display-4">MSFS WebUI DevKit</h1>
+            <h4 className="third-party-header">MSFS WebUI DevKit</h4>
         </div>
         <div className="row justify-content-center pad-top">
             <div className="col-lg-10 text-center">
