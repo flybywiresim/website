@@ -15,24 +15,24 @@ const Navbar = () => (
 
         <div className="collapse navbar-collapse" id="navbarColor01">
             <ul className="navbar-nav mr-auto">
-                <li className="nav-item">
+                <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
                     <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
                     <Link className="nav-link" to="/about">About</Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
                     <Link className="nav-link" to="/changelog">Changelog</Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
                     <Link className="nav-link" to="/media">Media</Link>
                 </li>
                 <li className="nav-item dropdown">
                     <Link className="nav-link dropdown-toggle" data-toggle="dropdown" to="#" role="button" aria-haspopup="true" aria-expanded="false">Downloads</Link>
-                    <div className="dropdown-menu">
+                    <div className="dropdown-menu" data-toggle="collapse" data-target=".navbar-collapse">
                         <Link className="dropdown-item" to="/downloads">All Downloads</Link>
                         { releases.map((release) => (
-                            <Link className="dropdown-item" to={release.instructionLink}>{release.name}</Link>
+                            <Link className="dropdown-item" to={release.instructionLink} key={release.name}>{release.name}</Link>
                         ))}
                     </div>
                 </li>

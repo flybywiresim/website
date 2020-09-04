@@ -54,18 +54,18 @@
 }
 
 .main-logo {
-  max-width: 80%;
+  max-width: 65%;
 }
 
 .main-logo-text {
   font-size: 1.5rem !important;
   max-width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 10%;
 }
 
 .promo-image {
-  max-width: 60%;
   padding-top: 15vh;
+  max-width: 60%;
 }
 
 .link-text-stable {
@@ -136,5 +136,10 @@ only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 	.discord-logo {
     margin-left: 50% !important;
+  }
+
+  .promo-image {
+    padding-top: 1vh;
+    max-width: 100%;
   }
 }
