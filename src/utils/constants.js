@@ -1,13 +1,12 @@
+export const a32nxStableDownloadUrl = "https://github.com/flybywiresim/a32nx/releases/latest/download/flybywiresim-a32nx.zip";
+
 export const releases = [
     {
         name: "A32NX",
         logoUrl: "logos/logo_wide_transparent.png",
         release_types: {
             stable: {
-                url: process.env.REACT_APP_STABLE_URL,
-            },
-            preRelease: {
-                url: process.env.REACT_APP_PRE_RELEASE_URL,
+                url: a32nxStableDownloadUrl,
             }
         },
         instructionLink: "/a32nx",
