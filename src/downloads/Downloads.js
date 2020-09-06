@@ -19,7 +19,7 @@ const Downloads = () => (
                             <td>{release.name}</td>
                             {release.release_types.stable ? <td><a href={release.release_types.stable.url}>Stable</a></td> : <td></td>}
                             {release.release_types.preRelease ? <td><a href={release.release_types.preRelease.url}>Pre-Release</a></td> : <td></td>}
-                            <td><Link to={release.instructionLink}>Install Instructions</Link></td>
+                            <td>{release.name === "MSFS WebUI DevKit" ? <a href={release.instructionLink}>Install Instructions</a> : <Link to={release.instructionLink}>Install Instructions</Link>}</td>
                         </tr>
                     ))}
                 </tbody>

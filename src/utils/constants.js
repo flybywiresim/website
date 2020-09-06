@@ -16,9 +16,9 @@ export const releases = [
         logoUrl: "logos/Community_built-2.png",
         release_types: {
             stable: {
-                url: "https://github.com/dga711/msfs-webui-devkit/zipball/master",
+                url: "https://github.com/dga711/msfs-webui-devkit/releases",
             },
         },
-        instructionLink: "/msfs-webui-devkit",
+        instructionLink: "https://github.com/dga711/msfs-webui-devkit/blob/master/readme.md",
     }
 ];

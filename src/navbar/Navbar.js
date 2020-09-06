@@ -31,9 +31,9 @@ const Navbar = () => (
                     <Link className="nav-link dropdown-toggle" data-toggle="dropdown" to="#" role="button" aria-haspopup="true" aria-expanded="false">Downloads</Link>
                     <div className="dropdown-menu" data-toggle="collapse" data-target=".navbar-collapse">
                         <Link className="dropdown-item" to="/downloads">All Downloads</Link>
-                        { releases.map((release) => (
-                            <Link className="dropdown-item" to={release.instructionLink} key={release.name}>{release.name}</Link>
-                        ))}
+                        { releases.map((release) => {
+                            return release.name === "MSFS WebUI DevKit" ? <a className="dropdown-item" href={release.instructionLink}>{release.name}</a> : <Link className="dropdown-item" to={release.instructionLink} key={release.name}>{release.name}</Link>
+                        })}
                     </div>
                 </li>
             </ul>
