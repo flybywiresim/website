@@ -19,6 +19,7 @@ export const releases = [
                 url: "https://github.com/dga711/msfs-webui-devkit/releases",
             },
         },
+        instructionExternal: true,
         instructionLink: "https://github.com/dga711/msfs-webui-devkit/blob/master/readme.md",
     }
 ];
