@@ -58,6 +58,10 @@
   margin: auto;
 }
 
+.navbar {
+  justify-content: start;
+}
+
 .nav-link {
   font-size: 1.2em;
   margin-top: 10px;
@@ -72,6 +76,10 @@
 .nav-item {
   font-size: 1.0rem;
   font-weight: 200;
+}
+
+.nav-item-right {
+  margin: 0 1rem 0 auto;
 }
 
 .white-text {
@@ -98,13 +106,15 @@
   text-align: center;
 }
 
-@media 
+@media (max-width: 991px) {
+  #navbarColor01 {
+    order: 999;
+  }
+}
+
+@media
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
-	.discord-logo {
-    margin-left: 50% !important;
-  }
-
   .promo-image {
     padding-top: 1vh;
     max-width: 100%;
