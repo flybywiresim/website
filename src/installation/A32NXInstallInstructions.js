@@ -4,7 +4,7 @@ import {a32nxStableDownloadUrl} from '../utils/constants';
 const A32NXInstallInstructions = () => (
     <div className="pad-top container">
         <div className="row justify-content-center">
-            <img className="margin-right-5 install-logo" src="/logos/flybywire-huge.png" alt="flybywire-logo"/>
+            <img className="margin-right-5 install-logo" src={require("../logos/flybywire-huge.png")} alt="flybywire-logo"/>
         </div>
         <div className="justify-content-center pad-top container">
             <span className="danger">

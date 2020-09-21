@@ -3,7 +3,7 @@ export const a32nxStableDownloadUrl = "https://github.com/flybywiresim/a32nx/rel
 export const releases = [
     {
         name: "A32NX",
-        logoUrl: "logos/logo_wide_transparent.png",
+        logoUrl: require("../logos/logo_wide_transparent.png"),
         release_types: {
             stable: {
                 url: a32nxStableDownloadUrl,
@@ -13,7 +13,7 @@ export const releases = [
     },
     {
         name: "MSFS WebUI DevKit",
-        logoUrl: "logos/Community_built-2.png",
+        logoUrl: require("../logos/Community_built-2.png"),
         release_types: {
             stable: {
                 url: "https://github.com/dga711/msfs-webui-devkit/releases",
