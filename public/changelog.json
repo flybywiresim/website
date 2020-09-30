@@ -2,6 +2,26 @@
     "title": "A32NX CHANGELOG",
     "list": [
       {
+        "version": "0.3.1",
+        "date": "2020-09-30",
+        "fixes": [
+          "**[EXTERIOR]** Fixed issue in engine rotation animation that made it rotate too quickly - @lukecologne (lukecologne)",
+          "**[MISC]** Fixed mod so that it works with MSFS 1.9.3 - @DoToAdventures @tyler58546 @AdenFlorian",
+          "**[MCDU]** Fixed several issues related to incorrect active waypoints - @lousybyte (lousybyte)",
+          "**[MCDU]** Fixed a crash when trying to replace a waypoint in the flight plan - @lousybyte (lousybyte)"
+        ],
+        "features": [
+          "**[MISC]** Add CHANGELOG.md - @nathaninnes (Nathan Innes)",
+          "**[ND]** Add DME distances, VOR/ADF needles and functioning ADF2 - @blitzcaster (bltzcstr)"
+        ],
+        "improvements": [
+          "**[ECAM]** Improved Upper ECAM Visuals - @wpine215 (Iceman)",
+          "**[ECAM]** Lower ECAM DOOR Page Colour Fix - @nathaninnes (Nathan Innes)",
+          "**[PFD]** Remove code related to unrelevant aircraft - @1Revenger1 (Avery Black)",
+          "**[TEXTURES]** Changed roughness of glareshield - @Pleasure (Pleasure)"
+        ]
+      },
+      {
         "version": "0.3.0",
         "date": "2020-09-26",
         "fixes": [
