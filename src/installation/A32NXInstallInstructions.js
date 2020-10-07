@@ -60,7 +60,7 @@ const A32NXInstallInstructions = () => (
         </div>
         <div className="row justify-content-center pad-top">
             <div className="col-lg-8 text-center">
-                <h5 className="instruction-step">Step 3. Copy and paste the "A32NX" folder from the zip file into your "Community" folder.</h5>
+                <h5 className="instruction-step">Step 3. Copy and paste the "A32NX" folder from the zip file into your "Community" folder.  The A320neo inside FS2020 will be replaced by A32NX.  If you wish to revert back to the original one, you can simply delete this folder.</h5>
             </div>
         </div>
     </div>
