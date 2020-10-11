@@ -1,5 +1,6 @@
 import React from 'react';
 import {a32nxStableDownloadUrl} from '../utils/constants';
+import {a32nxInstaller} from '../utils/constants';
 
 const A32NXInstallInstructions = () => (
     <div className="pad-top container">
@@ -13,6 +14,12 @@ const A32NXInstallInstructions = () => (
                     WE ARE NOT RESPONSIBLE IF YOUR SIMULATOR BREAKS.
                 </div>
             </span>
+        </div>
+        <br />
+        <div className="row justify-content-center pad-top">
+            <div className="col-lg-8 text-center">
+                <h5 className="instruction-step">You can download the <a href={a32nxInstaller} className="link-text-stable">installer</a> or follow the instructions below.</h5>
+            </div>
         </div>
         <br />
         <div className="row justify-content-center pad-top">
