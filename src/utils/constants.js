@@ -1,4 +1,5 @@
 export const a32nxStableDownloadUrl = "https://github.com/flybywiresim/a32nx/releases/latest/download/flybywiresim-a32nx.zip";
+export const a32nxInstaller = "https://github.com/Externoak/A32NX-installer/releases/latest/download/A32NX_Downloader.zip";
 
 export const releases = [
     {
