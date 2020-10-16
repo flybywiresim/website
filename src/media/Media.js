@@ -30,7 +30,13 @@ const Media = () => (
                 <p className="card-text"></p>
             </div>
         </div>
+
+        <div className="card mb-3">
+            <h3 className="card-header text-center">Preview of Upcoming ATSU and CFDS</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CFfMkuhNl8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
 )
+
 
 export default Media;
