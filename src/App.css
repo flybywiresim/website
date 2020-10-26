@@ -157,3 +157,9 @@ only screen and (max-width: 760px),
 .test {
   visibility: visible;
 }
+
+code {
+  color: #666;
+  background-color: #e4e4e4;
+  border: solid 4px #e4e4e4;
+}
