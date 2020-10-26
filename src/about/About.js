@@ -9,7 +9,7 @@ const About = () => (
             <p className="text-center">
                 FlyByWire Simulations is a community-driven group created just before the release of Microsoft Flight Simulator,
                 with the intent of increasing the realism of the Airbus A320NEO that is included with the sim.
-                With a Discord presence more than 7,000 members strong, the team has been working non-stop to release updates and enhancements
+                With a Discord presence more than 14,000 members strong, the team has been working non-stop to release updates and enhancements
                 in an attempt to bring the A320NEO up to a study-level freeware aircraft.
             </p>
         </div>
@@ -18,9 +18,9 @@ const About = () => (
         </div>
         <div className="row justify-content-center pad-top">
             <ul>
-                <li>Our <a href="https://github.com/flybywiresim/a32nx">github page</a> has been visited over 35,000 times since then.</li>
-                <li>Over 300 commits have been made since Microsoft Flight Simulator released on August 18th, 2020</li>
-                <li>On August 22nd, 2020, we successfully released v0.1.1 of the A320 realism mod.</li>
+                <li>Our <a href="https://github.com/flybywiresim/a32nx">github page</a> has been visited over 42,000 times in October.</li>
+                <li>Over 1,200 commits have been made since Microsoft Flight Simulator released on August 18th, 2020</li>
+                <li>On October 15th, 2020, we successfully released v0.4.0 of the A32NX mod.</li>
                 <li>More than 20 systems have already been modified and brought up to a functional state</li>
                 <li>Our discord server includes more than 32 real world A320 Pilots helping to bring these systems to study-level</li>
             </ul>
