@@ -2,6 +2,14 @@
     "title": "A32NX CHANGELOG",
     "list": [
         {
+            "version": "0.4.1",
+            "date": "2020-10-31",
+            "fixes": [
+                "[MISC] Include some of the Asobo 1.10.7 changes to make mod compatible with said version - @lukecologne",
+                "[CDU] Fix not being able to enter ZFWCG - @Lucky38i"
+            ]
+        },
+        {
             "version": "0.4.0",
             "date": "2020-10-14",
             "features": [
