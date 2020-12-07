@@ -2,6 +2,13 @@
     "title": "A32NX CHANGELOG",
     "list": [
         {
+            "version": "0.4.2",
+            "date": "2020-12-02",
+            "fixes" : [
+                "[Autopilot] Tweak the autopilot controller values to fix the lateral deviation - @AsoboStudio"
+            ]
+        },
+        {
             "version": "0.4.1",
             "date": "2020-10-31",
             "fixes": [
