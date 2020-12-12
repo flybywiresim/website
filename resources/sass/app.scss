@@ -1,6 +1,47 @@
-
+@font-face {
+    font-family: 'Aileron-Light';
+    src: url('/fonts/aileron.thin.otf');
+  }
+@font-face {
+    font-family: 'Aileron-Regular';
+    src: url('/fonts/aileron.regular.otf');
+  }
+@font-face {
+    font-family: 'Aileron-Heavy';
+    src: url('/fonts/aileron.heavy.otf');
+}
 // Variables
 @import 'variables';
+@import 'colors';
+@import 'classes';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// Bootstrap Overides
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+  letter-spacing: 1.2px;
+}
+body {
+  font-family: 'Aileron-Regular', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Aileron-Regular', sans-serif;
+}
+p,
+a{
+  font-family: 'Aileron-Light', sans-serif;
+}
