@@ -1,0 +1,12 @@
+ingress:
+  fqdn: staging.flybywiresim.com
+  tls:
+    enabled: true
+    issuer: letsencrypt-prod
+
+website:
+  database:
+    host: private-mysql-flybywiresim-do-user-8167919-0.b.db.ondigitalocean.com
+    port: 25060
+    database: fbw_website_staging
+    user: fbw_website_staging

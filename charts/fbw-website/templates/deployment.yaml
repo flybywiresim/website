@@ -1,0 +1,65 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: {{ .Release.Name }}
+  labels:
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/name: {{ .Chart.Name }}
+spec:
+  replicas: {{ .Values.replicas }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: {{ .Release.Name }}
+      app.kubernetes.io/name: {{ .Chart.Name }}
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/instance: {{ .Release.Name }}
+        app.kubernetes.io/name: {{ .Chart.Name }}
+    spec:
+      serviceAccountName: {{ .Release.Name }}
+      containers:
+        - name: {{ .Chart.Name }}
+          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.service.port }}
+              protocol: TCP
+          env:
+            - value: APP_ENV
+              name: production
+            - value: APP_DEBUG
+              name: 'false'
+            - value: APP_URL
+              name:  {{ .Values.ingress.fqdn }}
+            - name: APP_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Release.Name }}
+                  key: appKey
+
+            # LOGGER
+            - name: LOG_CHANNEL
+              value: {{ .Values.website.logger.channel }}
+            - name: LOG_LEVEL
+              value: {{ .Values.website.logger.level }}
+
+            # DATABASE
+            - name: DB_HOST
+              value: {{ .Values.website.database.host }}
+            - name: DB_PORT
+              value: {{ .Values.website.database.port | quote }}
+            - name: DB_DATABASE
+              value: {{ .Values.website.database.database }}
+            - name: DB_USERNAME
+              value: {{ .Values.website.database.user }}
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Release.Name }}
+                  key: databasePassword
+          resources:
+            requests:
+              cpu: 100m
+              memory: 90Mi

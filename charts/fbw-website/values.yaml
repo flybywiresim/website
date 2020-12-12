@@ -1,0 +1,27 @@
+image:
+  repository: flybywiresim/website
+  tag: latest
+  pullPolicy: Always
+
+replicas: 1
+
+service:
+  port: 80
+
+ingress:
+  fqdn: ~
+  tls:
+    enabled: false
+    issuer: ~
+
+website:
+  logger:
+    level: info
+    channel: stack
+  database:
+    host: ~
+    port: 3306
+    database: fbw
+    user: fbw
+    password: somePassword
+  secret: someSecret
