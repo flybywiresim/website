@@ -33,6 +33,8 @@ spec:
               value: 'false'
             - name: APP_URL
               value:  {{ printf "https://%s" .Values.ingress.fqdn }}
+            - name: ASSET_URL
+              value:  {{ printf "https://%s" .Values.ingress.fqdn }}
             - name: APP_KEY
               valueFrom:
                 secretKeyRef:
