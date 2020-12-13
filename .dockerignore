@@ -2,7 +2,5 @@
 .editorconfig
 docker-compose.yml
 
-/vendor
-/node_modules
 /.github
-/.charts
+/charts
