@@ -27,12 +27,12 @@ spec:
               containerPort: {{ .Values.service.port }}
               protocol: TCP
           env:
-            - value: APP_ENV
-              name: production
-            - value: APP_DEBUG
-              name: 'false'
-            - value: APP_URL
-              name:  {{ .Values.ingress.fqdn }}
+            - name: APP_ENV
+              value: production
+            - name: APP_DEBUG
+              value: 'false'
+            - name: APP_URL
+              value:  {{ printf "https://%s" .Values.ingress.fqdn }}
             - name: APP_KEY
               valueFrom:
                 secretKeyRef:
