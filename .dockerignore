@@ -1,6 +1,6 @@
 .env*
 .editorconfig
 docker-compose.yml
-
+Dockerfile
 /.github
 /charts

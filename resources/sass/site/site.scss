@@ -1,25 +1,39 @@
+@import '../variables';
+@import '../classes';
 @import '../app.scss';
 
 header{
-    div{
-        padding-top: 10rem;
+    nav {
+        @media (max-width: 768px){
+            background-color: $dark;
+        }
+        font-size: large;
+        .dropdown:hover>.dropdown-menu{
+            display: block;
+        }
+    }
+    height: 100vh;
+    div#overlay-text{
+        position: relative;
+        top: 20%;
         h1{
-            font-size: 5.75rem;
+            font-size: 4.5em;
         }
         p{
             max-width: 50%;
         }
     }
 
-    img{
+    img#wave-header{
         width: 100%;
         position: absolute;
-        bottom: 0;
+        bottom: -2px;
         right: 0;
     }
-    .overlay{
+
+    span#overlay{
         width: 100%;
-        height: 100vh;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
@@ -27,14 +41,102 @@ header{
         opacity: 0.7;
         z-index: -20;
     }
+
     video{
         width: 100%;
-        height: 100vh;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
         object-fit: cover;
         opacity: 0.2;
         z-index: -20;
+    }
+}
+
+main{
+    section#download{
+        .col{
+            margin-bottom: 20px;
+        }
+        .card{
+            background-color: rgba(44, 62, 80, 0.7);
+            border: 0;
+        }
+        .card-title{
+            margin: auto;
+        }
+        // Card
+        .card-rounded{
+            border-radius: 20px;
+        }
+        .inner-shadow{
+            box-shadow: inset 0 0 20px 3px rgba($color: $fbw-dark, $alpha: 0.2);
+        }
+    }
+    section#features{
+        .col{
+            margin-bottom: 20px;
+        }
+        .card{
+            height: 100%;
+            background-color: rgba($color: #545454, $alpha: 0.1);
+            border-radius: 20px;
+            border: 0;
+        }
+        .card-img{
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            opacity: 0.4;
+            border-radius: 20px 20px 0 0;
+        }
+        .card-img-overlay{
+            position: relative;
+            border: 0;
+        }
+        .card-title{
+            color: $fbw-b;
+        }
+        hr{
+            border-top: 1px solid rgba($color: #FFFFFF, $alpha: 0.6);
+        }
+    }
+    section#stats{
+        img{
+            min-height: 30vh;
+            height: 55%;
+            width: 100%;
+            position: absolute;
+            object-fit: cover;
+            object-position: center;
+            opacity: 0.4;
+        }
+        div#stats-overlay{
+            min-height: 30vh;
+            height: 50%;
+            position: relative;
+            align-content: center;
+            .col{
+                margin-bottom: 20px;
+            }
+            h1{
+                font-size: 3.5em;
+            }
+        }
+    }
+    #mapid {
+        width: 100% !important;
+        height: 350px !important;
+    }
+    section#partners{
+        img{
+            width: 100%;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+        hr{
+            border-top: 1px solid rgba($color: #FFFFFF, $alpha: 0.6);
+        }
     }
 }

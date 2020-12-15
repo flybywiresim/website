@@ -17,6 +17,8 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+// Fontawesome (Icons)
+@import '~@fortawesome/fontawesome-free/css/all.css';
 
 // Bootstrap Overides
 h1,
@@ -40,6 +42,7 @@ h4,
 h5,
 h6{
   font-family: 'Aileron-Regular', sans-serif;
+  margin: 0;
 }
 p,
 a{

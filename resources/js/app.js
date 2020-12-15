@@ -11,5 +11,7 @@ require('./bootstrap');
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+require('./Scroll');
+require('./components/Counter');
+require('./components/LiveMap');
 
-require('./components/Example');
