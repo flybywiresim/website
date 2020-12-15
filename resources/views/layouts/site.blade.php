@@ -16,7 +16,6 @@
 </head>
 <body>
     <div id="app">
-       @include('Site.navigation')
        @yield('content') 
     </div>   
 </body>
