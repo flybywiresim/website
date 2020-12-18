@@ -2,6 +2,7 @@
 .editorconfig
 docker-compose.yml
 Dockerfile
-/.github
-/charts
-/.idea
+.github/**
+charts/**
+.idea/**
+node_modules/**
