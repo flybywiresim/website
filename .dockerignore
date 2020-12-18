@@ -4,3 +4,4 @@ docker-compose.yml
 Dockerfile
 /.github
 /charts
+/.idea

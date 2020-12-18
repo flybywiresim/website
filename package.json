@@ -11,7 +11,7 @@
     },
     "devDependencies": {
         "@babel/preset-react": "^7.0.0",
-        "@flybywiresim/map": "^0.1.1",
+        "@flybywiresim/map": "^0.1.2",
         "@fortawesome/fontawesome-free": "^5.15.1",
         "axios": "^0.21",
         "bootstrap": "^4.0.0",
