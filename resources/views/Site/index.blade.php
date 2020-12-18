@@ -2,7 +2,7 @@
 
 @section('content')
     <header>
-        @include('site.navigation')
+        @include('Site.navigation')
         <div id="overlay-text" class="container text-white">
             <h1><b><span class="fbw-b-text">A32</span><span class="fbw-db-text">N</span>X</b></h1>
             <p>A <span class="fbw-b-text">community</span> built and maintained project aiming to provide study-level
