@@ -2,6 +2,66 @@
     "title": "A32NX CHANGELOG",
     "list": [
         {
+            "version": "0.5.0",
+            "date": "2020-12-18",
+            "features": [
+                "[PFD] Added independent calculations for GD, Vls, Vaprot, Vamax, Vs - @MisterChocker - (Leon)",
+                "[CDU] Added Performance Page CI functionality - @MisterChocker (Leon)",
+                "[CDU] Added Progress Page CRZ FL functionality and logic - @MisterChocker (Leon)",
+                "[CDU] Added Init B page only available until engine start - @MisterChocker (Leon)",
+                "[CDU] Added mcdu page id system - @MisterChocker (Leon)",
+                "[CDU] Added Progress Page REC MAX FL functionality and dummy OPT - @MisterChocker (Leon)",
+                "[PFD] Added proper altitude constrain visuals - @MisterChocker (Leon)",
+                "[PFD] Added proper selected and managed speed indication - @MisterChocker (Leon)",
+                "[PFD] Added V1 indication - @MisterChocker (Leon)",
+                "[ECAM] Implemented thrust rating mode indication and logic - @MisterChocker (Leon)",
+                "[CDU] Added actual VLS and VApp calculation - @MisterChocker (Leon)",
+                "[PFD] Added actual F and S speed calculation for approach - @MisterChocker (Leon)",
+                "[ECAM] Added ECAM ALL button functionality - @MikeKuijper (Mike Kuijper)",
+                "[LIGHTS] Added logo lights only turn on while on ground or flaps are extented - @linkeleven (linkeleven#2557)",
+                "[CDU] Add basic airways support based on code from WorkingTitle team - @santii90 (Santiago Vazquez), @Lessar277 (Lessar27)",
+                "[MISC] Add localisation files for aircraft info when using other languages than english - @pessip (Pessi Päivärinne)",
+                "[CDU] Add correct UI behavior and colors for airways page - @santii90 (Santiago Vazquez)",
+                "[CDU] Add ability to clear MDA/DH, add input logic for both MDA/DH - @paul92ilm (Lussion)"
+      ],
+            "fixes": [
+            "[PFD] Fixed V1 not disappear after liftoff - @MisterChocker - (Leon)",
+            "[ECAM] Fixed thrust rating mode START in flight misbehavior - @MisterChocker (Leon)",
+            "[CDU] Fixed wrong VLS calculation - @MisterChocker (Leon)",
+            "[PFD] Fixed wrong managed speed calculation on approach - @MisterChocker (Leon)",
+            "[ECAM] Fixed LDG/TO memo showing at incorrect times - @MMontalto (PiCcy)",
+            "[MISC] Fixed DECEL always show up on left button only - @jokey2k (JoKeY | Markus#0001 on discord)",
+            "[ECAM] Engine bleed valve closes at N2 > 50% - @RichardPilbery (Richard Pilbery)",
+            "[ECAM] Fix thrust lever position indicator on upper ECAM - @RichardPilbery (Richard Pilbery | tricky_dicky3571 on discord)"
+                "[ECAM] Adjusted Engine gauges so cursor extends beyond radius of gauge - @RichardPilbery (Richard Pilbery | tricky_dicky#3571 on discord)",
+                "[ECAM] Fix ECAM N1 engine indicator - @RichardPilbery (Richard Pilbery | tricky_dicky#3571 on discord)",
+                "[ECAM] Fix fuel used values on CRUISE and FUEL pages - @Lessar277 (Lessar27#1112)",
+                "[ATC] Fix CLR input for squawk code - @paul92ilm (Lussion)",
+                "[TEXTURES] Fixed aft overhead circuit breaker decal from 'LIGHTNING' to 'LIGHTING' (@DarkOfNova#0001)",
+                "[CDU] Fix takeoff vspeed - @linkeleven (linkeleven#2557)",
+                "[CHECKLISTS] Fix FD check in Taxi checklist - @Acrobot (Andrzej Pomirski)",
+                "[ADIRS] Fix ADIRS lights and split into three separate units - @devsnek (devsnek#0001)"
+            ],
+            "improvements":
+            [
+                "FLIGHTMODEL] Reworked AOA table - @donstim - (donbikes#4084)",
+                "[FLIGHTMODEL] Reworked flaps - @donstim - (donbikes#4084)",
+                "[FLIGHTMODEL] Reworked drag/thrust ratio - @donstim - (donbikes#4084)",
+                "[ENGINE] Adjusted N1% thrust table - @MisterChocker - (Leon)",
+                "[COLORS] Improved MCDU/PFD/ND/ECAM colors - @MisterChocker (Leon)",
+                "[PFD] General improvements to the display layout - @MisterChocker (Leon)",
+                "[ECAM] Applied FADEC power logic to thrust rating mode and value - @MisterChocker (Leon)",
+                "[ENGINE] Improved engine performance - @MisterChocker (Leon)",
+                "[AERODYNAMICS] Improved overall flight performance - @MisterChocker (Leon)",
+                "[MISC] Redesigned Standby instrument, fixed pitch indication - @jakluk (Jakluk)",
+                "[MODEL] Spinner spiral now shows at medium blur - @lukecologne (luke)",
+                "[MFD] Weather Radar now sweeps at 180 degrees, Correct masking for flight path/constr/waypoints and display elements, disabled WX/TERR ON MD in PLAN - @2hwk (2Cas#1022)",
+                               "[TEXTURES] Changed cockpit decals resolution from 1k to 2k - @FoxinTale (Aubrey)",
+                "[CAMERA] Modified a couple of the default interior camera angles. - @ZigTag (Falcon#5815), @linkeleven (linkeleven#2557)",
+                "[ECAM] Decimal font size change - @RichardPilbery (Richard Pilbery)"
+                ]
+        },
+        {
             "version": "0.4.2",
             "date": "2020-12-02",
             "fixes" : [
