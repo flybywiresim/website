@@ -17,7 +17,7 @@ function ActiveFlights() {
     }
 
     useEffect(() => {
-        const interval = setInterval(() => {}, 60000);
+        const interval = setInterval(() => getLiveFlights(), 60000);
         getLiveFlights();
         return () => {
             clearInterval(interval);
