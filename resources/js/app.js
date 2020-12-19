@@ -14,4 +14,5 @@ require('./bootstrap');
 require('./Scroll');
 require('./components/Counter');
 require('./components/LiveMap');
-
+require('./components/LastUpdated');
+require('./components/ActiveFlights');

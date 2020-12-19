@@ -53,7 +53,7 @@
                             <button class="btn btn-lg btn-primary rounded-pill" type="button">Download</button>
                         </div>
                         <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                            <div class="text-muted" id="last-updated"></div>
                         </div>
                     </div>
                 </div>
@@ -179,9 +179,7 @@
                     <h5>Commits</h5>
                 </div>
                 <div class="col">
-                    <h1 class="fbw-b-text">
-                        000
-                    </h1>
+                    <div class="fbw-b-text" id="active-flights"></div>
                     <h5>Live Flights</h5>
                 </div>
             </div>
