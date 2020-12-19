@@ -10,3 +10,5 @@ website:
     port: 25060
     database: fbw_website_staging
     user: fbw_website_staging
+  redis:
+    host: redis-staging-master.redis-staging.svc.cluster.local

@@ -61,6 +61,16 @@ spec:
                 secretKeyRef:
                   name: {{ .Release.Name }}
                   key: databasePassword
+
+            # REDIS
+            - name: REDIS_HOST
+              value: {{ .Values.website.redis.host }}
+            - name: REDIS_PORT
+              value: {{ .Values.website.redis.port | quote }}
+            - name: SESSION_DRIVER
+              value: redis
+            - name: CACHE_DRIVER
+              value: redis
           resources:
             requests:
               cpu: 100m

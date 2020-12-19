@@ -25,3 +25,6 @@ website:
     user: fbw
     password: somePassword
   secret: someSecret
+  redis:
+    host: ~
+    port: 6379
