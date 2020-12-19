@@ -45,9 +45,12 @@
                         Community
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="">NOTAMS / BLOG</a>
+                        <a class="dropdown-item" target="_blank" href="https://discord.gg/WFtj3D37ms/">Discord</a>
+                        <a class="dropdown-item" target="_blank" href="https://twitter.com/flybywiresim/">Twitter</a>
+                        <a class="dropdown-item" target="_blank" href="https://www.facebook.com/FlyByWireSimulations/">Facebook</a>
+                        <a class="dropdown-item" target="_blank" href="https://www.youtube.com/c/FlyByWireSimulations/">Youtube</a>
+                        <a class="dropdown-item" target="_blank" href="https://www.twitch.tv/flybywiresimulations/">Twitch</a>
                     </div>
                 </li>
             </ul>
