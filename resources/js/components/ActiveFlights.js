@@ -31,4 +31,8 @@ function ActiveFlights() {
     );
 }
 
-ReactDOM.render(<ActiveFlights />, document.getElementById('active-flights'));
+const container = document.getElementById('active-flights');
+
+if (container) {
+    ReactDOM.render(<ActiveFlights />, container);
+}

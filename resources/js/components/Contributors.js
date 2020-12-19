@@ -31,4 +31,8 @@ function Contributors() {
     );
 }
 
-ReactDOM.render(<Contributors />, document.getElementById('contributors'));
+const container = document.getElementById('contributors');
+
+if (container) {
+    ReactDOM.render(<Contributors />, container);
+}
