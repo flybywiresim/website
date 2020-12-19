@@ -6,3 +6,4 @@ Dockerfile
 charts/**
 .idea/**
 node_modules/**
+vendor/**
