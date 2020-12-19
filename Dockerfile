@@ -8,8 +8,8 @@ COPY package*.json /app/
 RUN npm install --no-optional
 
 COPY . /app/
-RUN composer install --no-dev --optimize-autoloader \
-    && npm run prod \
+RUN composer install --no-dev --optimize-autoloader
+RUN npm run prod \
     && rm -rf node_modules
 
 
