@@ -167,9 +167,7 @@
                     <h5>Downloads</h5>
                 </div>
                 <div class="col">
-                    <h1 class="fbw-b-text">
-                        000
-                    </h1>
+                    <div class="fbw-b-text" id="contributors"></div>
                     <h5>Contributors</h5>
                 </div>
                 <div class="col">
