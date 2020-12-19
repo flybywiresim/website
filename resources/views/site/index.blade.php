@@ -161,9 +161,7 @@
             <img src="{{ asset('assets/ss/takeoff1.jpg')}}" alt="" srcset="">
             <div id="stats-overlay" class="container row row-cols-2 row-cols-md-4 d-flex mx-auto p-4 text-center">
                 <div class="col">
-                    <h1 class="fbw-b-text">
-                        000
-                    </h1>
+                    <div class="fbw-b-text" id="downloads"></div>
                     <h5>Downloads</h5>
                 </div>
                 <div class="col">
@@ -171,9 +169,7 @@
                     <h5>Contributors</h5>
                 </div>
                 <div class="col">
-                    <h1 class="fbw-b-text">
-                        000
-                    </h1>
+                    <div class="fbw-b-text" id="commits"></div>
                     <h5>Commits</h5>
                 </div>
                 <div class="col">
@@ -191,7 +187,7 @@
         {{-- ### START: PARTNERS --}}
         {{-- todo: fix logo sizing & place a32nx svg in background --}}
         <section id="partners" class="fbw-darker-bg text-white">
-            <img id="a320" src="{{ asset('assets/svg/a32nx_nose.svg') }}" alt="...">
+            <img id="a320" src="{{ asset('assets/svg/a32nx_nose.svg') }}" alt="..." draggable="false">
             <div class="container text-center text-white p-5">
                 <div class="pb-5">
                     <h1><b>Partners</b></h1>
