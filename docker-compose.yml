@@ -1,14 +1,19 @@
 # For more information: https://laravel.com/docs/sail
 version: '3'
 services:
-    mysql:
-        image: 'mysql:8.0.22'
-        container_name: mysql
-        ports:
-            - 3306:3306
-        environment:
-            MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
-            MYSQL_DATABASE: '${DB_DATABASE}'
-            MYSQL_USER: '${DB_USERNAME}'
-            MYSQL_PASSWORD: '${DB_PASSWORD}'
-            MYSQL_ALLOW_EMPTY_PASSWORD: 'no'
+  mysql:
+    image: 'mysql:8.0.22'
+    container_name: mysql
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+      MYSQL_DATABASE: '${DB_DATABASE}'
+      MYSQL_USER: '${DB_USERNAME}'
+      MYSQL_PASSWORD: '${DB_PASSWORD}'
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'no'
+  redis:
+    image: 'redis:6.0.9-alpine'
+    container_name: redis
+    ports:
+      - 6379:6379
