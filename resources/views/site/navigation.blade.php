@@ -34,9 +34,9 @@
                         Developers
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" target="_blank" href="https://github.com/flybywiresim">Our GitHub</a>
+                        <a class="dropdown-item" target="_blank" href="https://github.com/flybywiresim/a32nx/blob/master/.github/Contributing.md">Getting Started</a> 
+                        <a class="dropdown-item" target="_blank" href="https://github.com/flybywiresim/a32nx/issues">Issues</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
