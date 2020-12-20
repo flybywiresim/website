@@ -17,4 +17,8 @@ class SiteController extends Controller
     public function groundschool() {
         return view('site.groundschool');
     }
+    public function resources()
+    {
+        return view('site.resources');
+    }
 }
