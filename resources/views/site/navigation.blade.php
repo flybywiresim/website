@@ -30,9 +30,9 @@
                         Pilots
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Ground School</a>
+                        <a class="dropdown-item" href="#">Documentation</a>
+                        <a class="dropdown-item" href="#">Resources</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -41,9 +41,9 @@
                         Developers
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" target="_blank" href="https://github.com/flybywiresim">Our GitHub</a>
+                        <a class="dropdown-item" target="_blank" href="https://github.com/flybywiresim/a32nx/blob/master/.github/Contributing.md">Getting Started</a> 
+                        <a class="dropdown-item" target="_blank" href="https://github.com/flybywiresim/a32nx/issues">Issues</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -52,9 +52,12 @@
                         Community
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="">NOTAMS / BLOG</a>
+                        <a class="dropdown-item" target="_blank" href="https://discord.gg/flybywire">Discord</a>
+                        <a class="dropdown-item" target="_blank" href="https://twitter.com/flybywiresim/">Twitter</a>
+                        <a class="dropdown-item" target="_blank" href="https://www.facebook.com/FlyByWireSimulations/">Facebook</a>
+                        <a class="dropdown-item" target="_blank" href="https://www.youtube.com/c/FlyByWireSimulations/">Youtube</a>
+                        <a class="dropdown-item" target="_blank" href="https://www.twitch.tv/flybywiresimulations/">Twitch</a>
                     </div>
                 </li>
             </ul>
