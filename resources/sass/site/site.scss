@@ -2,7 +2,9 @@
 @import '../classes';
 @import '../app.scss';
 
-header{
+header {
+    height: 2em;
+
     nav {
         @media (max-width: 768px){
             background-color: $dark;
@@ -12,7 +14,6 @@ header{
             display: block;
         }
     }
-    height: 100vh;
     div#overlay-text{
         position: relative;
         top: 20%;

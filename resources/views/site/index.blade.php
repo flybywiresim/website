@@ -1,7 +1,7 @@
 @extends('layouts.site')
 
 @section('content')
-    <header>
+    <header style="height: 100vh">
         @include('site.navigation')
         <div id="overlay-text" class="container text-white">
             <h1><b><span class="fbw-b-text">A32</span><span class="fbw-db-text">N</span>X</b></h1>
