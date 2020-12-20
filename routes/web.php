@@ -22,3 +22,9 @@ Route::get('/', [App\Http\Controllers\Site\SiteController::class, 'index'])->nam
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/changelog', [App\Http\Controllers\Site\SiteController::class, 'changelog'])->name('site.changelog');
+
+Route::get('/groundschool', [App\Http\Controllers\Site\SiteController::class, 'groundschool'])->name('site.groundschool');
+
+Route::get('/resources', [App\Http\Controllers\Site\SiteController::class, 'resources'])->name('site.resources');
+
+Route::get('/documentation', [App\Http\Controllers\Site\SiteController::class, 'documentation'])->name('site.documentation');

@@ -14,4 +14,15 @@ class SiteController extends Controller
     public function changelog() {
         return view('site.changelog');
     }
+    public function groundschool() {
+        return view('site.groundschool');
+    }
+    public function resources()
+    {
+        return view('site.resources');
+    }
+    public function documentation()
+    {
+        return view('site.documentation');
+    }
 }
