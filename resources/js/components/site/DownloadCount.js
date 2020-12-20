@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react';
 
 function Downloads() {
     const [downloads, setDownloads] = useState();
+    const [postFix, setPostFix] = useState("");
 
     async function getDownloads() {
         try {
@@ -23,10 +24,9 @@ function Downloads() {
                 totalDownloads += num;
             });
 
-            console.log(totalDownloads);
-
             if (totalDownloads >= 1000) {
                 totalDownloads = Math.floor(totalDownloads / 1000);
+                setPostFix("K");
             }
 
             if (totalDownloads) {
@@ -45,7 +45,7 @@ function Downloads() {
 
     return (
         <div>
-            <h1>{downloads ? downloads : 'N/A'}</h1>
+            <h1>{downloads ? downloads + postFix : 'N/A'}</h1>
         </div>
     );
 }
