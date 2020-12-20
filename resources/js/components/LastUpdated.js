@@ -76,4 +76,8 @@ function LastUpdated() {
     );
 }
 
-ReactDOM.render(<LastUpdated/>, document.getElementById('last-updated'));
+const container = document.getElementById('last-updated');
+
+if (container) {
+    ReactDOM.render(<LastUpdated/>, container);
+}

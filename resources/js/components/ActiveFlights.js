@@ -17,7 +17,7 @@ function ActiveFlights() {
     }
 
     useEffect(() => {
-        const interval = setInterval(() => {}, 60000);
+        const interval = setInterval(() => getLiveFlights(), 60000);
         getLiveFlights();
         return () => {
             clearInterval(interval);
@@ -31,4 +31,8 @@ function ActiveFlights() {
     );
 }
 
-ReactDOM.render(<ActiveFlights />, document.getElementById('active-flights'));
+const container = document.getElementById('active-flights');
+
+if (container) {
+    ReactDOM.render(<ActiveFlights />, container);
+}

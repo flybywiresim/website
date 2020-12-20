@@ -9,4 +9,8 @@ function LiveMap() {
     );
 }
 
-ReactDOM.render(<LiveMap/>, document.getElementById('live-map'));
+const container = document.getElementById('live-map');
+
+if (container) {
+    ReactDOM.render(<LiveMap/>, container);
+}

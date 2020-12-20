@@ -130,6 +130,14 @@ main{
         height: 350px !important;
     }
     section#partners{
+        img#a320{
+            max-height: 65%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            position: absolute;
+            left: 40%;
+            opacity: 0.05;
+        }
         img{
             width: 100%;
             object-fit: contain;
