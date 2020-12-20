@@ -20,7 +20,7 @@
                         Features
                     </a>
                     <div class="dropdown-menu" aria-labelledby="FeaturesNavbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Oevrview</a>
+                        <a class="dropdown-item" href="#">Overview</a>
                         <a class="dropdown-item" href="{{ route('site.changelog') }}">Changelog</a>
                     </div>
                 </li>
