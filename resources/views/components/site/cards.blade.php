@@ -8,7 +8,7 @@
                     <hr/>
                     <p class="card-text">Before you take to the skies, consider visiting our ground school to
                         learn about the various systems included and how to fly the A32NX.</p>
-                    <button class="btn btn-outline-light" type="button">Read More <i
+                    <button onclick="window.location.href='{{route ('site.groundschool') }}'" class="btn btn-outline-light" type="button">Read More <i
                             class="fas fa-arrow-right"></i></button>
                 </div>
             </div>
