@@ -26,3 +26,5 @@ Route::get('/changelog', [App\Http\Controllers\Site\SiteController::class, 'chan
 Route::get('/groundschool', [App\Http\Controllers\Site\SiteController::class, 'groundschool'])->name('site.groundschool');
 
 Route::get('/resources', [App\Http\Controllers\Site\SiteController::class, 'resources'])->name('site.resources');
+
+Route::get('/documentation', [App\Http\Controllers\Site\SiteController::class, 'documentation'])->name('site.documentation');

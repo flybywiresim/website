@@ -21,4 +21,8 @@ class SiteController extends Controller
     {
         return view('site.resources');
     }
+    public function documentation()
+    {
+        return view('site.documentation');
+    }
 }
