@@ -6,12 +6,31 @@ function Downloads() {
 
     async function getDownloads() {
         try {
-            const request = await fetch('https://api.github.com/repos/flybywiresim/a32nx/downloads?per_page=1');
+            const request = await fetch('https://api.github.com/repos/flybywiresim/a32nx/releases');
+            console.log("requested");
+            const reqJson = await request.json();
 
-            const downloadsCount = request.headers.get('Link').match(/&page=(\d+)>; rel="last"/)['1'];
+            const downloads = [];
 
-            if (downloadsCount) {
-                setDownloads(downloadsCount);
+            reqJson.map(item => {
+                item.assets.map(download => {
+                    downloads.push(download.download_count);
+                });
+            });
+
+            let totalDownloads = 0;
+            downloads.map(num => {
+                totalDownloads += num;
+            });
+
+            console.log(totalDownloads);
+
+            if (totalDownloads >= 1000) {
+                totalDownloads = Math.floor(totalDownloads / 1000);
+            }
+
+            if (totalDownloads) {
+                setDownloads(totalDownloads);
             }
         } catch {}
     }
@@ -26,7 +45,7 @@ function Downloads() {
 
     return (
         <div>
-            <h1>{downloads ? downloads : '250000'}</h1>
+            <h1>{downloads ? downloads : 'N/A'}</h1>
         </div>
     );
 }
