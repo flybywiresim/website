@@ -12,11 +12,13 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://kit.fontawesome.com/e5c4c8aad6.js" crossorigin="anonymous"></script>
     <!-- Styles -->
     <link href="{{ asset('css/site.css') }}" rel="stylesheet">
 </head>
 <body>
 <div id="app">
+    <x-site.navigation />
     @yield('content')
 </div>
 </body>

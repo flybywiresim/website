@@ -13,7 +13,7 @@ RUN npm run prod \
     && rm -rf node_modules
 
 
-FROM php:7.3.0-apache
+FROM php:8.0.0-apache
 
 EXPOSE 80
 ENV APP_NAME="FlyByWire Simulations"

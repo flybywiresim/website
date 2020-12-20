@@ -12,11 +12,11 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 require('./Scroll');
+require('./components/site/LastUpdated');
 require('./components/Counter');
-require('./components/LiveMap');
-require('./components/LastUpdated');
+require('./components/site/DownloadCount');
+require('./components/site/Contributors');
+require('./components/site/Commits');
 require('./components/ActiveFlights');
+require('./components/LiveMap');
 require('./components/Changelog');
-require('./components/Commits');
-require('./components/Contributors');
-require('./components/DownloadCount');

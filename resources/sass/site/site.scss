@@ -2,18 +2,24 @@
 @import '../classes';
 @import '../app.scss';
 
+nav {
+    @media (max-width: 768px){
+        background-color: $dark;
+    }
+    font-size: large;
+    .dropdown:hover>.dropdown-menu{
+        display: block;
+    }
+}
+
+header,
+main {
+    color: $white;
+}
+
 header {
     height: 2em;
 
-    nav {
-        @media (max-width: 768px){
-            background-color: $dark;
-        }
-        font-size: large;
-        .dropdown:hover>.dropdown-menu{
-            display: block;
-        }
-    }
     div#overlay-text{
         position: relative;
         top: 20%;
@@ -26,7 +32,7 @@ header {
     }
 
     img#wave-header{
-        width: 100%;
+        width: 100vw;
         position: absolute;
         bottom: -2px;
         right: 0;
@@ -75,7 +81,7 @@ main{
             box-shadow: inset 0 0 20px 3px rgba($color: $fbw-dark, $alpha: 0.2);
         }
     }
-    section#features{
+    section#cards{
         .col{
             margin-bottom: 20px;
         }
@@ -105,7 +111,7 @@ main{
     }
     section#stats{
         img{
-            min-height: 30vh;
+            min-height: 35vh;
             height: 55%;
             width: 100%;
             position: absolute;

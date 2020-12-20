@@ -16,7 +16,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="FeaturesNavbarDropdownMenuLink" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Features
                     </a>
                     <div class="dropdown-menu" aria-labelledby="FeaturesNavbarDropdownMenuLink">
@@ -41,9 +41,13 @@
                         Developers
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" target="_blank" href="https://github.com/flybywiresim">Our GitHub</a>
-                        <a class="dropdown-item" target="_blank" href="https://github.com/flybywiresim/a32nx/blob/master/.github/Contributing.md">Getting Started</a> 
-                        <a class="dropdown-item" target="_blank" href="https://github.com/flybywiresim/a32nx/issues">Issues</a>
+                        <a class="dropdown-item" target="_blank" href="https://github.com/flybywiresim">Our
+                            GitHub</a>
+                        <a class="dropdown-item" target="_blank"
+                           href="https://github.com/flybywiresim/a32nx/blob/master/.github/Contributing.md">Getting
+                            Started</a>
+                        <a class="dropdown-item" target="_blank"
+                           href="https://github.com/flybywiresim/a32nx/issues">Issues</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -54,9 +58,12 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="">NOTAMS / BLOG</a>
                         <a class="dropdown-item" target="_blank" href="https://discord.gg/flybywire">Discord</a>
-                        <a class="dropdown-item" target="_blank" href="https://twitter.com/flybywiresim/">Twitter</a>
-                        <a class="dropdown-item" target="_blank" href="https://www.facebook.com/FlyByWireSimulations/">Facebook</a>
-                        <a class="dropdown-item" target="_blank" href="https://www.youtube.com/c/FlyByWireSimulations/">Youtube</a>
+                        <a class="dropdown-item" target="_blank"
+                           href="https://twitter.com/flybywiresim/">Twitter</a>
+                        <a class="dropdown-item" target="_blank"
+                           href="https://www.facebook.com/FlyByWireSimulations/">Facebook</a>
+                        <a class="dropdown-item" target="_blank"
+                           href="https://www.youtube.com/c/FlyByWireSimulations/">YouTube</a>
                         <a class="dropdown-item" target="_blank" href="https://www.twitch.tv/flybywiresimulations/">Twitch</a>
                     </div>
                 </li>

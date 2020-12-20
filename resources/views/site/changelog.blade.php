@@ -1,9 +1,6 @@
 @extends('layouts.site')
 
 @section('content')
-    <header>
-        @include('site.navigation')
-    </header>
     <main>
         <div class="container text-white p-5">
             <h2 class="mb-4">Changelog</h2>
