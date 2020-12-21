@@ -1,7 +1,7 @@
 @extends('layouts.site')
 
 @section('content')
-<div style="height: 100vh; background-image: linear-gradient(109.6deg,rgba(20,30,48, 0.7) 11.2%,rgba(36,59,85, 0.7) 91.1%), url('{{ asset('assets/ss/cruise1.jpg') }}');" class="position-fixed w-100"></div>
+<div style="height: 100vh; background-image: linear-gradient(109.6deg,rgba(20,30,48, 0.7) 11.2%,rgba(36,59,85, 0.7) 91.1%), url('{{ asset('assets/ss/takeoff1.jpg') }}');" class="position-fixed w-100"></div>
 <header style="height:45vh">
     <div id="overlay-text" class="container">
         <h1><b><span class="fbw-b-text">FlyByWire</span></b></h1>
