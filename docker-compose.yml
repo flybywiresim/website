@@ -12,8 +12,32 @@ services:
       MYSQL_USER: '${DB_USERNAME}'
       MYSQL_PASSWORD: '${DB_PASSWORD}'
       MYSQL_ALLOW_EMPTY_PASSWORD: 'no'
+    networks:
+      - fbw-website
+
+  phpmyadmin:
+    image: 'phpmyadmin:latest'
+    container_name: phpmyadmin
+    depends_on:
+      - mysql
+    ports:
+      - 8080:80
+    environment:
+      PMA_USER: '${DB_USERNAME}'
+      PMA_PASSWORD: '${DB_PASSWORD}'
+      PMA_HOST: mysql
+      PMA_ARBITRARY: 1
+    networks:
+      - fbw-website
+
   redis:
     image: 'redis:6.0.9-alpine'
     container_name: redis
     ports:
       - 6379:6379
+    networks:
+      - fbw-website
+
+networks:
+  fbw-website:
+    driver: bridge
