@@ -1,3 +1,3 @@
 $(window).scroll(function() {
-    $('nav').toggleClass('scrolled', $(this).scrollTop() > 0);
+    $('nav').toggleClass('fbw-dark-bg', $(this).scrollTop() > 0);
 });

@@ -18,7 +18,7 @@
 </head>
 <body>
 <div id="app">
-    <x-site.navigation />
+    <x-site.navigation/>
     @yield('content')
 </div>
 </body>

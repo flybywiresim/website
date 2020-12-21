@@ -47,3 +47,19 @@ p,
 a{
   font-family: 'Aileron-Light', sans-serif;
 }
+
+div.cookie-consent{
+    position: fixed;
+    bottom: 0;
+    background-color: $dark;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 5px solid $fbw-db;
+    z-index: 2000;
+    span.cookie-consent__message{
+        padding: 0.5rem;
+        color: $fbw-light;
+        font-family: "Aileron-Regular", sans-serif;
+    }
+}
