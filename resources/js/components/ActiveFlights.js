@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom';
 import React, {useEffect, useState} from 'react';
+import CountTo from "react-count-to";
 
 function ActiveFlights() {
     const [liveFlights, setLiveFlights] = useState(null);
@@ -7,7 +8,6 @@ function ActiveFlights() {
     async function getLiveFlights() {
         try {
             const request = await fetch("https://api.flybywiresim.com/txcxn/_count");
-
             const flightCount = await request.text();
 
             if (flightCount) {
@@ -24,10 +24,10 @@ function ActiveFlights() {
         };
     })
 
+    const fn = value => <h1>{value}</h1>;
+
     return (
-        <div>
-            <h1>{liveFlights ? liveFlights : 'N/A'}</h1>
-        </div>
+        <CountTo to={Number(liveFlights)} speed={2000}>{fn}</CountTo>
     );
 }
 

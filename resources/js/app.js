@@ -13,7 +13,6 @@ require('./bootstrap');
  */
 require('./Scroll');
 require('./components/site/LastUpdated');
-require('./components/Counter');
 require('./components/site/DownloadCount');
 require('./components/site/Contributors');
 require('./components/site/Commits');

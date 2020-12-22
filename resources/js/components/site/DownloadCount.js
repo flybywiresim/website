@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom';
 import React, {useEffect, useState} from 'react';
+import CountTo from "react-count-to";
 
 function Downloads() {
     const [downloads, setDownloads] = useState();
@@ -8,7 +9,6 @@ function Downloads() {
     async function getDownloads() {
         try {
             const request = await fetch('https://api.github.com/repos/flybywiresim/a32nx/releases');
-            console.log("requested");
             const reqJson = await request.json();
 
             const downloads = [];
@@ -43,10 +43,9 @@ function Downloads() {
         };
     })
 
+    const fn = value => <h1>{value + postFix}</h1>;
     return (
-        <div>
-            <h1>{downloads ? downloads + postFix : 'N/A'}</h1>
-        </div>
+        <CountTo to={Number(downloads)} speed={2000}>{fn}</CountTo>
     );
 }
 

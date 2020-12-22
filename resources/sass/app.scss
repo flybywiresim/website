@@ -1,15 +1,18 @@
 @font-face {
     font-family: 'Aileron-Light';
     src: url('/fonts/aileron.thin.otf');
-  }
+}
+
 @font-face {
     font-family: 'Aileron-Regular';
     src: url('/fonts/aileron.regular.otf');
-  }
+}
+
 @font-face {
     font-family: 'Aileron-Heavy';
     src: url('/fonts/aileron.heavy.otf');
 }
+
 // Variables
 @import 'variables';
 @import 'colors';
@@ -27,8 +30,9 @@ h5,
 h6,
 a,
 p {
-  letter-spacing: 1.2px;
+    letter-spacing: 1.2px;
 }
+
 body {
     font-family: 'Aileron-Regular', sans-serif;
     overflow-x: hidden;
@@ -39,16 +43,30 @@ h2,
 h3,
 h4,
 h5,
-h6{
-  font-family: 'Aileron-Regular', sans-serif;
-  margin: 0;
-}
-p,
-a{
-  font-family: 'Aileron-Light', sans-serif;
+h6 {
+    font-family: 'Aileron-Regular', sans-serif;
+    margin: 0;
 }
 
-div.cookie-consent{
+p,
+a {
+    font-family: 'Aileron-Light', sans-serif;
+    margin: 0;
+}
+
+// Custom
+nav {
+    @media (max-width: 768px) {
+        background-color: $dark;
+    }
+    font-size: large;
+
+    .dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+}
+
+div.cookie-consent {
     position: fixed;
     bottom: 0;
     background-color: $dark;
@@ -57,7 +75,8 @@ div.cookie-consent{
     width: 100%;
     border-top: 5px solid $fbw-db;
     z-index: 2000;
-    span.cookie-consent__message{
+
+    span.cookie-consent__message {
         padding: 0.5rem;
         color: $fbw-light;
         font-family: "Aileron-Regular", sans-serif;

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Site\SiteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,18 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::routes([
-    'register' => false,
-]);
+Route::group(['middleware' => 'guest', 'namespace' => 'Site', 'as' => 'site.'], function(){
+    Route::get('/', [SiteController::class, 'index'])->name('index');
+    Route::get('changelog', [SiteController::class, 'changelog'])->name('changelog');
+    Route::get('groundschool', [SiteController::class, 'groundschool'])->name('groundschool');
+    Route::get('resources', [SiteController::class, 'resources'])->name('resources');
+    Route::get('documentation', [SiteController::class, 'documentation'])->name('documentation');
+});
 
-Route::get('/', [App\Http\Controllers\Site\SiteController::class, 'index'])->name('site.index');
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::get('/changelog', [App\Http\Controllers\Site\SiteController::class, 'changelog'])->name('site.changelog');
-
-Route::get('/groundschool', [App\Http\Controllers\Site\SiteController::class, 'groundschool'])->name('site.groundschool');
-
-Route::get('/resources', [App\Http\Controllers\Site\SiteController::class, 'resources'])->name('site.resources');
-
-Route::get('/documentation', [App\Http\Controllers\Site\SiteController::class, 'documentation'])->name('site.documentation');

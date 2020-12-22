@@ -20,6 +20,9 @@
 <div id="app">
     <x-site.navigation/>
     @yield('content')
+    @if( env('APP_DEBUG') != false)
+        <x-env-warning />.
+    @endif
 </div>
 </body>
 </html>

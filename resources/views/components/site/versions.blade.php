@@ -6,8 +6,8 @@
                 <p class="card-text">Install our latest experimental release where new features are included
                     to improve overall experience and test new features before release.</p>
                 <hr/>
-                <p class="card-subtitle"><b>Features in this version are experimental and are prone to
-                        stability issues.</b></p>
+                <p class="card-subtitle">Features in this version are experimental and are prone to
+                    stability issues.</p>
             </div>
             <div class="container p-3">
                 <button class="btn btn-outline-light rounded-pill" type="button">Learn More</button>

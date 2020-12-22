@@ -2,7 +2,7 @@
     <div class="container-md">
         <div class="navbar-brand">
             <a href="{{ route('site.index') }}">
-                <img src="{{ asset('assets/branding/svg/white/FBW-Logo-WHITE.svg') }}" alt="" width="160px">
+                <img src="{{ asset('assets/branding/svg/white/FBW-Logo-WHITE.svg') }}" alt="" width="160">
             </a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"

@@ -2,16 +2,6 @@
 @import '../classes';
 @import '../app.scss';
 
-nav {
-    @media (max-width: 768px){
-        background-color: $dark;
-    }
-    font-size: large;
-    .dropdown:hover>.dropdown-menu{
-        display: block;
-    }
-}
-
 header,
 main {
     color: $white;
@@ -25,9 +15,6 @@ header {
         top: 20%;
         h1{
             font-size: 4.5em;
-        }
-        p{
-            max-width: 50%;
         }
     }
 

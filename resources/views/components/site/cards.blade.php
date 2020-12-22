@@ -6,7 +6,7 @@
                 <div class="card-img-overlay h-100 text-center">
                     <h4 class="card-title p-2 mx-auto"><b>GROUND SCHOOL</b></h4>
                     <hr/>
-                    <p class="card-text">Before you take to the skies, consider visiting our ground school to
+                    <p class="card-text mb-3">Before you take to the skies, consider visiting our ground school to
                         learn about the various systems included and how to fly the A32NX.</p>
                     <button class="btn btn-outline-light" type="button">Read More <i
                             class="fas fa-arrow-right"></i></button>
@@ -19,7 +19,7 @@
                 <div class="card-img-overlay h-100 text-center">
                     <h4 class="card-title p-2 mx-auto"><b>ENHANCED FUNCTIONALITY</b></h4>
                     <hr/>
-                    <p class="card-text">Our team of volunteer developers are constantly working hard to
+                    <p class="card-text mb-3">Our team of volunteer developers are constantly working hard to
                         implement new features to make your simulator experience as close to reality as
                         possible.</p>
                     <button class="btn btn-outline-light" type="button">Read more <i
@@ -33,7 +33,7 @@
                 <div class="card-img-overlay h-100 text-center">
                     <h4 class="card-title p-2 mx-auto"><b>OTHER PROJECTS</b></h4>
                     <hr/>
-                    <p class="card-text">We have other projects under development! Why not learn more about what
+                    <p class="card-text mb-3">We have other projects under development! Why not learn more about what
                         is coming to your simulator in the near future.</p>
                     <button class="btn btn-outline-light" type="button">Read more <i
                             class="fas fa-arrow-right"></i></button>
@@ -48,7 +48,7 @@
                 <div class="card-img-overlay text-center">
                     <h4 class="card-title p-2 mx-auto"><b>3D MODELING</b></h4>
                     <hr/>
-                    <p class="card-text">Our volunteer design team are always working hard to make mockups and
+                    <p class="card-text mb-3">Our volunteer design team are always working hard to make mockups and
                         new features for the aircraft!</p>
                     <br/>
                     <button class="btn btn-outline-light" type="button">Read more <i
@@ -60,10 +60,9 @@
             <div class="card shadow-lg">
                 <img src="{{ asset('assets/ss/cruise2.png') }}" class="card-img" alt="...">
                 <div class="card-img-overlay text-center">
-                    <h4 class="card-title p-2 mx-auto"><b>LIVERY</b></h4>
+                    <h4 class="card-title p-2 mx-auto"><b>EVENTS</b></h4>
                     <hr/>
-                    <p class="card-text">Our volunteer design team are always working hard to make mockups and
-                        new features for the aircraft!</p>
+                    <p class="card-text mb-3">Take part in our regular events hosted by the community for the chance to meet new people and win prizes!</p>
                     <br/>
                     <button class="btn btn-outline-light" type="button">Read more <i
                             class="fas fa-arrow-right"></i></button>

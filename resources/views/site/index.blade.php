@@ -4,14 +4,15 @@
     <header style="height: 100vh">
         <div id="overlay-text" class="container">
             <h1><b><span class="fbw-b-text">A32</span><span class="fbw-db-text">N</span>X</b></h1>
-            <p>A <span class="fbw-b-text">community</span> built and maintained project aiming to provide study-level
+            <p class="w-50 mb-3">A <span class="fbw-b-text">community</span> built and maintained project aiming to provide
+                study-level
                 aircraft for Microsoft Flight Simulator.</p>
             <button type="button" class="btn rounded-pill btn-lg btn-primary px-4">Download</button>
             <button type="button" class="btn rounded-pill btn-lg btn-outline-light px-4">NOTAMS</button>
         </div>
 
         <div>
-            <img id="wave-header" src="{{ asset('assets/branding/svg/FBW-Web-Header.svg')}}" alt="">
+            <img id="wave-header" src="{{ asset('assets/branding/svg/FBW-Web-Header.svg')}}" alt="" draggable="false">
             <span id="overlay"></span>
             <video src="https://flybywiresim-packages.nyc3.cdn.digitaloceanspaces.com/assets/website/A32NX.mp4" autoplay
                    playsinline
@@ -62,8 +63,7 @@
 
         {{-- ### LIVE MAP ### --}}
         <div id="live-map"></div>
-        {{-- ### END LIVE MAP ### --}}
-
+        {{-- ### END LIVE MAP ### --}
         {{-- ### START: PARTNERS --}}
         {{-- todo: fix logo sizing & place a32nx svg in background --}}
         <section id="partners" class="fbw-darker-bg ">

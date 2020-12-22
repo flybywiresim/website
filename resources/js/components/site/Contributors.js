@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom';
 import React, {useEffect, useState} from 'react';
+import CountTo from "react-count-to/dist/react-count-to";
 
 function Contributors() {
     const [contributors, setContributors] = useState();
@@ -7,7 +8,6 @@ function Contributors() {
     async function getContributors() {
         try {
             const request = await fetch('https://api.github.com/repos/flybywiresim/a32nx/contributors?per_page=1');
-
             const contributorsCount = request.headers.get('Link').match(/&page=(\d+)>; rel="last"/)['1'];
 
             if (contributorsCount) {
@@ -24,10 +24,9 @@ function Contributors() {
         };
     })
 
+    const fn = value => <h1>{value}</h1>;
     return (
-        <div>
-            <h1>{contributors ? contributors : 'N/A'}</h1>
-        </div>
+        <CountTo to={Number(contributors)} speed={2000}>{fn}</CountTo>
     );
 }
 

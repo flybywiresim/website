@@ -9,8 +9,5 @@
         <button class="js-cookie-consent-agree cookie-consent__agree btn btn-primary px-4">
             {{ trans('cookieConsent::texts.agree') }}
         </button>
-        <button class="btn btn-danger px-4 mx-2" onClick="history.go(-1);">
-            Refuse cookies
-        </button>
     </div>
 </div>
