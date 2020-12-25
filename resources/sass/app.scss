@@ -20,6 +20,10 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+// TailwindCSS
+@import '~tailwindcss/base';
+@import '~tailwindcss/components';
+@import '~tailwindcss/utilities';
 
 // Bootstrap Overrides
 h1,

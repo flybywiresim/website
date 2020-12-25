@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class env-warning extends Component
+class navigation extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class env-warning extends Component
      */
     public function render()
     {
-        return view('components.env-warning');
+        return view('components.navigation');
     }
 }

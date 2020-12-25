@@ -22,3 +22,4 @@ Route::group(['middleware' => 'guest', 'namespace' => 'Site', 'as' => 'site.'], 
     Route::get('documentation', [SiteController::class, 'documentation'])->name('documentation');
 });
 
+require __DIR__.'/auth.php';

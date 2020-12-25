@@ -1,11 +1,12 @@
 <?php
 
-namespace App\View\Components\site;
+namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class partners extends Component
+class EnvWarning extends Component
 {
+    public string $env;
     /**
      * Create a new component instance.
      *
@@ -13,7 +14,11 @@ class partners extends Component
      */
     public function __construct()
     {
-        //
+        $this->env = $env = config('app.env');
+
+        if($env != 'production'){
+            $this->env = 'NON-PRODUCTION';
+        }
     }
 
     /**
@@ -23,6 +28,6 @@ class partners extends Component
      */
     public function render()
     {
-        return view('components.site.partners');
+        return view('components.env-warning');
     }
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\View\Components\site;
+namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class navigation extends Component
+class SiteLayout extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class navigation extends Component
      */
     public function render()
     {
-        return view('components.site.navigation');
+        return view('layouts.site');
     }
 }

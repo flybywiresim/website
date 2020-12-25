@@ -1,10 +1,10 @@
 <?php
 
-namespace App\View\Components\site;
+namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class versions extends Component
+class button extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class versions extends Component
      */
     public function render()
     {
-        return view('components.site.versions');
+        return view('components.button');
     }
 }

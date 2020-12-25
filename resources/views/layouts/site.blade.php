@@ -18,10 +18,11 @@
 </head>
 <body>
 <div id="app">
-    <x-site.navigation/>
-    @yield('content')
+    <x-navigation />
+    {{ $slot }}
+
     @if( env('APP_DEBUG') != false)
-        <x-env-warning />.
+        <x-env-warning />
     @endif
 </div>
 </body>
