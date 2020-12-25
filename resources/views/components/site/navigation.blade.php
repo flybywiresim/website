@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+-<nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container-md">
         <div class="navbar-brand">
             <a href="{{ route('site.index') }}">
