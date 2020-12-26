@@ -30,9 +30,9 @@
                         Pilots
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Ground School</a>
-                        <a class="dropdown-item" href="#">Documentation</a>
-                        <a class="dropdown-item" href="#">Resources</a>
+                        <a class="dropdown-item" href="{{ route('site.groundschool') }}">Ground School</a>
+                        <a class="dropdown-item" href="{{ route('site.documentation') }}">Documentation</a>
+                        <a class="dropdown-item" href="{{ route('site.resources') }}">Resources</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
