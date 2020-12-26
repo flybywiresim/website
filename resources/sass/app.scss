@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Aileron-Light';
-    src: url('/fonts/aileron.thin.otf');
+    src: url("/fonts/aileron.thin.otf");
 }
 
 @font-face {
@@ -38,6 +38,7 @@ p {
 }
 
 body {
+    color: $white;
     font-family: 'Aileron-Regular', sans-serif;
     overflow-x: hidden;
 }

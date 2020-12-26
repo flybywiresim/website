@@ -6,14 +6,21 @@ use Illuminate\View\Component;
 
 class Partner extends Component
 {
+    public $url;
+    public $img;
+    public $imgAlt;
     /**
      * Create a new component instance.
-     *
+     * @param string url
+     * @param string img
+     * @param string imgAlt
      * @return void
      */
-    public function __construct()
+    public function __construct($url=null, $img=null, $imgAlt=null)
     {
-        //
+        $this->url = $url;
+        $this->img = $img;
+        $this->imgAlt = $imgAlt;
     }
 
     /**
