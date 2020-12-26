@@ -152,10 +152,7 @@
                 <div class="pb-5">
                     <h1><b>Partners</b></h1>
                     <hr/>
-
-                    <div class="row row-cols-1 row-cols-md-3 d-flex mx-auto">
-                        <x-site.partner />
-                    </div>
+                    <x-site.partner />
                 </div>
             </div>
         </section>

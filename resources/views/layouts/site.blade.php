@@ -20,7 +20,6 @@
 <div id="app">
     <x-navigation />
     {{ $slot }}
-
     @if( env('APP_DEBUG') != false)
         <x-env-warning />
     @endif

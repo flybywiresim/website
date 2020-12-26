@@ -1,5 +1,3 @@
-@extends('layouts.site')
+<x-site-layout>
 
-@section('content')
-
-@endsection
+</x-site-layout>
