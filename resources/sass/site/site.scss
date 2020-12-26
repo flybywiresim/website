@@ -69,6 +69,16 @@ main{
         }
     }
     section#cards{
+        .opacity-full-card-db
+        {
+            div {
+                background-color: #1c283d;
+                border-radius: 20px;
+                img {
+                    opacity: 1;
+                }
+            }
+        }
         .col{
             margin-bottom: 20px;
         }
