@@ -149,30 +149,28 @@
         {{-- todo: fix logo sizing & place a32nx svg in background --}}
         <section id="partners" class="fbw-darker-bg ">
             <div class="container text-center p-5">
-                <div class="pb-5">
-                    <h1><b>Partners</b></h1>
-                    <hr/>
-                    <div class="row row-cols-1 row-cols-md-3 d-flex mx-auto">
-                        <x-site.partner url="https://fsnews.eu"
-                                        img="{{ asset('assets/partners/fsnews.png') }}"
-                                        imgAlt="FSNews">
-                        </x-site.partner>
-                        <x-site.partner class="col-md-2 mx-auto"
-                                        url="https://sim4flight.com"
-                                        img="{{ asset('assets/partners/sim4flight.png') }}"
-                                        imgAlt="sim4flight">
-                        </x-site.partner>
-                        <x-site.partner url="https://flightsim.to"
-                                        img="{{ asset('assets/partners/flightsimto.png') }}"
-                                        imgAlt="FSNews">
-                        </x-site.partner>
-                    </div>
-                    <div class="col-12 col-md-8 mx-auto">
-                        <x-site.partner url="https://github.com/Sequal32/yourcontrols/blob/master/Readme.md"
-                                        img="{{ asset('assets/partners/yourcontrols.png') }}"
-                                        imgAlt="Your Controls">
-                        </x-site.partner>
-                    </div>
+                <h1><b>Partners</b></h1>
+                <hr/>
+                <div class="row row-cols-1 row-cols-md-3 d-flex mx-auto mt-3">
+                    <x-site.partner url="https://fsnews.eu"
+                                    img="{{ asset('assets/partners/fsnews.png') }}"
+                                    imgAlt="FSNews">
+                    </x-site.partner>
+                    <x-site.partner class="col-md-2 mx-auto"
+                                    url="https://sim4flight.com"
+                                    img="{{ asset('assets/partners/sim4flight.png') }}"
+                                    imgAlt="sim4flight">
+                    </x-site.partner>
+                    <x-site.partner url="https://flightsim.to"
+                                    img="{{ asset('assets/partners/flightsimto.png') }}"
+                                    imgAlt="FSNews">
+                    </x-site.partner>
+                </div>
+                <div class="col-12 col-md-8 mx-auto">
+                    <x-site.partner url="https://github.com/Sequal32/yourcontrols/blob/master/Readme.md"
+                                    img="{{ asset('assets/partners/yourcontrols.png') }}"
+                                    imgAlt="Your Controls">
+                    </x-site.partner>
                 </div>
             </div>
         </section>
