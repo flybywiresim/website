@@ -2,6 +2,45 @@
     "title": "A32NX CHANGELOG",
     "list": [
         {
+            "version": "0.5.2",
+            "date": "2021-01-09",
+            "fixes": [
+                "[CDU] Changing CRZ/DES speed to acknowledge any speed restriction - @Watsi01 (RogePete)",
+                "[CDU] Two tiny fixes for flightphase speeds - @Watsi01 (RogePete)",
+                "[CDU] Fixed altitude button setting the speed on ATC request - @brookemckim (brookemckim)",
+                "[CDU] Error messages now print for invalid trip wind delims - @Lucky38i (Lucky38i)",
+                "[ND] Flight route now hidden in VOR ROSE and ILS ROSE modes - @2hwk (2Cas#1022)",
+                "[MISC] Fixed F/O displays being synced with the captain's displays - @tyler58546 (tyler58546)",
+                "[FUEL] Fixed outer tank fuel transfer - @donstim - (donbikes#4084)",
+                "[FLIGHTMODEL] Fixed spoiler auto-retract after landing - @donstim (donbikes#4084)",
+                "[FLIGHTMODEL] Fixed for flaps 1 unrecoverable dives - @donstim (donbikes#4084)",
+                "[API] Fixed connection issues when using default ATC and SimBrief - @nistei (nistei#1362)",
+                "[CHECKLISTS] Fixed typo in Descent preparation checklist - @ronson1909 (Ronson1909)",
+                "[TCAS] Fixed TCAS traffic mode switch not turning - @Saschl (saschl#9432)",
+                "[DISPLAYS] Fixed background on DCDU and SAI to match other displays - @nathaninnes (Nathan Innes)",
+                "[ECAM] Added missing unit conversion to cruise and engine page - @MisterChocker (Leon)",
+                "[ECAM/CORE] Improved flap auto-retraction detection - @MisterChocker (Leon)",
+                "[TEXTURE] Fixed overlapping text on the chronometer - @DarkOfNova (DarkOfNova)"
+            ]
+        },
+        {
+            "version": "0.5.1",
+            "date": "2020-12-23",
+            "fixes": [
+                "[CDU] Allow SimBrief user IDs as well as usernames - @pareil6 (pareil6)",
+                "[CDU] Allow SimBrief OFP to override previous flight plan (allows multiple turnarounds) - @pareil6 (pareil6)",
+                "[CDU] Fix incorrect block time display on INIT/REVIEW - @pareil6 (pareil6)",
+                "[CDU] Improve visuals of CDU Pages - @MisterChocker (Leon)",
+                "[CDU] Improve ascent constraint algorithm - @MisterChocker (Leon)",
+                "[CDU] Fix FPLN airways showing as undefined - @pareil6 - (pareil6)",
+                "[FUEL] Fix fuel system valve/pump indices - @Benjozork (Benjamin Dupont)",
+                "[ECAM] Improve PACKS indication - @MisterChocker (Leon)",
+                "[ECAM] Fix flap indicator - @lukecologne (luke)",
+                "[AUTOBRAKES] Fix max autobrake disengaging on the ground - @pareil6 (pareil6)",
+                "[MODEL] Incorporate new Asobo model changes - @pepperoni505 (pepperoni505)"
+            ]
+        },
+        {
             "version": "0.5.0",
             "date": "2020-12-18",
             "features": [
