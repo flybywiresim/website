@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
 import {NavBar} from "./components/app/NavBar";
-import {AppHeader} from "./components/app/AppHeader";
+import {Header} from "./components/app/Header";
+import {Features} from "./components/app/Features";
 
 function App() {
   return (
       <div className="App">
           <NavBar />
-          <AppHeader />
+          <Header />
+          <Features />
       </div>
   );
 }

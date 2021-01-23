@@ -4,7 +4,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const c = {
     container: 'flex flex-col',
-    item: 'text-lg px-3'
+    item: 'text-lg px-3 active:text-blue-light hover:text-gray-200 hover:underline'
 }
 
 const links = [
