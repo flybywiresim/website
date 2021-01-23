@@ -30,13 +30,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "eject": "react-scripts eject",
+    "lint":  "eslint src/**"
   },
   "browserslist": {
     "production": [
@@ -51,6 +46,10 @@
     ]
   },
   "devDependencies": {
-    "@types/react-typing-animation": "^1.6.2"
+    "@types/react-typing-animation": "^1.6.2",
+    "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "@typescript-eslint/parser": "^4.14.0",
+    "eslint": "^7.18.0",
+    "eslint-plugin-react": "^7.22.0"
   }
 }
