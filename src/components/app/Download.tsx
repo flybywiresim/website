@@ -4,7 +4,7 @@ import { Button } from '../Button';
 export function Download(): JSX.Element {
     return (
         <>
-            <div className="w-3/4 m-auto px-10 py-10">
+            <div className="w-full lg:w-11/12 2xl:w-5/6 m-auto px-5 md:px-10 py-10">
                 <div className="flex flex-col lg:flex-row">
                     <div className="w-full lg:w-3/5 lg:pr-10">
                         <h1 className="text-4xl font-medium text-left pb-7">Download</h1>
@@ -30,7 +30,7 @@ export function Download(): JSX.Element {
                                     <Button className="w-40 float-right bg-blue-700 font-bold">Download</Button>
                                 </div>
                                 <div className="flex flex-row justify-between items-center mb-5 pt-5">
-                                    <span className="text-xl text-gray-300">Experimental flight controls build</span>
+                                    <span className="text-xl text-gray-300">Custom fly-by-wire build</span>
                                     <Button className="w-40 float-right bg-blue-700 font-bold">Download</Button>
                                 </div>
                             </div>
