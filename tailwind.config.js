@@ -21,6 +21,9 @@ module.exports = {
           dark: '#1B2434',
           darker: '#141E30'
         },
+      },
+      boxShadow: {
+        '2xl-light': '0 0 50px -20px rgba(255, 255, 255, 0.15)'
       }
     },
   },
