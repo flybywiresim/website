@@ -13,7 +13,7 @@ const c = {
 export function Header() {
     return (
         <header className="AppHeader bg-blue-dark h-screen">
-            <Container className="absolute max-w-6xl inset-x-2 inset-y-1/3 z-25">
+            <Container className="absolute max-w-6xl inset-x-2 inset-y-1/3 z-50">
                 <h1 className="text-7xl sm:text-8xl font-medium pb-3">
                     <span className={c.emphLB}>A32</span><span className={c.emphB}>N</span>X
                 </h1>
