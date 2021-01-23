@@ -1,0 +1,15 @@
+image:
+  repository: flybywiresim/website
+  tag: latest
+  pullPolicy: Always
+
+replicas: 1
+
+service:
+  port: 80
+
+ingress:
+  fqdn: ~
+  tls:
+    enabled: false
+    issuer: ~
