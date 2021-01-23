@@ -1,8 +1,8 @@
-import React from "react";
-import {Body, Card, Title} from "./Card";
-import {Container} from "../Container";
+import React from 'react';
+import { Body, Card, Title } from './Card';
+import { Container } from '../Container';
 
-export function Features() {
+export function Features(): JSX.Element {
     return(
         <div>
             <div className="py-10">

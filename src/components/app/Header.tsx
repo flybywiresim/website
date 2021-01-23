@@ -1,16 +1,15 @@
-import React from "react";
-// @ts-ignore
-import video from "../../assets/video/A32NX.mp4";
-import {Button} from "../Button";
-import {Container} from "../Container";
+import React from 'react';
+import video from '../../assets/video/A32NX.mp4';
+import { Button } from '../Button';
+import { Container } from '../Container';
 import A320 from '../../assets/svg/a32nx_nose.svg';
 
 const c = {
     emphLB: 'text-blue-light',
     emphB: 'text-blue',
-}
+};
 
-export function Header() {
+export function Header(): JSX.Element {
     return (
         <header className="AppHeader bg-blue-dark h-screen">
             <Container className="absolute max-w-6xl inset-x-2 inset-y-1/3 z-30">
@@ -28,7 +27,7 @@ export function Header() {
             <img className="hidden md:block absolute items-center h-screen left-1/2 opacity-50" src={A320} alt="" draggable="false" />
 
             <video className="absolute top-0 h-screen object-cover w-screen opacity-10" src={video} playsInline autoPlay
-                   muted loop/>
+                muted loop/>
         </header>
     );
 }

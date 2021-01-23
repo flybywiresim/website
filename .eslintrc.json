@@ -44,6 +44,9 @@
         "no-unused-vars": [
             "error"
         ],
+        "@typescript-eslint/no-explicit-any": [
+            "off"
+        ],
         "eol-last": [
             "error",
             "always"
