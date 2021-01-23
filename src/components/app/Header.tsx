@@ -19,8 +19,8 @@ export function Header(): JSX.Element {
                 <p className="text-lg max-w-lg">A <span className={c.emphLB}>community</span> built and maintained project aiming to provide study-level aircraft for Microsoft Flight
                     Simulator.</p>
                 <div className="flex max-w-md py-5">
-                    <Button name="Download" className="bg-blue-light transition hover:bg-white hover:text-blue-light mr-2 font-medium text-xl"/>
-                    <Button name="NOTAMS" className="border-2 transition hover:bg-white hover:text-blue-dark font-medium"/>
+                    <Button className="w-40 bg-blue-light transition hover:bg-white hover:text-blue-light mr-2 font-medium text-xl">Download</Button>
+                    <Button className="w-40 border-2 transition hover:bg-white hover:text-blue-dark font-medium">NOTAMS</Button>
                 </div>
             </Container>
 

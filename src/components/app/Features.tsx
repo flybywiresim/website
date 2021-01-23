@@ -6,7 +6,7 @@ export function Features(): JSX.Element {
     return(
         <div>
             <div className="py-10">
-                <h1 className="text-5xl font-medium text-center">Features</h1>
+                <h1 className="text-4xl font-medium text-center">Features</h1>
             </div>
 
             <Container className="flex flex-wrap lg:flex-row items-stretch justify-center">
