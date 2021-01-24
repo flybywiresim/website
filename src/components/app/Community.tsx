@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Map from '@flybywiresim/map';
+// import Map from '@flybywiresim/map';
 import CountTo from 'react-count-to';
 import { Container } from '../Container';
 
@@ -117,7 +117,7 @@ export function Community(): JSX.Element {
     return (
         <div>
             <Container>
-                <div className="w-full 2xl:w-4/6 m-auto px-5 md:px-10 py-10 lg:py-16">
+                <div className="w-full 2xl:w-4/6 m-auto px-5 py-10 lg:py-16">
                     <h1 className="text-4xl font-medium lg:pb-16">Community Insight</h1>
 
                     <div className="w-full lg:w-11/12 2xl:w-4/6 mx-auto flex flex-col lg:flex-row lg:justify-center divide-y lg:divide-x lg:divide-y-0 divide-gray-500">
@@ -130,7 +130,7 @@ export function Community(): JSX.Element {
             </Container>
 
             <div className="h-144">
-                <Map disableMenu={true} disableWeather={true} disableScroll={true} />
+                {/*<Map disableMenu={true} disableWeather={true} disableScroll={true} />*/}
             </div>
         </div>
     );
