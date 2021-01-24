@@ -1,6 +1,6 @@
 import React from 'react';
 
-const c = { btn: 'focus:outline-none inline-flex justify-center rounded-full py-3 text-lg' };
+const c = { btn: 'focus:outline-none inline-flex justify-center rounded-full py-3 text-lg shadow-md-dark' };
 
 type ButtonProps = Partial<{ className: string, children: any }>;
 
