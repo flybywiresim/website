@@ -12,7 +12,7 @@ export function Features(): JSX.Element {
             <Container className="flex flex-wrap lg:flex-row items-stretch justify-center">
                 <Card className="bg-blue-dark shadow-2xl">
                     <Title className="text-blue-light">Systems Depth</Title>
-                    <Body>Unparalled systems depth on Microsoft Flight Simulator - ATSU/AOC, maintenance MCDU pages, fully featured ECAM pages</Body>
+                    <Body>Unparalleled systems depth on Microsoft Flight Simulator - ATSU&#8288;/&#8288;AOC, upcoming custom fly&#8288;-&#8288;by&#8288;-&#8288;wire, electrical and hydraulic systems</Body>
                 </Card>
                 <Card className="bg-blue-dark shadow-2xl">
                     <Title className="text-blue-light">Graphical and Audio Fidelity</Title>

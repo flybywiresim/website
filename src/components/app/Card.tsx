@@ -19,7 +19,7 @@ export function Title(props: {children?: any, className?: string}): JSX.Element 
     );
 }
 
-export function Body(props: {children?: string, className?: string}): JSX.Element {
+export function Body(props: {children?: any, className?: string}): JSX.Element {
     return(
         <div className="divide-y divide-white">
             <div className={`${props.className} text-center pt-6 text-base leading-6 sm:text-lg sm:leading-7`}>
