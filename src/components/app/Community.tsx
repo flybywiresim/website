@@ -78,7 +78,7 @@ function DownloadCountStatistic(): JSX.Element {
                 fetch(CDN_DOWNLOAD_COUNT_ENDPOINT).then(res => res.text().then(cdnDownloadCount => {
                     let totalDownloads = downloads.reduce((a, b) => a + b);
 
-                    if (cdnDownloadCount && !isNaN(cdnDownloadCount as unknown as number)) {
+                    if (cdnDownloadCount) {
                         totalDownloads += Number(cdnDownloadCount);
                     }
 

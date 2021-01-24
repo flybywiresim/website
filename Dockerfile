@@ -1,4 +1,4 @@
-FROM node:current-alpine3.10 as builder
+FROM timbru31/node-alpine-git:14 as builder
 
 WORKDIR /app
 ENV NODE_ENV=development
