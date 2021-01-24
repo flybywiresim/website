@@ -14,7 +14,7 @@ module.exports = {
                 }
             },
             animation: {
-                wiggle: 'wiggle 15s ease-in-out infinite'
+                wiggle: 'wiggle 15s ease-in-out infinite',
             },
             backgroundColor: ['active'],
             textColor: ['active'],

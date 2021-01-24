@@ -1,23 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import Map from '@flybywiresim/map';
+import CountTo from 'react-count-to';
+import { Container } from '../Container';
 
-const PLANES_FLYING_ENDPOINT = 'https://api.flybywiresim.com/txcxn/_count';
+const LIVE_FLIGHTS_ENDPOINT = 'https://api.flybywiresim.com/txcxn/_count';
 const COMMIT_COUNT_ENDPOINT = 'https://api.github.com/repos/flybywiresim/a32nx/commits?per_page=1';
 const CONTRIBUTOR_COUNT_ENDPOINT = 'https://api.github.com/repos/flybywiresim/a32nx/contributors?per_page=1';
 const GITHUB_DOWNLOAD_COUNT_ENDPOINT = 'https://api.github.com/repos/flybywiresim/a32nx/releases';
 const CDN_DOWNLOAD_COUNT_ENDPOINT = 'https://api.flybywiresim.com/api/v1/download/_count';
 
-function PlanesFlyingStat(): JSX.Element {
-    const [planesFlying, setPlanesFlying] = useState('0');
+function LiveFlightsStat(): JSX.Element {
+    const [liveFlights, setLiveFlights] = useState('0');
 
     useEffect(() => {
-        fetch(PLANES_FLYING_ENDPOINT).then(res => res.text().then(flights => setPlanesFlying(flights)));
+        fetch(LIVE_FLIGHTS_ENDPOINT).then(res => res.text().then(flights => setLiveFlights(flights)));
     }, []);
+
+    const fn = (value: number) => <h1 className="text-6xl font-bold text-blue-light mb-3">{value}</h1>;
 
     return (
         <div className="py-12 lg:py-0 lg:px-32 text-center">
-            <h1 className="text-6xl font-bold text-blue-light mb-3">{planesFlying}</h1>
-            <span className="text-xl">Planes flying</span>
+            <CountTo to={Number(liveFlights)} speed={3000}>{fn}</CountTo>
+            <span className="text-xl">Live Flights</span>
         </div>
     );
 }
@@ -33,9 +37,11 @@ function CommitCountStatistic(): JSX.Element {
         });
     }, []);
 
+    const fn = (value: number) => <h1 className="text-6xl font-bold text-blue-light mb-3">{value}</h1>;
+
     return (
         <div className="py-12 lg:py-0 lg:px-32 text-center">
-            <h1 className="text-6xl font-bold text-blue-light mb-3">{commitCount}</h1>
+            <CountTo to={Number(commitCount)} speed={3000}>{fn}</CountTo>
             <span className="text-xl">Commits</span>
         </div>
     );
@@ -52,9 +58,11 @@ function ContributorCountStatistic(): JSX.Element {
         });
     }, []);
 
+    const fn = (value: number) => <h1 className="text-6xl font-bold text-blue-light mb-3">{value}</h1>;
+
     return (
         <div className="py-12 lg:py-0 lg:px-32 text-center">
-            <h1 className="text-6xl font-bold text-blue-light mb-3">{contributorCount}</h1>
+            <CountTo to={Number(contributorCount)} speed={3000}>{fn}</CountTo>
             <span className="text-xl">Contributors</span>
         </div>
     );
@@ -95,9 +103,11 @@ function DownloadCountStatistic(): JSX.Element {
         });
     }, []);
 
+    const fn = (value: number) => <h1 className="text-6xl font-bold text-blue-light mb-3">{value}{postfix}</h1>;
+
     return (
         <div className="py-12 lg:py-0 lg:px-32 text-center">
-            <h1 className="text-6xl font-bold text-blue-light mb-3">{downloadCount}{postfix}</h1>
+            <CountTo to={Number(downloadCount)} speed={3000}>{fn}</CountTo>
             <span className="text-xl">Downloads</span>
         </div>
     );
@@ -106,16 +116,18 @@ function DownloadCountStatistic(): JSX.Element {
 export function Community(): JSX.Element {
     return (
         <div>
-            <div className="w-full lg:w-11/12 2xl:w-4/6 m-auto px-5 md:px-10 py-10 lg:py-16">
-                <h1 className="text-4xl font-medium lg:pb-16">Community</h1>
+            <Container>
+                <div className="w-full 2xl:w-4/6 m-auto px-5 md:px-10 py-10 lg:py-16">
+                    <h1 className="text-4xl font-medium lg:pb-16">Community Insight</h1>
 
-                <div className="w-full flex flex-col lg:flex-row lg:justify-center divide-y lg:divide-x lg:divide-y-0 divide-gray-500">
-                    <PlanesFlyingStat />
-                    <CommitCountStatistic />
-                    <ContributorCountStatistic />
-                    <DownloadCountStatistic />
+                    <div className="w-full lg:w-11/12 2xl:w-4/6 mx-auto flex flex-col lg:flex-row lg:justify-center divide-y lg:divide-x lg:divide-y-0 divide-gray-500">
+                        <LiveFlightsStat />
+                        <CommitCountStatistic />
+                        <ContributorCountStatistic />
+                        <DownloadCountStatistic />
+                    </div>
                 </div>
-            </div>
+            </Container>
 
             <div className="h-144">
                 <Map disableMenu={true} disableWeather={true} disableScroll={true} />

@@ -2,10 +2,12 @@ import React from 'react';
 
 export function Card(props: {children?: any, className?: string, imgSrc?: string}): JSX.Element {
     return(
-        <div className={`${props.className || 'bg-white'} relative px-4 py-10 shadow-lg sm:rounded-2xl rounded-3xl sm:px-16 sm:py-5 max-w-lg mx-5 my-5 transition hover:bg-gray-900 transform hover:scale-105 hover:shadow-2xl-light `}>
+        <div className={`${props.className || 'bg-white'} relative shadow-lg sm:rounded-2xl rounded-3xl max-w-lg mx-5 my-5 transition hover:bg-gray-900 transform hover:scale-105 hover:shadow-2xl `}>
             <div className="max-w-md mx-auto">
-                <img src={props.imgSrc} alt=""/>
-                {props.children}
+                <img className="sm:rounded-t-2xl rounded-t-3xl" src={props.imgSrc} alt=""/>
+                <div className="px-3 py-8 sm:px-4 sm:py-5">
+                    {props.children}
+                </div>
             </div>
         </div>
     );
