@@ -3,6 +3,10 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
+            height: () => ({
+                '120': '30rem',
+                '144': '36rem'
+            }),
             keyframes: {
                 wiggle: {
                     '0%, 100%': { transform: 'rotate(-1deg)' },

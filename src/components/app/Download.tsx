@@ -12,7 +12,7 @@ export function Download(): JSX.Element {
 
     return (
         <>
-            <div className="w-full lg:w-11/12 2xl:w-5/6 m-auto px-5 md:px-10 py-10">
+            <div className="w-full lg:w-11/12 2xl:w-4/6 m-auto px-5 md:px-10 pt-10">
                 <div className="flex flex-col lg:flex-row">
                     <div className="w-full lg:w-3/5 lg:pr-10">
                         <h1 className="text-4xl font-medium text-left pb-7">Download</h1>
@@ -30,7 +30,7 @@ export function Download(): JSX.Element {
                                 <Button className="w-40 float-right bg-green-500 font-bold">Download</Button>
                             </a>
                         </div>
-                        <div className="py-5">
+                        <div className="pt-5">
                             <span className="text-2xl text-blue-100">Direct Download</span>
                             <p className="mt-4 mb-6">If you prefer a direct download, the following links are available.</p>
 

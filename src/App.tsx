@@ -4,6 +4,7 @@ import { NavBar } from './components/app/NavBar';
 import { Header } from './components/app/Header';
 import { Features } from './components/app/Features';
 import { Download } from './components/app/Download';
+import { Community } from './components/app/Community';
 
 function App(): JSX.Element {
     return (
@@ -12,6 +13,7 @@ function App(): JSX.Element {
             <Header />
             <Features />
             <Download />
+            <Community />
         </div>
     );
 }
