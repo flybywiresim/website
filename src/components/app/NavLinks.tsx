@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const c = {
     container: 'flex flex-col',
-    item: 'text-lg px-3 active:text-blue-light hover:text-gray-200 hover:underline'
+    item: 'text-lg px-3 active:text-blue-light hover:text-gray-200 hover:text-blue-light'
 };
 
 const links = [
@@ -28,7 +28,6 @@ const links = [
         name: 'Community',
         path: '#'
     },
-
 ];
 
 export function NavLinks(props: {className: string}): JSX.Element {

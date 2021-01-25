@@ -2,11 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Nunito Sans;
+  font-weight: 300;
+  src: url("assets/font/NunitoSans-Light.ttf")
+}
+
+@font-face {
+  font-family: Nunito Sans;
+  font-weight: 400;
+  src: url("assets/font/NunitoSans-Regular.ttf")
+}
+
+@font-face {
+  font-family: Nunito Sans;
+  font-weight: 500;
+  src: url("assets/font/NunitoSans-SemiBold.ttf")
+}
+
+@font-face {
+  font-family: Nunito Sans;
+  font-weight: 600;
+  src: url("assets/font/NunitoSans-Bold.ttf")
+}
+
 body {
   overflow-x: hidden;
   background: #141E30;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Nunito Sans', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;

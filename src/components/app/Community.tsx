@@ -16,7 +16,7 @@ function LiveFlightsStat(): JSX.Element {
         fetch(LIVE_FLIGHTS_ENDPOINT).then(res => res.text().then(flights => setLiveFlights(flights)));
     }, []);
 
-    const fn = (value: number) => <h1 className="text-6xl font-bold text-blue-light mb-3">{value}</h1>;
+    const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-light mb-3">{value}</h1>;
 
     return (
         <div className="py-12 lg:py-0 lg:px-32 text-center">
@@ -37,7 +37,7 @@ function CommitCountStatistic(): JSX.Element {
         });
     }, []);
 
-    const fn = (value: number) => <h1 className="text-6xl font-bold text-blue-light mb-3">{value}</h1>;
+    const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-light mb-3">{value}</h1>;
 
     return (
         <div className="py-12 lg:py-0 lg:px-32 text-center">
@@ -58,7 +58,7 @@ function ContributorCountStatistic(): JSX.Element {
         });
     }, []);
 
-    const fn = (value: number) => <h1 className="text-6xl font-bold text-blue-light mb-3">{value}</h1>;
+    const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-light mb-3">{value}</h1>;
 
     return (
         <div className="py-12 lg:py-0 lg:px-32 text-center">
@@ -103,7 +103,7 @@ function DownloadCountStatistic(): JSX.Element {
         });
     }, []);
 
-    const fn = (value: number) => <h1 className="text-6xl font-bold text-blue-light mb-3">{value}{postfix}</h1>;
+    const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-light mb-3">{value}{postfix}</h1>;
 
     return (
         <div className="py-12 lg:py-0 lg:px-32 text-center">

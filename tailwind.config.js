@@ -20,14 +20,17 @@ module.exports = {
             textColor: ['active'],
             colors: {
                 blue: {
-                    DEFAULT: '#6399AE',
-                    light: '#00C2CB',
-                    dark: '#1B2434',
-                    darker: '#141E30'
+                    'DEFAULT': '#6399AE',
+                    'light': '#00C2CB',
+                    'light-contrast': '#009da6',
+                    'medium': '#006166',
+                    'dark': '#1B2434',
+                    'darker': '#141E30'
                 },
             },
             boxShadow: {
                 'md-dark': '1px 1px 7px 1px rgba(0, 0, 0, 0.2)',
+                'md-dark-contrast': '1px 1px 7px 1px rgba(0, 0, 0, 0.35)',
                 'lg-dark': '1px 1px 10px 1px rgba(0, 0, 0, 0.15)',
                 '2xl-light': '0 0 50px -20px rgba(255, 255, 255, 0.15)'
             }
