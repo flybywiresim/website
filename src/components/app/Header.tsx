@@ -2,7 +2,6 @@ import React from 'react';
 import video from '../../assets/video/A32NX.mp4';
 import { Button } from '../Button';
 import { Container } from '../Container';
-import A320 from '../../assets/svg/a32nx_nose.svg';
 
 const c = {
     emphLB: 'text-blue-light',
@@ -13,7 +12,7 @@ export function Header(): JSX.Element {
     return (
         <header className="AppHeader bg-gray-900 h-screen">
             <Container className="absolute max-w-6xl inset-x-2 inset-y-1/3 z-30">
-                <h1 data-aos="fade-right" data-aos-delay="500" className="text-7xl sm:text-8xl font-light pb-3">
+                <h1 data-aos="fade-right" data-aos-delay="500" className="text-7xl sm:text-8xl font-medium pb-3">
                     <span className={c.emphLB}>A32</span><span className={c.emphB}>N</span>X
                 </h1>
                 <p data-aos="fade-up" className="text-lg max-w-lg">A community built and maintained project aiming to provide study-level aircraft for Microsoft Flight
@@ -23,8 +22,6 @@ export function Header(): JSX.Element {
                     <Button className="w-32 border-2 border-blue-light text-blue-light transition hover:bg-white hover:text-blue-dark font-medium">Manuals</Button>
                 </div>
             </Container>
-
-            <img data-aos="fade-left" data-aos-delay="200" className="hidden md:block absolute items-center h-screen left-1/2 opacity-20" src={A320} alt="" draggable="false" />
 
             <video className="absolute top-0 h-screen object-cover w-screen opacity-10" src={video} playsInline autoPlay
                 muted loop/>
