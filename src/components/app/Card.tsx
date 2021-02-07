@@ -1,32 +1,41 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
-export function Card(props: {children?: any, className?: string, imgSrc?: string}): JSX.Element {
+type Props = {
+    className?: string
+}
+type CardProps = {
+    icon?: IconProp
+}
+
+export const CardTitle: React.FC<Props> = (props) => {
     return(
-        <div className={`${props.className || 'bg-white'} relative shadow-lg sm:rounded-2xl rounded-3xl max-w-lg mx-5 my-5 transition hover:bg-gray-900 transform hover:scale-105 hover:shadow-2xl `}>
-            <div className="max-w-md mx-auto">
-                <img className="sm:rounded-t-2xl rounded-t-3xl" src={props.imgSrc} alt=""/>
-                <div className="px-3 py-8 sm:px-4 sm:py-5">
-                    {props.children}
-                </div>
+        <h3 className={`${props.className} 'mt-8 text-lg font-medium'`}>{props.children}</h3>
+    );
+};
+
+export const CardBody: React.FC<Props> = (props) => {
+    return(
+        <p className={`${props.className} 'mt-5 text-base'`}>
+            {props.children}
+        </p>
+    );
+};
+
+export const Card: React.FC<PropsWithChildren<CardProps>> = (props: PropsWithChildren<CardProps>): JSX.Element => (
+    <div className="pt-6">
+        <div
+            className="flow-root transform hover:scale-105 transition-transform duration-100 bg-gradient-to-b from-blue-dark to-transparent rounded-lg px-6 pb-8">
+            <div className="-mt-6">
+                <span
+                    className="inline-flex items-center justify-center p-3 bg-blue-light rounded-md shadow-lg">
+                    {props.icon && <FontAwesomeIcon icon={props.icon}/>}
+                </span>
+            </div>
+            <div className="mt-3">
+                {props.children}
             </div>
         </div>
-    );
-}
-
-export function Title(props: {children?: any, className?: string}): JSX.Element {
-    return(
-        <div className="py-3 text-base leading-6 space-y-4 sm:text-lg sm:leading-7">
-            <h1 className={`${props.className} text-3xl font-medium text-center`}>{props.children}</h1>
-        </div>
-    );
-}
-
-export function Body(props: {children?: any, className?: string}): JSX.Element {
-    return(
-        <div className="divide-y divide-white">
-            <div className={`${props.className} text-center pt-6 text-base leading-6 sm:text-lg sm:leading-7`}>
-                <p>{props.children}</p>
-            </div>
-        </div>
-    );
-}
+    </div>
+);

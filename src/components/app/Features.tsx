@@ -1,31 +1,55 @@
 import React from 'react';
-import { Body, Card, Title } from './Card';
-import { Container } from '../Container';
-import img from '../../assets/img/duck.jpg';
+import { CardBody, Card, CardTitle } from './Card';
+import bgImage from '../../assets/img/feature.png';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 export function Features(): JSX.Element {
     return(
         <>
-            <div className="py-10">
-                <h1 className="text-4xl font-medium text-center">Features</h1>
+            <div className="absolute w-screen object-cover">
+                <img src={bgImage} alt=""/>
             </div>
-
-            <Container>
-                <div data-aos="fade-up" data-aos-offset="100" className="flex flex-wrap lg:flex-row items-stretch justify-center">
-                    <Card className="bg-blue-dark shadow-2xl" imgSrc={img}>
-                        <Title className="text-blue-light">Systems Depth</Title>
-                        <Body>Unparalleled systems depth on Microsoft Flight Simulator - ATSU&#8288;/&#8288;AOC, upcoming custom fly&#8288;-&#8288;by&#8288;-&#8288;wire, electrical and hydraulic systems</Body>
-                    </Card>
-                    <Card className="bg-blue-dark shadow-2xl" imgSrc={img}>
-                        <Title className="text-blue-light">Graphical and Audio Fidelity</Title>
-                        <Body>Tirelessly perfected sounds and visuals - based on thousands of IRL references for the utmost accuracy</Body>
-                    </Card>
-                    <Card className="bg-blue-dark shadow-2xl" imgSrc={img}>
-                        <Title className="text-blue-light">Approved by Real Pilots</Title>
-                        <Body>Constantly tested and tried by dozens of IRL A320 pilots and engineers, both in the development team and in the flight simulation community</Body>
-                    </Card>
+            <div className="bg-blue-darker bg-opacity-95 relative py-16 sm:py-24 lg:py-16 shadow-inner ">
+                <div className="rounded-lg mx-auto max-w-md px-4 py-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+                    <div className="mx-auto divide-y divide-gray-500 w-1/4">
+                        <h2 className="text-base font-semibold tracking-wider text-blue-200 uppercase">Some of our many</h2>
+                        <p className="mt-2 pt-1 text-5xl font-extrabold text-blue-light">
+                        Features
+                        </p>
+                    </div>
+                    <p className="mt-5 max-w-prose mx-auto text-xl text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo maiores odio voluptate. Deleniti, quae repellat repellendus sit totam unde velit.
+                    </p>
+                    <div className="mt-12">
+                        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                            <Card icon={faCoffee}>
+                                <CardTitle>Hello world</CardTitle>
+                                <CardBody>Lorem ipsum.</CardBody>
+                            </Card>
+                            <Card icon={faCoffee}>
+                                <CardTitle>Hello world</CardTitle>
+                                <CardBody>Lorem ipsum.</CardBody>
+                            </Card>
+                            <Card icon={faCoffee}>
+                                <CardTitle>Hello world</CardTitle>
+                                <CardBody>Lorem ipsum.</CardBody>
+                            </Card>
+                            <Card icon={faCoffee}>
+                                <CardTitle>Hello world</CardTitle>
+                                <CardBody>Lorem ipsum.</CardBody>
+                            </Card>
+                            <Card icon={faCoffee}>
+                                <CardTitle>Hello world</CardTitle>
+                                <CardBody>Lorem ipsum.</CardBody>
+                            </Card>
+                            <Card icon={faCoffee}>
+                                <CardTitle>Hello world</CardTitle>
+                                <CardBody>Lorem ipsum.</CardBody>
+                            </Card>
+                        </div>
+                    </div>
                 </div>
-            </Container>
+            </div>
         </>
     );
 }
