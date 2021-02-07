@@ -10,7 +10,7 @@ const c = {
 
 export function Header(): JSX.Element {
     return (
-        <header className="AppHeader bg-gray-900 h-screen">
+        <header className="AppHeader h-screen">
             <Container className="absolute max-w-6xl inset-x-2 inset-y-1/3 z-30">
                 <h1 data-aos="fade-right" data-aos-delay="500" className="text-7xl sm:text-8xl font-medium pb-3">
                     <span className={c.emphLB}>A32</span><span className={c.emphB}>N</span>X
