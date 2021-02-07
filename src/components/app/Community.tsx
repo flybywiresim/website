@@ -21,7 +21,7 @@ function LiveFlightsStat(): JSX.Element {
     return (
         <div className="py-12 lg:py-0 lg:px-32 text-center">
             <CountTo to={Number(liveFlights)} speed={3000}>{fn}</CountTo>
-            <span className="text-xl">Live Flights</span>
+            <span className="text-xl text-gray-500">Live Flights</span>
         </div>
     );
 }
@@ -42,7 +42,7 @@ function CommitCountStatistic(): JSX.Element {
     return (
         <div className="py-12 lg:py-0 lg:px-32 text-center">
             <CountTo to={Number(commitCount)} speed={3000}>{fn}</CountTo>
-            <span className="text-xl">Commits</span>
+            <span className="text-xl text-gray-500">Commits</span>
         </div>
     );
 }
@@ -63,7 +63,7 @@ function ContributorCountStatistic(): JSX.Element {
     return (
         <div className="py-12 lg:py-0 lg:px-32 text-center">
             <CountTo to={Number(contributorCount)} speed={3000}>{fn}</CountTo>
-            <span className="text-xl">Contributors</span>
+            <span className="text-xl text-gray-500">Contributors</span>
         </div>
     );
 }
@@ -108,17 +108,22 @@ function DownloadCountStatistic(): JSX.Element {
     return (
         <div className="py-12 lg:py-0 lg:px-32 text-center">
             <CountTo to={Number(downloadCount)} speed={3000}>{fn}</CountTo>
-            <span className="text-xl">Downloads</span>
+            <span className="text-xl text-gray-500">Downloads</span>
         </div>
     );
 }
 
 export function Community(): JSX.Element {
     return (
-        <div>
+        <div className="bg-gray-50">
             <Container>
-                <div className="w-full 2xl:w-4/6 m-auto px-5 py-10 lg:py-16">
-                    <h1 className="text-4xl font-medium lg:pb-16">Community Insight</h1>
+                <div className="w-full 2xl:w-4/6 m-auto px-5 py-10">
+                    <div className="text-center mx-auto py-3 mb-8 divide-y divide-gray-400 w-1/2">
+                        <h2 className="text-base font-semibold tracking-wider text-gray-400 uppercase">A GLANCE OF THE</h2>
+                        <p className="mt-2 pt-2 text-5xl font-extrabold text-gray-500">
+                            Community Insights
+                        </p>
+                    </div>
 
                     <div className="w-full lg:w-11/12 2xl:w-4/6 mx-auto flex flex-col lg:flex-row lg:justify-center divide-y lg:divide-x lg:divide-y-0 divide-gray-500">
                         <LiveFlightsStat />
