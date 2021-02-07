@@ -1,7 +1,8 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "node": true
     },
     "extends": [
         "eslint:recommended",
@@ -50,6 +51,10 @@
         "eol-last": [
             "error",
             "always"
+        ],
+//        Used to correct this issue https://github.com/yannickcr/eslint-plugin-react/issues/2353
+        "react/prop-types": [
+            "off"
         ]
     }
 }
