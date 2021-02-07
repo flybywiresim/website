@@ -115,7 +115,7 @@ function DownloadCountStatistic(): JSX.Element {
 
 export function Community(): JSX.Element {
     return (
-        <div className="bg-gray-50">
+        <div className="bg-gray-50 relative">
             <Container>
                 <div className="w-full 2xl:w-4/6 m-auto px-5 py-10">
                     <div className="text-center mx-auto py-3 mb-8 divide-y divide-gray-400 w-1/2">
