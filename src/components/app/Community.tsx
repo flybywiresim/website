@@ -119,7 +119,7 @@ export function Community(): JSX.Element {
             <Container>
                 <div className="w-full 2xl:w-4/6 m-auto px-5 py-10">
                     <div className="text-center mx-auto py-3 mb-8 divide-y divide-gray-400 w-1/2">
-                        <h2 className="text-base font-semibold tracking-wider text-gray-400 uppercase">A GLANCE OF THE</h2>
+                        <h2 className="text-base font-semibold tracking-wider text-gray-400 uppercase">A GLANCE AT THE</h2>
                         <p className="mt-2 pt-2 text-5xl font-extrabold text-gray-500">
                             Community Insights
                         </p>
