@@ -117,15 +117,15 @@ export function Community(): JSX.Element {
     return (
         <div className="bg-gray-50 relative">
             <Container>
-                <div className="w-full 2xl:w-4/6 m-auto px-5 py-6 2xl:py-14">
-                    <div className="text-center mx-auto mb-11 divide-y divide-gray-400 w-1/2">
-                        <h2 className="text-base font-semibold tracking-wider text-gray-400 uppercase">A GLANCE AT THE</h2>
-                        <p className="mt-3 pt-3 text-5xl font-extrabold text-gray-500">
+                <div className="w-full m-auto px-10 py-14">
+                    <div className="w-full sm:w-1/2 text-center mx-auto mb-11 divide-y divide-gray-400">
+                        <h2 className="text-base font-semibold tracking-wider text-gray-400 uppercase" data-aos="zoom-in">A GLANCE AT THE</h2>
+                        <p className="mt-3 pt-3 text-5xl font-extrabold text-gray-500" data-aos="zoom-out">
                             Community Insights
                         </p>
                     </div>
 
-                    <div className="mx-auto flex flex-col lg:flex-row lg:justify-center divide-y lg:divide-x lg:divide-y-0 divide-gray-500">
+                    <div className="mx-auto flex flex-col lg:flex-row lg:justify-center divide-y lg:divide-x lg:divide-y-0 divide-gray-500" data-aos="zoom-in">
                         <LiveFlightsStat />
                         <CommitCountStatistic />
                         <ContributorCountStatistic />

@@ -13,10 +13,10 @@ export function Download(): JSX.Element {
     return (
         <>
             <div className="relative bg-blue-dark">
-                <div className="w-full lg:w-11/12 2xl:w-4/6 m-auto px-5 md:px-10 pt-10 z-50">
+                <div className="w-full lg:w-11/12 2xl:w-4/6 m-auto px-10 py-14">
                     <div className="flex flex-col lg:flex-row">
                         <div data-aos-offset="200" className="w-full lg:w-3/5 lg:pr-10">
-                            <div data-aos="fade-right">
+                            <div data-aos="zoom-in">
                                 <div className="text-left divide-y divide-gray-500 w-1/2 2xl:w-1/4">
                                     <h2 className="text-base font-medium tracking-wider text-blue-200 uppercase">READY TO FLY ?</h2>
                                     <p className="mt-3 pt-3 text-5xl font-medium text-blue-light">
