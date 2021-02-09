@@ -23,7 +23,7 @@ export function NavBar(): JSX.Element {
     const [isOpen, setOpen] = useState(false);
 
     return(
-        <nav className={`${c.nav} ${scroll ? 'transition duration-500 ease-in-out bg-gray-800 shadow-lg-dark' : 'transition duration-500 ease-in-out transparent'}`}>
+        <nav className={`${c.nav} ${scroll ? 'transition duration-500 ease-in-out bg-blue-dark-contrast shadow-lg-dark' : 'transition duration-500 ease-in-out transparent'}`}>
             <div className={c.padding}>
                 <div className={c.container}>
                     <img className="h-9" src={logo} alt=""/>
