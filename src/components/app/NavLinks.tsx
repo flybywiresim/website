@@ -14,7 +14,7 @@ const links = [
     },
     {
         name: 'Features',
-        path: '#'
+        path: '#features'
     },
     {
         name: 'Pilots',

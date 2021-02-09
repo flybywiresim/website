@@ -30,6 +30,7 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, 'Nunito Sans', 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 13px;
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 600px) {

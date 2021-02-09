@@ -9,7 +9,7 @@ export function Features(): JSX.Element {
             <div className="absolute w-screen" data-aos="fade-in">
                 <img className="h-full object-cover" src={bgImage} alt=""/>
             </div>
-            <div className="bg-blue-darker bg-opacity-95 relative py-14 shadow-inner ">
+            <div id="features" className="bg-blue-darker bg-opacity-95 relative py-14 shadow-inner">
                 <div className="rounded-lg mx-auto max-w-md px-4 py-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
                     <div className="mx-auto divide-y divide-gray-500 w-1/2 2xl:w-1/4">
                         <h2 className="text-base font-semibold tracking-wider text-blue-200 uppercase" data-aos="zoom-in">Some of our many</h2>
