@@ -53,13 +53,13 @@ export function Download(): JSX.Element {
                                     <div className="flex flex-row justify-between items-center mb-5 pt-5">
                                         <span className="text-xl text-gray-300">Development build</span>
                                         <a href={getDownloadLink(urls.dev)}>
-                                            <Button className="w-40 float-right bg-blue-700 font-bold">Download</Button>
+                                            <Button className="w-40 float-right bg-blue-light font-bold">Download</Button>
                                         </a>
                                     </div>
                                     <div className="flex flex-row justify-between items-center mb-8 pt-5">
                                         <span className="text-xl text-gray-300">Custom fly-by-wire build</span>
                                         <a href={getDownloadLink(urls.cfbw)}>
-                                            <Button className="w-40 float-right bg-blue-700 font-bold">Download</Button>
+                                            <Button className="w-40 float-right bg-blue-light font-bold">Download</Button>
                                         </a>
                                     </div>
                                 </div>
