@@ -6,8 +6,8 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 export function Features(): JSX.Element {
     return(
         <>
-            <div className="absolute w-screen object-cover">
-                <img src={bgImage} alt=""/>
+            <div className="absolute w-screen">
+                <img className="h-full object-cover" src={bgImage} alt=""/>
             </div>
             <div className="bg-blue-darker bg-opacity-95 relative py-16 sm:py-24 lg:py-16 shadow-inner ">
                 <div className="rounded-lg mx-auto max-w-md px-4 py-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
