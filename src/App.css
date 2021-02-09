@@ -1,3 +1,4 @@
 .App {
+    overflow-x: hidden;
     color: white;
 }
