@@ -26,13 +26,23 @@
   src: url("assets/font/NunitoSans-Bold.ttf")
 }
 
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Nunito Sans', 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 11px;
+  }
+}
+
 body {
   overflow-x: hidden;
   background: #141E30;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Nunito Sans', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
