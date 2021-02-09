@@ -24,7 +24,7 @@ export function Download(): JSX.Element {
                                     </p>
                                 </div>
 
-                                <p className="mt-5 max-w-prose text-xl text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequatur consequuntur dicta fuga iste maiores obcaecati officiis qui reiciendis, voluptatibus!</p>
+                                <p className="mt-5 max-w-prose text-xl text-white">We have included many options to download our addons, you can use our custom and simple installer to always keep your products up to date, or you can download using standalone installations.</p>
                             </div>
                             <ul data-aos="fade-up" data-aos-delay="300" className="list-disc pt-5 pl-5 text-lg text-gray-200">
                                 <li className="ml-2 pl-2">Integrates seamlessly into Microsoft Flight Simulator - no external programs required</li>
