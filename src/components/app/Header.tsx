@@ -15,7 +15,7 @@ export function Header(): JSX.Element {
                 <h1 data-aos="fade-right" data-aos-delay="500" className="text-7xl sm:text-8xl font-medium pb-3">
                     <span className={c.emphLB}>A32</span><span className={c.emphB}>N</span>X
                 </h1>
-                <p data-aos="fade-up" className="text-lg max-w-lg">A community built and maintained project aiming to provide study-level aircraft for Microsoft Flight
+                <p data-aos="fade-up" className="text-lg max-w-lg">A community built and maintained project aiming to provide high quality and detailed aircraft for Microsoft Flight
                     Simulator.</p>
                 <div data-aos="fade-up" data-aos-delay="200" className="flex max-w-md py-5">
                     <Button className="w-40 bg-blue-light border-2 border-blue-light transition hover:bg-white hover:text-blue-light mr-3 font-medium">Download</Button>
