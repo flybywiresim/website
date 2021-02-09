@@ -18,33 +18,33 @@ export function Features(): JSX.Element {
                         </p>
                     </div>
                     <p className="mt-5 max-w-prose mx-auto text-xl text-white" data-aos="fade-in">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo maiores odio voluptate. Deleniti, quae repellat repellendus sit totam unde velit.
+                    The volunteers in the community work hard around the clock to consistently bring new features and improve the default A320. Let&apos;s take a look at some of the features the A32NX has to offer!
                     </p>
                     <div className="mt-12">
                         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                             <Card icon={faCoffee}>
-                                <CardTitle>Hello world</CardTitle>
-                                <CardBody>Lorem ipsum.</CardBody>
+                                <CardTitle>Accurate System Functionality</CardTitle>
+                                <CardBody>The A32NX currently contains many system reworks that are true to life.</CardBody>
                             </Card>
                             <Card icon={faCoffee}>
-                                <CardTitle>Hello world</CardTitle>
-                                <CardBody>Lorem ipsum.</CardBody>
+                                <CardTitle>Visual Reworks</CardTitle>
+                                <CardBody>The A32NX is packaged with multiple visual reworks including new lighting, reworked textures, and model additions.</CardBody>
                             </Card>
                             <Card icon={faCoffee}>
-                                <CardTitle>Hello world</CardTitle>
-                                <CardBody>Lorem ipsum.</CardBody>
+                                <CardTitle>Electronic Flight Bag</CardTitle>
+                                <CardBody>The EFB is an integrated tablet with a handy toolkit, a settings page, performance tools, and more.</CardBody>
                             </Card>
                             <Card icon={faCoffee}>
-                                <CardTitle>Hello world</CardTitle>
-                                <CardBody>Lorem ipsum.</CardBody>
+                                <CardTitle>Custom Soundpack</CardTitle>
+                                <CardBody>Enjoy sounds like never before, the A32NX includes a fully custom and highly accurate soundpack.</CardBody>
                             </Card>
                             <Card icon={faCoffee}>
-                                <CardTitle>Hello world</CardTitle>
-                                <CardBody>Lorem ipsum.</CardBody>
+                                <CardTitle>Simbrief Integration</CardTitle>
+                                <CardBody>Make flight plan entry a breeze with the SimBrief integration, all it takes is one click and you are ready to go!</CardBody>
                             </Card>
                             <Card icon={faCoffee}>
-                                <CardTitle>Hello world</CardTitle>
-                                <CardBody>Lorem ipsum.</CardBody>
+                                <CardTitle>Product Installer</CardTitle>
+                                <CardBody>FlyByWire has a custom product installer, which makes the task of installing all FlyByWire products hassle free.</CardBody>
                             </Card>
                         </div>
                     </div>
