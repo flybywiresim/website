@@ -45,19 +45,19 @@ export function Download(): JSX.Element {
 
                                 <div className="divide-y divide-gray-700">
                                     <div className="flex flex-row justify-between items-center mb-5">
-                                        <span className="text-xl text-gray-300">Stable release</span>
+                                        <span className="text-xl text-gray-300">Stable Release</span>
                                         <a href={getDownloadLink(urls.stable)}>
                                             <Button className="w-40 float-right bg-green-500 hover:bg-green-600 font-bold">Download</Button>
                                         </a>
                                     </div>
                                     <div className="flex flex-row justify-between items-center mb-5 pt-5">
-                                        <span className="text-xl text-gray-300">Development build</span>
+                                        <span className="text-xl text-gray-300">Development Build</span>
                                         <a href={getDownloadLink(urls.dev)}>
                                             <Button className="w-40 float-right bg-blue-700 hover:bg-blue-800 font-bold">Download</Button>
                                         </a>
                                     </div>
                                     <div className="flex flex-row justify-between items-center mb-8 pt-5">
-                                        <span className="text-xl text-gray-300">Custom fly-by-wire build</span>
+                                        <span className="text-xl text-gray-300">Custom Fly-By-Wire Build</span>
                                         <a href={getDownloadLink(urls.cfbw)}>
                                             <Button className="w-40 float-right bg-blue-700 hover:bg-blue-800 font-bold">Download</Button>
                                         </a>
