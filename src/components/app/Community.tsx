@@ -125,7 +125,7 @@ export function Community(): JSX.Element {
                         </p>
                     </div>
 
-                    <div className="w-full lg:w-11/12 2xl:w-4/6 mx-auto flex flex-col lg:flex-row lg:justify-center divide-y lg:divide-x lg:divide-y-0 divide-gray-500">
+                    <div className="mx-auto flex flex-col lg:flex-row lg:justify-center divide-y lg:divide-x lg:divide-y-0 divide-gray-500">
                         <LiveFlightsStat />
                         <CommitCountStatistic />
                         <ContributorCountStatistic />
@@ -134,7 +134,7 @@ export function Community(): JSX.Element {
                 </div>
             </Container>
 
-            <div className="h-144">
+            <div className="h-144 text-black">
                 <Map disableMenu={true} disableWeather={false} disableScroll={true} forceTileset={'carto-light'} />
             </div>
         </div>
