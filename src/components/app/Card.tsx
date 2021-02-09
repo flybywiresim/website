@@ -26,7 +26,7 @@ export const CardBody: React.FC<Props> = (props) => {
 export const Card: React.FC<PropsWithChildren<CardProps>> = (props: PropsWithChildren<CardProps>): JSX.Element => (
     <div className="pt-6" data-aos="zoom-in">
         <div
-            className="flow-root transform hover:scale-105 transition-transform duration-100 bg-gray-800 rounded-lg px-6 pb-8">
+            className="h-full flow-root transform hover:scale-105 transition-transform duration-100 bg-gray-800 rounded-lg px-6 pb-8">
             <div className="-mt-6">
                 <span
                     className="inline-flex items-center justify-center p-3 bg-blue-light rounded-md shadow-lg">
