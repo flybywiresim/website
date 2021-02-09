@@ -30,7 +30,7 @@ export const Card: React.FC<PropsWithChildren<CardProps>> = (props: PropsWithChi
             <div className="-mt-6">
                 <span
                     className="inline-flex items-center justify-center p-3 bg-blue-light rounded-md shadow-lg">
-                    {props.icon && <FontAwesomeIcon icon={props.icon} size="lg" />}
+                    {props.icon && <FontAwesomeIcon icon={props.icon} size="2x" />}
                 </span>
             </div>
             <div className="mt-3">
