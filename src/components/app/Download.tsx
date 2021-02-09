@@ -16,9 +16,15 @@ export function Download(): JSX.Element {
                 <div className="w-full lg:w-11/12 2xl:w-4/6 m-auto px-5 md:px-10 pt-10 z-50">
                     <div className="flex flex-col lg:flex-row">
                         <div data-aos-offset="200" className="w-full lg:w-3/5 lg:pr-10">
-                            <div data-aos="fade-right" className="divide-y divide-gray-500">
-                                <h1 className="text-4xl font-medium text-left pb-3">Download</h1>
-                                <p className="text-justify pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequatur consequuntur dicta fuga iste maiores obcaecati officiis qui reiciendis, voluptatibus!</p>
+                            <div data-aos="fade-right">
+                                <div className="text-left divide-y divide-gray-500 w-1/2 2xl:w-1/4">
+                                    <h2 className="text-base font-medium tracking-wider text-blue-200 uppercase">READY TO FLY ?</h2>
+                                    <p className="mt-3 pt-3 text-5xl font-medium text-blue-light">
+                                        Download
+                                    </p>
+                                </div>
+
+                                <p className="mt-5 max-w-prose text-xl text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequatur consequuntur dicta fuga iste maiores obcaecati officiis qui reiciendis, voluptatibus!</p>
                             </div>
                             <ul data-aos="fade-up" data-aos-delay="300" className="list-disc pt-5 pl-5 text-lg text-gray-200">
                                 <li className="ml-2 pl-2">Integrates seamlessly into Microsoft Flight Simulator - no external programs required</li>
