@@ -21,7 +21,7 @@ export function Features(): JSX.Element {
                     The volunteers in the community work hard around the clock to consistently bring new features and improve the default A320. Let&apos;s take a look at some of the features the A32NX has to offer!
                     </p>
                     <div className="mt-12">
-                        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                             <Card icon={faServer}>
                                 <CardTitle>Accurate System Functionality</CardTitle>
                                 <CardBody>The A32NX currently contains many system reworks that are true to life.</CardBody>
