@@ -134,7 +134,7 @@ export function Community(): JSX.Element {
                 </div>
             </Container>
 
-            <div className="h-144 text-black">
+            <div className="relative h-144 text-black z-20">
                 <Map disableMenu={true} disableWeather={false} disableScroll={true} forceTileset={'carto-light'} />
             </div>
         </div>
