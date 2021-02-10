@@ -1,21 +1,30 @@
 import React, { PropsWithChildren } from 'react';
-import duck from '../../assets/img/duck.jpg';
+import Flighsimto from '../../assets/img/partners/flightsimto.png';
+import FSNews from '../../assets/img/partners/fsnews.png';
+import YourControls from '../../assets/img/partners/yourcontrols.png';
 
 type ImageProps = {
     src: string
 }
+type PartnerProps = {
+    name?: string,
+    path?: string
+}
+
 export const PartnerImage: React.FC<ImageProps> = (props: PropsWithChildren<ImageProps>) => {
     return (
-        <div className="p-2 h-full">
-            <img src={props.src && duck} alt=""/>
+        <div className="p-8 h-full">
+            <img className="h-full w-full object-contain" src={props.src} alt=""/>
         </div>
     );
 };
 
-export const Partner: React.FC = (props) => {
+export const Partner: React.FC<PartnerProps> = (props:PropsWithChildren<PartnerProps>) => {
     return(
-        <div className="flex flex-col h-full">
-            {props.children}
+        <div id={props.name} className="flex flex-col h-full justify-center" data-aos="zoom-in">
+            <a href={props.path} target="_blank" rel="noreferrer">
+                {props.children}
+            </a>
         </div>
     );
 };
@@ -29,24 +38,17 @@ export function PartnerSection(): JSX.Element {
                     Partners
                 </p>
             </div>
-            <div className="grid grid-cols-3 mt-8 mx-auto w-1/2">
-                <Partner>
-                    <PartnerImage src={duck} />
+            <div className="w-full sm:w-3/4 grid grid-cols-1 lg:grid-cols-3 mt-8 mx-auto">
+                <Partner name="Flightsim.to" path="https://flightsim.to/">
+                    <PartnerImage src={Flighsimto} />
                 </Partner>
-                <Partner>
-                    <PartnerImage src={duck} />
+                <Partner name="FSNews" path="https://fsnews.eu/">
+                    <PartnerImage src={FSNews} />
                 </Partner>
-                <Partner>
-                    <PartnerImage src={duck} />
+                <Partner name="YourControls" path="https://github.com/Sequal32/yourcontrols">
+                    <PartnerImage src={YourControls} />
                 </Partner>
-            </div>
-            <div className="flex flex-row mx-auto w-1/2">
-                <Partner>
-                    <PartnerImage src={duck} />
-                </Partner>
-                <Partner>
-                    <PartnerImage src={duck} />
-                </Partner>
+
             </div>
         </div>
     );
