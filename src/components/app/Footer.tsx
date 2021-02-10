@@ -17,8 +17,12 @@ export function Footer(): JSX.Element {
                     </div>
                     <div className="text-center">
                         <div className="grid grid-cols-2 w-full sm:w-3/4 mx-auto">
-                            <a href="https://github.com/flybywiresim/manuals/blob/master/pdf/Terms%20of%20Service.pdf"><p>Terms Of Service</p></a>
-                            <a href="https://github.com/flybywiresim/manuals/blob/master/pdf/Privacy%20Policy.pdf"><p>Privacy Policy</p></a>
+                            <a href="https://github.com/flybywiresim/manuals/blob/master/pdf/Terms%20of%20Service.pdf" target="_blank" rel="noreferrer">
+                                <p>Terms of Service</p>
+                            </a>
+                            <a href="https://github.com/flybywiresim/manuals/blob/master/pdf/Privacy%20Policy.pdf" target="_blank" rel="noreferrer">
+                                <p>Privacy Policy</p>
+                            </a>
                         </div>
                         <p className="text-gray-400 py-2">&copy; FlyByWire Simulations 2021. All rights reserved.</p>
                     </div>
