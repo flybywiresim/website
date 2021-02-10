@@ -14,7 +14,7 @@ type PartnerProps = {
 export const PartnerImage: React.FC<ImageProps> = (props: PropsWithChildren<ImageProps>) => {
     return (
         <div className="p-8 h-full">
-            <img className="h-full w-full object-contain" src={props.src} alt=""/>
+            <img className="h-full w-full object-contain transform hover:scale-105 transition-transform duration-100" src={props.src} alt=""/>
         </div>
     );
 };
