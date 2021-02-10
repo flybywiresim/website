@@ -12,7 +12,7 @@ export function Download(): JSX.Element {
 
     return (
         <>
-            <div className="relative bg-blue-dark-contrast">
+            <div id="download" className="relative bg-blue-dark-contrast">
                 <div className="w-full lg:w-11/12 2xl:w-4/6 m-auto px-10 py-14">
                     <div className="flex flex-col lg:flex-row">
                         <div data-aos-offset="200" className="w-full lg:w-3/5 lg:pr-10">
