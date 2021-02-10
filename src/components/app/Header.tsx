@@ -22,7 +22,7 @@ export function Header(): JSX.Element {
                         <Button className="w-40 bg-blue-light border-2 border-blue-light transition hover:bg-white hover:text-blue-light mr-3 font-medium">Download</Button>
                     </a>
                     <a href="https://app.gitbook.com/@flybywire-simulations/s/flybywire-simulations/" target="_blank" rel="noreferrer">
-                        <Button className="w-32 border-2 border-blue-light text-blue-light transition hover:bg-white hover:text-blue-dark font-medium">Manuals</Button>
+                        <Button className="w-32 border-2 border-blue-light text-blue-light transition hover:bg-white hover:text-blue-light font-medium">Manuals</Button>
                     </a>
                 </div>
             </Container>
