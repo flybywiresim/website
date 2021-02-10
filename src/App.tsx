@@ -7,6 +7,7 @@ import { Header } from './components/app/Header';
 import { Features } from './components/app/Features';
 import { Download } from './components/app/Download';
 import { Community } from './components/app/Community';
+import { PartnerSection } from './components/app/PartnerSection';
 
 // Default configuration for AOS.
 AOS.init({
@@ -26,6 +27,7 @@ function App(): JSX.Element {
             <Features />
             <Download />
             <Community />
+            <PartnerSection />
         </div>
     );
 }
