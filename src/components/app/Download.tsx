@@ -18,7 +18,7 @@ export function Download(): JSX.Element {
                         <div data-aos-offset="200" className="w-full lg:w-3/5 lg:pr-10">
                             <div data-aos="zoom-in">
                                 <div className="text-left divide-y divide-gray-500 w-1/2 2xl:w-1/4">
-                                    <h2 className="text-base font-medium tracking-wider text-blue-200 uppercase">READY TO FLY ?</h2>
+                                    <h2 className="text-base font-medium tracking-widest text-blue-200 uppercase">READY TO FLY?</h2>
                                     <p className="mt-3 pt-3 text-5xl font-medium text-blue-light">
                                         Download
                                     </p>
