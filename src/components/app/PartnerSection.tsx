@@ -2,26 +2,30 @@ import React, { PropsWithChildren } from 'react';
 import Flighsimto from '../../assets/img/partners/flightsimto.png';
 import FSNews from '../../assets/img/partners/fsnews.png';
 import YourControls from '../../assets/img/partners/yourcontrols.png';
+import Salty from '../../assets/img/partners/salty.svg';
+import S4F from '../../assets/img/partners/s4f.png';
 
 type ImageProps = {
+    className?: string,
     src: string
 }
 type PartnerProps = {
+    className?: string,
     name?: string,
     path?: string
 }
 
 export const PartnerImage: React.FC<ImageProps> = (props: PropsWithChildren<ImageProps>) => {
     return (
-        <div className="p-8 h-full">
-            <img className="h-full w-full object-contain transform hover:scale-105 transition-transform duration-100" src={props.src} alt=""/>
+        <div className={`p-8 h-full ${props.className}`}>
+            <img className="h-full w-full object-contain transform hover:scale-105 transition-transform duration-100 filter-grayscale hover:filter-none" src={props.src} alt=""/>
         </div>
     );
 };
 
 export const Partner: React.FC<PartnerProps> = (props:PropsWithChildren<PartnerProps>) => {
     return(
-        <div id={props.name} className="flex flex-col h-full justify-center" data-aos="zoom-in">
+        <div id={props.name} className={`flex flex-col h-full justify-center ${props.className}`} data-aos="zoom-in">
             <a href={props.path} target="_blank" rel="noreferrer">
                 {props.children}
             </a>
@@ -38,7 +42,7 @@ export function PartnerSection(): JSX.Element {
                     Partners
                 </p>
             </div>
-            <div className="w-full sm:w-3/4 grid grid-cols-1 lg:grid-cols-3 mt-8 mx-auto">
+            <div className="w-1/2 sm:w-3/5 grid grid-cols-1 lg:grid-cols-3 mt-8 mx-auto">
                 <Partner name="Flightsim.to" path="https://flightsim.to/">
                     <PartnerImage src={Flighsimto} />
                 </Partner>
@@ -48,7 +52,14 @@ export function PartnerSection(): JSX.Element {
                 <Partner name="YourControls" path="https://github.com/Sequal32/yourcontrols">
                     <PartnerImage src={YourControls} />
                 </Partner>
-
+            </div>
+            <div className="w-1/2 sm:w-2/6 grid grid-cols-1 lg:grid-cols-2 mx-auto">
+                <Partner name="SaltySimulations" path="https://github.com/saltysimulations/salty-747">
+                    <PartnerImage className="w-2/3 mx-auto" src={Salty} />
+                </Partner>
+                <Partner name="sim4flight" path="https://sim4flight.com/">
+                    <PartnerImage className="mx-auto" src={S4F} />
+                </Partner>
             </div>
         </div>
     );
