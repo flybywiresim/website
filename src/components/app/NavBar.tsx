@@ -26,7 +26,9 @@ export function NavBar(): JSX.Element {
         <nav className={`${c.nav} ${scroll ? 'transition duration-500 ease-in-out bg-blue-dark-contrast shadow-lg-dark' : 'transition duration-500 ease-in-out transparent'}`}>
             <div className={c.padding}>
                 <div className={c.container}>
-                    <img className="h-9" src={logo} alt=""/>
+                    <a href="#header">
+                        <img className="h-9" src={logo} alt=""/>
+                    </a>
                     <div className={c.burgerWrapper}>
                         <Hamburger handleClick={() => setOpen(prevState => !prevState)}/>
                     </div>
