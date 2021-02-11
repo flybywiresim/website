@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import logo from '../../assets/svg/white/FBW-Logo-WHITE.svg';
+import logo from '../../assets/svg/white/FBW-Logo-WHITE.png';
 import { Hamburger, NavLinks } from './NavLinks';
 
 const c = {
