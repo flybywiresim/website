@@ -11,7 +11,7 @@ type IconItemProp = {
 export const FooterIconItem: React.FC<IconItemProp> = (props: PropsWithChildren<IconItemProp>) => {
     return(
         <a href={props.href} target="_blank" rel="noreferrer">
-            <FontAwesomeIcon className="mx-2" icon={props.icon} size="lg" />
+            <FontAwesomeIcon className="mx-2 hover:text-blue-light duration-100" icon={props.icon} size="lg" />
         </a>
     );
 };
