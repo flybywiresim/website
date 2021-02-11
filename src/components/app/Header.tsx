@@ -1,5 +1,4 @@
 import React from 'react';
-import video from '../../assets/video/A32NX.mp4';
 import { Button } from '../Button';
 import { Container } from '../Container';
 
@@ -27,7 +26,7 @@ export function Header(): JSX.Element {
                 </div>
             </Container>
 
-            <video className="absolute top-0 h-screen object-cover w-screen opacity-10" src={video} playsInline autoPlay
+            <video className="absolute top-0 h-screen object-cover w-screen opacity-10" src="https://flybywiresim-packages.b-cdn.net/assets/website/A32NX.mp4" playsInline autoPlay
                 muted loop/>
         </header>
     );
