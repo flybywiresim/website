@@ -29,7 +29,7 @@ export const Footer = (): JSX.Element => (
                     <FooterIconItem icon={faYoutube} href="https://www.youtube.com/c/FlyByWireSimulations"/>
                 </div>
                 <div className="text-center">
-                    <div className="grid grid-cols-2 w-4/5 sm:w-2/3 mx-auto">
+                    <div className="grid grid-cols-2 w-3/5 mx-auto">
                         <a className="hover:underline"
                             href="https://github.com/flybywiresim/manuals/raw/master/pdf/Terms%20of%20Service.pdf"
                             target="_blank" rel="noreferrer">
