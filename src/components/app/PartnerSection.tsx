@@ -42,7 +42,7 @@ export function PartnerSection(): JSX.Element {
                     Partners
                 </p>
             </div>
-            <div className="w-1/2 sm:w-3/5 grid grid-cols-1 lg:grid-cols-3 mt-8 mx-auto">
+            <div className="w-1/2 sm:w-3/5 2xl:w-1/2 grid grid-cols-1 lg:grid-cols-3 mt-8 mx-auto">
                 <Partner name="Flightsim.to" path="https://flightsim.to/">
                     <PartnerImage src={Flighsimto} />
                 </Partner>
@@ -53,7 +53,7 @@ export function PartnerSection(): JSX.Element {
                     <PartnerImage src={YourControls} />
                 </Partner>
             </div>
-            <div className="w-1/2 sm:w-2/6 grid grid-cols-1 lg:grid-cols-2 mx-auto">
+            <div className="w-1/2 sm:w-2/6 2xl:w-1/5 grid grid-cols-1 lg:grid-cols-2 mx-auto">
                 <Partner name="SaltySimulations" path="https://github.com/saltysimulations/salty-747">
                     <PartnerImage className="w-2/3 mx-auto" src={Salty} />
                 </Partner>
