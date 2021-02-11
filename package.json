@@ -18,7 +18,7 @@
     "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.0",
     "aos": "^2.3.4",
-    "autoprefixer": "^9.8.6",
+    "autoprefixer": "^10.2.4",
     "postcss": "^8.2.6",
     "react": "^17.0.1",
     "react-count-to": "^0.12.0",
