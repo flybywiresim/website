@@ -16,32 +16,34 @@ export const FooterIconItem: React.FC<IconItemProp> = (props: PropsWithChildren<
     );
 };
 
-export function Footer(): JSX.Element {
-    return (
-        <div className="bg-blue-dark w-full px-10 py-8">
-            <div className="flex flex-row justify-center">
-                <div className="flex flex-col">
-                    <div className="flex flex-col-3 py-4 text-lg mx-auto">
-                        <FooterIconItem icon={faTwitter} href="https://twitter.com/FlyByWireSim" />
-                        <FooterIconItem icon={faFacebook} href="https://www.facebook.com/FlyByWireSimulations" />
-                        <FooterIconItem icon={faDiscord} href="https://discord.gg/flybywire" />
-                        <FooterIconItem icon={faTwitch} href="https://www.twitch.tv/flybywiresimulations" />
-                        <FooterIconItem icon={faYoutube} href="https://www.youtube.com/c/FlyByWireSimulations" />
-                        <FooterIconItem icon={faGithub} href="https://github.com/flybywiresim" />
+export const Footer = (): JSX.Element => (
+    <div className="bg-blue-dark w-full px-10 py-8">
+        <div className="flex flex-row justify-center">
+            <div className="flex flex-col">
+                <div className="flex flex-col-3 py-4 text-lg mx-auto">
+                    <FooterIconItem icon={faGithub} href="https://github.com/flybywiresim"/>
+                    <FooterIconItem icon={faTwitter} href="https://twitter.com/FlyByWireSim"/>
+                    <FooterIconItem icon={faFacebook} href="https://www.facebook.com/FlyByWireSimulations"/>
+                    <FooterIconItem icon={faDiscord} href="https://discord.gg/flybywire"/>
+                    <FooterIconItem icon={faTwitch} href="https://www.twitch.tv/flybywiresimulations"/>
+                    <FooterIconItem icon={faYoutube} href="https://www.youtube.com/c/FlyByWireSimulations"/>
+                </div>
+                <div className="text-center">
+                    <div className="grid grid-cols-2 w-5/6 sm:w-2/3 mx-auto">
+                        <a className="hover:underline"
+                            href="https://github.com/flybywiresim/manuals/raw/master/pdf/Terms%20of%20Service.pdf"
+                            target="_blank" rel="noreferrer">
+                            <p>Terms of Service</p>
+                        </a>
+                        <a className="hover:underline"
+                            href="https://github.com/flybywiresim/manuals/raw/master/pdf/Privacy%20Policy.pdf"
+                            target="_blank" rel="noreferrer">
+                            <p>Privacy Policy</p>
+                        </a>
                     </div>
-                    <div className="text-center">
-                        <div className="grid grid-cols-2 w-full sm:w-3/4 mx-auto">
-                            <a className="hover:underline" href ="https://github.com/flybywiresim/manuals/blob/master/pdf/Terms%20of%20Service.pdf" target="_blank" rel="noreferrer">
-                                <p>Terms of Service</p>
-                            </a>
-                            <a className="hover:underline" href="https://github.com/flybywiresim/manuals/blob/master/pdf/Privacy%20Policy.pdf" target="_blank" rel="noreferrer">
-                                <p>Privacy Policy</p>
-                            </a>
-                        </div>
-                        <p className="text-gray-400 py-2">&copy; FlyByWire Simulations 2021. All rights reserved.</p>
-                    </div>
+                    <p className="text-gray-400 py-2">&copy; FlyByWire Simulations and its contributors 2020-2021</p>
                 </div>
             </div>
         </div>
-    );
-}
+    </div>
+);
