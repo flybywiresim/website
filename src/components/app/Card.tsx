@@ -11,7 +11,7 @@ type CardProps = {
 
 export const CardTitle: React.FC<Props> = (props) => {
     return(
-        <h3 className={`${props.className} 'mt-8 pb-4 text-xl text-blue-200 font-medium'`}>{props.children}</h3>
+        <h3 className={`${props.className} pb-3 text-xl text-blue-200 font-bold`}>{props.children}</h3>
     );
 };
 
