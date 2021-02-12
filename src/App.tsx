@@ -11,6 +11,7 @@ import { PartnerSection } from './components/app/PartnerSection';
 import { Footer } from './components/app/Footer';
 
 // Default configuration for AOS.
+// TODO: implement reduced motion capability.
 AOS.init({
     useClassNames: true,
     debounceDelay: 50, // the delay on debounce used while resizing window.
