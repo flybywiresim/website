@@ -2,11 +2,6 @@ import React from 'react';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const c = {
-    container: 'flex flex-col',
-    item: 'text-lg px-3 active:text-blue-light hover:text-gray-200 hover:text-blue-light'
-};
-
 const links = [
     {
         name: 'Home',
@@ -30,10 +25,16 @@ const links = [
     },
 ];
 
-export function NavLinks(props: {className: string}): JSX.Element {
+export function NavLinks(props: {className?: string}): JSX.Element {
     return(
-        <div className={`${props.className} ${c.container}`}>
-            {links.map(link => <a className={c.item} key={link.name} href={link.path}>{link.name}</a>)}
+        <div className={`${props.className} flex flex-col`}>
+            {links.map(link =>
+                <a className="text-lg p-3 active:text-blue-light hover:text-gray-200 hover:text-blue-light"
+                    key={link.name}
+                    href={link.path}>
+                    {link.name}
+                </a>
+            )}
         </div>
     );
 }
