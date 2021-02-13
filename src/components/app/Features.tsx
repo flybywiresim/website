@@ -6,18 +6,18 @@ import { faServer, faPen, faPaperPlane, faClipboardList, faHeadset, faToolbox } 
 export function Features(): JSX.Element {
     return(
         <>
-            <div className="absolute w-screen" data-aos="fade-in">
+            <div className="absolute w-screen">
                 <img className="h-full object-cover" src={bgImage} alt=""/>
             </div>
             <div id="features" className="bg-blue-darker bg-opacity-95 relative py-14 shadow-inner">
                 <div className="rounded-lg mx-auto max-w-md px-4 py-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
                     <div className="mx-auto divide-y divide-gray-500 w-1/2 2xl:w-1/4">
-                        <h2 className="text-base font-semibold tracking-wider text-blue-200 uppercase" data-aos="zoom-in">Some of our many</h2>
-                        <p className="mt-3 pt-3 text-5xl font-medium text-blue-light" data-aos="zoom-out">
+                        <h2 className="text-base font-semibold tracking-wider text-blue-200 uppercase">Some of our many</h2>
+                        <p className="mt-3 pt-3 text-5xl font-medium text-blue-light">
                             Features
                         </p>
                     </div>
-                    <p className="mt-5 max-w-prose mx-auto text-xl text-white" data-aos="fade-in">
+                    <p className="mt-5 max-w-prose mx-auto text-xl text-white">
                     The volunteers in the community work hard around the clock to consistently bring new features and improve the default A320. Let&apos;s take a look at some of the features the A32NX has to offer!
                     </p>
                     <div className="mt-12">

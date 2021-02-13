@@ -25,7 +25,7 @@ export const PartnerImage: React.FC<ImageProps> = (props: PropsWithChildren<Imag
 
 export const Partner: React.FC<PartnerProps> = (props:PropsWithChildren<PartnerProps>) => {
     return(
-        <div id={props.name} className={`flex flex-col h-full justify-center ${props.className}`} data-aos="zoom-in">
+        <div id={props.name} className={`flex flex-col h-full justify-center ${props.className}`}>
             <a href={props.path} target="_blank" rel="noreferrer">
                 {props.children}
             </a>
