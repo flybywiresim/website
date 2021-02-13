@@ -8,12 +8,13 @@ import S4F from '../../assets/img/partners/s4f.png';
 type ImageProps = {
     className?: string,
     src: string
-}
-type PartnerProps = {
+};
+
+type PartnerProps = Partial<{
     className?: string,
     name?: string,
     path?: string
-}
+}>;
 
 export const PartnerImage: React.FC<ImageProps> = (props: PropsWithChildren<ImageProps>) => {
     return (

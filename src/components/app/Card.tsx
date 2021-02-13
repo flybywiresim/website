@@ -1,13 +1,14 @@
-import React, { PropsWithChildren } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
-type Props = {
-    className?: string
-}
-type CardProps = {
-    icon?: IconProp
-}
+type Props = Partial<{
+    className: string
+}>;
+
+type CardProps = Partial<{
+    icon: IconProp
+}>;
 
 export const CardTitle: React.FC<Props> = (props) => {
     return(
@@ -17,13 +18,13 @@ export const CardTitle: React.FC<Props> = (props) => {
 
 export const CardBody: React.FC<Props> = (props) => {
     return(
-        <p className={`${props.className} 'mt-5 text-base'`}>
+        <p className={props.className}>
             {props.children}
         </p>
     );
 };
 
-export const Card: React.FC<PropsWithChildren<CardProps>> = (props: PropsWithChildren<CardProps>): JSX.Element => (
+export const Card: React.FC<CardProps> = (props): JSX.Element => (
     <div className="pt-6">
         <div
             className="h-full flow-root transform hover:scale-105 transition-transform duration-100 bg-gray-800 rounded-lg px-6 pb-8">
