@@ -1,6 +1,6 @@
 import React from 'react';
 import { CardBody, Card, CardTitle } from './Card';
-import bgImage from '../../assets/img/feature.png';
+import bgImage from '../../assets/img/feature.jpg';
 import { faServer, faPen, faPaperPlane, faClipboardList, faHeadset, faToolbox } from '@fortawesome/free-solid-svg-icons';
 
 export function Features(): JSX.Element {
