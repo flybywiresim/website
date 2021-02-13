@@ -29,7 +29,7 @@ export function NavLinks(props: {className?: string}): JSX.Element {
     return(
         <div className={`${props.className} flex flex-col`}>
             {links.map(link =>
-                <a className="text-lg p-3 active:text-blue-light hover:text-gray-200 hover:text-blue-light"
+                <a className="text-xl m-2 p-1 active:text-blue-light hover:text-gray-200 transition-colors duration-200 hover:text-blue-light"
                     key={link.name}
                     href={link.path}>
                     {link.name}
