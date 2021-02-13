@@ -15,12 +15,12 @@ function LiveFlightsStat(): JSX.Element {
         fetch(LIVE_FLIGHTS_ENDPOINT).then(res => res.text().then(flights => setLiveFlights(flights)));
     }, []);
 
-    const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-light mb-3">{value}</h1>;
+    const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-dark-contrast mb-3">{value}</h1>;
 
     return (
         <div className="py-12 lg:py-0 lg:px-32 text-center">
             <CountTo to={Number(liveFlights)} speed={3000}>{fn}</CountTo>
-            <span className="text-xl text-gray-500">Live Flights</span>
+            <span className="text-xl text-gray-700">Live Flights</span>
         </div>
     );
 }
@@ -36,12 +36,12 @@ function CommitCountStatistic(): JSX.Element {
         });
     }, []);
 
-    const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-light mb-3">{value}</h1>;
+    const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-dark-contrast mb-3">{value}</h1>;
 
     return (
         <div className="py-12 lg:py-0 lg:px-32 text-center">
             <CountTo to={Number(commitCount)} speed={3000}>{fn}</CountTo>
-            <span className="text-xl text-gray-500">Commits</span>
+            <span className="text-xl text-gray-700">Commits</span>
         </div>
     );
 }
@@ -57,12 +57,12 @@ function ContributorCountStatistic(): JSX.Element {
         });
     }, []);
 
-    const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-light mb-3">{value}</h1>;
+    const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-dark-contrast mb-3">{value}</h1>;
 
     return (
         <div className="py-12 lg:py-0 lg:px-32 text-center">
             <CountTo to={Number(contributorCount)} speed={3000}>{fn}</CountTo>
-            <span className="text-xl text-gray-500">Contributors</span>
+            <span className="text-xl text-gray-700">Contributors</span>
         </div>
     );
 }
@@ -102,12 +102,12 @@ function DownloadCountStatistic(): JSX.Element {
         });
     }, []);
 
-    const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-light mb-3">{value}{postfix}</h1>;
+    const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-dark-contrast mb-3">{value}{postfix}</h1>;
 
     return (
         <div className="py-12 lg:py-0 lg:px-32 text-center">
             <CountTo to={Number(downloadCount)} speed={3000}>{fn}</CountTo>
-            <span className="text-xl text-gray-500">Downloads</span>
+            <span className="text-xl text-gray-700">Downloads</span>
         </div>
     );
 }
@@ -117,8 +117,8 @@ export function Community(): JSX.Element {
         <div className="bg-gray-50 relative">
             <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 px-10 py-14">
                 <div className="w-full sm:w-1/2 text-center mx-auto mb-11 divide-y divide-gray-400">
-                    <h2 className="text-base font-semibold tracking-wider text-gray-400 uppercase">A GLANCE AT THE</h2>
-                    <p className="mt-3 pt-3 text-5xl font-extrabold text-gray-500">
+                    <h2 className="text-base font-semibold tracking-wider text-gray-600 uppercase">A GLANCE AT THE</h2>
+                    <p className="mt-3 pt-3 text-5xl font-extrabold text-gray-700">
                             Community Insights
                     </p>
                 </div>
