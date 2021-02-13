@@ -21,7 +21,7 @@ export function NavBar(): JSX.Element {
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="relative flex items-center justify-between h-16">
                     <a href="#header">
-                        <img className="h-11" src={logo} alt=""/>
+                        <img className="subpixel-antialiased h-11" src={logo} alt=""/>
                     </a>
                     <div className="absolute inset-y-0 right-3 flex items-center md:hidden">
                         {/*<Hamburger handleClick={() => setOpen(prevState => !prevState)}/>*/}
