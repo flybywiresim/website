@@ -2,6 +2,7 @@
   "name": "web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://www.flybywiresim.com/",
   "dependencies": {
     "@craco/craco": "^6.1.1",
     "@flybywiresim/map": "^0.5.0",
