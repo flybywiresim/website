@@ -55,7 +55,7 @@ export function PartnerSection(): JSX.Element {
                 </Partner>
             </div>
             <div className="w-1/2 sm:w-2/6 2xl:w-1/5 grid grid-cols-1 lg:grid-cols-2 mx-auto">
-                <Partner name="SaltySimulations" path="https://github.com/saltysimulations/salty-747">
+                <Partner name="SaltySimulations" path="https://sim4flight.com/salty/">
                     <PartnerImage className="w-2/3 mx-auto" src={Salty} />
                 </Partner>
                 <Partner name="sim4flight" path="https://sim4flight.com/">
