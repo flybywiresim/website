@@ -14,8 +14,8 @@ export function Header(): JSX.Element {
                     <a href="#download">
                         <Button className="w-40 bg-blue-light border-2 border-blue-light transition hover:bg-white hover:text-blue-light mr-3 font-medium">Download</Button>
                     </a>
-                    <a href="https://app.gitbook.com/@flybywire-simulations/s/flybywire-simulations/" target="_blank" rel="noreferrer">
-                        <Button className="w-32 border-2 border-blue-light text-blue-light transition hover:bg-white hover:text-blue-light font-medium">Manuals</Button>
+                    <a href="https://docs.flybywiresim.com/" target="_blank" rel="noreferrer">
+                        <Button className="w-40 border-2 border-blue-light text-blue-light transition hover:bg-white hover:text-blue-light font-medium">Documentation</Button>
                     </a>
                 </div>
             </div>
