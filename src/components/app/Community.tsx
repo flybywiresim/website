@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Map from '@flybywiresim/map';
+import { Map } from '@flybywiresim/map';
 import CountTo from 'react-count-to';
 import { Container } from '../Container';
 
