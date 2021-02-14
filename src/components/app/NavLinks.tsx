@@ -8,16 +8,12 @@ const links = [
         path: '#'
     },
     {
-        name: 'Features',
-        path: '#features'
+        name: 'Projects',
+        path: '#projects'
     },
     {
-        name: 'Pilots',
-        path: '#'
-    },
-    {
-        name: 'Developers',
-        path: '#'
+        name: 'Documentation',
+        path: 'https://docs.flybywiresim.com/'
     },
     {
         name: 'Community',
