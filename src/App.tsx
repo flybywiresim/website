@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './App.css';
 import { NavBar } from './components/app/NavBar';
 import { Header } from './components/app/Header';
@@ -9,16 +9,23 @@ import { PartnerSection } from './components/app/PartnerSection';
 import { Footer } from './components/app/Footer';
 
 function App(): JSX.Element {
+    const downloadRef = useRef<HTMLDivElement>(null);
+    const handleScrollTD = () => {
+        if (downloadRef.current) {
+            downloadRef.current.scrollIntoView();
+        }
+    };
+
     return (
-        <div className="App">
+        <>
             <NavBar />
-            <Header />
-            <Features />
+            <Header scrollToDownload={handleScrollTD} />
+            <Features ref={downloadRef} />
             <Download />
             <Community />
             <PartnerSection />
             <Footer/>
-        </div>
+        </>
     );
 }
 
