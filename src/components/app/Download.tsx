@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '../Button';
 
-export function Download(): JSX.Element {
+export const Download: React.FC = () => {
     const urls = {
         stable: 'https://flybywiresim-packages.nyc3.cdn.digitaloceanspaces.com/stable/A32NX-stable.zip',
         dev: 'https://flybywiresim-packages.nyc3.cdn.digitaloceanspaces.com/vmaster/A32NX-master.zip',
@@ -65,4 +65,4 @@ export function Download(): JSX.Element {
             </div>
         </div>
     );
-}
+};
