@@ -4,6 +4,10 @@ import { Hamburger, NavLinks } from './NavLinks';
 import { Dropdown, DropdownItem } from '../app/Dropdown';
 
 export function NavBar(): JSX.Element {
+    // Nav logo onClick scroll to top of the page.
+    const scrollTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
     const [scroll, setScroll] = useState(false);
     useEffect(() => {
         const listener = () => {
@@ -23,6 +27,7 @@ export function NavBar(): JSX.Element {
                     <a href="#header">
                         <img className="subpixel-antialiased h-11" src={logo} alt="" />
                     </a>
+                    <img onClick={scrollTop} className="subpixel-antialiased h-11" src={logo} alt=""/>
                     <div className="absolute inset-y-0 right-3 flex items-center md:hidden">
                         <Hamburger handleClick={() => setOpen(prevState => !prevState)} />
                     </div>
