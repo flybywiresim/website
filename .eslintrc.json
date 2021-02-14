@@ -55,6 +55,9 @@
 //        Used to correct this issue https://github.com/yannickcr/eslint-plugin-react/issues/2353
         "react/prop-types": [
             "off"
+        ],
+        "react/display-name": [
+            "off"
         ]
     }
 }
