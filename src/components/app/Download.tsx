@@ -23,9 +23,9 @@ export function Download(): JSX.Element {
                         </div>
                         <p className="mt-5 max-w-prose text-xl text-white">We have included many options to download our addons, you can use our custom and simple installer to always keep your products up to date, or you can download using standalone installations.</p>
                         <ul className="list-disc -m-2 pt-5 pl-5 text-lg text-gray-200">
-                            <li className="ml-2 pl-2">Integrates seamlessly into Microsoft Flight Simulator - no external programs required</li>
-                            <li className="ml-2 pl-2">Safe, trustworthy, and constantly updated to assure nothing is broken</li>
-                            <li className="ml-2 pl-2">One click install, neatly organized into one compact folder</li>
+                            <li className="ml-2 pl-2">Integrates seamlessly into Microsoft Flight Simulator - no external programs required.</li>
+                            <li className="ml-2 pl-2">Safe, trustworthy, and constantly updated to assure nothing is broken.</li>
+                            <li className="ml-2 pl-2">One click install, neatly organized into one compact folder.</li>
                         </ul>
                     </div>
                     <div className="w-full lg:w-2/5 flex flex-col divide-y divide-gray-500">
