@@ -11,13 +11,13 @@ type CardProps = Partial<{
 }>;
 
 export const CardTitle: React.FC<Props> = (props) => {
-    return(
+    return (
         <h3 className={`${props.className} pb-3 text-xl text-blue-200 font-bold`}>{props.children}</h3>
     );
 };
 
 export const CardBody: React.FC<Props> = (props) => {
-    return(
+    return (
         <p className={props.className}>
             {props.children}
         </p>
@@ -31,7 +31,7 @@ export const Card: React.FC<CardProps> = (props): JSX.Element => (
             <div className="-mt-6">
                 <span
                     className="inline-flex items-center justify-center p-3 w-1/5 lg:w-1/6 bg-blue-light rounded-md shadow-lg">
-                    {props.icon && <FontAwesomeIcon className="text-blue-dark-contrast" icon={props.icon} size="2x" />}
+                    {props.icon && <FontAwesomeIcon className="text-white" icon={props.icon} size="2x" />}
                 </span>
             </div>
             <div className="mt-3">
