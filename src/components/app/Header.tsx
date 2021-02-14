@@ -11,7 +11,7 @@ export function Header(): JSX.Element {
                 <p className="text-lg max-w-lg">A community built and maintained project aiming to provide high quality and detailed aircraft for Microsoft Flight
                     Simulator.</p>
                 <div className="flex max-w-md py-5">
-                    <a href="#download">
+                    <a href="#downloadRef">
                         <Button className="w-40 bg-blue-light border-2 border-blue-light transition hover:bg-white hover:text-blue-light mr-3 font-medium">Download</Button>
                     </a>
                     <a href="https://docs.flybywiresim.com/" target="_blank" rel="noreferrer">

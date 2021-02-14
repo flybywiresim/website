@@ -18,7 +18,7 @@ export function Download(): JSX.Element {
                         <div className="text-left divide-y divide-gray-500 w-1/2 2xl:w-1/4">
                             <h2 className="text-base font-medium tracking-widest text-blue-200 uppercase">READY TO FLY?</h2>
                             <p className="mt-3 pt-3 text-5xl font-medium text-blue-light">
-                                        Download
+                                Download
                             </p>
                         </div>
                         <p className="mt-5 max-w-prose text-xl text-white">We have included many options to download our addons, you can use our custom and simple installer to always keep your products up to date, or you can download using standalone installations.</p>

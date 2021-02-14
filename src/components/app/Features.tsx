@@ -46,6 +46,7 @@ export function Features(): JSX.Element {
                                 <CardTitle>Product Installer</CardTitle>
                                 <CardBody>FlyByWire has a custom product installer, which makes the task of installing all FlyByWire products hassle free.</CardBody>
                             </Card>
+                            <div id="downloadRef" />
                         </div>
                     </div>
                 </div>
