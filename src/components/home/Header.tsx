@@ -18,10 +18,7 @@ export const Header: React.FC<HeaderProps> = (props) => (
 
                 <Button onClick={props.scrollToDownload}
                     className="w-40 bg-blue-light border-2 border-blue-light transition hover:bg-white hover:text-blue-light mr-3 font-medium">Download</Button>
-                <a href="https://docs.flybywiresim.com/" target="_blank" rel="noreferrer">
-                    <Button
-                        className="w-40 border-2 border-blue-light text-blue-light transition hover:bg-white hover:text-blue-light font-medium">Documentation</Button>
-                </a>
+                <Button className="w-40 border-2 border-blue-light text-blue-light transition hover:bg-white hover:text-blue-light font-medium">Learn More</Button>
             </div>
         </div>
 
