@@ -5,11 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const links = [
     {
         name: 'Home',
-        path: '#'
+        path: '/'
     },
     {
         name: 'Projects',
-        path: '#projects'
+        path: 'projects'
     },
     {
         name: 'Documentation',
