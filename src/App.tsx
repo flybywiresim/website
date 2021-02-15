@@ -14,6 +14,8 @@ import { Community } from './components/home/Community';
 import { PartnerSection } from './components/home/PartnerSection';
 import { Footer } from './components/utils/Footer';
 
+import { Projects } from './components/projects/Projects';
+
 function App(): JSX.Element {
     const downloadRef = useRef<HTMLDivElement>(null);
     const handleScrollTD = () => {
@@ -27,11 +29,7 @@ function App(): JSX.Element {
             <NavBar />
             <Switch>
                 <Route path="/projects">
-                    <div className="mt-20">
-                        <p>
-                            Test
-                        </p>
-                    </div>
+                    <Projects />
                 </Route>
                 <Route path="/">
                     <Header scrollToDownload={handleScrollTD} />
