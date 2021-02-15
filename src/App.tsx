@@ -1,18 +1,18 @@
 import React, { useRef } from 'react';
 import './App.css';
-import { NavBar } from './components/app/NavBar';
+import { NavBar } from './components/utils/NavBar';
 
 import {
     BrowserRouter as Router,
     Switch,
     Route,
 } from 'react-router-dom';
-import { Header } from './components/app/Header';
-import { Features } from './components/app/Features';
-import { Download } from './components/app/Download';
-import { Community } from './components/app/Community';
-import { PartnerSection } from './components/app/PartnerSection';
-import { Footer } from './components/app/Footer';
+import { Header } from './components/home/Header';
+import { Features } from './components/home/Features';
+import { Download } from './components/home/Download';
+import { Community } from './components/home/Community';
+import { PartnerSection } from './components/home/PartnerSection';
+import { Footer } from './components/utils/Footer';
 
 function App(): JSX.Element {
     const downloadRef = useRef<HTMLDivElement>(null);
