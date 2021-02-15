@@ -33,7 +33,7 @@ export const Download: React.FC = () => {
                             <span className="text-4xl text-blue-100">Installer</span>
                             <p className="mt-4 mb-6">Our easy-to-use installer is the easiest way to get started with our addons. Simply launch and install any addon you want, with only two clicks.</p>
                             <a href="https://api.flybywiresim.com/installer">
-                                <Button className="w-40 float-right bg-green-500 hover:bg-green-600 font-bold">Download</Button>
+                                <Button className="w-40 float-right bg-green-500 hover:bg-green-700 font-bold">Download</Button>
                             </a>
                         </div>
                         <div className="pt-5">
@@ -44,7 +44,7 @@ export const Download: React.FC = () => {
                                 <div className="flex flex-row justify-between items-center mb-5">
                                     <span className="text-xl text-gray-300">Stable Release</span>
                                     <a href={getDownloadLink(urls.stable)}>
-                                        <Button className="w-40 float-right bg-green-500 hover:bg-green-600 font-bold">Download</Button>
+                                        <Button className="w-40 float-right bg-green-500 hover:bg-green-700 font-bold">Download</Button>
                                     </a>
                                 </div>
                                 <div className="flex flex-row justify-between items-center mb-5 pt-5">
