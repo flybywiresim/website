@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/svg/white/FBW-Logo-WHITE.svg';
 import { Hamburger, NavLinks } from './NavLinks';
-import { Dropdown, DropdownItem } from '../utils/Dropdown';
 
 export function NavBar(): JSX.Element {
     // Nav logo onClick scroll to top of the page.
@@ -33,10 +32,6 @@ export function NavBar(): JSX.Element {
                     </div>
                     <div className="flex flex-row items-center">
                         <NavLinks className="hidden md:block" />
-                        <Dropdown className="-ml-1.5" titleName="Community">
-                            <DropdownItem name="Social Media" link="/socials" />
-                            <DropdownItem name="Development Blog" link="/blog" />
-                        </Dropdown>
                     </div>
                 </div>
             </div>

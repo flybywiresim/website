@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-export function DropdownItem(props: { name?: string, link?: string }) {
+export function DropdownItem(props: { name: string, link: string }): JSX.Element {
     return (
-        <a href={props.link} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">{props.name}</a>
+        <Link to={props.link} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">{props.name}</Link>
     );
 }
 export const Dropdown: React.FC<{ titleName?: string, className?: string }> = (props) => {
