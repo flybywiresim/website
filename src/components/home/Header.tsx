@@ -11,19 +11,22 @@ export const Header: React.FC<HeaderProps> = (props) => (
             <h1 className="text-7xl sm:text-8xl font-medium pb-3">
                 <span className="text-blue-light">A32</span><span className="text-blue">N</span>X
             </h1>
-            <p className="text-lg max-w-lg">A community built and maintained project aiming to provide high quality and
-                detailed aircraft for Microsoft Flight
-                Simulator.</p>
+            <p className="text-lg max-w-lg">A community built and maintained project aiming to provide high quality and detailed aircraft for Microsoft Flight Simulator.
+            </p>
             <div className="flex max-w-md py-5">
 
                 <Button onClick={props.scrollToDownload}
-                    className="w-40 bg-blue-light border-2 border-blue-light transition hover:bg-white hover:text-blue-light mr-3 font-medium">Download</Button>
-                <Button className="w-40 border-2 border-blue-light text-blue-light transition hover:bg-white hover:text-blue-light font-medium">Learn More</Button>
+                    className="w-40 text-xl font-bold bg-blue-light border-2 border-blue-light transition hover:bg-white hover:text-blue-light mr-3">Download</Button>
+
+                <a href="https://docs.flybywiresim.com/" target="_blank" rel="noreferrer">
+                    <Button
+                        className="w-44 text-xl font-bold border-2 border-blue-light text-blue-light transition hover:bg-white hover:text-blue-light">Learn More</Button>
+                </a>
             </div>
         </div>
 
         <video className="absolute top-0 h-screen object-cover w-screen opacity-10"
             src="https://flybywiresim-packages.b-cdn.net/assets/website/A32NX.mp4" playsInline autoPlay
-            muted loop/>
+            muted loop />
     </header>
 );

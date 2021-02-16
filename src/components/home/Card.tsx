@@ -11,13 +11,13 @@ type CardProps = Partial<{
 }>;
 
 export const CardTitle: React.FC<Props> = (props) => {
-    return(
+    return (
         <h3 className={`${props.className} pb-3 text-xl text-blue-200 font-bold`}>{props.children}</h3>
     );
 };
 
 export const CardBody: React.FC<Props> = (props) => {
-    return(
+    return (
         <p className={props.className}>
             {props.children}
         </p>

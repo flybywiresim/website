@@ -15,25 +15,27 @@ export function NavBar(): JSX.Element {
         };
         window.addEventListener('scroll', listener);
 
-        return() => window.removeEventListener('scroll', listener);
+        return () => window.removeEventListener('scroll', listener);
     }, []);
 
     const [isOpen, setOpen] = useState(false);
 
-    return(
-        <nav className={`fixed top-0 left-0 right-0 mx-auto py-2 z-50 ${scroll ? 'transition bg-blue-dark-contrast shadow-lg-dark' : 'transition transparent'}`}>
+    return (
+        <nav className={`fixed top-0 left-0 right-0 mx-auto py-2 z-50 ${scroll || isOpen ? 'transition bg-blue-dark-contrast shadow-lg-dark' : 'transition transparent'}`}>
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="relative flex items-center justify-between h-16">
                     <Link to="/">
-                        <img onClick={scrollTop} className="subpixel-antialiased h-11 cursor-pointer" src={logo} alt=""/>
+                        <img onClick={scrollTop} className="subpixel-antialiased h-11 cursor-pointer" src={logo} alt="" />
                     </Link>
                     <div className="absolute inset-y-0 right-3 flex items-center md:hidden">
-                        <Hamburger handleClick={() => setOpen(prevState => !prevState)}/>
+                        <Hamburger handleClick={() => setOpen(prevState => !prevState)} />
                     </div>
-                    <NavLinks className="hidden md:block" />
+                    <div className="flex flex-row items-center">
+                        <NavLinks className="hidden md:block" />
+                    </div>
                 </div>
             </div>
-            <NavLinks className={isOpen ? 'md:hidden' : 'hidden'}/>
+            <NavLinks className={isOpen ? 'md:hidden' : 'hidden'} />
         </nav>
     );
 }
