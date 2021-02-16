@@ -11,9 +11,8 @@ export const Header: React.FC<HeaderProps> = (props) => (
             <h1 className="text-7xl sm:text-8xl font-medium pb-3">
                 <span className="text-blue-light">A32</span><span className="text-blue">N</span>X
             </h1>
-            <p className="text-lg max-w-lg">A community built and maintained project aiming to provide high quality and
-            detailed aircraft for Microsoft Flight
-                Simulator.</p>
+            <p className="text-lg max-w-lg">A community built and maintained project aiming to provide high quality and detailed aircraft for Microsoft Flight Simulator.
+            </p>
             <div className="flex max-w-md py-5">
 
                 <Button onClick={props.scrollToDownload}
