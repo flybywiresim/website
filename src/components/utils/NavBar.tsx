@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import logo from '../../assets/svg/white/FBW-Logo-WHITE.svg';
 import { Hamburger, NavLinks } from './NavLinks';
-import { Dropdown, DropdownItem } from '../app/Dropdown';
+import { Dropdown, DropdownItem } from '../utils/Dropdown';
 
 export function NavBar(): JSX.Element {
     // Nav logo onClick scroll to top of the page.
@@ -27,7 +27,7 @@ export function NavBar(): JSX.Element {
                     <a href="#header">
                         <img className="subpixel-antialiased h-11" src={logo} alt="" />
                     </a>
-                    <img onClick={scrollTop} className="subpixel-antialiased h-11" src={logo} alt=""/>
+                    <img onClick={scrollTop} className="subpixel-antialiased h-11" src={logo} alt="" />
                     <div className="absolute inset-y-0 right-3 flex items-center md:hidden">
                         <Hamburger handleClick={() => setOpen(prevState => !prevState)} />
                     </div>
