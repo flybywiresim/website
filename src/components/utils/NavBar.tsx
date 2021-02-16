@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/svg/white/FBW-Logo-WHITE.svg';
 import { Hamburger, NavLinks } from './NavLinks';
 
@@ -23,7 +24,9 @@ export function NavBar(): JSX.Element {
         <nav className={`fixed top-0 left-0 right-0 mx-auto py-2 z-50 ${scroll ? 'transition bg-blue-dark-contrast shadow-lg-dark' : 'transition transparent'}`}>
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="relative flex items-center justify-between h-16">
-                    <img onClick={scrollTop} className="subpixel-antialiased h-11 cursor-pointer" src={logo} alt=""/>
+                    <Link to="/">
+                        <img onClick={scrollTop} className="subpixel-antialiased h-11 cursor-pointer" src={logo} alt=""/>
+                    </Link>
                     <div className="absolute inset-y-0 right-3 flex items-center md:hidden">
                         <Hamburger handleClick={() => setOpen(prevState => !prevState)}/>
                     </div>
