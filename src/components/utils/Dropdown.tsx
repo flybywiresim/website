@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-export function DropdownItem(props: { name: string, link: string }): JSX.Element {
-    return (
-        <Link to={props.link} className="block px-5 py-3 text-md font-medium text-white md:text-gray-700 hover:bg-gray-100 hover:text-gray-900 rounded-md" role="menuitem">{props.name}</Link>
-    );
-}
+export const DropdownItem: React.FC = (props) => (
+    <div className="block px-5 py-3 text-md font-medium text-white md:text-gray-700 hover:bg-gray-100 hover:text-gray-900 rounded-md" role="menuitem">
+        {props.children}
+    </div>
+);
+
 export const Dropdown: React.FC<{ titleName?: string, className?: string }> = (props) => {
     const [shown, setShown] = useState(false);
     return (
