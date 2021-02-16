@@ -21,11 +21,19 @@ const links = [
         name: 'Community',
         path: '#',
         sublinks: [{
-            name: 'External Link',
-            external: '#'
+            name: 'Discord',
+            external: 'https://discord.gg/scKXXcurdb'
         },
         {
-            name: 'Internal Link',
+            name: 'Twitter',
+            external: 'https://twitter.com/FlyByWireSim'
+        },
+        {
+            name: 'YouTube',
+            external: 'https://www.youtube.com/channel/UCX-dvWU-YQi5U2UjUBtrthg'
+        },
+        {
+            name: 'Blog',
             path: '/blog',
         }],
     },
