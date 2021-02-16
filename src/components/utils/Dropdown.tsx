@@ -13,7 +13,6 @@ export const Dropdown: React.FC<{ titleName?: string, className?: string }> = (p
             <div>
                 <button draggable="false" type="button" onClick={() => setShown(old => !old)} className="inline-flex justify-center w-full px-4 py-2 text-xl text-white hover:text-blue-light transition-colors duration-200 focus:outline-none" id="options-menu" aria-haspopup="true" aria-expanded="true">
                     {props.titleName}
-                    {/*Heroicon name: solid/chevron-down*/}
                     <svg className="h-5 w-5 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                     </svg>
