@@ -21,11 +21,11 @@ const links = [
         name: 'Community',
         path: '#',
         sublinks: [{
-            name: 'Social Media',
-            path: '/socials',
+            name: 'External Link',
+            external: '#'
         },
         {
-            name: 'Development Blog',
+            name: 'Internal Link',
             path: '/blog',
         }],
     },
@@ -38,15 +38,25 @@ export function NavLinks(props: { className?: string }): JSX.Element {
                 link.sublinks ?
                     <Dropdown className="-ml-1.5" titleName={link.name}>
                         {link.sublinks.map(sublink =>
-                            <DropdownItem key={sublink.name} name={sublink.name} link={sublink.path} />
+                            // Check if link.sublink has path, if not use external
+                            <DropdownItem key={sublink.name}>
+                                {sublink.path ?
+                                    <Link to={sublink.path}>{sublink.name}</Link>
+                                    :
+                                    <a href={sublink.external} target="_blank" rel="noreferrer">{sublink.name}</a>
+                                }
+                            </DropdownItem>
                         )}
-                    </Dropdown> :
+                    </Dropdown>
+                    :
+                    // Check if path exists if not use external
                     link.path ?
                         <Link className="text-xl m-2 p-1 active:text-blue-light hover:text-gray-200 transition-colors duration-200 hover:text-blue-light"
                             key={link.name}
                             to={link.path}>
                             {link.name}
-                        </Link> :
+                        </Link>
+                        :
                         <a key={link.name}
                             href={link.external}
                             target="_blank"
