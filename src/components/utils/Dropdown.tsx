@@ -5,7 +5,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 export function DropdownItem(props: { name: string, link: string }): JSX.Element {
     return (
-        <Link to={props.link} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">{props.name}</Link>
+        <Link to={props.link} className="block px-5 py-3 text-md font-medium text-white md:text-gray-700 hover:bg-gray-100 hover:text-gray-900 rounded-md" role="menuitem">{props.name}</Link>
     );
 }
 export const Dropdown: React.FC<{ titleName?: string, className?: string }> = (props) => {
@@ -17,8 +17,8 @@ export const Dropdown: React.FC<{ titleName?: string, className?: string }> = (p
                 <FontAwesomeIcon className="h-5 w-5 self-center ml-1.5" icon={faChevronDown} size="xs" />
             </button>
 
-            {shown && <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 ">
-                <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+            {shown && <div className="block my-3 md:absolute mt-2 mx-4 md:min-w-max rounded-lg bg-blue-dark-contrast md:bg-white md:ring-1 md:ring-gray-500 ring-opacity-5 ">
+                <div role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                     {props.children}
                 </div>
             </div>}
