@@ -1,4 +1,5 @@
 import React from 'react';
+import bgVideo from '../../assets/video/A32NX.mp4';
 import { Button } from '../Button';
 
 type HeaderProps = {
@@ -26,7 +27,7 @@ export const Header: React.FC<HeaderProps> = (props) => (
         </div>
 
         <video className="absolute top-0 h-screen object-cover w-screen opacity-10"
-            src="https://flybywiresim-packages.b-cdn.net/assets/website/A32NX.mp4" playsInline autoPlay
+            src={bgVideo} playsInline autoPlay
             muted loop />
     </header>
 );
