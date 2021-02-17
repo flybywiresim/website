@@ -1,37 +1,36 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import BackgroundImage from '../../assets/img/discord.jpg';
 import { Button } from '../Button';
+import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 export const Discord: React.FC = () => {
     return (
-        <section className="h-120 bg-navy-800 text-white flex flex-row items-center">
-            <div className="absolute w-full z-10 flex flex-row justify-center">
-                <div className="w-3/4 xl:w-2/3 flex flex-col text-center xl:text-left">
-                    <div>
-                        <div className="text-left divide-y divide-gray-500 w-1/3 2xl:w-36">
-                            <h2 className="text-base font-medium tracking-widest text-white uppercase">JOIN US ON</h2>
-                            <p className="mt-3 pt-3 text-5xl text-discord font-bold">
-                                Discord
-                            </p>
+        <section className="h-144 sm:h-120 bg-navy-800 flex items-center">
+            <div className="absolute z-20 w-full flex">
+                <div className="relative mx-auto text-center sm:flex sm:divide-x justify-center sm:space-x-10">
+                    <FontAwesomeIcon className="self-center mb-3 sm:mb-0" icon={faDiscord} size="9x"/>
+
+                    <div className="sm:space-x-10 text-center mx-auto sm:text-left w-1/2">
+                        <div className="lg:w-1/5 divide-y divide-gray-400 sm:ml-10 space-y-2">
+                            <p className="font-medium tracking-widest text-white uppercase ml-1">JOIN US ON</p>
+                            <h2 className="text-5xl pt-2.5 text-discord font-bold">Discord</h2>
                         </div>
-
-                        <p className="xl:w-2/3 text-xl mt-6">
-                            Contributions allow FlyByWire Simulations to provide better services for our users, such as fast and reliable download networks and integrated online features to enrich your flight simulation experience.
-                            We use Open Collective to transparently manage our donations and expenses, which means you can see how we utilize donated funds at any time.
+                        <p className="text-xl mt-3 justify-center">
+                            Join our partnered community server with over 20,000 members to meet new people and share your interests.
                         </p>
-                    </div>
-
-                    <div className="mt-6 flex flex-col-reverse xl:flex-row items-center">
-                        <a href="https://opencollective.com/flybywire/" target="_blank" rel="noreferrer">
-                            <Button className="w-60 text-xl text-white font-bold bg-discord border-2 border-discord transition hover:bg-white hover:text-discord">Join the Community</Button>
-                        </a>
+                        <div className="mt-6 flex justify-center sm:justify-start">
+                            <a href="https://opencollective.com/flybywire/" target="_blank" rel="noreferrer">
+                                <Button className="w-60 text-xl text-white font-bold bg-discord border-2 border-discord transition hover:bg-white hover:text-discord">Join the Community</Button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <img className="relative z-0 h-120 object-cover w-screen opacity-30"
-                src={BackgroundImage} />
+            <img className="relative z-0 h-144 sm:h-120 object-cover w-screen opacity-20"
+                src={BackgroundImage}  alt=""/>
         </section>
     );
 };
