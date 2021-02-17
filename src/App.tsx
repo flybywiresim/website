@@ -12,6 +12,7 @@ import { Features } from './components/home/Features';
 import { Download } from './components/home/Download';
 import { Community } from './components/home/Community';
 import { PartnerSection } from './components/home/PartnerSection';
+import { Donate } from './components/home/Donate';
 import { Footer } from './components/utils/Footer';
 
 import { Projects } from './components/projects/Projects';
@@ -37,9 +38,9 @@ function App(): JSX.Element {
                     <Download />
                     <Community />
                     <PartnerSection />
+                    <Donate />
                     <Footer/>
                 </Route>
-
             </Switch>
         </Router>
     );
