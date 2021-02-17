@@ -6,6 +6,9 @@ module.exports = {
             colors: {
                 blue: {
                     'dark-contrast': '#1d2838'
+                },
+                discord: {
+                    'DEFAULT': '#7289DA'
                 }
             }
         }
