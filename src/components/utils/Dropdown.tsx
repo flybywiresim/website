@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 export const DropdownItem: React.FC = (props) => (
-    <div className="block px-5 py-3 text-md font-medium text-white md:text-gray-700 hover:bg-gray-100 hover:text-gray-900 rounded-md" role="menuitem">
+    <div className="block px-8 py-3 text-md font-medium text-white md:text-gray-700 hover:bg-gray-200 hover:text-gray-900 md:rounded-md" role="menuitem">
         {props.children}
     </div>
 );
@@ -18,7 +18,7 @@ export const Dropdown: React.FC<{ titleName?: string, className?: string }> = (p
             </button>
 
             {shown && <div className="block md:absolute mx-4 md:min-w-max rounded-lg bg-blue-dark-contrast md:bg-white md:ring-1 md:ring-gray-500 ring-opacity-5 ">
-                <div role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                <div className="divide-y divide-gray-500 md:divide-gray-200" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                     {props.children}
                 </div>
             </div>}
