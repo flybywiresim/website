@@ -15,14 +15,14 @@ const links = [
     },
     {
         name: 'Documentation',
-        external: 'https://docs.flybywiresim.com/'
+        external: 'https://docs.flybywiresim.com/',
     },
     {
         name: 'Community',
         path: '#',
         sublinks: [{
             name: 'Discord',
-            external: 'https://discord.gg/scKXXcurdb'
+            external: 'https://discord.gg/flybywire'
         },
         {
             name: 'Twitter',
@@ -47,13 +47,21 @@ export function NavLinks(props: { className?: string }): JSX.Element {
                     <Dropdown className="-ml-1.5" titleName={link.name}>
                         {link.sublinks.map(sublink =>
                             // Check if link.sublink has path, if not use external
-                            <DropdownItem key={sublink.name}>
+                            <div key={sublink.name}>
                                 {sublink.path ?
-                                    <Link to={sublink.path}>{sublink.name}</Link>
+                                    <a href={sublink.path}>
+                                        <DropdownItem>
+                                            {sublink.name}
+                                        </DropdownItem>
+                                    </a>
                                     :
-                                    <a href={sublink.external} target="_blank" rel="noreferrer">{sublink.name}</a>
+                                    <a href={sublink.external} target="_blank" rel="noreferrer">
+                                        <DropdownItem>
+                                            {sublink.name}
+                                        </DropdownItem>
+                                    </a>
                                 }
-                            </DropdownItem>
+                            </div>
                         )}
                     </Dropdown>
                     :
