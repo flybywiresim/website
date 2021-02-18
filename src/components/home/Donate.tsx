@@ -30,7 +30,7 @@ export const Donate: React.FC = () => {
                 </div>
             </div>
 
-            <img className="relative z-0 h-160 sm:h-120 object-cover w-screen opacity-5"
+            <img className="relative z-0 h-160 sm:h-120 object-cover w-screen opacity-10"
                 src={BackgroundImage} />
         </section>
     );
