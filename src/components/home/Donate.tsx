@@ -11,10 +11,10 @@ export const Donate: React.FC = () => {
                     <div>
                         <h1 className="text-5xl text-teal font-extrabold">Donate</h1>
 
-                        <p className="xl:w-2/3 text-xl mt-6">
+                        <p className="xl:w-2/3 text-lg sm:text-xl mt-6">
                             Contributions allow FlyByWire Simulations to provide better services for our users, such as fast and reliable download networks and integrated online features to enrich your flight simulation experience.
                         </p>
-                        <p className="xl:w-2/3 text-xl mt-6">
+                        <p className="xl:w-2/3 text-lg sm:text-xl mt-6">
                             We use Open Collective to transparently manage our donations and expenses, which means you can see how we utilize donated funds at any time.
                         </p>
                     </div>
