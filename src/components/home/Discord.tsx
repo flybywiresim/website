@@ -21,7 +21,7 @@ export const Discord: React.FC = () => {
                             Join our partnered community server with over 20,000 members to meet new people and share your interests.
                         </p>
                         <div className="mt-6 flex justify-center sm:justify-start">
-                            <a href="https://opencollective.com/flybywire/" target="_blank" rel="noreferrer">
+                            <a href="https://discord.gg/flybywire" target="_blank" rel="noreferrer">
                                 <Button className="w-60 text-xl text-white font-bold bg-discord border-2 border-discord transition hover:bg-white hover:text-discord">Join the Community</Button>
                             </a>
                         </div>
