@@ -1,6 +1,6 @@
 import React from 'react';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { Dropdown, DropdownItem } from './Dropdown';
 
@@ -29,12 +29,16 @@ const links = [
             external: 'https://twitter.com/FlyByWireSim'
         },
         {
-            name: 'YouTube',
-            external: 'https://www.youtube.com/channel/UCX-dvWU-YQi5U2UjUBtrthg'
+            name: 'Facebook',
+            external: 'https://facebook.com/FlybywireSimulations/'
         },
         {
-            name: 'Blog',
-            path: '/blog',
+            name: 'YouTube',
+            external: 'https://www.youtube.com/FlyByWireSimulations'
+        },
+        {
+            name: 'Coming Soon™',
+            path: '#',
         }],
     },
 ];
