@@ -11,6 +11,7 @@ import { Header } from './components/home/Header';
 import { Features } from './components/home/Features';
 import { Download } from './components/home/Download';
 import { Community } from './components/home/Community';
+import { Discord } from './components/home/Discord';
 import { PartnerSection } from './components/home/PartnerSection';
 import { Donate } from './components/home/Donate';
 import { Footer } from './components/utils/Footer';
@@ -36,6 +37,7 @@ function App(): JSX.Element {
                     <Header scrollToDownload={handleScrollTD} />
                     <Features ref={downloadRef} />
                     <Download />
+                    <Discord />
                     <Community />
                     <PartnerSection />
                     <Donate />
