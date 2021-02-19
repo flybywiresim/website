@@ -1,7 +1,6 @@
 import React from 'react';
 import bgVideo from '../../assets/video/A32NX.mp4';
 
-
 export const Error404 = () => {
     return (
         <>
