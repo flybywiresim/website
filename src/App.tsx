@@ -15,6 +15,8 @@ import { PartnerSection } from './components/home/PartnerSection';
 import { Donate } from './components/home/Donate';
 import { Footer } from './components/utils/Footer';
 
+import { Error404 } from './components/utils/Error404';
+
 import { Projects } from './components/projects/Projects';
 
 function App(): JSX.Element {
@@ -29,18 +31,19 @@ function App(): JSX.Element {
         <Router>
             <NavBar />
             <Switch>
-                <Route path="/projects">
+                <Route exact path="/projects">
                     <Projects />
                 </Route>
-                <Route path="/">
+                <Route exact path="/">
                     <Header scrollToDownload={handleScrollTD} />
                     <Features ref={downloadRef} />
                     <Download />
                     <Community />
                     <PartnerSection />
                     <Donate />
-                    <Footer/>
+                    <Footer />
                 </Route>
+                <Route component={Error404} />
             </Switch>
         </Router>
     );
