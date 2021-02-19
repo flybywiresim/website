@@ -18,7 +18,7 @@ function LiveFlightsStat(): JSX.Element {
     const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-dark-contrast mb-3">{value}</h1>;
 
     return (
-        <div className="py-12 lg:py-0 lg:px-32 text-center">
+        <div className="py-12 lg:py-0 lg:px-20 2xl:px-32 text-center">
             <CountTo to={Number(liveFlights)} speed={3000}>{fn}</CountTo>
             <span className="text-xl text-gray-700">Live Flights</span>
         </div>
@@ -39,7 +39,7 @@ function CommitCountStatistic(): JSX.Element {
     const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-dark-contrast mb-3">{value}</h1>;
 
     return (
-        <div className="py-12 lg:py-0 lg:px-32 text-center">
+        <div className="py-12 lg:py-0 lg:px-20 2xl:px-32 text-center">
             <CountTo to={Number(commitCount)} speed={3000}>{fn}</CountTo>
             <span className="text-xl text-gray-700">Commits</span>
         </div>
@@ -60,7 +60,7 @@ function ContributorCountStatistic(): JSX.Element {
     const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-dark-contrast mb-3">{value}</h1>;
 
     return (
-        <div className="py-12 lg:py-0 lg:px-32 text-center">
+        <div className="py-12 lg:py-0 lg:px-20 2xl:px-32 text-center">
             <CountTo to={Number(contributorCount)} speed={3000}>{fn}</CountTo>
             <span className="text-xl text-gray-700">Contributors</span>
         </div>
@@ -105,7 +105,7 @@ function DownloadCountStatistic(): JSX.Element {
     const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-dark-contrast mb-3">{value}{postfix}</h1>;
 
     return (
-        <div className="py-12 lg:py-0 lg:px-32 text-center">
+        <div className="py-12 lg:py-0 lg:px-20 2xl:px-32 text-center">
             <CountTo to={Number(downloadCount)} speed={3000}>{fn}</CountTo>
             <span className="text-xl text-gray-700">Downloads</span>
         </div>
