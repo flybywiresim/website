@@ -49,11 +49,11 @@ export function NavLinks(props: { className?: string }): JSX.Element {
                             // Check if link.sublink has path, if not use external
                             <div key={sublink.name}>
                                 {sublink.path ?
-                                    <a href={sublink.path}>
+                                    <Link to={sublink.path}>
                                         <DropdownItem>
                                             {sublink.name}
                                         </DropdownItem>
-                                    </a>
+                                    </Link>
                                     :
                                     <a href={sublink.external} target="_blank" rel="noreferrer">
                                         <DropdownItem>
