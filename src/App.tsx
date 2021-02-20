@@ -18,6 +18,9 @@ import { Footer } from './components/utils/Footer';
 
 import { Error404 } from './components/utils/Error404';
 
+import { TermsOfService } from './components/legal/TermsOfService';
+import { PrivacyPolicy } from './components/legal/PrivacyPolicy';
+
 import { Projects } from './components/projects/Projects';
 
 function App(): JSX.Element {
@@ -43,6 +46,14 @@ function App(): JSX.Element {
                     <Community />
                     <PartnerSection />
                     <Donate />
+                    <Footer />
+                </Route>
+                <Route exact path="/tos">
+                    <TermsOfService />
+                    <Footer />
+                </Route>
+                <Route exact path="/privacy">
+                    <PrivacyPolicy />
                     <Footer />
                 </Route>
                 <Route component={Error404} />
