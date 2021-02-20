@@ -12,7 +12,7 @@ export const Discord: React.FC = () => {
                 <div className="relative xl:w-2/3 justify-center xl:justify-start text-center sm:flex sm:divide-x sm:space-x-10">
                     <FontAwesomeIcon className="self-center mb-3 sm:mb-0" icon={faDiscord} size="9x"/>
 
-                    <div className="sm:space-x-10 text-center mx-auto sm:text-left w-1/2">
+                    <div className="sm:space-x-10 text-center mx-auto sm:text-left w-3/4 sm:w-1/2">
                         <div className="w-full sm:w-2/3 md:1/3 2xl:w-1/5 divide-y divide-gray-400 sm:ml-10 space-y-2">
                             <p className="font-medium tracking-widest text-white uppercase ml-1">JOIN US ON</p>
                             <h2 className="text-5xl pt-2.5 text-discord font-bold">Discord</h2>
