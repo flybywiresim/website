@@ -1,12 +1,12 @@
 import React, { forwardRef } from 'react';
 import { CardBody, Card, CardTitle } from './Card';
 import bgImage from '../../assets/img/feature.jpg';
-import { faServer, faPen, faPaperPlane, faClipboardList, faHeadset, faToolbox } from '@fortawesome/free-solid-svg-icons';
+import { faCogs, faClipboardList, faToolbox, faHeadphones, faEye, faTabletAlt, } from '@fortawesome/free-solid-svg-icons';
 
 export const Features = forwardRef<HTMLDivElement>((_, ref): JSX.Element => (
     <>
         <div className="absolute w-screen">
-            <img className="h-full object-cover" src={bgImage} alt=""/>
+            <img className="h-full object-cover" src={bgImage} alt="" />
         </div>
         <div id="features" className="bg-blue-darker bg-opacity-95 relative py-14 shadow-inner">
             <div
@@ -23,21 +23,21 @@ export const Features = forwardRef<HTMLDivElement>((_, ref): JSX.Element => (
                 </p>
                 <div className="mt-12">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <Card icon={faServer}>
+                        <Card icon={faCogs}>
                             <CardTitle>Accurate System Functionality</CardTitle>
                             <CardBody>The A32NX currently contains many system reworks that are true to life.</CardBody>
                         </Card>
-                        <Card icon={faPen}>
+                        <Card icon={faEye}>
                             <CardTitle>Visual Reworks</CardTitle>
                             <CardBody>The A32NX is packaged with multiple visual reworks including new lighting,
                                 reworked textures, and model additions.</CardBody>
                         </Card>
-                        <Card icon={faPaperPlane}>
+                        <Card icon={faTabletAlt}>
                             <CardTitle>Electronic Flight Bag</CardTitle>
                             <CardBody>The EFB is an integrated tablet with a handy toolkit, a settings page, performance
                                 tools, and more.</CardBody>
                         </Card>
-                        <Card icon={faHeadset}>
+                        <Card icon={faHeadphones}>
                             <CardTitle>Custom Soundpack</CardTitle>
                             <CardBody>Enjoy sounds like never before, the A32NX includes a fully custom and highly
                                 accurate soundpack.</CardBody>
@@ -52,7 +52,7 @@ export const Features = forwardRef<HTMLDivElement>((_, ref): JSX.Element => (
                             <CardBody>FlyByWire has a custom product installer, which makes the task of installing all
                                 FlyByWire products hassle free.</CardBody>
                         </Card>
-                        <div ref={ref}/>
+                        <div ref={ref} />
                     </div>
                 </div>
             </div>
