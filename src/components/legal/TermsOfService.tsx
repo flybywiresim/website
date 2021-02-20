@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import BackgroundImage from '../../assets/img/discord.jpg';
-import { faShieldAlt } from '@fortawesome/free-solid-svg-icons';
+import { faBook } from '@fortawesome/free-solid-svg-icons';
 
 export const TermsOfService: React.FC = () => (
     <>
@@ -9,9 +9,9 @@ export const TermsOfService: React.FC = () => (
             src={BackgroundImage} alt="" />
         <div className="absolute top-0 bottom-0 z-20 w-full flex justify-center">
             <div className="relative my-auto xl:w-2/3 justify-center xl:justify-start text-center sm:flex sm:item-center sm:divide-x sm:space-x-10">
-                <FontAwesomeIcon className="mb-3 sm:mb-0 my-16" icon={faShieldAlt} size="9x" />
+                <FontAwesomeIcon className="mb-3 sm:mb-0 my-4" icon={faBook} size="9x" />
 
-                <div className="sm:space-x-10 mx-auto text-center md:text-left w-1/2">
+                <div className="sm:space-x-10 mx-auto text-center md:text-left w-7/12">
                     <div className="w-full divide-y divide-gray-400 sm:ml-10 space-y-2">
                         <h1 className="text-7xl text-blue-light sm:text-8xl font-medium">
                             Terms of Service
