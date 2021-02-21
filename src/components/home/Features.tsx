@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import { CardBody, Card, CardTitle } from './Card';
 import bgImage from '../../assets/img/feature.jpg';
-import { faCogs, faClipboardList, faToolbox, faHeadphones, faEye, faTabletAlt, } from '@fortawesome/free-solid-svg-icons';
+import { faCogs, faClipboardList, faToolbox, faHeadphones, faEye, faTabletAlt } from '@fortawesome/free-solid-svg-icons';
 
 export const Features = forwardRef<HTMLDivElement>((_, ref): JSX.Element => (
     <>
