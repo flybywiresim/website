@@ -113,6 +113,16 @@ function DownloadCountStatistic(): JSX.Element {
 }
 
 export function Community(): JSX.Element {
+    const [mapRefreshInterval, setMapRefreshInterval] = useState(5_000);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setMapRefreshInterval(document.visibilityState === 'visible' ? 5_000 : 100_000);
+        }, 100);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <div className="bg-gray-50 relative">
             <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 px-10 py-14">
@@ -132,7 +142,7 @@ export function Community(): JSX.Element {
             </div>
 
             <div className="relative h-160 text-black z-20">
-                <Map disableMenu={true} disableWeather={false} disableScroll={true} forceTileset={'carto-light'} />
+                <Map refreshInterval={mapRefreshInterval} disableMenu={true} disableWeather={false} disableScroll={true} forceTileset={'carto-light'} />
             </div>
         </div>
     );
