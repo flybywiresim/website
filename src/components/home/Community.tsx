@@ -117,7 +117,7 @@ export function Community(): JSX.Element {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setMapRefreshInterval(document.visibilityState === 'visible' ? 5_000 : 100_000);
+            setMapRefreshInterval(document.visibilityState === 'visible' ? 10_000 : 100_000);
         }, 100);
 
         return () => clearInterval(interval);
