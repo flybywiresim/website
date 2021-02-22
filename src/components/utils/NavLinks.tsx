@@ -18,6 +18,10 @@ const links = [
         external: 'https://docs.flybywiresim.com/',
     },
     {
+        name: 'Map',
+        path: 'map'
+    },
+    {
         name: 'Community',
         path: '#',
         sublinks: [{
