@@ -21,6 +21,8 @@ import { Error404 } from './components/utils/Error404';
 import { TermsOfService } from './components/legal/TermsOfService';
 import { PrivacyPolicy } from './components/legal/PrivacyPolicy';
 
+import { MapComp } from './components/map/MapComp';
+
 import { Projects } from './components/projects/Projects';
 
 function App(): JSX.Element {
@@ -55,6 +57,9 @@ function App(): JSX.Element {
                 <Route exact path="/privacy">
                     <PrivacyPolicy />
                     <Footer />
+                </Route>
+                <Route exact path="/map">
+                    <MapComp />
                 </Route>
                 <Route component={Error404} />
             </Switch>
