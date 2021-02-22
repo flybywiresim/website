@@ -1,7 +1,7 @@
 import React from 'react';
 import { Map } from '@flybywiresim/map';
 
-export const MapComp = (): JSX.Element => {
+export const MapComp: React.FC = () => {
     return (
         <>
             <div className=" h-screen bg-blue-dark-contrast">
