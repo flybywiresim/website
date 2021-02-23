@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Map } from '@flybywiresim/map';
+import { Map } from '@flybywiresim/react-components';
 
 export const FullscreenMap: React.FC = () => {
     const [mapRefreshInterval, setMapRefreshInterval] = useState(5_000);

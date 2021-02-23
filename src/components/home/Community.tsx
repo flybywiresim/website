@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Map } from '@flybywiresim/map';
+import { Map } from '@flybywiresim/react-components';
 import CountTo from 'react-count-to';
 
 const LIVE_FLIGHTS_ENDPOINT = 'https://api.flybywiresim.com/txcxn/_count';
@@ -129,7 +129,7 @@ export function Community(): JSX.Element {
                 <div className="w-full sm:w-1/2 text-center mx-auto mb-11 divide-y divide-gray-400">
                     <h2 className="text-base font-semibold tracking-wider text-gray-600 uppercase">A GLANCE AT THE</h2>
                     <p className="mt-3 pt-3 text-5xl font-extrabold text-gray-700">
-                            Community Insights
+                        Community Insights
                     </p>
                 </div>
 
