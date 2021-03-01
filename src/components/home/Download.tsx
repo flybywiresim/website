@@ -3,9 +3,9 @@ import { Button } from '../Button';
 
 export const Download: React.FC = () => {
     const urls = {
-        stable: 'https://flybywiresim-packages.nyc3.cdn.digitaloceanspaces.com/stable/A32NX-stable.zip',
-        dev: 'https://flybywiresim-packages.nyc3.cdn.digitaloceanspaces.com/vmaster/A32NX-master.zip',
-        cfbw: 'https://flybywiresim-packages.nyc3.cdn.digitaloceanspaces.com/vmaster-cfbw/A32NX-master-cfbw.zip'
+        stable: 'https://flybywiresim-packages.b-cdn.net/stable/A32NX-stable.zip',
+        dev: 'https://flybywiresim-packages.b-cdn.net/vmaster/A32NX-master.zip',
+        cfbw: 'https://flybywiresim-packages.b-cdn.net/vmaster-cfbw/A32NX-master-cfbw.zip'
     };
 
     const getDownloadLink = (link: string) => `https://api.flybywiresim.com/api/v1/download?url=${link}`;
