@@ -24,6 +24,7 @@ import { PrivacyPolicy } from './components/legal/PrivacyPolicy';
 import { FullscreenMap } from './components/map/FullscreenMap';
 
 import { A32NX } from './components/projects/A32NX';
+import { ExtendedFeatures } from './components/projects/ExtendedFeatures';
 
 function App(): JSX.Element {
     const downloadRef = useRef<HTMLDivElement>(null);
@@ -40,6 +41,7 @@ function App(): JSX.Element {
                 <Route exact path="/projects">
                     <A32NX />
                     <Features ref={downloadRef} />
+                    <ExtendedFeatures />
                     <Footer />
                 </Route>
                 <Route exact path="/">
