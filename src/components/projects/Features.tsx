@@ -1,13 +1,9 @@
 import React, { forwardRef } from 'react';
-import { CardBody, Card, CardTitle } from './Card';
-import bgImage from '../../assets/img/feature.jpg';
+import { CardBody, Card, CardTitle } from '../home/Card';
 import { faCogs, faClipboardList, faToolbox, faHeadphones, faEye, faTabletAlt } from '@fortawesome/free-solid-svg-icons';
 
 export const Features = forwardRef<HTMLDivElement>((_, ref): JSX.Element => (
     <>
-        <div className="absolute w-screen">
-            <img className="h-full object-cover" src={bgImage} alt="" />
-        </div>
         <div id="features" className="bg-blue-darker bg-opacity-95 relative py-14 shadow-inner">
             <div
                 className="rounded-lg mx-auto max-w-md px-4 py-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
