@@ -4,6 +4,14 @@ import { faCogs, faCheck, faEye } from '@fortawesome/free-solid-svg-icons';
 
 export const Features = forwardRef<HTMLDivElement>((_, ref): JSX.Element => (
     <>
+        <div className="mx-auto divide-y divide-gray-500 w-2/5 mt-12">
+            <p className="mt-3 mb-4 pt-3 text-5xl text-center font-medium text-blue-light">
+                Features
+            </p>
+            <p className="pt-5 text-center text-xl">
+                The volunteers in our community work hard around the clock to consistently bring new features and improve the default A320. Let&apos;s take a look at some of the features the A32NX has to offer!
+            </p>
+        </div>
         <div id="features" className="bg-blue-darker bg-opacity-95 relative py-14 shadow-inner">
             <div
                 className="rounded-lg mx-auto px-4 py-4 text-center sm:px-6 lg:px-0 lg:w-4/5 lg:max-w-7xl">

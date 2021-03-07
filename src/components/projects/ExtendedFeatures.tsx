@@ -4,15 +4,6 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 export const ExtendedFeatures: React.FC = () => (
     <div className="rounded-lg mx-auto px-4 py-4 max-w-screen-2xl sm:px-6 lg:px-8 pb-14">
-        <div className="mx-auto divide-y divide-gray-500 w-2/5">
-            <p className="mt-3 mb-4 pt-3 text-5xl text-center font-medium text-blue-light">
-                Features
-            </p>
-            <p className="pt-5 text-center text-xl">
-                The volunteers in our community work hard around the clock to consistently bring new features and improve the default A320. Let&apos;s take a look at some of the features the A32NX has to offer!
-            </p>
-        </div>
-
         <div className="grid grid-cols-4 max-w-max mx-auto gap-x-20 gap-y-20 mt-10">
             <Feature key="EFB">
                 <FeatureTitle>
