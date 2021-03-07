@@ -42,6 +42,7 @@ function App(): JSX.Element {
                     <A32NX />
                     <Features ref={downloadRef} />
                     <ExtendedFeatures />
+                    <Download />
                     <Footer />
                 </Route>
                 <Route exact path="/">

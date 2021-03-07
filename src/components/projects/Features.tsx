@@ -20,8 +20,7 @@ export const Features = forwardRef<HTMLDivElement>((_, ref): JSX.Element => (
                         </Card>
                         <Card icon={faToolbox}>
                             <CardTitle>Verified by Real Pilots</CardTitle>
-                            <CardBody>FlyByWire has a custom product installer, which makes the task of installing all
-                                FlyByWire products hassle free.</CardBody>
+                            <CardBody>The A32NX has been analyzed and tested by hundreds of real A320 pilots for accuracy to real life.</CardBody>
                         </Card>
                         <div ref={ref} />
                     </div>
