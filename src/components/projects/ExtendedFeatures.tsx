@@ -77,7 +77,7 @@ export const ExtendedFeatures: React.FC = () => (
                 </FeatureBody>
             </Feature>
         </div>
-        <div id="directdownload" />
+        <div id="download" />
     </div>
 );
 

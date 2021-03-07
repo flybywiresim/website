@@ -1,5 +1,6 @@
 import React from 'react';
 import BackgroundImage from '../../assets/img/discord.jpg';
+import a32nx_wireframe from '../../assets/img/a32nx_wireframe.png';
 import { Button } from '../Button';
 
 export const A32NX: React.FC = () => (
@@ -24,19 +25,16 @@ export const A32NX: React.FC = () => (
                             </Button>
                         </a>
 
-                        <a href="#directdownload">
+                        <a href="#download">
                             <Button
                                 className="w-40 text-xl font-bold border-2 border-blue-light text-blue-light transition hover:bg-white hover:text-blue-light">Download
                             </Button>
                         </a>
                     </div>
                 </div>
-                <div>
-
-                </div>
             </div>
         </div>
-        <img className="relative z-0 h-screen object-cover w-screen opacity-20"
-            src={BackgroundImage} alt="" />
+        <img className="absolute -right-1/3 transform scale-150 opacity-30" src={a32nx_wireframe} alt="" />
+        <img className="relative z-0 h-screen object-cover w-screen opacity-20" src={BackgroundImage} alt="" />
     </>
 );
