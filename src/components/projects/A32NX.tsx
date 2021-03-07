@@ -14,7 +14,7 @@ export const A32NX: React.FC = () => (
                         <span className="text-blue-light">A32</span><span className="text-blue">N</span>X
                     </h1>
                     <h1 className="w-2/3 text-2xl mt-2">
-                        &quot;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsa optio recusandae. Dolores, recusandae sit?&quot;
+                        &quot;The FlyByWire A32NX is one of the most ambitious projects in Flight Simulations to date.&quot;
                     </h1>
                     <div className="flex max-w-md py-5">
 
@@ -24,7 +24,7 @@ export const A32NX: React.FC = () => (
                             </Button>
                         </a>
 
-                        <a href="https://flybywiresim-packages.b-cdn.net/stable/A32NX-stable.zip">
+                        <a href="#directdownload">
                             <Button
                                 className="w-48 text-xl font-bold border-2 border-blue-light text-blue-light transition hover:bg-white hover:text-blue-light">Direct Download
                             </Button>

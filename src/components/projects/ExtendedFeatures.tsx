@@ -4,11 +4,11 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 export const ExtendedFeatures: React.FC = () => (
     <div className="rounded-lg mx-auto px-4 py-4 max-w-screen-2xl sm:px-6 lg:px-8 pb-14">
-        <div className="mx-auto divide-y divide-gray-500 w-1/3">
+        <div className="mx-auto divide-y divide-gray-500 w-2/5">
             <p className="mt-3 mb-4 pt-3 text-5xl text-center font-medium text-blue-light">
                 Features
             </p>
-            <p className="pt-5 text-center">
+            <p className="pt-5 text-center text-xl">
                 The volunteers in our community work hard around the clock to consistently bring new features and improve the default A320. Let&apos;s take a look at some of the features the A32NX has to offer!
             </p>
         </div>
@@ -50,42 +50,43 @@ export const ExtendedFeatures: React.FC = () => (
                 </FeatureBody>
             </Feature>
 
-            <Feature>
+            <Feature key="Experimental Variations">
                 <FeatureTitle>
-                    Title
+                    Experimental Variations
                 </FeatureTitle>
                 <FeatureBody>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, sunt?
+                    Want to experiment with our new features? You can! We have several ready to test branches with experimental features on our installer!
                 </FeatureBody>
             </Feature>
 
-            <Feature>
+            <Feature key="Constant Additions">
                 <FeatureTitle>
-                    Title
+                    Constant Additions
                 </FeatureTitle>
                 <FeatureBody>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, sunt?
+                    The A32NX development branches are updated almost daily with brand new features you can test right away!
                 </FeatureBody>
             </Feature>
 
-            <Feature>
+            <Feature key="Documentation">
                 <FeatureTitle>
-                    Title
+                    Documentation
                 </FeatureTitle>
                 <FeatureBody>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, sunt?
+                    FlyByWire has created several tutorials and documents to make learning the A320 quickly and accurately possible for anyone!
                 </FeatureBody>
             </Feature>
 
-            <Feature>
+            <Feature key="Open Source">
                 <FeatureTitle>
-                    Title
+                    Open Source
                 </FeatureTitle>
                 <FeatureBody>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, sunt?
+                    The FlyByWire A32NX is completely open sourced, anyone can contribute to the project, and it can be freely reused under our licence.
                 </FeatureBody>
             </Feature>
         </div>
+        <div id="directdownload" />
     </div>
 );
 

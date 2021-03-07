@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
-import { CardBody, Card, CardTitle } from '../home/Card';
-import { faCogs, faToolbox, faEye } from '@fortawesome/free-solid-svg-icons';
+import { CardBody, Card, CardTitle } from '../utils/Card';
+import { faCogs, faCheck, faEye } from '@fortawesome/free-solid-svg-icons';
 
 export const Features = forwardRef<HTMLDivElement>((_, ref): JSX.Element => (
     <>
@@ -18,7 +18,7 @@ export const Features = forwardRef<HTMLDivElement>((_, ref): JSX.Element => (
                             <CardBody>The A32NX is packaged with multiple visual reworks including new lighting,
                                 reworked textures, and model additions.</CardBody>
                         </Card>
-                        <Card icon={faToolbox}>
+                        <Card icon={faCheck}>
                             <CardTitle>Verified by Real Pilots</CardTitle>
                             <CardBody>The A32NX has been analyzed and tested by hundreds of real A320 pilots for accuracy to real life.</CardBody>
                         </Card>
