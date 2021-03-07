@@ -8,12 +8,12 @@ export const A32NX: React.FC = () => (
             <div className="flex flex-row justify-between items-end">
                 <div>
                     <h2 className="text-xl font-medium tracking-widest text-white uppercase ml-2 mb-2">
-                    DISCOVER THE
+                        DISCOVER THE
                     </h2>
                     <h1 className="text-7xl sm:text-8xl font-medium">
                         <span className="text-blue-light">A32</span><span className="text-blue">N</span>X
                     </h1>
-                    <h1 className="w-2/3 text-2xl mt-2">
+                    <h1 className="w-2/3 text-xl mt-2">
                         &quot;The FlyByWire A32NX is one of the most ambitious projects in Flight Simulations to date.&quot;
                     </h1>
                     <div className="flex max-w-md py-5">
@@ -26,7 +26,7 @@ export const A32NX: React.FC = () => (
 
                         <a href="#directdownload">
                             <Button
-                                className="w-48 text-xl font-bold border-2 border-blue-light text-blue-light transition hover:bg-white hover:text-blue-light">Direct Download
+                                className="w-40 text-xl font-bold border-2 border-blue-light text-blue-light transition hover:bg-white hover:text-blue-light">Download
                             </Button>
                         </a>
                     </div>
@@ -37,6 +37,6 @@ export const A32NX: React.FC = () => (
             </div>
         </div>
         <img className="relative z-0 h-screen object-cover w-screen opacity-20"
-            src={BackgroundImage}  alt=""/>
+            src={BackgroundImage} alt="" />
     </>
 );
