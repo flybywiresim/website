@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom';
 import { Header } from './components/home/Header';
 import { Features } from './components/home/Features';
-import { Download } from './components/home/Download';
+import { Installer } from './components/home/Installer';
 import { Community } from './components/home/Community';
 import { Discord } from './components/home/Discord';
 import { PartnerSection } from './components/home/PartnerSection';
@@ -43,7 +43,7 @@ function App(): JSX.Element {
                 <Route exact path="/">
                     <Header scrollToDownload={handleScrollTD} />
                     <Features ref={downloadRef} />
-                    <Download />
+                    <Installer />
                     <Discord />
                     <Community />
                     <PartnerSection />

@@ -5,7 +5,7 @@ import { faBoxOpen } from '@fortawesome/free-solid-svg-icons';
 // TODO: Update image when installer redesign is finished.
 import InstallerImage from '../../assets/img/InstallerScreenshot.png';
 
-export const Download: React.FC = () => {
+export const Installer: React.FC = () => {
     return (
         <div className="relative h-144 w-screen flex flex-col xl:flex-row items-center overflow-hidden bg-gray-100 ">
             <div className="ml-20  mt-10 max-w-2xl flex flex-col items-center xl:items-start text-center xl:text-left -mb-20 xl:mb-20 space-y-4">
