@@ -16,6 +16,12 @@ module.exports = {
                 discord: {
                     'DEFAULT': '#7289DA'
                 }
+            },
+            spacing: {
+                '110': '26rem',
+                '120': '30rem',
+                '128': '32rem',
+                '144': '36rem'
             }
         }
     },
