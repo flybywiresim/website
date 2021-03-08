@@ -15,8 +15,11 @@ export const A32NX: React.FC = () => (
                         <span className="text-blue-light">A32</span><span className="text-blue">N</span>X
                     </h1>
                     <h1 className="w-2/3 text-xl mt-2">
-                        &quot;The FlyByWire A32NX is one of the most ambitious projects in Flight Simulations to date.&quot;
+                        &quot;The potential within the A32NX project is extremely promising and it&apos;s future is bright in the task of bringing the aircraft to a level of high fidelity.&quot;
                     </h1>
+                    <p className="mt-4 text-gray-200 text-xl">
+                        - Dan, Real Airbus A320 Pilot
+                    </p>
                     <div className="flex max-w-md py-5">
 
                         <a href="https://api.flybywiresim.com/installer">
@@ -34,7 +37,7 @@ export const A32NX: React.FC = () => (
                 </div>
             </div>
         </div>
-        <img draggable="false" className="absolute -right-1/3 transform scale-150 opacity-40 select-none" src={a32nx_wireframe} alt="" />
-        <img draggable="false" className="relative z-0 h-screen object-cover w-screen opacity-20 select-none" src={BackgroundImage} alt="" />
+        <img draggable="false" className="absolute -right-1/3 transform scale-150 opacity-30 select-none" src={a32nx_wireframe} alt="" />
+        <img draggable="false" className="relative z-0 h-screen object-cover w-screen opacity-40 select-none" src={BackgroundImage} alt="" />
     </>
 );
