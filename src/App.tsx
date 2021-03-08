@@ -8,7 +8,6 @@ import {
     Route,
 } from 'react-router-dom';
 import { Header } from './components/home/Header';
-import { Features } from './components/projects/Features';
 import { Download } from './components/home/Download';
 import { Community } from './components/home/Community';
 import { Discord } from './components/home/Discord';
@@ -24,6 +23,7 @@ import { PrivacyPolicy } from './components/legal/PrivacyPolicy';
 import { FullscreenMap } from './components/map/FullscreenMap';
 
 import { A32NX } from './components/projects/A32NX';
+import { Features } from './components/projects/Features';
 import { ExtendedFeatures } from './components/projects/ExtendedFeatures';
 
 function App(): JSX.Element {
