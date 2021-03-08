@@ -30,7 +30,7 @@ export const Card: React.FC<CardProps> = (props): JSX.Element => (
             className="h-full flow-root transform hover:scale-105 transition-transform duration-100 rounded-lg px-8 pb-8">
             <div className="-mt-6">
                 <span
-                    className="inline-flex items-center justify-center p-3 w-1/5 lg:w-1/6 bg-blue-light-contrast rounded-md shadow-lg">
+                    className="inline-flex items-center justify-center p-3 w-16 bg-blue-light-contrast rounded-md shadow-lg">
                     {props.icon && <FontAwesomeIcon icon={props.icon} size="2x" />}
                 </span>
             </div>
