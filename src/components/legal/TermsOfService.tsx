@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import BackgroundImage from '../../assets/img/discord.jpg';
+import BackgroundImage from '../../assets/img/a32nxwing.png';
 import { faCogs, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 export const TermsOfService: React.FC = () => {
