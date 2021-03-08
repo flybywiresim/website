@@ -34,7 +34,7 @@ export const A32NX: React.FC = () => (
                 </div>
             </div>
         </div>
-        <img className="absolute -right-1/3 transform scale-150 opacity-30" src={a32nx_wireframe} alt="" />
-        <img className="relative z-0 h-screen object-cover w-screen opacity-20" src={BackgroundImage} alt="" />
+        <img draggable="false" className="absolute -right-1/3 transform scale-150 opacity-40 select-none" src={a32nx_wireframe} alt="" />
+        <img draggable="false" className="relative z-0 h-screen object-cover w-screen opacity-20 select-none" src={BackgroundImage} alt="" />
     </>
 );

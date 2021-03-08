@@ -18,19 +18,18 @@ export const Features = forwardRef<HTMLDivElement>((_, ref): JSX.Element => (
                     <div className="grid grid-cols-1 md:grid-cols-3 space-y-2 lg:justify-center divide-y md:divide-x md:divide-y-0 divide-gray-500">
                         <Card icon={faCogs}>
                             <CardTitle>Accurate System Functionality</CardTitle>
-                            <CardBody>The A32NX currently contains many system reworks that are true to life.</CardBody>
+                            <CardBody>Experimental version of the A32NX include limited to full rewrites of default autopilot and Fly-by-wire systems and much more.</CardBody>
                         </Card>
                         <div className="pt-5 md:pt-0">
                             <Card icon={faEye}>
                                 <CardTitle>Visual Fidelity</CardTitle>
-                                <CardBody>The A32NX is packaged with multiple visual reworks including new lighting,
-                                reworked textures, and model additions.</CardBody>
+                                <CardBody>The A32NX is packaged with multiple visual reworks including new lighting, reworked textures, and model additions.</CardBody>
                             </Card>
                         </div>
                         <div className="pt-5 md:pt-0">
                             <Card icon={faCheck}>
                                 <CardTitle>Verified by Real Pilots</CardTitle>
-                                <CardBody>The A32NX has been analyzed and tested by hundreds of real A320 pilots for accuracy to real life.</CardBody>
+                                <CardBody>The A32NX has been analyzed and tested by hundreds of real A320 pilots for accuracy to the real life aircraft.</CardBody>
                             </Card>
                         </div>
 
