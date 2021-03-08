@@ -15,7 +15,7 @@ export const A32NX: React.FC = () => (
                         <span className="text-blue-light">A32</span><span className="text-blue">N</span>X
                     </h1>
                     <h1 className="w-2/3 text-xl mt-2">
-                        &quot;The potential within the A32NX project is extremely promising and it&apos;s future is bright in the task of bringing the aircraft to a level of high fidelity.&quot;
+                        &quot;The potential within the A32NX project is extremely promising and its future is bright in the task of bringing the aircraft to a level of high fidelity.&quot;
                     </h1>
                     <p className="mt-4 text-gray-200 text-xl">
                         - Dan, Real Airbus A320 Pilot
