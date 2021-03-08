@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import bgVideo from '../../assets/video/A32NX.mp4';
 import { Button } from '../Button';
 
@@ -19,10 +20,11 @@ export const Header: React.FC<HeaderProps> = (props) => (
                 <Button onClick={props.scrollToDownload}
                     className="w-40 text-xl font-bold bg-blue-light border-2 border-blue-light transition hover:bg-white hover:text-blue-light mr-3">Download</Button>
 
-                <a href="https://docs.flybywiresim.com/" target="_blank" rel="noreferrer">
+
+                <Link to='/projects'>
                     <Button
                         className="w-44 text-xl font-bold border-2 border-blue-light text-blue-light transition hover:bg-white hover:text-blue-light">Learn More</Button>
-                </a>
+                </Link>
             </div>
         </div>
 
