@@ -1,7 +1,7 @@
 import React from 'react';
 import bgVideo from '../../assets/video/A32NX.mp4';
 
-export const Error404 = () => {
+export const Error404: React.FC = () => {
     return (
         <>
             <div className="relative mx-auto px-2 my-80 max-w-md md:max-w-4xl text-center z-20">

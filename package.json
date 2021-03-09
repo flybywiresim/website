@@ -5,7 +5,7 @@
   "homepage": "https://www.flybywiresim.com/",
   "dependencies": {
     "@craco/craco": "^6.1.1",
-    "@flybywiresim/react-components": "^0.1.2",
+    "@flybywiresim/react-components": "^0.2.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
@@ -25,7 +25,7 @@
     "react-count-to": "^0.12.0",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.2",
+    "react-scripts": "4.0.3",
     "react-typical": "^0.1.3",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "typescript": "^4.1.5",

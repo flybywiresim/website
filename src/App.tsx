@@ -10,11 +10,11 @@ import {
 import { Header } from './components/home/Header';
 import { Features } from './components/home/Features';
 import { Installer } from './components/home/Installer';
+import { Download } from './components/home/Download';
 import { Community } from './components/home/Community';
 import { Discord } from './components/home/Discord';
 import { PartnerSection } from './components/home/PartnerSection';
 import { Donate } from './components/home/Donate';
-import { Footer } from './components/utils/Footer';
 
 import { Error404 } from './components/utils/Error404';
 
@@ -23,7 +23,12 @@ import { PrivacyPolicy } from './components/legal/PrivacyPolicy';
 
 import { FullscreenMap } from './components/map/FullscreenMap';
 
-import { Projects } from './components/projects/Projects';
+import { A32NX } from './components/projects/A32NX';
+import { Features } from './components/projects/Features';
+import { ExtendedFeatures } from './components/projects/ExtendedFeatures';
+
+import ScrollToTop from './ScrollToTop';
+import { Footer } from './components/utils/Footer';
 
 function App(): JSX.Element {
     const downloadRef = useRef<HTMLDivElement>(null);
@@ -35,15 +40,21 @@ function App(): JSX.Element {
 
     return (
         <Router>
+            <ScrollToTop />
             <NavBar />
             <Switch>
                 <Route exact path="/projects">
-                    <Projects />
+                    <A32NX />
+                    <Features ref={downloadRef} />
+                    <ExtendedFeatures />
+                    <Download />
+                    <Footer />
                 </Route>
                 <Route exact path="/">
                     <Header scrollToDownload={handleScrollTD} />
                     <Features ref={downloadRef} />
                     <Installer />
+                    <Download />
                     <Discord />
                     <Community />
                     <PartnerSection />
