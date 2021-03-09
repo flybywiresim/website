@@ -8,7 +8,6 @@ import {
     Route,
 } from 'react-router-dom';
 import { Header } from './components/home/Header';
-import { Features } from './components/home/Features';
 import { Installer } from './components/home/Installer';
 import { Download } from './components/home/Download';
 import { Community } from './components/home/Community';
