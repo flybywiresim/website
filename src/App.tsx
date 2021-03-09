@@ -8,7 +8,6 @@ import {
     Route,
 } from 'react-router-dom';
 import { Header } from './components/home/Header';
-import { Download } from './components/home/Download';
 import { Installer } from './components/home/Installer';
 import { Community } from './components/home/Community';
 import { Discord } from './components/home/Discord';
@@ -25,6 +24,7 @@ import { FullscreenMap } from './components/map/FullscreenMap';
 import { A32NX } from './components/projects/A32NX';
 import { Features } from './components/projects/Features';
 import { ExtendedFeatures } from './components/projects/ExtendedFeatures';
+import { Download } from './components/projects/Download';
 
 import ScrollToTop from './ScrollToTop';
 import { Footer } from './components/utils/Footer';
@@ -52,7 +52,6 @@ function App(): JSX.Element {
                 <Route exact path="/">
                     <Header scrollToDownload={handleScrollTD} />
                     <Installer />
-                    <Download />
                     <Discord />
                     <Community />
                     <PartnerSection />
