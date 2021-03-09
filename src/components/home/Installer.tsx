@@ -7,7 +7,7 @@ import InstallerImage from '../../assets/img/InstallerScreenshot.png';
 
 export const Installer: React.FC = () => (
     <div className="relative h-144 w-screen flex flex-col xl:flex-row items-center overflow-hidden bg-blue-dark">
-        <div className="mx-auto lg:ml-20 mt-10 max-w-2xl flex flex-col items-center xl:items-start text-center xl:text-left -mb-20 xl:mb-20 space-y-4">
+        <div className="mx-auto xl:ml-20 mt-10 max-w-2xl flex flex-col items-center xl:items-start text-center xl:text-left -mb-20 xl:mb-20 space-y-4">
             <div className="inline-flex items-center justify-center p-3 bg-blue-light-contrast rounded-md shadow-lg">
                 <FontAwesomeIcon icon={faBoxOpen} size="2x" />
             </div>
@@ -17,7 +17,7 @@ export const Installer: React.FC = () => (
                 <Button className="w-40 mt-4 bg-teal-light-contrast border-2 border-teal-light-contrast hover:bg-white hover:text-teal-light-contrast font-bold">Download</Button>
             </a>
         </div>
-        <div className="relative w-5/6 xl:-right-144 -bottom-40 shadow-xl">
+        <div className="relative w-5/6 lg:-right-144 -bottom-40 shadow-xl">
             <img src={InstallerImage} alt="Installer Image" />
         </div>
     </div>
