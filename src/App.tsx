@@ -51,7 +51,6 @@ function App(): JSX.Element {
                 </Route>
                 <Route exact path="/">
                     <Header scrollToDownload={handleScrollTD} />
-                    <Features ref={downloadRef} />
                     <Installer />
                     <Download />
                     <Discord />
