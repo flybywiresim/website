@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import './App.css';
 import { NavBar } from './components/utils/NavBar';
 
@@ -30,12 +30,6 @@ import ScrollToTop from './ScrollToTop';
 import { Footer } from './components/utils/Footer';
 
 function App(): JSX.Element {
-    const downloadRef = useRef<HTMLDivElement>(null);
-    const handleScrollTD = () => {
-        if (downloadRef.current) {
-            downloadRef.current.scrollIntoView();
-        }
-    };
 
     return (
         <Router>
@@ -44,13 +38,13 @@ function App(): JSX.Element {
             <Switch>
                 <Route exact path="/projects">
                     <A32NX />
-                    <Features ref={downloadRef} />
+                    <Features />
                     <ExtendedFeatures />
                     <Download />
                     <Footer />
                 </Route>
                 <Route exact path="/">
-                    <Header scrollToDownload={handleScrollTD} />
+                    <Header />
                     <Installer />
                     <Discord />
                     <Community />
