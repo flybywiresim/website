@@ -1,6 +1,6 @@
 import React from 'react';
 import BackgroundImage from '../../assets/img/discord.jpg';
-import a32nx_wireframe from '../../assets/img/a32nx_wireframe.png';
+import a32nx_wireframe from '../../assets/svg/a32nx_wireframe.svg';
 import { Button } from '../Button';
 
 export const A32NX: React.FC = () => (
