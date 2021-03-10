@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
                         <Button onClick={handleClick}
                             className="w-40 text-xl font-bold bg-blue-light border-2 border-blue-light transition hover:bg-white hover:text-blue-light mr-3">Installer</Button>
 
-                        <Link to='/projects'>
+                        <Link to='/a32nx'>
                             <Button
                                 className="w-44 text-xl font-bold border-2 border-blue-light text-blue-light transition hover:bg-white hover:text-blue-light">Learn More</Button>
                         </Link>
