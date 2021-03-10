@@ -7,27 +7,18 @@ import {
     Switch,
     Route,
 } from 'react-router-dom';
-import { Header } from './components/home/Header';
-import { Installer } from './components/home/Installer';
-import { Community } from './components/home/Community';
-import { Discord } from './components/home/Discord';
-import { PartnerSection } from './components/home/PartnerSection';
-import { Donate } from './components/home/Donate';
 
-import { Error404 } from './components/utils/Error404';
-
-import { TermsOfService } from './components/legal/TermsOfService';
-import { PrivacyPolicy } from './components/legal/PrivacyPolicy';
-
+import { Home } from './pages/home/Home';
+// Projects/A32NX Page
+import { A32NX } from './pages/projects/A32NX/A32NX';
+// Fullscreen Map Page
 import { FullscreenMap } from './components/map/FullscreenMap';
 
-import { A32NX } from './components/projects/A32NX';
-import { Features } from './components/projects/Features';
-import { ExtendedFeatures } from './components/projects/ExtendedFeatures';
-import { Download } from './components/projects/Download';
-
+// Misc
 import ScrollToTop from './ScrollToTop';
+import { ToS, Privacy } from './pages/legal/Legal';
 import { Footer } from './components/utils/Footer';
+import { Error404 } from './components/utils/Error404';
 
 function App(): JSX.Element {
 
@@ -36,35 +27,20 @@ function App(): JSX.Element {
             <ScrollToTop />
             <NavBar />
             <Switch>
-                <Route exact path="/projects">
-                    <A32NX />
-                    <Features />
-                    <ExtendedFeatures />
-                    <Download />
-                    <Footer />
-                </Route>
-                <Route exact path="/">
-                    <Header />
-                    <Installer />
-                    <Discord />
-                    <Community />
-                    <PartnerSection />
-                    <Donate />
-                    <Footer />
-                </Route>
-                <Route exact path="/tos">
-                    <TermsOfService />
-                    <Footer />
-                </Route>
-                <Route exact path="/privacy">
-                    <PrivacyPolicy />
-                    <Footer />
-                </Route>
-                <Route exact path="/map">
-                    <FullscreenMap />
-                </Route>
-                <Route component={Error404} />
+                <Route exact path="/" component={ Home }/>
+
+                {/* Pages */}
+                <Route exact path="/a32nx" component={ A32NX }/>
+                <Route path="/map" component={ FullscreenMap }/>
+
+                {/* Legal */}
+                <Route path="/tos" component={ ToS } />
+                <Route path="/privacy" component={ Privacy }/>
+
+                {/* Misc/Error Pages */}
+                <Route component={ Error404 } />
             </Switch>
+            <Footer />
         </Router>
     );
 }

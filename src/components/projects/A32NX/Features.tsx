@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { CardBody, Card, CardTitle } from '../utils/Card';
+import { CardBody, Card, CardTitle } from '../../utils/Card';
 import { faCogs, faCheck, faEye } from '@fortawesome/free-solid-svg-icons';
 
 export const Features = forwardRef<HTMLDivElement>((_, ref): JSX.Element => (

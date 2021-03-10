@@ -11,7 +11,7 @@ const links = [
     },
     {
         name: 'Projects',
-        path: 'projects'
+        path: 'a32nx'
     },
     {
         name: 'Documentation',
