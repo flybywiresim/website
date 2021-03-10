@@ -4,7 +4,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 export const ExtendedFeatures: React.FC = () => (
     <div className="rounded-lg mx-auto px-4 py-4 max-w-screen-2xl sm:px-6 lg:px-8 pb-14">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-max mx-auto gap-x-20 gap-y-20 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-max mx-auto gap-x-14 gap-y-20 mt-10">
             <Feature key="EFB">
                 <FeatureTitle>
                     Electronic Flight Bag
