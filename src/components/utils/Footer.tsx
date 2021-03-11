@@ -22,7 +22,7 @@ const scrollTop = () => {
 };
 
 export const Footer = (): JSX.Element => (
-    <div className="bg-blue-dark w-full px-10 py-8">
+    <div className="relative bg-blue-dark w-full px-10 py-8 z-30">
         <div className="flex flex-row justify-center">
             <div className="flex flex-col">
                 <div className="flex flex-col-3 py-4 text-lg mx-auto">
