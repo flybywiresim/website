@@ -5,7 +5,7 @@ export const Download: React.FC = () => {
     const urls = {
         stable: 'https://flybywiresim-packages.b-cdn.net/stable/A32NX-stable.zip',
         dev: 'https://flybywiresim-packages.b-cdn.net/vmaster/A32NX-master.zip',
-        exp: 'https://flybywiresim-packages.b-cdn.net/vmaster-cfbw-cap/A32NX-master-cfbw-cap.zip'
+        exp: 'https://flybywiresim-packages.b-cdn.net/vmaster-cfbw-cap/A32NX-master-cfbw-cap.zip',
     };
 
     const getDownloadLink = (link: string) => `https://api.flybywiresim.com/api/v1/download?url=${link}`;
@@ -21,7 +21,12 @@ export const Download: React.FC = () => {
                                 Download
                             </p>
                         </div>
-                        <p className="mt-5 max-w-prose text-xl text-white">We have included many options to download our addons, you can use our custom and simple installer to always keep your products up to date, or you can download using standalone installations.</p>
+
+                        <p className="mt-5 max-w-prose text-xl text-white">
+                            We have included many options to download our addons, you can use our custom and simple installer to always keep your products up to date,
+                            or you can download using standalone installations.
+                        </p>
+
                         <ul className="list-disc -m-2 pt-5 pl-5 text-lg text-gray-200">
                             <li className="ml-2 pl-2">Integrates seamlessly into Microsoft Flight Simulator - no external programs required.</li>
                             <li className="ml-2 pl-2">Safe, trustworthy, and constantly updated to assure nothing is broken.</li>
@@ -31,14 +36,20 @@ export const Download: React.FC = () => {
                     <div className="w-full lg:w-2/5 flex flex-col divide-y divide-gray-500">
                         <div className="pt-5 lg:pt-0 pb-5">
                             <span className="text-4xl text-blue-100">Installer</span>
-                            <p className="mt-4 mb-6">Our easy-to-use installer is the easiest way to get started with our addons. Simply launch and install any addon you want, with only two clicks.</p>
+
+                            <p className="mt-4 mb-6">
+                                Our easy-to-use installer is the easiest way to get started with our addons. Simply launch and install any addon you want, with only two clicks.
+                            </p>
+
                             <a href="https://api.flybywiresim.com/installer">
                                 <Button className="w-40 float-right bg-green-500 hover:bg-green-700 font-bold">Download</Button>
                             </a>
                         </div>
                         <div className="pt-5">
                             <span className="text-2xl text-blue-100">Direct Download</span>
-                            <p className="mt-4 mb-6">If you prefer a direct download, the following links are available.</p>
+                            <p className="mt-4 mb-6">
+                                If you prefer a direct download, the following links are available.
+                            </p>
 
                             <div className="divide-y divide-gray-700">
                                 <div className="flex flex-row justify-between items-center mb-5">
