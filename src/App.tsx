@@ -18,6 +18,7 @@ import ScrollToTop from './ScrollToTop';
 import { ToS, Privacy } from './pages/legal/Legal';
 import { Footer } from './components/utils/Footer';
 import { Error404 } from './components/utils/Error404';
+import { Branding } from './pages/branding/Branding';
 
 function App(): JSX.Element {
     return (
@@ -28,8 +29,9 @@ function App(): JSX.Element {
                 <Route exact path="/" component={Home} />
 
                 {/* Pages */}
-                <Route exact path="/a32nx" component={A32NX} />
-                <Route path="/map" component={FullscreenMap} />
+                <Route exact path="/a32nx" component={ A32NX }/>
+                <Route path="/map" component={ FullscreenMap }/>
+                <Route path="/branding" component={ Branding } />
 
                 {/* Legal */}
                 <Route path="/tos" component={ToS} />
