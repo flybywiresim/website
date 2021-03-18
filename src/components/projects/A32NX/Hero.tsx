@@ -5,7 +5,7 @@ import { Button } from '../../Button';
 
 export const Hero: React.FC = () => (
     <>
-        <div className="absolute max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 inset-x-2 inset-y-1/3 z-30">
+        <header className="absolute max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 inset-x-2 inset-y-1/3 z-30">
             <div className="flex flex-row justify-between items-end">
                 <div>
                     <h2 className="text-2xl font-medium tracking-widest text-white uppercase ml-2 mb-2">
@@ -36,7 +36,7 @@ export const Hero: React.FC = () => (
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
         <img draggable="false" className="absolute hidden lg:block -right-1/3 transform scale-150 opacity-30 select-none" src={a32nx_wireframe} alt="" />
         <img draggable="false" className="relative z-0 h-screen object-cover w-screen opacity-30 select-none" src={BackgroundImage} alt="" />
     </>
