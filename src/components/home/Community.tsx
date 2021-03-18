@@ -125,7 +125,7 @@ export function Community(): JSX.Element {
 
     return (
         <div className="bg-gray-50 relative">
-            <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 px-10 py-14">
+            <div className="w-full mx-auto sm:px-6 lg:px-8 px-10 py-14">
                 <div className="w-full sm:w-1/2 text-center mx-auto mb-11 divide-y divide-gray-400">
                     <h2 className="text-base font-semibold tracking-wider text-gray-600 uppercase">A GLANCE AT THE</h2>
                     <p className="mt-3 pt-3 text-5xl font-extrabold text-gray-700">
