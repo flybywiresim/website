@@ -3,7 +3,7 @@ import BackgroundImage from '../../../assets/img/discord.jpg';
 import a32nx_wireframe from '../../../assets/svg/a32nx_wireframe.svg';
 import { Button } from '../../Button';
 
-export const A32NXProjHeader: React.FC = () => (
+export const Hero: React.FC = () => (
     <>
         <header className="absolute max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 inset-x-2 inset-y-1/3 z-30">
             <div className="flex flex-row justify-between items-end">
