@@ -14,11 +14,11 @@ export const FullscreenMap: React.FC = () => {
 
     return (
         <>
-            <div className=" h-screen bg-blue-dark-contrast">
+            <main className=" h-screen bg-blue-dark-contrast">
                 <div className="relative h-screen pt-20 text-black z-20">
                     <Map refreshInterval={mapRefreshInterval} />
                 </div>
-            </div>
+            </main>
         </>
     );
 };

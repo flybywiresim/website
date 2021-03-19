@@ -13,32 +13,33 @@ export const PrivacyPolicy: React.FC = () => {
 
     return (
         <>
-            <img className="relative z-0 object-cover w-screen h-screen opacity-20 shadow-2xl"
-                src={BackgroundImage} alt="" />
-            <div className="absolute top-0 bottom-0 z-20 w-full flex justify-center">
-                <div className="relative my-auto xl:w-3/4 md:w-4/5 justify-center xl:justify-start text-center sm:flex sm:item-center sm:divide-x sm:space-x-10">
-                    <FontAwesomeIcon className="mb-3 sm:mb-0 self-center" icon={faUserShield} size="7x" />
+            <header>
+                <img className="relative z-0 object-cover w-screen h-screen opacity-20 shadow-2xl"
+                    src={BackgroundImage} alt="" />
+                <div className="absolute top-0 bottom-0 z-20 w-full flex justify-center">
+                    <div className="relative my-auto xl:w-3/4 md:w-4/5 justify-center xl:justify-start text-center sm:flex sm:item-center sm:divide-x sm:space-x-10">
+                        <FontAwesomeIcon className="mb-3 sm:mb-0 self-center" icon={faUserShield} size="7x" />
 
-                    <div className="sm:space-x-10 mx-auto text-center md:text-left w-1/2">
-                        <div className="w-full divide-y divide-gray-400 sm:ml-10 space-y-2">
-                            <h1 className="text-4xl md:text-7xl text-blue-light sm:text-8xl font-medium">
-                                Privacy Policy
-                            </h1>
+                        <div className="sm:space-x-10 mx-auto text-center md:text-left w-1/2">
+                            <div className="w-full divide-y divide-gray-400 sm:ml-10 space-y-2">
+                                <h1 className="text-4xl md:text-7xl text-blue-light sm:text-8xl font-medium">
+                                    Privacy Policy
+                                </h1>
+                            </div>
+                            <p className="text-xl mt-3">
+                                Please take some time to review our privacy policy.
+                                At flybywire simulations we make it a priority to be
+                                thoroughly transparent to our users about the data we collect and use.
+                            </p>
                         </div>
-                        <p className="text-xl mt-3">
-                            Please take some time to review our privacy policy.
-                            At flybywire simulations we make it a priority to be
-                            thoroughly transparent to our users about the data we collect and use.
-                        </p>
                     </div>
+                    <FontAwesomeIcon onClick={handleScroll} className="absolute animate-bounce bottom-5 cursor-pointer" icon={faChevronDown} size="3x" />
                 </div>
-                <FontAwesomeIcon onClick={handleScroll} className="absolute animate-bounce bottom-5 cursor-pointer" icon={faChevronDown} size="3x" />
-
-            </div>
+            </header>
             {/* HandleScroll scrolls to this div */}
             <div ref={bodyRef} />
 
-            <div className="w-full md:mx-auto px-20 xl:px-0 my-40 max-w-6xl">
+            <article className="w-full md:mx-auto px-20 xl:px-0 my-40 max-w-6xl">
                 <h1 className="mt-40 text-6xl text-blue-light font-bold">Privacy Policy</h1>
                 <div className="mt-2">
                     <p>Effective: 21/12/2020</p>
@@ -102,7 +103,7 @@ export const PrivacyPolicy: React.FC = () => {
                         <p>The website contains links to other websites. We are not responsible for the privacy policies of third party websites.</p>
                     </div>
                 </div>
-            </div>
+            </article>
         </>
     );
 };

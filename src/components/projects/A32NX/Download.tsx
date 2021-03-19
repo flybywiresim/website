@@ -11,7 +11,7 @@ export const Download: React.FC = () => {
     const getDownloadLink = (link: string) => `https://api.flybywiresim.com/api/v1/download?url=${link}`;
 
     return (
-        <div id="download" className="relative bg-blue-dark-contrast">
+        <section id="download" className="relative bg-blue-dark-contrast">
             <div className="w-full lg:w-11/12 2xl:w-4/6 m-auto px-10 py-14">
                 <div className="flex flex-col lg:flex-row">
                     <div className="w-full lg:w-3/5 lg:pr-10">
@@ -64,6 +64,6 @@ export const Download: React.FC = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
