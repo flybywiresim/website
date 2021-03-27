@@ -5,7 +5,7 @@ export const Download: React.FC = () => {
     const urls = {
         stable: 'https://flybywiresim-packages.b-cdn.net/stable/A32NX-stable.zip',
         dev: 'https://flybywiresim-packages.b-cdn.net/vmaster/A32NX-master.zip',
-        cfbw: 'https://flybywiresim-packages.b-cdn.net/vmaster-cfbw/A32NX-master-cfbw.zip'
+        exp: 'https://flybywiresim-packages.b-cdn.net/vmaster-cfbw-cap/A32NX-master-cfbw-cap.zip'
     };
 
     const getDownloadLink = (link: string) => `https://api.flybywiresim.com/api/v1/download?url=${link}`;
@@ -54,8 +54,8 @@ export const Download: React.FC = () => {
                                     </a>
                                 </div>
                                 <div className="flex flex-row justify-between items-center mb-8 pt-5">
-                                    <span className="text-xl text-gray-300">Custom Fly-By-Wire Build</span>
-                                    <a href={getDownloadLink(urls.cfbw)}>
+                                    <span className="text-xl text-gray-300">Experimental Build</span>
+                                    <a href={getDownloadLink(urls.exp)}>
                                         <Button className="w-40 float-right bg-blue-light-contrast hover:bg-blue-medium font-bold">Download</Button>
                                     </a>
                                 </div>
