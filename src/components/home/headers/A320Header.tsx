@@ -1,16 +1,16 @@
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import bgVideo from '../../assets/video/A32NX.mp4';
-import { Button } from '../Button';
+import bgVideo from '../../../assets/video/A32NX.mp4';
+import { Button } from '../../Button';
 
-export const Header: React.FC = () => {
+export const A320Header: React.FC = () => {
     const installerRef = useRef<HTMLDivElement>(null);
     const handleClick = () => {
-        if(installerRef.current){
+        if (installerRef.current) {
             installerRef.current.scrollIntoView();
         }
     };
-    return(
+    return (
         <>
             <header className="h-screen">
                 <div className="absolute max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 inset-x-2 inset-y-1/3 z-30 ">
@@ -35,7 +35,7 @@ export const Header: React.FC = () => {
                     src={bgVideo} playsInline autoPlay
                     muted loop />
             </header>
-            <div ref={installerRef} className="absolute top-3/4 h-160 w-screen"/>
+            <div ref={installerRef} className="absolute top-3/4 h-160 w-screen" />
         </>
     );
 };
