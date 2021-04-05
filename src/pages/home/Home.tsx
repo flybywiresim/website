@@ -15,10 +15,10 @@ export const Home: React.FC = () => (
     <>
         <HeroHeader>
             <SwiperSlide>
-                <A380Header />
+                <A320Header />
             </SwiperSlide>
             <SwiperSlide>
-                <A320Header />
+                <A380Header />
             </SwiperSlide>
         </HeroHeader>
         <Installer />
