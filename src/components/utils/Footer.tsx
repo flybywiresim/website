@@ -16,10 +16,6 @@ export const FooterIconItem: React.FC<IconItemProp> = (props: PropsWithChildren<
     </a>
 );
 
-const scrollTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-};
-
 export const Footer = (): JSX.Element => (
     <footer className="relative bg-blue-dark w-full px-10 py-8 z-30">
         <div className="flex flex-row justify-center">
@@ -43,13 +39,18 @@ export const Footer = (): JSX.Element => (
                             <p>Source Code</p>
                         </a>
                         <div className="hover:underline">
-                            <Link to="/tos" onClick={scrollTop}>
+                            <Link to='/tos'>
                                 <p>Terms of Service</p>
                             </Link>
                         </div>
                         <div className="hover:underline">
-                            <Link to="/privacy" onClick={scrollTop}>
+                            <Link to='/privacy'>
                                 <p>Privacy Policy</p>
+                            </Link>
+                        </div>
+                        <div className="hover:underline">
+                            <Link to='/branding'>
+                                <p>Press Kit</p>
                             </Link>
                         </div>
                     </div>
