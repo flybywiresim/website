@@ -1,14 +1,12 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import bgVideo from '../../../assets/video/A32NX.mp4';
 import { Button } from '../../Button';
 
 export const A380Header: React.FC = () => {
-    const installerRef = useRef<HTMLDivElement>(null);
     const handleClick = () => {
-        if (installerRef.current) {
-            installerRef.current.scrollIntoView();
-        }
+        const bruh = window.innerHeight;
+        window.scrollBy(0, bruh / 1.5);
     };
     return (
         <>
@@ -35,7 +33,6 @@ export const A380Header: React.FC = () => {
                     src={bgVideo} playsInline autoPlay
                     muted loop />
             </header>
-            <div ref={installerRef} className="absolute bottom-0 h-0 w-screen" />
         </>
     );
 };
