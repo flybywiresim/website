@@ -1,63 +1,47 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true,
-        "node": true
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended"
-    ],
+    "root": true,
+    "env": { "browser": true },
+    "extends": "@flybywiresim/eslint-config",
+    "plugins": ["@typescript-eslint"],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 12,
-        "sourceType": "module"
+        "ecmaVersion": 2021,
+        "sourceType": "script",
+        "requireConfigFile": false
     },
-    "plugins": [
-        "react",
-        "@typescript-eslint"
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    },
+    "overrides": [
+        {
+            "files": ["*.jsx", "*.tsx"],
+            "parserOptions": {
+                "sourceType": "module",
+                "ecmaFeatures": { "jsx": true }
+            }
+        },
+        {
+            "files": ["*.mjs", "*.ts", "*.d.ts"],
+            "parserOptions": { "sourceType": "module" }
+        },
+        {
+            "files": ["*.ts", "*.tsx"],
+            "rules": {
+                "no-undef": "off"
+            }
+        }
     ],
+    // overrides airbnb, use sparingly
     "rules": {
-        "indent": [
-            "error",
-            4
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ],
-        "object-curly-spacing": [
-            "error",
-            "always"
-        ],
-        "no-unused-vars": [
-            "error"
-        ],
-        "@typescript-eslint/no-explicit-any": [
-            "off"
-        ],
-        "eol-last": [
-            "error",
-            "always"
-        ],
-//        Used to correct this issue https://github.com/yannickcr/eslint-plugin-react/issues/2353
-        "react/prop-types": [
-            "off"
-        ],
-        "react/display-name": [
-            "off"
-        ]
+        // Irrelevant for our use
+        "jsx-a11y/alt-text": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "object-curly-newline": ["error", { "multiline": true }]
     }
 }

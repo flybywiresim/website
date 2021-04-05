@@ -1,10 +1,9 @@
 import React, { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import BackgroundImage from '../../assets/img/a32nxwing.png';
 import { faCogs, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import BackgroundImage from '../../assets/img/a32nxwing.png';
 
 export const TermsOfService: React.FC = () => {
-
     const bodyRef = useRef<HTMLDivElement>(null);
     const handleScroll = () => {
         bodyRef.current?.scrollIntoView();
@@ -13,8 +12,11 @@ export const TermsOfService: React.FC = () => {
     return (
         <>
             <header>
-                <img className="relative z-0 object-cover w-screen h-screen opacity-20 shadow-2xl"
-                    src={BackgroundImage} alt="" />
+                <img
+                    className="relative z-0 object-cover w-screen h-screen opacity-20 shadow-2xl"
+                    src={BackgroundImage}
+                    alt=""
+                />
                 <div className="absolute top-0 bottom-0 z-20 w-full flex justify-center">
                     <div className="relative my-auto xl:w-2/3 justify-center xl:justify-start text-center sm:flex sm:item-center sm:divide-x sm:space-x-10">
                         <FontAwesomeIcon className="mb-3 sm:mb-0 self-center" icon={faCogs} size="7x" />
@@ -50,24 +52,43 @@ export const TermsOfService: React.FC = () => {
 
                 <div className="mt-10 ">
                     <h1 className="text-4xl text-blue-light-contrast font-bold">Minimum Age Requirement</h1>
-                    <p className="text-xl mt-4 leading-9 font-light">To protect the privacy of younger people it is very important that we implement an age restriction of <b>13 and
-                    over</b> to join Flybywire Simulation services such as this website and Discord or any other communication
-                    platform, other platforms may be subject to their own conditions. By using Flybywire Simulations services, you
-                    agree that you are 13 years of age and the minimum age of digital consent in your country.
-                    Flybywire Simulations reserve the right to remove users under the age of 13 and minimum age of digital consent
-                    in any given case from communication platforms.</p>
+                    <p className="text-xl mt-4 leading-9 font-light">
+                        To protect the privacy of younger people it is very important that we implement an age restriction of
+                        {' '}
+                        <b>13 and over</b>
+                        {' '}
+                        to join FlyByWire Simulation services such as this website and Discord or any other communication
+                        platform, other platforms may be subject to their own conditions. By using FlyByWire Simulations services, you
+                        agree that you are 13 years of age and the minimum age of digital consent in your country.
+                        FlyByWire Simulations reserve the right to remove users under the age of 13 and minimum age of digital consent
+                        in any given case from communication platforms.
+                    </p>
                     <h1 className="text-4xl mt-8 text-blue-light-contrast font-bold">User Complaint</h1>
-                    <p className="text-xl mt-4 leading-9 font-light">In the event of a user should feel the need to make a complaint against another member, with regards to
-                violating our <b>Terms of Service</b> or <b>Communication Platform Rules (Discord)</b>, they can contact the Moderation
-                team through Discord private message.
-                When writing the report please state the members name and what they are violating. All complaints will be
-                    dealt with as professionally and as quickly as possible.</p>
+                    <p className="text-xl mt-4 leading-9 font-light">
+                        In the event of a user should feel the need to make a complaint against another member, with regards to
+                        violating our
+                        {' '}
+                        <b>Terms of Service</b>
+                        {' '}
+                        or
+                        {' '}
+                        <b>Communication Platform Rules (Discord)</b>
+                        {' '}
+                        , they can contact the Moderation team through Discord private message.
+                        When writing the report please state the members name and what they are violating. All complaints will be
+                        dealt with as professionally and as quickly as possible.
+                    </p>
                     <h1 className="text-4xl mt-8 text-blue-light-contrast font-bold">Legal Requirements</h1>
-                    <p className="text-xl mt-4 leading-9 font-light">All users of Flybywire Simulations who choose to fly our mod must own a <b>legal</b> copy of Microsoft Flight Simulator (MSFS2020)</p>
+                    <p className="text-xl mt-4 leading-9 font-light">
+                        All users of FlyByWire Simulations who choose to fly our mod must own a
+                        {' '}
+                        <b>legal</b>
+                        {' '}
+                        copy of Microsoft Flight Simulator (MSFS2020)
+                    </p>
 
                 </div>
             </article>
         </>
     );
-
 };

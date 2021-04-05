@@ -16,23 +16,19 @@ type PartnerProps = Partial<{
     path?: string
 }>;
 
-export const PartnerImage: React.FC<ImageProps> = (props: PropsWithChildren<ImageProps>) => {
-    return (
-        <div className={`p-8 h-full ${props.className}`}>
-            <img className="h-full w-full object-contain transform hover:scale-105 transition-transform duration-100 filter-grayscale hover:filter-none" src={props.src} alt="" />
-        </div>
-    );
-};
+export const PartnerImage: React.FC<ImageProps> = (props: PropsWithChildren<ImageProps>) => (
+    <div className={`p-8 h-full ${props.className}`}>
+        <img className="h-full w-full object-contain transform hover:scale-105 transition-transform duration-100 filter-grayscale hover:filter-none" src={props.src} alt="" />
+    </div>
+);
 
-export const Partner: React.FC<PartnerProps> = (props: PropsWithChildren<PartnerProps>) => {
-    return (
-        <div id={props.name} className={`flex flex-col h-full justify-center ${props.className}`}>
-            <a href={props.path} target="_blank" rel="noreferrer">
-                {props.children}
-            </a>
-        </div>
-    );
-};
+export const Partner: React.FC<PartnerProps> = (props: PropsWithChildren<PartnerProps>) => (
+    <div id={props.name} className={`flex flex-col h-full justify-center ${props.className}`}>
+        <a href={props.path} target="_blank" rel="noreferrer">
+            {props.children}
+        </a>
+    </div>
+);
 
 export function PartnerSection(): JSX.Element {
     return (
