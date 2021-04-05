@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '../Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBoxOpen } from '@fortawesome/free-solid-svg-icons';
-// TODO: Update image when installer redesign is finished.
+//TODO - Update image when installer redesign is finished.
 import InstallerImage from '../../assets/img/InstallerScreenshot.png';
 
 export const Installer: React.FC = () => (
