@@ -12,7 +12,7 @@ function LiveFlightsStat(): JSX.Element {
     const [liveFlights, setLiveFlights] = useState('0');
 
     useEffect(() => {
-        fetch(LIVE_FLIGHTS_ENDPOINT).then(res => res.text().then(flights => setLiveFlights(flights)));
+        fetch(LIVE_FLIGHTS_ENDPOINT).then((res) => res.text().then((flights) => setLiveFlights(flights)));
     }, []);
 
     const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-dark-contrast mb-3">{value}</h1>;
@@ -29,7 +29,7 @@ function CommitCountStatistic(): JSX.Element {
     const [commitCount, setCommitCount] = useState('0');
 
     useEffect(() => {
-        fetch(COMMIT_COUNT_ENDPOINT).then(res => {
+        fetch(COMMIT_COUNT_ENDPOINT).then((res) => {
             const commitCount = res.headers.get('Link')?.match(/&page=(\d+)>; rel="last"/)?.[1] ?? '0';
 
             setCommitCount(commitCount);
@@ -50,7 +50,7 @@ function ContributorCountStatistic(): JSX.Element {
     const [contributorCount, setContributorCount] = useState('0');
 
     useEffect(() => {
-        fetch(CONTRIBUTOR_COUNT_ENDPOINT).then(res => {
+        fetch(CONTRIBUTOR_COUNT_ENDPOINT).then((res) => {
             const commitCount = res.headers.get('Link')?.match(/&page=(\d+)>; rel="last"/)?.[1] ?? '0';
 
             setContributorCount(commitCount);
@@ -72,17 +72,17 @@ function DownloadCountStatistic(): JSX.Element {
     const [postfix, setPostfix] = useState('');
 
     useEffect(() => {
-        fetch(GITHUB_DOWNLOAD_COUNT_ENDPOINT).then(res => {
-            res.json().then(reqJson => {
+        fetch(GITHUB_DOWNLOAD_COUNT_ENDPOINT).then((res) => {
+            res.json().then((reqJson) => {
                 const downloads: number[] = [];
 
-                reqJson.map((item: any) => {
-                    item.assets.map((download: any) => {
+                reqJson.forEach((item: any) => {
+                    item.assets.forEach((download: any) => {
                         downloads.push(download.download_count);
                     });
                 });
 
-                fetch(CDN_DOWNLOAD_COUNT_ENDPOINT).then(res => res.text().then(cdnDownloadCount => {
+                fetch(CDN_DOWNLOAD_COUNT_ENDPOINT).then((res) => res.text().then((cdnDownloadCount) => {
                     let totalDownloads = downloads.reduce((a, b) => a + b);
 
                     if (cdnDownloadCount) {
@@ -102,7 +102,12 @@ function DownloadCountStatistic(): JSX.Element {
         });
     }, []);
 
-    const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-dark-contrast mb-3">{value}{postfix}</h1>;
+    const fn = (value: number) => (
+        <h1 className="text-6xl font-medium text-blue-dark-contrast mb-3">
+            {value}
+            {postfix}
+        </h1>
+    );
 
     return (
         <div className="py-12 lg:py-0 lg:px-20 2xl:px-32 text-center">
@@ -142,7 +147,7 @@ export function Community(): JSX.Element {
             </div>
 
             <div className="relative h-160 text-black z-20">
-                <Map refreshInterval={mapRefreshInterval} disableMenu={true} disableWeather={false} disableScroll={true} forceTileset={'carto-light'} />
+                <Map refreshInterval={mapRefreshInterval} disableMenu disableWeather={false} disableScroll forceTileset="carto-light" />
             </div>
         </section>
     );
