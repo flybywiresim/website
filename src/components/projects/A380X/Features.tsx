@@ -6,7 +6,7 @@ export const Features = forwardRef<HTMLDivElement>((_, ref): JSX.Element => (
     <>
         <div className="mx-auto divide-y divide-gray-500 max-w-2xl mt-12 px-4">
             <p className="mt-3 mb-4 pt-3 text-5xl text-center font-medium text-blue-light">
-                Features
+                What We'd Like To Share
             </p>
             <p className="pt-5 text-center text-xl">
                 {/* eslint-disable-next-line max-len */}
