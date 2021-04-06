@@ -12,8 +12,7 @@ export const Hero: React.FC = () => (
                         A FIRST LOOK AT THE
                     </h2>
                     <h1 className="text-7xl sm:text-8xl font-medium">
-                        <span className="text-blue-light">A38</span>
-                        <span className="text-blue">0</span>
+                        <span className="text-blue-light">A380</span>
                         X
                     </h1>
                     <h1 className="w-2/3 text-xl mt-2">

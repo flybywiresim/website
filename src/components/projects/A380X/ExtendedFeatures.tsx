@@ -10,7 +10,7 @@ export const ExtendedFeatures: React.FC = () => (
                     Electronic Flight Bag
                 </FeatureTitle>
                 <FeatureBody>
-                    The A380X will feawture an adapted EFB already featured on the A32NX.
+                    The A380X will feature an adapted EFB already featured on the A32NX.
                 </FeatureBody>
             </Feature>
 
