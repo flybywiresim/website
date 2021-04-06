@@ -6,7 +6,7 @@ import 'swiper/components/pagination/pagination.scss';
 
 SwiperCore.use([Pagination]);
 
-export const HeroHeader: React.FC = ({ children }) => {
+export const HeroSwiper: React.FC = ({ children }) => {
     return (
         <>
             <Swiper

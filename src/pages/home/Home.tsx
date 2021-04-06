@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { SwiperSlide } from 'swiper/react';
-import { HeroHeader } from '../../components/home/HeroHeader';
+import { HeroSwiper } from '../../components/home/HeroSwiper';
 import { A320Header } from '../../components/home/headers/A320Header';
 import { A380Header } from '../../components/home/headers/A380Header';
 
@@ -13,14 +13,14 @@ import { Donate } from '../../components/home/Donate';
 
 export const Home: React.FC = () => (
     <>
-        <HeroHeader>
+        <HeroSwiper>
             <SwiperSlide>
                 <A320Header />
             </SwiperSlide>
             <SwiperSlide>
                 <A380Header />
             </SwiperSlide>
-        </HeroHeader>
+        </HeroSwiper>
         <Installer />
         <Community />
         <Discord />
