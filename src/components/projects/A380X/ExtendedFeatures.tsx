@@ -10,7 +10,7 @@ export const ExtendedFeatures: React.FC = () => (
                     Electronic Flight Bag
                 </FeatureTitle>
                 <FeatureBody>
-                    The EFB is an integrated tablet with a handy toolkit, a settings page, performance tools, and more.
+                    The A380X will feawture an adapted EFB already featured on the A32NX.
                 </FeatureBody>
             </Feature>
 
@@ -19,7 +19,7 @@ export const ExtendedFeatures: React.FC = () => (
                     Custom Soundpack
                 </FeatureTitle>
                 <FeatureBody>
-                    Enjoy sounds like never before, the A32NX includes a fully custom and highly accurate soundpack.
+                    The A380X includes a fully custom and highly accurate soundpack.
                 </FeatureBody>
             </Feature>
 
@@ -37,16 +37,16 @@ export const ExtendedFeatures: React.FC = () => (
                     Product Installer
                 </FeatureTitle>
                 <FeatureBody>
-                    FlyByWire has a custom product installer, which makes the task of installing all FlyByWire products hassle free.
+                    FlyByWire has a custom, open-source product installer, which makes the task of installing and updating all FlyByWire products hassle free.
                 </FeatureBody>
             </Feature>
 
             <Feature key="Experimental Variations">
                 <FeatureTitle>
-                    Experimental Variations
+                    Early Access
                 </FeatureTitle>
                 <FeatureBody>
-                    Want to experiment with our new features? You can! We have several ready to test branches with experimental features on our installer!
+                    Although the A380X is not currently available, it will be made open source and available for everyone to try.
                 </FeatureBody>
             </Feature>
 
@@ -55,7 +55,7 @@ export const ExtendedFeatures: React.FC = () => (
                     Constant Additions
                 </FeatureTitle>
                 <FeatureBody>
-                    The A32NX development branches are updated almost daily with brand new features you can test right away!
+                    With the efforts of our 153 combined contributors, you can expect constant new additions to increase the fidelity of the aircraft!
                 </FeatureBody>
             </Feature>
 
@@ -64,7 +64,7 @@ export const ExtendedFeatures: React.FC = () => (
                     Documentation
                 </FeatureTitle>
                 <FeatureBody>
-                    FlyByWire has created several tutorials and documents to make learning the A320 quickly and accurately possible for anyone!
+                    FlyByWire will create several tutorial videos and guides to help you get flying as soon as possible.
                 </FeatureBody>
             </Feature>
 
@@ -73,7 +73,7 @@ export const ExtendedFeatures: React.FC = () => (
                     Open Source
                 </FeatureTitle>
                 <FeatureBody>
-                    The FlyByWire A32NX is completely open sourced, anyone can contribute to the project, and it can be freely reused under our licence.
+                    The FlyByWire A380X upon release will be open-source, meaning anyone can contribute to improve the aircraft.
                 </FeatureBody>
             </Feature>
         </div>
