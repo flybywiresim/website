@@ -10,6 +10,7 @@ import { NavBar } from './components/utils/NavBar';
 import { Home } from './pages/home/Home';
 // Projects/A32NX Page
 import { A32NX } from './pages/projects/A32NX/A32NX';
+import { A380X } from './pages/projects/A380X/A380X';
 // Fullscreen Map Page
 import { FullscreenMap } from './components/map/FullscreenMap';
 
@@ -29,6 +30,7 @@ function App(): JSX.Element {
 
                 {/* Pages */}
                 <Route exact path="/a32nx" component={A32NX} />
+                <Route exact path="/a380x" component={A380X} />
                 <Route path="/map" component={FullscreenMap} />
 
                 {/* Legal */}
