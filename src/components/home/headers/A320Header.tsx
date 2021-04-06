@@ -5,8 +5,8 @@ import { Button } from '../../Button';
 
 export const A320Header: React.FC = () => {
     const handleClick = () => {
-        const bruh = window.innerHeight;
-        window.scrollBy(0, bruh / 1.5);
+        const size = window.innerHeight;
+        window.scrollBy(0, size / 1.5);
     };
     return (
         <>
