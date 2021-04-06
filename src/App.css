@@ -2,3 +2,22 @@
     overflow-x: hidden;
     color: white;
 }
+
+body::-webkit-scrollbar {
+    width:8px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color:rgba(27, 36, 52, 1);
+    /* Another color */
+    /* background-color: rgb(29, 40, 56); */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(0,194,203);
+    border-radius: 2px;
+}
+
+body::-webkit-scrollbar-button {
+    display: none;
+}
