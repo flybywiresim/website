@@ -8,3 +8,8 @@
 .swiper-pagination-bullet{
     background-color:rgb(0,194,203) !important;
 }
+@media (max-width: 1400px) {
+    .swiper-pagination{
+        padding-bottom:15vh;
+    }
+}
