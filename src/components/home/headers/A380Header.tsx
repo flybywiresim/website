@@ -13,7 +13,7 @@ export const A380Header: React.FC = () => {
             <header className="h-screen">
                 <div className="absolute max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 inset-x-2 inset-y-1/3 z-30 ">
                     <h1 className="text-7xl sm:text-8xl font-medium pb-3">
-                        <span className="text-blue-light">A38</span><span className="text-blue">0</span>X
+                        <span className="text-blue-light">A380</span>X
                     </h1>
                     <p className="text-lg max-w-lg">A community built and maintained project aiming to provide high quality and detailed aircraft for Microsoft Flight Simulator.
                     </p>
