@@ -9,13 +9,11 @@ type IconItemProp = {
     href?: string
 }
 
-export const FooterIconItem: React.FC<IconItemProp> = (props: PropsWithChildren<IconItemProp>) => {
-    return (
-        <a href={props.href} target="_blank" rel="noreferrer">
-            <FontAwesomeIcon className="mx-2 hover:text-blue-light duration-100" icon={props.icon} size="lg" />
-        </a>
-    );
-};
+export const FooterIconItem: React.FC<IconItemProp> = (props: PropsWithChildren<IconItemProp>) => (
+    <a href={props.href} target="_blank" rel="noreferrer">
+        <FontAwesomeIcon className="mx-2 hover:text-blue-light duration-100" icon={props.icon} size="lg" />
+    </a>
+);
 
 const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -35,19 +33,22 @@ export const Footer = (): JSX.Element => (
                 </div>
                 <div className="text-center">
                     <div className="flex flex-row justify-center mx-auto space-x-8">
-                        <a className="hover:underline"
+                        <a
+                            className="hover:underline"
                             href="https://github.com/flybywiresim/flybywiresim-website/"
-                            target="_blank" rel="noreferrer">
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <p>Source Code</p>
                         </a>
                         <div className="hover:underline">
-                            <Link to='/tos'>
-                                <p onClick={scrollTop}>Terms of Service</p>
+                            <Link to="/tos" onClick={scrollTop}>
+                                <p>Terms of Service</p>
                             </Link>
                         </div>
                         <div className="hover:underline">
-                            <Link to='/privacy'>
-                                <p onClick={scrollTop}>Privacy Policy</p>
+                            <Link to="/privacy" onClick={scrollTop}>
+                                <p>Privacy Policy</p>
                             </Link>
                         </div>
                     </div>
