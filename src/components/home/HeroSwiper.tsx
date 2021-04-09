@@ -6,16 +6,14 @@ import 'swiper/components/pagination/pagination.scss';
 
 SwiperCore.use([Pagination]);
 
-export const HeroSwiper: React.FC = ({ children }) => {
-    return (
-        <>
-            <Swiper
-                spaceBetween={0}
-                slidesPerView={1}
-                pagination={{ clickable: true }}
-            >
-                {children}
-            </Swiper>
-        </>
-    );
-};
+export const HeroSwiper: React.FC = ({ children }) => (
+    <>
+        <Swiper
+            spaceBetween={0}
+            slidesPerView={1}
+            pagination={{ clickable: true }}
+        >
+            {children}
+        </Swiper>
+    </>
+);
