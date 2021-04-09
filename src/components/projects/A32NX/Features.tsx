@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
-import { CardBody, Card, CardTitle } from '../../utils/Card';
 import { faCogs, faCheck, faEye } from '@fortawesome/free-solid-svg-icons';
+import { CardBody, Card, CardTitle } from '../../utils/Card';
 
 export const Features = forwardRef<HTMLDivElement>((_, ref): JSX.Element => (
     <>
@@ -9,6 +9,7 @@ export const Features = forwardRef<HTMLDivElement>((_, ref): JSX.Element => (
                 Features
             </p>
             <p className="pt-5 text-center text-xl">
+                {/* eslint-disable-next-line max-len */}
                 The volunteers in our community work hard around the clock to consistently bring new features and improve the default A320. Let&apos;s take a look at some of the features the A32NX has to offer!
             </p>
         </div>
