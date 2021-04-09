@@ -6,7 +6,7 @@ import { Button } from '../Button';
 import InstallerImage from '../../assets/img/InstallerScreenshot.png';
 
 export const Installer: React.FC = () => (
-    <section className="relative h-144 w-screen flex flex-col xl:flex-row items-center overflow-hidden bg-blue-dark" id="installer">
+    <section id="installer" className="relative h-144 w-screen flex flex-col xl:flex-row items-center overflow-hidden bg-blue-dark">
         <div className="mx-auto xl:ml-20 mt-10 max-w-2xl flex flex-col items-center xl:items-start text-center xl:text-left -mb-20 xl:mb-20 space-y-4">
             <div className="inline-flex items-center justify-center p-3 bg-blue-light-contrast rounded-md shadow-lg">
                 <FontAwesomeIcon icon={faBoxOpen} size="2x" />
