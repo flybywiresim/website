@@ -23,7 +23,7 @@ export const Installer: React.FC = () => (
             </a>
         </div>
         <div className="w-11/12 xl:w-5/6 3xl:w-320 -mb-48 3xl:mb-0">
-            <img className="w-full" src={InstallerImage} alt="Installer Image" />
+            <img className="w-full" src={InstallerImage} alt="Installer" />
         </div>
     </section>
 );
