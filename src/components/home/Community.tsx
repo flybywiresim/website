@@ -89,6 +89,11 @@ function DownloadCountStatistic(): JSX.Element {
                         totalDownloads += Number(cdnDownloadCount);
                     }
 
+                    if (totalDownloads >= 1000000) {
+                        totalDownloads /= 1000000;
+                        setPostfix('M');
+                    }
+
                     if (totalDownloads >= 1000) {
                         totalDownloads = Math.floor(totalDownloads / 1000);
                         setPostfix('K');
@@ -111,7 +116,7 @@ function DownloadCountStatistic(): JSX.Element {
 
     return (
         <div className="py-12 lg:py-0 lg:px-20 2xl:px-32 text-center">
-            <CountTo to={Number(downloadCount)} speed={3000}>{fn}</CountTo>
+            <CountTo to={Number(downloadCount)} digits={2} speed={3000}>{fn}</CountTo>
             <span className="text-xl text-gray-700">Downloads</span>
         </div>
     );
