@@ -10,6 +10,7 @@ export const Header: React.FC = () => {
             installerRef.current.scrollIntoView();
         }
     };
+
     return (
         <>
             <header className="h-screen">
