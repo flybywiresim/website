@@ -1,14 +1,12 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import bgVideo from '../../assets/video/A32NX.mp4';
-import { Button } from '../Button';
+import bgVideo from '../../../assets/video/A32NX.mp4';
+import { Button } from '../../Button';
 
-export const Header: React.FC = () => {
-    const installerRef = useRef<HTMLDivElement>(null);
+export const A320Header: React.FC = () => {
     const handleClick = () => {
-        if (installerRef.current) {
-            installerRef.current.scrollIntoView();
-        }
+        const size = window.innerHeight;
+        window.scrollBy(0, size / 1.2);
     };
 
     return (
@@ -51,7 +49,6 @@ export const Header: React.FC = () => {
                     loop
                 />
             </header>
-            <div ref={installerRef} className="absolute top-3/4 h-160 w-screen" />
         </>
     );
 };
