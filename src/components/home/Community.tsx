@@ -5,8 +5,11 @@ import CountTo from 'react-count-to';
 const LIVE_FLIGHTS_ENDPOINT = 'https://api.flybywiresim.com/txcxn/_count';
 const COMMIT_COUNT_ENDPOINT = 'https://api.github.com/repos/flybywiresim/a32nx/commits?per_page=1';
 const CONTRIBUTOR_COUNT_ENDPOINT = 'https://api.github.com/repos/flybywiresim/a32nx/contributors?per_page=1';
-const GITHUB_DOWNLOAD_COUNT_ENDPOINT = 'https://api.github.com/repos/flybywiresim/a32nx/releases';
-const CDN_DOWNLOAD_COUNT_ENDPOINT = 'https://api.flybywiresim.com/api/v1/download/_count';
+
+// Commented out until fix from API is released.
+
+/* const GITHUB_DOWNLOAD_COUNT_ENDPOINT = 'https://api.github.com/repos/flybywiresim/a32nx/releases';
+const CDN_DOWNLOAD_COUNT_ENDPOINT = 'https://api.flybywiresim.com/api/v1/download/_count'; */
 
 function LiveFlightsStat(): JSX.Element {
     const [liveFlights, setLiveFlights] = useState('0');
@@ -68,7 +71,9 @@ function ContributorCountStatistic(): JSX.Element {
 }
 
 function DownloadCountStatistic(): JSX.Element {
-    const [downloadCount, setDownloadCount] = useState(0);
+    // Disabled until API fix is released.
+
+    /* const [downloadCount, setDownloadCount] = useState(0);
     const [postfix, setPostfix] = useState('');
 
     useEffect(() => {
@@ -89,11 +94,6 @@ function DownloadCountStatistic(): JSX.Element {
                         totalDownloads += Number(cdnDownloadCount);
                     }
 
-                    if (totalDownloads >= 1000000) {
-                        totalDownloads /= 1000000;
-                        setPostfix('M');
-                    }
-
                     if (totalDownloads >= 1000) {
                         totalDownloads = Math.floor(totalDownloads / 1000);
                         setPostfix('K');
@@ -106,17 +106,18 @@ function DownloadCountStatistic(): JSX.Element {
             });
         });
     }, []);
+     */
 
     const fn = (value: number) => (
         <h1 className="text-6xl font-medium text-blue-dark-contrast mb-3">
             {value}
-            {postfix}
+            M+
         </h1>
     );
 
     return (
         <div className="py-12 lg:py-0 lg:px-20 2xl:px-32 text-center">
-            <CountTo to={Number(downloadCount)} digits={2} speed={3000}>{fn}</CountTo>
+            <CountTo to={1} speed={3000}>{fn}</CountTo>
             <span className="text-xl text-gray-700">Downloads</span>
         </div>
     );
