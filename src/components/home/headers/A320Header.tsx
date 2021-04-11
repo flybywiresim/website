@@ -8,6 +8,7 @@ export const A320Header: React.FC = () => {
         const size = window.innerHeight;
         window.scrollBy(0, size / 1.2);
     };
+
     return (
         <>
             <header className="h-screen">

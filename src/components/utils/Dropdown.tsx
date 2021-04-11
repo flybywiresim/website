@@ -27,7 +27,7 @@ export const Dropdown: React.FC<{ titleName?: string, className?: string }> = (p
 
             {shown && (
                 <div className="block md:absolute mx-4 md:min-w-max rounded-lg bg-blue-dark-contrast md:bg-white md:ring-1 md:ring-gray-500 ring-opacity-5 ">
-                    <div className="divide-y divide-gray-500 md:divide-gray-200" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                    <div className="text-sm divide-y divide-gray-500 md:divide-gray-200" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                         {props.children}
                     </div>
                 </div>
