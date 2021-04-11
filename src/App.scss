@@ -1,0 +1,38 @@
+$scrollbar-track-color: rgb(31, 34, 35);
+$scrollbar-track-width: 14px;
+$scrollbar-thumb-color: rgb(123, 123, 123);
+
+#root {
+    overflow-x: hidden;
+    color: white;
+}
+
+// Hero Swiper
+
+@media (max-width: 1400px) {
+    .swiper-pagination {
+        padding-bottom: 12.5vh;
+    }
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+    background-color: rgb(0,194,203) !important;
+}
+
+// Scrollbar
+
+body {
+    &::-webkit-scrollbar {
+        width: $scrollbar-track-width;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: $scrollbar-track-color;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $scrollbar-thumb-color;
+        border-radius: 20px;
+    }
+}
