@@ -18,4 +18,4 @@ jobs:
       - name: install
         run: npm install --no-optional
       - name: npm run lint
-        run: npm run lin
+        run: npm run lint
