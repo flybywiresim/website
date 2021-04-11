@@ -8,7 +8,7 @@ export type InternalLinkProps = { name: string, path: string }
 
 export const PageLink: React.FC<InternalLinkProps> = ({ name, path }) => (
     <Link
-        className="text-xl m-2 p-1 active:text-blue-light hover:text-gray-200 transition-colors duration-200 hover:text-blue-light"
+        className="text-xl m-2 p-1 active:text-blue-light transition-colors duration-200 hover:text-blue-light"
         key={name}
         to={path}
     >
@@ -24,7 +24,7 @@ export const WebLink: React.FC<ExternalLinkProps> = ({ name, external }) => (
         href={external}
         target="_blank"
         rel="noreferrer"
-        className="text-xl m-2 p-1 active:text-blue-light hover:text-gray-200 transition-colors duration-200 hover:text-blue-light"
+        className="text-xl m-2 p-1 active:text-blue-light transition-colors duration-200 hover:text-blue-light"
     >
         {name}
     </a>
