@@ -2,6 +2,17 @@
     overflow-x: hidden;
     color: white;
 }
+.swiper-pagination-bullet-active{
+    background-color: rgb(0,194,203) !important;
+}
+.swiper-pagination-bullet{
+    background-color:rgb(0,194,203) !important;
+}
+@media (max-width: 1400px) {
+    .swiper-pagination{
+        padding-bottom:12.5vh;
+    }
+}
 
 body::-webkit-scrollbar {
     width:8px;
