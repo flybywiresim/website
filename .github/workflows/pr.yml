@@ -1,0 +1,21 @@
+name: PR
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v2
+      - name: install
+        run: npm install --no-optional
+      - name: npm run lint
+        run: npm run lint
