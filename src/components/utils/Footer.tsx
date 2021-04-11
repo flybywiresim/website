@@ -39,17 +39,17 @@ export const Footer = (): JSX.Element => (
                             <p>Source Code</p>
                         </a>
                         <div className="hover:underline">
-                            <Link to='/tos'>
+                            <Link to="/tos">
                                 <p>Terms of Service</p>
                             </Link>
                         </div>
                         <div className="hover:underline">
-                            <Link to='/privacy'>
+                            <Link to="/privacy">
                                 <p>Privacy Policy</p>
                             </Link>
                         </div>
                         <div className="hover:underline">
-                            <Link to='/branding'>
+                            <Link to="/branding">
                                 <p>Press Kit</p>
                             </Link>
                         </div>

@@ -29,9 +29,9 @@ function App(): JSX.Element {
                 <Route exact path="/" component={Home} />
 
                 {/* Pages */}
-                <Route exact path="/a32nx" component={ A32NX }/>
-                <Route path="/map" component={ FullscreenMap }/>
-                <Route path="/branding" component={ Branding } />
+                <Route exact path="/a32nx" component={A32NX} />
+                <Route path="/map" component={FullscreenMap} />
+                <Route path="/branding" component={Branding} />
 
                 {/* Legal */}
                 <Route path="/tos" component={ToS} />
