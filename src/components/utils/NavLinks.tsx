@@ -51,6 +51,9 @@ export const NavLinks: React.FC<NavLinksProps> = ({ className }) => (
             <DropdownItem>
                 <WebLink name="YouTube" external="https://www.youtube.com/FlyByWireSimulations" />
             </DropdownItem>
+            <DropdownItem>
+                <WebLink name="Donate" external="https://opencollective.com/flybywire/" />
+            </DropdownItem>
         </Dropdown>
     </div>
 );
