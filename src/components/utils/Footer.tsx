@@ -53,7 +53,7 @@ export const Footer = (): JSX.Element => (
                         </div>
                     </div>
                     <p className="text-gray-400 pt-2">&copy; FlyByWire Simulations and its contributors 2020-2021</p>
-                    <p className="text-sm text-gray-400 pt-2">v1.3</p>
+                    <p className="text-sm text-gray-500 pt-2">v1.3</p>
                 </div>
             </div>
         </div>
