@@ -4,107 +4,61 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { Dropdown, DropdownItem } from './Dropdown';
 
-const links = [
-    {
-        name: 'Home',
-        path: '/',
-    },
-    {
-        name: 'Projects',
-        path: 'a32nx',
-    },
-    {
-        name: 'Documentation',
-        external: 'https://docs.flybywiresim.com/',
-    },
-    {
-        name: 'Map',
-        path: 'map',
-    },
-    {
-        name: 'Community',
-        path: '#',
-        sublinks: [{
-            name: 'Discord',
-            external: 'https://discord.gg/flybywire',
-        },
-        {
-            name: 'Twitter',
-            external: 'https://twitter.com/FlyByWireSim',
-        },
-        {
-            name: 'Facebook',
-            external: 'https://facebook.com/FlybywireSimulations/',
-        },
-        {
-            name: 'YouTube',
-            external: 'https://www.youtube.com/FlyByWireSimulations',
-        },
-        {
-            name: 'Coming Soon™',
-            path: '#',
-        }],
-    },
-];
+export type InternalLinkProps = { name: string, path: string }
 
-export function NavLinks(props: { className?: string }): JSX.Element {
-    return (
-        <div className={`${props.className} flex flex-col`}>
-            {/* eslint-disable-next-line no-nested-ternary */}
-            {links.map((link) => (link.sublinks
-                ? (
-                    <Dropdown className="-ml-1.5" titleName={link.name}>
-                        {/* Check if link.sublink has path, if not use external */}
-                        {link.sublinks.map((sublink) => (
-                            <div key={sublink.name}>
-                                {sublink.path
-                                    ? (
-                                        <Link to={sublink.path}>
-                                            <DropdownItem>
-                                                {sublink.name}
-                                            </DropdownItem>
-                                        </Link>
-                                    )
-                                    : (
-                                        <a href={sublink.external} target="_blank" rel="noreferrer">
-                                            <DropdownItem>
-                                                {sublink.name}
-                                            </DropdownItem>
-                                        </a>
-                                    )}
-                            </div>
-                        ))}
-                    </Dropdown>
-                )
-                : link.path
-                    ? (
-                        <Link
-                            className="text-xl m-2 p-1 active:text-blue-light hover:text-gray-200 transition-colors duration-200 hover:text-blue-light"
-                            key={link.name}
-                            to={link.path}
-                        >
-                            {link.name}
-                        </Link>
-                    )
-                    : (
-                        <a
-                            key={link.name}
-                            href={link.external}
-                            target="_blank"
-                            rel="noreferrer"
-                            className="text-xl m-2 p-1 active:text-blue-light hover:text-gray-200 transition-colors duration-200 hover:text-blue-light"
-                        >
-                            {link.name}
-                        </a>
-                    )))}
-        </div>
-    );
-}
+export const PageLink: React.FC<InternalLinkProps> = ({ name, path }) => (
+    <Link
+        className="text-xl m-2 p-1 active:text-blue-light hover:text-gray-200 transition-colors duration-200 hover:text-blue-light"
+        key={name}
+        to={path}
+    >
+        {name}
+    </Link>
+);
 
-export function Hamburger(props: { handleClick: () => void }): JSX.Element {
-    return (
-        <a onClick={props.handleClick} className="cursor-pointer">
-            <FontAwesomeIcon icon={faBars} size="2x" />
-        </a>
-    );
-}
+export type ExternalLinkProps = { name: string, external: string }
+
+export const WebLink: React.FC<ExternalLinkProps> = ({ name, external }) => (
+    <a
+        key={name}
+        href={external}
+        target="_blank"
+        rel="noreferrer"
+        className="text-xl m-2 p-1 active:text-blue-light hover:text-gray-200 transition-colors duration-200 hover:text-blue-light"
+    >
+        {name}
+    </a>
+);
+
+export type NavLinksProps = { className?: string }
+
+export const NavLinks: React.FC<NavLinksProps> = ({ className }) => (
+    <div className={`flex flex-col ${className}`}>
+        <PageLink name="Home" path="/" />
+        <PageLink name="Projects" path="/a32nx" />
+        <WebLink name="Documentation" external="https://docs.flybywiresim.com/" />
+        <PageLink name="Map" path="/map" />
+        <Dropdown className="-ml-1.5" titleName="Community">
+            <DropdownItem>
+                <WebLink name="Discord" external="https://discord.gg/flybywire" />
+            </DropdownItem>
+            <DropdownItem>
+                <WebLink name="Twitter" external="https://facebook.com/FlybywireSimulations/" />
+            </DropdownItem>
+            <DropdownItem>
+                <WebLink name="Facebook" external="https://facebook.com/FlybywireSimulations/" />
+            </DropdownItem>
+            <DropdownItem>
+                <WebLink name="YouTube" external="https://www.youtube.com/FlyByWireSimulations" />
+            </DropdownItem>
+        </Dropdown>
+    </div>
+);
+
+export type HamburgerProps = { handleClick: () => void }
+
+export const Hamburger: React.FC<HamburgerProps> = ({ handleClick }) => (
+    <a onClick={handleClick} className="cursor-pointer">
+        <FontAwesomeIcon icon={faBars} size="2x" />
+    </a>
+);
