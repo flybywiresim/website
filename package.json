@@ -1,6 +1,6 @@
 {
   "name": "web",
-  "version": "0.1.3",
+  "version": "1.4.0",
   "private": true,
   "homepage": "https://www.flybywiresim.com/",
   "dependencies": {
