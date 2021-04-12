@@ -43,7 +43,7 @@ export const NavLinks: React.FC<NavLinksProps> = ({ className }) => (
                 <WebLink name="Discord" external="https://discord.gg/flybywire" />
             </DropdownItem>
             <DropdownItem>
-                <WebLink name="Twitter" external="https://facebook.com/FlybywireSimulations/" />
+                <WebLink name="Twitter" external="https://twitter.com/FlyByWireSim" />
             </DropdownItem>
             <DropdownItem>
                 <WebLink name="Facebook" external="https://facebook.com/FlybywireSimulations/" />
