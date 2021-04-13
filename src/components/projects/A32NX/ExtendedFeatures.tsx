@@ -41,7 +41,7 @@ export const ExtendedFeatures: React.FC = () => (
                     Documentation
                 </FeatureTitle>
                 <FeatureBody>
-                    The FlyByWire team has created several tutorials and documents to make learning the A320 quickly and accurately possible for anyone!
+                    The FlyByWire team has created several tutorials and documents to make learning the A320 easy and enjoyable for anyone!
                 </FeatureBody>
             </Feature>
 
@@ -51,7 +51,7 @@ export const ExtendedFeatures: React.FC = () => (
                     Electronic Flight Bag
                 </FeatureTitle>
                 <FeatureBody>
-                    The FlyByWire team has created a custom EFB that comes with a handy toolkit, a settings page, performance tools, and much more!
+                    The A32NX comes packed with a custom EFB including a handy toolkit, settings page, performance tools, and much more!
                 </FeatureBody>
             </Feature>
 
@@ -72,7 +72,8 @@ export const ExtendedFeatures: React.FC = () => (
                     Open Source
                 </FeatureTitle>
                 <FeatureBody>
-                    All the FlyByWire projects such as A32NX is completely open sourced which means anyone can contribute to the project, and it can be freely reused under our licence.
+                    All the FlyByWire Simulations projects such as A32NX is completely open sourced which means anyone can contribute to the project,
+                    and it can be freely reused under our licence.
                 </FeatureBody>
             </Feature>
 
@@ -82,17 +83,17 @@ export const ExtendedFeatures: React.FC = () => (
                     Product Installer
                 </FeatureTitle>
                 <FeatureBody>
-                    FlyByWire has a custom product installer which makes the task of installing all FlyByWire products hassle free.
+                    FlyByWire Simulations has a custom product installer which makes the task of installing and updating content hassle free.
                 </FeatureBody>
             </Feature>
 
-            <Feature key="Simbrief Integration">
+            <Feature key="simBrief Integration">
                 <IconMap size={40} stroke={1.5} color="teal" />
                 <FeatureTitle>
                     Simbrief Integration
                 </FeatureTitle>
                 <FeatureBody>
-                    Make flight plan entry a breeze with the SimBrief integration. All it takes is one click and you are ready to go!
+                    Make flight plan entry a breeze with the simBrief integration. All it takes is one click and you are ready to go!
                 </FeatureBody>
             </Feature>
 
@@ -102,7 +103,7 @@ export const ExtendedFeatures: React.FC = () => (
                     Verified by Real Pilots
                 </FeatureTitle>
                 <FeatureBody>
-                    The A32NX has been analyzed and tested by hundreds of real A320 pilots for accuracy to the real life aircraft.
+                    The A32NX has been analysed and tested by a wide range of real A320 pilots for accuracy to the real aircraft.
                 </FeatureBody>
             </Feature>
 
