@@ -3,8 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 export const ExtendedFeatures: React.FC = () => (
-    <section className="rounded-lg mx-auto px-4 py-4 max-w-screen-2xl sm:px-6 lg:px-8 pb-14">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-max mx-auto gap-x-14 gap-y-20 mt-10">
+    <section className="rounded-lg mx-auto px-page py-4 max-w-screen-2xl sm:px-6 lg:px-8 pb-20">
+        <div className="grid
+                        grid-cols-1
+                        md:grid-cols-2
+                        xl:grid-cols-3
+                        2xl:grid-cols-4
+                        max-w-max mx-auto gap-x-16 gap-y-20 mt-10"
+        >
             <Feature key="EFB">
                 <FeatureTitle>
                     Electronic Flight Bag
@@ -82,8 +88,8 @@ export const ExtendedFeatures: React.FC = () => (
 );
 
 const Feature: React.FC = (props) => (
-    <div className="w-80 flex flex-row">
-        <FontAwesomeIcon className="mb-auto mt-1 mr-4 text-green-500 text-2xl" size="1x" icon={faCheck} />
+    <div className="max-w-prose md:w-96 flex flex-row">
+        <FontAwesomeIcon className="mb-auto mt-1 mr-5 text-green-500 text-2xl" size="1x" icon={faCheck} />
         <div className="space-y-3">
             {props.children}
         </div>
@@ -94,6 +100,8 @@ const FeatureTitle: React.FC = (props) => (
     <h1 className="font-semibold text-2xl">{props.children}</h1>
 );
 
-const FeatureBody: React.FC = (props) => (
-    <p className="text-lg text-left">{props.children}</p>
+const FeatureBody: React.FC<{ className?: string }> = ({ children, className }) => (
+    <p className={`text-lg text-left ${className}`}>
+        {children}
+    </p>
 );
