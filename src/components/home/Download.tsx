@@ -31,7 +31,9 @@ export const Download: React.FC = () => {
                             <li className="ml-2 pl-2">One click install, neatly organized into one compact folder.</li>
                         </ul>
                     </div>
+
                     <div className="w-full lg:w-2/5 flex flex-col divide-y divide-gray-500">
+                        {/* Installer */}
                         <div className="pt-5 lg:pt-0 pb-5">
                             <span className="text-4xl text-blue-100">Installer</span>
                             <p className="mt-4 mb-6">
@@ -42,6 +44,8 @@ export const Download: React.FC = () => {
                                 <Button className="w-40 float-right bg-green-500 hover:bg-green-700 font-bold">Download</Button>
                             </a>
                         </div>
+
+                        {/* Direct Download */}
                         <div className="pt-5">
                             <span className="text-2xl text-blue-100">Direct Download</span>
                             <p className="mt-4 mb-6">If you prefer a direct download, the following links are available.</p>

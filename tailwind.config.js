@@ -4,7 +4,6 @@ const reactComponentsSafeList = require('@flybywiresim/react-components/build/us
 
 module.exports = {
     purge: {
-        enabled: true,
         options: { safelist: [...reactComponentsSafeList] },
         content: [
             './src/**/*.{js,jsx,ts,tsx}',
@@ -35,5 +34,6 @@ module.exports = {
             },
         },
     },
+    // eslint-disable-next-line global-require
     plugins: [require('@flybywiresim/tailwind-config')],
 };

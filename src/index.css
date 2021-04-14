@@ -11,6 +11,10 @@
       filter: grayscale(100%);
     }
   }
+
+  .px-page {
+    @apply px-5 md:px-8;
+  }
 }
 
 @font-face {

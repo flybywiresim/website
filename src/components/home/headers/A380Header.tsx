@@ -11,7 +11,7 @@ export const A380Header: React.FC = () => {
     return (
         <>
             <header className="h-screen">
-                <div className="absolute max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 inset-x-2 inset-y-1/3 z-30 ">
+                <div className="absolute max-w-6xl mx-auto px-page inset-x-2 inset-y-1/3 z-30 ">
                     <h1 className="text-7xl sm:text-8xl font-medium pb-3">
                         <span className="text-blue-light">A380</span>
                         X

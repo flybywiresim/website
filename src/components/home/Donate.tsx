@@ -6,7 +6,7 @@ import { Button } from '../Button';
 export const Donate: React.FC = () => (
     <section className="h-160 sm:h-120 flex flex-row items-center">
         <div className="absolute w-full z-10 flex flex-row justify-center">
-            <div className="w-3/4 xl:w-2/3 flex flex-col text-center xl:text-left">
+            <div className="md:w-3/4 xl:w-2/3 flex flex-col px-page text-center xl:text-left">
                 <div>
                     <h1 className="text-5xl text-teal font-extrabold">Donate</h1>
 
