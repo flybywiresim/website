@@ -8,14 +8,17 @@ COPY package*.json ./
 RUN npm install
 
 COPY tsconfig*.json ./
-COPY craco.config.js ./
 COPY tailwind.config.js ./
-COPY ./src ./src
+COPY postcss.config.js ./
+COPY ./components ./components
+COPY ./pages ./pages
 COPY ./public ./public
+COPY ./styles ./styles
 
 RUN npm run build
+RUN npm run export
 
 
 FROM nginx:alpine
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=builder /app/out /usr/share/nginx/html
