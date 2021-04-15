@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import bgVideo from '../../../assets/video/A32NX.mp4';
-import { Button } from '../../utils/Button';
+import { Button } from '../../Button';
 
 export const A320Header: React.FC = () => {
     const handleClick = () => {

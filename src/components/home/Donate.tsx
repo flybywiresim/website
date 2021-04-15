@@ -1,7 +1,7 @@
 import React from 'react';
 
 import BackgroundImage from '../../assets/img/donate.jpg';
-import { Button } from '../utils/Button';
+import { Button } from '../Button';
 
 export const Donate: React.FC = () => (
     <section className="h-160 sm:h-120 flex flex-row items-center">
