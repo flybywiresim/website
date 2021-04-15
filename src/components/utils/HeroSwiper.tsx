@@ -4,14 +4,26 @@ import { Swiper } from 'swiper/react';
 import 'swiper/swiper.scss';
 import 'swiper/components/pagination/pagination.scss';
 
-SwiperCore.use([Pagination]);
+type SwiperProps = {
+    className?: string;
+    autoplayDuration?: number;
+}
 
-export const HeroSwiper: React.FC = ({ children }) => (
+SwiperCore.use([Pagination]);
+// <SwiperProps>
+
+// props,
+export const HeroSwiper: React.FC<SwiperProps> = (props, { children }) => (
     <>
         <Swiper
+            // className={props.className}
             spaceBetween={0}
             slidesPerView={1}
             pagination={{ clickable: true }}
+            autoplay={{
+                delay: props.autoplayDuration,
+                disableOnInteraction: false,
+            }}
         >
             {children}
         </Swiper>
