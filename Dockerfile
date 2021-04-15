@@ -7,6 +7,8 @@ COPY package*.json ./
 
 RUN npm install
 
+ENV NODE_ENV=production
+
 COPY tsconfig*.json ./
 COPY tailwind.config.js ./
 COPY postcss.config.js ./
