@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import CountTo from 'react-count-to';
+import { MapProps } from '@flybywiresim/react-components';
 
-const MapDisplay = dynamic(
-    // @ts-ignore
+const MapDisplay = dynamic<MapProps>(
     () => import('@flybywiresim/react-components').then((mod) => mod.Map),
     { ssr: false },
 );
@@ -159,7 +159,6 @@ export function Community(): JSX.Element {
             </div>
 
             <div className="relative h-160 text-black z-20">
-                {/* @ts-ignore */}
                 <MapDisplay refreshInterval={mapRefreshInterval} disableMenu disableWeather={false} disableScroll forceTileset="carto-light" />
             </div>
         </section>
