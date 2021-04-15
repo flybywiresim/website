@@ -2,7 +2,6 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBoxOpen } from '@fortawesome/free-solid-svg-icons';
 import { Button } from '../utils/Button';
-// TODO: Update image when installer redesign is finished.
 
 export const Installer: React.FC = () => (
     <section id="installer" className="relative w-screen flex flex-col 3xl:flex-row 3xl:justify-center items-center px-page py-6 overflow-hidden bg-blue-dark">
