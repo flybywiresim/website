@@ -1,7 +1,7 @@
 import React from 'react';
 import BackgroundImage from '../../../assets/img/discord.jpg';
 import A32nxWireframe from '../../../assets/svg/a32nx_wireframe.svg';
-import { Button } from '../../Button';
+import { Button } from '../../utils/Button';
 
 export const Hero: React.FC = () => (
     <>
