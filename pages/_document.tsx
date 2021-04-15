@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
+import React from 'react';
 
 const GitHubPages = () => {
     // Single Page Apps for GitHub Pages
@@ -11,6 +12,7 @@ const GitHubPages = () => {
     // When the single page app is loaded further down in this file,
     // the correct url will be waiting in the browser's history for
     // the single page app to route accordingly.
+    // eslint-disable-next-line func-names
     (function (l) {
         if (l.search[1] === '/') {
             const decoded = l.search.slice(1)
@@ -34,8 +36,6 @@ class MyDocument extends Document {
             <Html lang="en">
                 <Head>
                     <meta charSet="utf-8" />
-                    <link rel="icon" href="/favicon.ico" />
-                    <link rel="apple-touch-icon" href="/favicon.ico" />
                     <meta name="theme-color" content="#1D2838" />
                     <meta
                         name="description"
