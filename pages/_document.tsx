@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
 
 const GitHubPages = () => {
     // Single Page Apps for GitHub Pages
@@ -13,7 +13,10 @@ const GitHubPages = () => {
     // the single page app to route accordingly.
     (function (l) {
         if (l.search[1] === '/') {
-            const decoded = l.search.slice(1).split('&').map((s) => s.replace(/~and~/g, '&')).join('?');
+            const decoded = l.search.slice(1)
+                .split('&')
+                .map((s) => s.replace(/~and~/g, '&'))
+                .join('?');
             window.history.replaceState(null, null,
                 l.pathname.slice(0, -1) + decoded + l.hash);
         }
@@ -21,7 +24,7 @@ const GitHubPages = () => {
 };
 
 class MyDocument extends Document {
-    static async getInitalProps(ctx) {
+    static async getInitalProps(ctx: DocumentContext) {
         const initialProps = await Document.getInitialProps(ctx);
         return { ...initialProps };
     }
