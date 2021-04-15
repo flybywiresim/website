@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Map } from '@flybywiresim/react-components';
+// import { Map } from '@flybywiresim/react-components';
 import CountTo from 'react-count-to';
 
 const LIVE_FLIGHTS_ENDPOINT = 'https://api.flybywiresim.com/txcxn/_count';

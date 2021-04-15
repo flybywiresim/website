@@ -17,7 +17,7 @@ const GitHubPages = () => {
                 .split('&')
                 .map((s) => s.replace(/~and~/g, '&'))
                 .join('?');
-            window.history.replaceState(null, null,
+            window.history.replaceState(null, '',
                 l.pathname.slice(0, -1) + decoded + l.hash);
         }
     }(window.location));

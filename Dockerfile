@@ -8,10 +8,11 @@ COPY package*.json ./
 RUN npm install
 
 COPY tsconfig*.json ./
-COPY craco.config.js ./
 COPY tailwind.config.js ./
-COPY ./src ./src
-COPY public_old ./public
+COPY ./components ./components
+COPY ./pages ./pages
+COPY ./public ./public
+COPY ./styles ./styles
 
 RUN npm run build
 
