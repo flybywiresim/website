@@ -30,6 +30,7 @@
     "start": "next start",
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "lint": "eslint **/*.{js,jsx,ts,tsx}",
     "lint:fix": "eslint **/*.{js,jsx,ts,tsx} --fix"
   },
