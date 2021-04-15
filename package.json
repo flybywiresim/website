@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://www.flybywiresim.com/",
   "dependencies": {
-    "@craco/craco": "^6.1.1",
     "@flybywiresim/react-components": "^0.2.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
@@ -19,23 +18,18 @@
     "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.1",
     "aos": "^2.3.4",
-    "autoprefixer": "^9.8.6",
-    "postcss": "^7.0.35",
+    "next": "^10.1.3",
     "react": "^17.0.1",
     "react-count-to": "^0.12.0",
     "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
     "react-typical": "^0.1.3",
     "swiper": "^6.5.3",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
-    "typescript": "^4.1.5",
-    "web-vitals": "^1.1.0"
+    "typescript": "^4.1.5"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
+    "start": "next start",
+    "dev": "next dev",
+    "build": "next build",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
     "lint:fix": "eslint src/**/*.{js,jsx,ts,tsx} --fix"
@@ -59,9 +53,12 @@
     "@types/react-typing-animation": "^1.6.2",
     "@typescript-eslint/eslint-plugin": "^4.15.0",
     "@typescript-eslint/parser": "^4.15.0",
+    "autoprefixer": "^10.2.5",
     "eslint": "^7.19.0",
     "eslint-plugin-react": "^7.22.0",
     "gh-pages": "^3.1.0",
-    "sass": "^1.32.7"
+    "postcss": "^8.2.10",
+    "sass": "^1.32.8",
+    "tailwindcss": "^2.1.1"
   }
 }

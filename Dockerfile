@@ -11,7 +11,7 @@ COPY tsconfig*.json ./
 COPY craco.config.js ./
 COPY tailwind.config.js ./
 COPY ./src ./src
-COPY ./public ./public
+COPY public_old ./public
 
 RUN npm run build
 

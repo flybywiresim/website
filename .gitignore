@@ -26,3 +26,5 @@ debug.log
 .eslintcache
 
 /.idea
+
+.next

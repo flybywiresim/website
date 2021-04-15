@@ -5,9 +5,9 @@ const reactComponentsSafeList = require('@flybywiresim/react-components/build/us
 module.exports = {
     purge: {
         options: { safelist: [...reactComponentsSafeList] },
-        content: [
-            './src/**/*.{js,jsx,ts,tsx}',
-            './public/index.html',
+        purge: [
+            './pages/**/*.{js,ts,jsx,tsx}',
+            './components/**/*.{js,ts,jsx,tsx}',
         ],
     },
     darkMode: false, // or 'media' or 'class'
