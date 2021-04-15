@@ -13,7 +13,7 @@ const Privacy: React.FC = () => {
             <header>
                 <img
                     className="relative z-0 object-cover w-screen h-screen opacity-20 shadow-2xl"
-                    src="/public/img/a32nxwing.png"
+                    src="/img/a32nxwing.png"
                     alt=""
                 />
                 <div className="absolute top-0 bottom-0 z-20 w-full flex justify-center">
