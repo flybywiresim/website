@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 import BackgroundImage from '../../assets/img/discord.jpg';
-import { Button } from '../Button';
+import { Button } from '../utils/Button';
 
 export const Discord: React.FC = () => (
     <section className="h-144 sm:h-120 bg-navy-800 flex items-center">
