@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Map as MapComponent } from '@flybywiresim/react-components';
+import dynamic from 'next/dynamic';
+
+const MapDisplay = dynamic(
+    // @ts-ignore
+    () => import('@flybywiresim/react-components').then((mod) => mod.Map),
+    { ssr: false },
+);
 
 const Map: React.FC = () => {
     const [mapRefreshInterval, setMapRefreshInterval] = useState(5_000);
@@ -16,9 +22,8 @@ const Map: React.FC = () => {
         <>
             <main className=" h-screen bg-blue-dark-contrast">
                 <div className="relative h-screen pt-20 text-black z-20">
-                    {typeof window !== 'undefined'
-                        ? <MapComponent refreshInterval={mapRefreshInterval} />
-                        : <></>}
+                    {/* @ts-ignore */}
+                    <MapDisplay refreshInterval={mapRefreshInterval} />
                 </div>
             </main>
         </>

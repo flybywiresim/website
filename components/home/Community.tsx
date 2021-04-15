@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from 'react';
-// import { Map } from '@flybywiresim/react-components';
+import dynamic from 'next/dynamic';
 import CountTo from 'react-count-to';
+
+const MapDisplay = dynamic(
+    // @ts-ignore
+    () => import('@flybywiresim/react-components').then((mod) => mod.Map),
+    { ssr: false },
+);
 
 const LIVE_FLIGHTS_ENDPOINT = 'https://api.flybywiresim.com/txcxn/_count';
 const COMMIT_COUNT_ENDPOINT = 'https://api.github.com/repos/flybywiresim/a32nx/commits?per_page=1';
@@ -153,9 +159,8 @@ export function Community(): JSX.Element {
             </div>
 
             <div className="relative h-160 text-black z-20">
-                {/* TODO: Put back Map component
-                <Map refreshInterval={mapRefreshInterval} disableMenu disableWeather={false} disableScroll forceTileset="carto-light" />
-                */}
+                {/* @ts-ignore */}
+                <MapDisplay refreshInterval={mapRefreshInterval} disableMenu disableWeather={false} disableScroll forceTileset="carto-light" />
             </div>
         </section>
     );
