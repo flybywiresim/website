@@ -21,7 +21,7 @@ export const Download: React.FC = () => {
                                 Download
                             </p>
                         </div>
-                        <p className="mt-5 max-w-prose text-xl text-white">
+                        <p className="mt-5 max-w-prose text-xl">
                             We have included many options to download our addons,
                             you can use our custom and simple installer to always keep your products up to date, or you can download using standalone installations.
                         </p>
