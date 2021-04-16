@@ -2,7 +2,7 @@
 
 This is the website repository for the [FlyByWire website](https://flybywiresim.com/)
 
-# Development Instructions
+## Development Instructions
 
 We use [next.js](https://nextjs.org) to build our website, to run the dev server use
 ```sh
