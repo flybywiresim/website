@@ -36,7 +36,7 @@ export type NavLinksProps = { className?: string }
 export const NavLinks: React.FC<NavLinksProps> = ({ className }) => (
     <div className={`flex flex-row ${className}`}>
         <PageLink name="Home" path="/" />
-        <PageLink name="Projects" path="/a32nx" />
+        <PageLink name="A32NX" path="/a32nx" />
         <WebLink name="Documentation" external="https://docs.flybywiresim.com/" />
         <PageLink name="Map" path="/map" />
         <Dropdown className="-ml-1.5" titleName="Community">
