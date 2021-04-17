@@ -34,7 +34,7 @@ export const WebLink: React.FC<ExternalLinkProps> = ({ name, external }) => (
 export type NavLinksProps = { className?: string }
 
 export const NavLinks: React.FC<NavLinksProps> = ({ className }) => (
-    <div className={`flex flex-row ${className}`}>
+    <div className={`flex flex-col ${className}`}>
         <PageLink name="Home" path="/" />
         <PageLink name="A32NX" path="/a32nx" />
         <WebLink name="Documentation" external="https://docs.flybywiresim.com/" />

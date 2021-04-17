@@ -9,7 +9,7 @@ export const Installer: React.FC = () => (
             <div className="inline-flex items-center justify-center p-3 bg-blue-light-contrast rounded-md shadow-lg">
                 <FontAwesomeIcon icon={faBoxOpen} size="2x" />
             </div>
-            <h1 className="text-5xl pt-4 text-white font-bold">
+            <h1 className="text-5xl pt-4 font-bold">
                 Custom-built Installer
             </h1>
             <h1 className="text-xl text-gray-200">

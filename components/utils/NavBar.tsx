@@ -26,7 +26,7 @@ export function NavBar(): JSX.Element {
                         <Hamburger handleClick={() => setOpen((prevState) => !prevState)} />
                     </div>
                     <div className="flex flex-row items-center">
-                        <NavLinks className="" />
+                        <NavLinks className="hidden md:flex md:flex-row" />
                     </div>
                 </div>
             </div>

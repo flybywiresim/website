@@ -3,6 +3,7 @@
 const reactComponentsSafeList = require('@flybywiresim/react-components/build/usedCSSClasses.json');
 
 module.exports = {
+    mode: 'jit',
     purge: {
         options: { safelist: [...reactComponentsSafeList] },
         content: [
