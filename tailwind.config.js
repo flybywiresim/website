@@ -1,3 +1,5 @@
+/* eslint-disable global-require */
+
 'use strict';
 
 const reactComponentsSafeList = require('@flybywiresim/react-components/build/usedCSSClasses.json');
@@ -40,8 +42,42 @@ module.exports = {
                 },
             },
             zIndex: { '-10': '-10' },
+            typography: {
+                '2xl': {
+                    css: {
+                        'maxWidth': '73ch',
+                        'color': 'hsl(0, 0%, 94%)',
+                        'h1, h2, h3, h4, h5, h6': {
+                            paddingTop: '.4em',
+                            fontWeight: '500',
+                        },
+                        'h1': {
+                            color: 'hsl(0, 0%, 100%)',
+                            fontSize: '2.5rem',
+                        },
+                        'h2': {
+                            color: 'hsl(0, 0%, 100%)',
+                            fontSize: '1.7rem',
+                        },
+                        'h3': {
+                            color: 'hsl(0, 0%, 100%)',
+                            fontSize: '1.5rem',
+                        },
+                        'p': {
+                            paddingTop: '.75em',
+                            marginBottom: '0',
+                        },
+                        'p:first-child, h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p': {
+                            paddingTop: '0',
+                            // eslint-disable-next-line object-curly-newline
+                        },
+                    },
+                },
+            },
         },
     },
-    // eslint-disable-next-line global-require
-    plugins: [require('@flybywiresim/tailwind-config')],
+    plugins: [
+        require('@flybywiresim/tailwind-config'),
+        require('@tailwindcss/typography'),
+    ],
 };
