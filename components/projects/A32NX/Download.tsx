@@ -5,7 +5,7 @@ export const Download: React.FC = () => {
     const urls = {
         stable: 'https://flybywiresim-packages.b-cdn.net/stable/A32NX-stable.zip',
         dev: 'https://flybywiresim-packages.b-cdn.net/vmaster/A32NX-master.zip',
-        exp: 'https://flybywiresim-packages.b-cdn.net/vmaster-cfbw-cap/A32NX-master-cfbw-cap.zip',
+        exp: 'https://flybywiresim-packages.b-cdn.net/experimental/A32NX-experimental.zip',
     };
 
     const getDownloadLink = (link: string) => `https://api.flybywiresim.com/api/v1/download?url=${link}`;
