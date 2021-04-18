@@ -1,2 +1,5 @@
 // eslint-disable-next-line strict
-module.exports = { future: { webpack5: true } };
+module.exports = {
+    images: { domains: ['via.placeholder.com'] },
+    future: { webpack5: true },
+};
