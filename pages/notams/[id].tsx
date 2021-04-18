@@ -4,10 +4,10 @@ import React from 'react';
 import { getAllPostIds, getPostData, getPostDataType } from '../../lib/notams/posts';
 
 // Shamelessly stolen from tabler until the icons are updated
-const BackIcon = () => (
+const BackIcon: React.FC<{ className: string }> = ({ className }) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="icon icon-tabler icon-tabler-arrow-narrow-left text-gray-400"
+        className={`icon icon-tabler icon-tabler-arrow-narrow-left ${className}`}
         width="32"
         height="32"
         viewBox="0 0 24 24"
@@ -25,16 +25,20 @@ const BackIcon = () => (
 );
 
 const Post = ({ postData }: { postData: getPostDataType }) => (
-    <div className="min-h-screen max-w-6xl mx-auto px-page pt-40 pb-10">
+    <div className="min-h-screen max-w-6xl mx-auto px-page pt-24 lg:pt-40 pb-6">
         <Link href="/notams">
-            <div className="flex flex-row items-center">
-                <BackIcon />
-                <span className="text-gray-400 hover:text-gray-500 transition-colors duration-100 cursor-pointer">Back</span>
+            <div className="flex flex-row items-center text-gray-400 hover:text-teal-700 transition-colors duration-100">
+                <BackIcon className="-ml-2.5" />
+                <span className="text-2xl cursor-pointer ml-1.5">
+                    Back
+                </span>
             </div>
         </Link>
-        <h1 className="text-5xl font-semibold lg:text-justify leading-tight text-teal-300 mt-5">{postData.title}</h1>
+        <h1 className="text-5xl font-semibold lg:text-justify leading-tight text-teal-300 mt-0.5">
+            {postData.title}
+        </h1>
         <div
-            className="w-full flex flex-row flex-wrap justify-between gap-x-12 text-gray-400 font-mono mb-3.5"
+            className="w-full flex flex-row flex-wrap justify-between gap-x-24 text-gray-400 font-mono mt-2 mb-3.5"
         >
             <span className="text-xl text-gray-300 font-medium">
                 {postData.readingStats.text}
@@ -45,12 +49,12 @@ const Post = ({ postData }: { postData: getPostDataType }) => (
                 </p>
             </div>
         </div>
-        <p className="ml-5 text-xl text-gray-400 font-mono">
-            {`Written by: ${postData.authors.join(', ')}`}
+        <p className="ml-0 text-xl text-gray-400 font-mono">
+            {postData.authors.join(', ')}
         </p>
-        <div className="mt-5 p-5 text-xl bg-navy-light rounded-sm">
+        <div className="mt-7 px-6 py-4 text-xl bg-navy-light rounded-sm">
             <div
-                className="flex flex-col space-y-4"
+                className="flex flex-col space-y-4 prose-2xl prose text-justify"
                 /* eslint-disable-next-line react/no-danger */
                 dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
             />
