@@ -5,6 +5,23 @@ import remark from 'remark';
 import html from 'remark-html';
 import readingTime from 'reading-time';
 
+export type getPostDataType = {
+    id: string,
+    contentHtml: string,
+    readingStats: any,
+    date: string,
+    title: string,
+    authors: string[],
+}
+
+export type getSortedPostsDataType = {
+    id: string,
+    readingStats: any,
+    date: string,
+    title: string,
+    authors: string[],
+}
+
 const postsDirectory = path.join(process.cwd(), 'posts');
 
 export const getAllPostIds = () => {
@@ -13,11 +30,14 @@ export const getAllPostIds = () => {
     return fileNames.map((fileName) => ({ params: { id: fileName.replace(/\.md/, '') } }));
 };
 
-export const getPostData = async (id: string) => {
+export const getPostData = async (id: string): Promise<getPostDataType> => {
     const fullPath = path.join(postsDirectory, `${id}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf-8');
 
     const matterResult = matter(fileContents);
+
+    // @ts-ignore
+    const metadata: {date: string, title: string, authors: string[]} = { ...matterResult.data };
 
     const processedContent = await remark().use(html).process(matterResult.content);
 
@@ -29,11 +49,11 @@ export const getPostData = async (id: string) => {
         id,
         contentHtml,
         readingStats,
-        ...matterResult.data,
+        ...metadata,
     };
 };
 
-export const getSortedPostsData = () => {
+export const getSortedPostsData = (): getSortedPostsDataType[] => {
     const fileNames = fs.readdirSync(postsDirectory);
     const allPostsData = fileNames.map((fileName) => {
         const id = fileName.replace(/\.md$/, '');
@@ -45,10 +65,13 @@ export const getSortedPostsData = () => {
 
         const readingStats = readingTime(fileContents);
 
+        // @ts-ignore
+        const metadata: {date: string, title: string, authors: string[]} = { ...matterResult.data };
+
         return {
             id,
             readingStats,
-            ...matterResult.data,
+            ...metadata,
         };
     });
 
