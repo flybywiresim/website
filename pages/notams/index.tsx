@@ -2,9 +2,9 @@ import React from 'react';
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getSortedPostsData } from '../../lib/notams/posts';
+import { getSortedPostsData, getSortedPostsDataType } from '../../lib/notams/posts';
 
-const Blog = ({ allPostsData }) => (
+const Blog = ({ allPostsData }: { allPostsData: getSortedPostsDataType[]}) => (
     <>
         <div className="min-h-screen max-w-6xl mx-auto px-page pt-40">
             <h1 className="text-teal text-5xl">NOTAMs</h1>
@@ -44,11 +44,8 @@ const Blog = ({ allPostsData }) => (
                                 </div>
                             </div>
 
-                            <Image
+                            <img
                                 className="mt-5 mb-4 rounded-lg"
-                                layout="responsive"
-                                width={500}
-                                height={250}
                                 src="https://via.placeholder.com/500x250"
                                 alt="bruh"
                             />

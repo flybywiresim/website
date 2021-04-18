@@ -1,7 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Link from 'next/link';
 import React from 'react';
-import { getAllPostIds, getPostData } from '../../lib/notams/posts';
+import { getAllPostIds, getPostData, getPostDataType } from '../../lib/notams/posts';
 
 // Shamelessly stolen from tabler until the icons are updated
 const BackIcon = () => (
@@ -24,7 +24,7 @@ const BackIcon = () => (
     </svg>
 );
 
-const Post = ({ postData }) => (
+const Post = ({ postData }: { postData: getPostDataType }) => (
     <div className="min-h-screen max-w-6xl mx-auto px-page pt-40 pb-10">
         <Link href="/notams">
             <div className="flex flex-row items-center">
@@ -68,6 +68,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
+    // @ts-ignore
     const postData = await getPostData(params.id);
 
     return { props: { postData } };
