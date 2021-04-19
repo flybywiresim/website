@@ -1,7 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Link from 'next/link';
 import React from 'react';
-import { getAllPostIds, getPostData, getPostDataType } from '../../lib/notams/posts';
+import { getAllPostIds, getPostContent, PostContent } from '../../lib/notams/posts';
 
 // Shamelessly stolen from tabler until the icons are updated
 const BackIcon: React.FC<{ className: string }> = ({ className }) => (
@@ -24,7 +24,9 @@ const BackIcon: React.FC<{ className: string }> = ({ className }) => (
     </svg>
 );
 
-const Post = ({ postData }: { postData: getPostDataType }) => (
+export type PostProps = { content: PostContent }
+
+const Post: React.FC<PostProps> = ({ content: { authors, contentHtml, date, readingStats, title } }) => (
     <div className="min-h-screen max-w-6xl mx-auto px-page pt-24 lg:pt-40 pb-6">
         <Link href="/notams">
             <div className="flex flex-row items-center text-gray-400 hover:text-teal-700 transition-colors duration-100">
@@ -35,28 +37,28 @@ const Post = ({ postData }: { postData: getPostDataType }) => (
             </div>
         </Link>
         <h1 className="text-5xl font-semibold lg:text-justify leading-tight text-teal-300 mt-0.5">
-            {postData.title}
+            {title}
         </h1>
         <div
             className="w-full flex flex-row flex-wrap justify-between gap-x-24 text-gray-400 font-mono mt-2 mb-3.5"
         >
             <span className="text-xl text-gray-300 font-medium">
-                {postData.readingStats.text}
+                {readingStats.text}
             </span>
             <div className="flex flex-row gap-x-8">
                 <p className="text-xl font-medium">
-                    {postData.date}
+                    {date}
                 </p>
             </div>
         </div>
         <p className="ml-0 text-xl text-gray-400 font-mono">
-            {postData.authors.join(', ')}
+            {authors.join(', ')}
         </p>
         <div className="mt-7 px-6 py-4 text-xl bg-navy-light rounded-sm">
             <div
                 className="flex flex-col space-y-4 prose-2xl prose text-justify"
                 /* eslint-disable-next-line react/no-danger */
-                dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+                dangerouslySetInnerHTML={{ __html: contentHtml }}
             />
         </div>
     </div>
@@ -71,11 +73,14 @@ export const getStaticPaths: GetStaticPaths = async () => {
     };
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-    // @ts-ignore
-    const postData = await getPostData(params.id);
+export const getStaticProps: GetStaticProps<PostProps> = async ({ params }) => {
+    if (params?.id) {
+        const content = await getPostContent(params?.id as string);
 
-    return { props: { postData } };
+        return { props: { content } };
+    }
+
+    return Promise.reject(new Error('no id parameter'));
 };
 
 export default Post;

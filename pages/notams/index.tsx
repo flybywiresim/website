@@ -1,16 +1,22 @@
 import React from 'react';
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
-import { getSortedPostsData, getSortedPostsDataType } from '../../lib/notams/posts';
+import { getPostListings, PostListing } from '../../lib/notams/posts';
 
-const Blog = ({ allPostsData }: { allPostsData: getSortedPostsDataType[]}) => (
+export type BlogProps = { listings: PostListing[] }
+
+const Blog: React.FC<BlogProps> = ({ listings }) => (
     <>
         <div className="min-h-screen max-w-6xl mx-auto px-page pt-28 lg:pt-40">
-            <h1 className="text-teal text-5xl">NOTAMs</h1>
-            <p className="text-xl mt-2">Updates and blog posts from the FlyByWire Team</p>
+            <h1 className="text-teal text-5xl">
+                NOTAMs
+            </h1>
+            <p className="text-xl mt-2">
+                Updates and blog posts from the FlyByWire Team
+            </p>
 
             <ul className="mt-20 text-lg cursor-pointer">
-                {allPostsData.map(({ id, date, title, authors, readingStats }) => (
+                {listings.map(({ id, date, title, authors, readingStats }) => (
                     <Link href={`/notams/${id}`}>
                         <li key={id}>
                             <div className="
@@ -61,10 +67,10 @@ const Blog = ({ allPostsData }: { allPostsData: getSortedPostsDataType[]}) => (
     </>
 );
 
-export const getStaticProps: GetStaticProps = async () => {
-    const allPostsData = getSortedPostsData();
+export const getStaticProps: GetStaticProps<BlogProps> = async () => {
+    const listings = getPostListings();
 
-    return { props: { allPostsData } };
+    return { props: { listings } };
 };
 
 export default Blog;
