@@ -44,6 +44,7 @@
 $scrollbar-track-color: hsl(195, 6%, 13%);
 $scrollbar-track-width: 15px;
 $scrollbar-thumb-color: hsl(202, 6%, 28%);
+$scrollbar-thumb-color-hover: hsl(202, 6%, 36%);
 
 html {
   font-family: -apple-system, BlinkMacSystemFont, 'Nunito Sans', 'Segoe UI', 'Roboto', 'Oxygen',
@@ -77,6 +78,9 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
+    &:hover{
+      background-color: $scrollbar-thumb-color-hover;
+    }
     background-color: $scrollbar-thumb-color;
   }
 }
