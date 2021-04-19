@@ -5,39 +5,33 @@ import remark from 'remark';
 import html from 'remark-html';
 import readingTime from 'reading-time';
 
-export type getPostDataType = {
+export type PostListing = {
     id: string,
-    contentHtml: string,
     readingStats: any,
     date: string,
     title: string,
     authors: string[],
 }
 
-export type getSortedPostsDataType = {
-    id: string,
-    readingStats: any,
-    date: string,
-    title: string,
-    authors: string[],
-}
+export type PostContent = PostListing & { contentHtml: string }
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
-export const getAllPostIds = () => {
+export type AllPostIds = { params: { id: string } }[]
+
+export const getAllPostIds = (): AllPostIds => {
     const fileNames = fs.readdirSync(postsDirectory);
 
     return fileNames.map((fileName) => ({ params: { id: fileName.replace(/\.md/, '') } }));
 };
 
-export const getPostData = async (id: string): Promise<getPostDataType> => {
+export const getPostContent = async (id: string): Promise<PostContent> => {
     const fullPath = path.join(postsDirectory, `${id}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf-8');
 
     const matterResult = matter(fileContents);
 
-    // @ts-ignore
-    const metadata: {date: string, title: string, authors: string[]} = { ...matterResult.data };
+    const metadata = { ...matterResult.data };
 
     const processedContent = await remark().use(html).process(matterResult.content);
 
@@ -50,10 +44,10 @@ export const getPostData = async (id: string): Promise<getPostDataType> => {
         contentHtml,
         readingStats,
         ...metadata,
-    };
+    } as PostContent;
 };
 
-export const getSortedPostsData = (): getSortedPostsDataType[] => {
+export const getPostListings = (): PostListing[] => {
     const fileNames = fs.readdirSync(postsDirectory);
     const allPostsData = fileNames.map((fileName) => {
         const id = fileName.replace(/\.md$/, '');
@@ -65,14 +59,11 @@ export const getSortedPostsData = (): getSortedPostsDataType[] => {
 
         const readingStats = readingTime(fileContents);
 
-        // @ts-ignore
-        const metadata: {date: string, title: string, authors: string[]} = { ...matterResult.data };
-
         return {
             id,
             readingStats,
-            ...metadata,
-        };
+            ...matterResult.data,
+        } as PostListing;
     });
 
     return allPostsData.sort((a, b) => {
