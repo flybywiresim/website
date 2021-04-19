@@ -41,9 +41,9 @@
   src: url("/font/NunitoSans-Bold.ttf")
 }
 
-$scrollbar-track-color: rgb(31, 34, 35);
+$scrollbar-track-color: hsl(195, 6%, 13%);
 $scrollbar-track-width: 15px;
-$scrollbar-thumb-color: rgb(87, 94, 98);
+$scrollbar-thumb-color: hsl(202, 6%, 28%);
 
 html {
   font-family: -apple-system, BlinkMacSystemFont, 'Nunito Sans', 'Segoe UI', 'Roboto', 'Oxygen',
