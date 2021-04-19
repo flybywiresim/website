@@ -14,15 +14,20 @@ const Blog = ({ allPostsData }: { allPostsData: getSortedPostsDataType[]}) => (
                     <Link href={`/notams/${id}`}>
                         <li key={id}>
                             <div className="
-                                    flex flex-col
-                                    py-16 first:pt-0 last:pb-0 mb-5"
+                                w-full
+                                flex flex-col
+                                box-content
+                                hover:bg-navy-lighter
+                                transition-colors duration-200
+                                px-7 py-4 -ml-7 mb-5
+                                rounded-lg"
                             >
 
                                 <h1 className="
-                                        text-5xl text-teal-300 font-semibold lg:text-justify leading-tight
-                                        hover:text-teal-700
-                                        transition-colors duration-100
-                                        mb-2.5"
+                                    text-5xl text-teal-300 font-semibold lg:text-justify leading-tight
+                                    hover:text-teal-700
+                                    transition-colors duration-100
+                                    mb-2.5"
                                 >
                                     {title}
                                 </h1>
