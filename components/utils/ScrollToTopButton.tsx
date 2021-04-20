@@ -13,9 +13,9 @@ export const ScrollToTopButton = () => {
         return () => window.removeEventListener('scroll', listener);
     });
 
-    const handleClick = () => {
+    function handleClick() {
         window.scrollTo({ top: 0 });
-    };
+    }
 
     return (
         <>
