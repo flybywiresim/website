@@ -20,7 +20,7 @@ export const Donate: React.FC = () => (
 
                 <div className="mt-6 xl:divide-x divide-gray-400 xl:space-x-7 flex flex-col-reverse xl:flex-row items-center">
                     <a href="https://opencollective.com/flybywire/" target="_blank" rel="noreferrer">
-                        <Button className="w-40 text-xl font-bold bg-teal border-2 border-blue-light transition hover:bg-white hover:text-blue-light">Donate</Button>
+                        <Button className="transition duration-500 ease-in-out w-40 text-xl font-bold bg-teal border-2 border-blue-light hover:bg-white hover:text-blue-light">Donate</Button>
                     </a>
                     <h2 className="max-w-prose text-teal-50 h-14 mb-7 xl:mb-0 xl:pl-7 flex flex-row items-center">
                         No profit is generated from donations. Donating does not guarantee access to additional content nor its exclusivity if such content is ever given.

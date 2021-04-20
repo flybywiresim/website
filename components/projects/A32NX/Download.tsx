@@ -43,7 +43,7 @@ export const Download: React.FC = () => {
                             </p>
 
                             <a href="https://api.flybywiresim.com/installer">
-                                <Button className="w-40 float-right bg-green-500 hover:bg-green-700 font-bold">Download</Button>
+                                <Button className="transition duration-500 ease-in-out w-40 float-right bg-green-500 hover:bg-green-700 font-bold">Download</Button>
                             </a>
                         </div>
 
@@ -58,19 +58,19 @@ export const Download: React.FC = () => {
                                 <div className="flex flex-row justify-between items-center mb-5">
                                     <span className="text-xl text-gray-300">Stable Release</span>
                                     <a href={getDownloadLink(urls.stable)}>
-                                        <Button className="w-40 float-right bg-green-500 hover:bg-green-700 font-bold">Download</Button>
+                                        <Button className="transition duration-500 ease-in-out w-40 float-right bg-green-500 hover:bg-green-700 font-bold">Download</Button>
                                     </a>
                                 </div>
                                 <div className="flex flex-row justify-between items-center mb-5 pt-5">
                                     <span className="text-xl text-gray-300">Development Build</span>
                                     <a href={getDownloadLink(urls.dev)}>
-                                        <Button className="w-40 float-right bg-blue-light-contrast hover:bg-blue-medium font-bold">Download</Button>
+                                        <Button className="transition duration-500 ease-in-out w-40 float-right bg-blue-light-contrast hover:bg-blue-medium font-bold">Download</Button>
                                     </a>
                                 </div>
                                 <div className="flex flex-row justify-between items-center mb-8 pt-5">
                                     <span className="text-xl text-gray-300">Experimental Build</span>
                                     <a href={getDownloadLink(urls.exp)}>
-                                        <Button className="w-40 float-right bg-blue-light-contrast hover:bg-blue-medium font-bold">Download</Button>
+                                        <Button className="transition duration-500 ease-in-out w-40 float-right bg-blue-light-contrast hover:bg-blue-medium font-bold">Download</Button>
                                     </a>
                                 </div>
                             </div>

@@ -24,7 +24,7 @@ export const Hero: React.FC = () => (
 
                         <a href="https://api.flybywiresim.com/installer">
                             <Button
-                                className="w-40 text-xl font-bold bg-blue-light border-2 border-blue-light transition hover:bg-white hover:text-blue-light mr-3"
+                                className="transition duration-500 ease-in-out w-40 text-xl font-bold bg-blue-light border-2 border-blue-light hover:bg-white hover:text-blue-light mr-3"
                             >
                                 Installer
                             </Button>
@@ -32,7 +32,7 @@ export const Hero: React.FC = () => (
 
                         <a href="#download">
                             <Button
-                                className="w-40 text-xl font-bold border-2 border-blue-light text-blue-light transition hover:bg-white hover:text-blue-light"
+                                className="transition duration-500 ease-in-out w-40 text-xl font-bold border-2 border-blue-light text-blue-light hover:bg-white hover:text-blue-light"
                             >
                                 Download
                             </Button>

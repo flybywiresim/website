@@ -20,7 +20,7 @@ export const Discord: React.FC = () => (
                     </p>
                     <div className="mt-6 flex justify-center sm:justify-start">
                         <a href="https://discord.gg/flybywire" target="_blank" rel="noreferrer">
-                            <Button className="w-60 text-xl font-bold bg-discord border-2 border-discord transition hover:bg-white hover:text-discord">Join the Community</Button>
+                            <Button className="transition duration-500 ease-in-out w-60 text-xl font-bold bg-discord border-2 border-discord hover:bg-white hover:text-discord">Join the Community</Button>
                         </a>
                     </div>
                 </div>

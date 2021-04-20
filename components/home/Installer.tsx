@@ -17,7 +17,7 @@ export const Installer: React.FC = () => (
                 Pick which branch you want to install, and the installer will automatically download it into the proper folder.
             </h1>
             <a href="https://api.flybywiresim.com/installer">
-                <Button className="w-40 mt-4 bg-teal-light-contrast border-2 border-teal-light-contrast hover:bg-white hover:text-teal-light-contrast font-bold">Download</Button>
+                <Button className="transition duration-500 ease-in-out w-40 mt-4 bg-teal-light-contrast border-2 border-teal-light-contrast hover:bg-white hover:text-teal-light-contrast font-bold">Download</Button>
             </a>
         </div>
         <div className="w-11/12 xl:w-5/6 3xl:w-320 -mb-40 3xl:-mb-3">
