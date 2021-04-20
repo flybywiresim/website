@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
