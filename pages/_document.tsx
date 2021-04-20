@@ -26,7 +26,7 @@ const GitHubPages = () => {
 };
 
 class MyDocument extends Document {
-    static async getInitalProps(ctx: DocumentContext) {
+    static async getInitialProps(ctx: DocumentContext) {
         const initialProps = await Document.getInitialProps(ctx);
         return { ...initialProps };
     }
