@@ -3,7 +3,7 @@ import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import { NavBar } from '../components/utils/NavBar';
 import { Footer } from '../components/utils/Footer';
-import '../styles/global.scss';
+import '../styles/main.scss';
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
     <div className="root">

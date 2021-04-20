@@ -14,6 +14,7 @@ module.exports = {
     },
     darkMode: false, // or 'media' or 'class'
     theme: {
+        fontFamily: { sans: ['Nunito Sans'] },
         extend: {
             screens: {
                 '3xl': '1792px',
@@ -31,8 +32,8 @@ module.exports = {
                 384: '96rem',
             },
             colors: {
-                blue: { 'dark-contrast': '#1d2838' },
-                discord: { DEFAULT: '#7289DA' },
+                blue: { 'dark-contrast': 'hsl(216,32%,17%)' },
+                discord: { DEFAULT: 'hsl(227,58%,65%)' },
             },
         },
     },
