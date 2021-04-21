@@ -1,0 +1,55 @@
+@font-face {
+  font-family: Nunito Sans;
+  font-weight: 300;
+  src: url("/font/NunitoSans-Light.ttf")
+}
+
+@font-face {
+  font-family: Nunito Sans;
+  font-weight: 400;
+  src: url("/font/NunitoSans-Regular.ttf")
+}
+
+@font-face {
+  font-family: Nunito Sans;
+  font-weight: 500;
+  src: url("/font/NunitoSans-SemiBold.ttf")
+}
+
+@font-face {
+  font-family: Nunito Sans;
+  font-weight: 600;
+  src: url("/font/NunitoSans-Bold.ttf")
+}
+
+@tailwind base;
+@layer base {
+
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply overflow-x-hidden bg-blue-darker text-white tracking-wide;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @variants hover, focus {
+    .filter-none {
+      filter: none;
+    }
+
+    .filter-grayscale {
+      filter: grayscale(100%);
+    }
+  }
+
+  .px-page {
+    @apply px-5 md:px-8;
+  }
+}
