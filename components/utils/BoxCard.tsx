@@ -8,7 +8,8 @@ type ImageProps = {
 };
 
 type BodyProps = {
-    path: string
+    path: string,
+    linkText: string
 };
 
 type CardProps = {
@@ -26,7 +27,7 @@ export const BoxBody: React.FC<BodyProps> = (props: PropsWithChildren<BodyProps>
     <div className="px-8 py-8 max-w-xl text-center text-lg">
         {props.children}
         <a href={props.path} target="_blank" rel="noreferrer">
-            <Button className="w-full mt-4 bg-teal-light-contrast border-2 border-teal-light-contrast hover:bg-white hover:text-teal-light-contrast font-bold">Learn More</Button>
+            <Button className="w-full mt-4 bg-teal-light-contrast border-2 border-teal-light-contrast hover:bg-white hover:text-teal-light-contrast font-bold">{props.linkText}</Button>
         </a>
     </div>
 );

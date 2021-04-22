@@ -14,7 +14,7 @@ export function PartnerSection(): JSX.Element {
             <div className="grid grid-cols sm:grid-cols-1 md:grid-cols-3 gap-y-10 mt-10 mx-auto justify-center items-center gap-x-8 max-w-6xl">
                 <BoxCard>
                     <BoxImage className="w-60 pt-16 pb-3" src="img/partners/flightsimto.png" alt="Flightsim.to" />
-                    <BoxBody path="https://flightsim.to/">
+                    <BoxBody linkText="Learn More" path="https://flightsim.to/">
                         <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">Flightsim.to</h1>
                         <p>
                             Flightsim.to is the largest free addon marketplace for Microsoft Flight Simulator.
@@ -25,7 +25,7 @@ export function PartnerSection(): JSX.Element {
                 </BoxCard>
                 <BoxCard>
                     <BoxImage className="w-60 pt-14" src="img/partners/fsnews.png" alt="FSNews" />
-                    <BoxBody path="https://fsnews.eu/">
+                    <BoxBody linkText="Learn More" path="https://fsnews.eu/">
                         <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">FSNews</h1>
                         <p>
                             FSNews brings together the latest flight simulation news regarding new addons for many
@@ -36,7 +36,7 @@ export function PartnerSection(): JSX.Element {
                 </BoxCard>
                 <BoxCard>
                     <BoxImage className="w-60 pt-16 pb-5" src="img/partners/yourcontrols.png" alt="YourControls" />
-                    <BoxBody path="https://github.com/Sequal32/yourcontrols">
+                    <BoxBody linkText="Learn More" path="https://github.com/Sequal32/yourcontrols">
                         <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">YourControls</h1>
                         <p>
                             YourControls is an open-source project that allows users to fly their aircraft in
@@ -49,7 +49,7 @@ export function PartnerSection(): JSX.Element {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 mt-10 md:mt-8 mx-auto justify-center items-center gap-x-8 max-w-6xl">
                 <BoxCard>
                     <BoxImage className="w-20 pt-1 hover:scale-75" src="img/partners/salty.svg" alt="Salty Simulations" />
-                    <BoxBody path="https://sim4flight.com/salty/">
+                    <BoxBody linkText="Learn More" path="https://sim4flight.com/salty/">
                         <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">Salty Simulations</h1>
                         <p>
                             Salty Simulations is the group that created the open-source Salty Simulations 747 improvement project.
@@ -60,7 +60,7 @@ export function PartnerSection(): JSX.Element {
                 </BoxCard>
                 <BoxCard>
                     <BoxImage className="w-32" src="img/partners/s4f.png" alt="Sim4flight" />
-                    <BoxBody path="https://sim4flight.com/">
+                    <BoxBody linkText="Learn More" path="https://sim4flight.com/">
                         <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">Sim4Flight</h1>
                         <p>
                             Sim4Flight works to create and provide aircraft liveries and enhancements for Microsoft Flight Simulator,
