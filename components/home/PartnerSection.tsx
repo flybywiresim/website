@@ -46,7 +46,7 @@ export function PartnerSection(): JSX.Element {
                     </BoxBody>
                 </BoxCard>
             </div>
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-y-10 sm:mt-10 md:mt-8 mx-auto justify-center items-center gap-x-8 max-w-6xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 mt-10 md:mt-8 mx-auto justify-center items-center gap-x-8 max-w-6xl">
                 <BoxCard>
                     <BoxImage className="w-20 pt-1 hover:scale-75" src="img/partners/salty.svg" alt="Salty Simulations" />
                     <BoxBody path="https://sim4flight.com/salty/">
