@@ -11,6 +11,10 @@ type BodyProps = {
     path: string
 };
 
+type CardProps = {
+    className?: string
+};
+
 export const BoxImage: React.FC<ImageProps> = (props: PropsWithChildren<ImageProps>) => (
     <img className={`mx-auto mt-3 ${props.className}`} src={props.src} alt={props.alt} />
 );
@@ -27,8 +31,8 @@ export const BoxBody: React.FC<BodyProps> = (props: PropsWithChildren<BodyProps>
     </div>
 );
 
-export const BoxCard: React.FC = ({ children }) => (
-    <div className="max-w-full h-full transform hover:scale-105 transition-transform duration-200 bg-blue-dark-contrast shadow-xl hover:shadow-2xl rounded-md">
-        {children}
+export const BoxCard: React.FC<CardProps> = (props: PropsWithChildren<CardProps>) => (
+    <div className={`${props.className} max-w-full h-full transform hover:scale-105 mx-auto transition-transform duration-200 bg-blue-dark-contrast shadow-xl hover:shadow-2xl rounded-md`}>
+        { props.children}
     </div>
 );
