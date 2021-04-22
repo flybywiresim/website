@@ -12,19 +12,8 @@ export function PartnerSection(): JSX.Element {
             </div>
             <div className="flex flex-row mt-6 mx-auto justify-center items-center gap-x-8 max-w-6xl">
                 <BoxCard>
-                    <BoxImage className="w-32" src="img/partners/s4f.png" alt="Sim4flight" />
-                    <BoxBody>
-                        <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">Sim4Flight</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque dolor dolorem dolores
-                            est excepturi exercitationem hic id iste molestias nobis nostrum odio optio perspiciatis
-                            placeat reprehenderit, sunt tempora voluptate.
-                        </p>
-                    </BoxBody>
-                </BoxCard>
-                <BoxCard>
-                    <BoxImage className="w-60 pt-16 pb-3" src="img/partners/flightsimto.png" alt="flightsimto" />
-                    <BoxBody>
+                    <BoxImage className="w-60 pt-16 pb-3" src="img/partners/flightsimto.png" alt="Flightsim.to" />
+                    <BoxBody path="https://flightsim.to/">
                         <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">Flightsim.to</h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque dolor dolorem dolores
@@ -34,9 +23,20 @@ export function PartnerSection(): JSX.Element {
                     </BoxBody>
                 </BoxCard>
                 <BoxCard>
-                    <BoxImage className="w-60 pt-14 " src="img/partners/fsnews.png" alt="fsnews" />
-                    <BoxBody>
+                    <BoxImage className="w-60 pt-14" src="img/partners/fsnews.png" alt="FSNews" />
+                    <BoxBody path="https://fsnews.eu/">
                         <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">FSNews</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque dolor dolorem dolores
+                            est excepturi exercitationem hic id iste molestias nobis nostrum odio optio perspiciatis
+                            placeat reprehenderit, sunt tempora voluptate.
+                        </p>
+                    </BoxBody>
+                </BoxCard>
+                <BoxCard>
+                    <BoxImage className="w-60 pt-16 pb-5" src="img/partners/yourcontrols.png" alt="YourControls" />
+                    <BoxBody path="https://github.com/Sequal32/yourcontrols">
+                        <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">YourControls</h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque dolor dolorem dolores
                             est excepturi exercitationem hic id iste molestias nobis nostrum odio optio perspiciatis
@@ -47,9 +47,9 @@ export function PartnerSection(): JSX.Element {
             </div>
             <div className="flex flex-row mt-6 mx-auto justify-center items-center gap-x-8 max-w-6xl">
                 <BoxCard>
-                    <BoxImage className="w-32" src="img/partners/s4f.png" alt="Sim4flight" />
-                    <BoxBody>
-                        <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">Bruh</h1>
+                    <BoxImage className="w-20 pt-1 hover:scale-75" src="img/partners/salty.svg" alt="Salty Simulations" />
+                    <BoxBody path="https://sim4flight.com/salty/">
+                        <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">Salty Simulations</h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque dolor dolorem dolores
                             est excepturi exercitationem hic id iste molestias nobis nostrum odio optio perspiciatis
@@ -59,23 +59,12 @@ export function PartnerSection(): JSX.Element {
                 </BoxCard>
                 <BoxCard>
                     <BoxImage className="w-32" src="img/partners/s4f.png" alt="Sim4flight" />
-                    <BoxBody>
-                        <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">Bruh</h1>
+                    <BoxBody path="https://sim4flight.com/">
+                        <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">Sim4Flight</h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque dolor dolorem dolores
                             est excepturi exercitationem hic id iste molestias nobis nostrum odio optio perspiciatis
                             placeat reprehenderit, sunt tempora voluptate. tempora voluptate
-                        </p>
-                    </BoxBody>
-                </BoxCard>
-                <BoxCard>
-                    <BoxImage className="w-32" src="img/partners/s4f.png" alt="Sim4flight" />
-                    <BoxBody>
-                        <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">Bruh</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque dolor dolorem dolores
-                            est excepturi exercitationem hic id iste molestias nobis nostrum odio optio perspiciatis
-                            placeat reprehenderit, sunt tempora voluptate.
                         </p>
                     </BoxBody>
                 </BoxCard>
