@@ -17,9 +17,9 @@ export function PartnerSection(): JSX.Element {
                     <BoxBody path="https://flightsim.to/">
                         <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">Flightsim.to</h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque dolor dolorem dolores
-                            est excepturi exercitationem hic id iste molestias nobis nostrum odio optio perspiciatis
-                            placeat reprehenderit, sunt tempora voluptate. tempora voluptate
+                            Flightsim.to is the largest free addon marketplace for Microsoft Flight Simulator.
+                            They host a large abbundance of airplane addons, liveries, regional sceneries and more!
+                            Anyone is welcome to contribute their own works for everyone to enjoy.
                         </p>
                     </BoxBody>
                 </BoxCard>
@@ -28,9 +28,9 @@ export function PartnerSection(): JSX.Element {
                     <BoxBody path="https://fsnews.eu/">
                         <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">FSNews</h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque dolor dolorem dolores
-                            est excepturi exercitationem hic id iste molestias nobis nostrum odio optio perspiciatis
-                            placeat reprehenderit, sunt tempora voluptate.
+                            FSNews brings together the latest flight simulation news regarding new addons for many
+                            different flight simulators along with updates from developers. Stay tuned for updates
+                            from the flybywire developers in their "The Workshop" series.
                         </p>
                     </BoxBody>
                 </BoxCard>
@@ -39,9 +39,9 @@ export function PartnerSection(): JSX.Element {
                     <BoxBody path="https://github.com/Sequal32/yourcontrols">
                         <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">YourControls</h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque dolor dolorem dolores
-                            est excepturi exercitationem hic id iste molestias nobis nostrum odio optio perspiciatis
-                            placeat reprehenderit, sunt tempora voluptate.
+                            YourControls is an open-source project that allows users to fly their aircraft in
+                            Microsoft Flight Simulator with other users. This means that you can now have a co-pilot
+                            fly with you as well as any other spectators you invite to join your session.
                         </p>
                     </BoxBody>
                 </BoxCard>
@@ -52,9 +52,9 @@ export function PartnerSection(): JSX.Element {
                     <BoxBody path="https://sim4flight.com/salty/">
                         <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">Salty Simulations</h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque dolor dolorem dolores
-                            est excepturi exercitationem hic id iste molestias nobis nostrum odio optio perspiciatis
-                            placeat reprehenderit, sunt tempora voluptate.
+                            Salty Simulations is the group that created the open-source Salty Simulations 747 improvement project.
+                            Much like flybywire, they have created a large amount of additional functionality for the default 747
+                            like an improved flight model, fuel consumption improvements, and new FMC pages.
                         </p>
                     </BoxBody>
                 </BoxCard>
@@ -63,9 +63,9 @@ export function PartnerSection(): JSX.Element {
                     <BoxBody path="https://sim4flight.com/">
                         <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">Sim4Flight</h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque dolor dolorem dolores
-                            est excepturi exercitationem hic id iste molestias nobis nostrum odio optio perspiciatis
-                            placeat reprehenderit, sunt tempora voluptate. tempora voluptate
+                            Sim4Flight works to create and provide aircraft liveries and enhancements for Microsoft Flight Simulator,
+                            Prepar3D, and X-Plane. In addition, Sim4Flight is currently working on bringing a functional Airbus A350 to market
+                            for the new Microsoft Flight Simulator and provide developer updates to keep you in the know.
                         </p>
                     </BoxBody>
                 </BoxCard>
