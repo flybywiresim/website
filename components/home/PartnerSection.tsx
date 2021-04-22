@@ -1,29 +1,5 @@
-import React, { PropsWithChildren } from 'react';
-
-type ImageProps = {
-    className?: string,
-    src: string
-};
-
-type PartnerProps = Partial<{
-    className?: string,
-    name?: string,
-    path?: string
-}>;
-
-export const PartnerImage: React.FC<ImageProps> = (props: PropsWithChildren<ImageProps>) => (
-    <div className={`p-8 h-full ${props.className}`}>
-        <img className="h-full w-full object-contain transform hover:scale-105 transition-transform duration-100 filter-grayscale hover:filter-none" src={props.src} alt="" />
-    </div>
-);
-
-export const Partner: React.FC<PartnerProps> = (props: PropsWithChildren<PartnerProps>) => (
-    <div id={props.name} className={`flex flex-col h-full justify-center ${props.className}`}>
-        <a href={props.path} target="_blank" rel="noreferrer">
-            {props.children}
-        </a>
-    </div>
-);
+import React from 'react';
+import { BoxCard, BoxImage, BoxBody } from '../utils/BoxCard';
 
 export function PartnerSection(): JSX.Element {
     return (
@@ -34,24 +10,75 @@ export function PartnerSection(): JSX.Element {
                     Partners
                 </p>
             </div>
-            <div className="w-1/2 sm:w-3/5 2xl:w-1/2 grid grid-cols-1 lg:grid-cols-3 mt-8 mx-auto">
-                <Partner name="Flightsim.to" path="https://flightsim.to/">
-                    <PartnerImage src="img/partners/flightsimto.png" />
-                </Partner>
-                <Partner name="FSNews" path="https://fsnews.eu/">
-                    <PartnerImage src="img/partners/fsnews.png" />
-                </Partner>
-                <Partner name="YourControls" path="https://github.com/Sequal32/yourcontrols">
-                    <PartnerImage src="img/partners/yourcontrols.png" />
-                </Partner>
+            <div className="flex flex-row mt-6 mx-auto justify-center items-center gap-x-8 max-w-6xl">
+                <BoxCard>
+                    <BoxImage className="w-32" src="img/partners/s4f.png" alt="Sim4flight" />
+                    <BoxBody>
+                        <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">Sim4Flight</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque dolor dolorem dolores
+                            est excepturi exercitationem hic id iste molestias nobis nostrum odio optio perspiciatis
+                            placeat reprehenderit, sunt tempora voluptate.
+                        </p>
+                    </BoxBody>
+                </BoxCard>
+                <BoxCard>
+                    <BoxImage className="w-60 pt-16 pb-3" src="img/partners/flightsimto.png" alt="flightsimto" />
+                    <BoxBody>
+                        <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">Flightsim.to</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque dolor dolorem dolores
+                            est excepturi exercitationem hic id iste molestias nobis nostrum odio optio perspiciatis
+                            placeat reprehenderit, sunt tempora voluptate. tempora voluptate
+                        </p>
+                    </BoxBody>
+                </BoxCard>
+                <BoxCard>
+                    <BoxImage className="w-60 pt-14 " src="img/partners/fsnews.png" alt="fsnews" />
+                    <BoxBody>
+                        <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">FSNews</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque dolor dolorem dolores
+                            est excepturi exercitationem hic id iste molestias nobis nostrum odio optio perspiciatis
+                            placeat reprehenderit, sunt tempora voluptate.
+                        </p>
+                    </BoxBody>
+                </BoxCard>
             </div>
-            <div className="w-1/2 sm:w-2/6 2xl:w-1/5 grid grid-cols-1 lg:grid-cols-2 mx-auto">
-                <Partner name="SaltySimulations" path="https://sim4flight.com/salty/">
-                    <PartnerImage className="w-2/3 mx-auto" src="img/partners/salty.svg" />
-                </Partner>
-                <Partner name="sim4flight" path="https://sim4flight.com/">
-                    <PartnerImage className="mx-auto" src="img/partners/s4f.png" />
-                </Partner>
+            <div className="flex flex-row mt-6 mx-auto justify-center items-center gap-x-8 max-w-6xl">
+                <BoxCard>
+                    <BoxImage className="w-32" src="img/partners/s4f.png" alt="Sim4flight" />
+                    <BoxBody>
+                        <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">Bruh</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque dolor dolorem dolores
+                            est excepturi exercitationem hic id iste molestias nobis nostrum odio optio perspiciatis
+                            placeat reprehenderit, sunt tempora voluptate.
+                        </p>
+                    </BoxBody>
+                </BoxCard>
+                <BoxCard>
+                    <BoxImage className="w-32" src="img/partners/s4f.png" alt="Sim4flight" />
+                    <BoxBody>
+                        <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">Bruh</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque dolor dolorem dolores
+                            est excepturi exercitationem hic id iste molestias nobis nostrum odio optio perspiciatis
+                            placeat reprehenderit, sunt tempora voluptate. tempora voluptate
+                        </p>
+                    </BoxBody>
+                </BoxCard>
+                <BoxCard>
+                    <BoxImage className="w-32" src="img/partners/s4f.png" alt="Sim4flight" />
+                    <BoxBody>
+                        <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">Bruh</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque dolor dolorem dolores
+                            est excepturi exercitationem hic id iste molestias nobis nostrum odio optio perspiciatis
+                            placeat reprehenderit, sunt tempora voluptate.
+                        </p>
+                    </BoxBody>
+                </BoxCard>
             </div>
         </section>
     );
