@@ -28,7 +28,7 @@ const Privacy: React.FC = () => {
                             </div>
                             <p className="text-xl mt-3">
                                 Please take some time to review our privacy policy.
-                                At flybywire simulations we make it a priority to be
+                                At FlyByWire Simulations we make it a priority to be
                                 thoroughly transparent to our users about the data we collect and use.
                             </p>
                         </div>
