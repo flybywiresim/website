@@ -27,7 +27,7 @@ const Tos: React.FC = () => {
                             </div>
                             <p className="text-xl mt-3">
                                 Please take some time to review our terms of service.
-                                At flybywire simulations we make it a priority to ensure the legal and fair usage of software.
+                                At FlyByWire Simulations we make it a priority to ensure the legal and fair usage of software.
                             </p>
                         </div>
                     </div>
