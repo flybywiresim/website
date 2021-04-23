@@ -27,7 +27,7 @@ const Tos: React.FC = () => {
                             </div>
                             <p className="text-xl mt-3">
                                 Please take some time to review our terms of service.
-                                At flybywire simulations we make it a priority to ensure the legal and fair usage of software.
+                                At FlyByWire Simulations we make it a priority to ensure the legal and fair usage of software.
                             </p>
                         </div>
                     </div>
@@ -56,7 +56,7 @@ const Tos: React.FC = () => {
                         {' '}
                         <b>13 and over</b>
                         {' '}
-                        to join FlyByWire Simulation services such as this website and Discord or any other communication
+                        to join FlyByWire Simulations services such as this website and Discord or any other communication
                         platform, other platforms may be subject to their own conditions. By using FlyByWire Simulations services, you
                         agree that you are 13 years of age and the minimum age of digital consent in your country.
                         FlyByWire Simulations reserve the right to remove users under the age of 13 and minimum age of digital consent
