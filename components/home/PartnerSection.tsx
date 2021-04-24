@@ -29,7 +29,7 @@ export function PartnerSection(): JSX.Element {
                         <p>
                             FSNews brings together the latest flight simulation news regarding new addons for many
                             different flight simulators along with updates from developers. Stay tuned for updates
-                            from the flybywire developers in their "The Workshop" series.
+                            from the FlyByWire developers in their "The Workshop" series.
                         </p>
                     </BoxBody>
                 </BoxCard>
@@ -52,7 +52,7 @@ export function PartnerSection(): JSX.Element {
                         <h1 className="text-center text-blue-light font-bold text-2xl mt-3 mb-3">Salty Simulations</h1>
                         <p>
                             Salty Simulations is the group that created the open-source Salty Simulations 747 improvement project.
-                            Much like flybywire, they have created a large amount of additional functionality for the default 747
+                            Much like FlyByWire, they have created a large amount of additional functionality for the default 747
                             like an improved flight model, fuel consumption improvements, and new FMC pages.
                         </p>
                     </BoxBody>
