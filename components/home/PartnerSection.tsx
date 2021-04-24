@@ -4,7 +4,6 @@ import { BoxCard, BoxImage, BoxBody } from '../utils/BoxCard';
 export function PartnerSection(): JSX.Element {
     return (
         <section className="relative overflow-hidden w-full px-10 py-14">
-            <img className="absolute h-384 -mt-20 -mx-12 w-full opacity-5" src="img/prev.jpg" />
             <div className="w-1/2 2xl:w-1/4 text-center mx-auto divide-y divide-gray-400">
                 <h2 className="text-base font-semibold tracking-wider text-blue-200 uppercase">OUR AFFILIATED</h2>
                 <p className="mt-3 pt-3 text-5xl font-extrabold text-blue-light">
