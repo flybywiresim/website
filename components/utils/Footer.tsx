@@ -28,6 +28,9 @@ export const Footer = (): JSX.Element => (
                     <FooterIconItem icon={faTwitch} href="https://www.twitch.tv/flybywiresimulations" />
                     <FooterIconItem icon={faYoutube} href="https://www.youtube.com/c/FlyByWireSimulations" />
                 </div>
+
+                <img draggable="false" className="md:w-auto h-10 mb-2" src="/svg/powered-by-vercel.svg" alt="" />
+
                 <div className="text-center">
                     <div className="flex flex-row justify-center mx-auto space-x-8">
                         <a
