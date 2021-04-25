@@ -48,6 +48,16 @@ export const Footer = (): JSX.Element => (
                                 <p>Privacy Policy</p>
                             </Link>
                         </div>
+                        <div>
+                            <a
+                                className="hover:underline"
+                                href="https://vercel.com/?utm_source=[flybywiresim]&utm_campaign=oss"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <p>Powered by ▲</p>
+                            </a>
+                        </div>
                     </div>
                     <p className="text-gray-400 pt-2">&copy; FlyByWire Simulations and its contributors 2020-2021</p>
                     <p className="text-sm text-gray-500 pt-2">
