@@ -29,3 +29,7 @@ npm run export
 + [Next.js](https://nextjs.org) used to build our page.
 + [React](https://reactjs.org/) javascript library used to make UI.
 + [tailwindcss](https://tailwindcss.com/) low level CSS classes.
+
+##
+
+[![Powered by Vercel](https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg)](https://vercel.com/?utm_source=[flybywiresim]&utm_campaign=oss "Powered by Vercel")
