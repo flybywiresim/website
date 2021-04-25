@@ -2,6 +2,10 @@
 
 This is the website repository for the [FlyByWire Simulations website](https://flybywiresim.com/).
 
+###
+
+[![Powered by Vercel](https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg)](https://vercel.com/?utm_source=[flybywiresim]&utm_campaign=oss "Powered by Vercel")
+
 ## Getting Started
 
 Install dependencies.
