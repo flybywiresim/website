@@ -49,17 +49,19 @@ export const Footer = (): JSX.Element => (
                             </Link>
                         </div>
                     </div>
-                    <div>
+
+                    <div className="mt-2">
                         <a
-                            className="hover:underline flex flex-row mx-auto mt-2 justify-center"
+                            className="flex justify-center"
                             href="https://vercel.com/?utm_source=[flybywiresim]&utm_campaign=oss"
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <p>Powered by</p>
-                            <img className="pl-2 h-5" src="img/Vercel-Logotype-Light.png" alt="Vercel" />
+                            Powered by
+                            <img className="mx-2 h-4 self-center" src="svg/vercel.svg" alt="Vercel" />
                         </a>
                     </div>
+
                     <p className="text-gray-400 pt-2">&copy; FlyByWire Simulations and its contributors 2020-2021</p>
                     <p className="text-sm text-gray-500 pt-2">
                         v
