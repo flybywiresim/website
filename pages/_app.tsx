@@ -6,7 +6,7 @@ import { ScrollToTopButton } from '../components/utils/ScrollToTopButton';
 import { Footer } from '../components/utils/Footer';
 import '../styles/main.scss';
 
-const MyApp = ({ Component, pageProps }: AppProps) => (
+const App = ({ Component, pageProps }: AppProps) => (
     <div className="root">
         <Head>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,4 +19,4 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
     </div>
 );
 
-export default MyApp;
+export default App;
