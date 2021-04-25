@@ -2,7 +2,6 @@
 
 This is the website repository for the [FlyByWire Simulations website](https://flybywiresim.com/).
 
-
 ## Getting Started
 
 Install dependencies.
