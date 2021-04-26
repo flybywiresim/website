@@ -167,7 +167,7 @@ export function Community(): JSX.Element {
                 </div>
 
                 <div className="mt-12">
-                    <Card>
+                    <Card bgColour="gray-100" borderColour="discord">
                         <CardTitle>Discord</CardTitle>
                         <CardBody>
                             Our Discord server is where we plan the entirety of our projects and provide most of our support.
