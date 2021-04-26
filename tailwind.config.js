@@ -16,6 +16,7 @@ module.exports = {
     theme: {
         fontFamily: { sans: ['Nunito Sans'] },
         extend: {
+            height: { 200: '50rem' },
             screens: {
                 '3xl': '1792px',
                 '4xl': '2048px',
@@ -33,7 +34,10 @@ module.exports = {
             },
             colors: {
                 blue: { 'dark-contrast': 'hsl(216,32%,17%)' },
-                discord: { DEFAULT: 'hsl(227,58%,65%)' },
+                discord: {
+                    DEFAULT: 'hsl(227,58%,65%)',
+                    dark: 'hsl(227,32%,49%)',
+                },
             },
         },
     },
