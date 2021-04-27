@@ -80,59 +80,6 @@ function ContributorCountStatistic(): JSX.Element {
     );
 }
 
-function DownloadCountStatistic(): JSX.Element {
-    // Disabled until API fix is released.
-
-    /* const [downloadCount, setDownloadCount] = useState(0);
-    const [postfix, setPostfix] = useState('');
-
-    useEffect(() => {
-        fetch(GITHUB_DOWNLOAD_COUNT_ENDPOINT).then((res) => {
-            res.json().then((reqJson) => {
-                const downloads: number[] = [];
-
-                reqJson.forEach((item: any) => {
-                    item.assets.forEach((download: any) => {
-                        downloads.push(download.download_count);
-                    });
-                });
-
-                fetch(CDN_DOWNLOAD_COUNT_ENDPOINT).then((res) => res.text().then((cdnDownloadCount) => {
-                    let totalDownloads = downloads.reduce((a, b) => a + b);
-
-                    if (cdnDownloadCount) {
-                        totalDownloads += Number(cdnDownloadCount);
-                    }
-
-                    if (totalDownloads >= 1000) {
-                        totalDownloads = Math.floor(totalDownloads / 1000);
-                        setPostfix('K');
-                    }
-
-                    if (totalDownloads) {
-                        setDownloadCount(totalDownloads);
-                    }
-                }));
-            });
-        });
-    }, []);
-     */
-
-    const fn = (value: number) => (
-        <h1 className="text-6xl font-medium text-blue-dark-contrast mb-3">
-            {value}
-            M+
-        </h1>
-    );
-
-    return (
-        <div className="py-12 lg:py-0 lg:px-20 2xl:px-32 text-center">
-            <CountTo to={1} speed={3000}>{fn}</CountTo>
-            <span className="text-xl text-gray-700">Downloads</span>
-        </div>
-    );
-}
-
 export function Community(): JSX.Element {
     const [mapRefreshInterval, setMapRefreshInterval] = useState(5_000);
 

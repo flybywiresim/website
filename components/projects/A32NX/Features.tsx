@@ -1,8 +1,6 @@
-import React, { forwardRef } from 'react';
-import { faCogs, faCheck, faEye } from '@fortawesome/free-solid-svg-icons';
-import { CardBody, Card, CardTitle } from '../../utils/Card';
+import React from 'react';
 
-export const Features = forwardRef<HTMLDivElement>((_, ref): JSX.Element => (
+export const Features = () => (
     <>
         <div className="mx-auto divide-y divide-gray-500 max-w-2xl px-page mt-12 mb-20">
             <p className="mt-3 mb-4 pt-3 text-5xl text-center font-medium text-blue-light">
@@ -14,4 +12,4 @@ export const Features = forwardRef<HTMLDivElement>((_, ref): JSX.Element => (
             </p>
         </div>
     </>
-));
+);
