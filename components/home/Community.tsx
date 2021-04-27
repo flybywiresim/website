@@ -99,7 +99,7 @@ export function Community(): JSX.Element {
                     Community Insights
                 </h1>
                 <p className="text-xl text-gray-800 max-w-prose py-4">
-                    Discover the extensive community behind every FlyByWire Simulations aircraft - a vibrant and active online group who prioritises collaborative work and openness.
+                    Discover the extensive community behind every FlyByWire Simulations aircraft - a vibrant and active online group that prioritises collaborative work and openness.
                 </p>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-8 my-6">
                     <LiveFlightsStat />
