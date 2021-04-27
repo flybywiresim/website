@@ -28,7 +28,7 @@ function LiveFlightsStat(): JSX.Element {
         fetch(LIVE_FLIGHTS_ENDPOINT).then((res) => res.text().then((flights) => setLiveFlights(flights)));
     }, []);
 
-    const fn = (value: number) => <h1 className="text-5xl font-bold text-blue-dark-contrast">{value}</h1>;
+    const fn = (value: number) => <h1 className="text-5xl font-semibold text-blue-dark-contrast">{value}</h1>;
 
     return (
         <div>
@@ -49,7 +49,7 @@ function CommitCountStatistic(): JSX.Element {
         });
     }, []);
 
-    const fn = (value: number) => <h1 className="text-5xl font-bold text-blue-dark-contrast">{value}</h1>;
+    const fn = (value: number) => <h1 className="text-5xl font-semibold text-blue-dark-contrast">{value}</h1>;
 
     return (
         <div>
@@ -70,7 +70,7 @@ function ContributorCountStatistic(): JSX.Element {
         });
     }, []);
 
-    const fn = (value: number) => <h1 className="text-5xl font-bold text-blue-dark-contrast">{value}</h1>;
+    const fn = (value: number) => <h1 className="text-5xl font-semibold text-blue-dark-contrast">{value}</h1>;
 
     return (
         <div>
@@ -152,15 +152,14 @@ export function Community(): JSX.Element {
                     Community Insights
                 </h1>
                 <p className="text-xl text-gray-800 max-w-prose py-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto iste odio? Adipisci aliquam,
-                    consectetur cumque doloremque doloribus illum ipsam laboriosam minus nemo obcaecati quas quasi ratione soluta vero voluptatum.
+                    Discover the extensive community behind every FlyByWire Simulations aircraft - a vibrant and active online group who prioritises collaborative work and openness.
                 </p>
                 <div className="grid grid-cols-4 my-6">
                     <LiveFlightsStat />
                     <CommitCountStatistic />
                     <ContributorCountStatistic />
                     <div id="downloadStatistics">
-                        <h1 className="text-5xl font-bold">
+                        <h1 className="text-5xl font-semibold">
                             1M
                         </h1>
                         <p className="text-xl">Downloads</p>
@@ -168,7 +167,7 @@ export function Community(): JSX.Element {
                 </div>
 
                 <div className="mt-12">
-                    <Card bgColour="gray-100" borderColour="discord">
+                    <Card bgColour="gray-100" borderColour="discord" className="shadow-lg">
                         <CardTitle>
                             <FontAwesomeIcon className="mr-2 text-discord" icon={faDiscord} size="sm" />
                             Discord
