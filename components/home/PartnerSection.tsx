@@ -30,7 +30,7 @@ export const Partner: React.FC<PartnerProps> = (props: PropsWithChildren<Partner
 export function PartnerSection(): JSX.Element {
     return (
         <section className="w-full py-20 lg:py-8 ">
-            <div className="grid md:grid-cols-1 lg:grid-cols-5 space-y-16 lg:space-y-0 items-center">
+            <div className="max-w-screen-2xl grid md:grid-cols-1 lg:grid-cols-5 space-y-16 lg:space-y-0 items-center mx-auto">
                 <Partner name="Flightsim.to" path="https://flightsim.to/">
                     <PartnerImage className="w-1/2 mx-auto" src="img/partners/flightsimto.png" />
                 </Partner>
@@ -41,8 +41,7 @@ export function PartnerSection(): JSX.Element {
                     <PartnerImage className="w-1/2 mx-auto" src="img/partners/yourcontrols.png" />
                 </Partner>
                 <Partner aTagClassName="flex items-center" name="SaltySimulations" path="https://sim4flight.com/salty/">
-                    <PartnerImage className="w-1/12 ml-auto" src="img/partners/salty.svg" />
-                    <p className="font-bold lg:text-2xl sm:text-6xl pl-2 mr-auto">Salty Simulations</p>
+                    <PartnerImage className="w-1/2 mx-auto" src="img/partners/salty.svg" />
                 </Partner>
                 <Partner aTagClassName="flex items-center" name="sim4flight" path="https://sim4flight.com/">
                     <PartnerImage className="w-1/12 ml-auto" src="img/partners/s4f.png" />
