@@ -145,16 +145,16 @@ export function Community(): JSX.Element {
     }, []);
 
     return (
-        <section className="flex justify-between items-center bg-gray-50 text-blue-dark-contrast">
-            <div className="mt-10 px-24 flex flex-col">
+        <section className="flex flex-col lg:flex-row justify-between items-center bg-gray-50 text-blue-dark-contrast">
+            <div className="mt-10 px-page lg:px-24 flex flex-col">
                 <span className="w-24 h-2 bg-teal-light-contrast rounded-full mb-3" />
-                <h1 className="text-5xl font-bold">
+                <h1 className="text-5xl pr-2 font-bold">
                     Community Insights
                 </h1>
                 <p className="text-xl text-gray-800 max-w-prose py-4">
                     Discover the extensive community behind every FlyByWire Simulations aircraft - a vibrant and active online group who prioritises collaborative work and openness.
                 </p>
-                <div className="grid grid-cols-4 my-6">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-8 my-6">
                     <LiveFlightsStat />
                     <CommitCountStatistic />
                     <ContributorCountStatistic />
@@ -166,7 +166,7 @@ export function Community(): JSX.Element {
                     </div>
                 </div>
 
-                <div className="mt-12">
+                <div className="my-12">
                     <Card bgColour="gray-100" borderColour="discord" className="shadow-lg">
                         <CardTitle>
                             <FontAwesomeIcon className="mr-2 text-discord" icon={faDiscord} size="sm" />
@@ -189,7 +189,7 @@ export function Community(): JSX.Element {
                     </Card>
                 </div>
             </div>
-            <div className="relative h-200 w-1/2 z-10">
+            <div className="relative h-144 lg:h-200 w-full lg:w-1/2 z-10">
                 <MapDisplay refreshInterval={mapRefreshInterval} disableMenu disableWeather={false} disableScroll forceTileset="carto-light" />
             </div>
         </section>
