@@ -40,7 +40,7 @@ const Privacy: React.FC = () => {
             <div ref={bodyRef} />
 
             <article className="w-full md:mx-auto px-20 xl:px-0 my-40 max-w-6xl">
-                <h1 className="mt-40 text-6xl text-blue-light font-bold">Privacy Policy</h1>
+                <h1 className="mt-40 text-6xl text-blue-light font-semibold">Privacy Policy</h1>
                 <div className="mt-2">
                     <p>Effective: 21/12/2020</p>
                     <p>Author: Nathan Innes</p>
@@ -51,7 +51,7 @@ const Privacy: React.FC = () => {
                     </a>
                 </div>
                 <div className="mt-10 ">
-                    <h1 className="text-4xl text-blue-light-contrast font-bold">What information do we collect?</h1>
+                    <h1 className="text-4xl text-blue-light-contrast font-semibold">What information do we collect?</h1>
                     <div className="text-xl mt-4 leading-9 font-light">
                         <p>We may collect, store and use the following kinds of personal data:</p>
                         <p>
@@ -67,7 +67,7 @@ const Privacy: React.FC = () => {
                             notifications.
                         </p>
                     </div>
-                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-bold">Information about website visits</h1>
+                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-semibold">Information about website visits</h1>
                     <div className="text-xl mt-4 leading-9 font-light">
                         <p>
                             We may collect information about your visits to this website such as your IP address, geographical location, browser type, referral
@@ -93,7 +93,7 @@ const Privacy: React.FC = () => {
                             have a negative impact upon the usability of many websites.
                         </p>
                     </div>
-                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-bold">Using your personal data</h1>
+                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-semibold">Using your personal data</h1>
                     <div className="text-xl mt-4 leading-9 font-light">
                         <p>
                             Personal data submitted to this website will be used for the purposes specified in this privacy policy or in relevant parts of the website.
@@ -109,7 +109,7 @@ const Privacy: React.FC = () => {
                             We will not without your express consent provide your personal information to any third parties for the purpose of direct marketing.
                         </p>
                     </div>
-                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-bold">Other disclosures</h1>
+                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-semibold">Other disclosures</h1>
                     <div className="text-xl mt-4 leading-9 font-light">
                         <p>In addition to the disclosures reasonably necessary for the purposes identified elsewhere in this privacy policy, we may disclose information about you:</p>
                         <p>
@@ -123,14 +123,14 @@ const Privacy: React.FC = () => {
                         </p>
                         <p>4. Except as provided in this privacy policy, we will not provide your information to third parties.</p>
                     </div>
-                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-bold">Security of your personal data</h1>
+                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-semibold">Security of your personal data</h1>
                     <div className="text-xl mt-4 leading-9 font-light">
                         <p>
                             We will take reasonable precautions to prevent the loss, misuse or alteration of your personal information.
                             Of course, data transmission over the internet is inherently insecure, and we cannot guarantee the security of data sent over the internet.
                         </p>
                     </div>
-                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-bold">Third party websites</h1>
+                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-semibold">Third party websites</h1>
                     <div className="text-xl mt-4 leading-9 font-light">
                         <p>The website contains links to other websites. We are not responsible for the privacy policies of third party websites.</p>
                     </div>

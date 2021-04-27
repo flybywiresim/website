@@ -38,7 +38,7 @@ const Tos: React.FC = () => {
             <div ref={bodyRef} />
 
             <article className="w-full md:mx-auto px-20 xl:px-0 my-40 max-w-6xl">
-                <h1 className="mt-40 text-6xl text-blue-light font-bold">Terms of Service</h1>
+                <h1 className="mt-40 text-6xl text-blue-light font-semibold">Terms of Service</h1>
                 <div className="mt-2">
                     <p>Effective: 21/12/2020</p>
                     <p>Author: Nathan Innes</p>
@@ -50,7 +50,7 @@ const Tos: React.FC = () => {
                 </div>
 
                 <div className="mt-10 ">
-                    <h1 className="text-4xl text-blue-light-contrast font-bold">Minimum Age Requirement</h1>
+                    <h1 className="text-4xl text-blue-light-contrast font-semibold">Minimum Age Requirement</h1>
                     <p className="text-xl mt-4 leading-9 font-light">
                         To protect the privacy of younger people it is very important that we implement an age restriction of
                         {' '}
@@ -62,7 +62,7 @@ const Tos: React.FC = () => {
                         FlyByWire Simulations reserve the right to remove users under the age of 13 and minimum age of digital consent
                         in any given case from communication platforms.
                     </p>
-                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-bold">User Complaint</h1>
+                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-semibold">User Complaint</h1>
                     <p className="text-xl mt-4 leading-9 font-light">
                         In the event of a user should feel the need to make a complaint against another member, with regards to
                         violating our
@@ -77,7 +77,7 @@ const Tos: React.FC = () => {
                         When writing the report please state the members name and what they are violating. All complaints will be
                         dealt with as professionally and as quickly as possible.
                     </p>
-                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-bold">Legal Requirements</h1>
+                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-semibold">Legal Requirements</h1>
                     <p className="text-xl mt-4 leading-9 font-light">
                         All users of FlyByWire Simulations who choose to fly our mod must own a
                         {' '}

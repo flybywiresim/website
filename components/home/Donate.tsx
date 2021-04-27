@@ -7,7 +7,7 @@ export const Donate: React.FC = () => (
         <div className="absolute w-full z-10 flex flex-row justify-center">
             <div className="md:w-3/4 xl:w-2/3 flex flex-col px-page text-center xl:text-left">
                 <div>
-                    <h1 className="text-5xl text-teal font-extrabold">Donate</h1>
+                    <h1 className="text-5xl text-teal font-semibold">Donate</h1>
 
                     <p className="xl:w-2/3 text-lg sm:text-xl mt-6">
                         {/* eslint-disable-next-line max-len */}
