@@ -28,7 +28,7 @@ export const Partner: React.FC<PartnerProps> = (props: PropsWithChildren<Partner
 export function PartnerSection(): JSX.Element {
     return (
         <section className="relative w-full sm:py-20 lg:py-8">
-            <div className="h-full grid md:grid-cols-1 lg:grid-cols-5 items-center">
+            <div className="grid md:grid-cols-1 lg:grid-cols-5 items-center">
                 <div>
                     <a href="https://flightsim.to/" target="_blank" rel="noreferrer">
                         <img className="w-1/2 mx-auto" src="img/partners/flightsimto.png" alt="Flightsim.to" />
