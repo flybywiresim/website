@@ -9,7 +9,7 @@ export const ExtendedFeatures: React.FC = () => (
                         md:grid-cols-2
                         xl:grid-cols-3
                         2xl:grid-cols-4
-                        max-w-max mx-auto gap-x-16 gap-y-20 mt-10"
+                        max-w-max mx-auto gap-x-16 gap-y-20"
         >
             <Feature key="EFB">
                 <FeatureTitle>
