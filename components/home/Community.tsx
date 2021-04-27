@@ -122,7 +122,7 @@ export function Community(): JSX.Element {
                         </CardTitle>
                         <CardBody>
                             Our Discord server is where we plan the entirety of our projects and provide most of our support.
-                            Join us to chat with other members of the community, get started with contributing or ask us a question!
+                            Join us to chat with other members of the community, get started with contributing, or ask us a question!
                         </CardBody>
                         <a
                             className="font-semibold text-discord hover:text-discord-dark py-8"
