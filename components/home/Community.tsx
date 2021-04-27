@@ -4,6 +4,7 @@ import CountTo from 'react-count-to';
 import { MapProps } from '@flybywiresim/react-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { Card, CardBody, CardTitle } from '../utils/Card';
 
 const MapDisplay = dynamic<MapProps>(
@@ -168,7 +169,11 @@ export function Community(): JSX.Element {
 
                 <div className="mt-12">
                     <Card bgColour="gray-100" borderColour="discord">
-                        <CardTitle>Discord</CardTitle>
+                        <CardTitle>
+                            <FontAwesomeIcon className="mr-2 text-discord" icon={faDiscord} size="sm" />
+                            Discord
+
+                        </CardTitle>
                         <CardBody>
                             Our Discord server is where we plan the entirety of our projects and provide most of our support.
                             Join us to chat with other members of the community, get started with contributing or ask us a question!
