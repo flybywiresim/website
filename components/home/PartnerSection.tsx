@@ -42,7 +42,8 @@ export function PartnerSection(): JSX.Element {
                     <PartnerImage className="w-3/5" src="img/partners/salty.svg" />
                 </Partner>
                 <Partner name="sim4flight" path="https://sim4flight.com/">
-                    <PartnerImage className="w-1/2" src="img/partners/s4f.png" />
+                    {/* TODO: Remove margin property when replacement SVG is available */}
+                    <PartnerImage className="w-1/2 -mt-10 lg:mt-0" src="img/partners/s4f.png" />
                 </Partner>
             </div>
         </section>
