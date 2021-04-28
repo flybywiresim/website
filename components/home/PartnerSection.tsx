@@ -19,7 +19,7 @@ export const PartnerImage: React.FC<ImageProps> = (props: PropsWithChildren<Imag
 );
 
 export const Partner: React.FC<PartnerProps> = (props: PropsWithChildren<PartnerProps>) => (
-    <div id={props.name} className={`flex flex-col justify-center transform hover:scale-105 transition-transform duration-200 ${props.className}`}>
+    <div id={props.name} className={`flex flex-col justify-center ${props.className}`}>
         <a href={props.path} target="_blank" rel="noreferrer">
             {props.children}
         </a>
