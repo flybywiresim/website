@@ -114,7 +114,7 @@ export function Community(): JSX.Element {
                 </div>
 
                 <div className="my-12">
-                    <Card bgColour="gray-100" borderColour="discord" className="shadow-lg">
+                    <Card bgColour="gray-100" className="border-discord shadow-lg">
                         <CardTitle>
                             <FontAwesomeIcon className="mr-2 text-discord" icon={faDiscord} size="sm" />
                             Discord

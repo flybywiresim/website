@@ -6,7 +6,7 @@ type cardProps = {
     borderColour: string
 }
 export const Card: FC<cardProps> = (props) => (
-    <div className={`bg-${props.bgColour} border-t-4 border-${props.borderColour} px-page py-6 max-w-2xl rounded-lg ${props.className}`}>
+    <div className={`bg-${props.bgColour} border-t-4 px-page py-6 max-w-2xl rounded-lg ${props.className}`}>
         {props.children}
     </div>
 );
