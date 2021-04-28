@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import CountTo from 'react-count-to';
 import { MapProps } from '@flybywiresim/react-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { Card, CardBody, CardTitle } from '../utils/Card';
 
 const MapDisplay = dynamic<MapProps>(
     () => import('@flybywiresim/react-components').then((mod) => mod.Map),
@@ -24,12 +28,12 @@ function LiveFlightsStat(): JSX.Element {
         fetch(LIVE_FLIGHTS_ENDPOINT).then((res) => res.text().then((flights) => setLiveFlights(flights)));
     }, []);
 
-    const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-dark-contrast mb-3">{value}</h1>;
+    const fn = (value: number) => <h1 className="text-5xl font-semibold text-blue-dark-contrast">{value}</h1>;
 
     return (
-        <div className="py-12 lg:py-0 lg:px-20 2xl:px-32 text-center">
+        <div>
             <CountTo to={Number(liveFlights)} speed={3000}>{fn}</CountTo>
-            <span className="text-xl text-gray-700">Live Flights</span>
+            <p className="text-xl">Live Flights</p>
         </div>
     );
 }
@@ -45,12 +49,12 @@ function CommitCountStatistic(): JSX.Element {
         });
     }, []);
 
-    const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-dark-contrast mb-3">{value}</h1>;
+    const fn = (value: number) => <h1 className="text-5xl font-semibold text-blue-dark-contrast">{value}</h1>;
 
     return (
-        <div className="py-12 lg:py-0 lg:px-20 2xl:px-32 text-center">
+        <div>
             <CountTo to={Number(commitCount)} speed={3000}>{fn}</CountTo>
-            <span className="text-xl text-gray-700">Commits</span>
+            <p className="text-xl">Commits</p>
         </div>
     );
 }
@@ -66,65 +70,12 @@ function ContributorCountStatistic(): JSX.Element {
         });
     }, []);
 
-    const fn = (value: number) => <h1 className="text-6xl font-medium text-blue-dark-contrast mb-3">{value}</h1>;
+    const fn = (value: number) => <h1 className="text-5xl font-semibold text-blue-dark-contrast">{value}</h1>;
 
     return (
-        <div className="py-12 lg:py-0 lg:px-20 2xl:px-32 text-center">
+        <div>
             <CountTo to={Number(contributorCount)} speed={3000}>{fn}</CountTo>
-            <span className="text-xl text-gray-700">Contributors</span>
-        </div>
-    );
-}
-
-function DownloadCountStatistic(): JSX.Element {
-    // Disabled until API fix is released.
-
-    /* const [downloadCount, setDownloadCount] = useState(0);
-    const [postfix, setPostfix] = useState('');
-
-    useEffect(() => {
-        fetch(GITHUB_DOWNLOAD_COUNT_ENDPOINT).then((res) => {
-            res.json().then((reqJson) => {
-                const downloads: number[] = [];
-
-                reqJson.forEach((item: any) => {
-                    item.assets.forEach((download: any) => {
-                        downloads.push(download.download_count);
-                    });
-                });
-
-                fetch(CDN_DOWNLOAD_COUNT_ENDPOINT).then((res) => res.text().then((cdnDownloadCount) => {
-                    let totalDownloads = downloads.reduce((a, b) => a + b);
-
-                    if (cdnDownloadCount) {
-                        totalDownloads += Number(cdnDownloadCount);
-                    }
-
-                    if (totalDownloads >= 1000) {
-                        totalDownloads = Math.floor(totalDownloads / 1000);
-                        setPostfix('K');
-                    }
-
-                    if (totalDownloads) {
-                        setDownloadCount(totalDownloads);
-                    }
-                }));
-            });
-        });
-    }, []);
-     */
-
-    const fn = (value: number) => (
-        <h1 className="text-6xl font-medium text-blue-dark-contrast mb-3">
-            {value}
-            M+
-        </h1>
-    );
-
-    return (
-        <div className="py-12 lg:py-0 lg:px-20 2xl:px-32 text-center">
-            <CountTo to={1} speed={3000}>{fn}</CountTo>
-            <span className="text-xl text-gray-700">Downloads</span>
+            <p className="text-xl">Contributors</p>
         </div>
     );
 }
@@ -141,24 +92,51 @@ export function Community(): JSX.Element {
     }, []);
 
     return (
-        <section className="bg-gray-50 relative">
-            <div className="w-full mx-auto sm:px-6 lg:px-8 px-10 py-14">
-                <div className="w-full sm:w-1/2 text-center mx-auto mb-11 divide-y divide-gray-400">
-                    <h2 className="text-base font-semibold tracking-wider text-gray-600 uppercase">A GLANCE AT THE</h2>
-                    <p className="mt-3 pt-3 text-5xl font-extrabold text-gray-700">
-                        Community Insights
-                    </p>
-                </div>
-
-                <div className="mx-auto flex flex-col lg:flex-row lg:justify-center divide-y lg:divide-x lg:divide-y-0 divide-gray-500">
+        <section className="flex flex-col lg:flex-row justify-between items-center bg-gray-50 text-blue-dark-contrast">
+            <div className="mt-10 px-page lg:px-24 flex flex-col">
+                <span className="w-24 h-2 bg-teal-light-contrast rounded-full mb-3" />
+                <h1 className="text-5xl pr-2 font-bold">
+                    Community Insights
+                </h1>
+                <p className="text-xl text-gray-800 max-w-prose py-4">
+                    Discover the extensive community behind every FlyByWire Simulations aircraft - a vibrant and active online group that prioritises collaborative work and openness.
+                </p>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-8 my-6">
                     <LiveFlightsStat />
                     <CommitCountStatistic />
                     <ContributorCountStatistic />
-                    <DownloadCountStatistic />
+                    <div id="downloadStatistics">
+                        <h1 className="text-5xl font-semibold">
+                            1M
+                        </h1>
+                        <p className="text-xl">Downloads</p>
+                    </div>
+                </div>
+
+                <div className="my-12">
+                    <Card bgColour="gray-100" borderColour="discord" className="shadow-lg">
+                        <CardTitle>
+                            <FontAwesomeIcon className="mr-2 text-discord" icon={faDiscord} size="sm" />
+                            Discord
+
+                        </CardTitle>
+                        <CardBody>
+                            Our Discord server is where we plan the entirety of our projects and provide most of our support.
+                            Join us to chat with other members of the community, get started with contributing, or ask us a question!
+                        </CardBody>
+                        <a
+                            className="font-semibold text-discord hover:text-discord-dark py-8"
+                            href="https://discord.gg/flybywire"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Join the Community
+                            <FontAwesomeIcon className="mx-1" icon={faArrowRight} size="sm" />
+                        </a>
+                    </Card>
                 </div>
             </div>
-
-            <div className="relative h-160 text-black z-20">
+            <div className="relative h-144 lg:h-200 w-full lg:w-1/2 z-10">
                 <MapDisplay refreshInterval={mapRefreshInterval} disableMenu disableWeather={false} disableScroll forceTileset="carto-light" />
             </div>
         </section>
