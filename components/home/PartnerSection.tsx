@@ -40,12 +40,11 @@ export function PartnerSection(): JSX.Element {
                 <Partner name="YourControls" path="https://github.com/Sequal32/yourcontrols">
                     <PartnerImage className="w-1/2 mx-auto" src="img/partners/yourcontrols.png" />
                 </Partner>
-                <Partner aTagClassName="flex items-center" name="SaltySimulations" path="https://sim4flight.com/salty/">
-                    <PartnerImage className="w-1/2 mx-auto" src="img/partners/salty.svg" />
+                <Partner name="SaltySimulations" path="https://sim4flight.com/salty/">
+                    <PartnerImage className="w-3/5 mx-auto" src="img/partners/salty.svg" />
                 </Partner>
-                <Partner aTagClassName="flex items-center" name="sim4flight" path="https://sim4flight.com/">
-                    <PartnerImage className="w-1/12 ml-auto" src="img/partners/s4f.png" />
-                    <p className="font-bold lg:text-2xl sm:text-6xl pl-2 mr-auto">Sim4flight</p>
+                <Partner name="sim4flight" path="https://sim4flight.com/">
+                    <PartnerImage className="w-1/2 mx-auto" src="img/partners/s4f.png" />
                 </Partner>
             </div>
         </section>
