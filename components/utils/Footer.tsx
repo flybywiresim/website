@@ -38,12 +38,12 @@ export const Footer = (): JSX.Element => (
                         >
                             <p>Source Code</p>
                         </a>
-                        <div className="hover:underline">
+                        <div className="hover:underline cursor-pointer">
                             <Link href="/tos">
                                 <p>Terms of Service</p>
                             </Link>
                         </div>
-                        <div className="hover:underline">
+                        <div className="hover:underline cursor-pointer">
                             <Link href="/privacy">
                                 <p>Privacy Policy</p>
                             </Link>
