@@ -11,7 +11,7 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^13.1.1",
+    "@testing-library/user-event": "^13.1.8",
     "@types/jest": "^26.0.20",
     "@types/node": "^15.0.1",
     "@types/react": "^17.0.1",
