@@ -3,7 +3,7 @@ title: 'Welcome to the FlyByWire NOTAMs'
 date: '2021-05-02'
 authors:
   - 'Falcon'
-metaImage: 'http://localhost:3000/img/InstallerScreenshot.png'
+metaImage: '/img/InstallerScreenshot.png'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et egestas quis ipsum suspendisse ultrices gravida. Condimentum mattis pellentesque id nibh tortor id aliquet. Egestas erat imperdiet sed euismod nisi porta. Fringilla est ullamcorper eget nulla facilisi. Morbi tincidunt ornare massa eget egestas. Molestie nunc non blandit massa enim nec dui nunc. Turpis nunc eget lorem dolor sed viverra ipsum nunc. Platea dictumst quisque sagittis purus sit amet volutpat consequat. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus.
@@ -22,7 +22,7 @@ aaa
 
 Consequat mauris nunc congue nisi vitae suscipit tellus. Et malesuada fames ac turpis egestas integer eget aliquet. Congue eu consequat ac felis donec et. Vitae tortor condimentum lacinia quis vel. Turpis in eu mi bibendum neque egestas. Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. Et ultrices neque ornare aenean euismod elementum. Augue ut lectus arcu bibendum at. Tempus quam pellentesque nec nam aliquam sem et tortor consequat. Eu sem integer vitae justo eget magna fermentum. Diam in arcu cursus euismod quis viverra nibh. Eu nisl nunc mi ipsum faucibus vitae. Sed adipiscing diam donec adipiscing tristique risus.
 
-![bruh](http://localhost:3000/img/InstallerScreenshot.png)
+![bruh](/img/InstallerScreenshot.png)
 
 ### Bruh
 
