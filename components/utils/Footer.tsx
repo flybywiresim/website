@@ -53,7 +53,7 @@ export const Footer = (): JSX.Element => (
                     <div className="mt-2">
                         <a
                             className="flex justify-center"
-                            href="https://vercel.com/?utm_source=[flybywiresim]&utm_campaign=oss"
+                            href="https://vercel.com/?utm_source=flybywiresim&utm_campaign=oss"
                             target="_blank"
                             rel="noreferrer"
                         >
