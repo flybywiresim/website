@@ -1,6 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
+import Image from 'next/image';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faDiscord, faFacebook, faGithub, faTwitch, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
@@ -57,7 +58,9 @@ export const Footer = (): JSX.Element => (
                             rel="noreferrer"
                         >
                             Powered by
-                            <img className="mx-2 h-4 self-center" src="/svg/vercel.svg" alt="Vercel" />
+                            <div className="mx-2">
+                                <Image src="/svg/vercel.svg" alt="Vercel" width={60} height={20} />
+                            </div>
                         </a>
                     </div>
 

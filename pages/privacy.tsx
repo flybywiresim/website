@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserShield, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
@@ -11,11 +12,14 @@ const Privacy: React.FC = () => {
     return (
         <>
             <header>
-                <img
-                    className="relative z-0 object-cover w-screen h-screen opacity-20 shadow-2xl"
-                    src="/img/a32nxwing.png"
-                    alt=""
-                />
+                <div className="relative z-0 object-cover w-screen h-screen opacity-20 shadow-2xl">
+                    <Image
+                        src="/img/a32nxwing.png"
+                        alt="Privacy policy"
+                        layout="fill"
+                        objectFit="cover"
+                    />
+                </div>
                 <div className="absolute top-0 bottom-0 z-20 w-full flex justify-center">
                     <div className="relative my-auto xl:w-3/4 md:w-4/5 justify-center xl:justify-start text-center sm:flex sm:item-center sm:divide-x sm:space-x-10">
                         <FontAwesomeIcon className="mb-3 sm:mb-0 self-center" icon={faUserShield} size="7x" />

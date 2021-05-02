@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Hamburger, NavLinks } from './NavLinks';
 
 export function NavBar(): JSX.Element {
@@ -20,7 +21,7 @@ export function NavBar(): JSX.Element {
             <div className="max-w-6xl mx-auto px-page">
                 <div className="relative flex items-center justify-between h-16">
                     <Link href="/">
-                        <img className="subpixel-antialiased h-11 cursor-pointer" src="/svg/white/FBW-Logo-WHITE.svg" alt="" />
+                        <Image className="cursor-pointer" src="/svg/white/FBW-Logo-WHITE.svg" width={180} height={40} />
                     </Link>
                     <div className="absolute inset-y-0 right-3 flex items-center md:hidden">
                         <Hamburger handleClick={() => setOpen((prevState) => !prevState)} />
