@@ -40,7 +40,7 @@ export const A320Header: React.FC = () => {
                 </div>
 
                 <video
-                    className="fixed h-screen object-cover opacity-10 -z-10"
+                    className="fixed w-screen h-screen object-cover opacity-10 -z-10"
                     src="video/A32NX.mp4"
                     playsInline
                     autoPlay
