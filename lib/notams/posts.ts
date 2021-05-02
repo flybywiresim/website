@@ -12,6 +12,7 @@ export type PostListing = {
     title: string,
     authors: string[],
     metaImage: string,
+    metaAlt: string,
 }
 
 export type PostContent = PostListing & { contentHtml: string }

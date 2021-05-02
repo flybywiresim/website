@@ -4,6 +4,7 @@ date: '2021-05-02'
 authors:
   - 'Falcon'
 metaImage: '/img/InstallerScreenshot.png'
+metaAlt: 'Installer Preview Image'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et egestas quis ipsum suspendisse ultrices gravida. Condimentum mattis pellentesque id nibh tortor id aliquet. Egestas erat imperdiet sed euismod nisi porta. Fringilla est ullamcorper eget nulla facilisi. Morbi tincidunt ornare massa eget egestas. Molestie nunc non blandit massa enim nec dui nunc. Turpis nunc eget lorem dolor sed viverra ipsum nunc. Platea dictumst quisque sagittis purus sit amet volutpat consequat. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus.
