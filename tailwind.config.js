@@ -39,6 +39,7 @@ module.exports = {
                     dark: 'hsl(227,32%,49%)',
                 },
             },
+            zIndex: { '-10': '-10' },
         },
     },
     // eslint-disable-next-line global-require
