@@ -11,6 +11,7 @@ export type PostListing = {
     date: string,
     title: string,
     authors: string[],
+    metaImage: string,
 }
 
 export type PostContent = PostListing & { contentHtml: string }

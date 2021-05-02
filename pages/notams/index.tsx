@@ -16,7 +16,7 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
             </p>
 
             <ul className="mt-20 text-lg cursor-pointer">
-                {listings.map(({ id, date, title, authors, readingStats }) => (
+                {listings.map(({ id, date, title, authors, readingStats, metaImage }) => (
                     <Link href={`/notams/${id}`}>
                         <li key={id}>
                             <div className="
@@ -53,11 +53,15 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
                                     </div>
                                 </div>
 
-                                <img
-                                    className="mt-5 mb-4 rounded-lg"
-                                    src="https://via.placeholder.com/500x250"
-                                    alt="bruh"
-                                />
+                                {metaImage
+                                    ? (
+                                        <img
+                                            className="mt-5 mb-4 rounded-lg"
+                                            src={metaImage}
+                                            alt="bruh"
+                                        />
+                                    )
+                                    : <></>}
                             </div>
                         </li>
                     </Link>
