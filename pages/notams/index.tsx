@@ -55,11 +55,13 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
 
                                 {metaImage
                                     ? (
-                                        <img
-                                            className="mt-5 mb-4 rounded-lg"
-                                            src={metaImage}
-                                            alt="bruh"
-                                        />
+                                        <div className="bg-navy-lighter p-5 h-144 flex rounded-lg">
+                                            <img
+                                                className="rounded-lg h-full mx-auto"
+                                                src={metaImage}
+                                                alt="bruh"
+                                            />
+                                        </div>
                                     )
                                     : <></>}
                             </div>
