@@ -7,15 +7,8 @@ export type BlogProps = { listings: PostListing[] }
 
 const Blog: React.FC<BlogProps> = ({ listings }) => (
     <>
-        <div className="min-h-screen max-w-6xl mx-auto px-page pt-28 lg:pt-40">
-            <h1 className="text-teal text-5xl">
-                NOTAMs
-            </h1>
-            <p className="text-xl mt-2">
-                Updates and blog posts from the FlyByWire Team
-            </p>
-
-            <ul className="mt-20 text-lg cursor-pointer">
+        <div className="min-h-screen max-w-4xl lg:max-w-6xl mx-auto px-page pt-28 lg:pt-40">
+            <ul className="mt-20 mb-20 text-lg cursor-pointer">
                 {listings.map(({ id, date, title, authors, readingStats }) => (
                     <Link href={`/notams/${id}`}>
                         <li key={id}>
@@ -23,41 +16,38 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
                                 w-full
                                 flex flex-col
                                 box-content
-                                hover:bg-navy-lighter
-                                transition-colors duration-200
-                                px-7 py-4 -ml-7 mb-5
-                                rounded-lg"
+                                bg-white
+                                -ml-7 mb-5
+                                rounded-lg
+                                mt-10
+                                shadow-xl
+                                overflow-hidden"
                             >
-
-                                <h1 className="
-                                    text-5xl text-teal-300 font-semibold lg:text-justify leading-tight
-                                    hover:text-teal-700
-                                    transition-colors duration-100
-                                    mb-2.5"
-                                >
-                                    {title}
-                                </h1>
-                                <div
-                                    className="w-full flex flex-row flex-wrap justify-between gap-x-12 text-gray-400 font-mono mb-3.5"
-                                >
-                                    <span className="text-xl text-gray-300 font-medium">
-                                        {readingStats.text}
-                                    </span>
-                                    <div className="flex flex-row gap-x-8">
-                                        <p className="text-xl font-medium">
-                                            {date}
-                                        </p>
-                                        <p className="text-xl text-gray-300 font-medium">
-                                            {authors.join(', ')}
-                                        </p>
-                                    </div>
-                                </div>
-
+                                {/* TODO add new font weights and create tags for markdown files such as ANNOUNCEMENTS, UPDATES, URGENT etc. */}
                                 <img
-                                    className="mt-5 mb-4 rounded-lg"
-                                    src="https://via.placeholder.com/500x250"
+                                    className="mb-4 max-h-80 object-cover"
+                                    src="/img/a32nxwing.png"
                                     alt="bruh"
                                 />
+                                <div className="px-7 py-4">
+                                    <div className="flex flex-col-2 gap-x-4">
+                                        <p className="text-teal-light font-black">ANNOUNCEMENTS</p>
+                                        <span className="text-black font-medium">
+                                            {readingStats.text}
+                                        </span>
+                                        <p className="text-black font-medium ml-auto">
+                                            {`${date.substring(5, 7)}/${date.substring(8)}/${date.substring(0, 4)}`}
+                                        </p>
+                                    </div>
+                                    <h1 className="text-5xl text-black font-bold leading-tight">
+                                        {title}
+                                    </h1>
+                                    <p className="text-xl text-black font-medium mb-3.5">
+                                        by
+                                        {' '}
+                                        {authors.join(', ')}
+                                    </p>
+                                </div>
                             </div>
                         </li>
                     </Link>
