@@ -63,7 +63,7 @@ const Post: React.FC<PostProps> = ({ content: { authors, contentHtml, date, read
                 </div>
                 <div className="w-60 h-2 mx-auto mt-10 mb-10 bg-teal-light-contrast rounded-full mb-3" />
                 <Link href="/notams">
-                    <div className="flex flex-row items-center cursor-pointer text-gray-400 hover:text-teal-700 transition-colors duration-100">
+                    <div className="flex flex-row items-center cursor-pointer justify-center text-gray-400 hover:text-teal-700 transition-colors duration-100">
                         <BackIcon className="-ml-2.5" />
                         <span className="text-2xl ml-1.5">
                             Back
