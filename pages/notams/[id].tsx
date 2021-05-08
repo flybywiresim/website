@@ -24,10 +24,10 @@ const Post: React.FC<PostProps> = ({ content: { authors, contentHtml, date, read
                             {readingStats.text}
                         </span>
                     </div>
-                    <h1 className="text-6xl font-semibold lg:text-justify leading-tight text-white mt-0.5">
+                    <h1 className="text-6xl font-semibold leading-tight text-white mt-0.5">
                         {title}
                     </h1>
-                    <div className="mb-20">
+                    <div className="text-gray-300">
                         <p>
                             {'Written by '}
                             {authors.join(', ')}
@@ -40,13 +40,11 @@ const Post: React.FC<PostProps> = ({ content: { authors, contentHtml, date, read
                 </div>
             </div>
             <div className="px-page mx-auto mt-20 max-w-6xl">
-                <div className="mt-7 px-6 py-4 text-xl bg-cool rounded-sm">
-                    <div
-                        className="flex flex-col space-y-4 text-black  prose-2xl prose text-justify"
-                        /* eslint-disable-next-line react/no-danger */
-                        dangerouslySetInnerHTML={{ __html: contentHtml }}
-                    />
-                </div>
+                <div
+                    className="flex py-12 rounded-sm flex-col mx-auto space-y-4 text-xl text-black prose-2xl prose text-justify"
+                    /* eslint-disable-next-line react/no-danger */
+                    dangerouslySetInnerHTML={{ __html: contentHtml }}
+                />
             </div>
         </div>
     </>
