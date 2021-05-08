@@ -17,7 +17,7 @@ const Post: React.FC<PostProps> = ({ content: { authors, contentHtml, date, read
                     src="https://i.imgur.com/TFWckR1.png"
                     alt=""
                 />
-                <div className="absolute bottom-96 max-w-6xl mx-20">
+                <div className="absolute max-w-6xl lg:mx-20 px-page inset-x-2 inset-y-1/3 z-30">
                     <div className="flex flex-row items-center bottom-0 gap-x-4 text-xl">
                         <p className="text-teal-light font-black">ANNOUNCEMENTS</p>
                         <span className="text-gray-300 font-medium">
