@@ -27,41 +27,59 @@ const BackIcon: React.FC<{ className: string }> = ({ className }) => (
 export type PostProps = { content: PostContent }
 
 const Post: React.FC<PostProps> = ({ content: { authors, contentHtml, date, readingStats, title } }) => (
-    <div className="min-h-screen max-w-6xl mx-auto px-page pt-24 lg:pt-40 pb-6">
-        <Link href="/notams">
-            <div className="flex flex-row items-center text-gray-400 hover:text-teal-700 transition-colors duration-100">
-                <BackIcon className="-ml-2.5" />
-                <span className="text-2xl cursor-pointer ml-1.5">
-                    Back
-                </span>
+    <>
+        {/* This covers the background so it looks like the navbar is solid */}
+        <div className="h-20 bg-blue-dark-contrast" />
+        <div className="min-h-screen w-screen mx-auto bg-cool pb-6">
+            <div className="h-144 bg-blue-dark overflow-hidden">
+                <img
+                    draggable="false"
+                    className="filter opacity-30 blur-sm brightness-90 w-screen -mt-4 h-160 object-cover"
+                    src="https://i.imgur.com/TFWckR1.png"
+                    alt=""
+                />
+                <div className="absolute bottom-96 max-w-6xl mx-20">
+                    <div className="flex flex-row items-center bottom-0 gap-x-4 text-xl">
+                        <p className="text-teal-light font-black">ANNOUNCEMENTS</p>
+                        <span className="text-gray-300 font-medium">
+                            {readingStats.text}
+                        </span>
+                    </div>
+                    <h1 className="text-6xl font-semibold lg:text-justify leading-tight text-white mt-0.5 mb-20">
+                        {title}
+                    </h1>
+                </div>
             </div>
-        </Link>
-        <h1 className="text-5xl font-semibold lg:text-justify leading-tight text-teal-300 mt-0.5">
-            {title}
-        </h1>
-        <div
-            className="w-full flex flex-row flex-wrap justify-between gap-x-24 text-gray-400 font-mono mt-2 mb-3.5"
-        >
-            <span className="text-xl text-gray-300 font-medium">
-                {readingStats.text}
-            </span>
-            <div className="flex flex-row gap-x-8">
-                <p className="text-xl font-medium">
-                    {date}
-                </p>
+            <div className="px-page mx-auto mt-10 max-w-6xl">
+                <div className="text-center text-xl text-black">
+                    <p className="font-medium">
+                        {`${date.substring(5, 7)}/${date.substring(8)}/${date.substring(0, 4)}`}
+                    </p>
+                    <p className="font-medium">
+                        by
+                        {' '}
+                        {authors.join(', ')}
+                    </p>
+                </div>
+                <div className="w-60 h-2 mx-auto mt-10 mb-10 bg-teal-light-contrast rounded-full mb-3" />
+                <Link href="/notams">
+                    <div className="flex flex-row items-center cursor-pointer text-gray-400 hover:text-teal-700 transition-colors duration-100">
+                        <BackIcon className="-ml-2.5" />
+                        <span className="text-2xl ml-1.5">
+                            Back
+                        </span>
+                    </div>
+                </Link>
+                <div className="mt-7 px-6 py-4 text-xl bg-cool rounded-sm">
+                    <div
+                        className="flex flex-col space-y-4 text-black  prose-2xl prose text-justify"
+                        /* eslint-disable-next-line react/no-danger */
+                        dangerouslySetInnerHTML={{ __html: contentHtml }}
+                    />
+                </div>
             </div>
         </div>
-        <p className="ml-0 text-xl text-gray-400 font-mono">
-            {authors.join(', ')}
-        </p>
-        <div className="mt-7 px-6 py-4 text-xl bg-navy-light rounded-sm">
-            <div
-                className="flex flex-col space-y-4 prose-2xl prose text-justify"
-                /* eslint-disable-next-line react/no-danger */
-                dangerouslySetInnerHTML={{ __html: contentHtml }}
-            />
-        </div>
-    </div>
+    </>
 );
 
 export const getStaticPaths: GetStaticPaths = async () => {
