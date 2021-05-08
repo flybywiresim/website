@@ -25,7 +25,7 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
                                 flex flex-col
                                 box-content
                                 bg-white
-                                -ml-7 mb-5
+                                mb-5
                                 rounded-lg
                                 mt-10
                                 shadow-xl
@@ -41,7 +41,7 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
                                     )
                                     : <></>}
                                 <div className="px-7 py-4">
-                                    <div className="flex flex-col-2 gap-x-4">
+                                    <div className="xs:flex flex-row gap-x-4">
                                         <p className="text-teal-light font-black">ANNOUNCEMENTS</p>
                                         <span className="text-black font-medium">
                                             {readingStats.text}
