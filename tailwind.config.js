@@ -40,6 +40,7 @@ module.exports = {
                     DEFAULT: 'hsl(227,58%,65%)',
                     dark: 'hsl(227,32%,49%)',
                 },
+                cool: { DEFAULT: 'hsl(219, 100%, 95%)' },
             },
             zIndex: { '-10': '-10' },
             typography: {
@@ -52,15 +53,15 @@ module.exports = {
                             fontWeight: '500',
                         },
                         'h1': {
-                            color: 'hsl(0, 0%, 100%)',
+                            color: 'hsl(0, 0%, 0%)',
                             fontSize: '2.5rem',
                         },
                         'h2': {
-                            color: 'hsl(0, 0%, 100%)',
+                            color: 'hsl(0, 0%, 0%)',
                             fontSize: '1.7rem',
                         },
                         'h3': {
-                            color: 'hsl(0, 0%, 100%)',
+                            color: 'hsl(0, 0%, 0%)',
                             fontSize: '1.5rem',
                         },
                         'p': {
