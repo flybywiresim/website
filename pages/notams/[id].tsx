@@ -17,12 +17,11 @@ const Post: React.FC<PostProps> = ({ content: { authors, contentHtml, date, read
                     alt=""
                 />
                 <div className="flex flex-col relative h-160 justify-end pb-20 pt-20 max-w-6xl lg:mx-20 px-page z-30">
-                    <div className="flex flex-row items-center bottom-0 gap-x-4 text-xl">
+                    <div className="flex flex-row items-center bottom-0 text-xl">
                         <p className="text-teal-light font-black">ANNOUNCEMENTS</p>
-                        <span className="text-gray-300 font-medium">
+                        <span className="text-gray-300 pl-4 font-medium">
                             {readingStats.text}
                         </span>
-
                     </div>
                     <h1 className="text-6xl font-semibold leading-tight text-white mt-0.5">
                         {title}
