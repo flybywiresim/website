@@ -17,9 +17,8 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
             metaImage,
             metaAlt,
         }) => (
-            <Link href={`/notams/${id}`}>
-                <ul key={id}>
-                    <div className="
+            <Link key={id} href={`/notams/${id}`}>
+                <div className="
                                 w-full
                                 my-12
                                 bg-white
@@ -31,55 +30,54 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
                                 ring-teal
                                 overflow-hidden
                                 cursor-pointer"
-                    >
-                        {metaImage
-                            ? (
-                                <img
-                                    className="mb-2 max-h-80 object-cover"
-                                    src={metaImage}
-                                    alt={metaAlt}
-                                />
-                            )
-                            : <></>}
-                        <div className="px-7 py-4">
-                            <div className="text-lg flex">
-                                {category === 'ANNOUNCEMENTS'
-                                    ? (
-                                        <p
-                                            className="text-teal-light font-black"
-                                        >
-                                            {category}
-                                        </p>
-                                    )
-                                    : (
-                                        <p
-                                            className="text-orangutanOrange font-black"
-                                        >
-                                            {category}
-                                        </p>
-                                    )}
-                                <span className="text-gray-700 font-medium pl-2">
-                                    {readingStats.text}
-                                </span>
-                            </div>
-                            <h1 className="text-5xl text-black font-bold leading-tight">
-                                {title}
-                            </h1>
-                            <div className="flex flex-col text-gray-700">
-                                <p className="font-medium">
-                                    Written by
-                                    {' '}
-                                    {authors.join(', ')}
-                                </p>
-                                <p className="font-medium">
-                                    Posted:
-                                    {' '}
-                                    {`${date.substring(0, 4)}/${date.substring(5, 7)}/${date.substring(8)}`}
-                                </p>
-                            </div>
+                >
+                    {metaImage
+                        ? (
+                            <img
+                                className="mb-2 max-h-80 object-cover"
+                                src={metaImage}
+                                alt={metaAlt}
+                            />
+                        )
+                        : <></>}
+                    <div className="px-7 py-4">
+                        <div className="text-lg flex">
+                            {category === 'ANNOUNCEMENTS'
+                                ? (
+                                    <p
+                                        className="text-teal-light font-black"
+                                    >
+                                        {category}
+                                    </p>
+                                )
+                                : (
+                                    <p
+                                        className="text-orangutanOrange font-black"
+                                    >
+                                        {category}
+                                    </p>
+                                )}
+                            <span className="text-gray-700 font-medium pl-2">
+                                {readingStats.text}
+                            </span>
+                        </div>
+                        <h1 className="text-5xl text-black font-bold leading-tight">
+                            {title}
+                        </h1>
+                        <div className="flex flex-col text-gray-700">
+                            <p className="font-medium">
+                                Written by
+                                {' '}
+                                {authors.join(', ')}
+                            </p>
+                            <p className="font-medium">
+                                Posted:
+                                {' '}
+                                {`${date.substring(0, 4)}/${date.substring(5, 7)}/${date.substring(8)}`}
+                            </p>
                         </div>
                     </div>
-                </ul>
+                </div>
             </Link>
         ))}
     </div>
