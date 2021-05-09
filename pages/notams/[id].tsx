@@ -34,7 +34,7 @@ const Post: React.FC<PostProps> = ({ content: { authors, category, contentHtml, 
                         {readingStats.text}
                     </span>
                 </div>
-                <h1 className="text-6xl font-semibold">
+                <h1 className="text-6xl pt-1 font-semibold">
                     {title}
                 </h1>
                 <div className="text-gray-300 pt-1">
