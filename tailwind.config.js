@@ -69,10 +69,7 @@ module.exports = {
                             paddingTop: '.75em',
                             marginBottom: '0',
                         },
-                        'p:first-child, h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p': {
-                            paddingTop: '0',
-                            // eslint-disable-next-line object-curly-newline
-                        },
+                        'p:first-child, h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p': { paddingTop: '0' },
                     },
                 },
             },
