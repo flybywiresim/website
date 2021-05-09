@@ -14,7 +14,7 @@ const Post: React.FC<PostProps> = ({ content: { authors, category, contentHtml, 
                     src={metaImage}
                     alt={metaAlt}
                 />
-                <div className="flex flex-col relative h-160 max-w-6xl mx-auto justify-end pb-8 lg:pb-14 px-page">
+                <div className="flex flex-col relative h-160 max-w-6xl 2xl:inset-x-80 justify-end pb-8 lg:pb-14 px-page">
                     <div className="flex flex-row items-center text-xl">
                         {category === 'ANNOUNCEMENTS'
                             ? (
