@@ -7,7 +7,7 @@ export type BlogProps = { listings: PostListing[] }
 
 const Blog: React.FC<BlogProps> = ({ listings }) => (
     <>
-        <div className="min-h-screen max-w-4xl lg:max-w-6xl mx-auto mb-20 px-page pt-28 lg:pt-20">
+        <div className="min-h-screen max-w-4xl lg:max-w-6xl mx-auto mb-8 px-page pt-28 lg:pt-20">
             {listings.map(({
                 id,
                 date,
@@ -22,12 +22,14 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
                     <ul key={id}>
                         <div className="
                                 w-full
-                                box-content
                                 my-12
+                                bg-white
                                 flex flex-col
-                                bg-gray-100
                                 rounded-lg
-                                shadow-xl
+                                transition
+                                hover:ring-4
+                                hover:shadow-lg
+                                ring-teal
                                 overflow-hidden
                                 cursor-pointer"
                         >
