@@ -6,17 +6,16 @@ export type PostProps = { content: PostContent }
 
 const Post: React.FC<PostProps> = ({ content: { authors, category, contentHtml, date, readingStats, title, metaImage, metaAlt } }) => (
     <>
-        {/* This covers the background so it looks like the navbar is solid */}
         <div className="min-h-screen w-screen mx-auto bg-cool pb-6">
             <div className="h-160 bg-blue-dark overflow-hidden shadow-md">
                 <img
                     draggable="false"
-                    className="absolute filter opacity-30 blur-sm brightness-90 w-screen h-160 object-cover"
+                    className="absolute filter blur-sm opacity-20 w-screen h-160 object-cover"
                     src={metaImage}
                     alt={metaAlt}
                 />
-                <div className="flex flex-col relative h-160 justify-end pb-20 pt-20 max-w-6xl lg:mx-20 px-page z-30">
-                    <div className="flex flex-row items-center bottom-0 text-xl">
+                <div className="flex flex-col relative h-160 max-w-6xl mx-auto justify-end pb-8 lg:pb-14 px-page">
+                    <div className="flex flex-row items-center text-xl">
                         {category === 'ANNOUNCEMENTS'
                             ? (
                                 <p
@@ -36,10 +35,10 @@ const Post: React.FC<PostProps> = ({ content: { authors, category, contentHtml, 
                             {readingStats.text}
                         </span>
                     </div>
-                    <h1 className="text-6xl font-semibold leading-tight text-white mt-0.5">
+                    <h1 className="text-6xl font-semibold">
                         {title}
                     </h1>
-                    <div className="text-gray-300">
+                    <div className="text-gray-300 pt-1">
                         <p>
                             {'Written by '}
                             {authors.join(', ')}
@@ -51,13 +50,12 @@ const Post: React.FC<PostProps> = ({ content: { authors, category, contentHtml, 
                     </div>
                 </div>
             </div>
-            <div className="px-page mx-auto mt-20 max-w-6xl">
-                <div
-                    className="flex rounded-sm flex-col mx-auto space-y-4 text-xl text-black prose-2xl prose text-justify"
-                    /* eslint-disable-next-line react/no-danger */
-                    dangerouslySetInnerHTML={{ __html: contentHtml }}
-                />
-            </div>
+
+            <article
+                className="flex flex-col mx-auto px-page mt-12 max-w-6xl space-y-4 text-xl text-black prose-2xl prose text-justify"
+                /* eslint-disable-next-line react/no-danger */
+                dangerouslySetInnerHTML={{ __html: contentHtml }}
+            />
         </div>
     </>
 );
