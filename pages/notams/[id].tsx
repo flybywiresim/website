@@ -53,7 +53,7 @@ const Post: React.FC<PostProps> = ({ content: { authors, category, contentHtml, 
             </div>
             <div className="px-page mx-auto mt-20 max-w-6xl">
                 <div
-                    className="flex rounded-sm flex-col mx-auto px-10 lg:px-0 space-y-4 text-xl text-black prose-2xl prose text-justify"
+                    className="flex rounded-sm flex-col mx-auto space-y-4 text-xl text-black prose-2xl prose text-justify"
                     /* eslint-disable-next-line react/no-danger */
                     dangerouslySetInnerHTML={{ __html: contentHtml }}
                 />
