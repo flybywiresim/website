@@ -3,6 +3,7 @@ title: 'Welcome to the FlyByWire NOTAMs'
 date: '2021-05-02'
 authors:
   - 'Falcon'
+category: 'ANNOUNCEMENTS'
 metaImage: '/img/a32nxwing.png'
 metaAlt: 'Bruhegg'
 ---
