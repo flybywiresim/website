@@ -5,7 +5,7 @@ import { getAllPostIds, getPostContent, PostContent } from '../../lib/notams/pos
 export type PostProps = { content: PostContent }
 
 const Post: React.FC<PostProps> = ({ content: { authors, category, contentHtml, date, readingStats, title, metaImage, metaAlt } }) => (
-    <div className="min-h-screen w-full mx-auto bg-cool pb-6">
+    <div className="min-h-screen w-full mx-auto bg-coolWhite pb-6">
         <div className="h-160 bg-blue-dark overflow-hidden shadow-md">
             <img
                 draggable="false"
