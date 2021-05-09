@@ -41,6 +41,7 @@ module.exports = {
                     dark: 'hsl(227,32%,49%)',
                 },
                 cool: { DEFAULT: 'hsl(219, 100%, 95%)' },
+                orangutanOrange: { DEFAULT: 'hsl(31, 96%, 53%)' },
             },
             zIndex: { '-10': '-10' },
             typography: {
