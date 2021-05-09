@@ -11,6 +11,7 @@ export type PostListing = {
     date: string,
     title: string,
     authors: string[],
+    category: string,
     metaImage: string,
     metaAlt: string,
 }
