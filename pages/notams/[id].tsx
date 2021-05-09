@@ -1,24 +1,37 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import Link from 'next/link';
 import React from 'react';
 import { getAllPostIds, getPostContent, PostContent } from '../../lib/notams/posts';
 
 export type PostProps = { content: PostContent }
 
-const Post: React.FC<PostProps> = ({ content: { authors, contentHtml, date, readingStats, title } }) => (
+const Post: React.FC<PostProps> = ({ content: { authors, category, contentHtml, date, readingStats, title, metaImage, metaAlt } }) => (
     <>
         {/* This covers the background so it looks like the navbar is solid */}
         <div className="min-h-screen w-screen mx-auto bg-cool pb-6">
-            <div className="h-160 bg-blue-dark overflow-hidden">
+            <div className="h-160 bg-blue-dark overflow-hidden shadow-md">
                 <img
                     draggable="false"
-                    className="absolute filter opacity-30 blur-sm brightness-90 w-screen -mt-4 h-160 object-cover"
-                    src="https://i.imgur.com/TFWckR1.png"
-                    alt=""
+                    className="absolute filter opacity-30 blur-sm brightness-90 w-screen h-160 object-cover"
+                    src={metaImage}
+                    alt={metaAlt}
                 />
                 <div className="flex flex-col relative h-160 justify-end pb-20 pt-20 max-w-6xl lg:mx-20 px-page z-30">
                     <div className="flex flex-row items-center bottom-0 text-xl">
-                        <p className="text-teal-light font-black">ANNOUNCEMENTS</p>
+                        {category === 'ANNOUNCEMENTS'
+                            ? (
+                                <p
+                                    className="text-teal-light font-black"
+                                >
+                                    {category}
+                                </p>
+                            )
+                            : (
+                                <p
+                                    className="text-orangutanOrange font-black"
+                                >
+                                    {category}
+                                </p>
+                            )}
                         <span className="text-gray-300 pl-4 font-medium">
                             {readingStats.text}
                         </span>
