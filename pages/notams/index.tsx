@@ -15,6 +15,7 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
                     title,
                     authors,
                     readingStats,
+                    category,
                     metaImage,
                     metaAlt,
                 }) => (
@@ -45,7 +46,21 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
                                     : <></>}
                                 <div className="px-7 py-4">
                                     <div className="xs:flex flex-row gap-x-4">
-                                        <p className="text-teal-light font-black">ANNOUNCEMENTS</p>
+                                        {category === 'ANNOUNCEMENTS'
+                                            ? (
+                                                <p
+                                                    className="text-teal-light font-black"
+                                                >
+                                                    {category}
+                                                </p>
+                                            )
+                                            : (
+                                                <p
+                                                    className="text-orangutanOrange font-black"
+                                                >
+                                                    {category}
+                                                </p>
+                                            )}
                                         <span className="text-black font-medium">
                                             {readingStats.text}
                                         </span>
