@@ -27,7 +27,7 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
                                 flex flex-col
                                 rounded-lg
                                 transition
-                                ring
+                                ring-2
                                 ring-teal-300
                                 hover:shadow-lg
                                 hover:ring-teal
@@ -82,7 +82,7 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
                                 </div>
                                 {index === 0
                                     ? (
-                                        <p className="text-2xl self-center font-semibold ml-auto">LATEST</p>
+                                        <span className="px-4 py-1 bg-gray-700 ring-2 ring-gray-500 rounded-lg text-lg self-center font-semibold ml-auto">LATEST</span>
                                     ) : <></>}
                             </div>
                         </div>
