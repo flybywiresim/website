@@ -48,25 +48,24 @@ module.exports = {
                 '2xl': {
                     css: {
                         'maxWidth': '73ch',
-                        'color': 'hsl(0, 0%, 94%)',
-                        'h1, h2, h3, h4, h5, h6': {
-                            paddingTop: '.4em',
-                            fontWeight: '500',
-                        },
+                        'h1, h2, h3, h4, h5, h6': { marginBottom: '1.2rem' },
                         'h1': {
-                            color: 'hsl(0, 0%, 0%)',
-                            fontSize: '2.5rem',
+                            color: 'hsl(0,0%,9%)',
+                            fontWeight: '700',
+                            fontSize: '4rem',
                         },
                         'h2': {
-                            color: 'hsl(0, 0%, 0%)',
-                            fontSize: '1.7rem',
+                            color: 'hsl(0,0%,17%)',
+                            paddingTop: '1.2rem',
+                            fontSize: '2.5rem',
                         },
                         'h3': {
-                            color: 'hsl(0, 0%, 0%)',
-                            fontSize: '1.5rem',
+                            color: 'hsl(0,0%,27%)',
+                            fontSize: '2rem',
                         },
                         'p': {
-                            paddingTop: '.75em',
+                            paddingTop: '.3rem',
+                            paddingBottom: '.3rem',
                             marginBottom: '0',
                         },
                         'p:first-child, h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p': { paddingTop: '0' },
