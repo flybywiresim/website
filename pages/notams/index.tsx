@@ -37,13 +37,13 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
                         {metaImage
                             ? (
                                 <img
-                                    className="mb-2 max-h-80 object-cover"
+                                    className="max-h-80 object-cover"
                                     src={metaImage}
                                     alt={metaAlt}
                                 />
                             )
                             : <></>}
-                        <div className="px-7 py-4">
+                        <div className="px-page py-7">
                             <div className="text-lg flex">
                                 {category === 'ANNOUNCEMENTS'
                                     ? (
