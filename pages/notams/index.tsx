@@ -27,8 +27,9 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
                                 flex flex-col
                                 rounded-lg
                                 transition
-                                ring-2
-                                ring-teal-300
+                                ring-1
+                                hover:ring-2
+                                ring-gray-700
                                 hover:shadow-lg
                                 hover:ring-teal
                                 overflow-hidden
