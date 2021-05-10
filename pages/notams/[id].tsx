@@ -30,19 +30,19 @@ const Post: React.FC<PostProps> = ({ content: { authors, category, contentHtml, 
                                 {category}
                             </p>
                         )}
-                    <span className="text-gray-300 pl-4 font-medium">
+                    <span className="text-gray-300 pl-4">
                         {readingStats.text}
                     </span>
                 </div>
                 <h1 className="text-6xl pt-1 font-semibold">
                     {title}
                 </h1>
-                <div className="text-gray-300 pt-1">
-                    <p>
+                <div className="pt-1">
+                    <p className="text-gray-200 font-semibold">
                         {'Written by '}
                         {authors.join(', ')}
                     </p>
-                    <p>
+                    <p className="text-gray-300">
                         {'Posted: '}
                         {`${date.substring(0, 4)}/${date.substring(5, 7)}/${date.substring(8)}`}
                     </p>
