@@ -36,6 +36,7 @@ module.exports = {
             },
             colors: {
                 blue: { 'dark-contrast': 'hsl(216,32%,17%)' },
+                midnight: { DEFAULT: 'hsl(218, 42%, 10%)' },
                 discord: {
                     DEFAULT: 'hsl(227,58%,65%)',
                     dark: 'hsl(227,32%,49%)',
