@@ -56,19 +56,15 @@ module.exports = {
                         },
                         'h2': {
                             color: 'hsl(0,0%,17%)',
-                            paddingTop: '1.2rem',
                             fontSize: '2.5rem',
                         },
                         'h3': {
                             color: 'hsl(0,0%,27%)',
+                            paddingTop: '1.5rem',
                             fontSize: '2rem',
                         },
-                        'p': {
-                            paddingTop: '.3rem',
-                            paddingBottom: '.3rem',
-                            marginBottom: '0',
-                        },
-                        'p:first-child, h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p': { paddingTop: '0' },
+                        'p': { paddingTop: '.8rem' },
+                        'a': { color: 'hsl(192,80%,40%)' },
                     },
                 },
             },
