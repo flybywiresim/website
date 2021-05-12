@@ -13,7 +13,7 @@ COPY tsconfig*.json ./
 COPY tailwind.config.js ./
 COPY postcss.config.js ./
 COPY ./lib ./lib
-COPY ./posts ./
+COPY ./posts ./posts
 COPY ./components ./components
 COPY ./pages ./pages
 COPY ./public ./public
