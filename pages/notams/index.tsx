@@ -61,6 +61,10 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
                                             {category}
                                         </p>
                                     )}
+                                {index === 0
+                                    ? (
+                                        <span className="ml-2 mr-1 px-2 bg-gray-700 ring-2 ring-gray-500 rounded-md text-sm self-center font-semibold">LATEST</span>
+                                    ) : <></>}
                                 <span className="text-gray-300 pl-2">
                                     {readingStats.text}
                                 </span>
@@ -81,10 +85,6 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
                                         {`${date.substring(0, 4)}/${date.substring(5, 7)}/${date.substring(8)}`}
                                     </p>
                                 </div>
-                                {index === 0
-                                    ? (
-                                        <span className="px-4 py-1 bg-gray-700 ring-2 ring-gray-500 rounded-lg text-lg self-center font-semibold ml-auto">LATEST</span>
-                                    ) : <></>}
                             </div>
                         </div>
                     </div>
