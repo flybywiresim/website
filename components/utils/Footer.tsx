@@ -58,7 +58,7 @@ export const Footer = (): JSX.Element => (
                             rel="noreferrer"
                         >
                             Powered by
-                            <img className="mx-2 h-4 self-center" src="svg/vercel.svg" alt="Vercel" />
+                            <img className="mx-2 h-4 self-center" src="/svg/vercel.svg" alt="Vercel" />
                         </a>
                     </div>
 
