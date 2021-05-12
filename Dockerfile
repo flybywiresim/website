@@ -12,6 +12,8 @@ ENV NODE_ENV=production
 COPY tsconfig*.json ./
 COPY tailwind.config.js ./
 COPY postcss.config.js ./
+COPY ./lib ./lib
+COPY ./posts ./
 COPY ./components ./components
 COPY ./pages ./pages
 COPY ./public ./public
