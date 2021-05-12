@@ -10,7 +10,8 @@ metaAlt: 'FlyByWire Simulations'
 ---
 
 ## What are FlyByWire Simulations NOTAMs?
-Short for "Notice to Airmen", some of you may wonder what to expect from our NOTAMs. Originally our NOTAMs were delivered using graphics to share our progress, feature images, and other relevant news regarding the A32NX on our social media. With the launch of our new website, we are glad to announce the return of the FlyByWire Simulations NOTAMs. Every NOTAM released will be released whenever there is news to share and will contain the latest information and whatever is on our minds to keep you up-to-date. We'll announce each new NOTAM through our social media platforms and Discord channels so that you never miss out.
+
+Short for "Notice to Airmen", some of you may wonder what to expect from our NOTAMs. Originally our NOTAMs were delivered using graphics to share our progress, feature images, and other relevant news regarding the A32NX on our social media. With the launch of our new website, we are glad to announce the return of the FlyByWire Simulations NOTAMs. Every NOTAM will be released whenever there is news to share and will contain the latest information and whatever is on our minds to keep you up-to-date. We'll announce each new NOTAM through our social media platforms and Discord channels so that you never miss out.
 
 ### Below you'll find a short list of content we plan on introducing:
 
@@ -21,7 +22,7 @@ Short for "Notice to Airmen", some of you may wonder what to expect from our NOT
 * Featured videos from FlyByWire Simulations or our partners.
 * Any exciting information we want to share.
 
-We aim to keep the structures of each NOTAM similar so that you can easily find the information you are looking or are interested in quickly.
+We aim to keep the structures of each NOTAM similar so that you can easily find the information you are looking for or are interested in quickly.
 
 ***
 
