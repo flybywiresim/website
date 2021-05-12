@@ -63,7 +63,7 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
                                     )}
                                 {index === 0
                                     ? (
-                                        <span className="ml-2 mr-1 px-2 bg-gray-700 ring-2 ring-gray-500 rounded-md text-sm self-center font-semibold">LATEST</span>
+                                        <span className="ml-2 mr-1 px-1 sm:px-2 bg-gray-700 ring-2 ring-gray-500 rounded-md text-sm self-center font-semibold">LATEST</span>
                                     ) : <></>}
                                 <span className="text-gray-300 pl-2">
                                     {readingStats.text}
