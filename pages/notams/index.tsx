@@ -38,6 +38,7 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
                         {metaImage
                             ? (
                                 <img
+                                    draggable="false"
                                     className="max-h-80 object-cover"
                                     src={metaImage}
                                     alt={metaAlt}
