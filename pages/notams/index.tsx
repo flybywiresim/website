@@ -1,6 +1,7 @@
 import React from 'react';
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getPostListings, PostListing } from '../../lib/notams/posts';
 
 export type BlogProps = { listings: PostListing[] }
@@ -37,9 +38,11 @@ const Blog: React.FC<BlogProps> = ({ listings }) => (
                     >
                         {metaImage
                             ? (
-                                <img
+                                <Image
+                                    width={1000}
+                                    height={350}
+                                    objectFit="cover"
                                     draggable="false"
-                                    className="max-h-80 object-cover"
                                     src={metaImage}
                                     alt={metaAlt}
                                 />
