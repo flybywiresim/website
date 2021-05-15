@@ -1,5 +1,0 @@
-ingress:
-  fqdn: staging.flybywiresim.com
-  tls:
-    enabled: true
-    issuer: letsencrypt-prod
