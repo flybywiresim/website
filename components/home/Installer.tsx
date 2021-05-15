@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBoxOpen } from '@fortawesome/free-solid-svg-icons';
 import { Button } from '../utils/Button';
@@ -21,7 +22,7 @@ export const Installer: React.FC = () => (
             </a>
         </div>
         <div className="w-11/12 xl:w-5/6 3xl:w-320 -mb-40 3xl:-mb-3">
-            <img className="w-full" src="img/InstallerScreenshot.png" alt="Installer" />
+            <Image src="/img/InstallerScreenshot.png" alt="Installer" width={1200} height={850} quality={90} objectFit="contain" />
         </div>
     </section>
 );

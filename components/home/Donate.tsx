@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 import { Button } from '../utils/Button';
 
@@ -30,10 +31,12 @@ export const Donate: React.FC = () => (
                 </div>
             </div>
         </div>
-
-        <img
-            className="relative z-0 h-160 sm:h-120 object-cover w-screen opacity-10"
-            src="img/donate.jpg"
-        />
+        <div className="relative z-0 h-160 sm:h-120 object-cover w-screen opacity-10">
+            <Image
+                src="/img/donate.jpg"
+                layout="fill"
+                objectFit="cover"
+            />
+        </div>
     </section>
 );
