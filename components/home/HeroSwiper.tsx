@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import SwiperCore, { Pagination } from 'swiper';
 import { Swiper } from 'swiper/react';
 import 'swiper/swiper.scss';
@@ -6,7 +6,7 @@ import 'swiper/components/pagination/pagination.scss';
 
 SwiperCore.use([Pagination]);
 
-export const HeroSwiper: React.FC = ({ children }) => (
+export const HeroSwiper: FC = ({ children }) => (
     <>
         <Swiper
             spaceBetween={0}

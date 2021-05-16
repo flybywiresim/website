@@ -1,11 +1,11 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import React from 'react';
+import React, { FC } from 'react';
 import Image from 'next/image';
 import { getAllPostIds, getPostContent, PostContent } from '../../lib/notams/posts';
 
 export type PostProps = { content: PostContent }
 
-const Post: React.FC<PostProps> = ({ content: { authors, category, contentHtml, date, readingStats, title, metaImage, metaAlt } }) => (
+const Post: FC<PostProps> = ({ content: { authors, category, contentHtml, date, readingStats, title, metaImage, metaAlt } }) => (
     <div className="min-h-screen w-full mx-auto bg-gradient-to-b from-white to-gray-100 pb-6">
         <div className="h-160 bg-blue-dark overflow-hidden shadow-md">
             <div className="absolute filter blur-sm opacity-20 w-screen h-160">

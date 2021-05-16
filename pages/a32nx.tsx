@@ -5,7 +5,7 @@ import { Features } from '../components/projects/A32NX/Features';
 import { ExtendedFeatures } from '../components/projects/A32NX/ExtendedFeatures';
 import { Download } from '../components/projects/A32NX/Download';
 
-const A32nx: React.FC = () => (
+const A32nx = () => (
     <>
         <Hero />
         <Features />

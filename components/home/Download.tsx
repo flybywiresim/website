@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '../utils/Button';
 
-export const Download: React.FC = () => {
+export const Download = () => {
     const urls = {
         stable: 'https://flybywiresim-packages.b-cdn.net/stable/A32NX-stable.zip',
         dev: 'https://flybywiresim-packages.b-cdn.net/vmaster/A32NX-master.zip',

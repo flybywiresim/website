@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from 'react';
+import React, { FC, PropsWithChildren } from 'react';
 import Image from 'next/image';
 
 type ImageProps = {
@@ -12,13 +12,13 @@ type PartnerProps = Partial<{
     path?: string
 }>;
 
-export const PartnerImage: React.FC<ImageProps> = (props: PropsWithChildren<ImageProps>) => (
+export const PartnerImage: FC<ImageProps> = (props: PropsWithChildren<ImageProps>) => (
     <div className={`mx-auto ${props.className}`}>
         <Image src={props.src} alt="" width={200} height={100} layout="responsive" objectFit="contain" />
     </div>
 );
 
-export const Partner: React.FC<PartnerProps> = (props: PropsWithChildren<PartnerProps>) => (
+export const Partner: FC<PartnerProps> = (props: PropsWithChildren<PartnerProps>) => (
     <div id={props.name} className={`flex flex-col justify-center w-1/2 mx-auto ${props.className}`}>
         <a href={props.path} target="_blank" rel="noreferrer">
             {props.children}
@@ -29,7 +29,9 @@ export const Partner: React.FC<PartnerProps> = (props: PropsWithChildren<Partner
 export function PartnerSection(): JSX.Element {
     return (
         <section className="bg-blue-dark w-full py-20 lg:py-8">
-            <div className="max-w-screen-2xl grid md:grid-cols-1 lg:grid-cols-5 space-y-16 lg:space-y-0 items-center mx-auto">
+            <div
+                className="max-w-screen-2xl grid md:grid-cols-1 lg:grid-cols-5 space-y-16 lg:space-y-0 items-center mx-auto"
+            >
                 <Partner name="Flightsim.to" path="https://flightsim.to/">
                     <PartnerImage src="/img/partners/flightsimto.png" />
                 </Partner>

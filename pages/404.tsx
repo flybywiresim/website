@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Custom404: React.FC = () => (
+const Custom404 = () => (
     <section>
         <div className="flex flex-col min-h-screen mx-auto justify-center max-w-md md:max-w-4xl text-center">
             <h5 className="text-9xl text-blue-light font-bold">404</h5>

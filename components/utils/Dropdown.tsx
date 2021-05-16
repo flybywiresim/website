@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-export const DropdownItem: React.FC = (props) => (
+export const DropdownItem: FC = (props) => (
     <div className="block px-8 py-3 text-md font-medium md:text-gray-700 hover:bg-gray-200 hover:text-gray-900 md:rounded-md" role="menuitem">
         {props.children}
     </div>
 );
 
-export const Dropdown: React.FC<{ titleName?: string, className?: string }> = (props) => {
+export const Dropdown: FC<{ titleName?: string, className?: string }> = (props) => {
     const [shown, setShown] = useState(false);
     return (
         <div className={`relative inline-block text-left ${props.className}`} onMouseEnter={() => setShown(true)} onMouseLeave={() => setShown(false)}>

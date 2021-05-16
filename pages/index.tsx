@@ -10,7 +10,7 @@ import { Community } from '../components/home/Community';
 import { PartnerSection } from '../components/home/PartnerSection';
 import { Donate } from '../components/home/Donate';
 
-const Index: React.FC = () => (
+const Index = () => (
     <>
         <A320Header />
         {/* Disabled until better preview can be given */}

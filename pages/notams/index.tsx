@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -6,7 +6,7 @@ import { getPostListings, PostListing } from '../../lib/notams/posts';
 
 export type BlogProps = { listings: PostListing[] }
 
-const Blog: React.FC<BlogProps> = ({ listings }) => (
+const Blog: FC<BlogProps> = ({ listings }) => (
     <section className="min-h-screen bg-midnight">
         <div
             className="max-w-4xl lg:max-w-6xl grid grid-cols-1 md:grid-cols-2 auto-rows-auto gap-8 mx-auto px-page py-14 pt-28"

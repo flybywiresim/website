@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
-export const ExtendedFeatures: React.FC = () => (
+export const ExtendedFeatures = () => (
     <section className="rounded-lg mx-auto px-page py-4 max-w-screen-2xl sm:px-6 lg:px-8 pb-20">
         <div className="grid
                         grid-cols-1
@@ -87,20 +87,20 @@ export const ExtendedFeatures: React.FC = () => (
     </section>
 );
 
-const Feature: React.FC = (props) => (
+const Feature: FC = ({ children }) => (
     <div className="max-w-prose md:w-96 flex flex-row">
         <FontAwesomeIcon className="mb-auto mt-1 mr-5 text-green-500 text-2xl" size="1x" icon={faCheck} />
         <div className="space-y-3">
-            {props.children}
+            {children}
         </div>
     </div>
 );
 
-const FeatureTitle: React.FC = (props) => (
-    <h1 className="font-semibold text-2xl">{props.children}</h1>
+const FeatureTitle: FC = ({ children }) => (
+    <h1 className="font-semibold text-2xl">{children}</h1>
 );
 
-const FeatureBody: React.FC<{ className?: string }> = ({ children, className }) => (
+const FeatureBody: FC<{ className?: string }> = ({ children, className }) => (
     <p className={`text-lg text-left ${className}`}>
         {children}
     </p>

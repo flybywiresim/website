@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '../../utils/Button';
 
-export const Hero: React.FC = () => (
+export const Hero = () => (
     <>
         <header className="absolute max-w-7xl mx-auto px-page inset-x-2 inset-y-1/3 z-30">
             <div className="flex flex-row justify-between items-end">

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import { Button } from '../utils/Button';
 
-export const Donate: React.FC = () => (
+export const Donate = () => (
     <section className="bg-blue-darker h-160 sm:h-120 flex flex-row items-center">
         <div className="absolute w-full z-10 flex flex-row justify-center">
             <div className="md:w-3/4 xl:w-2/3 flex flex-col px-page text-center xl:text-left">

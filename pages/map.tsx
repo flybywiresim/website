@@ -7,7 +7,7 @@ const MapDisplay = dynamic<MapProps>(
     { ssr: false },
 );
 
-const Map: React.FC = () => {
+const Map = () => {
     const [mapRefreshInterval, setMapRefreshInterval] = useState(5_000);
 
     useEffect(() => {

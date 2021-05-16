@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCogs, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-const Tos: React.FC = () => {
+const Tos = () => {
     const bodyRef = useRef<HTMLDivElement>(null);
     const handleScroll = () => {
         bodyRef.current?.scrollIntoView();

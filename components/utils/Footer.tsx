@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from 'react';
+import React, { FC, PropsWithChildren } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -10,7 +10,7 @@ type IconItemProp = {
     href?: string
 }
 
-export const FooterIconItem: React.FC<IconItemProp> = (props: PropsWithChildren<IconItemProp>) => (
+export const FooterIconItem: FC<IconItemProp> = (props: PropsWithChildren<IconItemProp>) => (
     <a href={props.href} target="_blank" rel="noreferrer">
         <FontAwesomeIcon className="mx-2 hover:text-blue-light duration-100" icon={props.icon} size="lg" />
     </a>

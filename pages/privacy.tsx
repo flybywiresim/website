@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserShield, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-const Privacy: React.FC = () => {
+const Privacy = () => {
     const bodyRef = useRef<HTMLDivElement>(null);
     const handleScroll = () => {
         bodyRef.current?.scrollIntoView();

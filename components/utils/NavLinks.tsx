@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
@@ -6,7 +6,7 @@ import { Dropdown, DropdownItem } from './Dropdown';
 
 export type InternalLinkProps = { name: string, path: string }
 
-export const PageLink: React.FC<InternalLinkProps> = ({ name, path }) => (
+export const PageLink: FC<InternalLinkProps> = ({ name, path }) => (
     <Link
         key={name}
         href={path}
@@ -19,7 +19,7 @@ export const PageLink: React.FC<InternalLinkProps> = ({ name, path }) => (
 
 export type ExternalLinkProps = { name: string, external: string }
 
-export const WebLink: React.FC<ExternalLinkProps> = ({ name, external }) => (
+export const WebLink: FC<ExternalLinkProps> = ({ name, external }) => (
     <a
         key={name}
         href={external}
@@ -33,7 +33,7 @@ export const WebLink: React.FC<ExternalLinkProps> = ({ name, external }) => (
 
 export type NavLinksProps = { className?: string }
 
-export const NavLinks: React.FC<NavLinksProps> = ({ className }) => (
+export const NavLinks: FC<NavLinksProps> = ({ className }) => (
     <div className={`flex flex-col ${className}`}>
         <PageLink name="Home" path="/" />
         <PageLink name="NOTAMS" path="/notams" />
@@ -62,7 +62,7 @@ export const NavLinks: React.FC<NavLinksProps> = ({ className }) => (
 
 export type HamburgerProps = { handleClick: () => void }
 
-export const Hamburger: React.FC<HamburgerProps> = ({ handleClick }) => (
+export const Hamburger: FC<HamburgerProps> = ({ handleClick }) => (
     <a onClick={handleClick} className="cursor-pointer">
         <FontAwesomeIcon icon={faBars} size="2x" />
     </a>
