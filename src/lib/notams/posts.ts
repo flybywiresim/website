@@ -18,7 +18,7 @@ export type PostListing = {
 
 export type PostContent = PostListing & { contentHtml: string }
 
-const postsDirectory = path.join(process.cwd(), 'posts');
+const postsDirectory = path.join(process.cwd(), 'src/posts');
 
 export type AllPostIds = { params: { id: string } }[]
 
