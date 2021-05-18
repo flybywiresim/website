@@ -12,12 +12,12 @@ ENV NODE_ENV=production
 COPY tsconfig*.json ./
 COPY tailwind.config.js ./
 COPY postcss.config.js ./
-COPY ./lib ./lib
-COPY ./posts ./posts
-COPY ./components ./components
-COPY ./pages ./pages
+COPY src/lib ./src/lib
+COPY src/posts ./src/posts
+COPY src/components ./src/components
+COPY src/pages ./src/pages
+COPY src/styles ./src/styles
 COPY ./public ./public
-COPY ./styles ./styles
 
 RUN npm run build
 RUN npm run export

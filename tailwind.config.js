@@ -9,8 +9,8 @@ module.exports = {
     purge: {
         options: { safelist: [...reactComponentsSafeList] },
         content: [
-            './pages/**/*.{js,ts,jsx,tsx}',
-            './components/**/*.{js,ts,jsx,tsx}',
+            './src/pages/**/*.{js,ts,jsx,tsx}',
+            './src/components/**/*.{js,ts,jsx,tsx}',
             './node_modules/@flybywiresim/react-components/build/usedCSSClasses.json',
         ],
     },
