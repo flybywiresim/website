@@ -15,7 +15,7 @@ const Custom404 = () => (
 
         <video
             className="absolute top-0 h-screen object-cover w-screen opacity-10"
-            src="video/A32NX.mp4"
+            src="https://cdn.flybywiresim.com/assets/website/video/A32NX.mp4"
             playsInline
             autoPlay
             muted
