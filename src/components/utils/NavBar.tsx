@@ -36,9 +36,7 @@ export function NavBar(): JSX.Element {
                     <NavLinks className={`px-page md:px-0 ${isOpen ? 'md:hidden' : 'hidden'}`} />
                 </div>
             </nav>
-            <div className={`h-screen relative ${isOpen ? 'md:hidden' : 'hidden'}`} onClick={() => setOpen(!isOpen)}>
-                temporary shit here
-            </div>
+            <div className={`h-screen ${isOpen ? 'md:hidden' : 'hidden'}`} onClick={() => setOpen(!isOpen)} />
         </div>
     );
 }
