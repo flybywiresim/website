@@ -17,8 +17,8 @@ export function NavBar(): JSX.Element {
     const [isOpen, setOpen] = useState(false);
 
     return (
-        <div className="flex flex-col fixed top-0 left-0 right-0 mx-auto z-50">
-            <nav className={`py-0 md:py-2 ${scroll || isOpen ? 'transition bg-blue-dark-contrast shadow-lg-dark' : 'transition bg-transparent'}`}>
+        <nav className="flex flex-col fixed top-0 left-0 right-0 mx-auto z-50">
+            <div className={`py-0 md:py-2 ${scroll || isOpen ? 'transition bg-blue-dark-contrast shadow-lg-dark' : 'transition bg-transparent'}`}>
                 <div className="max-w-6xl mx-auto px-page">
                     <div className="relative flex items-center justify-between h-16">
                         <Link href="/">
@@ -35,8 +35,8 @@ export function NavBar(): JSX.Element {
                 <div onClick={() => setOpen(!isOpen)}>
                     <NavLinks className={`px-page md:px-0 ${isOpen ? 'md:hidden' : 'hidden'}`} />
                 </div>
-            </nav>
+            </div>
             <div className={`h-screen ${isOpen ? 'md:hidden' : 'hidden'}`} onClick={() => setOpen(!isOpen)} />
-        </div>
+        </nav>
     );
 }
