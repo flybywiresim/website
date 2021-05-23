@@ -37,6 +37,12 @@
     scroll-behavior: smooth;
   }
 
+  @media (max-width: 600px) {
+    html {
+      font-size: 12px;
+    }
+  }
+
   body {
     @apply overflow-x-hidden bg-blue-darker text-white tracking-wide;
   }
