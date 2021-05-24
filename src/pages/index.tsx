@@ -1,5 +1,3 @@
-import React from 'react';
-
 // import { SwiperSlide } from 'swiper/react';
 // import { HeroSwiper } from '../../components/home/HeroSwiper';
 import { A320Header } from '../components/home/headers/A320Header';

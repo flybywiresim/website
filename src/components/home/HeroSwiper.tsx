@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import SwiperCore, { Pagination } from 'swiper';
 import { Swiper } from 'swiper/react';
 import 'swiper/swiper.scss';

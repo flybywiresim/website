@@ -1,5 +1,3 @@
-import React from 'react';
-
 type ButtonProps = Partial<{
     className: string,
     children: any,

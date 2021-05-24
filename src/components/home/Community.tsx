@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import CountTo from 'react-count-to';
 import { MapProps } from '@flybywiresim/react-components';

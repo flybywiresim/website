@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import React, { FC } from 'react';
+import { FC } from 'react';
 import Image from 'next/image';
 import { getAllPostIds, getPostContent, PostContent } from '../../lib/notams/posts';
 

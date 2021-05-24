@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const Features = () => (
     <>
         <div className="mx-auto divide-y divide-gray-500 max-w-2xl px-page mt-12 mb-20">

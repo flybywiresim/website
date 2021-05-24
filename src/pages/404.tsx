@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Custom404 = () => (
     <section>
         <div className="flex flex-col min-h-screen mx-auto justify-center max-w-md md:max-w-4xl text-center">
