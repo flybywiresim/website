@@ -9,7 +9,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
-    "gray-matter": "^4.0.2",
+    "gray-matter": "^4.0.3",
     "next": "^10.2.3",
     "react": "^17.0.1",
     "react-count-to": "^0.12.0",
