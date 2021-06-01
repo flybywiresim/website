@@ -57,7 +57,7 @@
     "@typescript-eslint/eslint-plugin": "^4.15.0",
     "@typescript-eslint/parser": "^4.26.0",
     "autoprefixer": "^10.2.5",
-    "eslint": "^7.25.0",
+    "eslint": "^7.27.0",
     "eslint-plugin-react": "^7.24.0",
     "postcss": "^8.2.10",
     "sass": "^1.32.12",
