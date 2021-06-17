@@ -3,8 +3,7 @@ import { Button } from '../../utils/Button';
 
 export const A320Header = () => {
     const handleClick = () => {
-        const size = window.innerHeight;
-        window.scrollBy(0, size / 1.2);
+        document.getElementById('installer')?.scrollIntoView({ block: 'center', behavior: 'smooth' });
     };
 
     return (
