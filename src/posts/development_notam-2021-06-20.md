@@ -6,8 +6,9 @@ authors:
   - 'Falcon'
   - 'Davy'
   - 'Boris'
+  - 'Kevin'
 category: 'DEVELOPMENT UPDATE'
-metaImage: '/img/a32nxwing.png'
+metaImage: '/img/notam-images/efb-featured.png'
 metaAlt: 'FlyByWire Simulations'
 ---
 
@@ -27,21 +28,24 @@ It has been an amazing journey over these past ten months here at FlyByWire Simu
 
 The latest version of our flyPad has the following main features:
 
-- Navigraph charts integration
 - Landing performance calculator
-- New layout and design
+- New user interface design
 - More options in the settings page
+- Navigraph charts integration
 
-You heard it right! We’re excited to deliver Navigraph charts usable with the efb. It is very simple to get started. All you need to do is:
+You heard it right! We’re excited to deliver Navigraph charts functionality in the EFB. Getting started is simple - all you need to do is to:
 
-- Select the Charts tab in the EFB
-- Scan the QR code displayed
+1. Select the Charts tab in the EFB
+2. Scan the QR code
 
-And you're set! We've tried to design our UI to look similar to the standard navigraph UI while still maintaining that 'FlyByWire' look.
+NOTE: The use of Navigraph charts requires an active Ultimate subscription with Navigraph. You can check the current price at [Navigraph Subscriptions](https://navigraph.com/products/subscriptions).
 
-As briefly touched on before, we have done a major redesign to the look and feel of the EFB. We have tried to maximise its usability and appearance for our users.
+We are also planning to add Chartfox integration to the EFB some time later.
 
-While exploring the EFB you may have noticed that the settings page is now no longer greyed out. We have moved all the settings from the MCDU into the EFB.
+As briefly touched on before, we have done a major redesign to the look and feel of the entire EFB for a more refined appearance and improved usability.
+
+While exploring the EFB you may have noticed that the settings page is now no longer greyed out. We have moved all the settings from the MCDU into the EFB. On a final note, the default keybinds no longer trigger when using an input while utilizing the EFB natively, meaning you no longer have to “pop-out” the EFB window.
+
 
 [Credit to the developers who worked on FPOSv2] 
 
@@ -66,15 +70,16 @@ Events added without logic:
 
 ### Hydraulic Implementation
 
-Last hydraulic update connected the brakes to the FS2020 physics, and will now only stop the plane if hydraulic pressure is available. Still, the default autobrake system was still there and could bypass our implementation. Thus, current priority is on a custom auto brake system, aiming to match all the conditions and dynamic deceleration targets of the real A320 Neo.
+The last hydraulics update connected the brakes to MSFS physics engine, so the brakes will now only stop the plane if there is hydraulic pressure. However, the A32NX still uses the default autobrake system, which can bypass our implementation. Thus, our current priority is to develop a custom autobrake system to match all the conditions and dynamic deceleration targets of the real A320neo. 
 
-There are so many other hydraulic topics to implement that we can’t have an exhaustive list, but some of the next steps will be:
+There are so many aspects of the hydraulic system to implement that we can’t cover them all here, but some of the next steps are:
 
-- Tuning of brake forces to match real plane performances
-- Modeling of the blue hydraulic/electric emergency generator
-- Accurate RAT modeling
-- Physical model of the PTU
-- All actuators modeled and connected one by one
+- Tuning brake forces to match real plane performance figures
+- Modelling the blue hydraulic/electric emergency generator
+- Modelling the RAT accurately
+- Creating a physical model of the PTU
+- Connecting and modelling all actuators one by one
+
 
 ---
 
