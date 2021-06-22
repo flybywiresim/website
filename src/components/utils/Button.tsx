@@ -1,8 +1,10 @@
-type ButtonProps = Partial<{
-    className: string,
-    children: any,
-    onClick: any
-}>;
+import { ReactNode } from 'react';
+
+type ButtonProps = {
+    className?: string,
+    children: ReactNode,
+    onClick?: any
+};
 
 export function Button(props: ButtonProps): JSX.Element {
     return (
