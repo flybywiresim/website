@@ -20,7 +20,7 @@ export const Donate = () => (
 
                 <div className="mt-6 xl:divide-x divide-gray-400 xl:space-x-7 flex flex-col-reverse xl:flex-row items-center">
                     <a href="https://opencollective.com/flybywire/" target="_blank" rel="noreferrer">
-                        <Button className="w-40 text-xl font-bold bg-teal-light-contrast border-2 border-teal-light-contrast transition hover:bg-white hover:text-teal-light-contrast">
+                        <Button className="w-40 text-xl font-bold bg-teal-light-contrast border-2 border-teal-light-contrast hover:bg-white hover:text-teal-light-contrast">
                             Donate
                         </Button>
                     </a>

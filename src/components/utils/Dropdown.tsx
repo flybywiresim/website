@@ -16,7 +16,7 @@ export const Dropdown: FC<{ titleName?: string, className?: string }> = (props) 
                 draggable="false"
                 type="button"
                 onClick={() => setShown((old) => !old)}
-                className="inline-flex w-full mt-1 px-4 py-2 text-xl hover:text-blue-light transition-colors duration-200 focus:outline-none"
+                className="inline-flex w-full mt-1 px-4 py-2 text-xl hover:text-blue-light transition-colors focus:outline-none"
                 id="options-menu"
                 aria-haspopup="true"
                 aria-expanded="true"

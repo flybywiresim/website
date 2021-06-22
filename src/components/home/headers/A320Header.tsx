@@ -34,14 +34,14 @@ export const A320Header = () => {
                     <div className="flex max-w-md my-5 gap-4">
                         <Button
                             onClick={handleClick}
-                            className="w-40 text-xl font-bold bg-blue-light border-2 border-blue-light transition hover:bg-white hover:text-blue-light"
+                            className="w-40 bg-blue-light border-2 border-blue-light hover:bg-white hover:text-blue-light"
                         >
                             Installer
                         </Button>
 
                         <Link href="/a32nx">
                             <Button
-                                className="w-44 text-xl font-bold border-2 border-blue-light text-blue-light transition hover:bg-white hover:text-blue-light"
+                                className="w-44 border-2 border-blue-light text-blue-light hover:bg-white hover:text-blue-light"
                             >
                                 Learn More
                             </Button>

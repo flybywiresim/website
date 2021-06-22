@@ -1,6 +1,4 @@
 import { FC } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { Dropdown, DropdownItem } from './Dropdown';
 
@@ -11,7 +9,7 @@ export const PageLink: FC<InternalLinkProps> = ({ name, path }) => (
         key={name}
         href={path}
     >
-        <div className="text-xl m-2 p-1 active:text-blue-light transition-colors duration-200 hover:text-blue-light cursor-pointer">
+        <div className="text-xl m-2 p-1 active:text-blue-light transition-colors hover:text-blue-light cursor-pointer">
             {name}
         </div>
     </Link>
@@ -25,7 +23,7 @@ export const WebLink: FC<ExternalLinkProps> = ({ name, external }) => (
         href={external}
         target="_blank"
         rel="noreferrer"
-        className="text-xl m-2 p-1 active:text-blue-light transition-colors duration-200 hover:text-blue-light cursor-pointer"
+        className="text-xl m-2 p-1 active:text-blue-light transition-colors hover:text-blue-light cursor-pointer"
     >
         {name}
     </a>
