@@ -1,39 +1,10 @@
-@font-face {
-  font-family: Nunito Sans;
-  font-weight: 300;
-  src: url("/font/NunitoSans-Light.ttf")
-}
-@font-face {
-  font-family: Nunito Sans;
-  font-weight: 400;
-  src: url("/font/NunitoSans-Regular.ttf")
-}
-@font-face {
-  font-family: Nunito Sans;
-  font-weight: 500;
-  src: url("/font/NunitoSans-SemiBold.ttf")
-}
-@font-face {
-  font-family: Nunito Sans;
-  font-weight: 600;
-  src: url("/font/NunitoSans-Bold.ttf")
-}
-@font-face {
-  font-family: Nunito Sans;
-  font-weight: 700;
-  src: url("/font/NunitoSans-ExtraBold.ttf")
-}
-@font-face {
-  font-family: Nunito Sans;
-  font-weight: 800;
-  src: url("/font/NunitoSans-Black.ttf")
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
 @tailwind base;
 @layer base {
 
   html {
-    font-size: 14px;
+    font-size: 15px;
     scroll-behavior: smooth;
   }
 
