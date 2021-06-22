@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
 import { MapProps } from '@flybywiresim/react-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { IconArrowRight } from '@tabler/icons';
 import { Card, CardBody, CardTitle } from '../utils/Card';
 import Container from '../utils/Container';
@@ -68,7 +67,9 @@ export function Community(): JSX.Element {
                 <div className="my-8">
                     <Card bgColour="gray-100" className="border-discord shadow-lg">
                         <CardTitle>
-                            <FontAwesomeIcon className="mr-2 text-discord" icon={faDiscord} size="sm" />
+                            <span className="bg-discord p-2 mr-2 flex items-center justify-center rounded-xl">
+                                <Image src="/svg/discordLogo.svg" width={23} height={23} />
+                            </span>
                             Discord
                         </CardTitle>
                         <CardBody>

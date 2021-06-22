@@ -1,6 +1,7 @@
 'use strict';
 
 const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 const reactComponentsSafeList = require('@flybywiresim/react-components/build/usedCSSClasses.json');
 
 module.exports = {
@@ -12,7 +13,6 @@ module.exports = {
             './node_modules/@flybywiresim/react-components/build/usedCSSClasses.json',
         ],
     },
-    darkMode: false, // or 'media' or 'class'
     theme: {
         container: {
             center: true,
@@ -20,7 +20,7 @@ module.exports = {
         },
         fontFamily: { sans: ['Nunito Sans', ...defaultTheme.fontFamily.sans] },
         extend: {
-            height: { 200: '50rem' },
+            height: { 200: '50rem', ...defaultTheme.height },
             screens: {
                 '3xl': '1792px',
                 '4xl': '2048px',
@@ -37,13 +37,13 @@ module.exports = {
                 384: '96rem',
             },
             colors: {
+                colors,
                 blue: { 'dark-contrast': 'hsl(216,32%,17%)' },
                 midnight: { DEFAULT: 'hsl(218, 42%, 10%)' },
                 discord: {
-                    DEFAULT: 'hsl(227,58%,65%)',
-                    dark: 'hsl(227,32%,49%)',
+                    DEFAULT: 'hsl(235,86%,65%)',
+                    dark: 'hsl(235,60%,54%)',
                 },
-                orangutanOrange: { DEFAULT: 'hsl(31, 96%, 53%)' },
             },
             zIndex: { '-10': '-10' },
             typography: {
