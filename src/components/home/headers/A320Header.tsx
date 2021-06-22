@@ -11,7 +11,7 @@ export const A320Header = () => {
     };
 
     return (
-        <header className="min-h-screen">
+        <header>
             <video
                 className="fixed w-screen h-screen object-cover opacity-10 -z-10"
                 src="https://cdn.flybywiresim.com/assets/website/video/A32NX.mp4"
@@ -20,10 +20,10 @@ export const A320Header = () => {
                 muted
                 loop
             />
-            <Container className="max-w-6xl">
-                <div className="absolute h-2/3 bottom-0">
-                    <h1 className="text-7xl sm:text-8xl font-medium pb-3">
-                        <span className="text-blue-light">A32</span>
+            <Container className="max-w-6xl relative min-h-screen">
+                <div className="absolute h-2/3 bottom-0 left-0">
+                    <h1 className="text-8xl font-bold">
+                        <span className="text-teal">A32</span>
                         <span className="text-blue">N</span>
                         X
                     </h1>
@@ -31,10 +31,10 @@ export const A320Header = () => {
                         A community built and maintained project aiming to provide high quality and detailed aircraft
                         for Microsoft Flight Simulator.
                     </p>
-                    <div className="flex max-w-md py-5">
+                    <div className="flex max-w-md my-5 gap-4">
                         <Button
                             onClick={handleClick}
-                            className="w-40 text-xl font-bold bg-blue-light border-2 border-blue-light transition hover:bg-white hover:text-blue-light mr-3"
+                            className="w-40 text-xl font-bold bg-blue-light border-2 border-blue-light transition hover:bg-white hover:text-blue-light"
                         >
                             Installer
                         </Button>
