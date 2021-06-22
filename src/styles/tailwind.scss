@@ -11,6 +11,21 @@
   body {
     @apply overflow-x-hidden bg-blue-darker text-white;
   }
+  h1,h2,h3,h4 {
+    @apply font-extrabold
+  }
+  h1 {
+    @apply text-5xl
+  }
+  h2 {
+    @apply text-4xl
+  }
+  h3 {
+    @apply text-3xl
+  }
+  h4 {
+    @apply text-2xl
+  }
 }
 
 @tailwind components;
