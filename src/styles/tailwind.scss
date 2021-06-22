@@ -12,19 +12,22 @@
     @apply overflow-x-hidden bg-blue-darker text-white;
   }
   h1,h2,h3,h4 {
-    @apply font-extrabold
+    @apply font-extrabold mb-3
   }
   h1 {
-    @apply text-6xl
+    @apply text-5xl md:text-6xl
   }
   h2 {
-    @apply text-5xl
-  }
-  h3 {
     @apply text-4xl
   }
-  h4 {
+  h3 {
     @apply text-3xl
+  }
+  h4 {
+    @apply text-2xl
+  }
+  p {
+    @apply text-xl
   }
 }
 

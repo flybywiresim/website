@@ -27,7 +27,7 @@ export const A320Header = () => {
                         <span className="text-blue">N</span>
                         X
                     </h1>
-                    <p className="text-lg max-w-xl">
+                    <p className="max-w-xl">
                         A community built and maintained project aiming to provide high quality and detailed aircraft
                         for Microsoft Flight Simulator.
                     </p>
