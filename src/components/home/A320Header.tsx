@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { Button } from '../../utils/Button';
-import { installerRef } from '../Installer';
-import Container from '../../utils/Container';
+import { Button } from '../utils/Button';
+import { installerRef } from './Installer';
+import Container from '../utils/Container';
 
 export const A320Header = () => {
     const handleClick = () => {
