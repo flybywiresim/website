@@ -33,7 +33,7 @@ export function NavBar(): JSX.Element {
                     <IconMenu2 className="cursor-pointer self-center md:hidden" size={32} onClick={() => setOpen(!isOpen)} />
                     <NavLinks className="hidden md:flex md:flex-row" />
                 </div>
-                <NavLinks className={`px-page md:px-0 ${isOpen ? 'md:hidden' : 'hidden'}`} />
+                <NavLinks className={`${isOpen ? 'md:hidden' : 'hidden'}`} />
             </Container>
         </nav>
     );
