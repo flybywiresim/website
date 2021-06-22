@@ -38,7 +38,7 @@
   }
 
   body {
-    @apply overflow-x-hidden bg-blue-darker text-white tracking-wide;
+    @apply overflow-x-hidden bg-blue-darker text-white;
   }
 }
 
@@ -47,16 +47,8 @@
 
 @layer utilities {
   @variants hover, focus {
-    .filter-none {
-      filter: none;
+    .px-page {
+      @apply px-5 md:px-8;
     }
-
-    .filter-grayscale {
-      filter: grayscale(100%);
-    }
-  }
-
-  .px-page {
-    @apply px-5 md:px-8;
   }
 }
