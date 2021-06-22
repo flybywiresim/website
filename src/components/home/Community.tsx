@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import { MapProps } from '@flybywiresim/react-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { IconArrowRight } from '@tabler/icons';
 import { Card, CardBody, CardTitle } from '../utils/Card';
+import Container from '../utils/Container';
 
 const MapDisplay = dynamic<MapProps>(
     () => import('@flybywiresim/react-components').then((mod) => mod.Map),
@@ -17,8 +18,8 @@ const CONTRIBUTOR_COUNT_ENDPOINT = 'https://api.github.com/repos/flybywiresim/a3
 
 const Statistic = (props: {statCount: string, statName: string}) => (
     <div id={props.statName}>
-        <h1 className="text-5xl font-semibold text-blue-dark-contrast">{props.statCount}</h1>
-        <p className="text-xl">{props.statName}</p>
+        <h1 className="text-5xl font-bold text-blue-dark-contrast">{props.statCount}</h1>
+        <p className="p-0">{props.statName}</p>
     </div>
 );
 
@@ -50,12 +51,10 @@ export function Community(): JSX.Element {
     }, []);
     return (
         <section className="flex flex-col lg:flex-row justify-between items-center bg-gray-50 text-blue-dark-contrast">
-            <div className="mt-10 px-page lg:px-24 flex flex-col">
+            <Container className="max-w-6xl lg:px-24 flex flex-col py-12">
                 <span className="w-24 h-2 bg-teal-light-contrast rounded-full mb-3" />
-                <h1 className="text-5xl pr-2 font-bold">
-                    Community Insights
-                </h1>
-                <p className="text-xl text-gray-800 max-w-prose py-4">
+                <h1>Community Insights</h1>
+                <p className="text-gray-800 max-w-prose">
                     Discover the extensive community behind every FlyByWire Simulations aircraft - a vibrant and active online group that prioritises collaborative work and openness.
                 </p>
 
@@ -66,29 +65,29 @@ export function Community(): JSX.Element {
                     <Statistic statCount="1M+" statName="Live Flights" />
                 </div>
 
-                <div className="my-12">
+                <div className="my-8">
                     <Card bgColour="gray-100" className="border-discord shadow-lg">
                         <CardTitle>
                             <FontAwesomeIcon className="mr-2 text-discord" icon={faDiscord} size="sm" />
                             Discord
-
                         </CardTitle>
                         <CardBody>
                             Our Discord server is where we plan the entirety of our projects and provide most of our support.
                             Join us to chat with other members of the community, get started with contributing, or ask us a question!
                         </CardBody>
+
                         <a
-                            className="font-semibold text-discord hover:text-discord-dark py-8"
+                            className="bg-discord text-xl font-semibold text-white hover:bg-discord-dark transition py-2 px-3 rounded-xl self-center"
                             href="https://discord.gg/flybywire"
                             target="_blank"
                             rel="noreferrer"
                         >
                             Join the Community
-                            <FontAwesomeIcon className="mx-1" icon={faArrowRight} size="sm" />
+                            <IconArrowRight className="inline-flex font-mono mb-1" stroke={3} />
                         </a>
                     </Card>
                 </div>
-            </div>
+            </Container>
             <div className="relative h-144 lg:h-200 w-full lg:w-1/2 z-10">
                 <MapDisplay refreshInterval={mapRefreshInterval} disableMenu disableWeather={false} disableScroll forceTileset="carto-light" />
             </div>

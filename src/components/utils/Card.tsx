@@ -11,11 +11,11 @@ export const Card: FC<cardProps> = (props) => (
 );
 
 export const CardTitle: FC = ({ children }) => (
-    <h1 className="text-4xl font-bold">{children}</h1>
+    <h2 className="flex items-center">{children}</h2>
 );
 
 export const CardBody: FC = ({ children }) => (
-    <p className="mt-4 mb-6">
+    <p className="mb-4">
         {children}
     </p>
 );
