@@ -1,7 +1,6 @@
-/* eslint-disable global-require */
-
 'use strict';
 
+const defaultTheme = require('tailwindcss/defaultTheme');
 const reactComponentsSafeList = require('@flybywiresim/react-components/build/usedCSSClasses.json');
 
 module.exports = {
@@ -9,14 +8,17 @@ module.exports = {
     purge: {
         options: { safelist: [...reactComponentsSafeList] },
         content: [
-            './src/pages/**/*.{js,ts,jsx,tsx}',
-            './src/components/**/*.{js,ts,jsx,tsx}',
+            './src/**/*.{js,ts,jsx,tsx}',
             './node_modules/@flybywiresim/react-components/build/usedCSSClasses.json',
         ],
     },
     darkMode: false, // or 'media' or 'class'
     theme: {
-        fontFamily: { sans: ['Nunito Sans'] },
+        container: {
+            center: true,
+            padding: '2rem',
+        },
+        fontFamily: { sans: ['Nunito Sans', ...defaultTheme.fontFamily.sans] },
         extend: {
             height: { 200: '50rem' },
             screens: {
