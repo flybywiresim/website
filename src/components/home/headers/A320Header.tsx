@@ -1,9 +1,12 @@
 import Link from 'next/link';
 import { Button } from '../../utils/Button';
+import { installerRef } from '../Installer';
 
 export const A320Header = () => {
     const handleClick = () => {
-        document.getElementById('installer')?.scrollIntoView({ block: 'center', behavior: 'smooth' });
+        if (installerRef.current) {
+            installerRef.current.scrollIntoView({ block: 'center' });
+        }
     };
 
     return (
@@ -16,7 +19,8 @@ export const A320Header = () => {
                         X
                     </h1>
                     <p className="text-lg max-w-lg">
-                        A community built and maintained project aiming to provide high quality and detailed aircraft for Microsoft Flight Simulator.
+                        A community built and maintained project aiming to provide high quality and detailed aircraft
+                        for Microsoft Flight Simulator.
                     </p>
                     <div className="flex max-w-md py-5">
 
