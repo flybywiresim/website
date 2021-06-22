@@ -59,11 +59,3 @@ export const NavLinks: FC<NavLinksProps> = ({ className }) => (
         </Dropdown>
     </div>
 );
-
-export type HamburgerProps = { handleClick: () => void }
-
-export const Hamburger: FC<HamburgerProps> = ({ handleClick }) => (
-    <a onClick={handleClick} className="cursor-pointer">
-        <FontAwesomeIcon icon={faBars} size="2x" />
-    </a>
-);
