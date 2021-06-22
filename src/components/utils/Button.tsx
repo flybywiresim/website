@@ -11,7 +11,7 @@ export function Button(props: ButtonProps): JSX.Element {
         <button
             onClick={props.onClick}
             type="button"
-            className={`focus:outline-none inline-flex justify-center rounded-full py-3 text-lg shadow-md-dark-contrast ${props.className}`}
+            className={`focus:outline-none rounded-full py-3 text-lg shadow-md-dark-contrast ${props.className}`}
         >
             {props.children}
         </button>
