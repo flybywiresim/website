@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
-import CountTo from 'react-count-to';
 import { MapProps } from '@flybywiresim/react-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -16,81 +15,39 @@ const LIVE_FLIGHTS_ENDPOINT = 'https://api.flybywiresim.com/txcxn/_count';
 const COMMIT_COUNT_ENDPOINT = 'https://api.github.com/repos/flybywiresim/a32nx/commits?per_page=1';
 const CONTRIBUTOR_COUNT_ENDPOINT = 'https://api.github.com/repos/flybywiresim/a32nx/contributors?per_page=1';
 
-// Commented out until fix from API is released.
+const Statistic = (props: {statCount: string, statName: string}) => (
+    <div id={props.statName}>
+        <h1 className="text-5xl font-semibold text-blue-dark-contrast">{props.statCount}</h1>
+        <p className="text-xl">{props.statName}</p>
+    </div>
+);
 
-/* const GITHUB_DOWNLOAD_COUNT_ENDPOINT = 'https://api.github.com/repos/flybywiresim/a32nx/releases';
-const CDN_DOWNLOAD_COUNT_ENDPOINT = 'https://api.flybywiresim.com/api/v1/download/_count'; */
-
-function LiveFlightsStat(): JSX.Element {
+export function Community(): JSX.Element {
     const [liveFlights, setLiveFlights] = useState('0');
-
+    const [commitCount, setCommitCount] = useState('0');
+    const [contributorCount, setContributorCount] = useState('0');
+    const [mapRefreshInterval, setMapRefreshInterval] = useState(5_000);
     useEffect(() => {
         fetch(LIVE_FLIGHTS_ENDPOINT).then((res) => res.text().then((flights) => setLiveFlights(flights)));
-    }, []);
 
-    const fn = (value: number) => <h1 className="text-5xl font-semibold text-blue-dark-contrast">{value}</h1>;
-
-    return (
-        <div>
-            <CountTo to={Number(liveFlights)} speed={3000}>{fn}</CountTo>
-            <p className="text-xl">Live Flights</p>
-        </div>
-    );
-}
-
-function CommitCountStatistic(): JSX.Element {
-    const [commitCount, setCommitCount] = useState('0');
-
-    useEffect(() => {
         fetch(COMMIT_COUNT_ENDPOINT).then((res) => {
             const commitCount = res.headers.get('Link')?.match(/&page=(\d+)>; rel="last"/)?.[1] ?? '0';
 
             setCommitCount(commitCount);
         });
-    }, []);
 
-    const fn = (value: number) => <h1 className="text-5xl font-semibold text-blue-dark-contrast">{value}</h1>;
-
-    return (
-        <div>
-            <CountTo to={Number(commitCount)} speed={3000}>{fn}</CountTo>
-            <p className="text-xl">Commits</p>
-        </div>
-    );
-}
-
-function ContributorCountStatistic(): JSX.Element {
-    const [contributorCount, setContributorCount] = useState('0');
-
-    useEffect(() => {
         fetch(CONTRIBUTOR_COUNT_ENDPOINT).then((res) => {
             const commitCount = res.headers.get('Link')?.match(/&page=(\d+)>; rel="last"/)?.[1] ?? '0';
 
             setContributorCount(commitCount);
         });
-    }, []);
 
-    const fn = (value: number) => <h1 className="text-5xl font-semibold text-blue-dark-contrast">{value}</h1>;
-
-    return (
-        <div>
-            <CountTo to={Number(contributorCount)} speed={3000}>{fn}</CountTo>
-            <p className="text-xl">Contributors</p>
-        </div>
-    );
-}
-
-export function Community(): JSX.Element {
-    const [mapRefreshInterval, setMapRefreshInterval] = useState(5_000);
-
-    useEffect(() => {
         const interval = setInterval(() => {
             setMapRefreshInterval(document.visibilityState === 'visible' ? 10_000 : 100_000);
         }, 100);
 
         return () => clearInterval(interval);
     }, []);
-
     return (
         <section className="flex flex-col lg:flex-row justify-between items-center bg-gray-50 text-blue-dark-contrast">
             <div className="mt-10 px-page lg:px-24 flex flex-col">
@@ -101,16 +58,12 @@ export function Community(): JSX.Element {
                 <p className="text-xl text-gray-800 max-w-prose py-4">
                     Discover the extensive community behind every FlyByWire Simulations aircraft - a vibrant and active online group that prioritises collaborative work and openness.
                 </p>
+
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-8 my-6">
-                    <LiveFlightsStat />
-                    <CommitCountStatistic />
-                    <ContributorCountStatistic />
-                    <div id="downloadStatistics">
-                        <h1 className="text-5xl font-semibold">
-                            1M
-                        </h1>
-                        <p className="text-xl">Downloads</p>
-                    </div>
+                    <Statistic statCount={liveFlights} statName="Live Flights" />
+                    <Statistic statCount={commitCount} statName="Commits" />
+                    <Statistic statCount={contributorCount} statName="Contributors" />
+                    <Statistic statCount="1M+" statName="Live Flights" />
                 </div>
 
                 <div className="my-12">
