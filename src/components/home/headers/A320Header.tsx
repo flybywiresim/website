@@ -21,7 +21,7 @@ export const A320Header = () => {
                 loop
             />
             <Container className="max-w-6xl relative min-h-screen">
-                <div className="absolute h-2/3 bottom-0 left-0">
+                <div className="absolute h-2/3 bottom-0 left-0 px-page">
                     <h1 className="text-8xl font-bold">
                         <span className="text-teal">A32</span>
                         <span className="text-blue">N</span>
