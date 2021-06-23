@@ -26,6 +26,6 @@ debug.log
 .eslintcache
 
 /.idea
-
+/public/img/notams-embed-previews
 .next
 out
