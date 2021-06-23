@@ -11,6 +11,9 @@
   body {
     @apply overflow-x-hidden bg-blue-darker text-white;
   }
+  li {
+    @apply text-xl font-semibold
+  }
   h1,h2,h3,h4 {
     @apply font-extrabold mb-3
   }
@@ -27,7 +30,7 @@
     @apply text-2xl
   }
   p {
-    @apply text-xl py-4
+    @apply text-xl
   }
 }
 

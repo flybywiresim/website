@@ -1,37 +1,39 @@
-import { FC, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { ReactNode, useState } from 'react';
+import { IconChevronDown } from '@tabler/icons';
 
-export const DropdownItem: FC = (props) => (
-    <div className="block px-8 py-3 text-md font-medium md:text-gray-700 hover:bg-gray-200 hover:text-gray-900 md:rounded-md" role="menuitem">
+type DropdownProps = {
+    className?: string,
+    titleName: string,
+    children: ReactNode
+}
+
+export const DropdownItem = (props: {children: ReactNode}) => (
+    <li className="px-4 py-1 hover:bg-gray-100 text-gray-700 hover:text-gray-900">
         {props.children}
-    </div>
+    </li>
 );
 
-export const Dropdown: FC<{ titleName?: string, className?: string }> = (props) => {
+export const Dropdown = (props: DropdownProps) => {
     const [shown, setShown] = useState(false);
     return (
-        <div className={`relative inline-block text-left ${props.className}`} onMouseEnter={() => setShown(true)} onMouseLeave={() => setShown(false)}>
-            <button
+        <li className={`list-none ${props.className}`} onMouseEnter={() => setShown(shown)} onMouseLeave={() => setShown(!shown)}>
+            <span
                 draggable="false"
-                type="button"
                 onClick={() => setShown((old) => !old)}
-                className="inline-flex w-full mt-1 px-4 py-2 text-xl hover:text-blue-light transition-colors focus:outline-none"
-                id="options-menu"
-                aria-haspopup="true"
-                aria-expanded="true"
+                className="font-semibold"
             >
-                {props.titleName}
-                <FontAwesomeIcon className="h-5 w-5 self-center ml-1.5" icon={faChevronDown} size="xs" />
-            </button>
-
-            {shown && (
-                <div className="block md:absolute mx-4 md:min-w-max rounded-lg bg-blue-dark-contrast md:bg-white md:ring-1 md:ring-gray-500 ring-opacity-5 ">
-                    <div className="text-sm divide-y divide-gray-500 md:divide-gray-200" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                        {props.children}
+                <span className={`inline-flex group hover:text-teal ${shown && 'text-teal'}`}>
+                    {props.titleName}
+                    <IconChevronDown className="self-center" size={20} />
+                </span>
+                {shown && (
+                    <div className="relative">
+                        <ul className="flex w-56 right-0 flex-col ring-1 ring-black/10 shadow-lg rounded-md gap-y-3 py-1 mt-3 absolute bg-white">
+                            {props.children}
+                        </ul>
                     </div>
-                </div>
-            )}
-        </div>
+                )}
+            </span>
+        </li>
     );
 };
