@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 type CardProps = {
     className?: string,
-    bgColour: string,
+    bgColour?: string,
     children: ReactNode
 }
 export const Card = (props: CardProps) => (
