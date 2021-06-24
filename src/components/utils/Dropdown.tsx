@@ -7,28 +7,28 @@ type DropdownProps = {
     children: ReactNode
 }
 
-export const DropdownItem = (props: {children: ReactNode}) => (
+export const DropdownItem = (props: { children: ReactNode }) => (
     <li className="px-4 py-1 hover:bg-gray-100 text-gray-700 hover:text-gray-900">
         {props.children}
     </li>
 );
 
 export const Dropdown = (props: DropdownProps) => {
-    const [shown, setShown] = useState(false);
+    const [isShown, setIsShown] = useState(false);
     return (
-        <li className={`list-none ${props.className}`} onMouseEnter={() => setShown(shown)} onMouseLeave={() => setShown(!shown)}>
+        <li className={`list-none cursor-pointer ${props.className}`} onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
             <span
                 draggable="false"
-                onClick={() => setShown((old) => !old)}
-                className="font-semibold"
+                onClick={() => setIsShown(!isShown)}
+                className="font-semibold py-5"
             >
-                <span className={`inline-flex group hover:text-teal ${shown && 'text-teal'}`}>
+                <span className={`inline-flex group hover:text-teal ${isShown && 'text-teal'}`}>
                     {props.titleName}
-                    <IconChevronDown className="self-center" size={20} />
+                    <IconChevronDown className={`${isShown && '-rotate-180'} transition duration-200 self-center`} size={20} />
                 </span>
-                {shown && (
-                    <div className="relative">
-                        <ul className="flex w-56 right-0 flex-col ring-1 ring-black/10 shadow-lg rounded-md gap-y-3 py-1 mt-3 absolute bg-white">
+                {isShown && (
+                    <div className="relative" onMouseLeave={() => setIsShown(false)}>
+                        <ul className="flex w-56 right-0 flex-col ring-1 ring-black/10 shadow-lg rounded-md gap-y-3 py-1 mt-4 absolute bg-white">
                             {props.children}
                         </ul>
                     </div>
