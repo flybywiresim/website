@@ -27,7 +27,7 @@ export const Dropdown = (props: DropdownProps) => {
                     <IconChevronDown className={`${isShown && '-rotate-180'} transition duration-200 self-center`} size={20} />
                 </span>
                 {isShown && (
-                    <div className="relative" onMouseLeave={() => setIsShown(false)}>
+                    <div className="relative">
                         <ul className="flex w-56 right-0 flex-col ring-1 ring-black/10 shadow-lg rounded-md gap-y-3 py-1 mt-4 absolute bg-white">
                             {props.children}
                         </ul>
