@@ -24,7 +24,7 @@ export const NavLink = ({ name, path, external, className }: LinkProps) => (
 );
 
 export const NavLinks = (props: {className?: string}) => (
-    <span className={`flex flex-col gap-x-4 items-center ${props.className}`}>
+    <span className={`flex flex-col gap-x-4 gap-y-2 md:items-center ${props.className}`}>
         <NavLink name="Home" path="/" />
         <NavLink name="NOTAMS" path="/notams" />
         <NavLink name="Projects" path="/a32nx" />

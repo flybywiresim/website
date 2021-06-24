@@ -24,17 +24,21 @@ export function NavBar(): JSX.Element {
         }
     }
     return (
-        <nav className={`fixed w-full z-50 ${scroll || isOpen ? 'transition bg-blue-dark-contrast shadow-lg-dark' : 'transition bg-transparent'}`} onClick={handleClick}>
+        <nav
+            className={`fixed w-full z-50 ${scroll || isOpen ? 'transition bg-blue-dark-contrast shadow-lg-dark' : 'transition bg-transparent'}`}
+            onClick={handleClick}
+        >
             <Container className="p-4">
                 <div className="flex justify-between">
                     <Link href="/">
                         <Image className="cursor-pointer" src="/svg/white/FBW-Logo-WHITE.svg" width={180} height={40} />
                     </Link>
-                    <IconMenu2 className="cursor-pointer self-center md:hidden" size={32} onClick={() => setOpen(!isOpen)} />
+                    <IconMenu2 className="md:hidden self-center cursor-pointer" size={32} onClick={() => setOpen(!isOpen)} />
                     <NavLinks className="hidden md:flex md:flex-row" />
                 </div>
-                <NavLinks className={`${isOpen ? 'md:hidden' : 'hidden'}`} />
+                <NavLinks className={`${isOpen ? 'py-1 md:hidden' : 'hidden'}`} />
             </Container>
+            <div className={`absolute w-full h-screen ${isOpen ? '' : 'hidden'}`} />
         </nav>
     );
 }
