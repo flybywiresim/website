@@ -1,8 +1,8 @@
 {
     "root": true,
     "env": { "browser": true },
-    "extends": "@flybywiresim/eslint-config",
-    "plugins": ["@typescript-eslint"],
+    "extends": ["plugin:tailwindcss/recommended", "@flybywiresim/eslint-config"],
+    "plugins": ["@typescript-eslint", "tailwindcss"],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": 2021,
@@ -43,6 +43,7 @@
         "jsx-a11y/click-events-have-key-events": "off",
         "jsx-a11y/anchor-is-valid": "off",
         "object-curly-newline": ["error", { "multiline": true }],
-        "jsx-a11y/no-noninteractive-element-interactions": "off"
+        "jsx-a11y/no-noninteractive-element-interactions": "off",
+        "tailwindcss/no-custom-classname": "off"
     }
 }
