@@ -10,7 +10,7 @@ export type LinkProps = {
 };
 
 export const NavLink = ({ name, path, external, className }: LinkProps) => (
-    <li className={`list-none transition cursor-pointer ${className}`}>
+    <li className={`list-none transition cursor-pointer hover:text-teal ${className}`}>
         {
             external
                 ? (
