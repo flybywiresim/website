@@ -12,7 +12,7 @@ type IconItemProp = {
 
 export const FooterIconItem = (props: IconItemProp) => (
     <a href={props.href} target="_blank" rel="noreferrer">
-        <FontAwesomeIcon className="transition hover:text-blue-light" icon={props.icon} size="lg" />
+        <FontAwesomeIcon className="hover:text-blue-light transition" icon={props.icon} size="lg" />
     </a>
 );
 
@@ -29,23 +29,23 @@ export const Footer = () => (
                 <FooterIconItem icon={faYoutube} href="https://www.youtube.com/c/FlyByWireSimulations" />
             </div>
 
-            <div className="flex gap-4 justify-center text-center">
+            <div className="flex gap-4 justify-center py-2 text-center">
                 <a
                     className="hover:underline"
                     href="https://github.com/flybywiresim/flybywiresim-website/"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <p>Source Code</p>
+                    Source Code
                 </a>
-                <span className="cursor-pointer hover:underline">
+                <span className="hover:underline cursor-pointer">
                     <Link href="/tos">
-                        <p>Terms of Service</p>
+                        Terms of Service
                     </Link>
                 </span>
-                <span className="cursor-pointer hover:underline">
+                <span className="hover:underline cursor-pointer">
                     <Link href="/privacy">
-                        <p>Privacy Policy</p>
+                        Privacy Policy
                     </Link>
                 </span>
             </div>
