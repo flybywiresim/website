@@ -20,8 +20,8 @@ const Map = () => {
 
     return (
         <>
-            <main className=" h-screen bg-blue-dark-contrast">
-                <div className="relative h-screen pt-20 text-black z-20">
+            <main className="h-screen bg-blue-dark-contrast ">
+                <div className="relative z-20 pt-20 h-screen text-black">
                     <MapDisplay refreshInterval={mapRefreshInterval} />
                 </div>
             </main>

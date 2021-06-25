@@ -1,15 +1,17 @@
-type ButtonProps = Partial<{
-    className: string,
-    children: any,
-    onClick: any
-}>;
+import { ReactNode } from 'react';
+
+type ButtonProps = {
+    className?: string,
+    children: ReactNode,
+    onClick?: any
+};
 
 export function Button(props: ButtonProps): JSX.Element {
     return (
         <button
             onClick={props.onClick}
             type="button"
-            className={`focus:outline-none inline-flex justify-center rounded-full py-3 text-lg shadow-md-dark-contrast ${props.className}`}
+            className={`focus:outline-none transition rounded-full py-3 text-xl shadow-md-dark-contrast font-bold ${props.className}`}
         >
             {props.children}
         </button>

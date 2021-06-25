@@ -12,7 +12,7 @@ const Tos = () => {
     return (
         <>
             <header>
-                <div className="relative z-0 object-cover w-screen h-screen opacity-20 shadow-2xl">
+                <div className="object-cover relative z-0 w-screen h-screen shadow-2xl opacity-20">
                     <Image
                         src="/img/a32nxwing.png"
                         alt="Terms of Service"
@@ -20,29 +20,29 @@ const Tos = () => {
                         objectFit="cover"
                     />
                 </div>
-                <div className="absolute top-0 bottom-0 z-20 w-full flex justify-center">
-                    <div className="relative my-auto xl:w-2/3 justify-center xl:justify-start text-center sm:flex sm:item-center sm:divide-x sm:space-x-10">
-                        <FontAwesomeIcon className="mb-3 sm:mb-0 self-center" icon={faCogs} size="7x" />
-                        <div className="sm:space-x-10 mx-auto text-center md:text-left w-7/12">
-                            <div className="w-full divide-y divide-gray-400 sm:ml-10 space-y-2">
-                                <h1 className="text-4xl md:text-7xl text-blue-light sm:text-8xl font-medium">
+                <div className="flex absolute top-0 bottom-0 z-20 justify-center w-full">
+                    <div className="sm:flex relative justify-center xl:justify-start my-auto sm:space-x-10 xl:w-2/3 text-center sm:divide-x sm:item-center">
+                        <FontAwesomeIcon className="self-center mb-3 sm:mb-0" icon={faCogs} size="7x" />
+                        <div className="mx-auto sm:space-x-10 w-7/12 text-center md:text-left">
+                            <div className="sm:ml-10 space-y-2 w-full divide-y divide-gray-400">
+                                <h1 className="text-4xl sm:text-8xl md:text-7xl font-medium text-blue-light">
                                     Terms of Service
                                 </h1>
                             </div>
-                            <p className="text-xl mt-3">
+                            <p className="mt-3 text-xl">
                                 Please take some time to review our terms of service.
                                 At FlyByWire Simulations we make it a priority to ensure the legal and fair usage of software.
                             </p>
                         </div>
                     </div>
-                    <FontAwesomeIcon onClick={handleScroll} className="absolute animate-bounce bottom-5 cursor-pointer" icon={faChevronDown} size="3x" />
+                    <FontAwesomeIcon onClick={handleScroll} className="absolute bottom-5 animate-bounce cursor-pointer" icon={faChevronDown} size="3x" />
                 </div>
             </header>
             {/* HandleScroll scrolls to this div */}
             <div ref={bodyRef} />
 
-            <article className="w-full md:mx-auto px-20 xl:px-0 my-40 max-w-6xl">
-                <h1 className="mt-40 text-6xl text-blue-light font-semibold">Terms of Service</h1>
+            <article className="px-20 xl:px-0 my-40 md:mx-auto w-full max-w-6xl">
+                <h1 className="mt-40 text-6xl font-semibold text-blue-light">Terms of Service</h1>
                 <div className="mt-2">
                     <p>Effective: 21/12/2020</p>
                     <p>Author: Nathan Innes</p>
@@ -54,8 +54,8 @@ const Tos = () => {
                 </div>
 
                 <div className="mt-10 ">
-                    <h1 className="text-4xl text-blue-light-contrast font-semibold">Minimum Age Requirement</h1>
-                    <p className="text-xl mt-4 leading-9 font-light">
+                    <h1 className="text-4xl font-semibold text-blue-light-contrast">Minimum Age Requirement</h1>
+                    <p className="mt-4 text-xl font-light leading-9">
                         To protect the privacy of younger people it is very important that we implement an age restriction of
                         {' '}
                         <b>13 and over</b>
@@ -66,8 +66,8 @@ const Tos = () => {
                         FlyByWire Simulations reserve the right to remove users under the age of 13 and minimum age of digital consent
                         in any given case from communication platforms.
                     </p>
-                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-semibold">User Complaint</h1>
-                    <p className="text-xl mt-4 leading-9 font-light">
+                    <h1 className="mt-8 text-4xl font-semibold text-blue-light-contrast">User Complaint</h1>
+                    <p className="mt-4 text-xl font-light leading-9">
                         In the event of a user should feel the need to make a complaint against another member, with regards to
                         violating our
                         {' '}
@@ -81,8 +81,8 @@ const Tos = () => {
                         When writing the report please state the members name and what they are violating. All complaints will be
                         dealt with as professionally and as quickly as possible.
                     </p>
-                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-semibold">Legal Requirements</h1>
-                    <p className="text-xl mt-4 leading-9 font-light">
+                    <h1 className="mt-8 text-4xl font-semibold text-blue-light-contrast">Legal Requirements</h1>
+                    <p className="mt-4 text-xl font-light leading-9">
                         All users of FlyByWire Simulations who choose to fly our mod must own a
                         {' '}
                         <b>legal</b>

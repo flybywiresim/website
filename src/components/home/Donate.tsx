@@ -1,41 +1,33 @@
-import Image from 'next/image';
-
 import { Button } from '../utils/Button';
+import Container from '../utils/Container';
 
 export const Donate = () => (
-    <section className="bg-blue-darker h-160 sm:h-120 flex flex-row items-center">
-        <div className="absolute w-full z-10 flex flex-row justify-center">
-            <div className="md:w-3/4 xl:w-2/3 flex flex-col px-page text-center xl:text-left">
-                <div>
-                    <h1 className="text-5xl text-teal font-semibold">Donate</h1>
+    <section className="bg-blue-darker">
+        <div className="relative">
+            <img className="object-cover absolute w-full h-full opacity-10" src="/img/donate.jpg" alt="" />
 
-                    <p className="xl:w-2/3 text-lg sm:text-xl mt-6">
+            <Container className="flex relative top-0 flex-col items-center lg:items-start py-12 max-w-7xl">
+                <div className="max-w-4xl text-center lg:text-left">
+                    <h1 className="text-teal">Donate</h1>
+                    <p>
                         Contributions allow FlyByWire Simulations to provide better services for our users,
                         such as fast and reliable download networks and integrated online features to enrich your flight simulation experience.
                     </p>
-                    <p className="xl:w-2/3 text-lg sm:text-xl mt-6">
+                    <p className="py-4">
                         We use Open Collective to transparently manage our donations and expenses, which means you can see how we utilize donated funds at any time.
                     </p>
                 </div>
-
-                <div className="mt-6 xl:divide-x divide-gray-400 xl:space-x-7 flex flex-col-reverse xl:flex-row items-center">
+                <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left">
                     <a href="https://opencollective.com/flybywire/" target="_blank" rel="noreferrer">
-                        <Button className="w-40 text-xl font-bold bg-teal-light-contrast border-2 border-teal-light-contrast transition hover:bg-white hover:text-teal-light-contrast">
+                        <Button className="w-40 hover:text-teal-light-contrast bg-teal-light-contrast hover:bg-white border-2 border-teal-light-contrast">
                             Donate
                         </Button>
                     </a>
-                    <h2 className="max-w-prose text-teal-50 h-14 mb-7 xl:mb-0 xl:pl-7 flex flex-row items-center">
-                        No profit is generated from donations. Donating does not guarantee access to additional content nor its exclusivity if such content is ever given.
-                    </h2>
+                    <em className="pt-4 lg:pt-0 pl-0 lg:pl-3 my-auto max-w-prose text-teal-100">
+                        *No profit is generated from donations. Donating does not guarantee access to additional content nor its exclusivity if such content is ever given.
+                    </em>
                 </div>
-            </div>
-        </div>
-        <div className="relative z-0 h-160 sm:h-120 object-cover w-screen opacity-10">
-            <Image
-                src="/img/donate.jpg"
-                layout="fill"
-                objectFit="cover"
-            />
+            </Container>
         </div>
     </section>
 );

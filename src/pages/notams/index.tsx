@@ -1,15 +1,15 @@
-import { FC } from 'react';
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getPostListings, PostListing } from '../../lib/notams/posts';
+import Container from '../../components/utils/Container';
 
 export type BlogProps = { listings: PostListing[] }
 
-const Blog: FC<BlogProps> = ({ listings }) => (
+const Blog = ({ listings }: BlogProps) => (
     <section className="min-h-screen bg-midnight">
-        <div
-            className="max-w-4xl lg:max-w-6xl grid grid-cols-1 md:grid-cols-2 auto-rows-auto gap-8 mx-auto px-page py-14 pt-28"
+        <Container
+            className="grid md:grid-cols-2 gap-8 py-14 pt-24 max-w-7xl"
         >
             {listings.map(({
                 id,
@@ -23,7 +23,7 @@ const Blog: FC<BlogProps> = ({ listings }) => (
             }, index) => (
                 <Link key={id} href={`/notams/${id}`}>
                     <div className={`
-                                ${index === 0 ? 'md:col-span-2' : 'filter md:brightness-90 hover:brightness-100'}
+                                ${index === 0 ? 'md:col-span-2' : 'brightness-90 hover:brightness-100'}
                                 bg-blue-dark-contrast
                                 flex flex-col
                                 rounded-lg
@@ -33,7 +33,6 @@ const Blog: FC<BlogProps> = ({ listings }) => (
                                 ring-gray-700
                                 hover:shadow-lg
                                 hover:ring-teal
-                                overflow-hidden
                                 cursor-pointer`}
                     >
                         {metaImage
@@ -48,53 +47,51 @@ const Blog: FC<BlogProps> = ({ listings }) => (
                                 />
                             )
                             : <></>}
-                        <div className="px-page py-7">
-                            <div className="text-lg flex">
+                        <Container className="py-7">
+                            <div className="flex flex-wrap gap-x-4 md:text-lg text-md">
                                 {category === 'ANNOUNCEMENTS'
                                     ? (
                                         <p
-                                            className="text-teal-light font-black"
+                                            className="font-bold text-teal-light"
                                         >
                                             {category}
                                         </p>
                                     )
                                     : (
                                         <p
-                                            className="text-orangutanOrange font-black"
+                                            className="font-bold text-orangutanOrange"
                                         >
                                             {category}
                                         </p>
                                     )}
                                 {index === 0
                                     ? (
-                                        <span className="ml-2 mr-1 px-1 sm:px-2 bg-gray-700 ring-2 ring-gray-500 rounded-md text-sm self-center font-semibold">LATEST</span>
+                                        <span className="self-center px-1 text-sm font-semibold bg-gray-700 rounded-md ring-2 ring-gray-500">LATEST</span>
                                     ) : <></>}
-                                <span className="text-gray-300 pl-2">
+                                <em className="self-end text-gray-300">
                                     {readingStats.text}
-                                </span>
+                                </em>
                             </div>
-                            <h1 className="text-5xl text-white font-bold leading-tight">
+                            <h1>
                                 {title}
                             </h1>
-                            <div className="flex text-gray-200">
-                                <div className="flex flex-col">
-                                    <p className="font-semibold">
-                                        Written by
-                                        {' '}
-                                        {authors.join(', ')}
-                                    </p>
-                                    <p className="text-gray-400">
-                                        Posted:
-                                        {' '}
-                                        {`${date.substring(0, 4)}/${date.substring(5, 7)}/${date.substring(8)}`}
-                                    </p>
-                                </div>
+                            <div className="flex flex-col">
+                                <p className="font-semibold">
+                                    Written by
+                                    {' '}
+                                    {authors.join(', ')}
+                                </p>
+                                <em className="text-gray-400">
+                                    Posted:
+                                    {' '}
+                                    {`${date.substring(0, 4)}/${date.substring(5, 7)}/${date.substring(8)}`}
+                                </em>
                             </div>
-                        </div>
+                        </Container>
                     </div>
                 </Link>
             ))}
-        </div>
+        </Container>
     </section>
 );
 
