@@ -18,9 +18,9 @@ export const FooterIconItem = (props: IconItemProp) => (
 
 export const Footer = () => (
     <footer className="py-8 bg-blue-dark">
-        <Container className="flex flex-col">
+        <Container className="flex flex-col space-y-2">
 
-            <div className="flex gap-4 justify-center">
+            <div className="flex gap-x-4 justify-center">
                 <FooterIconItem icon={faGithub} href="https://github.com/flybywiresim" />
                 <FooterIconItem icon={faTwitter} href="https://twitter.com/FlyByWireSim" />
                 <FooterIconItem icon={faFacebook} href="https://www.facebook.com/FlyByWireSimulations" />
@@ -29,7 +29,7 @@ export const Footer = () => (
                 <FooterIconItem icon={faYoutube} href="https://www.youtube.com/c/FlyByWireSimulations" />
             </div>
 
-            <div className="flex gap-4 justify-center py-2 text-center">
+            <div className="flex gap-x-4 justify-center text-center">
                 <a
                     className="hover:underline"
                     href="https://github.com/flybywiresim/flybywiresim-website/"
