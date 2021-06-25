@@ -40,7 +40,7 @@ export const PartnerSection = () => (
             <Partner name="SaltySimulations" path="https://sim4flight.com/salty/">
                 <PartnerImage src="/img/partners/salty.svg" />
             </Partner>
-            <Partner name="sim4flight" path="https://sim4flight.com/">
+            <Partner className="col-span-1 md:col-span-2 lg:col-span-1" name="sim4flight" path="https://sim4flight.com/">
                 <PartnerImage src="/img/partners/s4f.png" />
             </Partner>
         </Container>
