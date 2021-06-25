@@ -7,7 +7,7 @@ export const Donate = () => (
             <img className="object-cover absolute w-full h-full opacity-10" src="/img/donate.jpg" alt="" />
 
             <Container className="flex relative top-0 flex-col py-12 items-center lg:items-start max-w-7xl">
-                <div className="max-w-6xl text-center lg:text-left max-w-4xl">
+                <div className="text-center lg:text-left max-w-4xl">
                     <h1 className="text-teal">Donate</h1>
                     <p>
                         Contributions allow FlyByWire Simulations to provide better services for our users,
