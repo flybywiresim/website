@@ -17,13 +17,13 @@ export const Donate = () => (
                         We use Open Collective to transparently manage our donations and expenses, which means you can see how we utilize donated funds at any time.
                     </p>
                 </div>
-                <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left">
+                <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-3 md:space-y-0 space-x-4 text-center lg:text-left">
                     <a href="https://opencollective.com/flybywire/" target="_blank" rel="noreferrer">
                         <Button className="w-40 hover:text-teal-light-contrast bg-teal-light-contrast hover:bg-white border-2 border-teal-light-contrast">
                             Donate
                         </Button>
                     </a>
-                    <em className="pt-4 lg:pt-0 pl-0 lg:pl-3 my-auto max-w-prose text-teal-100">
+                    <em className="self-center max-w-prose text-teal-100">
                         *No profit is generated from donations. Donating does not guarantee access to additional content nor its exclusivity if such content is ever given.
                     </em>
                 </div>
