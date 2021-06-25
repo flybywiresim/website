@@ -9,7 +9,7 @@ export type BlogProps = { listings: PostListing[] }
 const Blog = ({ listings }: BlogProps) => (
     <section className="min-h-screen bg-midnight">
         <Container
-            className="grid md:grid-cols-2 gap-8 py-14 pt-24 max-w-7xl"
+            className="grid gap-8 py-14 pt-24 max-w-7xl md:grid-cols-2"
         >
             {listings.map(({
                 id,

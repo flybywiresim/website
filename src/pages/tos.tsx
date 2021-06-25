@@ -21,11 +21,11 @@ const Tos = () => {
                     />
                 </div>
                 <div className="flex absolute top-0 bottom-0 z-20 justify-center w-full">
-                    <div className="sm:flex relative justify-center xl:justify-start my-auto sm:space-x-10 xl:w-2/3 text-center sm:divide-x sm:item-center">
+                    <div className="relative justify-center my-auto text-center sm:flex sm:space-x-10 sm:divide-x xl:justify-start xl:w-2/3 sm:item-center">
                         <FontAwesomeIcon className="self-center mb-3 sm:mb-0" icon={faCogs} size="7x" />
-                        <div className="mx-auto sm:space-x-10 w-7/12 text-center md:text-left">
-                            <div className="sm:ml-10 space-y-2 w-full divide-y divide-gray-400">
-                                <h1 className="text-4xl sm:text-8xl md:text-7xl font-medium text-blue-light">
+                        <div className="mx-auto w-7/12 text-center sm:space-x-10 md:text-left">
+                            <div className="space-y-2 w-full divide-y divide-gray-400 sm:ml-10">
+                                <h1 className="text-4xl font-medium text-blue-light sm:text-8xl md:text-7xl">
                                     Terms of Service
                                 </h1>
                             </div>
@@ -41,7 +41,7 @@ const Tos = () => {
             {/* HandleScroll scrolls to this div */}
             <div ref={bodyRef} />
 
-            <article className="px-20 xl:px-0 my-40 md:mx-auto w-full max-w-6xl">
+            <article className="px-20 my-40 w-full max-w-6xl md:mx-auto xl:px-0">
                 <h1 className="mt-40 text-6xl font-semibold text-blue-light">Terms of Service</h1>
                 <div className="mt-2">
                     <p>Effective: 21/12/2020</p>

@@ -33,7 +33,7 @@ export function NavBar(): JSX.Element {
                     <Link href="/">
                         <Image className="cursor-pointer" src="/svg/white/FBW-Logo-WHITE.svg" width={180} height={40} />
                     </Link>
-                    <IconMenu2 className="md:hidden self-center cursor-pointer" size={32} onClick={() => setOpen(!isOpen)} />
+                    <IconMenu2 className="self-center cursor-pointer md:hidden" size={32} onClick={() => setOpen(!isOpen)} />
                     <NavLinks className="hidden md:flex md:flex-row" />
                 </div>
                 <NavLinks className={`${isOpen ? 'py-1 md:hidden' : 'hidden'}`} />

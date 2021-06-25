@@ -49,15 +49,15 @@ export function Community(): JSX.Element {
         return () => clearInterval(interval);
     }, []);
     return (
-        <section className="flex flex-col lg:flex-row justify-between items-center text-blue-dark-contrast bg-gray-50">
-            <Container className="flex flex-col py-12 lg:px-24 max-w-6xl">
+        <section className="flex flex-col justify-between items-center text-blue-dark-contrast bg-gray-50 lg:flex-row">
+            <Container className="flex flex-col py-12 max-w-6xl lg:px-24">
                 <span className="mb-3 w-24 h-2 bg-teal-light-contrast rounded-full" />
                 <h1>Community Insights</h1>
                 <p className="max-w-prose text-gray-800">
                     Discover the extensive community behind every FlyByWire Simulations aircraft - a vibrant and active online group that prioritises collaborative work and openness.
                 </p>
 
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-8 my-6">
+                <div className="grid grid-cols-2 gap-y-8 my-6 sm:grid-cols-4">
                     <Statistic statCount={liveFlights} statName="Live Flights" />
                     <Statistic statCount={commitCount} statName="Commits" />
                     <Statistic statCount={contributorCount} statName="Contributors" />
@@ -89,7 +89,7 @@ export function Community(): JSX.Element {
                     </Card>
                 </div>
             </Container>
-            <div className="relative z-10 w-full lg:w-1/2 h-144 lg:h-200">
+            <div className="relative z-10 w-full h-144 lg:w-1/2 lg:h-200">
                 <MapDisplay refreshInterval={mapRefreshInterval} disableMenu disableWeather={false} disableScroll forceTileset="carto-light" />
             </div>
         </section>

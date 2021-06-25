@@ -13,8 +13,8 @@ export const Download = () => {
         <section id="download" className="relative bg-blue-dark-contrast">
             <div className="py-14 px-10 m-auto w-full lg:w-11/12 2xl:w-4/6">
                 <div className="flex flex-col lg:flex-row">
-                    <div className="lg:pr-10 w-full lg:w-3/5">
-                        <div className="w-1/2 2xl:w-1/4 text-left divide-y divide-gray-500">
+                    <div className="w-full lg:pr-10 lg:w-3/5">
+                        <div className="w-1/2 text-left divide-y divide-gray-500 2xl:w-1/4">
                             <h2 className="text-base font-medium tracking-widest text-blue-200 uppercase">READY TO FLY?</h2>
                             <p className="pt-3 mt-3 text-5xl font-medium text-blue-light">
                                 Download
@@ -31,9 +31,9 @@ export const Download = () => {
                         </ul>
                     </div>
 
-                    <div className="flex flex-col w-full lg:w-2/5 divide-y divide-gray-500">
+                    <div className="flex flex-col w-full divide-y divide-gray-500 lg:w-2/5">
                         {/* Installer */}
-                        <div className="pt-5 lg:pt-0 pb-5">
+                        <div className="pt-5 pb-5 lg:pt-0">
                             <span className="text-4xl text-blue-100">Installer</span>
                             <p className="mt-4 mb-6">
                                 Our easy-to-use installer is the easiest way to get started with our addons.

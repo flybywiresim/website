@@ -27,7 +27,7 @@ export const Partner = (props: PropsWithChildren<PartnerProps>) => (
 
 export const PartnerSection = () => (
     <section className="bg-blue-dark">
-        <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-x-16 max-w-screen-2xl">
+        <Container className="grid grid-cols-1 gap-x-16 max-w-screen-2xl md:grid-cols-2 lg:grid-cols-5">
             <Partner name="Flightsim.to" path="https://flightsim.to/">
                 <PartnerImage src="/img/partners/flightsimto.png" />
             </Partner>

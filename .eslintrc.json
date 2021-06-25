@@ -18,6 +18,9 @@
         "requireConfigFile": false
     },
     "settings": {
+        "tailwindcss": {
+            "groupByResponsive": true
+        },
         "import/resolver": {
             "node": {
                 "extensions": [

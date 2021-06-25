@@ -8,7 +8,7 @@ export const Hero = () => (
                     <h2 className="mb-2 ml-2 text-2xl font-medium tracking-widest uppercase">
                         DISCOVER THE
                     </h2>
-                    <h1 className="text-7xl sm:text-8xl font-medium">
+                    <h1 className="text-7xl font-medium sm:text-8xl">
                         <span className="text-blue-light">A32</span>
                         <span className="text-blue">N</span>
                         X

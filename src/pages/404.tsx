@@ -1,6 +1,6 @@
 const Custom404 = () => (
     <section>
-        <div className="flex flex-col justify-center mx-auto max-w-md md:max-w-4xl min-h-screen text-center">
+        <div className="flex flex-col justify-center mx-auto max-w-md min-h-screen text-center md:max-w-4xl">
             <h5 className="text-9xl font-bold text-blue-light">404</h5>
             <h2 className="mt-8 text-4xl font-bold">
                 We don&apos;t know where the baggage is! It seems like the URL that you requested from us doesn&apos;t exist.

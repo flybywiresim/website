@@ -8,9 +8,9 @@ export const installerRef = createRef<HTMLDivElement>();
 
 export const Installer = forwardRef(() => (
     <section ref={installerRef} className="overflow-hidden py-12 bg-blue-dark">
-        <Container className="flex flex-col 3xl:flex-row 3xl:justify-center items-center">
-            <div className="2xl:mr-12 mb-4 text-center 3xl:text-left">
-                <IconPackage className="p-2 mx-auto 3xl:mx-0 mb-4 bg-blue-light-contrast rounded-xl" size={55} stroke={1.5} />
+        <Container className="flex flex-col items-center 3xl:flex-row 3xl:justify-center">
+            <div className="mb-4 text-center 2xl:mr-12 3xl:text-left">
+                <IconPackage className="p-2 mx-auto mb-4 bg-blue-light-contrast rounded-xl 3xl:mx-0" size={55} stroke={1.5} />
                 <h1 className="font-extrabold">
                     Custom-built Installer
                 </h1>
@@ -25,7 +25,7 @@ export const Installer = forwardRef(() => (
                     </Button>
                 </a>
             </div>
-            <div className="-mb-40 3xl:-mb-3 w-11/12 xl:w-5/6 3xl:w-320">
+            <div className="-mb-40 w-11/12 xl:w-5/6 3xl:-mb-3 3xl:w-320">
                 <Image
                     src="/img/InstallerScreenshot.png"
                     alt="Installer"
