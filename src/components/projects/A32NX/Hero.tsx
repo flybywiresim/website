@@ -40,7 +40,6 @@ export const Hero = () => (
                 </div>
             </div>
         </header>
-        <img draggable="false" className="absolute hidden lg:block -right-1/3 transform scale-150 opacity-30 select-none" src="/svg/a32nx_wireframe.svg" alt="" />
-        <img draggable="false" className="relative z-0 h-screen object-cover w-screen opacity-30 select-none" src="img/discord.jpg" alt="" />
+        <img draggable="false" className="relative z-0 h-screen object-cover w-screen opacity-30 select-none" src="/img/discord.jpg" alt="" />
     </>
 );
