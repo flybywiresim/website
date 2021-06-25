@@ -6,8 +6,8 @@ export const Donate = () => (
         <div className="relative">
             <img className="object-cover absolute w-full h-full opacity-10" src="/img/donate.jpg" alt="" />
 
-            <Container className="flex relative top-0 flex-col py-12 items-center lg:items-start max-w-7xl">
-                <div className="text-center lg:text-left max-w-4xl">
+            <Container className="flex relative top-0 flex-col items-center lg:items-start py-12 max-w-7xl">
+                <div className="max-w-4xl text-center lg:text-left">
                     <h1 className="text-teal">Donate</h1>
                     <p>
                         Contributions allow FlyByWire Simulations to provide better services for our users,
@@ -17,13 +17,13 @@ export const Donate = () => (
                         We use Open Collective to transparently manage our donations and expenses, which means you can see how we utilize donated funds at any time.
                     </p>
                 </div>
-                <div className="flex flex-col items-center text-center lg:text-left lg:flex-row lg:items-start">
+                <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left">
                     <a href="https://opencollective.com/flybywire/" target="_blank" rel="noreferrer">
-                        <Button className="w-40 border-2 bg-teal-light-contrast border-teal-light-contrast hover:bg-white hover:text-teal-light-contrast">
+                        <Button className="w-40 hover:text-teal-light-contrast bg-teal-light-contrast hover:bg-white border-2 border-teal-light-contrast">
                             Donate
                         </Button>
                     </a>
-                    <em className="max-w-prose my-auto pl-0 lg:pl-3 pt-4 lg:pt-0 text-teal-100">
+                    <em className="pt-4 lg:pt-0 pl-0 lg:pl-3 my-auto max-w-prose text-teal-100">
                         *No profit is generated from donations. Donating does not guarantee access to additional content nor its exclusivity if such content is ever given.
                     </em>
                 </div>

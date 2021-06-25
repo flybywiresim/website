@@ -12,7 +12,7 @@ const Privacy = () => {
     return (
         <>
             <header>
-                <div className="relative z-0 object-cover w-screen h-screen opacity-20 shadow-2xl">
+                <div className="object-cover relative z-0 w-screen h-screen shadow-2xl opacity-20">
                     <Image
                         src="/img/a32nxwing.png"
                         alt="Privacy policy"
@@ -20,31 +20,31 @@ const Privacy = () => {
                         objectFit="cover"
                     />
                 </div>
-                <div className="absolute top-0 bottom-0 z-20 w-full flex justify-center">
-                    <div className="relative my-auto xl:w-3/4 md:w-4/5 justify-center xl:justify-start text-center sm:flex sm:item-center sm:divide-x sm:space-x-10">
-                        <FontAwesomeIcon className="mb-3 sm:mb-0 self-center" icon={faUserShield} size="7x" />
+                <div className="flex absolute top-0 bottom-0 z-20 justify-center w-full">
+                    <div className="sm:flex relative justify-center xl:justify-start my-auto sm:space-x-10 md:w-4/5 xl:w-3/4 text-center sm:divide-x sm:item-center">
+                        <FontAwesomeIcon className="self-center mb-3 sm:mb-0" icon={faUserShield} size="7x" />
 
-                        <div className="sm:space-x-10 mx-auto text-center md:text-left w-1/2">
-                            <div className="w-full divide-y divide-gray-400 sm:ml-10 space-y-2">
-                                <h1 className="text-4xl md:text-7xl text-blue-light sm:text-8xl font-medium">
+                        <div className="mx-auto sm:space-x-10 w-1/2 text-center md:text-left">
+                            <div className="sm:ml-10 space-y-2 w-full divide-y divide-gray-400">
+                                <h1 className="text-4xl sm:text-8xl md:text-7xl font-medium text-blue-light">
                                     Privacy Policy
                                 </h1>
                             </div>
-                            <p className="text-xl mt-3">
+                            <p className="mt-3 text-xl">
                                 Please take some time to review our privacy policy.
                                 At FlyByWire Simulations we make it a priority to be
                                 thoroughly transparent to our users about the data we collect and use.
                             </p>
                         </div>
                     </div>
-                    <FontAwesomeIcon onClick={handleScroll} className="absolute animate-bounce bottom-5 cursor-pointer" icon={faChevronDown} size="3x" />
+                    <FontAwesomeIcon onClick={handleScroll} className="absolute bottom-5 animate-bounce cursor-pointer" icon={faChevronDown} size="3x" />
                 </div>
             </header>
             {/* HandleScroll scrolls to this div */}
             <div ref={bodyRef} />
 
-            <article className="w-full md:mx-auto px-20 xl:px-0 my-40 max-w-6xl">
-                <h1 className="mt-40 text-6xl text-blue-light font-semibold">Privacy Policy</h1>
+            <article className="px-20 xl:px-0 my-40 md:mx-auto w-full max-w-6xl">
+                <h1 className="mt-40 text-6xl font-semibold text-blue-light">Privacy Policy</h1>
                 <div className="mt-2">
                     <p>Effective: 21/12/2020</p>
                     <p>Author: Nathan Innes</p>
@@ -55,8 +55,8 @@ const Privacy = () => {
                     </a>
                 </div>
                 <div className="mt-10 ">
-                    <h1 className="text-4xl text-blue-light-contrast font-semibold">What information do we collect?</h1>
-                    <div className="text-xl mt-4 leading-9 font-light">
+                    <h1 className="text-4xl font-semibold text-blue-light-contrast">What information do we collect?</h1>
+                    <div className="mt-4 text-xl font-light leading-9">
                         <p>We may collect, store and use the following kinds of personal data:</p>
                         <p>
                             <br />
@@ -71,8 +71,8 @@ const Privacy = () => {
                             notifications.
                         </p>
                     </div>
-                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-semibold">Information about website visits</h1>
-                    <div className="text-xl mt-4 leading-9 font-light">
+                    <h1 className="mt-8 text-4xl font-semibold text-blue-light-contrast">Information about website visits</h1>
+                    <div className="mt-4 text-xl font-light leading-9">
                         <p>
                             We may collect information about your visits to this website such as your IP address, geographical location, browser type, referral
                             source, length of visit and number of page views. We may use this information in the administration of this website, to improve the
@@ -97,8 +97,8 @@ const Privacy = () => {
                             have a negative impact upon the usability of many websites.
                         </p>
                     </div>
-                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-semibold">Using your personal data</h1>
-                    <div className="text-xl mt-4 leading-9 font-light">
+                    <h1 className="mt-8 text-4xl font-semibold text-blue-light-contrast">Using your personal data</h1>
+                    <div className="mt-4 text-xl font-light leading-9">
                         <p>
                             Personal data submitted to this website will be used for the purposes specified in this privacy policy or in relevant parts of the website.
                             In addition to the uses identified elsewhere in this privacy policy, we may use your personal information to:
@@ -113,8 +113,8 @@ const Privacy = () => {
                             We will not without your express consent provide your personal information to any third parties for the purpose of direct marketing.
                         </p>
                     </div>
-                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-semibold">Other disclosures</h1>
-                    <div className="text-xl mt-4 leading-9 font-light">
+                    <h1 className="mt-8 text-4xl font-semibold text-blue-light-contrast">Other disclosures</h1>
+                    <div className="mt-4 text-xl font-light leading-9">
                         <p>In addition to the disclosures reasonably necessary for the purposes identified elsewhere in this privacy policy, we may disclose information about you:</p>
                         <p>
                             <br />
@@ -127,15 +127,15 @@ const Privacy = () => {
                         </p>
                         <p>4. Except as provided in this privacy policy, we will not provide your information to third parties.</p>
                     </div>
-                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-semibold">Security of your personal data</h1>
-                    <div className="text-xl mt-4 leading-9 font-light">
+                    <h1 className="mt-8 text-4xl font-semibold text-blue-light-contrast">Security of your personal data</h1>
+                    <div className="mt-4 text-xl font-light leading-9">
                         <p>
                             We will take reasonable precautions to prevent the loss, misuse or alteration of your personal information.
                             Of course, data transmission over the internet is inherently insecure, and we cannot guarantee the security of data sent over the internet.
                         </p>
                     </div>
-                    <h1 className="text-4xl mt-8 text-blue-light-contrast font-semibold">Third party websites</h1>
-                    <div className="text-xl mt-4 leading-9 font-light">
+                    <h1 className="mt-8 text-4xl font-semibold text-blue-light-contrast">Third party websites</h1>
+                    <div className="mt-4 text-xl font-light leading-9">
                         <p>The website contains links to other websites. We are not responsible for the privacy policies of third party websites.</p>
                     </div>
                 </div>

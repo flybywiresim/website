@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 export const ExtendedFeatures = () => (
-    <section className="rounded-lg mx-auto px-page py-4 max-w-screen-2xl sm:px-6 lg:px-8 pb-20">
+    <section className="py-4 sm:px-6 lg:px-8 pb-20 mx-auto max-w-screen-2xl rounded-lg px-page">
         <div className="grid
                         grid-cols-1
                         md:grid-cols-2
@@ -88,8 +88,8 @@ export const ExtendedFeatures = () => (
 );
 
 const Feature: FC = ({ children }) => (
-    <div className="max-w-prose md:w-96 flex flex-row">
-        <FontAwesomeIcon className="mb-auto mt-1 mr-5 text-green-500 text-2xl" size="1x" icon={faCheck} />
+    <div className="flex flex-row md:w-96 max-w-prose">
+        <FontAwesomeIcon className="mt-1 mr-5 mb-auto text-2xl text-green-500" size="1x" icon={faCheck} />
         <div className="space-y-3">
             {children}
         </div>
@@ -97,7 +97,7 @@ const Feature: FC = ({ children }) => (
 );
 
 const FeatureTitle: FC = ({ children }) => (
-    <h1 className="font-semibold text-2xl">{children}</h1>
+    <h1 className="text-2xl font-semibold">{children}</h1>
 );
 
 const FeatureBody: FC<{ className?: string }> = ({ children, className }) => (

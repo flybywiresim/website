@@ -20,7 +20,7 @@ export const ScrollToTopButton = () => {
     return (
         <>
             {visible && (
-                <button type="button" onClick={handleClick} className="focus:outline-none fixed right-0 bottom-0 bg-teal-light-contrast px-4 py-3 m-8 rounded-xl cursor-pointer z-50">
+                <button type="button" onClick={handleClick} className="fixed right-0 bottom-0 z-50 py-3 px-4 m-8 bg-teal-light-contrast rounded-xl cursor-pointer focus:outline-none">
                     <FontAwesomeIcon icon={faArrowUp} />
                 </button>
             )}
