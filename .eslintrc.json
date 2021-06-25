@@ -1,8 +1,16 @@
 {
     "root": true,
-    "env": { "browser": true },
-    "extends": ["plugin:tailwindcss/recommended", "@flybywiresim/eslint-config"],
-    "plugins": ["@typescript-eslint", "tailwindcss"],
+    "env": {
+        "browser": true
+    },
+    "extends": [
+        "plugin:tailwindcss/recommended",
+        "@flybywiresim/eslint-config"
+    ],
+    "plugins": [
+        "@typescript-eslint",
+        "tailwindcss"
+    ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": 2021,
@@ -12,24 +20,43 @@
     "settings": {
         "import/resolver": {
             "node": {
-                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ]
             }
         }
     },
     "overrides": [
         {
-            "files": ["*.jsx", "*.tsx"],
+            "files": [
+                "*.jsx",
+                "*.tsx"
+            ],
             "parserOptions": {
                 "sourceType": "module",
-                "ecmaFeatures": { "jsx": true }
+                "ecmaFeatures": {
+                    "jsx": true
+                }
             }
         },
         {
-            "files": ["*.mjs", "*.ts", "*.d.ts"],
-            "parserOptions": { "sourceType": "module" }
+            "files": [
+                "*.mjs",
+                "*.ts",
+                "*.d.ts"
+            ],
+            "parserOptions": {
+                "sourceType": "module"
+            }
         },
         {
-            "files": ["*.ts", "*.tsx"],
+            "files": [
+                "*.ts",
+                "*.tsx"
+            ],
             "rules": {
                 "no-undef": "off"
             }
@@ -42,8 +69,14 @@
         "jsx-a11y/no-static-element-interactions": "off",
         "jsx-a11y/click-events-have-key-events": "off",
         "jsx-a11y/anchor-is-valid": "off",
-        "object-curly-newline": ["error", { "multiline": true }],
+        "object-curly-newline": [
+            "error",
+            {
+                "multiline": true
+            }
+        ],
         "jsx-a11y/no-noninteractive-element-interactions": "off",
-        "tailwindcss/no-custom-classname": "off"
+        "tailwindcss/no-custom-classname": "off",
+        "global-require": 0
     }
 }

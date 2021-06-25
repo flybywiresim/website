@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import Link from 'next/link';
 import { Dropdown, DropdownItem } from './Dropdown';
 
@@ -23,7 +22,7 @@ export const NavLink = ({ name, path, external, className }: LinkProps) => (
     </li>
 );
 
-export const NavLinks = (props: {className?: string}) => (
+export const NavLinks = (props: { className?: string }) => (
     <span className={`flex flex-col gap-x-4 gap-y-2 md:items-center ${props.className}`}>
         <NavLink name="Home" path="/" />
         <NavLink name="NOTAMS" path="/notams" />
