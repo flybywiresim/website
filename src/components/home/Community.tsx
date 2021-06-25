@@ -18,7 +18,7 @@ const CONTRIBUTOR_COUNT_ENDPOINT = 'https://api.github.com/repos/flybywiresim/a3
 const Statistic = (props: {statCount: string, statName: string}) => (
     <div id={props.statName}>
         <h1 className="text-5xl font-bold text-blue-dark-contrast">{props.statCount}</h1>
-        <p className="p-0">{props.statName}</p>
+        <p>{props.statName}</p>
     </div>
 );
 
@@ -49,11 +49,11 @@ export function Community(): JSX.Element {
         return () => clearInterval(interval);
     }, []);
     return (
-        <section className="flex flex-col lg:flex-row justify-between items-center bg-gray-50 text-blue-dark-contrast">
-            <Container className="max-w-6xl lg:px-24 flex flex-col py-12">
-                <span className="w-24 h-2 bg-teal-light-contrast rounded-full mb-3" />
+        <section className="flex flex-col lg:flex-row justify-between items-center text-blue-dark-contrast bg-gray-50">
+            <Container className="flex flex-col py-12 lg:px-24 max-w-6xl">
+                <span className="mb-3 w-24 h-2 bg-teal-light-contrast rounded-full" />
                 <h1>Community Insights</h1>
-                <p className="text-gray-800 max-w-prose">
+                <p className="max-w-prose text-gray-800">
                     Discover the extensive community behind every FlyByWire Simulations aircraft - a vibrant and active online group that prioritises collaborative work and openness.
                 </p>
 
@@ -67,7 +67,7 @@ export function Community(): JSX.Element {
                 <div className="my-8">
                     <Card bgColour="gray-100" className="border-discord shadow-lg">
                         <CardTitle>
-                            <span className="bg-discord p-2 mr-2 flex items-center justify-center rounded-xl">
+                            <span className="flex justify-center items-center p-2 mr-2 bg-discord rounded-xl">
                                 <Image src="/svg/discordLogo.svg" width={23} height={23} />
                             </span>
                             Discord
@@ -78,18 +78,18 @@ export function Community(): JSX.Element {
                         </CardBody>
 
                         <a
-                            className="bg-discord text-xl font-semibold text-white hover:bg-discord-dark transition py-2 px-3 rounded-xl self-center"
+                            className="self-center py-2 px-3 text-xl font-semibold text-white bg-discord hover:bg-discord-dark rounded-xl transition"
                             href="https://discord.gg/flybywire"
                             target="_blank"
                             rel="noreferrer"
                         >
                             Join the Community
-                            <IconArrowRight className="inline-flex font-mono mb-1" stroke={3} />
+                            <IconArrowRight className="inline-flex mb-1 ml-1" size={20} stroke={2} />
                         </a>
                     </Card>
                 </div>
             </Container>
-            <div className="relative h-144 lg:h-200 w-full lg:w-1/2 z-10">
+            <div className="relative z-10 w-full lg:w-1/2 h-144 lg:h-200">
                 <MapDisplay refreshInterval={mapRefreshInterval} disableMenu disableWeather={false} disableScroll forceTileset="carto-light" />
             </div>
         </section>
