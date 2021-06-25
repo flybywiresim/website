@@ -29,7 +29,7 @@ export function NavBar(): JSX.Element {
             onClick={handleClick}
         >
             <Container className="p-4">
-                <div className="flex justify-between">
+                <div className="flex justify-between space-x-4">
                     <Link href="/">
                         <Image className="cursor-pointer" src="/svg/white/FBW-Logo-WHITE.svg" width={180} height={40} />
                     </Link>
