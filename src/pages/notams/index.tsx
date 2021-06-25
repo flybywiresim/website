@@ -48,7 +48,7 @@ const Blog = ({ listings }: BlogProps) => (
                             )
                             : <></>}
                         <Container className="py-7">
-                            <div className="flex gap-x-2 md:text-lg text-md">
+                            <div className="flex flex-wrap gap-x-4 md:text-lg text-md">
                                 {category === 'ANNOUNCEMENTS'
                                     ? (
                                         <p
