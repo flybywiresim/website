@@ -29,6 +29,7 @@ const Blog = ({ listings }: BlogProps) => (
                                 rounded-lg
                                 transition
                                 ring-1
+                                overflow-hidden
                                 hover:ring-2
                                 ring-gray-700
                                 hover:shadow-lg
