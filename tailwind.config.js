@@ -56,6 +56,7 @@ module.exports = {
                         'h3': { fontSize: '2rem' },
                         'p': { color: 'hsl(0,0%,20%)' },
                         'a': { color: 'hsl(192,80%,40%)' },
+                        'iframe': { width: '100%', height: '60vh' },
                     },
                 },
             },
