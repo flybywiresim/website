@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { IconMenu2 } from '@tabler/icons';
 import { NavLinks } from './NavLinks';
 import Container from './Container';
 
@@ -33,7 +32,11 @@ export function NavBar(): JSX.Element {
                     <Link href="/">
                         <Image className="cursor-pointer" src="/svg/white/FBW-Logo-WHITE.svg" width={180} height={40} />
                     </Link>
-                    <IconMenu2 className="self-center cursor-pointer md:hidden" size={32} onClick={() => setOpen(!isOpen)} />
+                    <span className="flex flex-col place-content-center w-7 h-10 transition cursor-pointer md:hidden" onClick={() => setOpen(!isOpen)}>
+                        <div className={`${isOpen && 'rotate-45 translate-y-[3px]'} duration-200 h-[3px] bg-white rounded-full`} />
+                        <div className={`${isOpen ? 'h-0' : 'h-[3px] my-[5px]'} bg-white rounded-full`} />
+                        <div className={`${isOpen && '-rotate-45'}  duration-200 h-[3px] bg-white rounded-full`} />
+                    </span>
                     <NavLinks className="hidden md:flex md:flex-row" />
                 </div>
                 <NavLinks className={`${isOpen ? 'py-1 md:hidden' : 'hidden'}`} />
