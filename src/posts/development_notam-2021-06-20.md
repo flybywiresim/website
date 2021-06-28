@@ -7,6 +7,7 @@ authors:
   - 'Davy'
   - 'Boris'
   - 'Kevin'
+  - 'holland'
 category: 'DEVELOPMENT UPDATE'
 metaImage: '/img/notam-images/efb-featured.png'
 metaAlt: 'FlyByWire Simulations'
@@ -19,6 +20,7 @@ It has been an amazing journey over these past ten months here at FlyByWire Simu
 - flyPadOS v2! Brand new UI and features available.
 - Sound implementation + upcoming planned audio effects.
 - Hydraulics implementation and state.
+- Progress of custom FMGC/LNAV/ND.
 
 ---
 
@@ -81,6 +83,16 @@ There are so many aspects of the hydraulic system to implement that we can’t c
 - Connecting and modelling all actuators one by one.
 
 ---
+
+## Custom FMGC/LNAV/ND
+
+The custom FMGC and navigation display are being developed in the `autopilot-custom-fpm` branch of the A32NX repository. This build is not yet available for general use (although you can compile it yourself, to check it out; but keep in mind that no support/assistance will be provided). As a reminder, this change includes the following:
+
+- Initial custom FMGC and LNAV implementation.
+- Better handling of flight plan modifications, SIDs, STARs, DIRECT TO.
+- Custom navigation display (ND).
+
+The current focus is on finishing up the custom navigation display, which brings more accurate graphics and less performance impact on the simulator framerate.
 
 ## General Information
 
