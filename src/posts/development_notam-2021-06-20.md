@@ -57,10 +57,14 @@ We recently merged major improvements to our sounds module in the A32NX.
 Available now:
 
 - New avionics fans audio for a more immersive power up and shutdown.
+- Added yellow and blue electric pumps sounds (audible in the cabin mostly)
+- Added sounds for wipers.
+- Added sound of the ground service bus (everytime you load in you will hear a clunk and a small whine).
+- Added custom FCU sound effects.  
 - Enhanced engine spool up.
 - Reworked engine sounds from idle to TOGA (heard externally and internally).
-- Yellow and blue electric pumps sounds added (audible in the cabin mostly).
-- Sound of the ground service bus (everytime you load in you will hear a clunk and a small whine).
+- Reworked engine startup completely (interior and exterior).
+- Reworked fuel pumps on the outside and inside.
 
 Not only have we pushed noticeable changes that you can hear, but we’ve added in events that allow developers to implement the logic at a later time.
 
