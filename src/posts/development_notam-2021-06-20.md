@@ -1,5 +1,5 @@
 ---
-title: 'Development Updates June 2021'
+title: 'Development Updates July 2021'
 date: '2021-06-20'
 authors:
   - 'Valastiri'
