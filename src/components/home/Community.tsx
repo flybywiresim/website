@@ -61,7 +61,7 @@ export function Community(): JSX.Element {
                     <Statistic statCount={liveFlights} statName="Live Flights" />
                     <Statistic statCount={commitCount} statName="Commits" />
                     <Statistic statCount={contributorCount} statName="Contributors" />
-                    <Statistic statCount="1M+" statName="Live Flights" />
+                    <Statistic statCount="1M+" statName="Downloads" />
                 </div>
 
                 <div className="my-8">
