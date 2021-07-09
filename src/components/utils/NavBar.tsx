@@ -7,12 +7,23 @@ import Container from './Container';
 export function NavBar(): JSX.Element {
     const [scroll, setScroll] = useState(false);
     useEffect(() => {
-        const listener = () => {
+        const scrollHandler = () => {
             setScroll(window.scrollY > 2);
         };
-        window.addEventListener('scroll', listener);
 
-        return () => window.removeEventListener('scroll', listener);
+        const resizeHandler = () => {
+            if (window.innerWidth >= 768) {
+                setOpen(false);
+            }
+        };
+
+        window.addEventListener('scroll', scrollHandler);
+        window.addEventListener('resize', resizeHandler);
+
+        return () => {
+            window.removeEventListener('scroll', scrollHandler);
+            window.removeEventListener('resize', resizeHandler);
+        };
     }, []);
 
     const [isOpen, setOpen] = useState(false);
@@ -41,7 +52,7 @@ export function NavBar(): JSX.Element {
                 </div>
                 <NavLinks className={`${isOpen ? 'py-1 md:hidden' : 'hidden'}`} />
             </Container>
-            <div className={`absolute w-full h-screen ${isOpen ? '' : 'hidden'}`} />
+            <div className={`absolute w-full h-screen ${!isOpen && 'hidden'}`} />
         </nav>
     );
 }
