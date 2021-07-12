@@ -1,6 +1,6 @@
 ---
 title: 'Development Updates July 2021'
-date: '2021-06-20'
+date: '2021-07-13'
 authors:
   - 'Valastiri'
   - 'Falcon'
