@@ -50,6 +50,9 @@ While exploring the EFB you may have noticed that the settings page is now no lo
 
 *Development Credits: Antiso, Blurpyx, Holland, Falcon, Saschl, TheMightyMat, and ZeroKaa.* 
 
+![EFB 1](/img/notam-images/efb1.png) 
+![EFB 2](/img/notam-images/efb2.png)
+
 ### Latest Sound Implementation and Plans
 
 We recently merged major improvements to our sounds module in the A32NX. 
