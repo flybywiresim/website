@@ -7,8 +7,8 @@ authors:
   - 'Davy'
   - 'Boris'
   - 'Kevin'
-  - 'holland'
-category: 'DEVELOPMENT UPDATE'
+  - 'Holland'
+category: 'UPDATE'
 metaImage: '/img/notam-images/efb-featured.png'
 metaAlt: 'FlyByWire Simulations'
 ---
@@ -52,6 +52,7 @@ While exploring the EFB you may have noticed that the settings page is now no lo
 
 ![EFB 1](/img/notam-images/efb1.png) 
 ![EFB 2](/img/notam-images/efb2.png)
+![EFB 3](/img/notam-images/efb3.png)
 
 ### Latest Sound Implementation and Plans
 
