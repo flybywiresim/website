@@ -48,7 +48,7 @@ As briefly touched on before, we have done a major redesign to the look and feel
 
 While exploring the EFB you may have noticed that the settings page is now no longer greyed out. We have moved all the settings from the MCDU into the EFB. On a final note, the default keybinds no longer trigger when using an input while using the EFB natively, meaning you no longer have to “pop-out” the EFB window to type.
 
-[Credit to the developers who worked on FPOSv2] 
+*Development Credits: Aaryan, Antiso, Blurpyx, Holland, Falcon, Saschl, TheMightyMat, and ZeroKaa.* 
 
 ### Latest Sound Implementation and Plans
 
@@ -75,7 +75,16 @@ Events added without logic:
 
 ### Hydraulic Implementation
 
-The last hydraulics update connected the brakes to MSFS physics engine, so the brakes will now only stop the plane if there is hydraulic pressure. However, the A32NX still uses the default autobrake system, which can bypass our implementation. Thus, our current priority is to develop a custom autobrake system to match all the conditions and dynamic deceleration targets of the real A320neo. 
+We have completed major steps recently towards a more accurate hydraulics system in the A32NX. Some of these features include:
+
+- Brakes available when engines are off.
+- Hydraulics connected to electrical system.
+- Replaced default brakes with custom hydraulic brakes.
+- Custom autobrake to match conditions and dynamic deceleration targets of the real A320neo.
+
+For a great summary of everything available in our development version check out 320 Sim Pilot's A32NX hydraulics video below:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7uV27k8FsNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 There are so many aspects of the hydraulic system to implement that we can’t cover them all here, but some of the next steps are:
 
@@ -85,9 +94,7 @@ There are so many aspects of the hydraulic system to implement that we can’t c
 - Creating a physical model of the PTU.
 - Connecting and modelling all actuators one by one.
 
----
-
-## Custom FMGC/LNAV/ND
+### Custom FMGC/LNAV/ND
 
 The custom FMGC and navigation display are being developed in the `autopilot-custom-fpm` branch of the A32NX repository. This build is not yet available for general use (although you can compile it yourself, to check it out; but keep in mind that no support/assistance will be provided). As a reminder, this change includes the following:
 
