@@ -48,7 +48,7 @@ As briefly touched on before, we have done a major redesign to the look and feel
 
 While exploring the EFB you may have noticed that the settings page is now no longer greyed out. We have moved all the settings from the MCDU into the EFB. On a final note, the default keybinds no longer trigger when using an input while using the EFB natively, meaning you no longer have to “pop-out” the EFB window to type.
 
-*Development Credits: Aaryan, Antiso, Blurpyx, Holland, Falcon, Saschl, TheMightyMat, and ZeroKaa.* 
+*Development Credits: Antiso, Blurpyx, Holland, Falcon, Saschl, TheMightyMat, and ZeroKaa.* 
 
 ### Latest Sound Implementation and Plans
 
