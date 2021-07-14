@@ -3,7 +3,7 @@ title: 'A32NX: Full Speed Ahead'
 date: '2021-07-15'
 authors:
   - 'Iceman'
-category: 'ANNOUNCEMENT'
+category: 'ANNOUNCEMENTS'
 metaImage: '/img/a32nxwing.png'
 metaAlt: 'FlyByWire Simulations'
 ---
