@@ -3,6 +3,8 @@ title: 'Development Updates August 2021'
 date: 'Placeholder'
 authors:
   - 'Valastiri'
+  - 'Davy'
+  - 'BlueBerry'
 category: 'UPDATE'
 metaImage: '/img/a32nxwing.png'
 metaAlt: 'FlyByWire Simulations'
@@ -46,5 +48,40 @@ For full transparency, it's worth noting that the ISIS does not yet properly acc
 
 We hope you don't have to stare at the ISIS too much because that would mean something has gone horribly wrong, but enjoy the capabilities of the little companion nonetheless!
 
-![ISIS-turn](/img/notam-images/isis.turn.png)
+[add image here]
 
+### Custom VNAV Progress
+
+[Iceman Copy Here]
+
+### Custom LNAV Progress
+
+[Holland?]
+
+---
+
+## General Information
+
+Stay up to date with information from FlyByWire Simulations by following our social media!
+
+- [Twitter](https://twitter.com/FlyByWireSim)
+- [Facebook](https://www.facebook.com/FlyByWireSimulations/)
+
+If you require support or would like to submit a bug report please see the links below:
+
+- [Discord Support](https://discord.gg/flybywire)
+- [GitHub Issues](https://github.com/flybywiresim/a32nx/issues/new/choose)
+
+When submitting an issue or asking for support to do the following:
+
+- Visit our [Reported Issues Documentation](https://docs.flybywiresim.com/start/reported-issues/) for common problems and workarounds.
+- Ensure that your issue has not already been reported on our GitHub.
+
+Download the latest version of the A32NX:
+
+- [Installer](https://api.flybywiresim.com/installer)
+- [Standalone Versions](https://flybywiresim.com/a32nx/#download)
+
+---
+
+Safe skies and happy flying!
