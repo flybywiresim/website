@@ -10,11 +10,11 @@ metaAlt: 'FlyByWire Simulations'
 
 ## Overview
 
-Sim Update 5 has been a rocky journey but we are still committed to bringing the best A320neo experience to MSFS. This NOTAM provides some insight into amazing features our developers have implemented this past month and a short word on our custom VNAV and flight management system (FMS).
+Sim Update 5 has been a rocky journey but we are still committed to bringing the best A320neo experience to MSFS. This NOTAM provides some insight into amazing features our developers have implemented this past month and a short word on our custom VNAV and LNAV.
 
 - Hydraulic actuator physical based simulation.
 - Rewritten ISIS.
-- Progress on VNAV and FMS.
+- Progress on VNAV and LNAV.
 
 ---
 
