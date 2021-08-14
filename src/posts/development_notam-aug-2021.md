@@ -56,7 +56,13 @@ We hope you don't have to stare at the ISIS too much because that would mean som
 
 ### Custom LNAV Progress
 
-[Holland?]
+Our custom FMS and LNAV modules have entered more widespread testing. In fact, we are working with our QA teamn, IRL pilots and some content creators to test the new system in the field. It is very important to us for this system to not cause major breakage.
+
+The following limitations, however, are to be expected for now:
+
+- Only TF (termination to fix), RF (radius to fix) and VM (heading to manual termination) leg types are supported for now, as well as Type I transitions. This is however already much more than the default LNAV can handle.
+- The globe-map flight planner integrated in MSFS is not supported for now.
+- Some path predictions, especially in approach segmenets, migth have "fish-birding" when computed during cruise. This results in distorted / impossible paths being drawn on the ND. This is mainly caused by the LNAV path computation not taking predicted TAS into account, as well as Type II transitions not being supported. Future work will resolve this, and flying should not be affected once those paths are reached.
 
 ---
 
