@@ -38,13 +38,11 @@ We hope to port that initial implementation to all other moving part of the plan
 
 The Integrated Standby Instrument System (ISIS) has now been rewritten in React!
 
-As fly-by-wire aircraft are the most well equipped on the market, the ISIS now features a metric altimeter reading, as well as the barometric setting in both hPa and inHg providing the correct information for pilots all across the world! The baro knob can also be pushed to quickly convert to the STD pressure setting.
+In the spirit of making the A32NX the most well-equipped simulated aircraft, the ISIS now features a metric altimeter reading, as well as the barometric setting in both hPa and inHg providing the correct information for pilots all across the world! The baro knob can also be pushed to quickly convert to the STD pressure setting.
 
 The bugs page is also fully featured on the A32NX, allowing pilots to set relevant speeds and altitudes.
 
 Interestingly enough, airlines do not recommend setting bugs on the ISIS. This is because speed bugs previously set to take-off speeds would cause confusion on approach if the pilots were looking for characteristic approach speeds.
-
-For full transparency, it's worth noting that the ISIS does not yet properly account for a loss of air data from the ADIRS. However, this will be accounted for in the future.
 
 We hope you don't have to stare at the ISIS too much because that would mean something has gone horribly wrong, but enjoy the capabilities of the little companion nonetheless!
 
