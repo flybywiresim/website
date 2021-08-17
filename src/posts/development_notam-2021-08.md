@@ -46,7 +46,7 @@ Interestingly enough, airlines do not recommend setting bugs on the ISIS. This i
 
 We hope you don't have to stare at the ISIS too much because that would mean something has gone horribly wrong, but enjoy the capabilities of the little companion nonetheless!
 
-[add image here]
+![ISIS Combined](/img/notam-images/isis-combined.jpg)
 
 ### Custom VNAV Progress
 
