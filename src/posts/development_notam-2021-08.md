@@ -56,15 +56,9 @@ Furthermore, since we are modeling the Honeywell Pegasus FMS2, we are able to mo
 
 ![CDA approach visualization](https://europe.content.twixlmedia.com/twixl-preview/e37527c12cbd8fc4effad5ac269b712b/content/0360d4fcb7711304863074260074fba8/44/images/FIG.20.jpg?r=0.1224069083950936)
 
-
 Following the completion of this core functionality (as well as testing and approval from our real-life A320 pilots), we will expand VNAV to add support for step climbs and step descents, required time of arrival (RTA), equitime points, and full RNAV and FLS approach capabilities.
 
 VNAV is an incredibly complex system, and it requires accurate performance data from the aircraft's flight and engine model, as well as ARINC 424 leg data from our custom FMS. With recent breakthroughs in these areas, we were finally able to amass the prerequisite data necessary for this system to be accurately implemented. We are working hard on this system, and hope to bring it to you soon and as accurate as possible.
-
-
-
-
-
 
 ### Custom LNAV Progress
 
