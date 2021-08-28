@@ -64,13 +64,27 @@ VNAV is an incredibly complex system, and it requires accurate performance data 
 
 ### Custom LNAV Progress
 
-Our custom FMS and LNAV modules have entered into more widespread testing. In fact, we are working with our QA team, IRL pilots and some content creators to test the new system in the field. It is very important to us for this system to not cause any major issues with the A32NX.
+Our custom FMS and LNAV modules have entered into more widespread testing. In fact, we are working with our QA team, IRL pilots and some content creators to test the new system in the field. It is very important to us for these systems to not cause any major issues with the A32NX.
 
-The following limitations are to be expected for now:
+The above systems bring advanced flight plan editing, flight path vectorization and LNAV capabilities to the aircraft. This replaces the old waypoint-to-waypoint fixed system present in many aircraft including the old A32NX. We have introduced a dynamic leg-based system that recomputes path elements **according to real-world A320 FMS behavior** in real-time, while the aircraft's situation is changing.
+
+We believe this system will culminate in the most advanced LNAV implementation available on any Airbus addon to date, as we are modelling the path computation algorithms down to very precise details. You can expect advanced features to be made possible in the future, such as offsets and holds, thanks to this system.
+
+Now, of course, this system is in its early age, and therefore the following limitations are to be expected for now:
 
 - Only TF (termination to fix), RF (radius to fix) and VM (heading to manual termination) leg types are supported for now, as well as Type I transitions. This is however already much more than the default LNAV can handle.
 - The globe-map flight planner integrated in MSFS is not supported for now.
 - Some path predictions, especially in approach segments, might have "fish-birding" when computed during cruise. This results in distorted / impossible paths being drawn on the ND. This is mainly caused by the LNAV path computation not taking predicted TAS into account, as well as Type II transitions not being supported. Future work will resolve this, and flying should not be affected once those paths are reached.
+
+### Experimental Version
+
+We have also integrated the aforementioned LNAV system into our `experimental` branch, available both through our installer and as a direct download from our website.
+
+This version is updated semi-regularly, with updates to both match the current dev version and fixes to the LNAV.
+
+**Please keep in mind that we do not provide support for this version on the `#support` channel of our Discord server. Rather, we ask you use the "Bugs and Issues" thread of the `#ata-22-fms` to provide *properly researched bug reports.***
+
+More information on the experimental version is available [in our documentation](https://docs.flybywiresim.com/fbw-a32nx/support/exp/).
 
 ---
 
