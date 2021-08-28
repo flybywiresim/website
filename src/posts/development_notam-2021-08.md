@@ -19,6 +19,7 @@ Sim Update 5 has been a rocky journey but we are still committed to bringing the
 - Hydraulic actuator physical based simulation.
 - Rewritten ISIS.
 - Progress on VNAV and LNAV.
+- Experimental Version.
 
 ---
 
