@@ -87,6 +87,30 @@ This version is updated semi-regularly, with updates to both match the current d
 
 More information on the experimental version is available [in our documentation](https://docs.flybywiresim.com/fbw-a32nx/support/exp/).
 
+#### Sample RNP Procedure
+
+Below is a samples of an RNP departure procedure drawn appropriately on the navigation display and respective waypoint information on the MCDU.
+
+**ND + MCDU**
+![MCDU+ND](/img/notam-images/NZQN-RNP-SID.jpg)
+
+**Associated Navigraph Chart**
+![navigraph chart](/img/notam-images/NZAN-RNP-chart.jpg)
+<sub>Copyright © 2021 Navigraph / Jeppesen
+"Navigraph Charts are intended for flight simulation use only, not for navigational use."</sub>
+
+#### Manual Legs and Discontinuities
+
+The custom FMS and LNAV can now handle manual legs for vectors into final and draw the flight plan accordingly.
+
+**ND + MCDU**
+![LSGG-arrival](/img/notam-images/LSGG-arrival.jpg)
+
+**Associated Navigraph Chart**
+![LSGG-chart](/img/notam-images/LSGG-chart.jpg)
+<sub>Copyright © 2021 Navigraph / Jeppesen
+"Navigraph Charts are intended for flight simulation use only, not for navigational use."</sub>
+
 ---
 
 ## General Information
