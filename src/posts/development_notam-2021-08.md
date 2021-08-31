@@ -4,7 +4,7 @@ date: '2021-09-01'
 authors:
   - 'Valastiri'
   - 'Davy'
-  - 'BlueBerry'
+  - 'Blueberry'
   - 'Holland'
   - 'Iceman'
 category: 'UPDATE'
