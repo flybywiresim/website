@@ -18,8 +18,8 @@ Sim Update 5 has been a rocky journey but we are still committed to bringing the
 
 - Hydraulic actuator physical based simulation.
 - Rewritten ISIS.
-- Progress on VNAV and LNAV.
-- Experimental Version.
+- Progress on LNAV and Experimental Version.
+- Progress on VNAV.
 
 ---
 
@@ -50,18 +50,6 @@ Interestingly enough, airlines do not recommend setting bugs on the ISIS. This i
 We hope you don't have to stare at the ISIS too much because that would mean something has gone horribly wrong, but enjoy the capabilities of the little companion nonetheless!
 
 ![ISIS Combined](/img/notam-images/isis-combined.jpg)
-
-### Custom VNAV Progress
-
-VNAV work has been steadily progressing, and builds upon the foundation set in place by our new custom FMS. Once completed, VNAV will introduce many long-awaited features to the A32NX, including accurate descent profile calculation, pseudo-waypoints (e.g. top of climb and top of descent), and accurate econ speed derivation. 
-
-Furthermore, since we are modeling the Honeywell Pegasus FMS2, we are able to model a unique feature no other Airbus addon is doing: CDAs, or continuous descent approaches. Rather than using level-altitude segments for deceleration during an approach, the Honeywell FMS instead builds the approach profile to decelerate WHILE descending, resulting in greater fuel savings. This will introduce two new pseudo-waypoints: FLAPS 1 and FLAPS 2. Here's a visualization (© Airbus Safety First 2021):
-
-![CDA approach visualization](https://europe.content.twixlmedia.com/twixl-preview/e37527c12cbd8fc4effad5ac269b712b/content/0360d4fcb7711304863074260074fba8/44/images/FIG.20.jpg?r=0.1224069083950936)
-
-Following the completion of this core functionality (as well as testing and approval from our real-life A320 pilots), we will expand VNAV to add support for step climbs and step descents, required time of arrival (RTA), equitime points, and full RNAV and FLS approach capabilities.
-
-VNAV is an incredibly complex system, and it requires accurate performance data from the aircraft's flight and engine model, as well as ARINC 424 leg data from our custom FMS. With recent breakthroughs in these areas, we were finally able to amass the prerequisite data necessary for this system to be accurately implemented. We are working hard on this system, and hope to bring it to you soon and as accurate as possible.
 
 ### Custom LNAV Progress
 
@@ -110,6 +98,18 @@ The custom FMS and LNAV can now handle manual legs for vectors into final and dr
 ![LSGG-chart](/img/notam-images/LSGG-chart.jpg)
 <sub>Copyright © 2021 Navigraph / Jeppesen
 "Navigraph Charts are intended for flight simulation use only, not for navigational use."</sub>
+
+### Custom VNAV Progress
+
+VNAV work has been steadily progressing, and builds upon the foundation set in place by our new custom FMS. Once completed, VNAV will introduce many long-awaited features to the A32NX, including accurate descent profile calculation, pseudo-waypoints (e.g. top of climb and top of descent), and accurate econ speed derivation.
+
+Furthermore, since we are modeling the Honeywell Pegasus FMS2, we are able to model a unique feature no other Airbus addon is doing: CDAs, or continuous descent approaches. Rather than using level-altitude segments for deceleration during an approach, the Honeywell FMS instead builds the approach profile to decelerate WHILE descending, resulting in greater fuel savings. This will introduce two new pseudo-waypoints: FLAPS 1 and FLAPS 2. Here's a visualization (© Airbus Safety First 2021):
+
+![CDA approach visualization](https://europe.content.twixlmedia.com/twixl-preview/e37527c12cbd8fc4effad5ac269b712b/content/0360d4fcb7711304863074260074fba8/44/images/FIG.20.jpg?r=0.1224069083950936)
+
+Following the completion of this core functionality (as well as testing and approval from our real-life A320 pilots), we will expand VNAV to add support for step climbs and step descents, required time of arrival (RTA), equitime points, and full RNAV and FLS approach capabilities.
+
+VNAV is an incredibly complex system, and it requires accurate performance data from the aircraft's flight and engine model, as well as ARINC 424 leg data from our custom FMS. With recent breakthroughs in these areas, we were finally able to amass the prerequisite data necessary for this system to be accurately implemented. We are working hard on this system, and hope to bring it to you soon and as accurate as possible.
 
 ---
 
