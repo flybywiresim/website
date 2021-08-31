@@ -103,7 +103,7 @@ The custom FMS and LNAV can now handle manual legs for vectors into final and dr
 
 VNAV work has been steadily progressing, and builds upon the foundation set in place by our new custom FMS. Once completed, VNAV will introduce many long-awaited features to the A32NX, including accurate descent profile calculation, pseudo-waypoints (e.g. top of climb and top of descent), and accurate econ speed derivation.
 
-Furthermore, since we are modeling the Honeywell Pegasus FMS2, we are able to model a unique feature no other Airbus addon is doing: CDAs, or continuous descent approaches. Rather than using level-altitude segments for deceleration during an approach, the Honeywell FMS instead builds the approach profile to decelerate WHILE descending, resulting in greater fuel savings. This will introduce two new pseudo-waypoints: FLAPS 1 and FLAPS 2. Here's a visualization (© Airbus Safety First 2021):
+Furthermore, since we are modeling the Honeywell Release H3 FMS, we are able to model a unique feature no other Airbus addon is doing: CDAs, or continuous descent approaches. Rather than using level-altitude segments for deceleration during an approach, the Honeywell FMS instead builds the approach profile to decelerate WHILE descending, resulting in greater fuel savings. This will introduce two new pseudo-waypoints: FLAPS 1 and FLAPS 2. Here's a visualization (© Airbus Safety First 2021):
 
 ![CDA approach visualization](https://europe.content.twixlmedia.com/twixl-preview/e37527c12cbd8fc4effad5ac269b712b/content/0360d4fcb7711304863074260074fba8/44/images/FIG.20.jpg?r=0.1224069083950936)
 
