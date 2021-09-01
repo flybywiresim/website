@@ -1,6 +1,6 @@
 ---
-title: 'Development Updates September 2021'
-date: '2021-09-01'
+title: 'Development Updates August 2021'
+date: '2021-09-02'
 authors:
   - 'Valastiri'
   - 'Davy'
