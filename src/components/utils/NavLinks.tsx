@@ -10,17 +10,23 @@ export type LinkProps = {
 };
 
 export const NavLink = ({ name, path, external, className }: LinkProps) => (
-    <li className={`list-none transition cursor-pointer hover:text-teal ${className}`}>
+    <>
         {
-            external
-                ? (
-                    <a href={path}>{name}</a>
-                )
-                : (
-                    <Link href={path}>{name}</Link>
-                )
+            external ? (
+                <a href={path}>
+                    <li className={`list-none transition w-full cursor-pointer hover:text-teal ${className}`}>
+                        {name}
+                    </li>
+                </a>
+            ) : (
+                <Link href={path}>
+                    <li className={`list-none transition w-full cursor-pointer hover:text-teal ${className}`}>
+                        {name}
+                    </li>
+                </Link>
+            )
         }
-    </li>
+    </>
 );
 
 export const NavLinks = (props: { className?: string }) => {
@@ -35,7 +41,7 @@ export const NavLinks = (props: { className?: string }) => {
             <NavLink name="Map" path="/map" />
             <Dropdown titleName="Community">
                 <DropdownItem>
-                    <NavLink name="Discord" path="https://discord.gg/flybywire" />
+                    <NavLink name="Discord" external path="https://discord.gg/flybywire" />
                 </DropdownItem>
                 <DropdownItem>
                     <NavLink name="Twitter" external path="https://twitter.com/FlyByWireSim" />
