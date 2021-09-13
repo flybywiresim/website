@@ -62,7 +62,7 @@
     "eslint-plugin-tailwindcss": "^1.13.4",
     "node-html-to-image": "^3.2.0",
     "postcss": "^8.2.10",
-    "sass": "^1.37.0",
+    "sass": "^1.39.2",
     "tailwindcss": "^2.2.9",
     "uuid": "^8.3.2"
   }
