@@ -10,7 +10,7 @@ metaAlt: 'FlyByWire Simulations'
 
 ## Unfortunate Departure
 
-Following the release of Sim Update 5, the A32NX was pulled from the marketplace due to compatibility issues in the stable version of the aircraft, requiring an additional fix. Although we have released a new stable version that addressed compatibility issues, we regret to inform the community that the A32NX will **not be returning to the marketplace** and **will not be available on XBOX**. The same will apply for the A380X.
+Following the release of Sim Update 5, the A32NX was pulled from the marketplace due to compatibility issues in the stable version of the aircraft, requiring an additional fix. Although we have released a new stable version that addressed compatibility issues, we regret to inform the community that the A32NX will not be returning to the marketplace and will not be available on XBOX. The same will apply for the A380X.
 
 We would like to make clear that this decision is not a result of Sim Update 5, but rather other ongoing concerns that were being discussed by the team in the weeks prior. Chiefly, on July 4th, we changed the A32NX’s license from MIT back to GPL-3.0, following the overwhelming wishes of our development team and their commitment to free, open source software. However, due to legal concerns regarding copyleft licenses, Microsoft does not permit GPL-licensed projects to be listed in the marketplace. As a result we created a separate fork of the A32NX (dubbed the “marketplace edition”) with the MIT license necessary for marketplace compatibility.
 
