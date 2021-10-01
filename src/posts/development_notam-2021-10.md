@@ -16,7 +16,7 @@ We hope you are enjoying our latest [Stable Release v0.7.0](https://docs.flybywi
 - EFIS Filters and FIX INFO
 - TCAS
 - ARINC 429
-- "New" FMS
+- New New Flight Plan Manager
 - State of Hydraulics
 
 ---
@@ -46,13 +46,33 @@ If you'd like to know more about our QA process we have a handy guide on our doc
 
 ## Development Updates
 
-### EFIS Filters
+### EFIS Filters and FIX INFO
 
 ### TCAS
 
 ### ARINC 429
 
-### "New" FMS
+We often talk about going to new lengths to bring extreme realism to the aircraft. This does not only apply to surface-level details, far from it; making a high-fidelity aircraft requires in-depth systems with simulation of details that are not documented in pilot training.
+
+Part of this is our initial version of the ARINC 429 implementation. For those unaware, [ARINC 429](https://en.wikipedia.org/wiki/ARINC_429) is a data trasnfer standard used in many airliners. It takes care of identifying, transporting and delivering data from and to various systems in the aircraft. It also ties in deeply with failure states on the A320 - indeed, a lot of the logic involved in displaying the unavailability of information or detecting faults in equipment relies on this protocol showing the correct failure indications on data labels.
+
+The A32NX now comes with ARINC 429 communications between some of its systems. While this is not tied to any visible effects for now, it lays a solid foundation for the work to come on abnormal operations and accurate display symbology in failure states.
+
+### New New Flight Plan Manager
+
+As you all know, we have introduced in our experimental branch a new FMS based partly on the Working Title flight plan manager. While this brings a big improvement on its own, it's only the first step in achieveing a system that has the same behaviour and design as the real deal. Our current version of the custom FMS does an additional layer of mapping to leg-form flight plans on top of the WT system, which works with waypoint-form flight plans. This is not how the real aircraft works, so we have decided to team up with [Synaptic Simulations]() to develop a completely custom flight plan manager layer that works directly with leg-form flight plans.
+
+This new system is already in use in the A380X previews we showed you earlier this month, so you can check out part of its capabilities here:
+
+https://www.youtube.com/watch?v=f-AaNFihJAw
+
+https://www.youtube.com/watch?v=roI7vTbCH1I
+
+This code is going to be ported both to the A320 and A220 by Synaptic. It will eventually enable the following features:
+
+- Support for all leg types (including holding patterns, intercepts).
+- Support for realistic DIR TO revisions (DF legs, W/ ABEAM, RADIAL IN/OUT).
+- Extremely accurate flight path computation, using exclusive knowledge and insight into the A320 FMS.
 
 ### State of Hydraulics
 
