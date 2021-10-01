@@ -40,7 +40,7 @@ While possibly unknown to a lot of our user base we actually have dedicated QA t
 
 If you'd like to know more about our QA process we have a handy guide on our documentation site and just maybe you'd be interested in joining our QA ranks.
 
-[Quality Assurance Documetation](https://docs.flybywiresim.com/dev-corner/qa-process/)
+[Quality Assurance Documentation](https://docs.flybywiresim.com/dev-corner/qa-process/)
 
 ---
 
