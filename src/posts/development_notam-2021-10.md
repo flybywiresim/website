@@ -13,7 +13,7 @@ metaAlt: 'FlyByWire Simulations'
 We hope you are enjoying our latest [Stable Release v0.7.0](https://docs.flybywiresim.com/release-notes/v070/). Work on our custom FMS proceeds apace and we hope to roll the feature into development as soon as we iron out all the leftover bugs. We have some exciting features planned ahead for everyone and would also like to share some insight into the inner workings of our development process. Read on below!
 
 - Development Process
-- EFIS Filters
+- EFIS Filters and FIX INFO
 - TCAS
 - ARINC 429
 - "New" FMS
