@@ -18,6 +18,8 @@ We hope you are enjoying our latest [Stable Release v0.7.0](https://docs.flybywi
 - ARINC 429
 - New New Flight Plan Manager
 - State of Hydraulics
+- Exterior Lighting Overhaul
+- A380X Progress
 
 ---
 
@@ -56,9 +58,9 @@ If you'd like to know more about our QA process we have a handy guide on our doc
 
 Our custom ND has received one of the last missing features compared to the development version - EFIS filters!
 
-This feature is now accurately modelled, with proper word transmission limit resulting in a `MAP PARTLY DISPLAYED` message when the maximum amount of data is transmitted. We also now draw runway symbols closer to technical specifications.
+This feature is now accurately modelled, with proper word transmission limit resulting in a `MAP PARTLY DISPLAYED` message when the maximum amount of data is transmitted. We can also now draw runway symbols closer to technical specifications.
 
-One new feature also introduces itself - FIX INFO! This long-awaited functionality allows users to input fix radials or radii on the LAT REV page of the MCDU flight plan display, and displays the appropriate markers for those elements on the ND:
+One new feature also introduces itself - FIX INFO! This long-awaited functionality allows users to input fix radials or radii on the LAT REV page of the MCDU flight plan display, and displays the appropriate markers for those elements on the ND.
 
 ...fix info image...
 
@@ -68,7 +70,7 @@ Another anticipated feature is TCAS (Traffic Collision Avoidance System). We hav
 
 ...TCAS images bruhegg....
 
-Our implementation will eventually also include AUTO TCAS - allowing the plane's autopilot to obey resolution advisories for the pilot if no intervention happens, through a new TCAS vertical mode; however, we are not quite ready to show this off yet, as it requires a new law in our autopilot model. More news on that sooon!
+Our implementation will eventually also include AUTO TCAS - allowing the plane's autopilot to obey resolution advisories for the pilot if no intervention happens, through a new TCAS vertical mode. However, we are not quite ready to show this off yet, as it requires a new law in our autopilot model. More news on that soon!
 
 ### ARINC 429
 
@@ -96,11 +98,19 @@ This code is going to be ported both to the A320 and A220 by Synaptic. It will e
 
 ### State of Hydraulics
 
-### A380
+Awaiting Davy Blurb
+
+### Exterior Lighting Overhaul
+
+--Awaiting Bouveng Blurb--
+
+--images to be added by Val and video pending #marketing--
+
+### A380X
 
 We know you are all waiting patiently on our A380X release, and while we cannot give timelines at the moment, we are very satisfied with the progress being made.
 
-We are aiming to release an aircraft with entirely custom systems, with no reliance whatsoever on a default FMC. You can expect a lot of the same accuracy we are developing in the A320 to transfer over to the A380, with of course a correct implementation for the unique characteristics of the largest passenger aircraft in the world.
+We are aiming to release an aircraft with entirely custom systems, with no reliance whatsoever on a default FMC. You can expect a lot of the same accuracy we are developing in the A32NX to transfer over to the A380X, with of course a correct implementation for the unique characteristics of the largest passenger aircraft in the world.
 
 This includes an entirely re-written FMS, with support for every possible path type, RNP procedures, FLS, RNAV and vertical predictions/guidance.
 
