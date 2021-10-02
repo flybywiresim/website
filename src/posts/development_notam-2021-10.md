@@ -10,7 +10,7 @@ metaAlt: 'FlyByWire Simulations'
   
 ## Overview
 
-We hope you are enjoying our latest [Stable Release v0.7.0](https://docs.flybywiresim.com/release-notes/v070/). Work on our custom FMS proceeds apace and we hope to roll the feature into development as soon as we iron out all the leftover bugs. We have some exciting features planned ahead for everyone and would also like to share some insight into the inner workings of our development process. Read on below!
+We hope you are enjoying our latest [Stable Release v0.7.0](https://docs.flybywiresim.com/release-notes/v070/). Work on our custom FMS proceeds apace and we hope to include it into our development version as soon as we iron out all the leftover bugs. We have some exciting features planned ahead for everyone and would also like to share some insight into the inner workings of our development process. Read on below!
 
 - Development Process
 - EFIS Filters and FIX INFO
@@ -40,11 +40,11 @@ Once on our GitHub you can see our code base and more importantly our "pull requ
 
 We sometimes see questions on why we release updates or progress on certain features instead of a feature that many of you are excited about. 
 
-Everyone at FlyByWire Simulations is a volunteer. With parallel development we can have different people working on various features simultaneously. Simply put, we can have someone who is great at working with lights or sounds complete their work ahead of the people working hard on systems such as LNAV/VNAV. When it comes to developing such a complex aircraft parallel development comes naturally leading to accelerated development and inclusion of new features.
+Everyone at FlyByWire Simulations is a volunteer. With parallel development we can have different people working on various features simultaneously. Simply put, we can have someone who is great at working with lights or sounds complete their work ahead of the people working hard on systems such as LNAV/VNAV. When it comes to developing such a complex aircraft parallel development comes naturally, leading to accelerated development and the inclusion of many new features.
 
 ### Quality Assurance Teams
 
-While possibly unknown to a lot of our user base we actually have dedicated QA testers also working in their free time to test every feature before they are released to the public on our Stable or Development branches. We are immeasurably grateful to these folk for giving their time to following our testing instructions and providing feedback to our developers.
+While possibly unknown to a lot of our user base we actually have a team of dedicated QA testers also working in their free time to test every feature before they are released to the public on our Stable or Development branches. We are immeasurably grateful to these folk for giving their time to following our testing instructions and providing feedback to our developers.
 
 If you'd like to know more about our QA process we have a handy guide on our documentation site and just maybe you'd be interested in joining our QA ranks.
 
