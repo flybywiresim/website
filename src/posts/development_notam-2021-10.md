@@ -98,7 +98,41 @@ This code is going to be ported both to the A320 and A220 by Synaptic. It will e
 
 ### State of Hydraulics
 
-Awaiting Davy Blurb
+What’s up with hydraulics!?
+
+Maybe you noticed something new when opening cargo door? The default animation was not really satisfying. While it may seem we updated the animation with a more realistic one, this is not really what’s going on under the hood.
+
+In fact, the door is now a physical body that is free to move as you probably saw in a previous demo video flying with the opened door. We now added fully simulated hydraulic actuators, that can move those heavy loads using hydraulic pressure.
+
+#### How is this done?
+
+We first build the actuator using real life dimensions:
+
+![hydraulic 1](/img/notam-images/sept/hydraulics-1.png)
+
+This will enable us to compute the exact force vs pressure relation, but also the fluid reservoir variations due to internal volume asymmetry from extended to retracted position. In fact, when gears are retracted in flight, you’ll see how much green hydraulic fluid is missing on that reservoir level on ECAM screen! 
+
+Then actuator is connected to the free moving body using the real-life positions of the anchor point to plane structure, and control arm of the moving body.
+
+![hydraulic 2](/img/notam-images/sept/hydraulics-2.png)
+
+Now that all parts are connected, the fun begins!  Pressure in the hydraulic system will provide force, and the pumps of the system will provide hydraulic flow. The final power you get to move all those control surfaces is nothing but the constant dance between pressure and flow. When you see that cargo door oscillating when it’s opening, there’s no animation: it’s just hydraulics coming to life, while fast pressure changes from control valves opening cause flow oscillations in the system.
+
+This is just a cargo door, but keep in mind the same things are happening in a gear system or aileron control. Soon you’ll love to see that main gear oscillating when retracting…. Or being able to use gravity to save the day!
+
+[INSERT GEAR SWING SCRIPT ANIMATION]
+
+#### What’s next?
+
+A big overhaul step is being done right now on the core hydraulic system. This will bring separate hydraulic sections communicating with check valves. And will be able to simulate hydraulic systems of a certain famous 4-engine plane.
+
+- Electric pumps will get a physical electric current real time regulation, so we hope you’ll hear the difference. Let’s hope we don’t burn the circuit breaker.
+- Power Transfer Unit current simple flow model will get a physical model with real time physics that will replicate those well known dog barks, but also the crazy growling sounds of a slow constant PTU rotation during gear or flap activations with limited pump capacities.
+- Current RAT simple model will get improvements and will provide hydraulic flow to a fully simulated emergency generator.
+- Finally, all control surfaces will eventually be connected to the system and provide true to life behaviour.
+
+If everything is done the right way you should not see any difference!
+After everything comes together with all these little things simulated in the background, when it comes to failures, the difference should be massive and play with your nerves!
 
 ### Exterior Lighting Overhaul
 
