@@ -78,9 +78,9 @@ As you all know, we have introduced in our experimental branch a new FMS based p
 
 This new system is already in use in the A380X previews we showed you earlier this month, so you can check out part of its capabilities here:
 
-https://www.youtube.com/watch?v=f-AaNFihJAw
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f-AaNFihJAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-https://www.youtube.com/watch?v=roI7vTbCH1I
+<iframe width="560" height="315" src="https://www.youtube.com/embed/roI7vTbCH1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 This code is going to be ported both to the A320 and A220 by Synaptic. It will eventually enable the following features:
 
