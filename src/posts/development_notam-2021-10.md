@@ -25,14 +25,20 @@ We hope you are enjoying our latest [Stable Release v0.7.0](https://docs.flybywi
 
 ### Philosophy
 
-For close to a year now our growing core team and over 170 contributors have given their free time to create complex systems integrations and realistic features entirely from scratch. Our core principle is to maintain professional standards and industry-wide best practices delivering high-quality, tested products. We don't believe in intermediary measures in relation to our custom systems and strive to provide a complete interpretation of a working feature. Unlike other aircraft or products you can take a deep dive into our code on GitHub and see for yourself - and maybe stick around, help us out, or even start your own project!
+For close to a year now our growing core team and over 170 contributors have given their free time to create complex systems integrations and realistic features entirely from scratch. Our core principle is to maintain professional standards and industry-wide best practices delivering high-quality, tested products. We always strive to provide a complete interpretation of a working feature. Unlike most other addons you can take a deep dive into our code on GitHub and see for yourself - and maybe stick around, help us out, or even start your own project!
 
-Once on our GitHub you can see our code base and more importantly our "pull requests" which are essentially features, fixes, or changes to the A32NX. Each pull request is created by a core member or an outside contributor interested in creating something for our addon. Before any pull request is ever available to the public we ensure it follows this general process:
+Once on our GitHub you can see our code base and more importantly our "pull requests" which are essentially features, fixes, or changes to the A32NX. Before any feature is ever available to the public we ensure it follows this general process:
 
 - Has documentation and is available on the IRL A320neo.
 - Code review.
 - Any pilot or engineer feedback.
 - Rounds of QA testing to identify issues.
+
+### Parallel Development
+
+We sometimes see questions on why we release updates or progress on certain features instead of a feature that many of you are excited about. 
+
+Everyone at FlyByWire Simulations is a volunteer. With parallel development we can have different people working on various features simultaneously. Simply put, we can have someone who is great at working with lights or sounds complete their work ahead of the people working hard on systems such as LNAV/VNAV. When it comes to developing such a complex aircraft parallel development comes naturally leading to accelerated development and inclusion of new features.
 
 ### Quality Assurance Teams
 
