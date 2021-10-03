@@ -3,8 +3,11 @@ title: 'Development Updates September 2021'
 date: 'Pending'
 authors:
   - 'Valastiri'
+  - 'Holland'
+  - 'Davy'
+  - 'Bouveng'
 category: 'UPDATE'
-metaImage: '/img/a32nxwing.png'
+metaImage: '/img/a380x.jpg'
 metaAlt: 'FlyByWire Simulations'
 ---
   
@@ -83,7 +86,7 @@ The A32NX now comes with ARINC 429 communications between some of its systems. W
 
 ### New New Flight Plan Manager
 
-As you all know, we have introduced in our experimental branch a new FMS based partly on the Working Title flight plan manager. While this brings a big improvement on its own, it's only the first step in achieving a system that has the same behaviour and design as the real deal. Our current version of the custom FMS does an additional layer of mapping to leg-form flight plans on top of the WT system, which works with waypoint-form flight plans. This is not how the real aircraft works, so we have decided to team up with [Synaptic Simulations]() to develop a completely custom flight plan manager layer that works directly with leg-form flight plans.
+As you all know, we have introduced in our experimental branch a new FMS based partly on the Working Title flight plan manager. While this brings a big improvement on its own, it's only the first step in achieving a system that has the same behaviour and design as the real deal. Our current version of the custom FMS does an additional layer of mapping to leg-form flight plans on top of the WT system, which works with waypoint-form flight plans. This is not how the real aircraft works, so we have decided to team up with [Synaptic Simulations](https://www.synapticsim.com/) to develop a completely custom flight plan manager layer that works directly with leg-form flight plans.
 
 This new system is already in use in the A380X previews we showed you earlier this month, so you can check out part of its capabilities here:
 
