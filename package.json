@@ -63,7 +63,7 @@
     "node-html-to-image": "^3.2.0",
     "postcss": "^8.2.10",
     "sass": "^1.42.1",
-    "tailwindcss": "^2.2.15",
+    "tailwindcss": "^2.2.16",
     "uuid": "^8.3.2"
   }
 }
