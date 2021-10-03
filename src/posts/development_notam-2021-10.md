@@ -40,7 +40,7 @@ Once on our GitHub you can see our code base and more importantly our "pull requ
 
 We sometimes see questions on why we release updates or progress on certain features instead of a feature that many of you are excited about. 
 
-Everyone at FlyByWire Simulations is a volunteer. With parallel development we can have different people working on various features simultaneously. Simply put, we can have someone who is great at working with lights or sounds complete their work ahead of the people working hard on systems such as LNAV/VNAV. When it comes to developing such a complex aircraft parallel development comes naturally, leading to accelerated development and the inclusion of many new features.
+Everyone at FlyByWire Simulations is a volunteer. With parallel development, we can have different people working on various features simultaneously. Simply put, we can have someone who is great at working with lights or sounds complete their work ahead of the people working hard on systems such as LNAV/VNAV. When it comes to developing such a complex aircraft parallel development comes naturally, leading to accelerated development and the inclusion of many new features.
 
 ### Quality Assurance Teams
 
@@ -136,9 +136,27 @@ After everything comes together with all these little things simulated in the ba
 
 ### Exterior Lighting Overhaul
 
---Awaiting Bouveng Blurb--
+Exterior lights are an important aspect of aviation providing the ability to see, to be seen and alert ground crew about aircraft movements. We have improved the visual aspects of the lights, added correct behavior and fixed a few issues.
 
-[Youtube Video Link Here]
+Working with lights in MSFS SDK is very inconvenient due to legacy api's, no good tools, and foremost that the lights are not "real" lights. They do not bounce, cast shadows or even accept geometry as a blocker. They only allow an illuminated surface to reflect other geometry.
+
+This means that lights, and how they look, needs to be handcrafted within those limits the SDK offers and allows.
+
+One example of this is the beacon lights, the red ones at the top and bottom of the fuselage. The complete visual appearance is no less than 14 individual lights in order to cast light realistically. For the landing lights, despite only consisting of two lights in real life, 11 individual ones are used to create a convincing effect.
+
+The strobes are also now synced with the beacon light according to the correct pattern. This was out of sync before and did not work as in real life. Another bonus with regard to strobe lights, is that they are now visible from all wing views, including custom ones, and even from the cockpit.
+
+![lights-illustration](/img/notam-images/sept/lights-illustration.jpg)
+
+The landing lights are now independent of each other, animate at the correct deployment speed and the light is not activated until landing light is fully deployed. Their range is increased and has a correct downward angle, to assist in illuminating the runway on approach.
+
+Nav lights now project at the correct angles and can only be seen within those angles. This is how you determine the travel direction of an airplane at night. Watch out for one red and one green at the same time, you might be in trouble!
+
+Lights will for sure be evolved in the future, when the SDK is expanded and perhaps include proper raytracing, a feature for DX12.
+
+#### Previews from the Simulator
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y2TqF6kyzLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ![lights-front](/img/notam-images/sept/lights-front.jpg)
 ![lights-wing1](/img/notam-images/sept/lights-wing1.jpg)
