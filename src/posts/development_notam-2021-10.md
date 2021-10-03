@@ -138,7 +138,15 @@ After everything comes together with all these little things simulated in the ba
 
 --Awaiting Bouveng Blurb--
 
---images to be added by Val and video pending #marketing--
+[Youtube Video Link Here]
+
+![lights-front](/img/notam-images/sept/lights-front.jpg)
+![lights-wing1](/img/notam-images/sept/lights-wing1.jpg)
+![lights-wing2](/img/notam-images/sept/lights-wing2.jpg)
+![lights-window](/img/notam-images/sept/lights-window.jpg)
+![lights-to](/img/notam-images/sept/lights-to.jpg)
+![lights-logo](/img/notam-images/sept/lights-logo.jpg)
+![beacon](/img/notam-images/sept/beacon.jpg)
 
 ### A380X
 
