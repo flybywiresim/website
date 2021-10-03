@@ -62,7 +62,8 @@ This feature is now accurately modelled, with proper word transmission limit res
 
 One new feature also introduces itself - FIX INFO! This long-awaited functionality allows users to input fix radials or radii on the LAT REV page of the MCDU flight plan display, and displays the appropriate markers for those elements on the ND.
 
-...fix info image...
+Sample FIX INFO image showcasing a 33NM radius ring from CROWY providing a visual aide for TOD from FL370 to FL260.
+![fix info](/img/notam-images/sept/fixinfo.jpg)
 
 ### TCAS
 
