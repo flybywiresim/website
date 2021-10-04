@@ -74,7 +74,7 @@ This feature is now accurately modelled, with proper word transmission limit res
 
 One new feature also introduces itself - FIX INFO! This long-awaited functionality allows users to input fix radials or radii on the LAT REV page of the MCDU flight plan display, and displays the appropriate markers for those elements on the ND.
 
-Sample FIX INFO image showcasing a 33NM radius ring from CROWY providing a visual aide for TOD from FL370 to FL260.
+Sample FIX INFO image showcasing a 33NM radius ring from CROWY providing a visual aid to assist with TOD planning from FL370 to FL260.
 ![fix info](/img/notam-images/sept/fixinfo.jpg)
 
 ### TCAS
@@ -89,10 +89,9 @@ Our implementation will eventually also include AUTO TCAS - allowing the plane's
 
 We often talk about going to great lengths to bring realism to the A32NX. This does not just apply to surface-level details - making a high-fidelity aircraft requires simulating details that are not documented in pilot training references.
 
-Part of this is the initial version of our ARINC 429 implementation. For those unaware, [ARINC 429](https://en.wikipedia.org/wiki/ARINC_429) is a data transfer standard used in many airliners which takes care of identifying, transporting and delivering data from and to various systems in the aircraft. It also ties in deeply with failure states on the A32NX - indeed, a lot of the logic involved in displaying the unavailability of information or detecting equipment faults relies on this protocol showing the correct failure indications on data labels.
+Part of this is the initial version of our ARINC 429 implementation on the development version. For those unaware, [ARINC 429](https://en.wikipedia.org/wiki/ARINC_429) is a data transfer standard used in many airliners which takes care of identifying, transporting and delivering data from and to various systems in the aircraft. It also ties in deeply with failure states on the A32NX - indeed, a lot of the logic involved in displaying the unavailability of information or detecting equipment faults relies on this protocol showing the correct failure indications on data labels.
 
 The A32NX now comes with ARINC 429 communications between some of its systems. While this is not tied to any visible effects for now, it lays a solid foundation for the work to come on abnormal operations and accurate display symbology in failure states.
-
 
 ### New New Flight Plan Manager
 
