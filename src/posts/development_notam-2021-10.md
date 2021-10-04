@@ -153,6 +153,7 @@ One example of this is the beacon lights, the red ones at the top and bottom of 
 The strobes are also now synced with the beacon light according to the correct pattern. This was out of sync before and did not work as in real life. Another bonus with regard to strobe lights, is that they are now visible from all wing views, including custom ones, and even from the cockpit.
 
 ![lights-illustration](/img/notam-images/sept/lights-illustration.jpg)
+<sub>Copyright © 2021 Collins Aerospace, UTC Aerospace Systems</sub>
 
 The landing lights are now independent of each other, animate at the correct deployment speed and the light is not activated until landing light is fully deployed. Their range is increased and has a correct downward angle, to assist in illuminating the runway on approach.
 
