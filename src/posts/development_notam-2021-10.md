@@ -146,6 +146,8 @@ Working with lights in MSFS SDK is very inconvenient due to legacy api's, no goo
 
 This means that lights, and how they look, needs to be handcrafted within those limits the SDK offers and allows.
 
+![beacon](/img/notam-images/sept/beacon.jpg)
+
 One example of this is the beacon lights, the red ones at the top and bottom of the fuselage. The complete visual appearance is no less than 14 individual lights in order to cast light realistically. For the landing lights, despite only consisting of two lights in real life, 11 individual ones are used to create a convincing effect.
 
 The strobes are also now synced with the beacon light according to the correct pattern. This was out of sync before and did not work as in real life. Another bonus with regard to strobe lights, is that they are now visible from all wing views, including custom ones, and even from the cockpit.
@@ -168,7 +170,6 @@ Lights will for sure be evolved in the future, when the SDK is expanded and perh
 ![lights-window](/img/notam-images/sept/lights-window.jpg)
 ![lights-to](/img/notam-images/sept/lights-to.jpg)
 ![lights-logo](/img/notam-images/sept/lights-logo.jpg)
-![beacon](/img/notam-images/sept/beacon.jpg)
 
 ### A380X
 
