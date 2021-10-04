@@ -16,13 +16,14 @@ metaAlt: 'FlyByWire Simulations'
 We hope you are enjoying our latest [Stable Release v0.7.0](https://docs.flybywiresim.com/release-notes/v070/). Work on our custom FMS proceeds apace and we hope to include it into our development version as soon as we iron out all the leftover bugs. We have some exciting features planned ahead for everyone and would also like to share some insight into the inner workings of our development process. Read on below!
 
 - Development Process
+- Improved Autopilot Speed/Mach Mode
 - EFIS Filters and FIX INFO
 - TCAS
 - ARINC 429
 - New New Flight Plan Manager
 - State of Hydraulics
 - Exterior Lighting Overhaul
-- A380X Progress
+- A380X Progress- A380X Progress
 
 ---
 
@@ -30,32 +31,40 @@ We hope you are enjoying our latest [Stable Release v0.7.0](https://docs.flybywi
 
 ### Philosophy
 
-For close to a year now our growing core team and over 170 contributors have given their free time to create complex systems integrations and realistic features entirely from scratch. Our core principle is to maintain professional standards and industry-wide best practices delivering high-quality, tested products. We always strive to provide a complete interpretation of a working feature. Unlike most other addons you can take a deep dive into our code on GitHub and see for yourself - and maybe stick around, help us out, or even start your own project!
+For more than a year now over 170 contributors, including our growing core team, have given their free time to create complex systems integrations and realistic features entirely from scratch. Our core principle is to maintain professional standards and adhere to industry-wide best practices delivering high-quality, rigorously-tested products. We always strive to simulate a working feature to the maximum extent possible. Unlike most other addons you can take a deep dive into our code on GitHub and see for yourself - and maybe stick around, help us out, or even start your own project!
 
 Once on our GitHub you can see our code base and more importantly our "pull requests" which are essentially features, fixes, or changes to the A32NX. Before any feature is ever available to the public we ensure it follows this general process:
 
-- Has documentation and is available on the IRL A320neo.
-- Code review.
-- Any pilot or engineer feedback.
-- Rounds of QA testing to identify issues.
+- Has documentation and is available on the IRL A320neo
+- Code review
+- Pilot or engineer feedback (if applicable)
+- Rounds of QA testing to identify issues
 
 ### Parallel Development
 
-We sometimes see questions on why we release updates or progress on certain features instead of a feature that many of you are excited about. 
+We often see questions on why we release updates or progress on certain features instead of a feature that many of you are excited about.
 
 Everyone at FlyByWire Simulations is a volunteer. With parallel development, we can have different people working on various features simultaneously. Simply put, we can have someone who is great at working with lights or sounds complete their work ahead of the people working hard on systems such as LNAV/VNAV. When it comes to developing such a complex aircraft parallel development comes naturally, leading to accelerated development and the inclusion of many new features.
 
 ### Quality Assurance Teams
 
-While possibly unknown to a lot of our user base we actually have a team of dedicated QA testers also working in their free time to test every feature before they are released to the public on our Stable or Development branches. We are immeasurably grateful to these folk for giving their time to following our testing instructions and providing feedback to our developers.
+While possibly unknown to some of our user base we actually have a team of dedicated QA testers also working in their free time to test every feature before they are released to the public on our Stable or Development branches. We are immeasurably grateful to these people for giving their time to following our testing instructions and providing feedback to our developers.
 
-If you'd like to know more about our QA process we have a handy guide on our documentation site and just maybe you'd be interested in joining our QA ranks.
+If you'd like to know more about our QA process we have a handy guide on our documentation site. Who knows, you may even be interested in joining our QA ranks.
 
 [Quality Assurance Documentation](https://docs.flybywiresim.com/dev-corner/qa-process/)
 
 ---
 
 ## Development Updates
+
+### Improved Autopilot Speed/Mach Mode
+
+The new Speed/Mach law on the experimental and development versions introduces improved pitching behaviour, more realistic flight characteristics in turbulent weather as well as smoother speed and altitude changes during climb and descent through more accurate energy angle estimation.
+
+In Open Climb Mode (OP CLB on the FMA) or Open Descend Mode (OP DES on the FMA), the A320neo performs energy angle control. Energy angle describes the distribution between kinetic and potential energy. The plane’s energy is distributed such that the ratio between kinetic energy and potential energy remains constant during speed changes in climb or descent. During climb, the aircraft uses its total energy both for climbing and acceleration or deceleration. During descent, the aircraft would continue to descend while decelerating at the same time. In the following video, you can take a closer look at the behaviour.
+
+https://streamable.com/cwmh09
 
 ### EFIS Filters and FIX INFO
 
@@ -78,17 +87,18 @@ Our implementation will eventually also include AUTO TCAS - allowing the plane's
 
 ### ARINC 429
 
-We often talk about going to new lengths to bring extreme realism to the aircraft. This does not only apply to surface-level details, far from it; making a high-fidelity aircraft requires in-depth systems with simulation of details that are not documented in pilot training.
+We often talk about going to great lengths to bring realism to the A32NX. This does not just apply to surface-level details - making a high-fidelity aircraft requires simulating details that are not documented in pilot training references.
 
-Part of this is our initial version of the ARINC 429 implementation. For those unaware, [ARINC 429](https://en.wikipedia.org/wiki/ARINC_429) is a data transfer standard used in many airliners. It takes care of identifying, transporting and delivering data from and to various systems in the aircraft. It also ties in deeply with failure states on the A320 - indeed, a lot of the logic involved in displaying the unavailability of information or detecting faults in equipment relies on this protocol showing the correct failure indications on data labels.
+Part of this is the initial version of our ARINC 429 implementation. For those unaware, [ARINC 429](https://en.wikipedia.org/wiki/ARINC_429) is a data transfer standard used in many airliners which takes care of identifying, transporting and delivering data from and to various systems in the aircraft. It also ties in deeply with failure states on the A32NX - indeed, a lot of the logic involved in displaying the unavailability of information or detecting equipment faults relies on this protocol showing the correct failure indications on data labels.
 
 The A32NX now comes with ARINC 429 communications between some of its systems. While this is not tied to any visible effects for now, it lays a solid foundation for the work to come on abnormal operations and accurate display symbology in failure states.
 
+
 ### New New Flight Plan Manager
 
-As you all know, we have introduced in our experimental branch a new FMS based partly on the Working Title flight plan manager. While this brings a big improvement on its own, it's only the first step in achieving a system that has the same behaviour and design as the real deal. Our current version of the custom FMS does an additional layer of mapping to leg-form flight plans on top of the WT system, which works with waypoint-form flight plans. This is not how the real aircraft works, so we have decided to team up with [Synaptic Simulations](https://www.synapticsim.com/) to develop a completely custom flight plan manager layer that works directly with leg-form flight plans.
+As you all know, we have introduced a new FMS in our experimental branch, which is partly based on the Working Title flight plan manager. While this brings a big improvement on its own, it's only the first step in achieving a system that has the same behaviour and systems design as the real deal. Our current version of the custom FMS does an additional layer of mapping to leg-form flight plans on top of the WT system, which works with waypoint-form flight plans. This is not how the real aircraft works, so we teamed up with [Synaptic Simulations](https://synapticsim.com/) to develop a completely custom flight plan manager layer that works directly with leg-form flight plans.
 
-This new system is already in use in the A380X previews we showed you earlier this month, so you can check out part of its capabilities here:
+This new system is already in use in the A380X previews we showed you earlier last month, so you can check out part of its capabilities here:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/f-AaNFihJAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -98,7 +108,7 @@ This code is going to be ported both to the A320 and A220 by Synaptic. It will e
 
 - Support for all leg types (including holding patterns, intercepts).
 - Support for realistic DIR TO revisions (DF legs, W/ ABEAM, RADIAL IN/OUT).
-- Extremely accurate flight path computation, using exclusive knowledge and insight into the A320 FMS.
+- Highly accurate flight path computation, using exclusive in-depth information and insight into the A320 FMS.
 
 ### State of Hydraulics
 
