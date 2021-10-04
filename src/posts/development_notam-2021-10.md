@@ -77,9 +77,7 @@ Sample FIX INFO image showcasing a 33NM radius ring from CROWY providing a visua
 
 ### TCAS
 
-Another anticipated feature is TCAS (Traffic Collision Avoidance System). We have implemented TCAS 7.1, a first among all Airbus simulation addons. This includes a new TA/RA voice and XYZ plz add features here kthxbye.
-
-...TCAS images bruhegg....
+Another anticipated feature is TCAS (Traffic Collision Avoidance System). We aim to implement TCAS 7.1, a first among all Airbus simulation addons. This includes a new TA/RA voice and other features.
 
 Our implementation will eventually also include AUTO TCAS - allowing the plane's autopilot to obey resolution advisories for the pilot if no intervention happens, through a new TCAS vertical mode. However, we are not quite ready to show this off yet, as it requires a new law in our autopilot model. More news on that soon!
 
