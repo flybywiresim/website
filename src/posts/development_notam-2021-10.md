@@ -68,11 +68,9 @@ https://streamable.com/cwmh09
 
 ### EFIS Filters and FIX INFO
 
-Our custom ND has received one of the last missing features compared to the development version - EFIS filters!
+Our custom ND now features EFIS filters, bringing it ever closer to its real-life counterpart. Included is a proper word transmission limit implementation, causing the ND to display a `MAP PARTLY DISPLAYED` message when the amount of data being transmitted and displayed has reached the limit. Furthermore, it can now draw runway symbols following technical specifications.
 
-This feature is now accurately modelled, with proper word transmission limit resulting in a `MAP PARTLY DISPLAYED` message when the maximum amount of data is transmitted. We can also now draw runway symbols closer to technical specifications.
-
-One new feature also introduces itself - FIX INFO! This long-awaited functionality allows users to input fix radials or radii on the LAT REV page of the MCDU flight plan display, and displays the appropriate markers for those elements on the ND.
+We have also added the FIX INFO feature, a long-awaited functionality which allows users to input fix radials or radii on the LAT REV page of the MCDU flight plan display and displays the appropriate markers for those elements on the ND.
 
 Sample FIX INFO image showcasing a 33NM radius ring from CROWY providing a visual aid to assist with TOD planning from FL370 to FL260.
 ![fix info](/img/notam-images/sept/fixinfo.jpg)
