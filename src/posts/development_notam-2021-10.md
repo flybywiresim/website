@@ -64,7 +64,7 @@ The new Speed/Mach law on the experimental and development versions introduces i
 
 In Open Climb Mode (OP CLB on the FMA) or Open Descend Mode (OP DES on the FMA), the A320neo performs energy angle control. Energy angle describes the distribution between kinetic and potential energy. The plane’s energy is distributed such that the ratio between kinetic energy and potential energy remains constant during speed changes in climb or descent. During climb, the aircraft uses its total energy both for climbing and acceleration or deceleration. During descent, the aircraft would continue to descend while decelerating at the same time. In the following video, you can take a closer look at the behaviour.
 
-https://streamable.com/cwmh09
+[See it in Action!](https://streamable.com/cwmh09)
 
 ### EFIS Filters and FIX INFO
 
