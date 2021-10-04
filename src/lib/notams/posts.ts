@@ -36,7 +36,7 @@ export const getPostContent = async (id: string): Promise<PostContent> => {
 
     const metadata = { ...matterResult.data };
 
-    const processedContent = await remark().use(html).process(matterResult.content);
+    const processedContent = await remark().use(html, { sanitize: false }).process(matterResult.content);
 
     const contentHtml = processedContent.toString();
 
