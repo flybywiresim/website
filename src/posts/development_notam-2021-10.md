@@ -1,11 +1,13 @@
 ---
 title: 'Development Updates September 2021'
-date: 'Pending'
+date: '2021-10-05'
 authors:
   - 'Valastiri'
   - 'Holland'
   - 'Davy'
   - 'Bouveng'
+  - 'Ibrahim'
+  - 'Kevin'
 category: 'UPDATE'
 metaImage: '/img/a380x.jpg'
 metaAlt: 'FlyByWire Simulations'
@@ -140,26 +142,24 @@ In normal situations, you will not notice any difference. Here’s the exciting 
 
 ### Exterior Lighting Overhaul
 
-Exterior lights are an important aspect of aviation providing the ability to see, to be seen and alert ground crew about aircraft movements. We have improved the visual aspects of the lights, added correct behavior and fixed a few issues.
+We have improved the visual appearance of the lights, added correct behavior and fixed a few issues.
 
-Working with lights in MSFS SDK is very inconvenient due to legacy api's, no good tools, and foremost that the lights are not "real" lights. They do not bounce, cast shadows or even accept geometry as a blocker. They only allow an illuminated surface to reflect other geometry.
-
-This means that lights, and how they look, needs to be handcrafted within those limits the SDK offers and allows.
+Working with lights in the MSFS SDK is very inconvenient due to legacy APIs, the lack of good tools, and poorly-implemented light physics. They do not bounce, cast shadows or even accept geometry as a blocker. They only allow an illuminated surface to reflect other geometry. This means that lights, and how they look, need to be handcrafted within SDK limits. This means that lights, and how they look, needs to be handcrafted within those limits the SDK offers and allows.
 
 ![beacon](/img/notam-images/sept/beacon.jpg)
 
-One example of this is the beacon lights, the red ones at the top and bottom of the fuselage. The complete visual appearance is no less than 14 individual lights in order to cast light realistically. For the landing lights, despite only consisting of two lights in real life, 11 individual ones are used to create a convincing effect.
+One example of this is the beacon lights, the red ones at the top and bottom of the fuselage - we used 14 individual lights in order to cast light realistically. For the landing lights, despite only consisting of two lights in real life, we had to use 11 individual lights to create a convincing effect.
 
-The strobes are also now synced with the beacon light according to the correct pattern. This was out of sync before and did not work as in real life. Another bonus with regard to strobe lights, is that they are now visible from all wing views, including custom ones, and even from the cockpit.
+Moreover, the strobe lights are now synced with the beacon light according to the real-life blinking pattern, whereas this was not the case before. In addition, the strobe lights are now visible from all wing views (including custom ones) and the cockpit.
 
 ![lights-illustration](/img/notam-images/sept/lights-illustration.jpg)
 <sub>Copyright © 2021 Collins Aerospace, UTC Aerospace Systems</sub>
 
-The landing lights are now independent of each other, animate at the correct deployment speed and the light is not activated until landing light is fully deployed. Their range is increased and has a correct downward angle, to assist in illuminating the runway on approach.
+The landing lights extend or retract at the correct speed, will not light up until they are fully deployed and are now independent of each other. They are also angled correctly (slightly downwards) to illuminate the runway on approach and their range has increased.
 
 Nav lights now project at the correct angles and can only be seen within those angles. This is how you determine the travel direction of an airplane at night. Watch out for one red and one green at the same time, you might be in trouble!
 
-Lights will for sure be evolved in the future, when the SDK is expanded and perhaps include proper raytracing, a feature for DX12.
+Even with all these changes, the A32NX lights will continue to be improved upon when the SDK is expanded and perhaps include proper raytracing, a DX12 feature.
 
 #### Previews from the Simulator
 
