@@ -13,7 +13,7 @@ export const A320Header = () => {
     return (
         <header>
             <video
-                className="object-cover fixed w-screen h-screen opacity-10 -z-10"
+                className="object-cover fixed -z-10 w-screen h-screen opacity-10"
                 src="https://cdn.flybywiresim.com/assets/website/video/A32NX.mp4"
                 playsInline
                 autoPlay

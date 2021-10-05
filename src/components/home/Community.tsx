@@ -22,7 +22,7 @@ const Statistic = (props: {statCount: string, statName: string}) => (
     </div>
 );
 
-export function Community(): JSX.Element {
+export const Community = () => {
     const [liveFlights, setLiveFlights] = useState('0');
     const [commitCount, setCommitCount] = useState('0');
     const [contributorCount, setContributorCount] = useState('0');
@@ -94,4 +94,4 @@ export function Community(): JSX.Element {
             </div>
         </section>
     );
-}
+};
