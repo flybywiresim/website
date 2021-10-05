@@ -53,7 +53,7 @@ const Tos = () => {
                     </a>
                 </div>
 
-                <div className="mt-10 ">
+                <div className=" mt-10">
                     <h1 className="text-4xl font-semibold text-blue-light-contrast">Minimum Age Requirement</h1>
                     <p className="mt-4 text-xl font-light leading-9">
                         To protect the privacy of younger people it is very important that we implement an age restriction of

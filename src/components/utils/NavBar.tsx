@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { NavLinks } from './NavLinks';
 import Container from './Container';
 
-export function NavBar(): JSX.Element {
+export const NavBar = () => {
     const [scroll, setScroll] = useState(false);
     useEffect(() => {
         const scrollHandler = () => {
@@ -55,4 +55,4 @@ export function NavBar(): JSX.Element {
             <div className={`absolute w-full h-screen ${!isOpen && 'hidden'}`} />
         </nav>
     );
-}
+};

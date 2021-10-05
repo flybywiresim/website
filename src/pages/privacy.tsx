@@ -54,7 +54,7 @@ const Privacy = () => {
                         <p>Download</p>
                     </a>
                 </div>
-                <div className="mt-10 ">
+                <div className=" mt-10">
                     <h1 className="text-4xl font-semibold text-blue-light-contrast">What information do we collect?</h1>
                     <div className="mt-4 text-xl font-light leading-9">
                         <p>We may collect, store and use the following kinds of personal data:</p>
