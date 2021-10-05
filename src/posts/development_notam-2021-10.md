@@ -77,6 +77,8 @@ We have also added the FIX INFO feature, a long-awaited functionality which allo
 Sample FIX INFO image showcasing a 33NM radius ring from CROWY providing a visual aid to assist with TOD planning from FL370 to FL260.
 ![fix info](/img/notam-images/sept/fixinfo.jpg)
 
+Read more - [Fix Info Feature Documentation](https://docs.flybywiresim.com/fbw-a32nx/feature-guides/fixinfo/)
+
 ### TCAS
 
 Another anticipated feature is TCAS (Traffic Collision Avoidance System). We aim to implement TCAS 7.1, a first among all Airbus simulation addons. This includes a new TA/RA voice and other features.
