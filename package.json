@@ -41,7 +41,7 @@
     ]
   },
   "devDependencies": {
-    "@flybywiresim/eslint-config": "~0.1.0",
+    "@flybywiresim/eslint-config": "~0.2.2",
     "@flybywiresim/tailwind-config": "~0.5.0",
     "@tailwindcss/typography": "^0.4.1",
     "@testing-library/jest-dom": "^5.12.0",
