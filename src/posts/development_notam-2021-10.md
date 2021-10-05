@@ -66,7 +66,7 @@ The new Speed/Mach law on the experimental and development versions introduces i
 
 In Open Climb Mode (OP CLB on the FMA) or Open Descend Mode (OP DES on the FMA), the A320neo performs energy angle control. Energy angle describes the distribution between kinetic and potential energy. The plane’s energy is distributed such that the ratio between kinetic energy and potential energy remains constant during speed changes in climb or descent. During climb, the aircraft uses its total energy both for climbing and acceleration or deceleration. During descent, the aircraft would continue to descend while decelerating at the same time. In the following video, you can take a closer look at the behaviour.
 
-[See it in Action!](https://streamable.com/cwmh09)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Wydne11lydA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### EFIS Filters and FIX INFO
 
@@ -98,7 +98,7 @@ As you all know, we have introduced a new FMS in our experimental branch, which 
 This new system is already in use in the A380X previews we showed you earlier last month, so you can check out part of its capabilities here:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/f-AaNFihJAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<br></br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/roI7vTbCH1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 This code is going to be ported both to the A320 and A220 by Synaptic. It will eventually enable the following features:
