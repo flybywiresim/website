@@ -32,6 +32,10 @@
   p {
     @apply text-xl
   }
+
+  iframe {
+    @apply my-2
+  }
 }
 
 @tailwind components;
