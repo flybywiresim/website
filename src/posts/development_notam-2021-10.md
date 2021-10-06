@@ -146,7 +146,7 @@ In normal situations, you will not notice any difference. Here’s the exciting 
 
 We have improved the visual appearance of the lights, added correct behavior and fixed a few issues.
 
-Working with lights in the MSFS SDK is very inconvenient due to legacy APIs, the lack of good tools, and poorly-implemented light physics. They do not bounce, cast shadows or even accept geometry as a blocker. They only allow an illuminated surface to reflect other geometry. This means that lights, and how they look, need to be handcrafted within SDK limits. This means that lights, and how they look, needs to be handcrafted within those limits the SDK offers and allows.
+Working with lights in the MSFS SDK is very inconvenient due to legacy APIs, the lack of good tools, and poorly-implemented light physics. They do not bounce, cast shadows or even accept geometry as a blocker. They only allow an illuminated surface to reflect other geometry. This means that lights, and how they look, need to be handcrafted within SDK limits.
 
 ![beacon](/img/notam-images/sept/beacon.jpg)
 
