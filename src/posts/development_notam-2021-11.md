@@ -12,6 +12,10 @@ metaAlt: 'FlyByWire Simulations'
 
 Lorem ipsum
 
+- Cockpit Ambiance Lighting
+
+## Cockpit Ambiance Lighting
+
 ## General Information
 
 Stay up to date with information from FlyByWire Simulations by following our social media!
