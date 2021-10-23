@@ -5,7 +5,7 @@ export const Features = () => (
                 Features
             </p>
             <p className="pt-5 text-xl text-center">
-                The volunteers in our community work hard around the clock to consistently bring new features and improve the default A320.
+                The volunteers in our community work hard around the clock to consistently bring new features and create the best A320neo possible.
                 Let&apos;s take a look at some of the features the A32NX has to offer!
             </p>
         </div>
