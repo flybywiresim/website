@@ -59,7 +59,7 @@
     "eslint": "^7.32.0",
     "eslint-config-next": "^11.1.2",
     "eslint-plugin-react": "^7.26.1",
-    "eslint-plugin-tailwindcss": "^1.16.1",
+    "eslint-plugin-tailwindcss": "^1.17.0",
     "node-html-to-image": "^3.2.0",
     "postcss": "^8.2.10",
     "sass": "^1.42.1",
