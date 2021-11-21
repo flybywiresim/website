@@ -18,8 +18,8 @@ This exciting update is only the beginning of what is to come - we are already d
 
 **Please note:** users currently on Stable or Development releases might notice some changes that affect how they interact with the FMS. We have prepared a documentation page for easing the transition, as well as a known issues page for this new system.
 
-- [Custom Flight Management System](#)
-- [Known Issues](#)
+- [Custom Flight Management System](https://docs.flybywiresim.com/fbw-a32nx/feature-guides/cFMS/)
+- [Known Issues](https://docs.flybywiresim.com/fbw-a32nx/feature-guides/cFMS/#known-issues)
 
 This effectively brings over the experimental branch to the Development version, which means we recommend users switch to the Development version as bug fixes and improvements towards this functionality will only happen there.
 
