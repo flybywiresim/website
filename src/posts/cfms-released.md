@@ -8,7 +8,7 @@ metaImage: '/img/a380x.jpg'
 metaAlt: 'FlyByWire Simulations'
 ---
 
-## Working Title
+## Overview
 
 After a lot of hard work, we have finally completed the first version of our custom FMS.
 
@@ -25,11 +25,26 @@ This effectively brings over the Experimental branch to the Development version,
 
 A huge thank you to the developers below for all the work put into this.
 
-- List of Developers Here (alphabetical)
+- 2hwk
+- AGuther
+- Aaryan
+- Beheh
+- BlueberryKing
+- DerL30N
+- Grinde
+- Holland
+- Iceman
+- Saschl
+- lukecologne
+- pareil6
+- tracernz
+- tyler58546
 
 ### Additional Information
 
+The experimental branch will be put on hold until the next major feature is ready for testing. We ask our users to switch to the development version to continue receiving the latest updates and fixes. 
 
+Our latest Stable Version 0.7.3 will be the last stable release with the default FMS from Asobo. If you require the default FMS for third-party compatibility please continue to use Stable v0.7.3. 
 
 ---
 
