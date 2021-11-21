@@ -3,8 +3,9 @@ title: 'Custom Flight Management System'
 date: 'Pending'
 authors:
   - 'Holland'
+  - 'Valastiri'
 category: 'UPDATE'
-metaImage: '/img/a380x.jpg'
+metaImage: '/img/rear_a32nx.jpg'
 metaAlt: 'FlyByWire Simulations'
 ---
 
