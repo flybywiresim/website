@@ -21,11 +21,15 @@ This exciting update is only the beginning of what is to come - we are already d
 - [Custom Flight Management System](https://docs.flybywiresim.com/fbw-a32nx/feature-guides/cFMS/)
 - [Known Issues](https://docs.flybywiresim.com/fbw-a32nx/feature-guides/cFMS/#known-issues)
 
-This effectively brings over the experimental branch to the Development version, which means we recommend users switch to the Development version as bug fixes and improvements towards this functionality will only happen there.
+This effectively brings over the Experimental branch to the Development version, which means we recommend users switch to the Development version as bug fixes and improvements towards this functionality will only happen there.
 
 A huge thank you to the developers below for all the work put into this.
 
 - List of Developers Here (alphabetical)
+
+### Additional Information
+
+
 
 ---
 
