@@ -1,9 +1,10 @@
 ---
 title: 'Custom Flight Management System'
-date: 'Pending'
+date: '2021-11-22'
 authors:
   - 'Holland'
   - 'Valastiri'
+  - 'Kevin'
 category: 'UPDATE'
 metaImage: '/img/rear_a32nx.jpg'
 metaAlt: 'FlyByWire Simulations'
@@ -13,9 +14,9 @@ metaAlt: 'FlyByWire Simulations'
 
 After a lot of hard work, we have finally completed the first version of our custom FMS.
 
-This update brings significantly more stable flight plan editing capabilities, support for RF and VM legs, entirely custom LNAV path prediction and guidance loops, a completely re-worked, 100% from scratch ND using extremely accurate data and references, going as far as replicating real-life symbol data limits and error messages.
+This update brings significantly more stable flight plan editing capabilities, support for RF and VM legs, entirely custom LNAV path prediction and guidance loops, as well as a completely re-worked, 100% from scratch ND using extremely accurate data and references, going as far as replicating real-life symbol data limits and error messages.
 
-This exciting update is only the beginning of what is to come - we are already doing heavy development of the second version of this system, which includes support for very long awaited features. More previews on this soon.
+This exciting update is only the beginning of what is to come. We are already doing heavy development of the second version of this system, which includes support for very long awaited features. More previews on this will come soon.
 
 **Please note:** users currently on Stable or Development releases might notice some changes that affect how they interact with the FMS. We have prepared a documentation page for easing the transition, as well as a known issues page for this new system.
 
@@ -45,13 +46,13 @@ A huge thank you to the developers below for all the work put into this.
 
 It is important to note that weather, terrain, and TCAS are not available yet with version 1 of our cFMS. Our current aim with these systems is to ensure performance, reliability, and accurate realistic simulation for our users over the default offering from Asobo. While we work on developing and including them in the A32NX, we are not satisfied with how the default code performs with our custom systems leading to a poor user/flight experience.
 
-We believe the benefits provided by our cFMS for performing flights outweighs the temporary outage of WX/TER/TCAS on the development version. We are already hard at work developing our TCAS system and we'll provide more details on it as soon as we can. Weather and terrain prove to be a challenge due to the lack of a native SDK API. We have posted about it on the MSFS forums where it currently sits at the top of the wishlist and Asobo is investigating how to best improve their API. 
+We believe the benefits provided by our cFMS for performing flights outweighs the temporary outage of WX/TER/TCAS on the development version. We are already hard at work developing our TCAS system and we'll provide more details on it as soon as we can. Weather and terrain still prove to be a challenge due to the lack of a native SDK API. We have posted about it on the MSFS forums where it currently sits at the top of the wishlist and Asobo is investigating how to best improve their API. 
 
 [Read more about weather and terrain API](https://forums.flightsimulator.com/t/implement-weather-and-terrain-api-s-for-aircraft-developers-to-implement-accurate-radar-predictive-windshear-egpws-and-metar-wind-uplink/442016).
 
 ### Additional Information
 
-The experimental branch will be put on hold until the next major feature is ready for testing. We ask our users to switch to the development version to continue receiving the latest updates and fixes. 
+The experimental branch is on hold until the next major feature is ready for testing. We ask our users to switch to the development version to continue receiving the latest updates and fixes. 
 
 Our latest Stable Version 0.7.3 will be the last stable release with the default FMS from Asobo. If you require the default FMS for third-party compatibility please continue to use Stable v0.7.3. 
 
