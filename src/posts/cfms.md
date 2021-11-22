@@ -31,7 +31,6 @@ A huge thank you to the developers below for all the work put into this.
 - AGuther
 - Aaryan
 - BehEh
-- BlueberryKing
 - DerL30N
 - Grinde
 - Holland
