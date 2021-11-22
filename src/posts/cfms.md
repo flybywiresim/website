@@ -30,7 +30,7 @@ A huge thank you to the developers below for all the work put into this.
 - 2hwk
 - AGuther
 - Aaryan
-- Beheh
+- BehEh
 - BlueberryKing
 - DerL30N
 - Grinde
