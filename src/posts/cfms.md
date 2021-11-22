@@ -12,7 +12,7 @@ metaAlt: 'FlyByWire Simulations'
 
 ## Overview
 
-After a lot of hard work, we have finally completed the first version of our custom FMS.
+After a lot of hard work, we have finally completed the first version of our custom FMS. We'd like to extend credit to the Working Title team as their code was the basis for cFMS version 1. 
 
 This update brings significantly more stable flight plan editing capabilities, support for RF and VM legs, entirely custom LNAV path prediction and guidance loops, as well as a completely re-worked, 100% from scratch ND using extremely accurate data and references, going as far as replicating real-life symbol data limits and error messages.
 
