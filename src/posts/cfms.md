@@ -23,7 +23,7 @@ This exciting update is only the beginning of what is to come. We are already do
 - [Custom Flight Management System](https://docs.flybywiresim.com/fbw-a32nx/feature-guides/cFMS/)
 - [Known Issues](https://docs.flybywiresim.com/fbw-a32nx/feature-guides/cFMS/#known-issues)
 
-This effectively brings over the Experimental branch to the Development version, which means we recommend users switch to the Development version as bug fixes and improvements towards this functionality will only happen there.
+This effectively brings over the Experimental branch to the Development version, which means we recommend users to switch to the Development version as bug fixes and improvements towards this functionality will only happen there.
 
 A huge thank you to the developers below for all the work put into this.
 
@@ -43,9 +43,9 @@ A huge thank you to the developers below for all the work put into this.
 
 ### WX/TER/TCAS
 
-It is important to note that weather, terrain, and TCAS are not available yet with version 1 of our cFMS. Our current aim with these systems is to ensure performance, reliability, and accurate realistic simulation for our users over the default offering from Asobo. While we work on developing and including them in the A32NX, we are not satisfied with how the default code performs with our custom systems leading to a poor user/flight experience.
+It is important to note that the weather and terrain radars, as well as TCAS, are not available yet with cFMS v1. Our current focus is to deliver a more realistic flight planning and navigation experience while maintaining performance and reliability. However, we are not satisfied with how the default code performs together with our custom systems.
 
-We believe the benefits provided by our cFMS for performing flights outweighs the temporary outage of WX/TER/TCAS on the development version. We are already hard at work developing our TCAS system and we'll provide more details on it as soon as we can. Weather and terrain still prove to be a challenge due to the lack of a native SDK API. We have posted about it on the MSFS forums where it currently sits at the top of the wishlist and Asobo is investigating how to best improve their API. 
+We believe the benefits that cFMS provides outweigh the temporary lack of WX/TERR/TCAS functionality on the development version. We are already hard at work developing our TCAS system and we will provide more details on it as soon as we can. Weather and terrain still prove to be a challenge due to the lack of a native SDK API. We have posted about it on the MSFS forums, where it currently sits at the top of the wishlist and Asobo are investigating how to best improve their API.
 
 [Read more about weather and terrain API](https://forums.flightsimulator.com/t/implement-weather-and-terrain-api-s-for-aircraft-developers-to-implement-accurate-radar-predictive-windshear-egpws-and-metar-wind-uplink/442016).
 
