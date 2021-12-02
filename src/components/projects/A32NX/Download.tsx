@@ -66,12 +66,12 @@ export const Download = () => {
                                         <Button className="float-right w-40 font-bold bg-blue-light-contrast hover:bg-blue-medium">Download</Button>
                                     </a>
                                 </div>
-                                <div className="flex flex-row justify-between items-center pt-5 mb-8">
+                                {/* <div className="flex flex-row justify-between items-center pt-5 mb-8">
                                     <span className="text-xl text-gray-300">Experimental Build</span>
                                     <a href={getDownloadLink(urls.exp)}>
                                         <Button className="float-right w-40 font-bold bg-blue-light-contrast hover:bg-blue-medium">Download</Button>
                                     </a>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
