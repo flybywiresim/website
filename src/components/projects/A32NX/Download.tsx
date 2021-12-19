@@ -1,6 +1,6 @@
 import { Button } from '../../utils/Button';
 
-export const Download = () => {
+export const Download = ({ expOnHold }: { expOnHold?: boolean }) => {
     const urls = {
         stable: 'https://flybywiresim-packages.b-cdn.net/stable/A32NX-stable.zip',
         dev: 'https://flybywiresim-packages.b-cdn.net/vmaster/A32NX-master.zip',
@@ -66,11 +66,24 @@ export const Download = () => {
                                         <Button className="float-right w-40 font-bold bg-blue-light-contrast hover:bg-blue-medium">Download</Button>
                                     </a>
                                 </div>
-                                <div className="flex flex-row justify-between items-center pt-5 mb-8">
-                                    <span className="text-xl text-gray-300">Experimental Build</span>
-                                    <a href={getDownloadLink(urls.exp)}>
-                                        <Button className="float-right w-40 font-bold bg-blue-light-contrast hover:bg-blue-medium">Download</Button>
-                                    </a>
+                                <div>
+                                    <div className="flex flex-row justify-between items-center pt-5 mb-8">
+                                        <span className="text-xl text-gray-300">Experimental Build</span>
+                                        <a href={expOnHold ? undefined : getDownloadLink(urls.exp)}>
+                                            <Button
+                                                className={`float-right w-40 font-bold bg-blue-light-contrast ${expOnHold ? 'opacity-30 cursor-not-allowed' : 'hover:bg-blue-medium'}`}
+                                            >
+                                                Download
+                                            </Button>
+                                        </a>
+                                    </div>
+                                    {expOnHold && (
+                                        <span className="flex-wrap mb-8 text-gray-300">
+                                            Our experimental branch is temporarily
+                                            <a href="https://docs.flybywiresim.com/fbw-a32nx/support/exp/" className="text-blue-light">&#32;on hold&#32;</a>
+                                            and all of its features have been moved to the development build.
+                                        </span>
+                                    )}
                                 </div>
                             </div>
                         </div>
