@@ -49,10 +49,10 @@ export const Community = () => {
         return () => clearInterval(interval);
     }, []);
     return (
-        <section className="flex flex-col justify-between items-center text-blue-dark-contrast bg-gray-50 lg:flex-row">
+        <section id="community" className="flex flex-col justify-between items-center text-blue-dark-contrast bg-gray-50 lg:flex-row">
             <Container className="flex flex-col py-12 max-w-6xl lg:px-24">
                 <span className="mb-3 w-24 h-2 bg-teal-light-contrast rounded-full" />
-                <h1>Community Insights</h1>
+                <h1 >Community Insights</h1>
                 <p className="max-w-prose text-gray-800">
                     Discover the extensive community behind every FlyByWire Simulations aircraft - a vibrant and active online group that prioritises collaborative work and openness.
                 </p>
