@@ -42,8 +42,8 @@
   },
   "devDependencies": {
     "@flybywiresim/eslint-config": "~0.2.2",
-    "@flybywiresim/tailwind-config": "~0.5.0",
-    "@tailwindcss/typography": "^0.4.1",
+    "@flybywiresim/tailwind-config": "^0.5.2",
+    "@tailwindcss/typography": "^0.5.0",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.2.1",
@@ -63,7 +63,7 @@
     "node-html-to-image": "^3.2.0",
     "postcss": "^8.2.10",
     "sass": "^1.45.1",
-    "tailwindcss": "^2.2.16",
+    "tailwindcss": "^3.0.15",
     "uuid": "^8.3.2"
   }
 }
