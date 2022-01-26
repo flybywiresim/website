@@ -5,14 +5,11 @@ const colors = require('tailwindcss/colors');
 const reactComponentsSafeList = require('@flybywiresim/react-components/build/usedCSSClasses.json');
 
 module.exports = {
-    mode: 'jit',
-    purge: {
-        options: { safelist: [...reactComponentsSafeList] },
-        content: [
-            './src/**/*.{js,ts,jsx,tsx}',
-            './node_modules/@flybywiresim/react-components/build/usedCSSClasses.json',
-        ],
-    },
+    content: [
+        './src/**/*.{js,ts,jsx,tsx}',
+        './node_modules/@flybywiresim/react-components/build/usedCSSClasses.json',
+    ],
+    safelist: [...reactComponentsSafeList],
     theme: {
         container: {
             center: true,
