@@ -80,6 +80,13 @@ Last but not least, it turned out that ATHR arming is related to SRS engagement.
 
 ### MCDU Web Interface
 
+We’ve recently launched a new feature that has seen incredible popularity amongst our users; the MCDU web interface. It provides a convenient and easy to use web connection to run the MCDU over a web browser on any computer located on your local network.
+
+You can read up on this new functionality here:
+[MCDU Web Interface Guide](https://docs.flybywiresim.com/fbw-a32nx/feature-guides/web-mcdu/)
+
+We have used this first development as a means of evaluating our strategy regarding custom instruments. We are currently working on developing custom high-speed protocols for offloading instrument rendering onto other programs or even other devices, over a network, to offer better possibilities for home cockpit integration.
+
 ### Nose Wheel Tiller
 
 ### Stored Waypoints
