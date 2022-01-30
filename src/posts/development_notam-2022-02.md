@@ -95,7 +95,22 @@ We have used this first development as a means of evaluating our strategy regard
 
 #### Discord Bot
 
+The FBW Discord bot is undergoing huge improvements with the upgrade to discord.js v13. While the Bot Development team works on the upgrade, it would be beneficial for more people to join the team so we can keep up with the regular workload of adding and updating commands to be used across the Discord server! If you are interested in helping out, please let us know in the #discord-bot channel, or contact the following users directly:
+
+- BenW#8484
+- █▀█ █▄█ ▀█▀#2123
+- oim#0001
+
 #### Documentation
+
+If you aren’t already aware we have a great documentation site for all of our projects that provides a wealth of knowledge for support, technical issues, A32NX feature guides, aircraft information, and systems information.
+
+The site is continuously updated and we fact check information with our pilots and developers for accuracy and to ensure we publish useful and education information. Our pilots corner section contains the [Beginners Guide](https://docs.flybywiresim.com/pilots-corner/beginner-guide/overview/) which should not be mistaken for only novice pilots as it contains relevant information on all of our implemented systems with the A32NX. We also have our [Interactive Flight Deck](https://docs.flybywiresim.com/pilots-corner/a32nx-briefing/flight-deck/) where you can click on any panel on board the aircraft and read more about a specific system.
+
+We hope you find our documentation site a great resource for all your flights with us at FBW. You can visit the website or learn how to contribute below.
+
+- [Documentation Site](https://docs.flybywiresim.com/)
+- [Contributing](https://docs.flybywiresim.com/dev-corner/development-projects/documentation/)
 
 ---
 
