@@ -17,6 +17,12 @@ metaAlt: 'FlyByWire Simulations'
 
 ## Overview
 
+2021 was a busy year at FlyByWire Simulations. Looking back at where we started and how far we have come we are immensely thankful for the support and journey all of you have participated in flying the A32NX. We love that the hard work our teams put into bringing you a realistic A320neo experience in MSFS culminates in thousands of flights tracked on our website daily.
+
+We’d like to take a moment to provide thanks and appreciation to all of our volunteer developers, marketing team, quality assurance testers, and the many outside contributions made to all aspects of the A32NX that have helped make this project into what it is. We are also entirely grateful for every type rated A320 pilot that stands by us to make sure we bring a quality product to the table.
+
+We have a lot in store for 2022 and this NOTAM is tailored to bring everyone up to speed with our latest development.
+
 ---
 
 ## Development Updates
@@ -27,17 +33,46 @@ metaAlt: 'FlyByWire Simulations'
 
 #### Lateral Navigation
 
-### Detailed info on cFMS v2
+### Detailed Info on cFMS v2
 
 ### VNAV
 
 ### FBW / AP / ATHR Improvements
 
+To provide you with a more realistic flight simulation experience, the FlyByWire team has performed various tests in a full flight simulator regarding fly-by-wire (FBW), autopilot (AP) as well as autothrust (ATHR). The results of these tests were used for a detailed adjustment of the AP, FBW and ATHR. The adjustments have also been verified from real A320 pilots and they resulted in significant improvements.
+
 #### Fly-By-Wire System
+
+For the fly-by-wire system we only adjusted the pitch law, only the pitch law was adjusted, as the roll and yaw laws were already close to the full flight simulator results.
+
+To be closer to the behavior in the full flight simulator, the achievable pitch rate at lower speeds has been increased. As a result, pitch law is now more sensitive in these scenarios. The recommended sensitivity for the pitch axis is now +/- 30% which also better mimics the increased force that is needed to hold the real sidestick full back or forward (to be noted the real sidestick has a 2-step force curve).
+
+Additionally, the pitch law has been adapted to compensate for speed changes and speed brakes more realistically. In theory, the aircraft would completely compensate for speed changes, but this is actually not the case.
+
+Real pilots gave positive feedback after these adjustments. During landing, about 1/3 sidestick pull is necessary during the flare mode (see the video below).
+
+[Video Here Requires Youtube]
 
 #### Autopilot
 
+The autopilot system has been improved in mode initiation and laws.
+
+Several changes have been made around the arming and engaging of ALT and ALT*. The conditions when ALT is arming or engaging have been reworked, ALT* is now inhibited 3 s after changing the FCU altitude and overshoots of the target altitude are now also covered in a realistic way.
+
+The target load factors that are used to guide the aircraft have now been separated for every law and situation. As an example, the V/S mode usually uses a load factor target of 0.05 g but in case of level off request it uses now 0.1 g.
+
+The improved Speed/Mach law is already presented in the NOTAM of September. The video in the NOTAM showed what would happen when there is no longer a sufficient thrust energy for a climb. In this case, the aircraft would descend and maintain speed. The Speed/Mach law has been extended with further edge cases. Further, the minimum vertical speed limitations in case of Open Descend (OP DES) or Open Climb (OP CLB) have been adjusted. For example, if the ATHR is turned off and manual full thrust is given, then the aircraft would continue to descend at a minimal rate, but still accelerate.
+
+It turned out that on a rejected take-off when putting thrust levers to idle, the modes SRS and RWY do not automatically disengage. To disengage them, both flight directors need to be turned off and on again. The HDG / TRK law has been improved in terms of bank angle limit for changes up to 10° in course. Finally, for Autoland the LOC ALIGN and ROLL OUT laws have been tuned and improved.
+
 #### Autothrust
+
+In relation to the autopilot system, the thrust transitions in case of (OP) CLB / DES have been improved.
+
+We have improved theIn relation to the engines, the thrust limits have been improved. This applies to thrust limits itself but also to the interaction with CLB limit in case of take offs performed with a FLEX temperature being set. Furthermore, the N1 base loop controller has been improved to better achieve N1 target although this does not work out in all cases. For this reason, the engine model and thrust limits will get further accuracy improvements which are in work already.
+
+Last but not least, it turned out that ATHR arming is related to SRS engagement. In case of SRS not engaging on take off, the ATHR will not be armed. Keep this in mind when you take off with a V2 speed not being set.
+
 
 ### New Flight Warning System
 
