@@ -73,8 +73,15 @@ We have improved theIn relation to the engines, the thrust limits have been impr
 
 Last but not least, it turned out that ATHR arming is related to SRS engagement. In case of SRS not engaging on take off, the ATHR will not be armed. Keep this in mind when you take off with a V2 speed not being set.
 
-
 ### New Flight Warning System
+
+As the work on our aircraft systems has progressed, one part that hasn’t changed a lot since the early days has been our rudimentary ECAM. Our new Electrical and Hydraulic systems can only really showcase their depth when failures and knock-on effects cause accurate aural warnings and ECAM actions to appear; for this, we need our new Flight Warning System (FWS).
+
+Over the past months we’ve been building a simulation of the Flight Warning Computers (FWCs) from the ground up. These devices are a crucial component of the FWS in the real aircraft and are capable of redundantly monitoring thousands of signals across most aircraft systems to help pilots prioritize and respond to failures. While there is a lot of groundwork to be built before we can hook up the systems we already have today, a large portion of this groundwork has already been completed.We are in the process of wrapping up the first version of the system, capable of monitoring the most critical systems and emitting voice callouts and some other special sounds.
+
+This first version will include a reworked altitude alert (also known as the “C Chord”), the altitude callouts (“Five Hundred”) now triggered at more accurate heights, and a little-known feature called “intermediate callouts” where the FWCs call out the precise height over ground when too much time has passed since the last call (“One Hundred and Twenty”). It will also feature the “Stall” callout together with the infamous “cricket” noise, but you might find it is very hard to trigger in the normal law supported by our FBW systems today. However, just like in reality the FWCs will be watching and if you ever manage to trick our FBW protections and end up with an unusual angle of attack you will get the appropriate warning.
+
+While those features may sound simple, we have modeled them at an insane level of accuracy, reproducing exact logic found in the real aircraft. This is backed by hundreds of hours of research, countless tests in the real aircraft and study of undocumented behaviours. Nothing is left on the table, and it provides a solid framework for the following versions; we will, following this update, turn our attention to the textual ECAM warnings themselves and the status page.
 
 ### Display Typeface Development
 
