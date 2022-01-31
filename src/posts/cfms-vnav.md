@@ -15,7 +15,7 @@ metaAlt: 'FlyByWire Simulations'
 
 We would like to take a moment to thank our development, marketing and QA teams, as well as the many outside contributions that have been made to all parts of the project that have helped make this project into what it is. We are also grateful for every type rated A320 pilot who stands by us to make sure we bring a quality product to the table.
 
-We have a lot in store for 2022 and over the course of a few weeks we’ll be releasing a series of NOTAMs to bring everyone up to speed. Today’s will focus on updates to our custom flight management system and vertical navigation.
+We have a lot in store for 2022 and over the course of a few weeks we’ll be releasing a series of NOTAMs to bring everyone up to speed. Today’s NOTAM will focus on updates to our custom flight management system and vertical navigation.
 
 ---
 
