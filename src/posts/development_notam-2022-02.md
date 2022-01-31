@@ -25,18 +25,6 @@ We have a lot in store for 2022 and this NOTAM is tailored to bring everyone up 
 
 ---
 
-## Development Updates
-
-### Detailed Info on cFMS v1.5
-
-#### System Architecture
-
-#### Lateral Navigation
-
-### Detailed Info on cFMS v2
-
-### VNAV
-
 ### FBW / AP / ATHR Improvements
 
 To provide you with a more realistic flight simulation experience, the FlyByWire team has performed various tests in a full flight simulator regarding fly-by-wire (FBW), autopilot (AP) as well as autothrust (ATHR). The results of these tests were used for a detailed adjustment of the AP, FBW and ATHR. The adjustments have also been verified from real A320 pilots and they resulted in significant improvements.
@@ -82,42 +70,6 @@ Over the past months we’ve been building a simulation of the Flight Warning Co
 This first version will include a reworked altitude alert (also known as the “C Chord”), the altitude callouts (“Five Hundred”) now triggered at more accurate heights, and a little-known feature called “intermediate callouts” where the FWCs call out the precise height over ground when too much time has passed since the last call (“One Hundred and Twenty”). It will also feature the “Stall” callout together with the infamous “cricket” noise, but you might find it is very hard to trigger in the normal law supported by our FBW systems today. However, just like in reality the FWCs will be watching and if you ever manage to trick our FBW protections and end up with an unusual angle of attack you will get the appropriate warning.
 
 While those features may sound simple, we have modeled them at an insane level of accuracy, reproducing exact logic found in the real aircraft. This is backed by hundreds of hours of research, countless tests in the real aircraft and study of undocumented behaviours. Nothing is left on the table, and it provides a solid framework for the following versions; we will, following this update, turn our attention to the textual ECAM warnings themselves and the status page.
-
-### Display Typeface Development
-
-### MCDU Web Interface
-
-We’ve recently launched a new feature that has seen incredible popularity amongst our users; the MCDU web interface. It provides a convenient and easy to use web connection to run the MCDU over a web browser on any computer located on your local network.
-
-You can read up on this new functionality here:
-[MCDU Web Interface Guide](https://docs.flybywiresim.com/fbw-a32nx/feature-guides/web-mcdu/)
-
-We have used this first development as a means of evaluating our strategy regarding custom instruments. We are currently working on developing custom high-speed protocols for offloading instrument rendering onto other programs or even other devices, over a network, to offer better possibilities for home cockpit integration.
-
-### Nose Wheel Tiller
-
-### Stored Waypoints
-
-### Other Projects
-
-#### Discord Bot
-
-The FBW Discord bot is undergoing huge improvements with the upgrade to discord.js v13. While the Bot Development team works on the upgrade, it would be beneficial for more people to join the team so we can keep up with the regular workload of adding and updating commands to be used across the Discord server! If you are interested in helping out, please let us know in the #discord-bot channel, or contact the following users directly:
-
-- BenW#8484
-- █▀█ █▄█ ▀█▀#2123
-- oim#0001
-
-#### Documentation
-
-If you aren’t already aware we have a great documentation site for all of our projects that provides a wealth of knowledge for support, technical issues, A32NX feature guides, aircraft information, and systems information.
-
-The site is continuously updated and we fact check information with our pilots and developers for accuracy and to ensure we publish useful and education information. Our pilots corner section contains the [Beginners Guide](https://docs.flybywiresim.com/pilots-corner/beginner-guide/overview/) which should not be mistaken for only novice pilots as it contains relevant information on all of our implemented systems with the A32NX. We also have our [Interactive Flight Deck](https://docs.flybywiresim.com/pilots-corner/a32nx-briefing/flight-deck/) where you can click on any panel on board the aircraft and read more about a specific system.
-
-We hope you find our documentation site a great resource for all your flights with us at FBW. You can visit the website or learn how to contribute below.
-
-- [Documentation Site](https://docs.flybywiresim.com/)
-- [Contributing](https://docs.flybywiresim.com/dev-corner/development-projects/documentation/)
 
 ---
 
