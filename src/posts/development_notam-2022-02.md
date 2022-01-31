@@ -4,12 +4,7 @@ date: 'TBD'
 authors:
     - 'AGuther'
     - 'BehEh'
-    - 'BenW'
-    - 'BlueberryKing'
-    - 'holland'
     - 'IbrahimK42'
-    - 'Kevin'
-    - 'Valastiri'
 category: 'UPDATE'
 metaImage: '/img/a32nxwing.png'
 metaAlt: 'FlyByWire Simulations'
@@ -17,11 +12,7 @@ metaAlt: 'FlyByWire Simulations'
 
 ## Overview
 
-2021 was a busy year at FlyByWire Simulations. Looking back at where we started and how far we have come we are immensely thankful for the support and journey all of you have participated in flying the A32NX. We love that the hard work our teams put into bringing you a realistic A320neo experience in MSFS culminates in thousands of flights tracked on our website daily.
-
-We’d like to take a moment to provide thanks and appreciation to all of our volunteer developers, marketing team, quality assurance testers, and the many outside contributions made to all aspects of the A32NX that have helped make this project into what it is. We are also entirely grateful for every type rated A320 pilot that stands by us to make sure we bring a quality product to the table.
-
-We have a lot in store for 2022 and this NOTAM is tailored to bring everyone up to speed with our latest development.
+**Rewrite Required**
 
 ---
 
