@@ -54,6 +54,8 @@ Not only will this allow the FMS to predict a complete altitude profile, it will
 
 Similar to LNAV predictions, VNAV predictions are recomputed regularly during flight to account for changes in atmospheric conditions such as pressure, temperature and wind, as well as deviations in real aircraft performance from the predictions, to provide accurate information to the pilots throughout the flight. This tight interaction between the two systems represents a development challenge as it requires iterative computation to find a suitable solution.
 
+![ata-22-vnav](/img/notam-images/feb2022-series/ATA-22-VNAV.jpg)
+
 ### Challenges
 
 An example would be predicting an aircraft’s climb capability given a certain lateral distance. For accurate engine performance predictions, we need to know the pressure and temperature throughout a particular segment/portion of the flight, which are both altitude-dependent. As an approximation, we can use the midway altitude along this step. However, we do not know the midway altitude before running the prediction. We can resolve this by using an initial guess for the midway altitude and the starting altitude to run the predictions, then using the midway altitude in the prediction as a new guess.
