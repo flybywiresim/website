@@ -31,7 +31,7 @@ One focus of this update was to bring the system’s architecture closer to how 
 We have also done work to support decoupled FMS operations, which will allow future implementation of fully independent FMGCs
 
 #### Lateral navigation
-We have done a lot of work overhauling the way lateral (horizontal) paths are generated in this version. First, we have added the ability for LNAV to predict and generate paths for eight more (verfiythis) procedure leg types. In simpler terms, the software is now able to create flight paths that are significantly more accurate to real-life lateral SID/STAR constraints seen on charts and encoded in the navdata.
+We have done a lot of work overhauling the way lateral (horizontal) paths are generated in this version. First, we have added the ability for LNAV to predict and generate paths for eight more procedure leg types. In simpler terms, the software is now able to create flight paths that are significantly more accurate to real-life lateral SID/STAR constraints seen on charts and encoded in the navdata.
 
 Second, we have improved the turn prediction algorithm to support five more turn cases, not only to comply with the aforementioned leg types, but also provide more robust prediction in case of overshooting or high speed turns. This new algorithm is not trying to be perfect either - some of the real life bugs and quirks of the Honeywell H3 FMS are accurately (and intentionally!) represented, such as sharp leg intercepts and unguided capture turns.
 
@@ -44,7 +44,6 @@ Notable improvements include:
 - Full support for missed approach procedures
 - Support for alternate and secondary flight plans
 - Better stringing algorithm, which removes discontinuities where they should not be and adds them where the old system should have
-
 
 ## VNAV
 
