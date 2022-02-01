@@ -23,27 +23,28 @@ We have a lot in store for 2022 and over the course of a few weeks we’ll be re
 ## Custom Flight Management System
 
 ### Detailed info on cFMS v1.5
-After launching the first version of our custom FMS back in September (nov20 on github?), we have been hard at work at developing a large-scale update to many parts of the flight management system - this update, which we call cFMS v1.5, is currently on the experimental branch for users to check out.
+After launching the first version of our custom FMS back, we have been hard at work developing a large-scale update to many parts of the flight management system - this update, which we call cFMS v1.5, is currently on the experimental branch for users to check out.
 
 #### System Architecture
-One focus of this update was to bring the system’s architecture closer to how a real A320 structures FMS data and interaction. This meant, in part, removing the ND’s ability to read the flight plan - and instead provide the FMS computer full authority on drawing. This improves performance and more closely reflects how the FMS and DMC interact in the real aircraft - something that is crucially important for later simulation of complex failures.
+One focus of this update was to bring the system’s architecture closer to how a real A320 structures FMS data and interaction. This meant, in part, removing the ND’s ability to read the flight plan - and instead provide the FMS computer full authority on drawing. This improves performance and more closely reflects how the FMS and DMC interact in the real aircraft, which is crucial for later simulation of complex failures.
 
-We have also done work to support decoupled FMS operations, which will allow future implementation of fully independent FMGCs.
+We have also done work to support decoupled FMS operations, which will allow future implementation of fully independent FMGCs
 
 #### Lateral navigation
-We have done significant work overhauling the way lateral paths are generated in this version. First, we have added the ability for LNAV to predict and generate paths for 8 more (verfiythis) procedure leg types. In simpler terms, the software can now generate paths that are significantly closer to real-life SID/STAR constraints seen on charts and encoded in the navdata.
+We have done a lot of work overhauling the way lateral (horizontal) paths are generated in this version. First, we have added the ability for LNAV to predict and generate paths for eight more (verfiythis) procedure leg types. In simpler terms, the software is now able to create flight paths that are significantly more accurate to real-life lateral SID/STAR constraints seen on charts and encoded in the navdata.
 
-Secondly, we have improved the turn prediction algorithm to support 5 more turn cases, not only to comply with the aforementioned leg types, but also to provide more robust prediction in case of overshooting or high speed turns. This new algorithm is not trying to be perfect either - some of the real life bugs and quirks of the Honeywell H3 FMS are accurately (and intentionally!) represented, such as sharp leg intercepts and unguided capture turns.
+Second, we have improved the turn prediction algorithm to support five more turn cases, not only to comply with the aforementioned leg types, but also provide more robust prediction in case of overshooting or high speed turns. This new algorithm is not trying to be perfect either - some of the real life bugs and quirks of the Honeywell H3 FMS are accurately (and intentionally!) represented, such as sharp leg intercepts and unguided capture turns.
 
-Third, we have spent a lot of time optimizing and improving the guidance algorithm to reduce cross track error and provide incredibly precise navigation; but also to yield less performance impact by recomputing less parts of the geometry.
+Third, we have spent a lot of time optimising and improving the guidance algorithm to reduce cross track error and provide incredibly precise navigation; as well as to minimise performance impact by recomputing less parts of the geometry.
 
 ### Detailed info on cFMS v2
-While cFMS v1.5 is a big update on its own, we are already thinking ahead and moving forward on the development of cFMS v2, another major improvement on our custom flight management system. This time, the focus is on flight planning and route stringing. This means that the FMS would contain much better logic to connect flight plan segments, such as the SID and enroute airways, together.
+While cFMS v1.5 is a big update on its own, we are already thinking ahead and moving forward with the development of cFMS v2, another major improvement to our custom flight management system. This time, the focus is on flight planning and route stringing. This means that the FMS will have much better logic to connect flight plan segments, such as SIDs and enroute airways, together.
 
-The following improvements will be of note:
+Notable improvements include:
 - Full support for missed approach procedures
-- Support for the alternate and secondary flight plans
-- Better stringing algorithm - removes discontinuities where they shouldn’t be and adds them where the old system should have
+- Support for alternate and secondary flight plans
+- Better stringing algorithm, which removes discontinuities where they should not be and adds them where the old system should have
+
 
 ## VNAV
 
