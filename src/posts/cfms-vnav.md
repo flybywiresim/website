@@ -1,10 +1,10 @@
 ---
-title: 'Development Update cFMS and VNAV'
+title: 'Flight Management System and VNAV'
 date: 'tbd'
 authors:
     - 'BlueberryKing'
-    - 'holland'
-    - 'tracernz'
+    - 'Holland'
+    - 'Tracernz'
 category: 'UPDATE'
 metaImage: '/img/rear_a32nx.jpg'
 metaAlt: 'FlyByWire Simulations'
