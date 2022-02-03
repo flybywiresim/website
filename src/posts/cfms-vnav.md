@@ -1,12 +1,12 @@
 ---
 title: 'Flight Management System and VNAV'
-date: 'tbd'
+date: '2022-02-05'
 authors:
     - 'BlueberryKing'
     - 'Holland'
     - 'Tracernz'
 category: 'UPDATE'
-metaImage: '/img/rear_a32nx.jpg'
+metaImage: '/img/cfms-notam-feature.jpg'
 metaAlt: 'FlyByWire Simulations'
 ---
 
