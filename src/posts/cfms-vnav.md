@@ -22,28 +22,38 @@ We have a lot in store for 2022 and over the course of a few weeks we’ll be re
 
 ## Custom Flight Management System
 
-### Detailed info on cFMS v1.5
-After launching the first version of our custom FMS back, we have been hard at work developing a large-scale update to many parts of the flight management system - this update, which we call cFMS v1.5, is currently on the experimental branch for users to check out.
+### Detailed info on Custom FMS v1.5
+After launching the first version of our custom FMS back, we have been hard at work developing a large-scale update to many parts of the flight management system - this update, which we call custom FMS v1.5, is currently on the experimental branch for users to check out.
 
 #### System Architecture
 One focus of this update was to bring the system’s architecture closer to how a real A320 structures FMS data and interaction. This meant, in part, removing the ND’s ability to read the flight plan - and instead provide the FMS computer full authority on drawing. This improves performance and more closely reflects how the FMS and DMC interact in the real aircraft, which is crucial for later simulation of complex failures.
 
-We have also done work to support decoupled FMS operations, which will allow future implementation of fully independent FMGCs
+We have also done work to support decoupled FMS operations, which will allow future implementation of fully independent FMGCs.
 
 #### Lateral navigation
 We have done a lot of work overhauling the way lateral (horizontal) paths are generated in this version. First, we have added the ability for LNAV to predict and generate paths for eight more procedure leg types. In simpler terms, the software is now able to create flight paths that are significantly more accurate to real-life lateral SID/STAR constraints seen on charts and encoded in the navdata.
 
-Second, we have improved the turn prediction algorithm to support five more turn cases, not only to comply with the aforementioned leg types, but also provide more robust prediction in case of overshooting or high speed turns. This new algorithm is not trying to be perfect either - some of the real life bugs and quirks of the Honeywell H3 FMS are accurately (and intentionally!) represented, such as sharp leg intercepts and unguided capture turns.
+Second, we have improved the turn prediction algorithm to support five more turn cases, not only to comply with the aforementioned leg types, but also provide more robust prediction in case of overshooting or high speed turns. This new algorithm is not trying to be perfect either - some of the real life bugs and quirks of the Honeywell H3 FMS are accurately (and intentionally!) represented, such as sharp leg intercepts, unguided capture turns, realistic drawing of overshoots, and more.
 
 Third, we have spent a lot of time optimising and improving the guidance algorithm to reduce cross track error and provide incredibly precise navigation; as well as to minimise performance impact by recomputing less parts of the geometry.
 
-### Detailed info on cFMS v2
-While cFMS v1.5 is a big update on its own, we are already thinking ahead and moving forward with the development of cFMS v2, another major improvement to our custom flight management system. This time, the focus is on flight planning and route stringing. This means that the FMS will have much better logic to connect flight plan segments, such as SIDs and enroute airways, together.
+### Detailed info on Custom FMS v2
+While custom FMS v1.5 is a big update on its own, we are already thinking ahead and moving forward with the development of custom FMS v2, another major improvement to our custom flight management system. This time, the focus is on flight planning and route stringing. This means that the FMS will have much better logic to connect flight plan segments, such as SIDs and enroute airways, together.
 
-Notable improvements include:
-- Full support for missed approach procedures
-- Support for alternate and secondary flight plans
-- Better stringing algorithm, which removes discontinuities where they should not be and adds them where the old system should have
+This has been accomplished by first designing the system based on how it works in real life, not only in terms of day-to-day operations, but also in terms of its internal workings. Integrating this into the simulator was the second step, rather than the priority. The new code is fully unit-tested and can run externally to the simulator - it indeed possesses two backends, one interfacing with MSFS and another connecting to a server providing data from an external source.
+
+While the ability to run outside of MSFS is a big advantage, the main reason for this is to give users the ability to use an external service, such as Navigraph’s Navdata Center, to directly obtain navigational information for certain functionality that MSFS does not provide (even with third-party navdata installed in the Community folder), like published holds, while the simulator adds them as updates come. This is, of course, **entirely optional**, and the aircraft can still run 100% in the simulator if you do not enable this (with all the benefits listed below still present).
+
+### Notable Improvements
+
+#### Full Support for Missed Approach Procedures
+Missed approaches are loaded automatically with your selected approach and can be flown by the aircraft like any other part of the route. They are submitted to IRL limitations studied on this FMS in real life, like limited turn prediction until they are activated.
+
+#### Support for Alternate and Secondary Flight Plans
+An alternate destination can now be entered, in case of a diversion. You will also be able to create, copy, swap and delete secondary flight plans, and they will be displayed on the navigation display without turn prediction like IRL.
+
+#### Better Stringing Algorithm
+This algorithm removes discontinuities where they should not be and adds them where the old system should have. No more segments between the departure and arrival before having entered airways, less duplicate legs, automatic connection of matching segments.
 
 ## VNAV
 
