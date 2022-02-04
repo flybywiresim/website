@@ -23,7 +23,7 @@ We have a lot in store for 2022 and over the course of a few weeks we’ll be re
 ## Custom Flight Management System
 
 ### Detailed info on Custom FMS v1.5
-After launching the first version of our custom FMS back, we have been hard at work developing a large-scale update to many parts of the flight management system - this update, which we call custom FMS v1.5, is currently on the experimental branch for users to check out.
+After launching the first iteration of our custom FMS, we have been hard at work developing a large-scale update to many parts of the flight management system - this update, which we call custom FMS v1.5, is currently on the experimental branch for users to check out.
 
 #### System Architecture
 One focus of this update was to bring the system’s architecture closer to how a real A320 structures FMS data and interaction. This meant, in part, removing the ND’s ability to read the flight plan - and instead provide the FMS computer full authority on drawing. This improves performance and more closely reflects how the FMS and DMC interact in the real aircraft, which is crucial for later simulation of complex failures.
