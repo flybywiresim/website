@@ -1,5 +1,5 @@
 ---
-title: 'Flight Management System and VNAV'
+title: '2022 Update: Flight Management System and VNAV'
 date: '2022-02-05'
 authors:
     - 'BlueberryKing'
@@ -63,7 +63,7 @@ Not only will this allow the FMS to predict a complete altitude profile, it will
 
 Similar to LNAV predictions, VNAV predictions are recomputed regularly during flight to account for changes in atmospheric conditions such as pressure, temperature and wind, as well as deviations in real aircraft performance from the predictions, to provide accurate information to the pilots throughout the flight. This tight interaction between the two systems represents a development challenge as it requires iterative computation to find a suitable solution.
 
-![ata-22-vnav](/img/notam-images/feb2022-series/ATA-22-VNAV.jpg)
+![ata-22-vnav](/img/notam-images/feb2022-series/ATA-22-VNAV.jpg) ![ata-22-vnav-2](/img/notam-images/feb2022-series/ATA-22-VNAV-2.jpg)
 
 ### Challenges
 
