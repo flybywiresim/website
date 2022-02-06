@@ -100,3 +100,4 @@ Download the latest version of the A32NX:
 
 Safe skies and happy flying!
 
+*Editors: Kevin, Valastiri*
