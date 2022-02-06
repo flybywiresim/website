@@ -30,7 +30,7 @@ Additionally, the pitch law has been adapted to compensate for speed changes and
 
 Real pilots gave positive feedback after these adjustments. During landing, about 1/3 sidestick pull is necessary during the flare mode (see the video below).
 
-[Video Here Requires Youtube]
+[Youtube Video FBW A32NX | Flare Mode]
 
 #### Autopilot
 
@@ -46,6 +46,9 @@ It turned out that on a rejected take-off when putting thrust levers to idle, th
 
 Finally, for Autoland the LOC ALIGN, FLARE and ROLL OUT laws have been tuned and improved. For the FLARE law a new filter has been designed and implemented that improves detection of vertical speed relative to the ground using the radio altimeter. Such a filter is needed to ensure good performance on sloped runways. The result is, that the A32NX is now capable of doing approaches on runways with pre-threshold terrain profiles that can induce abnormal landing system performance. A special operational test and evaluation program is required before approving any CAT III operations for real aircraft on these type of runways. One very prominent example is KSEA 16R.
 
+[Youtube Video FBW A32NX | Autoland - KSEA 16R]
+[Youtube Video FBW A32NX | Autoland - EDDM 26L]
+
 #### Autothrust
 
 In relation to the autopilot system, the thrust transitions in case of (OP) CLB / DES have been improved. The SPEED / MACH law of the Autothrust system has been improved especially for approach phase so that engines react more quickly to better ensure speed is kept in a range of -5 to + 10 kn of target approach speed (V_APP).
@@ -53,6 +56,8 @@ In relation to the autopilot system, the thrust transitions in case of (OP) CLB 
 In relation to the engines, the thrust limits have been improved. This applies to thrust limits itself but also to the interaction with CLB limit in case of take offs performed with a FLEX temperature being set. Furthermore, the N1 base loop controller has been improved to better achieve N1 target although this does not work out in all cases. For this reason, the engine model and thrust limits will get further accuracy improvements which are in work already.
 
 Last but not least, it turned out that ATHR arming is related to SRS engagement. In case of SRS not engaging on take off, the ATHR will not be armed. Keep this in mind when you take off with a V2 speed not being set.
+
+[Youtube Video FBW A32NX | Autothrust Adjustment]
 
 ### New Flight Warning System
 
