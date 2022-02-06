@@ -1,5 +1,5 @@
 ---
-title: '2022 Update: Flight Management System and VNAV'
+title: 'Flight Management System and VNAV'
 date: '2022-02-05'
 authors:
     - 'BlueberryKing'
