@@ -14,7 +14,7 @@ metaAlt: 'FlyByWire Simulations'
 
 2021 was a busy year at FlyByWire Simulations. Looking back at where we started and how far we have come, we are immensely thankful for the journey, as well as the support all of you have given to the project. We love that the hard work our teams put into bringing you a realistic A320neo experience in MSFS has resulted in thousands of flights tracked on our website daily.
 
-We would like to take a moment to thank our development, marketing and QA teams, as well as the many outside contributions that have been made to all parts of the project that have helped make this project into what it is. We are also grateful for every type rated A320 pilot who stands by us to make sure we bring a quality product to the table.
+We would like to take a moment to thank our development, marketing and QA teams, as well as the many outside contributions that have been made to all parts of the project that have helped make the A32NX into what it is. We are also grateful for every type rated A320 pilot who stands by us to make sure we bring a quality product to the table.
 
 We have a lot in store for 2022 and over the course of a few weeks we’ll be releasing a series of NOTAMs to bring everyone up to speed. Today’s NOTAM will focus on updates to our custom flight management system and vertical navigation.
 
@@ -63,7 +63,7 @@ Not only will this allow the FMS to predict a complete altitude profile, it will
 
 Similar to LNAV predictions, VNAV predictions are recomputed regularly during flight to account for changes in atmospheric conditions such as pressure, temperature and wind, as well as deviations in real aircraft performance from the predictions, to provide accurate information to the pilots throughout the flight. This tight interaction between the two systems represents a development challenge as it requires iterative computation to find a suitable solution.
 
-![ata-22-vnav](/img/notam-images/feb2022-series/ATA-22-VNAV.jpg) ![ata-22-vnav-2](/img/notam-images/feb2022-series/ATA-22-VNAV-2.jpg)
+![ata-22-vnav](/img/notam-images/feb2022-series/cfms/ATA-22-VNAV.jpg) ![ata-22-vnav-2](/img/notam-images/feb2022-series/cfms/ATA-22-VNAV-2.jpg)
 
 ### Challenges
 
