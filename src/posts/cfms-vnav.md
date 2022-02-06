@@ -37,6 +37,15 @@ Second, we have improved the turn prediction algorithm to support five more turn
 
 Third, we have spent a lot of time optimising and improving the guidance algorithm to reduce cross track error and provide incredibly precise navigation; as well as to minimise performance impact by recomputing less parts of the geometry.
 
+#### Previews
+
+![cfms1](/img/notam-images/feb2022-series/cfms/cfms1.png)
+![cfms2](/img/notam-images/feb2022-series/cfms/cfms2.png)
+![cfms3](/img/notam-images/feb2022-series/cfms/cfms3.png)
+![cfms4](/img/notam-images/feb2022-series/cfms/cfms4.png)
+![cfms5](/img/notam-images/feb2022-series/cfms/cfms5.png)
+![cfms6](/img/notam-images/feb2022-series/cfms/cfms6.png)
+
 ### Detailed info on Custom FMS v2
 While custom FMS v1.5 is a big update on its own, we are already thinking ahead and moving forward with the development of custom FMS v2, another major improvement to our custom flight management system. This time, the focus is on flight planning and route stringing. This means that the FMS will have much better logic to connect flight plan segments, such as SIDs and enroute airways, together.
 
