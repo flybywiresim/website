@@ -57,6 +57,8 @@ In relation to the engines, the thrust limits have been improved. This applies t
 
 Last but not least, it turned out that ATHR arming is related to SRS engagement. In case of SRS not engaging on take off, the ATHR will not be armed. Keep this in mind when you take off with a V2 speed not being set.
 
+The gains of the ATHR Speed/Mach law have been adjusted to achieve better speed control performance during acceleration or deceleration. The time to reach the commanded speed is decreased. You can see one example in following video.
+
 (Youtube Video FBW A32NX | Autothrust Adjustment)
 
 ### New Flight Warning System
