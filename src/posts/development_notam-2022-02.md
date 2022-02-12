@@ -70,7 +70,7 @@ As mentioned, one of the challenges for the flare is the slope of the runway. Du
 The signal from the radio altimeter is not a speed, it's a height. Therefore the signal needs to be derived. Derivation of a noise signal is a challange. Therefore the filtering of the radio altimeter signal needs to be balanced between reactivity and smoothness and a wall just before the runway start is a challenge for the filter parameters.
 
 In the A32NX the following filter is being used:
-[![ata-22-hra-filter](/img/notam-images/feb2022-series/systems/H_RA_Filter.svg)](/img/notam-images/feb2022-series/systems/H_RA_Filter.svg)
+![ata-22-hra-filter](/img/notam-images/feb2022-series/systems/H_RA_Filter.svg)
 
 The following figure shows the Autoland in EDDM 26L. The blue line shows the vertical speed relative to the air and the orange line shows the vertical speed relative to the ground (based on the filtered radio altimeter signal). It can be seen that both lines are very close together, because EDDM 26L has a clean terrain profile in front of the runway and the runway has no slope:
 [![ata-22-eddm-26L-Hdot](/img/notam-images/feb2022-series/systems/EDDM_26L_Hdot.svg)](/img/notam-images/feb2022-series/systems/EDDM_26L_Hdot.svg)
