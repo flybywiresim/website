@@ -57,17 +57,27 @@ The flare law has the task to reduce the vertical speed of the plane from approa
 
 The two figures below show the radar altimeter signal during an Autoland for EDDM 26L and KSEA 16R. The signal for EDDM 26L is much more stable and smooth and does not contain any disruption. In contrast, the KSEA 16R shows a typical noise of a radio altimeter signal (in the orange box). Remember that every object on the ground, like trees or houses, is detected. Besides this we can also see the wall (red arrow) just before the 16R runway begins.
 
+---
+
 [![ata-22-eddm-26L-H_RA](/img/notam-images/feb2022-series/systems/EDDM_26L_H_RA.svg)](/img/notam-images/feb2022-series/systems/EDDM_26L_H_RA.svg)
 *EDDM 26L*
+
+---
 
 [![ata-22-ksea-16R-H_RA](/img/notam-images/feb2022-series/systems/KSEA_16R_H_RA.svg)](/img/notam-images/feb2022-series/systems/KSEA_16R_H_RA.svg)
 *KSEA 16R Radio Altimeter*
 
+---
+
 [![ata-22-ksea-16R-H_RA](/img/notam-images/feb2022-series/systems/KSEA_16R_Wall.png)](/img/notam-images/feb2022-series/systems/KSEA_16R_Wall.png)
 *KSEA 16R Terrain Profile around Runway threshold*
 
+---
+
 [![ata-22-ksea-16R-H_RA](/img/notam-images/feb2022-series/systems/KSEA_16R_Slope.png)](/img/notam-images/feb2022-series/systems/KSEA_16R_Slope.png)
 *KSEA 16R Runway Slope*
+
+---
 
 As mentioned, one of the challenges for the flare is the slope of the runway. Due to this potential slope, it's not enough to bring the vertical speed in relation to the air to the target value. Important is to get the vertical speed relative to the ground to the target landing rate. The only way to do this reliably is to use a radio altimeter. This is also the reason why this device is so essential for an Autoland.
 
