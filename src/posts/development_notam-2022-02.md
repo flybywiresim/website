@@ -49,12 +49,24 @@ Finally, for Autoland the LOC ALIGN, FLARE and ROLL OUT laws have been tuned and
 (Youtube Video FBW A32NX | Autoland - KSEA 16R)
 (Youtube Video FBW A32NX | Autoland - EDDM 26L)
 
-![ata-22-eddm-26L-Hdot](/img/notam-images/feb2022-series/systems/EDDM_26L_Hdot.svg)
+##### Background on FLARE law
+
+The following two figures show the radar altimeter signal during an Autoland for EDDM 26L and KSEA 16R. As we can see, the signal for EDDM 26L is much more stable and does not contain any disruption. In contrast in the one from KSEA 16R shows typical noise of a radio altimeter signal (in the orange box) and even more we see the wall (red arrow) just before the 16R runway begins.
+
+EDDM 26L:
 ![ata-22-eddm-26L-H_RA](/img/notam-images/feb2022-series/systems/EDDM_26L_H_RA.svg)
 
-![ata-22-ksea-16R-Hdot](/img/notam-images/feb2022-series/systems/KSEA_16R_Hdot.svg)
+KSEA 16R:
 ![ata-22-ksea-16R-H_RA](/img/notam-images/feb2022-series/systems/KSEA_16R_H_RA.svg)
 
+One of the challenges for the flare is the slope of runways. Due to this potential slope it's not enough to bring the vertical speed in relation to the air to the target value. Important is to get the vertical speed relative to the ground to the target speed. The only way to do this is using an radio altimeter. This is also the reason why this device so important for an Autoland. The filtering of the radio altimeter signal needs to be balanced between reactivity and smoothness and a wall just before the runway start is a challenge for the filters.
+
+The following figure shows the Autoland in EDDM 26L. The blue line shows the vertical speed relative to the air and the orange line shows the vertical speed relative to the ground (based on filtered radio altimeter signal). It can be seen that both lines are very close together, because EDDM 26L has a clean terrain profile in front of the runway and the runway has no slope:
+![ata-22-eddm-26L-Hdot](/img/notam-images/feb2022-series/systems/EDDM_26L_Hdot.svg)
+
+In contrast we see the next two figures for KSEA 16R and KLAS 01L. In both a discrepency between vertical speed relative to air and ground can be observed. The runway slope can also be seen because even after touchdown there is a difference.
+
+![ata-22-ksea-16R-Hdot](/img/notam-images/feb2022-series/systems/KSEA_16R_Hdot.svg)
 ![ata-22-klas-01L-Hdot](/img/notam-images/feb2022-series/systems/KLAS_01L_Hdot.svg)
 
 #### Autothrust
