@@ -49,6 +49,14 @@ Finally, for Autoland the LOC ALIGN, FLARE and ROLL OUT laws have been tuned and
 (Youtube Video FBW A32NX | Autoland - KSEA 16R)
 (Youtube Video FBW A32NX | Autoland - EDDM 26L)
 
+![ata-22-eddm-26L-Hdot](/img/notam-images/feb2022-series/systems/EDDM_26L_Hdot.svg)
+![ata-22-eddm-26L-H_RA](/img/notam-images/feb2022-series/systems/EDDM_26L_H_RA.svg)
+
+![ata-22-ksea-16R-Hdot](/img/notam-images/feb2022-series/systems/KSEA_16R_Hdot.svg)
+![ata-22-ksea-16R-H_RA](/img/notam-images/feb2022-series/systems/KSEA_16R_H_RA.svg)
+
+![ata-22-klas-01L-Hdot](/img/notam-images/feb2022-series/systems/KLAS_01L_Hdot.svg)
+
 #### Autothrust
 
 In relation to the autopilot system, the thrust transitions in case of (OP) CLB / DES have been improved. The SPEED / MACH law of the Autothrust system has been improved so that engines react more quickly to better ensure speed is kept in a range of -5 kn to + 10 kn of target speed.
