@@ -36,26 +36,26 @@ Real pilots gave positive feedback after these adjustments. During landing, abou
 
 The autopilot system has been improved in mode initiation and laws.
 
-Several changes have been made around the arming and engaging of ALT and ALT*. The conditions when ALT is arming and engaging have been reworked. ALT* is now inhibited 3 s after changing the FCU altitude and overshoots of the target altitude are now also covered in a realistic way.
+Several changes have been made around the arming and engaging of ALT and ALT*. The conditions when ALT is arming and engaging have been reworked. ALT* is now inhibited 3 s after changing the FCU altitude, and overshoots of the target altitude are now also covered realistically.
 
-The target load factors that are used to guide the aircraft have now been separated for every law and situation. As an example, the V/S mode usually uses a load factor target of 0.05 g but in case of level off request it uses now 0.1 g (i.e. you push the V/S knob on the FCU).
+The target load factors used to guide the aircraft have now been separated for every law and situation. For example, the V/S mode usually uses a load factor target of 0.05 g but in case of level off request, it uses 0.1 g (i.e. you push the V/S knob on the FCU).
 
-The improved Speed/Mach law is already presented in the NOTAM of September. The Speed/Mach law has been extended with further edge cases. The minimum vertical speed limitations in case of Open Descend (OP DES) or Open Climb (OP CLB) have been adjusted. For example, if the ATHR is turned off and manual full thrust is given, then the aircraft would continue to descend at a minimal rate, but still accelerate.
+The improved Speed/Mach law is already presented in the NOTAM of September. The Speed/Mach law has been extended with other edge cases. The minimum vertical speed limitations in the case of Open Descend (OP DES) or Open Climb (OP CLB) have been adjusted. For example, if the ATHR is turned off and manual full thrust is given, then the aircraft would continue to descend at a minimal rate but still accelerate.
 
-It turned out that on a rejected take-off when putting thrust levers to idle, the modes SRS and RWY do not automatically disengage. To disengage them, both flight directors need to be turned off and on again. The HDG / TRK law has been improved in terms of bank angle limit for changes up to 10° in course.
+It turned out that on a rejected take-off when putting thrust levers to idle, the modes SRS and RWY do not automatically disengage. Both flight directors need to be turned off and on again to disengage them. The HDG / TRK law has been improved in terms of bank angle limit for changes up to 10° in course.
 
-Finally, for Autoland the LOC ALIGN, FLARE and ROLL OUT laws have been tuned and improved. For the FLARE law a new filter has been designed and implemented that improves detection of vertical speed relative to the ground using the radio altimeter. Such a filter is needed to ensure good performance on sloped runways. The result is, that the A32NX is now capable of doing approaches on runways with pre-threshold terrain profiles that can induce abnormal landing system performance. A special operational test and evaluation program is required before approving any CAT III operations for real aircraft on these type of runways. One very prominent example is KSEA 16R.
+Finally, the LOC ALIGN, FLARE and ROLL OUT laws have been tuned and improved for Autoland. For the FLARE law, a new filter has been designed and implemented that improves detection of vertical speed relative to the ground using the radio altimeter. Such a filter is needed to ensure good performance on sloped runways. The result is that the A32NX can now approach on runways with pre-threshold terrain profiles that can induce abnormal landing system performance. A special operational test and evaluation program is required before approving any CAT III operations for real aircraft on these types of runways. One very prominent example is KSEA 16R.
 
 (Youtube Video FBW A32NX | Autoland - KSEA 16R)
 (Youtube Video FBW A32NX | Autoland - EDDM 26L)
 
 ##### Background on FLARE law
 
-In the following we want to give some insights on the flare law.
+In the following, we want to give some insights on the flare law.
 
-The flare law has the task to reduce the vertical speed of the plane from approach to touchdown. This needs to work for different weights, center of gravity, wind and (sloped) runways. In the following we discuss shortly about how to handle sloped runways.
+The flare law has the task to reduce the vertical speed of the plane from approach to touchdown. This needs to work for different weights, center of gravity, wind and (sloped) runways. In the following, we discuss shortly how to handle sloped runways.
 
-The two figures below show the radar altimeter signal during an Autoland for EDDM 26L and KSEA 16R. The signal for EDDM 26L is much more stable and smooth and does not contain any disruption. In contrast the one from KSEA 16R shows a typical noise of a radio altimeter signal (in the orange box). Keep in mind that every object on ground like trees or houses are detected. Beside this we can also see the wall (red arrow) just before the 16R runway begins.
+The two figures below show the radar altimeter signal during an Autoland for EDDM 26L and KSEA 16R. The signal for EDDM 26L is much more stable and smooth and does not contain any disruption. In contrast, the KSEA 16R shows a typical noise of a radio altimeter signal (in the orange box). Remember that every object on the ground, like trees or houses, is detected. Besides this we can also see the wall (red arrow) just before the 16R runway begins.
 
 EDDM 26L
 [![ata-22-eddm-26L-H_RA](/img/notam-images/feb2022-series/systems/EDDM_26L_H_RA.svg)](/img/notam-images/feb2022-series/systems/EDDM_26L_H_RA.svg)
@@ -65,22 +65,22 @@ KSEA 16R
 [![ata-22-ksea-16R-H_RA](/img/notam-images/feb2022-series/systems/KSEA_16R_Wall.png)](/img/notam-images/feb2022-series/systems/KSEA_16R_Wall.png)
 [![ata-22-ksea-16R-H_RA](/img/notam-images/feb2022-series/systems/KSEA_16R_Slope.png)](/img/notam-images/feb2022-series/systems/KSEA_16R_Slope.png)
 
-As mentioned, one of the challenges for the flare is the slope of the runway. Due to this potential slope it's not enough to bring the vertical speed in relation to the air to the target value. Important is to get the vertical speed relative to the ground to the target landing rate. The only way to do this in a reliable way is to use a radio altimeter. This is also the reason why this device so important for an Autoland.
+As mentioned, one of the challenges for the flare is the slope of the runway. Due to this potential slope, it's not enough to bring the vertical speed in relation to the air to the target value. Important is to get the vertical speed relative to the ground to the target landing rate. The only way to do this reliably is to use a radio altimeter. This is also the reason why this device is so essential for an Autoland.
 
-The signal from the radio altimeter is not a speed, it's a height. Therefore the signal needs to be derived. Derivation of a noise signal is a challange. Therefore the filtering of the radio altimeter signal needs to be balanced between reactivity and smoothness and a wall just before the runway start is a challenge for the filter parameters.
+The signal from the radio altimeter is not a speed; it's a height. Therefore the signal needs to be derived. Derivation of a noise signal is a challenge. Therefore, filtering the radio altimeter signal needs to be balanced between reactivity and smoothness and a wall just before the runway start is a challenge for the filter parameters.
 
 In the A32NX the following filter is being used:
-![ata-22-hra-filter](/img/notam-images/feb2022-series/systems/H_RA_Filter.svg)
+![ata-22-hra-filter](/img/notam-images/feb2022-series/systems/H_RA_Filter.svg =100x20)
 
-The following figure shows the Autoland in EDDM 26L. The blue line shows the vertical speed relative to the air and the orange line shows the vertical speed relative to the ground (based on the filtered radio altimeter signal). It can be seen that both lines are very close together, because EDDM 26L has a clean terrain profile in front of the runway and the runway has no slope:
+The following figure shows the Autoland in EDDM 26L. The blue line shows the vertical speed relative to the air, and the orange line shows the vertical speed relative to the ground (based on the filtered radio altimeter signal). It can be seen that both lines are very close together because EDDM 26L has a clean terrain profile in front of the runway and the runway has no slope:
 [![ata-22-eddm-26L-Hdot](/img/notam-images/feb2022-series/systems/EDDM_26L_Hdot.svg)](/img/notam-images/feb2022-series/systems/EDDM_26L_Hdot.svg)
 
-In contrast the next two figures for KSEA 16R and KLAS 01L show a discrepency between vertical speed relative to air and ground. The runway slope can also be seen because even after touchdown there is a difference.
+In contrast, the following two figures for KSEA 16R and KLAS 01L show a discrepancy between vertical speed relative to air and ground. The runway slope can also be seen because there is a difference even after the touchdown.
 
 [![ata-22-ksea-16R-Hdot](/img/notam-images/feb2022-series/systems/KSEA_16R_Hdot.svg)](/img/notam-images/feb2022-series/systems/KSEA_16R_Hdot.svg)
 [![ata-22-klas-01L-Hdot](/img/notam-images/feb2022-series/systems/KLAS_01L_Hdot.svg)](/img/notam-images/feb2022-series/systems/KLAS_01L_Hdot.svg)
 
-The flare law uses the vertical speed relative to the ground as an input for a vertical speed tracker to bring the landing rate to an appropriate level for touchdown.
+The flare law uses the vertical speed relative to the ground as an input for a vertical speed tracker to bring the landing rate to an appropriate level for the touchdown.
 
 #### Autothrust
 
