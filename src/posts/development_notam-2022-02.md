@@ -51,13 +51,13 @@ Finally, for Autoland the LOC ALIGN, FLARE and ROLL OUT laws have been tuned and
 
 #### Autothrust
 
-In relation to the autopilot system, the thrust transitions in case of (OP) CLB / DES have been improved. The SPEED / MACH law of the Autothrust system has been improved especially for approach phase so that engines react more quickly to better ensure speed is kept in a range of -5 to + 10 kn of target approach speed (V_APP).
+In relation to the autopilot system, the thrust transitions in case of (OP) CLB / DES have been improved. The SPEED / MACH law of the Autothrust system has been improved so that engines react more quickly to better ensure speed is kept in a range of -5 kn to + 10 kn of target speed.
 
 In relation to the engines, the thrust limits have been improved. This applies to thrust limits itself but also to the interaction with CLB limit in case of take offs performed with a FLEX temperature being set. Furthermore, the N1 base loop controller has been improved to better achieve N1 target although this does not work out in all cases. For this reason, the engine model and thrust limits will get further accuracy improvements which are in work already.
 
 Last but not least, it turned out that ATHR arming is related to SRS engagement. In case of SRS not engaging on take off, the ATHR will not be armed. Keep this in mind when you take off with a V2 speed not being set.
 
-The gains of the ATHR Speed/Mach law have been adjusted to achieve better speed control performance during acceleration or deceleration. The time to reach the commanded speed is decreased. You can see one example in following video.
+The gains of the ATHR Speed/Mach law have been adjusted to achieve better speed control performance during acceleration or deceleration. The time to reach the target speed is decreased. You can see one example in following video.
 
 (Youtube Video FBW A32NX | Autothrust Adjustment)
 
