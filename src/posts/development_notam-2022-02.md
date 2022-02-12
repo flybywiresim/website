@@ -51,23 +51,33 @@ Finally, for Autoland the LOC ALIGN, FLARE and ROLL OUT laws have been tuned and
 
 ##### Background on FLARE law
 
-The following two figures show the radar altimeter signal during an Autoland for EDDM 26L and KSEA 16R. As we can see, the signal for EDDM 26L is much more stable and does not contain any disruption. In contrast in the one from KSEA 16R shows typical noise of a radio altimeter signal (in the orange box) and even more we see the wall (red arrow) just before the 16R runway begins.
+In the following we want to give some insights on the flare law.
 
-EDDM 26L:
+The flare law has the task to reduce the vertical speed of the plane from approach to touchdown. This needs to work for different weights, center of gravity, wind and (sloped) runways. In the following we discuss shortly about how to handle sloped runways.
+
+The two figures below show the radar altimeter signal during an Autoland for EDDM 26L and KSEA 16R. The signal for EDDM 26L is much more stable and smooth and does not contain any disruption. In contrast the one from KSEA 16R shows a typical noise of a radio altimeter signal (in the orange box). Keep in mind that every object on ground like trees or houses are detected. Beside this we can also see the wall (red arrow) just before the 16R runway begins.
+
+EDDM 26L
 [![ata-22-eddm-26L-H_RA](/img/notam-images/feb2022-series/systems/EDDM_26L_H_RA.svg)](/img/notam-images/feb2022-series/systems/EDDM_26L_H_RA.svg)
 
-KSEA 16R:
+KSEA 16R
 [![ata-22-ksea-16R-H_RA](/img/notam-images/feb2022-series/systems/KSEA_16R_H_RA.svg)](/img/notam-images/feb2022-series/systems/KSEA_16R_H_RA.svg)
+[![ata-22-ksea-16R-H_RA](/img/notam-images/feb2022-series/systems/KSEA_16R_Wall.png)](/img/notam-images/feb2022-series/systems/KSEA_16R_Wall.png)
+[![ata-22-ksea-16R-H_RA](/img/notam-images/feb2022-series/systems/KSEA_16R_Slope.png)](/img/notam-images/feb2022-series/systems/KSEA_16R_Slope.png)
 
-One of the challenges for the flare is the slope of runways. Due to this potential slope it's not enough to bring the vertical speed in relation to the air to the target value. Important is to get the vertical speed relative to the ground to the target speed. The only way to do this is using an radio altimeter. This is also the reason why this device so important for an Autoland. The filtering of the radio altimeter signal needs to be balanced between reactivity and smoothness and a wall just before the runway start is a challenge for the filters.
+As mentioned, one of the challenges for the flare is the slope of the runway. Due to this potential slope it's not enough to bring the vertical speed in relation to the air to the target value. Important is to get the vertical speed relative to the ground to the target landing rate. The only way to do this in a reliable way is to use a radio altimeter. This is also the reason why this device so important for an Autoland.
 
-The following figure shows the Autoland in EDDM 26L. The blue line shows the vertical speed relative to the air and the orange line shows the vertical speed relative to the ground (based on filtered radio altimeter signal). It can be seen that both lines are very close together, because EDDM 26L has a clean terrain profile in front of the runway and the runway has no slope:
+The signal from the radio altimeter is not a speed, it's a height. Therefore the signal needs to be derived. Derivation of a noise signal is a challange. Therefore the filtering of the radio altimeter signal needs to be balanced between reactivity and smoothness and a wall just before the runway start is a challenge for the filter parameters.
+
+The following figure shows the Autoland in EDDM 26L. The blue line shows the vertical speed relative to the air and the orange line shows the vertical speed relative to the ground (based on the filtered radio altimeter signal). It can be seen that both lines are very close together, because EDDM 26L has a clean terrain profile in front of the runway and the runway has no slope:
 [![ata-22-eddm-26L-Hdot](/img/notam-images/feb2022-series/systems/EDDM_26L_Hdot.svg)](/img/notam-images/feb2022-series/systems/EDDM_26L_Hdot.svg)
 
-In contrast we see the next two figures for KSEA 16R and KLAS 01L. In both a discrepency between vertical speed relative to air and ground can be observed. The runway slope can also be seen because even after touchdown there is a difference.
+In contrast the next two figures for KSEA 16R and KLAS 01L show a discrepency between vertical speed relative to air and ground. The runway slope can also be seen because even after touchdown there is a difference.
 
 [![ata-22-ksea-16R-Hdot](/img/notam-images/feb2022-series/systems/KSEA_16R_Hdot.svg)](/img/notam-images/feb2022-series/systems/KSEA_16R_Hdot.svg)
 [![ata-22-klas-01L-Hdot](/img/notam-images/feb2022-series/systems/KLAS_01L_Hdot.svg)](/img/notam-images/feb2022-series/systems/KLAS_01L_Hdot.svg)
+
+The flare law uses the vertical speed relative to the ground as an input for a vertical speed tracker to bring the landing rate to an appropriate level for touchdown.
 
 #### Autothrust
 
