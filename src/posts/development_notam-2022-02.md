@@ -36,7 +36,7 @@ Real pilots gave positive feedback after these adjustments. During landing, abou
 
 The autopilot system has been improved in mode initiation and laws.
 
-Several changes have been made around the arming (<span style="color:blue">`ALT`</span>) and engaging of <span style="color:green">ALT</span> and <span style="color:green">`ALT*`</span>. The conditions when <span style="color:blue">**ALT**</span> is arming and engaging have been reworked. ALT* is now inhibited 3 s after changing the FCU altitude, and overshoots of the target altitude are now also covered realistically.
+Several changes have been made around the arming (<span style="color:blue">**ALT**</span>) and engaging of <span style="color:green">**ALT**</span> and <span style="color:green">**ALT\***</span>. The conditions when <span style="color:blue">**ALT**</span> is arming and <span style="color:green">**ALT**</span> engaging have been reworked. <span style="color:green">**ALT\***</span> is now inhibited 3 s after changing the FCU altitude, and overshoots of the target altitude are now also covered realistically.
 
 The target load factors used to guide the aircraft have now been separated for every law and situation. For example, the V/S mode usually uses a load factor target of 0.05 g but in case of level off request, it uses 0.1 g (i.e. you push the V/S knob on the FCU).
 
