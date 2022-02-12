@@ -99,11 +99,11 @@ The flare law uses the vertical speed relative to the ground as an input for a v
 
 #### Autothrust
 
-In relation to the autopilot system, the thrust transitions in case of (OP) CLB / DES have been improved. The SPEED / MACH law of the Autothrust system has been improved so that engines react more quickly to better ensure speed is kept in a range of -5 kn to + 10 kn of target speed.
+In relation to the autopilot system, the thrust transitions in case of <span style="color:green">CLB</span>, <span style="color:green">DES</span>, <span style="color:green">OP CLB</span>, <span style="color:green">OP DES</span> have been improved. The <span style="color:green">SPEED</span> / <span style="color:green">MACH</span> law of the Autothrust system has been improved so that engines react more quickly to better ensure speed is kept in a range of -5 kn to + 10 kn of target speed.
 
 In relation to the engines, the thrust limits have been improved. This applies to thrust limits itself but also to the interaction with CLB limit in case of take offs performed with a FLEX temperature being set. Furthermore, the N1 base loop controller has been improved to better achieve N1 target although this does not work out in all cases. For this reason, the engine model and thrust limits will get further accuracy improvements which are in work already.
 
-Last but not least, it turned out that ATHR arming is related to SRS engagement. In case of SRS not engaging on take off, the ATHR will not be armed. Keep this in mind when you take off with a V2 speed not being set.
+Last but not least, it turned out that ATHR arming is related to <span style="color:green">SRS</span> engagement. In case of <span style="color:green">SRS</span> not engaging on take off, the ATHR will not be armed. Keep this in mind when you take off with a V2 speed not being set.
 
 The gains of the ATHR Speed/Mach law have been adjusted to achieve better speed control performance during acceleration or deceleration. The time to reach the target speed is decreased. You can see one example in following video.
 
