@@ -39,7 +39,7 @@ Additionally, the pitch law has been adapted to compensate for speed changes and
 
 Real pilots gave positive feedback after these adjustments. During landing, about 1/3 sidestick pull is necessary during the flare mode (see the video below).
 
-(Youtube Video FBW A32NX | Flare Mode)
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Jjc_VWbH4Nc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Autopilot
 
@@ -55,8 +55,7 @@ It turned out that on a rejected take-off when putting thrust levers to idle, th
 
 Finally, the <span style="color:green">LOC</span>, <span style="color:green">FLARE</span> and <span style="color:green">ROLL OUT</span> laws have been tuned and improved for Autoland. For the <span style="color:green">FLARE</span> law, a new filter has been designed and implemented that improves detection of vertical speed relative to the ground using the radio altimeter. Such a filter is needed to ensure good performance on sloped runways. The result is that the A32NX can now approach on runways with pre-threshold terrain profiles that can induce abnormal landing system performance. A special operational test and evaluation program is required before approving any CAT III operations for real aircraft on these types of runways. One very prominent example is KSEA 16R.
 
-(Youtube Video FBW A32NX | Autoland - KSEA 16R)
-(Youtube Video FBW A32NX | Autoland - EDDM 26L)
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yaPXYa8daBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##### Background on FLARE law
 
@@ -116,7 +115,7 @@ Last but not least, it turned out that ATHR arming is related to <span style="co
 
 The gains of the ATHR Speed/Mach law have been adjusted to achieve better speed control performance during acceleration or deceleration. The time to reach the target speed is decreased. You can see one example in following video.
 
-(Youtube Video FBW A32NX | Autothrust Adjustment)
+<iframe width="400" height="315" src="https://www.youtube-nocookie.com/embed/3YDqC3smF_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### New Flight Warning System
 
