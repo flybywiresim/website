@@ -31,7 +31,7 @@ To provide you with a more realistic flight simulation experience, the FlyByWire
 
 #### Fly-By-Wire System
 
-For the fly-by-wire system we only adjusted the pitch law, only the pitch law was adjusted, as the roll and yaw laws were already close to the full flight simulator results.
+For the fly-by-wire system we only adjusted the pitch law since the roll and yaw laws were already close to the full flight simulator results.
 
 To be closer to the behaviour in the full flight simulator, the achievable pitch rate at lower speeds has been increased. As a result, pitch law is now more sensitive in these scenarios. The recommended sensitivity for the pitch axis is now +/- 30% which also better mimics the increased force that is needed to hold the real sidestick full back or forward (to be noted the real sidestick has a 2-step force curve).
 
