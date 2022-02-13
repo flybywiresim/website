@@ -5,6 +5,7 @@ authors:
     - 'AGuther'
     - 'BehEh'
     - 'IbrahimK42'
+    - 'Commander Ga'
 category: 'UPDATE'
 metaImage: '/img/a32nxwing.png'
 metaAlt: 'FlyByWire Simulations'
@@ -12,7 +13,15 @@ metaAlt: 'FlyByWire Simulations'
 
 ## Overview
 
-**Rewrite Required**
+Welcome back to another February NOTAM! This week we are covering updates to a few our systems in the A32NX. 
+
+- Fly-By-Wire
+- Autopilot
+- Autothrust
+- Flight Warning System
+- Air Conditioning
+
+In case you missed last week's NOTAM you can check it out [here](https://flybywiresim.com/notams/cfms-vnav/).
 
 ---
 
@@ -118,6 +127,12 @@ Over the past months we’ve been building a simulation of the Flight Warning Co
 This first version will include a reworked altitude alert (also known as the “C Chord”), the altitude callouts (“Five Hundred”) now triggered at more accurate heights, and a little-known feature called “intermediate callouts” where the FWCs call out the precise height over ground when too much time has passed since the last call (“One Hundred and Twenty”). It will also feature the “Stall” callout together with the infamous “cricket” noise, but you might find it is very hard to trigger in the normal law supported by our FBW systems today. However, just like in reality the FWCs will be watching and if you ever manage to trick our FBW protections and end up with an unusual angle of attack you will get the appropriate warning.
 
 While those features may sound simple, we have modeled them at an insane level of accuracy, reproducing exact logic found in the real aircraft. This is backed by hundreds of hours of research, countless tests in the real aircraft and study of undocumented behaviours. Nothing is left on the table, and it provides a solid framework for the following versions; we will, following this update, turn our attention to the textual ECAM warnings themselves and the status page.
+
+### Air Conditioning
+
+We’ve introduced the first building blocks of the air conditioning system. The cabin will now be able to warm and cool in accordance with outside conditions and the number of passengers on board. The heat transferred through the walls has been modelled in detail as well as the effect of opening or closing doors. The air flow delivery system has also been overhauled and modelled as per the real aircraft. 
+
+Try it out and observe the different conditions that make the flow of air into the cabin get higher or lower. Play with the overhead knob and notice how increasing or decreasing the flow has an effect on the cabin temperature and the rate of change. From now on you’d better remember to turn on the APU when sitting at the apron in Dubai if you don’t want your passengers to melt!
 
 ---
 
