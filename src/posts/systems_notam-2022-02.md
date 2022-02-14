@@ -39,7 +39,7 @@ In line with these changes, we have updated our joystick setting recommendations
 
 #### Autopilot
 
-Furthermore, we have also improved some of the laws and mode initiation mechanisms of the autopilot systems. First, we have made several changes to the arming (<span style="color:blue">ALT</span>) and engaging mechanisms of <span style="color:green">ALT</span> and <span style="color:green">ALT*</span> modes. We have also reworked the conditions of arming <span style="color:blue">ALT</span> and engaging <span style="color:green">ALT</span>. In addition, <span style="color:green">ALT*</span> is now inhibited 3 seconds after changing the FCU altitude, and the plane now overshoots of the target altitude in a realistic way.
+Furthermore, we have also improved some of the laws and mode initiation mechanisms of the autopilot systems. First, we have made several changes to the arming (<span style="color:blue">ALT</span>) and engaging mechanisms of <span style="color:green">ALT</span> and <span style="color:green">ALT*</span> modes. We have also reworked the conditions of arming <span style="color:blue">ALT</span> and engaging <span style="color:green">ALT</span>. In addition, <span style="color:green">ALT*</span> is now inhibited 3 seconds after changing the FCU altitude, and the plane now overshoots the target altitude in a realistic way.
 
 Second, the target load factors that are used to guide the autopilot are now separated for every law and situation. As an example, the V/S mode usually targets a load factor of 0.05G, but during the level off phase (i.e., when you push the V/S knob on the FCU) it now aims for 0.1G.
 
@@ -101,7 +101,7 @@ The flare law uses the vertical speed of the aircraft relative to the ground as 
 
 #### Autothrust
 
-In relation to the autopilot system, we have improved the thrust transitions in case of <span style="color:green">CLB</span>, <span style="color:green">DES</span>, <span style="color:green">OP CLB</span>, <span style="color:green">OP DES</span>. We have also improved the <span style="color:green">SPEED</span> / <span style="color:green">MACH</span> law of the Autothrust system so that engines react more quickly to better ensure speed is kept in a range of -5 kn to + 10 kn of target approach speed (V<sub>app</sub>).
+In relation to the autopilot system, we have improved the thrust transitions in case of <span style="color:green">CLB</span>, <span style="color:green">DES</span>, <span style="color:green">OP CLB</span>, <span style="color:green">OP DES</span>. We have also improved the <span style="color:green">SPEED</span> / <span style="color:green">MACH</span> law of the Autothrust system so that engines react more quickly to better ensure speed is kept in a range of -5 to + 10 knots of target approach speed (V<sub>app</sub>).
 
 We have also improved the thrust limits. This applies to both the thrust limits themselves and interaction with the CLB limit during flex temp takeoffs. Furthermore, we have improved the N1 base loop controller to better achieve the N1 target, although this does not work in all cases yet. For this reason, the engine model and thrust limits will get further accuracy improvements, which are already in progress.
 
