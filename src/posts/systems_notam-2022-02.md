@@ -35,7 +35,7 @@ On the FBW front, we have made some adjustments to the pitch law and can confirm
 
 In line with these changes, we have updated our joystick setting recommendations. The recommended sensitivity for the pitch axis is now +/- 30%, which better mimics the increased force needed to hold the real sidestick full back or forward (note that the real Airbus sidestick has a 2-step force curve). In addition, you need to pull the sidestick about ⅓ of the way back when the flare mode is active during landing (see the video below).
 
-<iframe width="400" height="315" src="https://www.youtube-nocookie.com/embed/u9io8HYbxlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="400" height="315" src="https://www.youtube-nocookie.com/embed/Ff__pUyELmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Autopilot
 
