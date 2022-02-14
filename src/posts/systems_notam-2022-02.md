@@ -13,7 +13,7 @@ metaAlt: 'FlyByWire Simulations'
 
 ## Overview
 
-Welcome back to another February NOTAM! This week we are covering updates to a few our systems in the A32NX. 
+Welcome back to another February NOTAM! This week we are covering updates to a few of our systems in the A32NX. 
 
 - Fly-By-Wire
 - Autopilot
