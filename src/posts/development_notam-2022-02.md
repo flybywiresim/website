@@ -63,7 +63,7 @@ In the following, we want to give some insights on the flare law.
 
 The flare law has the task to reduce the vertical speed of the plane from approach to touchdown. This needs to work for different weights, center of gravity, wind and (sloped) runways. In the following, we discuss shortly how to handle sloped runways.
 
-The two figures below show the radar altimeter signal during an Autoland for EDDM 26L and KSEA 16R. The signal for EDDM 26L is much more stable and smooth and does not contain any disruption. In contrast, the KSEA 16R shows a typical noise of a radio altimeter signal (in the orange box). Remember that every object on the ground, like trees or houses, is detected. Besides this we can also see the wall (red arrow) just before the 16R runway begins.
+The two figures below show the radar altimeter signal (in feet) during an Autoland for EDDM 26L and KSEA 16R. The signal for EDDM 26L is much more stable and smooth and does not contain any disruption. In contrast, the KSEA 16R shows a typical noise of a radio altimeter signal (in the orange box). Remember that every object on the ground, like trees or houses, is detected. Besides this we can also see the wall (red arrow) just before the 16R runway begins.
 
 [![ata-22-eddm-26L-H_RA](/img/notam-images/feb2022-series/systems/EDDM_26L_H_RA.svg)](/img/notam-images/feb2022-series/systems/EDDM_26L_H_RA.svg)
 *EDDM 26L*
@@ -90,10 +90,10 @@ The signal from the radio altimeter is not a speed; it's a height. Therefore the
 The following filter is being used for the radio altitude:
 <img src="/img/notam-images/feb2022-series/systems/H_RA_Filter.svg" width="200" height="100">
 
-The following figure shows the Autoland in EDDM 26L. The blue line shows the vertical speed relative to the air, and the orange line shows the vertical speed relative to the ground (based on the filtered radio altimeter signal). It can be seen that both lines are very close together because EDDM 26L has a clean terrain profile in front of the runway and the runway has no slope:
+The following figure shows the Autoland in EDDM 26L. The blue line shows the vertical speed relative to the air, and the orange line shows the vertical speed relative to the ground (based on the filtered radio altimeter signal). The unit is feet per minute. It can be seen that both lines are very close together because EDDM 26L has a clean terrain profile in front of the runway and the runway has no slope:
 [![ata-22-eddm-26L-Hdot](/img/notam-images/feb2022-series/systems/EDDM_26L_Hdot.svg)](/img/notam-images/feb2022-series/systems/EDDM_26L_Hdot.svg)
 
-In contrast, the following two figures for KSEA 16R and KLAS 01L show a discrepancy between vertical speed relative to air and ground. The runway slope can also be seen because there is a difference even after the touchdown.
+In contrast, the following two figures for KSEA 16R and KLAS 01L show a discrepancy between vertical speed relative to air and ground (unit is feet per minute). The runway slope can also be seen because there is a difference even after the touchdown.
 
 [![ata-22-ksea-16R-Hdot](/img/notam-images/feb2022-series/systems/KSEA_16R_Hdot.svg)](/img/notam-images/feb2022-series/systems/KSEA_16R_Hdot.svg)
 *KSEA 16R*
