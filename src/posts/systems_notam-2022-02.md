@@ -35,7 +35,7 @@ On the FBW front, we have made some adjustments to the pitch law and can confirm
 
 In line with these changes, we have updated our joystick setting recommendations. The recommended sensitivity for the pitch axis is now +/- 30%, which better mimics the increased force needed to hold the real sidestick full back or forward (note that the real Airbus sidestick has a 2-step force curve). In addition, you need to pull the sidestick about ⅓ of the way back when the flare mode is active during landing (see the video below).
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/u9io8HYbxlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="400" height="315" src="https://www.youtube-nocookie.com/embed/u9io8HYbxlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Autopilot
 
@@ -49,7 +49,7 @@ This is not to mention other changes we have made. We discovered that the <span 
 
 Finally, we have tuned and improved the <span style="color:green">LOC</span>, <span style="color:green">FLARE</span> and <span style="color:green">ROLL OUT</span> Autoland laws. A new filter has been designed and implemented for the <span style="color:green">FLARE</span> law to improve measurement of vertical speed relative to the ground using the radio altimeter. Such a filter is needed to ensure normal behaviour on sloped runways. Due to this, the A32NX can now perform approaches on runways with pre-threshold terrain profiles that can induce abnormal landing system behaviour. A special operational test and evaluation program is required before approving any CAT III operations for real aircraft on these types of runways. One very prominent example is Seattle-Tacoma/KSEA’s 16R.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yaPXYa8daBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="400" height="315" src="https://www.youtube-nocookie.com/embed/yaPXYa8daBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##### Background on FLARE law
 
