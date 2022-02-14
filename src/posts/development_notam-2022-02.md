@@ -7,7 +7,7 @@ authors:
     - 'IbrahimK42'
     - 'Commander Ga'
 category: 'UPDATE'
-metaImage: '/img/a32nxwing.png'
+metaImage: '/img/systems-notam-feature.png'
 metaAlt: 'FlyByWire Simulations'
 ---
 
@@ -39,7 +39,7 @@ Additionally, the pitch law has been adapted to compensate for speed changes and
 
 Real pilots gave positive feedback after these adjustments. During landing, about 1/3 sidestick pull is necessary during the flare mode (see the video below).
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Jjc_VWbH4Nc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/u9io8HYbxlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Autopilot
 
@@ -115,7 +115,7 @@ Last but not least, it turned out that ATHR arming is related to <span style="co
 
 The gains of the ATHR Speed/Mach law have been adjusted to achieve better speed control performance during acceleration or deceleration. The time to reach the target speed is decreased. You can see one example in following video.
 
-<iframe width="400" height="315" src="https://www.youtube-nocookie.com/embed/3YDqC3smF_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="400" height="315" src="https://www.youtube-nocookie.com/embed/ODU3uectf3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### New Flight Warning System
 
