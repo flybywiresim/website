@@ -48,7 +48,8 @@ Dual engine operation will give you nominal extension times. But if you try to u
 Patience my friends, you were using the default MSFS flight controls!
 
 In a previous [NOTAM](https://flybywiresim.com/notams/development_notam-2021-10/) we talked about cargo door operation using a fully physical based simulation of hydraulic actuators? We will now deploy that system all around the aircraft, so you can have totally realistic flight controls.
-As a reminder, the A320 is basically controlled by flight computers that will send commands to hydraulic actuators. This will be fully simulated in the A32NX, where each actuator will receive orders, and will move their surface to a desired position. As we love to have some fun, this is the full hydraulic servo position control loop that is simulated in real-time.???
+As a reminder, the A320 is basically controlled by flight computers that will send commands to hydraulic actuators. This will be fully simulated in the A32NX, where each actuator will receive orders, and will move their surface to a desired position. Since we do enjoy having some fun, we're now able to simulate full hydraulic servo position control loops in real-time. 
+
 Ailerons will be the first control surfaces to implement that system. Each aileron is controlled hydraulically by servo actuators, trying to reach a commanded position, as shown below:
 
 ![aileron-1](/img/notam-images/feb2022-series/hydraulics/hydraulics.png)
