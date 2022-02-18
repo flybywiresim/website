@@ -51,15 +51,53 @@ In a previous [NOTAM](https://flybywiresim.com/notams/development_notam-2021-10/
 As a reminder, the A320 is basically controlled by flight computers that will send commands to hydraulic actuators. This will be fully simulated in the A32NX, where each actuator will receive orders, and will move their surface to a desired position. As we love to have some fun, this is the full hydraulic servo position control loop that is simulated in real-time.???
 Ailerons will be the first control surfaces to implement that system. Each aileron is controlled hydraulically by servo actuators, trying to reach a commanded position, as shown below:
 
-
+![aileron-1](/img/notam-images/feb2022-series/hydraulics/hydraulics.png)
 
 There are two actuators controlling each aileron. One is the master actuator, controlling the position, the other one is a slaved one used in damping mode. Those control modes are simulated for all 4 actuators and will be activated accordingly as commanded by flight computers. The slave/master configuration can be switched following the flight computer state.
 
+![aileron-2](/img/notam-images/feb2022-series/hydraulics/hydraulics2.png)
+
 Note that this is the first implementation step of hydraulic low level.  Flight computer logic is for now a simple placeholder. When it comes to aircraft control, the hydraulic implementation will for now only be visual, and will not impact flight physics. Aerodynamic forces are also not computed yet, so do not be surprised if you see a drooping aileron in flight.
-Again - patience my friends.
-Maybe some moving things are better than thousands of words!
+
+Again - patience my friends. Maybe some moving things are better than thousands of words!
+
 https://streamable.com/jmvds0
+
 In the video above you can see the famous aileron droop and aileron position control when hydraulic servos are active. This show clip also demonstrates how the yellow electric pump is fully simulated - as you can hear its pitch changing. What can also be seen is the PTU acting in a continuous manner, except at some point where it reaches the 500psi pressure difference, where it will act on its yellow side displacement control and shout a large bark and greatly impact the electric pump pitch. We plan on improving the soundscape for these features soon!
-Now a more realistic case: if your plane finds itself upside down while on the ground, obviously the aileron droop will go up! Uh wait… Down… Well you get my point!
+
+Now a *more realistic case*: if your plane finds itself upside down while on the ground, obviously the aileron droop will go up! Uh wait… Down… Well you get my point!
+
 https://streamable.com/1p17hj
-[Can we have Benny hill music for that one? :D]
+
+*[Can we have Benny hill music for that one? :D]*
+
+---
+
+## General Information
+
+Stay up to date with information from FlyByWire Simulations by following our social media!
+
+- [Twitter](https://twitter.com/FlyByWireSim)
+- [Facebook](https://www.facebook.com/FlyByWireSimulations/)
+
+If you require support or would like to submit a bug report please see the links below:
+
+- [Support Guide](https://docs.flybywiresim.com/fbw-a32nx/support/)
+- [Discord Support](https://discord.gg/flybywire)
+- [GitHub Issues](https://github.com/flybywiresim/a32nx/issues/new/choose)
+
+When submitting an issue or asking for support to do the following:
+
+- Visit our [Reported Issues Documentation](https://docs.flybywiresim.com/fbw-a32nx/support/reported-issues/) for common problems and workarounds.
+- Ensure that your issue has not already been reported on our GitHub.
+
+Download the latest version of the A32NX:
+
+- [Installer](https://api.flybywiresim.com/installer)
+- [Standalone Versions](https://flybywiresim.com/a32nx/#download)
+
+---
+
+Safe skies and happy flying!
+
+*Editors: Kevin, Valastiri*
