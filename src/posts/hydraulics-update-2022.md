@@ -29,13 +29,9 @@ Up to now we were using a simple flow model for the famous Barking dog. But a po
 In fact, it not always operates as a barking dog, but can also provide hydraulic power in a more continuous manner.
 To model this, we switched the PTU to a physical based simulation, which will react to pressure variations and make the PTU mechanical shaft spin in a realistic manner. Should the green or yellow system lose its fluid, PTU will spin ultra fast, and when we will model the temperature, you will quickly get into trouble! All of this will soon be used by the sound engine so the continuous operation of the PTU and its recognizable slow growling sound can really shine.
 
----
-
-## Coming Soon to Hydraulics
-
 ### Flaps and Slats
 
-Flaps and slats logic was recently brought into our custom systems. Soon, it will be connected realistically to the hydraulics. These systems are, surprisingly, incredibly complicated systems. Before going into a fully modeled system, which will come later, we first added a medium detailed system that will bring more realism in its hydraulic interactions.
+Flaps and slats logic was recently brought into our custom systems. Now, it is connected realistically to the hydraulics. These systems are, surprisingly, incredibly complicated systems. Before going into a fully modeled system, which will come later, we first added a medium detailed system that will bring more realism in its hydraulic interactions.
 
 Flaps and slats are respectively moved by 4 hydraulic motors connected through differential gearboxes, all of which are now connected to their corresponding hydraulic lines. Deploying times of flaps and slats will now highly depend on your hydraulic configuration, as they are using a lot of hydraulic flow to move.
 
@@ -50,7 +46,7 @@ Patience my friends, you were using the default MSFS flight controls!
 In a previous [NOTAM](https://flybywiresim.com/notams/development_notam-2021-10/) we talked about cargo door operation using a fully physical based simulation of hydraulic actuators? We will now deploy that system all around the aircraft, so you can have totally realistic flight controls.
 As a reminder, the A320 is basically controlled by flight computers that will send commands to hydraulic actuators. This will be fully simulated in the A32NX, where each actuator will receive orders, and will move their surface to a desired position. Since we do enjoy having some fun, we're now able to simulate full hydraulic servo position control loops in real-time. 
 
-Ailerons will be the first control surfaces to implement that system. Each aileron is controlled hydraulically by servo actuators, trying to reach a commanded position, as shown below:
+Ailerons are the first control surfaces to implement that system. Each aileron is controlled hydraulically by servo actuators, trying to reach a commanded position, as shown below:
 
 ![aileron-1](/img/notam-images/feb2022-series/hydraulics/hydraulics.png)
 
@@ -58,7 +54,7 @@ There are two actuators controlling each aileron. One is the master actuator, co
 
 ![aileron-2](/img/notam-images/feb2022-series/hydraulics/hydraulics2.png)
 
-Note that this is the first implementation step of hydraulic low level.  Flight computer logic is for now a simple placeholder. When it comes to aircraft control, the hydraulic implementation will for now only be visual, and will not impact flight physics. Aerodynamic forces are also not computed yet, so do not be surprised if you see a drooping aileron in flight.
+Note that this is the first implementation step of hydraulic low level.  Flight computer logic is for now a simple placeholder. When it comes to aircraft control, the hydraulic implementation will for now only be visual, and will not impact flight physics. Aerodynamic forces are also not computed yet, so do not be surprised if you see a drooping aileron in flight... More about this in the next section!
 
 Again - patience my friends. Maybe some moving things are better than thousands of words!
 
@@ -71,6 +67,20 @@ Now a *more realistic case*: if your plane finds itself upside down while on the
 https://streamable.com/1p17hj
 
 *[Can we have Benny hill music for that one? :D]*
+
+---
+
+## Coming Soon to Hydraulics
+
+As we progress, we will simulate all control surfaces in the same realistic manner. Experimental version already has some early versions of elevator and rudder hydraulic simulation, including a realistic left/right elevator split. Don't hesitate to give it a try, and see those surfaces drooping or coming to life depending on hydraulic state of the plane.
+
+Even in that early version, we are already simulating the fact that in certain speed/pitch demand conditions, the elevator is commanded by all actuators instead of "one slave/one master" actuator combination, so the surface gets the maximum available power to fight against those massive aerodynamic forces. Sadly, as we talked earlier, the surfaces are not receiving any aerodynamic forces due to MSFS SDK limitations, so that control surfaces will even droop in flight if hydraulic power is lost.
+
+Well, this will soon be sorted out, as we will compute our own aerodynamic model for those control surfaces, so that they truly react to external forces. While in normal operation it would not be noticed, it will start to shine when hydraulics start to fail, and stop providing enough power for the surfaces to respond correctly. This way, the hydraulics will naturally impact flight characteristics as they would in real life.
+
+Here's an early demo of what to expect with that new aerodynamic system. Yes, if there's enough wind, ailerons can droop UP! 
+
+[VIDEO MATERIAL SHOWING WIND ON SURFACES]
 
 ---
 
