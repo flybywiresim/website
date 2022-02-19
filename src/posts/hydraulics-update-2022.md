@@ -78,9 +78,9 @@ Even in that early version, we are already simulating the fact that in certain s
 
 Well, this will soon be sorted out, as we will compute our own aerodynamic model for those control surfaces, so that they truly react to external forces. While in normal operation it would not be noticed, it will start to shine when hydraulics start to fail, and stop providing enough power for the surfaces to respond correctly. This way, the hydraulics will naturally impact flight characteristics as they would in real life.
 
-Here's an early demo of what to expect with that new aerodynamic system. Yes, if there's enough wind, ailerons can droop UP! 
+Here's an early demo of what to expect with that new aerodynamic system. Yes, if there's enough wind, elevator or ailerons can droop UP! 
 
-[VIDEO MATERIAL SHOWING WIND ON SURFACES]
+https://streamable.com/da0k2o
 
 ---
 
