@@ -10,7 +10,7 @@ metaAlt: 'FlyByWire Simulations'
 
 ## Implemented Features
 
-What’s up in the hydraulics department? Maybe you haven't noticed, but lately some features have already made their way in into the development version.
+What’s up in the hydraulics department? Maybe you haven't noticed, but lately some features have already made their way into the development version.
 
 ### Bleed System Interaction
 
@@ -76,7 +76,7 @@ https://streamable.com/1p17hj
 
 As we progress, we will simulate all control surfaces in the same realistic manner. Experimental version already has some early versions of elevator and rudder hydraulic simulation, including a realistic left/right elevator split. Don't hesitate to give it a try, and see those surfaces drooping or coming to life depending on hydraulic state of the plane.
 
-Even in with this early version, we are already simulating the fact that in certain speed/pitch demand conditions, the elevator is commanded by all actuators instead of "one slave/one master" actuator combination, so the surface gets the maximum available power to fight against those massive aerodynamic forces. Sadly the surfaces are not receiving any aerodynamic forces due to MSFS SDK limitations, so that control surfaces will even droop in flight if hydraulic power is lost.
+Even in this early version, we are already simulating the fact that in certain speed/pitch demand conditions, the elevator is commanded by all actuators instead of "one slave/one master" actuator combination, so the surface gets the maximum available power to fight against those massive aerodynamic forces. Sadly the surfaces are not receiving any aerodynamic forces due to MSFS SDK limitations, so that control surfaces will even droop in flight if hydraulic power is lost.
 
 Well, this will soon be sorted out, as we will compute our own aerodynamic model for those control surfaces, so that they truly react to external forces. While in normal operation it would not be noticed, it will start to shine when hydraulics start to fail, and stop providing enough power for the surfaces to respond correctly. This way, the hydraulics will naturally impact flight characteristics as they would in real life.
 
