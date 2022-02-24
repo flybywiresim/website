@@ -22,7 +22,7 @@ If it occurs at cruising altitude, you will lose a lot of hydraulic power. Get t
 
 The blue circuit emergency generator is now simulated and will spin at a valve-regulated 12000 rpm to provide electrical power from hydraulic flow. The RAT will provide that flow in the event of an electrical failure and will get you safely on the ground. While there is no 3D RAT model - this will come with the remodel - it has been simulated, with only small features missing (e.g. the anti-stall system,which will come later).
 
-### Physical Based PTU
+### Physics Based PTU
 
 Until recently, we only had a simple PTU flow model, but a proper power transfer unit implementation is far more complicated than a line of code that tells it to activate at a pressure difference of 500psi. In fact, it does not always bark - it can also provide hydraulic power continuously.
 
