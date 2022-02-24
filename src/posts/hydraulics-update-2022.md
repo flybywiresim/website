@@ -4,7 +4,7 @@ date: 'TBD'
 authors:
   - 'Davy'
 category: 'UPDATE'
-metaImage: '/img/a32nxwing.png'
+metaImage: '/img/hydraulics-feature.png'
 metaAlt: 'FlyByWire Simulations'
 ---
 
