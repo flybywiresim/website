@@ -38,8 +38,6 @@ Flaps and slats are moved by four hydraulic motors connected through differentia
 
 > Why are the flight controls moving in a cold and dark state?
 
-Patience my friends, you were using the default MSFS flight controls!
-
 Don’t panic, it’s just the default MSFS flight controls!
 
 In one of our previous [NOTAMs](https://flybywiresim.com/notams/development_notam-2021-10/), we talked about cargo door operation using a full physics-based simulation of the hydraulic actuators. This will eventually be expanded to all actuators in the aircraft, so you can expect fully realistic flight controls in due course. As a reminder, the A320 is basically controlled by flight computers that send commands to hydraulic actuators. This will be fully simulated in the A32NX, where each actuator will receive orders and move their corresponding control surface to the commanded position. Since we do enjoy having some fun, we are now able to simulate full hydraulic servo position control loops in real-time.
