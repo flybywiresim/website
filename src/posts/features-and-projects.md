@@ -3,6 +3,7 @@ title: 'Feature Updates and Other Projects'
 date: 'TBD'
 authors:
   - 'BenW'
+  - 'Cdr_Maverick'
   - 'Kevin'
   - 'Valastiri'
 category: 'UPDATE'
@@ -60,6 +61,7 @@ We have used this first development as a means of evaluating our strategy regard
 
 ### Nose WheelTiller
 We implemented a way to use the tiller independently of the rudder utilising custom hydraulic steering. Based on our QA tests and feedback from our type rated pilots, this is a great start that helps accurately represent realistic situations when taxiing the aircraft. You can read more about how to use this feature and associated information in the guide below.
+
 [Nose Wheel Tiller Guide](https://docs.flybywiresim.com/fbw-a32nx/feature-guides/nw-tiller/)
 
 ### Stored Waypoints
@@ -69,7 +71,15 @@ You can read more about how to use this feature and associated information in th
 [Stored Waypoints Guide](https://docs.flybywiresim.com/pilots-corner/advanced-guides/data-management/)
 
 ### flyPadOS v3
-We have been working hard on a new version of the flyPad to include many additional requested features. To mention a few we will have a beautiful new design, better navigation handling remembering previously visited tabs and input fields, ability to pin charts, checklists, enhanced pushback features, and much more.
+We have been working hard on a new version of the flyPad featuring a beautiful new design and many additional requested features.
+
+- Better navigation handling remembering previously visited tabs and input fields
+- Ability to pin charts
+- Checklists
+- Enhanced pushback features
+- and much more!
+
+Below is a preview of the upcoming update. (Work in progress and final layout may look different.)
 
 ![efb-checklist](/img/notam-images/march2022/efb-checklist.png)
 
@@ -78,8 +88,6 @@ We have been working hard on a new version of the flyPad to include many additio
 ![efb-charts](/img/notam-images/march2022/efb-charts.png)
 
 ![efb-dashboard](/img/notam-images/march2022/efb-dashboard.png)
-
-(Work in progress and final layout may look different.)
 
 ---
 
