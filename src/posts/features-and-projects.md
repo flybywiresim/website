@@ -9,7 +9,7 @@ category: 'UPDATE'
 metaImage: '/img/a32nxwing.png'
 metaAlt: 'FlyByWire Simulations'
 ---
-  
+
 ## Overview
 
 Pending Text
@@ -52,6 +52,10 @@ We have recently launched a new feature that has seen incredible popularity amon
 You can read up on this new functionality here:
 [MCDU Web Interface Guide](https://docs.flybywiresim.com/fbw-a32nx/feature-guides/web-mcdu/)
 
+Recent updates to this feature based on user feedback include an updated A32NX MCDU image, button click sounds, day and night mode and the CLR Hold function (to delete the scratchpad when holding the CLR button).
+
+![web-mcdu](../../public/img/web-mcdu.png)
+
 We have used this first development as a means of evaluating our strategy regarding custom instruments. We are currently working on developing custom high-speed protocols for offloading instrument rendering onto other programs or even other devices, over a network, to offer better possibilities for home cockpit integration.
 
 ### Nose WheelTiller
@@ -63,6 +67,19 @@ We also implemented stored waypoints recently allowing pilots to enter in custom
 You can read more about how to use this feature and associated information in the guide below.
 
 [Stored Waypoints Guide](https://docs.flybywiresim.com/pilots-corner/advanced-guides/data-management/)
+
+### flyPadOS v3
+We have been working hard on a new version of the flyPad to include many additional requested features. To mention a few we will have a beautiful new design, better navigation handling remembering previously visited tabs and input fields, ability to pin charts, checklists, enhanced pushback features, and much more.
+
+![efb-checklist](../../public/img/efb-checklist.png)
+
+![efb-atc](../../public/img/efb-atc.png)
+
+![efb-charts](../../public/img/efb-charts.png)
+
+![efb-dashboard](../../public/img/efb-dashboard.png)
+
+(Work in progress and final layout may look different.)
 
 ---
 
@@ -80,10 +97,11 @@ The FBW Discord bot is undergoing huge improvements with the upgrade to discord.
 
 We have recently completed a branding update to our [documentation website](https://docs.flybywiresim.com/) featuring our new logo and an updated color palette. If you are not already aware, FlyByWire documentation provides a wealth of knowledge for support, technical issues, A32NX feature guides, aircraft information, and systems information.
 
-The site is continuously updated and we fact-check information with our pilots and developers for accuracy and to ensure we publish useful and educational information. Our pilots corner section contains the [Beginners Guide](https://docs.flybywiresim.com/pilots-corner/beginner-guide/overview/) which should not be mistaken for only novice pilots as it contains relevant information on all of our implemented systems with the A32NX. We also have our [Interactive Flight Deck](https://docs.flybywiresim.com/pilots-corner/a32nx-briefing/flight-deck/) where you can click on any panel on board the aircraft and read more about a specific system.
+The site is continuously updated, and we fact-check information with our pilots and developers for accuracy and to ensure we publish useful and educational information. Our pilots corner section contains the [Beginners Guide](https://docs.flybywiresim.com/pilots-corner/beginner-guide/overview/) which should not be mistaken for only novice pilots as it contains relevant information on all of our implemented systems with the A32NX. We also have our [Interactive Flight Deck](https://docs.flybywiresim.com/pilots-corner/a32nx-briefing/flight-deck/) where you can click on any panel on board the aircraft and read more about a specific system.
 
 We currently have a backlog of pending documentation and guides. If you are interested in helping to expand the scope of our documentation site please feel free to take a look at either our project board or issues list below. You can visit the GitHub repository for information and resources on how to contribute to the project.
 
+- [Contribute](https://docs.flybywiresim.com/dev-corner/development-projects/documentation/)
 - [Project Board](https://github.com/flybywiresim/docs/projects/1)
 - [Issues List](https://github.com/flybywiresim/docs/issues)
 - [Docs GitHub](https://github.com/flybywiresim/docs)
@@ -92,4 +110,4 @@ Please contact the following users on Discord if you need any assistance helping
 - Valastiri#8902
 - Cdr_Maverick#6475
 
-We hope you find our documentation site a great resource for all your flights with us at FBW. 
+We hope you find our documentation site a great resource for all your flights with us at FBW.
