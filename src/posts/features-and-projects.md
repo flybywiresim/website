@@ -54,7 +54,7 @@ You can read up on this new functionality here:
 
 Recent updates to this feature based on user feedback include an updated A32NX MCDU image, button click sounds, day and night mode and the CLR Hold function (to delete the scratchpad when holding the CLR button).
 
-![web-mcdu](../../public/img/web-mcdu.png)
+![web-mcdu](/img/notam-images/march2022/web-mcdu.png)
 
 We have used this first development as a means of evaluating our strategy regarding custom instruments. We are currently working on developing custom high-speed protocols for offloading instrument rendering onto other programs or even other devices, over a network, to offer better possibilities for home cockpit integration.
 
@@ -71,13 +71,13 @@ You can read more about how to use this feature and associated information in th
 ### flyPadOS v3
 We have been working hard on a new version of the flyPad to include many additional requested features. To mention a few we will have a beautiful new design, better navigation handling remembering previously visited tabs and input fields, ability to pin charts, checklists, enhanced pushback features, and much more.
 
-![efb-checklist](../../public/img/efb-checklist.png)
+![efb-checklist](/img/notam-images/march2022/efb-checklist.png)
 
-![efb-atc](../../public/img/efb-atc.png)
+![efb-atc](/img/notam-images/march2022/efb-atc.png)
 
-![efb-charts](../../public/img/efb-charts.png)
+![efb-charts](/img/notam-images/march2022/efb-charts.png)
 
-![efb-dashboard](../../public/img/efb-dashboard.png)
+![efb-dashboard](/img/notam-images/march2022/efb-dashboard.png)
 
 (Work in progress and final layout may look different.)
 
