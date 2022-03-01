@@ -7,7 +7,7 @@
     "@flybywiresim/react-components": "^0.3.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^6.0.0",
     "@fortawesome/react-fontawesome": "^0.1.15",
     "@tabler/icons": "^1.53.0",
     "gray-matter": "^4.0.3",
