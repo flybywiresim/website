@@ -55,7 +55,7 @@ You can read up on this new functionality here:
 
 Recent updates to this feature based on user feedback include an updated A32NX MCDU image, button click sounds, day and night mode and the CLR Hold function (to delete the scratchpad when holding the CLR button).
 
-![web-mcdu](/img/notam-images/march2022/web-mcdu.png)
+![web-mcdu](/img/notam-images/march2022/mcdu-day-night.png)
 
 We have used this first development as a means of evaluating our strategy regarding custom instruments. We are currently working on developing custom high-speed protocols for offloading instrument rendering onto other programs or even other devices, over a network, to offer better possibilities for home cockpit integration.
 
