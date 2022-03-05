@@ -34,8 +34,9 @@ The following is a summary of the progress we have made:
 - The EIS font has been merged into the aircraft
 - The ISIS font is in the works
 - The DCDU fonts are being reworked
-- The A380 RMP fonts are in advanced progress
-- Here are some previews of the ISIS and RMP fonts:
+- The A380 RMP fonts are in advanced progress 
+ 
+Here are some previews of the ISIS and RMP fonts:
 
 ![typeface 1](/img/notam-images/march2022/typeface-1.png)
 ![typeface 2](/img/notam-images/march2022/typeface-2.png)
