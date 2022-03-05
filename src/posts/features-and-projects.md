@@ -68,6 +68,8 @@ We implemented a way to use the tiller independently of the rudder utilising cus
 We also implemented stored waypoints recently allowing pilots to enter in custom waypoints to expand your data management for your flights. This allows for pilots to create, enter, and utilise pre-planned waypoints with a designated name such as “MYWP1” without having to type in latitude/longitude coordinates mid-flight.
 You can read more about how to use this feature and associated information in the guide below.
 
+![Stored Waypoints](/img/notam-images/march2022/stored-waypoints.png "Stored Waypoints")
+
 [Stored Waypoints Guide](https://docs.flybywiresim.com/pilots-corner/advanced-guides/data-management/)
 
 ### flyPadOS v3
