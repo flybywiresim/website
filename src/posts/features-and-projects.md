@@ -104,11 +104,11 @@ Below is a preview of the upcoming update. (Work in progress and final layout ma
 
 ### Discord Bot
 
-The FlyByWire Discord bot has been updated to discord.js v13 and API v9. With this update there are not many changes to the functionality of the bot, however it will enable us to add many great features in the future! The current changes mean that the bot now works in threads, making it even more of an invaluable tool for our Community Support Team to help users diagnose issues!
+The FlyByWire Discord bot has been updated to discord.js v13 and API v9. As a result of this update the bot now works in threads, making it even more of an invaluable tool for our Community Support Team to help users diagnose issues! While there may not be many changes to the functionality of the bot, we have laid the foundation to add many great features in the future! 
 
 Now that the update is complete, we have some exciting projects in the pipeline that we have started to work on - one of them being music integration! It would be beneficial for more people to join the Bot Development Team, so we can keep up with the regular workload of adding and updating commands to be used across the Discord server!
 
-If you are interested in helping out with some of these projects or adding and updating support commands while the team is busy with other projects, please let us know in the #discord-bot channel. Alternatively, contact the following users directly:
+If you are interested in helping out with some of these projects or adding and updating support commands while the team is busy with other projects, please let us know in the #discord-bot channel (*you may need to obtain the programmer role from the #roles channel first*). Alternatively, contact the following users directly:
 
 - BenW#8484
 - █▀█ █▄█ ▀█▀#2123
