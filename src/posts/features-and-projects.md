@@ -37,13 +37,13 @@ The following is a summary of the progress we have made:
 - The A380 RMP fonts are in advanced progress
 - Here are some previews of the ISIS and RMP fonts:
 
-[image here](#)
-[image 2 here](#)
+![typeface 1](/img/notam-images/march2022/typeface-1.png)
+![typeface 2](/img/notam-images/march2022/typeface-2.png)
 
 One last thing: we rework our fonts as new information and references come, some of which have fundamentally changed our understanding of the displays’ workings (e.g. subpixel array design). As an example, here are photos of our DCDU font before and after reworking:
 
-[image 3 here](#)
-[image 4 here](#)
+![typeface 3](/img/notam-images/march2022/typeface-3.png)
+![typeface 4](/img/notam-images/march2022/typeface-4.png)
 
 In this case, it has allowed us to go one step further and reach the final frontier in display typeface replication - previously uncharted territory in the flight simulation industry - sub-pixel accuracy.
 
