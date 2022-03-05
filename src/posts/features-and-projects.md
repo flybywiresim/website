@@ -50,6 +50,10 @@ One last thing: we rework our fonts as new information and references come, some
 
 In this case, it has allowed us to go one step further and reach the final frontier in display typeface replication - previously uncharted territory in the flight simulation industry - sub-pixel accuracy.
 
+### CPDLC with HOPPIE
+
+[Pending]
+
 ### MCDU Web Interface
 We have recently launched a new feature that has seen incredible popularity amongst our users; the MCDU web interface. It provides a convenient and easy to use web connection to run the MCDU over a web browser on any computer located on your local network.
 
