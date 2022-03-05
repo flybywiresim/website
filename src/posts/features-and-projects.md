@@ -13,7 +13,9 @@ metaAlt: 'FlyByWire Simulations'
 
 ## Overview
 
-Pending Text
+We hope that you have enjoyed the series of in-depth NOTAMs we published in February. As the team at FlyByWire Simulations continues to release new features and fine-tune those we already have, we never stop thinking of new ways to improve the experience flying the A32NX.
+
+Keeping up with the many features we release each day onto our Development branch can be a little daunting. With that in mind this NOTAM calls to attention previously released features and updates as well as a sneak peek into flyPadOS v3! Additionally, we shine a light on the state of a couple of our other FlyByWire projects - Discord Bot and Documentation.
 
 ---
 
