@@ -1,6 +1,6 @@
 ---
 title: 'Feature Updates and Other Projects'
-date: 'TBD'
+date: '2022-03-09'
 authors:
   - 'BenW'
   - 'Cdr_Maverick'
@@ -8,7 +8,7 @@ authors:
   - 'Sven [de en]'
   - 'Valastiri'
 category: 'UPDATE'
-metaImage: '/img/a32nxwing.png'
+metaImage: '/img/notam-images/march2022/dcdu-dep-req.png'
 metaAlt: 'FlyByWire Simulations'
 ---
 
