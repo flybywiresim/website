@@ -76,7 +76,7 @@ Recent updates to this feature based on user feedback include an updated A32NX M
 
 We have used this first development as a means of evaluating our strategy regarding custom instruments. We are currently working on developing custom high-speed protocols for offloading instrument rendering onto other programs or even other devices, over a network, to offer better possibilities for home cockpit integration.
 
-### Nose WheelTiller
+### Nose Wheel Tiller
 We implemented a way to use the tiller independently of the rudder utilising custom hydraulic steering. Based on our QA tests and feedback from our type rated pilots, this is a great start that helps accurately represent realistic situations when taxiing the aircraft. You can read more about how to use this feature and associated information in the guide below.
 
 [Nose Wheel Tiller Guide](https://docs.flybywiresim.com/fbw-a32nx/feature-guides/nw-tiller/)
