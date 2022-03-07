@@ -55,11 +55,9 @@ In this case, it has allowed us to go one step further and reach the final front
 
 We implemented CPDLC (Controller-Pilot-Datalink-Communication) in the A32NX based on Hoppie's ACARS system. Thereby it is possible to request route clearances on ground (DEPART REQ) and e.g. over the Atlantic (OCEANIC REQ). The whole implementation is based on a realistic realization of the ATS 623 standard. Furthermore, instructions from the air traffic controllers can be received and answered via the DCDU. We took care to display the data in the DCDU as realistically as possible.
 
-#### TODO IMAGE ATC COMM PAGE 2
-![ATS 623 in the MCDU](/img/notam-images/march2022/ats623.png)
+![mcdu-atc-comm2](/img/notam-images/march2022/mcdu-atc-comm2.png)
 
-#### TODO IMAGE OF DCL IN DCDU
-![Depart Req in the DCDU](/img/notam-images/march2022/dcdu-dcl.png)
+![dcdu-dep-req](/img/notam-images/march2022/dcdu-dep-req.png)
 
 In the next steps, FANS-A and FANS-B systems are implemented for a realistic simulation. Depending on the responsible sector, various communication functions will be activated. The first step is to implement requests that can be sent from the pilot to the air traffic controller. Our goal is a realistic ATSU implementation that also allows automatic responses to requests to be prepared and displayed to the pilot for review and adjustment.
 
