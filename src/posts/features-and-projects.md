@@ -64,8 +64,6 @@ In the next steps, FANS-A and FANS-B systems are implemented for a realistic sim
 We are also working on a realistic simulation of data link communications based on the VHF data link specification as implemented in real communications.
 This will result in different communication times depending on the other aircraft, available ground stations and distances to the stations. Depending on the situation, this can last from a few seconds to several minutes and is always simulated accordingly.
 
-[Pending]
-
 ### MCDU Web Interface
 We have recently launched a new feature that has seen incredible popularity amongst our users; the MCDU web interface. It provides a convenient and easy to use web connection to run the MCDU over a web browser on any computer located on your local network.
 
