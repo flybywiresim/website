@@ -6,6 +6,7 @@ authors:
   - 'Cdr_Maverick'
   - 'Kevin'
   - 'Valastiri'
+  - 'Sven [de en]'
 category: 'UPDATE'
 metaImage: '/img/a32nxwing.png'
 metaAlt: 'FlyByWire Simulations'
@@ -50,7 +51,20 @@ One last thing: we rework our fonts as new information and references come, some
 
 In this case, it has allowed us to go one step further and reach the final frontier in display typeface replication - previously uncharted territory in the flight simulation industry - sub-pixel accuracy.
 
-### CPDLC with HOPPIE
+### CPDLC with Hoppie
+
+We implemented CPDLC (Controller-Pilot-Datalink-Communication) in the A32NX based on Hoppie's ACARS system. Thereby it is possible to request route clearances on ground (DEPART REQ) and e.g. over the Atlantic (OCEANIC REQ). The whole implementation is based on a realistic realization of the ATS 623 standard. Furthermore, instructions from the air traffic controllers can be received and answered via the DCDU. We took care to display the data in the DCDU as realistically as possible.
+
+#### TODO IMAGE ATC COMM PAGE 2
+![ATS 623 in the MCDU](/img/notam-images/march2022/ats623.png)
+
+#### TODO IMAGE OF DCL IN DCDU
+![Depart Req in the DCDU](/img/notam-images/march2022/dcdu-dcl.png)
+
+In the next steps, FANS-A and FANS-B systems are implemented for a realistic simulation. Depending on the responsible sector, various communication functions will be activated. The first step is to implement requests that can be sent from the pilot to the air traffic controller. Our goal is a realistic ATSU implementation that also allows automatic responses to requests to be prepared and displayed to the pilot for review and adjustment.
+
+We are also working on a realistic simulation of data link communications based on the VHF data link specification as implemented in real communications.
+This will result in different communication times depending on the other aircraft, available ground stations and distances to the stations. Depending on the situation, this can last from a few seconds to several minutes and is always simulated accordingly.
 
 [Pending]
 
