@@ -107,7 +107,7 @@ We have been working hard on a new version of flyPadOS with a beautiful new desi
 - Enhanced pushback features
 - and much more!
 
-Shown below is a short work in progress preview of the upcoming update. The final layout may look different.
+Shown below is are short work in progress previews of the upcoming update. The final layout may look different.
 
 On the dashboard, we have a reworked flight widget on the left that now shows your current flight progress and flight information in a cleaner format. On the right is the "Important Information" widget that you can customize to show various information such as currently Pinned Charts, current METAR reports, relevant checklists, and any active failures that the aircraft has encountered displayed in the order that you prefer.
 ![efb-dashboard-top](/img/notam-images/march2022/efb-dashboard-top.png)
