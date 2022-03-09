@@ -52,7 +52,7 @@ In this case, it has allowed us to go one step further and reach the final front
 
 ### CPDLC with Hoppie
 
-We implemented CPDLC (Controller-Pilot-Datalink-Communication) in the A32NX based on Hoppie's ACARS system, making it possible to request route clearances on ground (DEPART REQ) and, e.g., over the Atlantic (OCEANIC REQ). The whole implementation is based on a realistic realization of the ATS 623 standard. Furthermore, instructions from the air traffic controllers can be received and answered via the DCDU. We took care to display the data in the DCDU as realistically as possible.
+We implemented CPDLC (Controller-Pilot-Datalink-Communication) in the A32NX based on Hoppie's ACARS system, making it possible to request route clearances on ground (DEPART REQ) and, e.g., over the Atlantic (OCEANIC REQ). The whole implementation is based on a realistic realisation of the ATS 623 standard. Furthermore, instructions from the air traffic controllers can be received and answered via the DCDU. We took care to display the data in the DCDU as realistically as possible.
 
 **Close up preview of ATC COMM menu and DCDU:**
 
@@ -101,13 +101,13 @@ We have been working hard on a new version of flyPadOS with a beautiful new desi
 - Better navigation handling
 - A new Important Information section on the Dashboard that allows you to see important information about your aircraft at a glance
 - A new Checklists page with optional automatic completion based on the current state of the aircraft
-- Customizable themed UI
+- Customisable themed UI
 - Enhanced pushback features
 - and much more!
 
 Shown below is are short work in progress previews of the upcoming update. The final layout may look different.
 
-On the dashboard, we have a reworked flight widget on the left that now shows your current flight progress and flight information in a cleaner format. On the right is the "Important Information" widget that you can customize to show various information such as currently Pinned Charts, current METAR reports, relevant checklists, and any active failures that the aircraft has encountered displayed in the order that you prefer.
+On the dashboard, we have a reworked flight widget on the left that now shows your current flight progress and flight information in a cleaner format. On the right is the "Important Information" widget that you can customise to show various information such as currently Pinned Charts, current METAR reports, relevant checklists, and any active failures that the aircraft has encountered displayed in the order that you prefer.
 ![efb-dashboard-top](/img/notam-images/march2022/efb-dashboard-top.png)
 ![efb-dashboard-bottom](/img/notam-images/march2022/efb-dashboard-bottom.png)
 
