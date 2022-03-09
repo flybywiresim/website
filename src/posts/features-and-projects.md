@@ -7,6 +7,7 @@ authors:
   - 'Kevin'
   - 'Sven [de en]'
   - 'Valastiri'
+  - 'Erick'
 category: 'UPDATE'
 metaImage: '/img/notam-images/march2022/dcdu-dep-req.png'
 metaAlt: 'FlyByWire Simulations'
@@ -37,8 +38,8 @@ The following is a summary of the progress we have made:
 - The EIS font has been merged into the aircraft
 - The ISIS font is in the works
 - The DCDU fonts are being reworked
-- The A380 RMP fonts are in advanced progress 
- 
+- The A380 RMP fonts are in advanced progress
+
 Here are some previews of the ISIS and RMP fonts:
 
 ![typeface 1](/img/notam-images/march2022/typeface-1.png)
@@ -66,6 +67,7 @@ We are also working on a realistic simulation of data link communications based 
 This will result in different communication times depending on the other aircraft, available ground stations, and distances to the stations. Depending on the situation, this can last from a few seconds to several minutes and is always simulated accordingly.
 
 ### MCDU Web Interface
+
 We have recently launched a new feature that has seen incredible popularity amongst our users; the MCDU web interface. It provides a convenient and easy to use web connection to run the MCDU over a web browser on any computer located on your local network.
 
 You can read up on this new functionality here:
@@ -78,11 +80,13 @@ Recent updates to this feature based on user feedback include an updated A32NX M
 We have used this first development to evaluate our strategy regarding custom instruments. We are currently developing custom high-speed protocols for offloading instrument rendering onto other programs or other devices over a network to offer better possibilities for home cockpit integration.
 
 ### Nose Wheel Tiller
+
 We implemented a way to use the tiller independently of the rudder utilising custom hydraulic steering. Based on our QA tests and feedback from our A320 type rated pilots, this is a great start that helps accurately represent realistic situations when taxiing the aircraft. You can read more about how to use this feature and associated information in the guide below.
 
 [Nose Wheel Tiller Guide](https://docs.flybywiresim.com/fbw-a32nx/feature-guides/nw-tiller/)
 
 ### Stored Waypoints
+
 We also implemented stored waypoints recently allowing pilots to enter in custom waypoints to expand your data management for your flights. This allows for pilots to create, enter, and utilise pre-planned waypoints with a designated name such as “MYWP1” without having to type in latitude/longitude coordinates mid-flight.
 You can read more about how to use this feature and associated information in the guide below.
 
@@ -90,24 +94,46 @@ You can read more about how to use this feature and associated information in th
 
 ![Stored Waypoints](/img/notam-images/march2022/stored-waypoints.png "Stored Waypoints")
 
-### flyPadOS v3
-We have been working hard on a new version of the flyPad featuring a beautiful new design and many additional requested features.
+### flyPadOS 3
 
-- Better navigation handling remembering previously visited tabs and input fields
-- Ability to pin charts
-- Checklists
+We have been working hard on a new version of flyPadOS featuring a beautiful new design and features that greatly advance the utility available to users such as:
+
+- The ability to load and show images and pdfs from your computer on the Navigation page
+- The ability to pin charts
+- Better navigation handling
+- A new Important Information section on the Dashboard that allows you to see important information about your aircraft at a glance.
+- A new Checklists page with optional automatic completion based on the current state of the aircraft.
+- Customizeable themed UI
 - Enhanced pushback features
 - and much more!
 
-Below is a preview of the upcoming update. (Work in progress and final layout may look different.)
+Below is a short preview of the upcoming update. (Work in progress and final layout may look different)
 
-![efb-checklist](/img/notam-images/march2022/efb-checklist.png)
+On the dashboard, we have a reworked flight widget on the left that now shows you your current flight progress and flight information in a cleaner format. On the right is the "Important Information" widget that you can customize to show various information such as currently Pinned Charts, current METAR reports, relavant checklists, and any active failures that the aircraft has encountered in the order that you prefer.
+![efb-dashboard-top](/img/notam-images/march2022/efb-dashboard-top.png)
+![efb-dashboard-bottom](/img/notam-images/march2022/efb-dashboard-bottom.png)
 
+In addition to bug fixes and UI improvements of the landing calculation page, we have added the ability to switch between imperial and metric units for individual fields and autofill data from your SimBrief OFP directly into the calculator.
+![efb-landing-safe](/img/notam-images/march2022/efb-landing-safe.png)
+![efb-landing-overrun](/img/notam-images/march2022/efb-overrun.png)
+
+We have given the ATC page a cleaner layout that makes it easier for users to read the frequency-related information.
 ![efb-atc](/img/notam-images/march2022/efb-atc.png)
 
-![efb-charts](/img/notam-images/march2022/efb-charts.png)
+On the Navigation page, you can now view charts in PDF and image formats stored locally on your computer, with support for PDFs that have any number of pages!
+![efb-navigation-pdf-onepage](/img/notam-images/march2022/efb-navigation-pdf-onepages.png)
+![efb-navigation-pdf-manypages](/img/notam-images/march2022/efb-navigation-pdf-manypages.png)
 
-![efb-dashboard](/img/notam-images/march2022/efb-dashboard.png)
+You can also pin charts for later that can be accessed from the Dashboard or the dedicated “Pinned Charts” tab that allows for more advanced sorting.
+![efb-navigation-navigraph-pin](/img/notam-images/march2022/efb-navigation-navigraph-pin.png)
+![efb-navigation-pinnedcharts](/img/notam-images/march2022/efb-navigation-pdf-pinnedcharts.png)
+
+You can also now switch between pages and the flyPad will remember where you left off so you no longer have to re-search and select the chart you want to view.
+
+We have added a new Checklist page that allows you to easily manage your checklists inside of the flyPad. You can also enable an option to automatically complete checklists based on the current state of the aircraft for applicable items.
+![efb-checklists](/img/notam-images/march2022/efb-checklists.png)
+
+Outside of the new features coming to the latest flyPad update, we have greatly improved the quality of our codebase, creating more opportunities for future improvements that we hope to keep bringing you!
 
 ---
 
@@ -141,6 +167,7 @@ We currently have a backlog of pending documentation and guides. If you are inte
 - [Docs GitHub](https://github.com/flybywiresim/docs)
 
 Please contact the following users on Discord if you need any assistance helping out with improving and extending our documentation.
+
 - Valastiri#8902
 - Cdr_Maverick#6475
 
