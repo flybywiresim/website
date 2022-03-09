@@ -96,20 +96,20 @@ You can read more about how to use this feature and associated information in th
 
 ### flyPadOS 3
 
-We have been working hard on a new version of flyPadOS featuring a beautiful new design and features that greatly advance the utility available to users such as:
+We have been working hard on a new version of flyPadOS with a beautiful new design and features that greatly advance the utility available.
 
-- The ability to load and show images and pdfs from your computer on the Navigation page
+- The ability to load and show images and PDFs from your computer on the Navigation page
 - The ability to pin charts
 - Better navigation handling
-- A new Important Information section on the Dashboard that allows you to see important information about your aircraft at a glance.
-- A new Checklists page with optional automatic completion based on the current state of the aircraft.
-- Customizeable themed UI
+- A new Important Information section on the Dashboard that allows you to see important information about your aircraft at a glance
+- A new Checklists page with optional automatic completion based on the current state of the aircraft
+- Customizable themed UI
 - Enhanced pushback features
 - and much more!
 
-Below is a short preview of the upcoming update. (Work in progress and final layout may look different)
+Shown below is a short work in progress preview of the upcoming update. The final layout may look different.
 
-On the dashboard, we have a reworked flight widget on the left that now shows you your current flight progress and flight information in a cleaner format. On the right is the "Important Information" widget that you can customize to show various information such as currently Pinned Charts, current METAR reports, relavant checklists, and any active failures that the aircraft has encountered in the order that you prefer.
+On the dashboard, we have a reworked flight widget on the left that now shows your current flight progress and flight information in a cleaner format. On the right is the "Important Information" widget that you can customize to show various information such as currently Pinned Charts, current METAR reports, relevant checklists, and any active failures that the aircraft has encountered displayed in the order that you prefer.
 ![efb-dashboard-top](/img/notam-images/march2022/efb-dashboard-top.png)
 ![efb-dashboard-bottom](/img/notam-images/march2022/efb-dashboard-bottom.png)
 
@@ -124,16 +124,16 @@ On the Navigation page, you can now view charts in PDF and image formats stored 
 ![efb-navigation-pdf-onepage](/img/notam-images/march2022/efb-navigation-pdf-onepages.png)
 ![efb-navigation-pdf-manypages](/img/notam-images/march2022/efb-navigation-pdf-manypages.png)
 
-You can also pin charts for later that can be accessed from the Dashboard or the dedicated “Pinned Charts” tab that allows for more advanced sorting.
+You can also pin charts for later use that can be accessed from the Dashboard or the dedicated “Pinned Charts” tab that allows for more advanced sorting.
 ![efb-navigation-navigraph-pin](/img/notam-images/march2022/efb-navigation-navigraph-pin.png)
 ![efb-navigation-pinnedcharts](/img/notam-images/march2022/efb-navigation-pdf-pinnedcharts.png)
 
-You can also now switch between pages and the flyPad will remember where you left off so you no longer have to re-search and select the chart you want to view.
+When switching between pages the flyPad will remember what chart you were viewing last creating persistence and improving the charts user experience.
 
-We have added a new Checklist page that allows you to easily manage your checklists inside of the flyPad. You can also enable an option to automatically complete checklists based on the current state of the aircraft for applicable items.
+We have added a new Checklist page that allows you to easily manage your checklists using the flyPad. You can also enable an option to automatically complete checklists based on the current state of the aircraft for applicable items.
 ![efb-checklists](/img/notam-images/march2022/efb-checklists.png)
 
-Outside of the new features coming to the latest flyPad update, we have greatly improved the quality of our codebase, creating more opportunities for future improvements that we hope to keep bringing you!
+In addition to the new features coming to flyPadOS 3, we have greatly improved the quality of our codebase, creating more opportunities for future improvements that we hope to keep bringing you!
 
 ---
 
