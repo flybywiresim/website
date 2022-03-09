@@ -40,15 +40,13 @@ The following is a summary of the progress we have made:
 - The DCDU fonts are being reworked
 - The A380 RMP fonts are in advanced progress
 
-Here are some previews of the ISIS and RMP fonts:
+Here are some previews of the ISIS and RMP fonts (click to enlarge):
 
-![typeface 1](/img/notam-images/march2022/typeface-1.png)
-![typeface 2](/img/notam-images/march2022/typeface-2.png)
+[![typeface combined 1](/img/notam-images/march2022/typeface-c1.png)](/img/notam-images/march2022/typeface-c1.png)
 
-One last thing: we rework our fonts as new information and references come, some of which have fundamentally changed our understanding of the displays’ workings (e.g., subpixel array design). As an example, here are photos of our DCDU font before and after reworking:
+One last thing: we rework our fonts as new information and references come, some of which have fundamentally changed our understanding of the displays’ workings (e.g., subpixel array design). As an example, here are photos of our DCDU font before and after reworking (click to enlarge):
 
-![typeface 3](/img/notam-images/march2022/typeface-3.png)
-![typeface 4](/img/notam-images/march2022/typeface-4.png)
+[![typeface combined 2](/img/notam-images/march2022/typeface-c2.png)](/img/notam-images/march2022/typeface-c2.png)
 
 In this case, it has allowed us to go one step further and reach the final frontier in display typeface replication - previously uncharted territory in the flight simulation industry - sub-pixel accuracy.
 
@@ -56,9 +54,9 @@ In this case, it has allowed us to go one step further and reach the final front
 
 We implemented CPDLC (Controller-Pilot-Datalink-Communication) in the A32NX based on Hoppie's ACARS system, making it possible to request route clearances on ground (DEPART REQ) and, e.g., over the Atlantic (OCEANIC REQ). The whole implementation is based on a realistic realization of the ATS 623 standard. Furthermore, instructions from the air traffic controllers can be received and answered via the DCDU. We took care to display the data in the DCDU as realistically as possible.
 
-![mcdu-atc-comm2](/img/notam-images/march2022/mcdu-atc-comm2.png)
+**Close up preview of ATC COMM menu and DCDU:**
 
-![dcdu-dep-req](/img/notam-images/march2022/dcdu-dep-req.png)
+![cpdlc](/img/notam-images/march2022/cpdlc.png)
 
 In the next steps, FANS-A and FANS-B systems are implemented for a realistic simulation. Depending on the responsible sector, various communication functions will be activated. The first step is to implement requests sent from the pilot to the air traffic controller. Our goal is a realistic ATSU implementation that allows automatic responses to requests to be prepared and displayed to the pilot for review and adjustment.
 
