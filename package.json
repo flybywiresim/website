@@ -9,7 +9,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
-    "@tabler/icons": "^1.53.0",
+    "@tabler/icons": "^1.58.0",
     "gray-matter": "^4.0.3",
     "next": "^12.1.0",
     "react": "^17.0.1",
