@@ -37,7 +37,7 @@ export const PartnerSection = () => (
             <Partner name="YourControls" path="https://github.com/Sequal32/yourcontrols">
                 <PartnerImage src="/img/partners/yourcontrols.png" />
             </Partner>
-            <Partner name="SaltySimulations" path="https://sim4flight.com/salty/">
+            <Partner name="SaltySimulations" path="https://discord.com/invite/S4PJDwk">
                 <PartnerImage src="/img/partners/salty.svg" />
             </Partner>
         </Container>
