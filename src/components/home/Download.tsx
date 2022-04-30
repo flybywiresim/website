@@ -2,12 +2,12 @@ import { Button } from '../utils/Button';
 
 export const Download = () => {
     const urls = {
-        stable: 'https://flybywiresim-packages.b-cdn.net/stable/A32NX-stable.zip',
-        dev: 'https://flybywiresim-packages.b-cdn.net/vmaster/A32NX-master.zip',
-        exp: 'https://flybywiresim-packages.b-cdn.net/vmaster-cfbw-cap/A32NX-master-cfbw-cap.zip',
+        stable: 'http://cdn.flybywiresim.com/addons/a32nx/stable/full.zip',
+        dev: 'http://cdn.flybywiresim.com/addons/a32nx/master/full.zip',
+        exp: 'http://cdn.flybywiresim.com/addons/a32nx/experimental/full.zip',
     };
 
-    const getDownloadLink = (link: string) => `https://api.flybywiresim.com/api/v1/download?url=${link}`;
+    const getDownloadLink = (link: string) => `${link}`;
 
     return (
         <section id="download" className="relative bg-blue-dark-contrast">
