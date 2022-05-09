@@ -38,7 +38,7 @@ Based on the ATC IDs are the FANS-B+ and FANS-A+ comparable to the current real 
 The VHF based communication is can be simulated via a simple line-of-sight (LoS) simulation between air- and ground-stations.
 LoS means that a line between the sender and receiver is defined and a communication is possible if no obstacle intersects the line.
 
-- TODO: LoS images
+[![Line-of-sight calculation](/img/notam-images/may2022/LoS.png)](img/notam-images/may2022/LoS.png)
 
 We simulate that all international airports have the capability to provide datalink communication via SITA or ARINC which are
 the most popular system providers for data exchange between ground- and air-stations.
@@ -53,7 +53,7 @@ The VDL defines different chunks for the different transmission times per second
 We follow the 1V3D pattern per 120 milliseconds. It means that the first chunk is used for voice communication and the following
 three are used for datapacket transmissions. These chunks are equally assigned to all active communication partners.
 
-- TODO: image of chunks
+[![VDL3 message slots](/img/notam-images/may2022/VDL3-Slots.png)](img/notam-images/may2022/VDL3-Slots.png)
 
 We assume that all air- and ground- stations require one data-slot for the communication to avoid a complex handshaking simulation as it is done in the real world. This handshaking cannot be simulated due to missing knowledge if a remote-station wants to transmit data.
 Based on all aircraft and ground-stations in the area of the A32NX is it possible to calculate the number of required slots until
