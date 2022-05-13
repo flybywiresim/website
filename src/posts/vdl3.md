@@ -1,5 +1,5 @@
 ---
-title: 'ATSU VDL3 Simulation (Working Title)'
+title: 'ATSU VDL3 Simulation'
 date: 'TBD'
 authors:
   - 'Sven [de en]'
@@ -8,14 +8,14 @@ metaImage: '/img/notam-images/march2022/dcdu-dep-req.png'
 metaAlt: 'FlyByWire Simulations'
 ---
 
-## What's all about the datalink?
+## What's New About the Datalink?
 
 We've implemented in the last few months the Air Traffic Service Unit (ATSU).
 This system is responsible for the communication in the aircraft.
 The ATC and AOC communication are managed inside the ATSU and it prioritizes voice and datalink transmissions.
 
 It manages all different kinds of data and voice communication, like Very-High Frequency (VHF),
-High Frequency (HF) or the SATellite COMmunication (SATCOM).
+High Frequency (HF) or the **SAT**ellite **COM**munication (SATCOM).
 
 ## Future Air Navigation System - FANS
 
@@ -38,7 +38,7 @@ Based on the ATC IDs are the FANS-B+ and FANS-A+ comparable to the current real 
 The VHF based communication is can be simulated via a simple line-of-sight (LoS) simulation between air- and ground-stations.
 LoS means that a line between the sender and receiver is defined and a communication is possible if no obstacle intersects the line.
 
-[![Line-of-sight calculation](/img/notam-images/may2022/LoS.png)](img/notam-images/may2022/LoS.png)
+[![Line-of-sight calculation](/img/notam-images/may2022/LoS.png)](/img/notam-images/may2022/LoS.png)
 
 We simulate that all international airports have the capability to provide datalink communication via SITA or ARINC which are
 the most popular system providers for data exchange between ground- and air-stations.
@@ -53,7 +53,7 @@ The VDL defines different chunks for the different transmission times per second
 We follow the 1V3D pattern per 120 milliseconds. It means that the first chunk is used for voice communication and the following
 three are used for datapacket transmissions. These chunks are equally assigned to all active communication partners.
 
-[![VDL3 message slots](/img/notam-images/may2022/VDL3-Slots.png)](img/notam-images/may2022/VDL3-Slots.png)
+[![VDL3 message slots](/img/notam-images/may2022/VDL3-Slots.png)](/img/notam-images/may2022/VDL3-Slots.png)
 
 We assume that all air- and ground- stations require one data-slot for the communication to avoid a complex handshaking simulation as it is done in the real world.
 This handshaking cannot be simulated due to missing knowledge about required data slots of remote-stations.
@@ -74,3 +74,35 @@ The real ATSU selects automatically which type of communication is used.
 An other improvement will be the LoS estimation as soon as terrain maps are available. At the moment are mountains, etc.
 ignored due to a lack of data. With terrain data is it possible to analyse if mountains or high buildings are interfering
 the communication between the A32NX and the ground stations.
+
+---
+
+## General Information
+
+Stay up to date with information from FlyByWire Simulations by following our social media!
+
+- [Twitter](https://twitter.com/FlyByWireSim)
+- [Facebook](https://www.facebook.com/FlyByWireSimulations/)
+
+If you require support or would like to submit a bug report please see the links below:
+
+- [Support Guide](https://docs.flybywiresim.com/fbw-a32nx/support/)
+- [Discord Support](https://discord.gg/flybywire)
+- [GitHub Issues](https://github.com/flybywiresim/a32nx/issues/new/choose)
+
+When submitting an issue or asking for support to do the following:
+
+- Visit our [Reported Issues Documentation](https://docs.flybywiresim.com/fbw-a32nx/support/reported-issues/) for common problems and workarounds.
+- Ensure that your issue has not already been reported on our GitHub.
+
+Download the latest version of the A32NX:
+
+- [Installer](https://api.flybywiresim.com/installer)
+- [Standalone Versions](https://flybywiresim.com/a32nx/#download)
+
+---
+
+Safe skies and happy flying!
+
+*Editor: Valastiri*
+
