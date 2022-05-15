@@ -11,7 +11,12 @@ metaAlt: 'FlyByWire Simulations'
   
 ## Overview
 
-[tbd]
+We are happy to introduce our most feature rich update to our onboard electronic flight bag (EFB) - the flyPadOS 3. We have completely overhauled the user interface with our 
+new branding scheme while bringing a new user experience to the table. One of our main highlights to user experience is being the first EFB in flight simulation to offer 
+support for multiple languages across the entire EFB. This would not have been possible without the kind support from our community providing translations and reviews.
+
+There are other goodies for our pilots to dive into as well including updated Navigraph support, a new and improved pushback feature with onboard map, lighting presets, and in 
+flight checklists! To learn more about what's new and upcoming features keep reading below. 
 
 ## New Features
 
