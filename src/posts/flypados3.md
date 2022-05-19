@@ -1,6 +1,6 @@
 ---
 title: 'The New flyPadOS 3 Released'
-date: '2022-03-09'
+date: 'TBD'
 authors:
   - 'Cdr_Maverick'
   - 'Valastiri'
@@ -35,6 +35,11 @@ This user experience extends throughout our flyPadOS, enabling our pilots to qui
 
 As you navigate throughout the EFB accessing different features and interacting with them, flyPadOS 3 now remembers the state you left it in. It remembers the pages or tabs with the associated data you have entered, so you can safely switch to a new screen without losing any data.
 
+![Dashboard](/img/notam-images/flypados3/pinned-charts-widget.png)
+![Weather Widget](/img/notam-images/flypados3/weather-widget-input.png)
+![Fuel Dispatch](/img/notam-images/flypados3/flypad-dispatch-fuel.png)
+![OFP Dispatch](/img/notam-images/flypados3/flypad-dispatch-ofp.png)
+
 ### Support for Over 30 Different Languages
 
 We are extremely happy to offer support for over 30+ languages onboard our EFB. A first in flight simulation, you can now access all the features mentioned above and interact with them in a language of your choice! This would not have been possible without the help of over 200 contributors, and those who have offered to review every corner of the EFB for accuracy. A huge benefit of an open source project is our unique position to have our community assist in endeavors such as this. We cannot stress enough how thankful we are.
@@ -45,43 +50,31 @@ We are extremely happy to offer support for over 30+ languages onboard our EFB. 
 
 Our new pushback model is smoother with fine control for speed and direction. You can easily utilize your keyboard or various controller axis to steer the tug as you pushback. 
 We've made it easier to see your turn radius and protected path with the new onboard map. This gives our pilots accurate and precise turns during pushback without having to 
-switch to an external view. 
+switch to an external view.
 
-- Smooth pushback with fine control of speed and direction.
-- Using buttons or a controller axis to steer the tug - rudder axis for direction and elevator axis for speed.
-  - Allows users with twisting joysticks to fully conduct the pushback with their stick.
-- Pushback map - A local map to guide your pushback without the need to change to an external view.
-  - Turn predication indicator to support precise turns
+![Pushback](/img/notam-images/flypados3/flypad-pushback.png)
 
 ### Performance Calculation
 
-While we continue to work on providing accurate NEO performance calculations for Takeoff the rest of this module is tuned for precision with our flight model and braking 
+While we continue to work on providing accurate NEO performance calculations for Takeoff, the rest of this module is tuned for precision with our flight model and braking 
 simulation. Top of descent calculation in tandem with various onboard A32NX systems ensures you will always stay ahead of the aircraft and keep up with ATC instructions.
 
 Our landing calculation page easily pulls in information from your simBrief OFP to populate required fields. If you didn't generate an OFP you can simply choose the relevant 
 ICAO for your landing. Our documentation provides all the information you need to accurate plan your stopping distances.  
 
-[Landing Performance Calculator](https://docs.flybywiresim.com/fbw-a32nx/feature-guides/flypados3/performance/#ground-speed-and-wind).
+[Landing Performance Calculator Documentation](https://docs.flybywiresim.com/fbw-a32nx/feature-guides/flypados3/performance/#ground-speed-and-wind).
 
-### Customizable Lighting Presets
-
-We know that starting a flight in a cold and dark state means you have a lot to do before you can get off the ground and climb into the sky. As a small quality of life feature we have included a fully customizable interior lighting preset. You can set your virtual cockpit with the lighting setup you desire and instantly load that preset in "one click"! 
-
-Need to step away for a moment but want to quickly transition your cockpit for night operations? Simply press the "Load Preset" and be on your way.
-
-[images here]
-
+![Landing OK](/img/notam-images/flypados3/performance-landing-ok.png)
+![Landing MAX](/img/notam-images/flypados3/performance-landing-maxok.png)
+![TOD Distance](/img/notam-images/flypados3/performance-tod-distance.png)
 ### Interactive "Smart" Checklists
 
-We've included essential interactive checklists, accssible through its own tab in the left menu. The dashboard on the EFB also intelligently recommends the correct checklist based on the current phase of flight you are in. 
+We've included essential interactive checklists, accessible through its own tab in the left menu. The dashboard on the EFB also intelligently recommends the correct checklist based on the current phase of flight you are in. 
 
-[Image of completed/active/notcomplted here]
+![Checklist 1](/img/notam-images/flypados3/flypad-checklist-page-partly-filled.png)
+![Checklist 2](/img/notam-images/flypados3/flypad-checklist-page-section-filled.png)
 
 The checklists page will also display what checklist you currently have active, and what checklist you have yet to complete. You can use your mouse to click on each line item, or simply use the "mark item as complete" button at the bottom of the page. If you would like to utilize your hardware, we have some easy to use LVARs for those of you who can write to those.
-
-- Interactive Checklists.
-- Autocheck for various items.
-- Easy to use - mapping to button available for users who can write to LVARs.
 
 ### Onboard Navigraph Charts
 
@@ -94,34 +87,47 @@ which are conveniently displayed on the flyPad's dashboard.
 
 Something we also hope you can look forward to is our planned Local Files support. This will allow users to access and use any image or PDF to be loaded onto the onboard EFB.
 
+![Navigraph Charts](/img/notam-images/flypados3/flypad-navigation.png)
+![Pinned 1](/img/notam-images/flypados3/pinned-charts.png)
+
 ### Failure Simulation
 
 We have improved the UI for our failure simulations grouping them into ATA chapters. You can choose between two different views depending on how you want information to be 
-displayed. While we continously work on improving the failures we plan to simulate this new UI allows us to easily expand failure simulations and provide a clean experience for 
+displayed. While we continuously work on improving the failures we plan to simulate this new UI allows us to easily expand failure simulations and provide a clean experience for 
 our users.
+
+![Failures Comfort](/img/notam-images/flypados3/flypad-failures.png)
+![Failures Compact](/img/notam-images/flypados3/flypad-failures-compact-view.png)
 
 ### Online ATC
 
-ALT "tabbing" is not the most efficient use of your time when flying an IFR aircraft solo. Our new online ATC page gives you a simplified overview of what frequencies are in 
+ALT "tabbing" is not the most efficient use of your time when flying an IFR aircraft solo. The new online ATC page gives you a simplified overview of what frequencies are in 
 range and online in all stages of flight. You can easily swap between active or standby frequencies.
 
 We've also provided a text based output for ATIS, enabling our pilots to always have a quick reference to current ATIS information for departures and arrivals.
 
+![Online ATC](/img/notam-images/flypados3/flypad-online-atc-vatsim.png)
+
 ### Presets
 
-#### Customizable Lighting Presets
+### Customizable Lighting Presets
 
-Do you have that perfect cockpit lighting setup that you spend a few minutes on each flight configuring? Well now you can save it!
+Do you have that perfect cockpit lighting setup that you spend a few minutes on each flight configuring? Well now you can save it! We know that starting a flight in a cold and 
+dark state means you have a lot to do before you can get off the ground and climb into the sky. We hope this provides a nice little quality of life feature for our pilots.
 
 Our new presets' page allows you to save up to 8 custom presets, name them, and load them up instantaneously at any point during your flight.
+
+![Lighting Preset](/img/notam-images/flypados3/flypad-presets-lighting.png)
 
 #### Aircraft Presets
 
 We heard you liked having an AI co-pilot. This new feature gives your co-pilot control over "on-the-ground" actions up to your takeoff roll. 
 
-Our virtual co-pilot will sequentially perform the necessary setup tasks as in real life from ADIRs alignment to engine starts. Do note that even this feature is realistically 
+Our virtual co-pilot will sequentially performs the necessary setup tasks as in real life from ADIRs alignment to engine starts. Do note that even this feature is realistically 
 simulated and the co-pilot will take the appropriate amount of time and steps to complete the procedures and actions. We would like to remind our pilots flying that it's your 
 responsibility to ensure the MCDU, FCU, transponder and radios are appropriately configured.
+
+![Aircraft States](/img/notam-images/flypados3/flypad-presets-aircraft.png)
 
 ## Upcoming Features
 
