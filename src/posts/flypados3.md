@@ -6,14 +6,16 @@ authors:
   - 'Valastiri'
   - 'DirtyFormal'
 category: 'UPDATE'
-metaImage: '/img/a32nxwing.png'
+metaImage: '/img/notam-images/flypados3/flypad-hero.png'
 metaAlt: 'FlyByWire Simulations'
 ---
   
 ## Overview
 
-We're happy to introduce the most feature rich update yet to our onboard Electronic Flight Bag (EFB) - flyPadOS 3. The user interface has been completely overhauled with 
-FlyByWire's new branding scheme, to bring you the best user interface in flight simulation. Our flyPad is the first EFB to offer support for multiple languages. This would not have been possible without the kind support from our Community - providing translations and reviews.
+We're happy to introduce the most feature rich update yet to our onboard Electronic Flight Bag (EFB) - flyPadOS 3. 
+The  user interface has been completely overhauled with FlyByWire's new branding scheme, to bring you the best user 
+interface in flight simulation. Our flyPad is the first EFB to offer support for multiple languages. This would not 
+have been possible without the kind support from our Community - providing translations and reviews.
 
 There are other goodies for our pilots to dive into as well, including updated Navigraph support, a new and improved pushback feature with onboard map, lighting presets, and in-flight checklists!
 
@@ -44,20 +46,20 @@ As you navigate throughout the EFB accessing different features and interacting 
 
 We are extremely happy to offer support for over 30+ languages onboard our EFB. A first in flight simulation, you can now access all the features mentioned above and interact with them in a language of your choice! This would not have been possible without the help of over 200 contributors, and those who have offered to review every corner of the EFB for accuracy. A huge benefit of an open source project is our unique position to have our community assist in endeavors such as this. We cannot stress enough how thankful we are.
 
-[Pictures Here]
+![Languages](/img/notam-images/flypados3/flypad-languages.png)
 
 ### Integrated Pushback
 
-Our new pushback model is smoother with fine control for speed and direction. You can easily utilize your keyboard or various controller axis to steer the tug as you pushback. 
-We've made it easier to see your turn radius and protected path with the new onboard map. This gives our pilots accurate and precise turns during pushback without having to 
-switch to an external view.
+Our new pushback model is smoother with fine control for speed and direction. You can use your controller axis to steer 
+the tug as you pushback or the buttons and sliders in the ui.
+We've made it easier to see your turn radius and protected path with the new onboard map. This gives our pilots accurate and precise turns during pushback without having to switch to an external view.
 
 ![Pushback](/img/notam-images/flypados3/flypad-pushback.png)
 
 ### Performance Calculation
 
-While we continue to work on providing accurate NEO performance calculations for Takeoff, the rest of this module is tuned for precision with our flight model and braking 
-simulation. Top of descent calculation in tandem with various onboard A32NX systems ensures you will always stay ahead of the aircraft and keep up with ATC instructions.
+While we continue to work on providing accurate NEO performance calculations for Takeoff, the rest of this module is 
+tuned for precision with our flight model and braking simulation. Top of descent calculation in tandem with various onboard A32NX systems ensures you will always stay ahead of the aircraft and keep up with ATC instructions.
 
 Our landing calculation page easily pulls in information from your simBrief OFP to populate required fields. If you didn't generate an OFP you can simply choose the relevant 
 ICAO for your landing. Our documentation provides all the information you need to accurate plan your stopping distances.  
