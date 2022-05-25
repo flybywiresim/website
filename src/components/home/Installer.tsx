@@ -25,7 +25,7 @@ export const Installer = forwardRef(() => (
                     </Button>
                 </a>
             </div>
-            <div className="-mb-40 w-11/12 xl:w-5/6 3xl:-mb-3 3xl:w-320">
+            <div className="-mb-[125px] w-11/12 xl:w-5/6 3xl:-mb-3 3xl:w-320">
                 <Image
                     src="/img/InstallerScreenshot.png"
                     alt="Installer"
