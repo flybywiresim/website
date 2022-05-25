@@ -1,5 +1,5 @@
 ---
-title: 'The New flyPadOS 3 Released'
+title: 'The New flyPadOS 3 - A Best in Class EFB Experience'
 date: 'TBD'
 authors:
   - 'Cdr_Maverick'
@@ -12,8 +12,7 @@ metaAlt: 'FlyByWire Simulations'
   
 ## Overview
 
-We're happy to introduce the most feature rich update yet to our onboard Electronic Flight Bag (EFB) - flyPadOS 3. The user interface has been completely overhauled with 
-FlyByWire's new branding scheme, to bring you the best user interface in flight simulation. Our flyPad is the first EFB to offer support for multiple languages, which would not have been possible without the kind support from our Community.
+We are happy to introduce the most feature rich update yet to our onboard Electronic Flight Bag (EFB) - flyPadOS 3. The user interface has been completely overhauled with FlyByWire's new design language and principles to improve your experience. Our flyPad is the first EFB to offer support for multiple languages, which would not have been possible without the kind support from our community.
 
 There are other goodies for our pilots to dive into as well, including updated Navigraph support, a new and improved pushback feature with onboard map, lighting presets, and in-flight checklists!
 
@@ -21,8 +20,8 @@ There are other goodies for our pilots to dive into as well, including updated N
 
 ### A Refreshing Unified User Experience
 
-At FlyByWire, we believe in well-designed and integrated user interfaces that bring a great quality of life experience to our users. Since the introduction of our flyPad to MSFS, we've done away with copying real world operating systems - instead building a cohesive UI that easily integrates useful features at the tip of your cursor. Starting up the EFB requires a simple click on the screen, where you're greeted with our unique dashboard. From here, you can seamlessly download your simBrief OFP to display all the information required for 
-your planned flight. Everything that's important for your flight is on the new dashboard:
+At FlyByWire, we believe in well-designed and integrated user interfaces that deliver a great user experience. Since the introduction of our flyPad to MSFS, we have done away with copying real world operating systems, choosing instead to build a cohesive UI that easily integrates useful features at the tip of your cursor. Starting up the EFB requires a simple click on the screen, where you are greeted with our unique dashboard. From here, you can seamlessly download your simBrief OFP to display all the information required for
+your planned flight. The following important information is on the new dashboard:
 
 - Shortcuts to take you to where you want to go.
 - Flight status and general information including your planned route.
@@ -31,7 +30,7 @@ your planned flight. Everything that's important for your flight is on the new d
 - Pinned Navigraph charts.
 - Active failure management.
 
-This user experience extends throughout our flyPadOS, enabling our pilots to quickly peruse their OFP, access calculations / charts, and integrate easily with online networks such as VATSIM or IVAO.
+This focus on user experience is present throughout our flyPadOS, enabling our pilots to quickly peruse their OFP, access calculations/charts, and integrate easily with online networks such as VATSIM or IVAO.
 
 As you navigate throughout the EFB accessing different features and interacting with them, flyPadOS 3 now remembers the state you left it in. It remembers the pages or tabs with the associated data you have entered, so you can safely switch to a new screen without losing any data.
 
@@ -48,9 +47,8 @@ We are extremely happy to offer support for over 30 languages onboard our EFB. A
 
 ### Integrated Pushback
 
-Our new pushback model is smoother with finer control for speed and direction. You can easily utilize your controller axes to steer the tug as you pushback. 
-We've made it easier to see your turn radius and protected path with the new onboard map. This gives our pilots accurate and precise turns during pushback without having to 
-switch to an external view.
+Our new pushback model is smoother with finer control for speed and direction. You can easily utilise your controller axes to steer the tug as you pushback.
+We have made it easier to see your turn radius and protected path with the new onboard map. This gives our pilots accurate and precise turns during pushback without having to switch to an external view.
 
 ![Pushback](/img/notam-images/flypados3/flypad-pushback.png)
 
@@ -68,18 +66,18 @@ Our landing calculation page effortlessly pulls in information from your simBrie
 
 ### Interactive "Smart" Checklists
 
-We've included essential interactive checklists, accessible through its own tab in the left menu. The dashboard on the EFB also intelligently recommends the correct checklist based on the current phase of flight you are in. 
+We have included essential interactive checklists, accessible through its own tab on the left menu. The dashboard on the EFB also intelligently recommends the correct checklist based on the current phase of flight you are in.
 
 ![Checklist 1](/img/notam-images/flypados3/flypad-checklist-page-partly-filled.png)
 ![Checklist 2](/img/notam-images/flypados3/flypad-checklist-page-section-filled.png)
 
-The checklists page will also display what checklist you currently have active, and what checklists you are yet to complete. You can use your mouse to click on each line item, or simply use the "Mark item as complete" button at the bottom of the page. If you would like to utilize your hardware, we have some easy to use LVARs for those of you who can write to those.
+The checklists page will also display what checklist you currently have active, and what checklists you are yet to complete. You can use your mouse to click on each line item, or simply use the "Mark item as complete" button at the bottom of the page. If you would like to utilise your hardware, we have some easy to use LVARs for those of you who can write to those.
 
 ### Onboard Navigraph Charts
 
-Every flight requires meticulous planning. Keep your procedures close to hand, with our easily accessible Navigraph charts integration. This way there's no fumbling around with the MSFS toolbar and overlays - ruining your immersion.
+Every flight requires meticulous planning. Keep your procedures close at hand, with our easily accessible Navigraph charts integration. This way there is no fumbling around with the MSFS toolbar and overlays, which may ruin your immersion.
 
-Our new integration now supports the aircraft position symbol for better visualization of where your aircraft is on a particular chart. Our unified experience means that any chart you are viewing will remain active - even if you navigate away from the charts page. We've also included support for pinning relevant procedure maps, which are conveniently displayed on the flyPad's dashboard.
+Our new integration now supports the aircraft position symbol for better visualization of where your aircraft is on a particular chart. Our unified experience means that any chart you are viewing will remain active - even if you navigate away from the charts page. We have also included support for pinning relevant procedure maps, which are conveniently displayed on the flyPad's dashboard.
 
 Something we also hope you can look forward to is our planned Local Files support. This will allow users load any image or PDF onboard EFB for effortless viewing.
 
@@ -107,7 +105,7 @@ We've also provided a text based output for ATIS, enabling our pilots to always 
 
 Do you have that perfect cockpit lighting setup that you spend a few minutes on each flight getting just right? Well now you can save it! We know that starting a flight in a cold and dark state means you have a lot to do before you can get off the ground, so we hope this provides a nice little quality of life feature for our pilots.
 
-Our new presets' page allows you to save up to 8 custom presets, name them, and load them up instantaneously at any point during your flight.
+Our new presets page allows you to save up to 8 custom presets, name them, and load them up instantaneously at any point during your flight.
 
 ![Lighting Preset](/img/notam-images/flypados3/flypad-presets-lighting.png)
 
@@ -115,7 +113,7 @@ Our new presets' page allows you to save up to 8 custom presets, name them, and 
 
 We heard you liked having an AI co-pilot. This new feature gives your co-pilot control over "on-the-ground" actions up to your takeoff roll. 
 
-Our virtual co-pilot will sequentially perform the necessary setup tasks as in real life - from ADIRs alignment to engine starts. Do note that even this feature is realistically simulated, so the co-pilot will take the appropriate amount of time and steps to complete the procedures and actions. We would like to remind our pilots flying that it's still your responsibility to ensure the MCDU, FCU, transponder and radios are appropriately configured.
+Our virtual co-pilot will sequentially perform the necessary setup tasks as in real life - from ADIRs alignment to engine starts. Do note that even this feature is realistically simulated, so the co-pilot will take the appropriate amount of time and steps to complete the procedures and actions. We would like to remind our pilots flying that it is still your responsibility to ensure the MCDU, FCU, transponder and radios are appropriately configured.
 
 ![Aircraft States](/img/notam-images/flypados3/flypad-presets-aircraft.png)
 
