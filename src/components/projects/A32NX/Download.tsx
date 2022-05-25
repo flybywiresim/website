@@ -7,7 +7,7 @@ export const Download = ({ expOnHold }: { expOnHold?: boolean }) => {
         exp: 'https://github.com/flybywiresim/a32nx/releases/download/assets/experimental/A32NX-experimental.zip',
     };
 
-    const getDownloadLink = (link: string) => `https://api.flybywiresim.com/api/v1/download?url=${link}`;
+    const getDownloadLink = (link: string) => `${link}`;
 
     return (
         <section id="download" className="relative bg-blue-dark-contrast">
