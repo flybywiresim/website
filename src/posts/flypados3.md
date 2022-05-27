@@ -12,16 +12,13 @@ metaAlt: 'FlyByWire Simulations'
   
 ## Overview
 
-We are happy to introduce the most feature rich update yet to our onboard Electronic Flight Bag (EFB) - flyPadOS 3. The user interface has been completely overhauled with FlyByWire's new design language and principles to improve your experience. Our flyPad is the first EFB to offer support for multiple languages, which would not have been possible without the kind support from our community.
-
-There are other goodies for our pilots to dive into as well, including updated Navigraph support, a new and improved pushback feature with onboard map, lighting presets, and in-flight checklists!
+After lots of exploration, testing, and development, we are very happy to to announce the release of our most feature rich update yet to our onboard Electronic Flight Bag (EFB) - flyPadOS 3. We have transformed the user interface in an effort to provide a more user-friendly, efficient, and consistent experience when using the flyPad. Along with the strides made in this new iteration of the flyPad, we are proud to say that with the help of over 200 contributors, we are the first to develop an EFB that offers support for multiple languages - enabling flight simmers from across the globe to have a more comfortable and familiar experience when flying.
 
 ## New Features
 
-### A Refreshing Unified User Experience
+### A Refreshed User Experience
 
-At FlyByWire, we believe in well-designed and integrated user interfaces that deliver a great user experience. Since the introduction of our flyPad to MSFS, we have done away with copying real world operating systems, choosing instead to build a cohesive UI that easily integrates useful features at the tip of your cursor. Starting up the EFB requires a simple click on the screen, where you are greeted with our unique dashboard. From here, you can seamlessly download your simBrief OFP to display all the information required for
-your planned flight. The following important information is on the new dashboard:
+FlyPad OS has been overhauled, with new improvements thanks to inputs from the team and community feedback. The following important information is on the new dashboard:
 
 - Shortcuts to take you to where you want to go.
 - Flight status and general information including your planned route.
@@ -30,7 +27,7 @@ your planned flight. The following important information is on the new dashboard
 - Pinned Navigraph charts.
 - Active failure management.
 
-This focus on user experience is present throughout our flyPadOS, enabling our pilots to quickly peruse their OFP, access calculations/charts, and integrate easily with online networks such as VATSIM or IVAO.
+This new focus on user experience is present throughout our flyPadOS, enabling our pilots to quickly peruse their OFP, access calculations/charts, seamlessly download simBrief OFP, and integrate easily with online networks such as VATSIM or IVAO.
 
 As you navigate throughout the EFB accessing different features and interacting with them, flyPadOS 3 now remembers the state you left it in. It remembers the pages or tabs with the associated data you have entered, so you can safely switch to a new screen without losing any data.
 
