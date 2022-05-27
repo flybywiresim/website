@@ -12,13 +12,13 @@ metaAlt: 'FlyByWire Simulations'
   
 ## Overview
 
-After lots of exploration, testing, and development, we are very happy to to announce the release of our most feature rich update yet to our onboard Electronic Flight Bag (EFB) - flyPadOS 3. We have transformed the user interface in an effort to provide a more user-friendly, efficient, and consistent experience when using the flyPad. Along with the strides made in this new iteration of the flyPad, we are proud to say that with the help of over 200 contributors, we are the first to develop an EFB that offers support for multiple languages - enabling flight simmers from across the globe to have a more comfortable and familiar experience when flying.
+After lots of exploration, testing, and development, we are very happy to announce the release of our most feature rich update yet to our onboard Electronic Flight Bag (EFB) - flyPadOS 3. We have transformed the user interface in an effort to provide a more user-friendly, efficient, and consistent experience when using the flyPad. Along with the strides made in this new iteration of the flyPad, we are proud to say that with the help of over 200 contributors, we are the first to develop an EFB that offers support for multiple languages - enabling flight simmers from across the globe to have a more comfortable and familiar experience when flying.
 
 ## New Features
 
 ### A Refreshed User Experience
 
-FlyPad OS has been overhauled, with new improvements thanks to inputs from the team and community feedback. The following important information is on the new dashboard:
+FlyPad OS has been overhauled with new improvements thanks to feedback from the team and community. The following important information is on the new dashboard:
 
 - Shortcuts to take you to where you want to go.
 - Flight status and general information including your planned route.
