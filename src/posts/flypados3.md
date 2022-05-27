@@ -156,4 +156,4 @@ Download the latest version of the A32NX:
 
 Safe skies and happy flying!
 
-Editors: *ErickSharp, 2hwk*
+Editors: *ErickSharp, 2cas*
