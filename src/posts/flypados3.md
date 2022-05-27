@@ -3,8 +3,8 @@ title: 'The New flyPadOS 3 - A Best in Class EFB Experience'
 date: 'TBD'
 authors:
   - 'Cdr_Maverick'
-  - 'Valastiri'
   - 'DirtyFormal'
+  - 'Valastiri'
 category: 'UPDATE'
 metaImage: '/img/notam-images/flypados3/flypad-hero.png'
 metaAlt: 'FlyByWire Simulations'
@@ -155,3 +155,5 @@ Download the latest version of the A32NX:
 ---
 
 Safe skies and happy flying!
+
+Editors: *ErickSharp, 2hwk*
