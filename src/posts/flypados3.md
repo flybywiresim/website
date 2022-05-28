@@ -1,6 +1,6 @@
 ---
 title: 'The New flyPadOS 3 - A Best in Class EFB Experience'
-date: 'TBD'
+date: '2022-05-28'
 authors:
   - 'Cdr_Maverick'
   - 'DirtyFormal'
