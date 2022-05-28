@@ -18,7 +18,7 @@ After lots of exploration, testing, and development, we are very happy to announ
 
 ### A Refreshed User Experience
 
-FlyPad OS has been overhauled with new improvements thanks to feedback from the team and community. The following important information is on the new dashboard:
+The flyPadOS has been overhauled with new improvements thanks to feedback from the team and community. The following important information is on the new dashboard:
 
 - Shortcuts to take you to where you want to go.
 - Flight status and general information including your planned route.
