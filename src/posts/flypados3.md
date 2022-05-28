@@ -45,7 +45,7 @@ We are extremely happy to offer support for over 30 languages onboard our EFB. A
 ### Integrated Pushback
 
 Our new pushback model is smoother with finer control for speed and direction. You can easily utilise your controller axes to steer the tug as you pushback.
-We have made it easier to see your turn radius and protected path with the new onboard map. This gives our pilots accurate and precise turns during pushback without having to switch to an external view.
+We have made it easier to see your turn radius and projected path with the new onboard map. This gives our pilots accurate and precise turns during pushback without having to switch to an external view.
 
 ![Pushback](/img/notam-images/flypados3/flypad-pushback.png)
 
