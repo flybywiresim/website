@@ -14,6 +14,9 @@ metaAlt: 'FlyByWire Simulations'
 
 After lots of exploration, testing, and development, we are very happy to announce the release of our most feature rich update yet to our onboard Electronic Flight Bag (EFB) - flyPadOS 3. We have transformed the user interface in an effort to provide a more user-friendly, efficient, and consistent experience when using the flyPad. Along with the strides made in this new iteration of the flyPad, we are proud to say that with the help of over 200 contributors, we are the first to develop an EFB that offers support for multiple languages - enabling flight simmers from across the globe to have a more comfortable and familiar experience when flying.
 
+**Update (2022-06-03):** We have issued a small correction to the naming convention for the EFB feature - Aircraft Presets (previously titled *AI Co-Pilot*). We apologize for the 
+terminology confusion and updated the section below to better reflect the feature's purpose.
+
 ## New Features
 
 ### A Refreshed User Experience
@@ -106,11 +109,13 @@ Our new presets page allows you to save up to 8 custom presets, name them, and l
 
 ![Lighting Preset](/img/notam-images/flypados3/flypad-presets-lighting.png)
 
-#### AI Co-Pilot
+#### Aircraft Presets
 
-We heard you liked having an AI co-pilot. This new feature gives your co-pilot control over "on-the-ground" actions up to your takeoff roll. 
+We heard you liked having an AI co-pilot. This new feature simulates a co-pilot providing assistance with "on-the-ground" actions up to your takeoff roll. 
 
-Our virtual co-pilot will sequentially perform the necessary setup tasks as in real life - from ADIRs alignment to engine starts. Do note that even this feature is realistically simulated, so the co-pilot will take the appropriate amount of time and steps to complete the procedures and actions. We would like to remind our pilots flying that it is still your responsibility to ensure the MCDU, FCU, transponder and radios are appropriately configured.
+Our virtual co-pilot is accessible via the aircraft presets page will sequentially perform the necessary setup tasks as in real life - from ADIRs alignment to engine starts. Do 
+note that even this feature is realistically simulated, so the co-pilot will take the appropriate amount of time and steps to complete the procedures and actions. We would like 
+to remind our pilots flying that it is still your responsibility to ensure the MCDU, FCU, transponder and radios are appropriately configured.
 
 ![Aircraft States](/img/notam-images/flypados3/flypad-presets-aircraft.png)
 
