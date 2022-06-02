@@ -14,8 +14,8 @@ metaAlt: 'FlyByWire Simulations'
 
 After lots of exploration, testing, and development, we are very happy to announce the release of our most feature rich update yet to our onboard Electronic Flight Bag (EFB) - flyPadOS 3. We have transformed the user interface in an effort to provide a more user-friendly, efficient, and consistent experience when using the flyPad. Along with the strides made in this new iteration of the flyPad, we are proud to say that with the help of over 200 contributors, we are the first to develop an EFB that offers support for multiple languages - enabling flight simmers from across the globe to have a more comfortable and familiar experience when flying.
 
-**Update (2022-06-03):** We have issued a small correction to the naming convention for the EFB feature - Aircraft Presets (previously titled *AI Co-Pilot*). We apologize for the 
-terminology confusion and updated the section below to better reflect the feature's purpose.
+**Update (2022-06-03):** We have issued a small correction to the naming convention for the EFB feature - Aircraft Presets (previously titled *AI Co-Pilot*). We have updated the 
+section below to better reflect the feature's purpose.
 
 ## New Features
 
