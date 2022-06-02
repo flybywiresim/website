@@ -113,9 +113,9 @@ Our new presets page allows you to save up to 8 custom presets, name them, and l
 
 We heard you liked having an AI co-pilot. This new feature simulates a co-pilot providing assistance with "on-the-ground" actions up to your takeoff roll. 
 
-Our virtual co-pilot is accessible via the aircraft presets page will sequentially perform the necessary setup tasks as in real life - from ADIRs alignment to engine starts. Do 
-note that even this feature is realistically simulated, so the co-pilot will take the appropriate amount of time and steps to complete the procedures and actions. We would like 
-to remind our pilots flying that it is still your responsibility to ensure the MCDU, FCU, transponder and radios are appropriately configured.
+The different aircraft states are accessible via the aircraft presets page and will sequentially perform the necessary setup tasks as in real life - from 
+ADIRs alignment to engine starts. Do note that even this feature is realistically simulated, so the co-pilot will take the appropriate amount of time and steps to complete the 
+procedures and actions. We would like to remind our pilots flying that it is still your responsibility to ensure the MCDU, FCU, transponder and radios are appropriately configured.
 
 ![Aircraft States](/img/notam-images/flypados3/flypad-presets-aircraft.png)
 
