@@ -1,4 +1,4 @@
-import Image from 'next/Image';
+import Image from 'next/image';
 import Link from 'next/link';
 import Container from './Container';
 import { NavLink } from './NavLinks';
