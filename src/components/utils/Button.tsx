@@ -1,17 +1,41 @@
-import { ReactNode } from 'react';
+import React, { FC } from 'react';
 
-type ButtonProps = {
+export enum ButtonType {
+    Neutral,
+    Emphasis,
+    Positive,
+    Caution,
+    Danger,
+}
+
+export interface ButtonProps {
+    type?: ButtonType,
+    disabled?: boolean,
     className?: string,
-    children: ReactNode,
-    onClick?: any
-};
+    onClick?: () => void,
+}
 
-export const Button = (props: ButtonProps) => (
-    <button
-        onClick={props.onClick}
-        type="button"
-        className={`focus:outline-none transition rounded-full py-3 text-xl shadow-md-dark-contrast font-bold ${props.className}`}
-    >
-        {props.children}
-    </button>
-);
+export const Button: FC<ButtonProps> = ({ type = ButtonType.Neutral, disabled = false, className = '', onClick = () => {}, children }) => {
+    let buttonClass;
+    switch (type) {
+    case ButtonType.Neutral:
+        buttonClass = 'button-neutral';
+        break;
+    case ButtonType.Emphasis:
+        buttonClass = 'button-emphasis';
+        break;
+    case ButtonType.Positive:
+        buttonClass = 'button-positive';
+        break;
+    case ButtonType.Caution:
+        buttonClass = 'button-caution';
+        break;
+    case ButtonType.Danger:
+        buttonClass = 'button-danger';
+        break;
+    }
+
+    return (
+        <button disabled={disabled} className={`button ${buttonClass} ${className}`} onClick={onClick}>{children}</button>
+    );
+};

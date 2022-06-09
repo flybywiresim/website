@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Button } from '../utils/Button';
+import { Button, ButtonType } from '../utils/Button';
 import { installerRef } from './Installer';
 import Container from '../utils/Container';
 
@@ -20,19 +20,21 @@ export const A320Header = () => {
                 muted
                 loop
             />
-            <Container className="relative max-w-6xl min-h-screen">
+            <Container className="relative min-h-screen">
                 <div className="absolute bottom-0 left-0 h-2/3 px-page">
-                    <h1 className="text-8xl font-bold">
-                        <span className="text-teal">A32</span>
-                        <span className="text-blue">N</span>
-                        X
+                    <h3 className="text-3xl font-semibold text-cyan-dark">
+                        FlyByWire Simulations
+                    </h3>
+                    <h1 className="text-8xl font-semibold text-quasi-white">
+                        A32NX
                     </h1>
-                    <p className="max-w-xl">
+                    <p className="mt-4 max-w-xl text-2xl">
                         A community built and maintained project aiming to provide high quality and detailed aircraft
                         for Microsoft Flight Simulator.
                     </p>
                     <div className="flex gap-4 my-5 max-w-md">
                         <Button
+                            type={ButtonType.Emphasis}
                             onClick={handleClick}
                             className="w-40 hover:text-blue-light bg-blue-light hover:bg-white border-2 border-blue-light"
                         >

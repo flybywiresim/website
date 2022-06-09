@@ -16,7 +16,7 @@ export const DropdownItem = (props: { children: ReactNode }) => (
 export const Dropdown = (props: DropdownProps) => {
     const [isShown, setIsShown] = useState(false);
     return (
-        <li className={`list-none cursor-pointer ${props.className}`} onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
+        <li className={`text-xl list-none cursor-pointer ${props.className}`} onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
             <span
                 draggable="false"
                 onClick={() => setIsShown(!isShown)}
@@ -28,7 +28,7 @@ export const Dropdown = (props: DropdownProps) => {
                 </span>
                 {isShown && (
                     <div className="relative">
-                        <ul className="flex right-0 flex-col gap-y-3 py-1 mt-4 w-56 rounded-md md:absolute md:bg-white md:ring-1 md:shadow-lg ring-black/10">
+                        <ul className="flex right-0 flex-col gap-y-3 py-1 mt-4 w-56 rounded-md ring-black/10 md:absolute md:bg-white md:ring-1 md:shadow-lg">
                             {props.children}
                         </ul>
                     </div>

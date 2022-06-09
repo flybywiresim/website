@@ -3,7 +3,9 @@ import type { AppProps } from 'next/app';
 import { NavBar } from '../components/utils/NavBar';
 import { ScrollToTopButton } from '../components/utils/ScrollToTopButton';
 import { Footer } from '../components/utils/Footer';
+
 import '../styles/main.scss';
+import '../styles/fbw.scss';
 
 const App = ({ Component, pageProps }: AppProps) => (
     <div className="root">

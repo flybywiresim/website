@@ -38,10 +38,10 @@ export const NavBar = () => {
             className={`fixed w-full z-50 ${scroll || isOpen ? 'transition bg-blue-dark-contrast shadow-lg-dark' : 'transition bg-transparent'}`}
             onClick={handleClick}
         >
-            <Container className="p-4">
-                <div className="flex justify-between space-x-4">
+            <Container className="py-6">
+                <div className="flex space-x-11">
                     <Link href="/">
-                        <Image className="cursor-pointer" src="/svg/white/FBW-Logo-WHITE.svg" width={180} height={40} />
+                        <Image className="cursor-pointer" src="/svg/FBW-Icon.svg" width={36.84} height={34.49} />
                     </Link>
                     <span className="flex flex-col place-content-center w-7 h-10 transition cursor-pointer md:hidden" onClick={() => setOpen(!isOpen)}>
                         <div className={`${isOpen && 'rotate-45 translate-y-[3px]'} duration-200 h-[3px] bg-white rounded-full`} />

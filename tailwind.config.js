@@ -35,12 +35,41 @@ module.exports = {
             },
             colors: {
                 colors,
-                blue: { 'dark-contrast': 'hsl(216,32%,17%)' },
-                midnight: { DEFAULT: 'hsl(218, 42%, 10%)' },
-                discord: {
+                'quasi-white': '#FAFAFA',
+                'cyan': {
+                    DEFAULT: 'var(--color-brand-cyan-main)',
+                    dark: 'var(--color-brand-cyan-dark)',
+                    light: 'var(--color-brand-cyan-ight)',
+                },
+                'navy': {
+                    DEFAULT: 'var(--color-brand-navy-main)',
+                    dark: 'var(--color-brand-navy-dark)',
+                    light: 'var(--color-brand-navy-light)',
+                },
+                'utility': {
+                    'red': 'var(--color-utility-red)',
+                    'green': 'var(--color-utility-green)',
+                    'orange': 'var(--color-utility-orange)',
+                    'amber': 'var(--color-utility-amber)',
+                    'blue': 'var(--color-utility-blue)',
+                    'purple': 'var(--color-utility-purple)',
+                    'pink': 'var(--color-utility-pink)',
+                    'salmon': 'var(--color-utility-salmon)',
+                    'grey': 'var(--color-utility-grey)',
+                    'dark-grey': 'var(--color-utility-dark-grey)',
+                    'grey-blue': 'var(--color-utility-grey-blue)',
+                },
+                'blue': { 'dark-contrast': 'hsl(216,32%,17%)' },
+                'midnight': { DEFAULT: 'hsl(218, 42%, 10%)' },
+                'discord': {
                     DEFAULT: 'hsl(235,86%,65%)',
                     dark: 'hsl(235,60%,54%)',
                 },
+            },
+            fontFamily: {
+                inter: ['Inter', 'sans-serif'],
+                manrope: ['Manrope', 'sans-serif'],
+                mono: ['JetBrains Mono', 'monospace'],
             },
             zIndex: { '-10': '-10' },
             typography: {
