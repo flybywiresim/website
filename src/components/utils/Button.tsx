@@ -18,6 +18,7 @@ export interface ButtonProps {
 export const Button: FC<ButtonProps> = ({ type = ButtonType.Neutral, disabled = false, className = '', onClick = () => {}, children }) => {
     let buttonClass;
     switch (type) {
+    default:
     case ButtonType.Neutral:
         buttonClass = 'button-neutral';
         break;
@@ -36,6 +37,6 @@ export const Button: FC<ButtonProps> = ({ type = ButtonType.Neutral, disabled = 
     }
 
     return (
-        <button disabled={disabled} className={`button ${buttonClass} ${className}`} onClick={onClick}>{children}</button>
+        <button type="button" disabled={disabled} className={`button ${buttonClass} ${className}`} onClick={onClick}>{children}</button>
     );
 };
