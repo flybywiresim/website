@@ -49,5 +49,5 @@
 @tailwind utilities;
 
 .px-page {
-  @apply px-5 md:px-56;
+  @apply px-6 lg:px-20 xl:px-32 2xl:px-56;
 }
