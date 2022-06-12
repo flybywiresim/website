@@ -35,7 +35,7 @@ export const NavBar = () => {
     }
     return (
         <nav
-            className={`fixed w-full z-50 ${scroll || isOpen ? 'transition bg-blue-dark-contrast shadow-lg-dark' : 'transition bg-transparent'}`}
+            className={`fixed w-full z-50 ${scroll || isOpen ? 'transition bg-navy-dark shadow-lg-dark' : 'transition bg-transparent'}`}
             onClick={handleClick}
         >
             <Container className="py-6">
