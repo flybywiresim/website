@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { MapProps } from '@flybywiresim/react-components';
-import { IconArrowRight } from '@tabler/icons';
-import { Card, CardBody, CardTitle } from '../utils/Card';
 import Container from '../utils/Container';
 
 const MapDisplay = dynamic<MapProps>(
