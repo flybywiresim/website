@@ -9,8 +9,14 @@
     scroll-behavior: smooth;
   }
 
+  @media (max-width: 768px) {
+    html {
+      font-size: 13px;
+    }
+  }
+
   body {
-    @apply overflow-x-hidden bg-blue-darker text-white;
+      @apply overflow-x-hidden bg-navy-dark text-white;
   }
   li {
     @apply text-xl font-semibold

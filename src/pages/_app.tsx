@@ -15,6 +15,8 @@ const App = ({ Component, pageProps }: AppProps) => (
             <meta name="theme-color" content="#00c2cc" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+            <link rel="shortcut icon" href="/img/FBW-Tail.png" />
+
             <title>FlyByWire Simulations</title>
 
             <meta
