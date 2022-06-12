@@ -16,7 +16,7 @@
     @apply text-xl font-semibold
   }
   h1,h2,h3,h4 {
-    @apply font-manrope font-extrabold mb-3
+    @apply font-manrope font-bold mb-3
   }
   h1 {
     @apply text-5xl md:text-6xl
@@ -43,5 +43,5 @@
 @tailwind utilities;
 
 .px-page {
-  @apply px-5 md:px-48;
+  @apply px-5 md:px-56;
 }
