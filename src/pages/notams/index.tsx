@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FC } from 'react';
 import { getPostListings, PostListing } from '../../lib/notams/posts';
-import Container from '../../components/utils/Container';
 
 export type BlogProps = { listings: PostListing[] }
 
