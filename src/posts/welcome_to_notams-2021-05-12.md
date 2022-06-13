@@ -4,7 +4,7 @@ date: '2021-05-12'
 authors:
   - 'Valastiri'
   - 'Sabes'
-category: 'ANNOUNCEMENTS'
+category: 'Announcements'
 metaImage: '/img/a32nxwing.png'
 metaAlt: 'FlyByWire Simulations'
 ---

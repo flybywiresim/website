@@ -7,7 +7,7 @@ authors:
   - 'Blueberry'
   - 'Holland'
   - 'Iceman'
-category: 'UPDATE'
+category: 'Update'
 metaImage: '/img/a32nxwing.png'
 metaAlt: 'FlyByWire Simulations'
 ---

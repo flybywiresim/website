@@ -1,33 +1,35 @@
 :root {
-  --color-brand-cyan-main: rgb(0, 224, 254);
-  --color-brand-cyan-dark: rgb(0, 202, 229);
-  --color-brand-cyan-ight: rgb(51, 231, 255);
+  --color-brand-cyan-main: 0 224 254;
+  --color-brand-cyan-dark: 0 202 229;
+  --color-brand-cyan-light: 51 231 255;
 
-  --color-brand-navy-main: rgb(23, 30, 44);
-  --color-brand-navy-dark: rgb(14, 19, 27);
-  --color-brand-navy-light: rgb(31, 42, 61);
+  --color-brand-navy-main: 23 30 44;
+  --color-brand-navy-dark: 14 19 27;
+  --color-brand-navy-light: 31 42 61;
 
   --color-theme-text: var(--color-brand-navy-main);
 
-  --color-quasi-white: rgb(250, 250, 250);
+  --color-quasi-white: 250 250 250;
 
-  --color-utility-red: rgb(220, 38, 38);
-  --color-utility-green: rgb(132, 204, 22);
-  --color-utility-orange: rgb(255, 106, 0);
-  --color-utility-amber: rgb(245, 158, 11);
-  --color-utility-blue: rgb(82, 128, 234);
-  --color-utility-purple: rgb(153, 61, 245);
-  --color-utility-pink: rgb(233, 47, 139);
-  --color-utility-salmon: rgb(248, 113, 113);
-  --color-utility-grey: rgb(208, 208, 208);
-  --color-utility-dark-grey: rgb(105, 105, 105);
-  --color-utility-grey-blue: rgb(43, 48, 59);
+  --color-utility-red: 220 38 38;
+  --color-utility-green: 132 204 22;
+  --color-utility-light-green: 64 232 48;
+  --color-utility-orange: 255 106 0;
+  --color-utility-yellow: 255 230 0;
+  --color-utility-amber: 245 158 11;
+  --color-utility-blue: 82 128 234;
+  --color-utility-purple: 153 61 245;
+  --color-utility-pink: 233 47 139;
+  --color-utility-salmon: 248 113 113;
+  --color-utility-grey: 208 208 208;
+  --color-utility-dark-grey: 105 105 105;
+  --color-utility-grey-blue: 43 48 59;
 
-  --color-button-theme-neutral: var(--color-brand-navy-light);
-  --color-button-theme-neutral-confirmation: var(--color-brand-cyan-main);
-  --color-button-theme-positive: var(--color-utility-green);
-  --color-button-theme-caution: var(--color-utility-orange);
-  --color-button-theme-danger: var(--color-utility-red);
+  --color-button-theme-neutral: rgb(var(--color-brand-navy-light));
+  --color-button-theme-neutral-confirmation: rgb(var(--color-brand-cyan-main));
+  --color-button-theme-positive: rgb(var(--color-utility-green));
+  --color-button-theme-caution: rgb(var(--color-utility-orange));
+  --color-button-theme-danger: rgb(var(--color-utility-red));
 }
 
 .modal {

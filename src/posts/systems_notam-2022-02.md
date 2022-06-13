@@ -6,7 +6,7 @@ authors:
     - 'BehEh'
     - 'IbrahimK42'
     - 'Commander Ga'
-category: 'UPDATE'
+category: 'Update'
 metaImage: '/img/systems-notam-feature.png'
 metaAlt: 'FlyByWire Simulations'
 ---
