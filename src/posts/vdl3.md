@@ -51,6 +51,11 @@ The VDL defines different chunks for the different transmission times per second
 We follow the 1V3D pattern per 120 milliseconds. It means that the first chunk is used for voice communication and the following
 three are used for datapacket transmissions. These chunks are equally assigned to all active communication partners.
 
+The following image illustrates the TDMA slot system with the different nodes.
+The yellow slots describe voice slots that are exclusivly used to transmit voice messages and
+green slots describe the slots that are used to exchange Up- and Downlink messages.
+The red slot is defined as a management slot that defines if the last block is used either for voice or data transmissions.
+
 [![VDL3 message slots](/img/notam-images/may2022/VDL3-Slots.png)](/img/notam-images/may2022/VDL3-Slots.png)
 
 We assume that all air and ground stations require one data-slot for the communication, in order to avoid the complex handshaking protocol as is required in the real world.
