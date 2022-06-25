@@ -2,9 +2,9 @@ import { Button } from '../../utils/Button';
 
 export const Download = ({ expOnHold }: { expOnHold?: boolean }) => {
     const urls = {
-        stable: 'https://cdn.flybywiresim.com/addons/a32nx/stable/full.zip',
-        dev: 'https://cdn.flybywiresim.com/addons/a32nx/master/full.zip',
-        exp: 'https://cdn.flybywiresim.com/addons/a32nx/experimental/full.zip',
+        stable: 'https://github.com/flybywiresim/a32nx/releases/download/assets/stable/A32NX-stable.zip',
+        dev: 'https://github.com/flybywiresim/a32nx/releases/download/assets/master/A32NX-master.zip',
+        exp: 'https://github.com/flybywiresim/a32nx/releases/download/assets/experimental/A32NX-experimental.zip',
     };
 
     const getDownloadLink = (link: string) => `${link}`;
