@@ -37,9 +37,9 @@ const Card = ({
                         {description}
                     </p>
                     <span className="flex flex-wrap gap-2 py-4">
-                    <Link href={href}>
-                        <Button label="Learn More" theme="secondary" />
-                    </Link>
+                        <Link href={href}>
+                            <Button label="Learn More" theme="secondary" />
+                        </Link>
                         {downloadURL
                             && (
                                 <>
@@ -48,7 +48,7 @@ const Card = ({
                                     </a>
                                 </>
                             )}
-                </span>
+                    </span>
                 </Container>
             </div>
         </div>
