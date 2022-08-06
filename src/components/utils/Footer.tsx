@@ -10,6 +10,8 @@ type IconItemProp = {
     href?: string
 }
 
+const year = new Date().getFullYear();
+
 export const FooterIconItem = (props: IconItemProp) => (
     <a href={props.href} target="_blank" rel="noreferrer">
         <FontAwesomeIcon className="hover:text-blue-light transition" icon={props.icon} size="lg" />
@@ -61,7 +63,7 @@ export const Footer = () => (
                     <Image src="/svg/vercel.svg" alt="Vercel" width={60} height={20} />
                 </span>
             </a>
-            <em className="text-center text-teal-100">&copy; FlyByWire Simulations and its contributors 2020-2021</em>
+            <em className="text-center text-teal-100">&copy; FlyByWire Simulations and its contributors 2020-{year}</em>
         </Container>
     </footer>
 );
