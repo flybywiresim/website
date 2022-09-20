@@ -1,17 +1,6 @@
-import { A320Header } from '../components/home/A320Header';
-import { Installer } from '../components/home/Installer';
-import { Community } from '../components/home/Community';
-import { PartnerSection } from '../components/home/PartnerSection';
-import { Donate } from '../components/home/Donate';
+import { NextPage } from 'next';
+import LandingPage from '../layouts/landingPage';
 
-const Index = () => (
-    <>
-        <A320Header />
-        <Installer />
-        <Community />
-        <PartnerSection />
-        <Donate />
-    </>
-);
+const index: NextPage = () => <LandingPage />;
 
-export default Index;
+export default index;
