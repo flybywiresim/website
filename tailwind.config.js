@@ -1,62 +1,69 @@
 'use strict';
 
 const defaultTheme = require('tailwindcss/defaultTheme');
-const colors = require('tailwindcss/colors');
-const reactComponentsSafeList = require('@flybywiresim/react-components/build/usedCSSClasses.json');
 
 module.exports = {
     content: [
         './src/**/*.{js,ts,jsx,tsx}',
-        './node_modules/@flybywiresim/react-components/build/usedCSSClasses.json',
     ],
-    safelist: [...reactComponentsSafeList],
     theme: {
         container: {
             center: true,
             padding: '2rem',
         },
-        fontFamily: { sans: ['Nunito Sans', ...defaultTheme.fontFamily.sans] },
         extend: {
-            height: { 200: '50rem', ...defaultTheme.height },
-            screens: {
-                '3xl': '1792px',
-                '4xl': '2048px',
-            },
-            spacing: {
-                128: '32rem',
-                160: '40rem',
-                192: '48rem',
-                224: '56rem',
-                256: '64rem',
-                288: '72rem',
-                320: '80rem',
-                352: '88rem',
-                384: '96rem',
-            },
             colors: {
-                colors,
-                blue: { 'dark-contrast': 'hsl(216,32%,17%)' },
-                midnight: { DEFAULT: 'hsl(218, 42%, 10%)' },
-                discord: {
-                    DEFAULT: 'hsl(235,86%,65%)',
-                    dark: 'hsl(235,60%,54%)',
+                'quasi-white': '#FAFAFA',
+                'grey': { medium: '#EDEDED' },
+                'cyan': {
+                    DEFAULT: '#00E0FE',
+                    medium: '#00C4F5',
+                    dark: 'var(--color-brand-cyan-dark)',
                 },
-            },
-            zIndex: { '-10': '-10' },
-            typography: {
-                '2xl': {
-                    css: {
-                        'maxWidth': '73ch',
-                        'h1, h2, h3, h4, h5, h6': { fontWeight: 'bold', color: 'hsl(0,0%,9%)', marginBottom: '1.2rem' },
-                        'h1': { fontSize: '4rem' },
-                        'h2': { fontSize: '3rem' },
-                        'h3': { fontSize: '2rem' },
-                        'p': { color: 'hsl(0,0%,20%)' },
-                        'a': { color: 'hsl(192,80%,40%)' },
-                        'iframe': { width: '100%', height: '60vh' },
-                    },
+                'dodger': { light: '#00BBFF' },
+                'navy': {
+                    DEFAULT: '#171E2C',
+                    light: '#1F2A3C',
+                    lightest: '#273347',
+                    lighter: '#222c3d',
+                    dark: '#0E131B',
                 },
+                'red': {
+                    DEFAULT: '#FC3A3A',
+                    dark: '#F70404',
+                    darker: '#E40303',
+                    darkest: '#D10303',
+                },
+                'utility': {
+                    'red': 'var(--color-utility-red)',
+                    'green': 'var(--color-utility-green)',
+                    'orange': 'var(--color-utility-orange)',
+                    'amber': 'var(--color-utility-amber)',
+                    'blue': 'var(--color-utility-blue)',
+                    'purple': 'var(--color-utility-purple)',
+                    'pink': 'var(--color-utility-pink)',
+                    'salmon': 'var(--color-utility-salmon)',
+                    'grey': 'var(--color-utility-grey)',
+                    'dark-grey': 'var(--color-utility-dark-grey)',
+                    'grey-blue': 'var(--color-utility-grey-blue)',
+                },
+
+                'dark': '#0E131B',
+                'discord': '#5865F2',
+                'light': '#FAFAFA',
+
+                'primary': '#00E0FE',
+                'primary-accent': '#00CBFE',
+                'secondary': '#171E2C',
+                'secondary-accent-light': '#1F2A3D',
+                'secondary-accent-dark': '#0E131B',
             },
+            opacity: { 3: '3%' },
+        },
+        fontFamily: {
+          display: ['Manrope', ...defaultTheme.fontFamily.sans],
+          body: ['Inter', ...defaultTheme.fontFamily.sans],
+          mono: ['JetBrains Mono', ...defaultTheme.fontFamily.mono],
         },
     },
     plugins: [
