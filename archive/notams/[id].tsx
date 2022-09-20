@@ -4,8 +4,8 @@ import nodeHtmlToImage from 'node-html-to-image';
 import { v4 } from 'uuid';
 import * as fs from 'fs';
 import Head from 'next/head';
-import { getAllPostIds, getPostContent, PostContent } from '../../lib/notams/posts';
-import Container from '../../components/utils/Container';
+import { getAllPostIds, getPostContent, PostContent } from '../../src/lib/notams/posts';
+import Container from '../../src/components/Utils/Container';
 
 const NOTAMS_EMBED_PREVIEWS_DIR = 'public/img/notams-embed-previews';
 const NOTAMS_EMBED_PREVIEWS_PUBLIC_DIR = 'img/notams-embed-previews';
@@ -36,7 +36,7 @@ const Post = ({ content: { authors, category, contentHtml, date, readingStats, t
 
         <section className="bg-white">
             <div className="relative bg-blue-dark">
-                <div className="absolute w-full h-full opacity-20 blur-sm">
+                <div className="absolute h-full w-full opacity-20 blur-sm">
                     <Image
                         layout="fill"
                         objectFit="cover"
@@ -46,14 +46,14 @@ const Post = ({ content: { authors, category, contentHtml, date, readingStats, t
                     />
                 </div>
 
-                <Container className="flex relative bottom-16 flex-col justify-end max-w-7xl h-160">
+                <Container className="relative bottom-16 flex h-160 max-w-7xl flex-col justify-end">
                     <div className="flex text-xl">
                         {category === 'ANNOUNCEMENTS'
                             ? (
                                 <p className="font-black text-teal-light">{category}</p>
                             )
                             : (
-                                <p className="font-black text-orangutanOrange">{category}</p>
+                                <p className="text-orangutanOrange font-black">{category}</p>
                             )}
                         <span className="pl-2 text-gray-300">
                             {readingStats.text}
@@ -74,7 +74,7 @@ const Post = ({ content: { authors, category, contentHtml, date, readingStats, t
             </div>
 
             <article
-                className="py-16 mx-auto prose prose-2xl px-page"
+                className="px-page prose-2xl prose mx-auto py-16"
                 /* eslint-disable-next-line react/no-danger */
                 dangerouslySetInnerHTML={{ __html: contentHtml }}
             />
