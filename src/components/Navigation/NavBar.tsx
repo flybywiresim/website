@@ -21,7 +21,7 @@ const NavBar = () => {
         <>
             {/* TODO: Remove debug */}
             <p>{isMenuOpen ? 'true' : 'false'}</p>
-            <nav className={`fixed z-50 w-screen py-8 text-white transition ${isMenuOpen && 'bg-dark'}`}>
+            <nav className={`fixed top-0 z-50 w-screen py-8 text-white transition ${isMenuOpen && 'bg-dark'}`}>
                 <Container className="flex items-center justify-between">
                     <Link href="/">
                         <Image className="cursor-pointer" src="/svg/tail/tail.svg" alt="FlyByWire Simulations" width={40} height={40} />
