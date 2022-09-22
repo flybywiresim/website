@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Container from '../Utils/Container';
 
 const NavLink = (props: {href: string, label: string}) => (
-    <Link href="/">
+    <Link href="/" passHref>
         <h4 className="cursor-pointer rounded-lg transition hover:text-primary">{props.label}</h4>
     </Link>
 );
@@ -23,7 +23,7 @@ const NavBar = () => {
             <p>{isMenuOpen ? 'true' : 'false'}</p>
             <nav className={`fixed top-0 z-50 w-screen py-8 text-white transition ${isMenuOpen && 'bg-dark'}`}>
                 <Container className="flex items-center justify-between">
-                    <Link href="/">
+                    <Link href="/" passHref>
                         <Image className="cursor-pointer" src="/svg/tail/tail.svg" alt="FlyByWire Simulations" width={40} height={40} />
                     </Link>
                     <MenuOutlined style={{ fontSize: '2rem' }} className="cursor-pointer text-white" onClick={handleClick} />
