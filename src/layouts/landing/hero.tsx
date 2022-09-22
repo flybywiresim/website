@@ -1,8 +1,8 @@
 import { ReactNode } from 'react';
 import Image from 'next/image';
-import Section from '../components/Utils/Section';
-import Container from '../components/Utils/Container';
-import Button from '../components/Button/Button';
+import Section from '../../components/Utils/Section';
+import Container from '../../components/Utils/Container';
+import Button from '../../components/Button/Button';
 
 const BackgroundImage = () => (
     <div className="absolute -z-10 h-screen w-screen opacity-90">
@@ -16,7 +16,7 @@ const ButtonGroup = (props: {children: ReactNode}) => (
     </ul>
 );
 
-const LandingPage = () => (
+const Hero = () => (
     <>
         <Section theme="dark" className="bg-black/50 bg-gradient-to-bl from-primary/30 to-secondary">
             <BackgroundImage />
@@ -33,4 +33,4 @@ const LandingPage = () => (
     </>
 );
 
-export default LandingPage;
+export default Hero;
