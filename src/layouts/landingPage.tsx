@@ -18,7 +18,7 @@ const ButtonGroup = (props: {children: ReactNode}) => (
 
 const LandingPage = () => (
     <>
-        <Section theme="dark" className="relative bg-dark/75 bg-gradient-to-bl from-primary/30 to-transparent">
+        <Section theme="dark" className="bg-dark/75 bg-gradient-to-bl from-primary/30 to-transparent">
             <BackgroundImage />
             <Container className="h-screen" center>
                 <h4 className="font-normal leading-4 text-primary">FlyByWire Simulations</h4>
