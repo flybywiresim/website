@@ -4,6 +4,12 @@ import { MenuOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 import Container from '../Utils/Container';
 
+const NavLink = (props: {href: string, label: string}) => (
+    <Link href="/">
+        <h4 className="cursor-pointer rounded-lg transition hover:text-primary">{props.label}</h4>
+    </Link>
+);
+
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -13,6 +19,8 @@ const NavBar = () => {
 
     return (
         <>
+            {/* TODO: Remove debug */}
+            <p>{isMenuOpen ? 'true' : 'false'}</p>
             <nav className={`fixed z-50 w-screen py-8 text-white transition ${isMenuOpen && 'bg-dark'}`}>
                 <Container className="flex items-center justify-between">
                     <Link href="/">
@@ -24,21 +32,10 @@ const NavBar = () => {
                 {isMenuOpen && (
                     <Container>
                         <ul className="grid gap-y-2 text-center">
-                            <Link href="/">
-                                <h4>Home</h4>
-                            </Link>
-                            <Link href="/">
-                                <h4>Projects</h4>
-                            </Link>
-                            <Link href="/">
-                                <h4>NOTAMs</h4>
-                            </Link>
-                            <Link href="/">
-                                <h4>Documentation</h4>
-                            </Link>
-                            <Link href="/">
-                                <h4>Community</h4>
-                            </Link>
+                            <NavLink href="/" label="Home" />
+                            <NavLink href="/" label="Projects" />
+                            <NavLink href="/" label="NOTAMs" />
+                            <NavLink href="/" label="Documentation" />
                         </ul>
                     </Container>
                 )}
