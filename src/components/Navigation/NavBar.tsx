@@ -20,31 +20,27 @@ const NavBar = () => {
     };
 
     return (
-        <>
-            {/* TODO: Remove debug */}
-            <p>{isMenuOpen ? 'true' : 'false'}</p>
-            <nav className={`fixed top-0 z-50 w-screen py-8 text-white transition ${isMenuOpen && 'bg-dark'}`}>
-                <Container className="flex items-center justify-between">
-                    <Link href="/">
-                        <a>
-                            <Image className="cursor-pointer" src="/svg/tail/tail.svg" alt="FlyByWire Simulations" width={40} height={40} />
-                        </a>
-                    </Link>
-                    <MenuOutlined style={{ fontSize: '2rem' }} className="cursor-pointer text-white" onClick={handleClick} />
+        <nav className={`fixed top-0 z-50 w-screen py-8 text-white transition ${isMenuOpen && 'bg-dark'}`}>
+            <Container className="flex items-center justify-between">
+                <Link href="/">
+                    <a>
+                        <Image className="cursor-pointer" src="/svg/tail/tail.svg" alt="FlyByWire Simulations" width={40} height={40} />
+                    </a>
+                </Link>
+                <MenuOutlined style={{ fontSize: '2rem' }} className="cursor-pointer text-white" onClick={handleClick} />
+            </Container>
+            {/* TODO: Create dropdown component and possibly animate a slide down effect? */}
+            {isMenuOpen && (
+                <Container>
+                    <ul className="grid gap-y-2 text-center">
+                        <NavLink href="/" label="Home" />
+                        <NavLink href="/" label="Projects" />
+                        <NavLink href="/" label="NOTAMs" />
+                        <NavLink href="/" label="Documentation" />
+                    </ul>
                 </Container>
-                {/* TODO: Create dropdown component and possibly animate a slide down effect? */}
-                {isMenuOpen && (
-                    <Container>
-                        <ul className="grid gap-y-2 text-center">
-                            <NavLink href="/" label="Home" />
-                            <NavLink href="/" label="Projects" />
-                            <NavLink href="/" label="NOTAMs" />
-                            <NavLink href="/" label="Documentation" />
-                        </ul>
-                    </Container>
-                )}
-            </nav>
-        </>
+            )}
+        </nav>
     );
 };
 
