@@ -2,7 +2,8 @@
 
 @layer base {
   html {
-      font-size: 12px;
+    @apply bg-light text-dark;
+    font-size: 12px;
   }
 
   @screen xs {
@@ -29,11 +30,7 @@
   }
 
   p {
-    @apply font-body font-light text-lg text-gray-300 tracking-[-2%] leading-relaxed;
-  }
-
-  html {
-    @apply bg-light text-dark;
+    @apply font-body font-light text-lg tracking-[-2%] leading-relaxed;
   }
 }
 @tailwind components;

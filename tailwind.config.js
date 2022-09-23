@@ -17,12 +17,14 @@ module.exports = {
         },
         extend: {
             colors: {
+                'dark': '#0E131B',
+                'discord': '#5865F2',
+                'light': '#FAFAFA',
+
                 'primary': '#00E0FE',
                 'primary-accent': '#00CBFE',
                 'secondary': '#171E2C',
                 'secondary-accent': '#1F2A3D',
-                'light': '#FAFAFA',
-                'dark': '#0E131B',
             },
         },
     },
