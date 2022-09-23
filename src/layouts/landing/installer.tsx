@@ -14,9 +14,9 @@ const installer = () => (
         </Container>
 
         {/* TODO: Change placeholder image */}
-        <Container className="relative -mb-28 min-w-full overflow-y-hidden">
-            <Image src="/img/installerPreview.png" width="1920" height="1080" />
-        </Container>
+        <div className="-mb-32">
+            <Image src="/img/installerPreview.png" layout="intrinsic" width={1920} height={1080} />
+        </div>
     </Section>
 );
 

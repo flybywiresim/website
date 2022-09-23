@@ -1,12 +1,22 @@
 @tailwind base;
 
 @layer base {
+  html {
+      font-size: 12px;
+  }
+
+  @screen xs {
+    html {
+      font-size: 16px;
+    }
+  }
+
   h1,h2,h3,h4,h5,h6 {
     @apply font-bold font-display leading-relaxed py-2;
   }
 
   h1 {
-    @apply text-7xl sm:text-8xl;
+    @apply text-8xl;
   }
   h2 {
     @apply text-5xl;
