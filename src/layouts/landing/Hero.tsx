@@ -18,7 +18,7 @@ const ButtonGroup = (props: {children: ReactNode}) => (
 
 const Hero = () => (
     <>
-        <Section theme="dark" className="bg-black/50 bg-gradient-to-bl from-primary/30 to-secondary">
+        <Section className="bg-black/50 bg-gradient-to-bl from-primary/30 to-secondary py-0">
             <BackgroundImage />
             <Container className="h-screen justify-center" display="flex flex-col">
                 <h4 className="font-normal leading-4 text-primary">FlyByWire Simulations</h4>
