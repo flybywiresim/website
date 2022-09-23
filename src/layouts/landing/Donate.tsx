@@ -5,7 +5,7 @@ import Button from '../../components/Button/Button';
 
 const BackgroundImage = () => (
     <div className="h-full w-screen">
-        <Image src="/img/Airfoil.png" layout="fill" objectFit="cover" />
+        <Image src="/pages/index/Airfoil.png" layout="fill" objectFit="cover" />
     </div>
 );
 
