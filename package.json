@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@flybywiresim/eslint-config": "^0.2.3",
+    "@flybywiresim/react-components": "^0.3.2",
     "@flybywiresim/tailwind-config": "^0.5.2",
     "@tailwindcss/typography": "^0.5.7",
     "@types/node": "^17.0.45",
