@@ -4,13 +4,13 @@ import Container from '../../components/Utils/Container';
 import Button from '../../components/Button/Button';
 
 const BackgroundImage = () => (
-    <div className="absolute h-full w-screen">
+    <div className="h-full w-screen">
         <Image src="/img/Airfoil.png" layout="fill" objectFit="cover" />
     </div>
 );
 
 const Donate = () => (
-    <Section className="absolute h-full w-screen bg-dark py-0">
+    <Section className="relative h-full w-screen bg-dark">
         <BackgroundImage />
         <Container className="relative h-full items-center justify-center gap-y-5" display="flex flex-col">
             <h2 className="text-primary">Donate</h2>
