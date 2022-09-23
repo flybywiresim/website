@@ -6,7 +6,7 @@ import Button from '../../components/Button/Button';
 
 const BackgroundImage = () => (
     <div className="absolute -z-10 h-screen w-screen opacity-90">
-        <Image src="/img/bg.png" layout="fill" objectFit="cover" />
+        <Image src="/pages/index/bg.png" layout="fill" objectFit="cover" />
     </div>
 );
 

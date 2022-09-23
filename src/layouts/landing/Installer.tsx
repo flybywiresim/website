@@ -15,7 +15,7 @@ const Installer = () => (
 
         {/* TODO: Change placeholder image */}
         <div className="z-10 -mb-32">
-            <Image src="/img/installerPreview.png" layout="responsive" width={1920} height={1080} />
+            <Image src="/pages/index/installerPreview.png" layout="responsive" width={1920} height={1080} />
         </div>
     </Section>
 );
