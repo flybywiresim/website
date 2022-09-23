@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { MenuOutlined } from '@ant-design/icons';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Container from '../Utils/Container';
 
 const NavLink = (props: {href: string, label: string}) => (
@@ -14,13 +14,23 @@ const NavLink = (props: {href: string, label: string}) => (
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    const scrollHandler = () => {
+        setIsScrolled(window.scrollY > 2);
+    };
 
     const handleClick = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    useEffect(() => {
+        window.addEventListener('scroll', scrollHandler);
+        return () => window.removeEventListener('scroll', scrollHandler);
+    }, [isScrolled]);
+
     return (
-        <nav className={`fixed top-0 z-50 w-screen py-8 text-white transition ${isMenuOpen && 'bg-dark'}`}>
+        <nav className={`fixed top-0 z-50 w-screen py-8 text-white transition ${(isMenuOpen || isScrolled) && 'bg-dark'}`}>
             <Container className="flex items-center justify-between">
                 <Link href="/">
                     <a>
