@@ -48,7 +48,7 @@ const Insights = () => {
                 </ul>
 
                 <hr />
-                {/* TODO: Add discord card */}
+
                 <Discord />
 
                 <div className="mt-8 h-144">
