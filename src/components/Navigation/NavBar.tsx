@@ -34,7 +34,7 @@ const NavBar = () => {
             <Container className="flex items-center justify-between">
                 <Link href="/">
                     <a>
-                        <Image className="cursor-pointer" src="/svg/tail/tail.svg" alt="FlyByWire Simulations" width={40} height={40} />
+                        <Image className="cursor-pointer" src="/svg/tail/tail.svg" alt="FlyByWire Simulations" width={30} height={30} />
                     </a>
                 </Link>
                 <MenuOutlined style={{ fontSize: '2rem' }} className="cursor-pointer text-white" onClick={handleClick} />
