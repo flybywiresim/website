@@ -4,10 +4,10 @@ type ButtonProps = {
     className?: string;
     onClick?: () => void
 }
-// TODO: Add onClick handler
-const Button = ({ label, theme, className }: ButtonProps) => (
+const Button = ({ label, theme, className, onClick }: ButtonProps) => (
     <button
         type="button"
+        onClick={onClick}
         className={`
         ${theme === 'primary' ? 'bg-primary-accent text-secondary' : 'bg-secondary-accent text-light'} 
         w-full rounded-md px-8 py-2 font-body text-lg font-semibold
