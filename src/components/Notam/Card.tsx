@@ -4,9 +4,9 @@ import Tag from './Tag';
 import { PostListing } from '../../lib/notams/posts';
 
 const Card = (props: PostListing) => (
-    <div className="grid rounded-lg bg-secondary-accent-dark">
-        <span>
-            <Image src={props.metaImage} alt={props.metaAlt} objectFit="cover" width={800} height={600} className="rounded-t-lg" />
+    <div className="grid cursor-pointer rounded-lg bg-secondary-accent-dark">
+        <span className="relative h-40 w-full">
+            <Image src={props.metaImage} alt={props.metaAlt} layout="fill" objectFit="cover" className="rounded-t-lg" />
         </span>
         <Container className="grid py-4">
             <span className="flex items-center justify-between gap-4">
