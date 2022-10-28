@@ -23,15 +23,17 @@ const index = ({ listings }: BlogProps) => (
                     readingStats,
                 }) => (
                     <Link key={id} href={`/notams/${id}`}>
-                        <Card
-                            category={category}
-                            title={title}
-                            date={date}
-                            description={description}
-                            metaImage={metaImage}
-                            metaAlt={metaAlt}
-                            readingStats={readingStats.text}
-                        />
+                        <a>
+                            <Card
+                                category={category}
+                                title={title}
+                                date={date}
+                                description={description}
+                                metaImage={metaImage}
+                                metaAlt={metaAlt}
+                                readingStats={readingStats.text}
+                            />
+                        </a>
                     </Link>
                 ))}
             </div>
