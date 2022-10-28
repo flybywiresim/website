@@ -53,7 +53,7 @@ const NavBar = () => {
                 </Container>
             )}
 
-            {isMenuOpen && <div className="absolute top-0 left-0 h-screen w-screen bg-transparent" />}
+            {isMenuOpen && <div className="absolute top-0 left-0 -z-10 h-screen w-screen bg-transparent" />}
         </nav>
     );
 };
