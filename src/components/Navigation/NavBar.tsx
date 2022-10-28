@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { MenuOutlined } from '@ant-design/icons';
+import { CloseOutlined, MenuOutlined } from '@ant-design/icons';
 import { useEffect, useState } from 'react';
 import Container from '../Utils/Container';
 
@@ -30,14 +30,16 @@ const NavBar = () => {
     }, [isScrolled]);
 
     return (
-        <nav className={`fixed top-0 z-50 w-screen py-8 text-white transition ${(isMenuOpen || isScrolled) && 'bg-dark'}`}>
+        <nav className={`fixed top-0 z-50 w-screen py-4 text-white transition ${(isMenuOpen || isScrolled) && 'bg-dark'}`} onClick={handleClick}>
             <Container className="flex items-center justify-between">
                 <Link href="/">
                     <a>
                         <Image className="cursor-pointer" src="/svg/tail/tail.svg" alt="FlyByWire Simulations" width={30} height={30} />
                     </a>
                 </Link>
-                <MenuOutlined style={{ fontSize: '2rem' }} className="cursor-pointer text-white" onClick={handleClick} />
+                {isMenuOpen
+                    ? <CloseOutlined style={{ fontSize: '20px' }} className="cursor-pointer text-white" onClick={handleClick} />
+                    : <MenuOutlined style={{ fontSize: '20px' }} className="cursor-pointer text-white" onClick={handleClick} />}
             </Container>
             {/* TODO: Create dropdown component and possibly animate a slide down effect? */}
             {isMenuOpen && (
@@ -50,6 +52,8 @@ const NavBar = () => {
                     </ul>
                 </Container>
             )}
+
+            {isMenuOpen && <div className="absolute top-0 left-0 h-screen w-screen bg-transparent" />}
         </nav>
     );
 };
