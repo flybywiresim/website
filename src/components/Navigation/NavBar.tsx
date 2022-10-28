@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import Container from '../Utils/Container';
 
 const NavLink = (props: {href: string, label: string}) => (
-    <Link href="/" passHref>
+    <Link href={props.href} passHref>
         <a>
             <h4 className="cursor-pointer rounded-lg transition hover:text-primary">{props.label}</h4>
         </a>
@@ -46,8 +46,8 @@ const NavBar = () => {
                 <Container>
                     <ul className="grid gap-y-2 text-center">
                         <NavLink href="/" label="Home" />
-                        <NavLink href="/" label="Projects" />
-                        <NavLink href="/" label="NOTAMs" />
+                        <NavLink href="/projects" label="Projects" />
+                        <NavLink href="/notams" label="NOTAMs" />
                         <NavLink href="/" label="Documentation" />
                     </ul>
                 </Container>
