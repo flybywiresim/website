@@ -22,7 +22,7 @@ const index = ({ listings }: BlogProps) => (
                     metaAlt,
                     readingStats,
                 }) => (
-                    <Link href={`/notams/${id}`}>
+                    <Link key={id} href={`/notams/${id}`}>
                         <Card
                             category={category}
                             title={title}
