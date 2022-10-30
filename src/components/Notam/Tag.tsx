@@ -14,11 +14,11 @@ const handleCategory = (category: string) => {
 };
 
 const Tag = ({ category }: TagProps) => (
-    <span className={`max-w-min rounded-lg border py-1 px-4 ${handleCategory(category)}`}>
+    <div className={`max-w-min rounded-lg border py-1 px-4 ${handleCategory(category)}`}>
         <h5>
             {category.charAt(0).toUpperCase() + category.slice(1).toLowerCase()}
         </h5>
-    </span>
+    </div>
 );
 
 export default Tag;
