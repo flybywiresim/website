@@ -18,7 +18,7 @@ const Section = ({ id, theme, className, children }: SectionProps) => {
         }
     };
     return (
-        <section id={id} className={`py-20 ${handleTheme()} ${className}`}>
+        <section id={id} className={`${handleTheme()} py-20 ${className}`}>
             {children}
         </section>
     );

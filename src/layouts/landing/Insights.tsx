@@ -47,12 +47,12 @@ const Insights = () => {
                     <Statistic value="2M+" label="Downloads" />
                 </ul>
 
-                <hr />
-
-                <Discord />
-
                 <div className="mt-8 h-144">
                     <Map refreshInterval={mapRefreshInterval} disableMenu disableWeather={false} disableScroll forceTileset="dark" />
+                </div>
+
+                <div className="pt-8">
+                    <Discord />
                 </div>
             </Container>
         </Section>
