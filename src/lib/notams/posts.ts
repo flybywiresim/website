@@ -4,7 +4,6 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 import readingTime from 'reading-time';
-import { TagProps } from '../../components/Notam/Tag';
 
 export type PostListing = {
     id?: string,
@@ -12,6 +11,7 @@ export type PostListing = {
     date: string,
     title: string,
     description: string,
+    authors?: string[],
     category: any,
     metaImage: string,
     metaAlt: string,
