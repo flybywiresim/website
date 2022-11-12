@@ -10,22 +10,9 @@ metaAlt: 'FlyByWire Simulations'
 
 ## Overview
 
-We have gone to great lengths to ensure that the A32NX flight model is as realistic as it gets. Collaborating with our own A320 pilot staff at FlyByWire Simulations and testing each change religiously the flight model is based on matching the following:
+We have gone to great lengths to ensure that the A32NX flight model is as realistic as it gets. Collaborating with our own A320 pilot staff at FlyByWire Simulations and testing each change meticulously, the flight model is based on matching the data and other information obtained from the A320NEO Airplane Flight Manual, Flight Crew Operating Manual, Flight Crew Techniques Manual, Quick Reference Handbook, FlySmart electronic flight bag, and our A320NEO piloting team.
 
-1.	A320NEO drag polar used in creating the Leap 1A-26 engine model;
-2.	Pitch angles and N1 values from the QRH unreliable airspeeds chart as well as one additional full flaps condition provided by a project pilot;
-3.	N1 values from FCOM cruise check data;
-4.	Maximum altitude capability checks;
-5.	Climb and descent time and distance data from the FCOM;
-6.	A320 stall speeds (to the extent possible while satisfying item 2 as a higher priority);
-7.	A deceleration condition for a CONF 3 approach provided by the same project pilot as for item 2;
-8.	Pitch up on retraction from 1+F to clean and pitch down on extension from 1 to 2;
-9.	Elevator trim elasticity table used to prevent premature rotation and match pitch trim value at some cruise conditions provided by an FBW team pilot;
-10.	Pitch and roll stability and gyro stability set to provide more accurate control response “feel” and reaction to turbulence/gusts;
-11.	Parameters adjusted to provide more accurate pitch and roll sensitivity based on FBW team pilots’ evaluations; and
-12.	Landing gear adjusted to provide more gear suspension travel and to match the amount of travel for the real airplane between empty weight and maximum ramp weight.
-
-If you are a more data oriented reader below you can find comparisons between the reference data and the sim. Please note that speedbrake drag is based on matching FCOM emergency descent data.
+If you are a more data oriented reader, below you can find comparisons between the reference data and the sim. Please note that speedbrake drag is based on matching FCOM emergency descent data.
 
 ### Pitch Angle Verification ("Targets are from QRH)
 
