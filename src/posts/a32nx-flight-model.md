@@ -20,27 +20,27 @@ If you are a more data oriented reader, below you can find comparisons between t
 
 ### Cruise Check Data
 
-[ insert tables here ]
+![cruise checks](/img/notam-images/flight-model/cruise-checks_1.png)]
 
 ### Maximum Altitude Capability Checks
 
-[ insert tables here ]
+![max alt checks](/img/notam-images/flight-model/maximum-alt-checks.png)
 
-### Climb Time / Distance / Fuel compared to FCOM (250/300/M0.78), ISA+10C
+### Climb Data 1
 
-[ insert tables here ]
+[![climb data 1](/img/notam-images/flight-model/climb1.png)](/img/notam-images/flight-model/climb1.png)
 
-### Climb Time / Distance / Fuel compared to FCOM (250/300/M0.78), ISA+20C
+### Climb Data 2
 
-[ insert tables here ]
+[![climb data 2](/img/notam-images/flight-model/climb2.png)](/img/notam-images/flight-model/climb2.png)
 
-### Descent Time / Distance / Fuel compared to FCOM (M0.78/300/250), ISA
+### Descent Time / Distance / Fuel Compared to FCOM
 
-[ insert tables here ]
+![descent time](/img/notam-images/flight-model/des.png)
 
-### Emergency Descent Time / Distance compared to FCOM
+### Emergency Descent Time / Distance Compared to FCOM
 
-[ insert tables here ]
+![emergency descent](/img/notam-images/flight-model/em-des.png)
 
 ### Decel Check for CONF 3 Approach (Data form FBW IRL A320NEO Pilot)
 
@@ -66,7 +66,18 @@ Stopping distance comparisons were made using FlySmart landing distance data. Th
 
 #### EHAM (Amsterdam Schiphol Airport) 18R, ISA, No Wind, CG<25%
 
-[ insert table here ]
+##### Max Manual
+
+![conf full chart mm](/img/notam-images/flight-model/conf-f-mm.png)
+
+![conf 3 chart mm](/img/notam-images/flight-model/conf-3-mm.png)
+
+##### Autobrake Medium
+
+![conf full chart abm](/img/notam-images/flight-model/conf-f-abm.png)
+
+![conf 3 chart abm](/img/notam-images/flight-model/conf-3-abm.png)
+
 
 #### EDDW (Bremen Airport) 27, ISA, No Wind, CG=27%
 
