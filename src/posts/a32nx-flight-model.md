@@ -81,7 +81,10 @@ Stopping distance comparisons were made using FlySmart landing distance data. Th
 
 #### EDDW (Bremen Airport) 27, ISA, No Wind, CG=27%
 
-[ inerset table here ]
+
+![conf full chart EDDW](/img/notam-images/flight-model/conffull-eddw.png)
+
+![conf 3 chart EDDW](/img/notam-images/flight-model/conf3-eddw.png)
 
 ### Landing Gear
 
