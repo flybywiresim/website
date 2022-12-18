@@ -20,7 +20,7 @@ If you are a more data oriented reader, below you can find comparisons between t
 
 ### Cruise Check Data
 
-![cruise checks](/img/notam-images/flight-model/cruise-checks_1.png)]
+![cruise checks](/img/notam-images/flight-model/cruise-checks_1.png)
 
 ### Maximum Altitude Capability Checks
 
@@ -88,11 +88,11 @@ Stopping distance comparisons were made using FlySmart landing distance data. Th
 
 ### Landing Gear
 
-![flight-characteristics](/img/notam-images/flight-model/aircraft-characteristics.png)
+[![flight-characteristics](/img/notam-images/flight-model/aircraft-characteristics.png)](/img/notam-images/flight-model/aircraft-characteristics.png)
 
 The position C1 was used for the nosegear suspension travel, and BF1 was used for the main gear suspension travel. The difference between the heights at C1 and BF1 at MRW and at 41T at the respective CG positions was used to set the spring constant exponential value. Comparison of A32NX after this PR to the Airbus document:
 
-[ insert table here ]
+![gear comparison](/img/notam-images/flight-model/gear-comparision.png)
 
 ---
 
