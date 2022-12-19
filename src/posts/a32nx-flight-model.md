@@ -5,7 +5,7 @@ authors:
   - 'donbikes'
   - 'Valastiri'
 category: 'UPDATE'
-metaImage: '/img/notam-images/flypados3/flypad-hero.png'
+metaImage: '/img/flight-model-feature.png'
 metaAlt: 'FlyByWire Simulations'
 ---
 
@@ -152,3 +152,5 @@ Download the latest version of the A32NX:
 ---
 
 Safe skies and happy flying!
+
+Feature Image Courtesy of Maphol - FBW Media Team
