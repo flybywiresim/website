@@ -2,7 +2,8 @@
 title: 'A32NX Flight Model'
 date: 'tbd'
 authors:
-  - 'donbike'
+  - 'donbikes'
+  - 'Valastiri'
 category: 'UPDATE'
 metaImage: '/img/notam-images/flypados3/flypad-hero.png'
 metaAlt: 'FlyByWire Simulations'
@@ -10,13 +11,30 @@ metaAlt: 'FlyByWire Simulations'
 
 ## Overview
 
-We have gone to great lengths to ensure that the A32NX flight model is as realistic as it gets. Collaborating with our own A320 pilot staff at FlyByWire Simulations and testing each change meticulously, the flight model is based on matching the data and other information obtained from the A320NEO Airplane Flight Manual, Flight Crew Operating Manual, Flight Crew Techniques Manual, Quick Reference Handbook, FlySmart electronic flight bag, and our A320NEO piloting team.
+We have gone to great lengths to ensure that the A32NX flight model is as realistic as it gets. Collaborating with our own A320 pilot staff at FlyByWire Simulations and testing each change 
+meticulously, the flight model is based on matching the data and other information obtained from the A320NEO Airplane Flight Manual, Flight Crew Operating Manual, Flight Crew Techniques Manual, 
+Quick Reference Handbook, FlySmart electronic flight bag, and our A320NEO piloting team.
 
-If you are a more data oriented reader, below you can find comparisons between the reference data and the sim. Please note that speedbrake drag is based on matching FCOM emergency descent data.
+If you are a more data oriented reader, below you can find comparisons between the reference data and our tests in MSFS. We have included a plethora of tables and charts for you. Please note that 
+speedbrake drag is based on matching FCOM emergency descent data.
 
-### Pitch Angle Verification ("Targets are from QRH)
+## Work In Progress Tuning
 
-[ insert tables here ]
+Constant improvements with realistic and often very recent data points from our pilot staff is where we believe the A32NX shines. We plan on further tweaking how the flight model performs in 
+regards to flaps up induced drag and including performance data for gear down operations (in climb, cruise, and descent). In some cases it has been noted that estimated gear drag seems a bit low 
+but gear drag that matches data at low CL conditions was too much at high CL conditions indicating further improvements are needed where flaps up induced drag is too high.
+
+We hope to continue bringing the best and most accurate flight model of the A320neo the MSFS. 
+
+---
+
+Credits to donbikes for the flight model work and Taz for the engine modelling.
+
+**Note:** Some of the smaller more data heavy images can be clicked on so you can view the data in full.
+
+### Pitch Angle Verification ("Targets are from QRH")
+
+[![pitch angle chart](/img/notam-images/flight-model/pitch-angle-chart.png)](/img/notam-images/flight-model/pitch-angle-chart.png)
 
 ### Cruise Check Data
 
@@ -36,11 +54,11 @@ If you are a more data oriented reader, below you can find comparisons between t
 
 ### Descent Time / Distance / Fuel Compared to FCOM
 
-![descent time](/img/notam-images/flight-model/des.png)
+[![descent time](/img/notam-images/flight-model/des.png)](/img/notam-images/flight-model/des.png)
 
 ### Emergency Descent Time / Distance Compared to FCOM
 
-![emergency descent](/img/notam-images/flight-model/em-des.png)
+[![emergency descent](/img/notam-images/flight-model/em-des.png)](/img/notam-images/flight-model/em-des.png)
 
 ### Decel Check for CONF 3 Approach (Data form FBW IRL A320NEO Pilot)
 
@@ -134,5 +152,3 @@ Download the latest version of the A32NX:
 ---
 
 Safe skies and happy flying!
-
-Editors: *Valastiri*
