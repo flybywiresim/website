@@ -60,7 +60,7 @@ Credits to donbikes for the flight model work and Taz for the engine modelling.
 
 [![emergency descent](/img/notam-images/flight-model/em-des.png)](/img/notam-images/flight-model/em-des.png)
 
-### Decel Check for CONF 3 Approach (Data form FBW IRL A320NEO Pilot)
+### Decel Check for CONF 3 Approach (Data from FBW IRL A320NEO Pilot)
 
 **Conditions:**
 
