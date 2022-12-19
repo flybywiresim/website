@@ -34,7 +34,7 @@ Credits to donbikes for the flight model work and Taz for the engine modelling.
 
 ### Pitch Angle Verification ("Targets are from QRH")
 
-[![pitch angle chart](/img/notam-images/flight-model/pitch-angle-chart.png)](/img/notam-images/flight-model/pitch-angle-chart.png)
+[![pitch angle table](/img/notam-images/flight-model/pitch-angle-table.png)](/img/notam-images/flight-model/pitch-angle-table.png)
 
 ### Cruise Check Data
 
