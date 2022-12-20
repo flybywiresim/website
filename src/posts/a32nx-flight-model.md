@@ -35,6 +35,11 @@ Credits to donbikes for the flight model work and Taz for the engine modelling.
 
 [![pitch angle table](/img/notam-images/flight-model/pitch-angle-table.png)](/img/notam-images/flight-model/pitch-angle-table.png)
 
+The following table represents pitch angle/N1 values at 3000 feet. These values are valid for both our Stable and Development version. Further tweaks and refinements are already in testing on our 
+Experimental version.
+
+[![pitch angle 3000ft](/img/notam-images/flight-model/pitch-3000.png)](/img/notam-images/flight-model/pitch-3000.png)
+
 ### Cruise Check Data
 
 ![cruise checks](/img/notam-images/flight-model/cruise-checks_1.png)
