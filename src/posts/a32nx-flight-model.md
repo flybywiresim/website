@@ -27,16 +27,21 @@ We hope to continue bringing the best and most accurate flight model of the A320
 
 ---
 
-Credits to donbikes for the flight model work and Taz for the engine modelling.
+Credits:
+
+- donbikes for the flight model work,
+- Taz for the engine modelling,
+- Davy for the simulation of the autobrake system.
 
 **Note:** Some of the smaller more data heavy images can be clicked on so you can view the data in full.
+
+---
 
 ### Pitch Angle Verification ("Targets are from QRH")
 
 [![pitch angle table](/img/notam-images/flight-model/pitch-angle-table.png)](/img/notam-images/flight-model/pitch-angle-table.png)
 
-The following table represents pitch angle/N1 values at 3000 feet. These values are valid for both our Stable and Development version. Further tweaks and refinements are already in testing on our 
-Experimental version.
+The following table represents pitch angle/N1 values at 3000 feet. These values are valid for both our Stable and Development versions.
 
 [![pitch angle 3000ft](/img/notam-images/flight-model/pitch-3000.png)](/img/notam-images/flight-model/pitch-3000.png)
 
