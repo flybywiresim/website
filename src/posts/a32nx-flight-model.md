@@ -1,6 +1,6 @@
 ---
 title: 'A32NX Flight Model'
-date: 'tbd'
+date: '2022-12-20'
 authors:
   - 'donbikes'
   - 'Valastiri'
