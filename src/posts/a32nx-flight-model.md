@@ -21,10 +21,9 @@ speedbrake drag is based on matching FCOM emergency descent data.
 ## Work In Progress Tuning
 
 Constant improvements with realistic and often very recent data points from our pilot staff is where we believe the A32NX shines. We plan on further tweaking how the flight model performs in 
-regards to flaps up induced drag and including performance data for gear down operations (in climb, cruise, and descent). In some cases it has been noted that estimated gear drag seems a bit low 
-but gear drag that matches data at low CL conditions was too much at high CL conditions indicating further improvements are needed where flaps up induced drag is too high.
+regard to flaps up induced drag as well as including performance data for gear down operations (in climb, cruise, and descent).
 
-We hope to continue bringing the best and most accurate flight model of the A320neo the MSFS. 
+We hope to continue bringing the best and most accurate flight model of the A320neo to Microsoft Flight Simulator. 
 
 ---
 
