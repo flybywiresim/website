@@ -15,15 +15,17 @@ We have gone to great lengths to ensure that the A32NX flight model is as realis
 meticulously, the flight model is based on matching the data and other information obtained from the A320NEO Airplane Flight Manual, Flight Crew Operating Manual, Flight Crew Techniques Manual, 
 Quick Reference Handbook, FlySmart electronic flight bag, and our A320NEO piloting team.
 
-If you are a more data oriented reader, below you can find comparisons between the reference data and our tests in MSFS. We have included a plethora of tables and charts for you. Please note that 
-speedbrake drag is based on matching FCOM emergency descent data.
+If you are a more data oriented reader, below you can find comparisons between the reference data and our tests in MSFS. We have included a plethora of tables and charts for you.
 
 ## Work In Progress Tuning
 
-Constant improvements with realistic and often very recent data points from our pilot staff is where we believe the A32NX shines. We plan on further tweaking how the flight model performs in 
-regard to flaps up induced drag as well as including performance data for gear down operations (in climb, cruise, and descent).
+Constant improvements with realistic and often very recent data points from our pilot staff is where we believe the A32NX shines. Recent updates to our aircraft fixes issues with inadequate 
+takeoff climb performance after an engine failure at heavy gross weights. You can now practice those V1 engine cuts at 2nd segment climb-limited TOGW. Be sure when doing so to not delay gear 
+retraction, lower your pitch rate and pitch target, and apply appropriate rudder to minimize control and sideslip drag!
 
-We hope to continue bringing the best and most accurate flight model of the A320neo to Microsoft Flight Simulator. 
+We are currently fine tuning the landing gear drag to better match climb, cruise, and descent data for gear down operations.
+
+We hope to continue bringing the best and most accurate flight model of the A320neo to Microsoft Flight Simulator.
 
 ---
 
