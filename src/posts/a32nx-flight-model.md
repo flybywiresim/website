@@ -115,14 +115,6 @@ Stopping distance comparisons were made using FlySmart landing distance data. Th
 
 ![conf 3 chart EDDW](/img/notam-images/flight-model/conf3-eddw.png)
 
-### Landing Gear
-
-[![flight-characteristics](/img/notam-images/flight-model/aircraft-characteristics.png)](/img/notam-images/flight-model/aircraft-characteristics.png)
-
-The position C1 was used for the nosegear suspension travel, and BF1 was used for the main gear suspension travel. The difference between the heights at C1 and BF1 at MRW and at 41T at the respective CG positions was used to set the spring constant exponential value. Comparison of A32NX after this PR to the Airbus document:
-
-[![gear comparison](/img/notam-images/flight-model/gear-comparision.png)](/img/notam-images/flight-model/gear-comparision.png)
-
 ---
 
 ## Pilot Comments on Pitch and Roll Response
