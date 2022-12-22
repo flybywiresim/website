@@ -17,18 +17,6 @@ Quick Reference Handbook, FlySmart electronic flight bag, and our A320NEO piloti
 
 If you are a more data oriented reader, below you can find comparisons between the reference data and our tests in MSFS. We have included a plethora of tables and charts for you.
 
-## Work In Progress Tuning
-
-Constant improvements with realistic and often very recent data points from our pilot staff is where we believe the A32NX shines. Recent updates to our aircraft fixes issues with inadequate 
-takeoff climb performance after an engine failure at heavy gross weights. You can now practice those V1 engine cuts at 2nd segment climb-limited TOGW. Be sure when doing so to not delay gear 
-retraction, lower your pitch rate and pitch target, and apply appropriate rudder to minimize control and sideslip drag!
-
-We are currently fine tuning the landing gear drag to better match climb, cruise, and descent data for gear down operations.
-
-We hope to continue bringing the best and most accurate flight model of the A320neo to Microsoft Flight Simulator.
-
----
-
 Credits:
 
 - donbikes for the flight model work,
@@ -38,6 +26,37 @@ Credits:
 **Note:** Some of the smaller more data heavy images can be clicked on so you can view the data in full.
 
 ---
+
+## Work In Progress Tuning
+
+Constant improvements with realistic and often very recent data points from our pilot staff is where we believe the A32NX shines. Recent updates to our aircraft fixes issues with inadequate 
+takeoff climb performance after an engine failure at heavy gross weights. You can now practice those V1 engine cuts at 2nd segment climb-limited TOGW. Be sure when doing so to not delay gear 
+retraction, lower your pitch rate and pitch target, and apply appropriate rudder to minimize control and sideslip drag! (**Note:** This capability is currently only available in the Development 
+and Experimental versions of the A32NX).
+
+We are currently fine-tuning the landing gear drag to better match climb, cruise, and descent data for gear down operations. The results of our WIP tuning are included in the tables below. We 
+expect to add these changes to the A32NX soon - first in the Experimental version, followed by the Development version, and then our Stable releases.
+
+We hope to continue bringing the best and most accurate flight model of the A320neo to Microsoft Flight Simulator.
+
+### Climb Performance - Gear Down
+
+[![climb performance gear down](/img/notam-images/flight-model/cbp-gear-down.png)](/img/notam-images/flight-model/cbp-gear-down.png)
+
+### Cruise Checks - Gear Down
+
+[![cruise checks gear down](/img/notam-images/flight-model/cc-gear-down.png)](/img/notam-images/flight-model/cc-gear-down.png)
+
+### Descent Performance - Gear Down
+
+[![descent performance - gear down](/img/notam-images/flight-model/dp-gear-down.png)](/img/notam-images/flight-model/dp-gear-down.png)
+
+The small discrepancies in gear down performance (for example, climb performance at higher altitudes) are likely due to MSFS modelling of the gear down drag increment as a constant drag 
+coefficient increment. In actuality, the gear drag coefficient increment varies inversely with lift coefficient.
+
+---
+
+## Flight Model Data
 
 ### Pitch Angle Verification ("Targets are from QRH")
 
