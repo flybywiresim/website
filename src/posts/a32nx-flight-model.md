@@ -12,7 +12,7 @@ metaAlt: 'FlyByWire Simulations'
 ## Overview
 
 We have gone to great lengths to ensure that the A32NX flight model is as realistic as it gets. Collaborating with our own A320 pilot staff at FlyByWire Simulations and testing each change 
-meticulously, we have adjusted the flight model to data and other information obtained from the A320NEO Airplane Flight Manual, Flight Crew Operating Manual, Flight Crew Techniques Manual, 
+meticulously, the flight model is based on matching the data and other information obtained from the A320NEO Airplane Flight Manual, Flight Crew Operating Manual, Flight Crew Techniques Manual, 
 Quick Reference Handbook, FlySmart electronic flight bag, and our A320NEO piloting team.
 
 If you are a more data-oriented reader, below you can find comparisons between the reference data and our tests in MSFS. We have included a plethora of tables and charts for you.
@@ -37,6 +37,9 @@ and Experimental versions of the A32NX).
 We are currently fine-tuning the landing gear drag to better match climb, cruise, and descent data for gear down operations. The results of our WIP tuning are included in the tables below. We 
 expect to add these changes to the A32NX soon - we will start testing these in the Experimental version, then once they are sufficiently tested and stable we will publish it to the Development 
 version, and eventually to our Stable releases. 
+
+We've also paid ample attention to the overall flying qualities -- such as including correct pitch changes ("ballooning") occurring with certain flap and spoiler deployment/retraction, 
+accurate roll response, and we corrected the excessive pitch sensitivity that afflicts many MSFS airplanes. 
 
 We hope to continue bringing the best and most accurate flight model of the A320neo to Microsoft Flight Simulator.
 
@@ -172,3 +175,9 @@ Download the latest version of the A32NX:
 Safe skies and happy flying!
 
 Feature Image Courtesy of Maphol - FBW Media Team
+
+Editors: Kevin, Cdr_Maverick
+
+---
+
+Corrections: We fixed some text and added some minor clarifications to the work in progress section that was missed at publication. 
