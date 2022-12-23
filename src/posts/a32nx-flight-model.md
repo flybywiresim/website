@@ -29,7 +29,7 @@ Credits:
 
 ## Work In Progress Tuning
 
-Constant improvements with realistic and often very recent data points from our pilot staff is where we believe the A32NX shines. Recent updates to our aircraft fixes issues with inadequate 
+Constant improvement with realistic and often very recent data points from our pilot staff is where we believe the A32NX shines. Recent updates to our aircraft fix issues with inadequate 
 takeoff climb performance after an engine failure at heavy gross weights. You can now practice those V1 engine cuts at 2nd segment climb-limited TOGW. Be sure when doing so to not delay gear 
 retraction, lower your pitch rate and pitch target, and apply appropriate rudder to minimize control and sideslip drag! (**Note:** This capability is currently only available in the Development 
 and Experimental versions of the A32NX).
