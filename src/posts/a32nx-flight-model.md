@@ -116,24 +116,21 @@ Stopping distance comparisons were made using FlySmart landing distance data. Th
 
 ##### Max Manual
 
-![conf full chart mm](/img/notam-images/flight-model/conf-f-mm.png)
+![eham f maxman](/img/notam-images/flight-model/EHAM-F-Maxman.png)
 
-![conf 3 chart mm](/img/notam-images/flight-model/conf-3-mm.png)
+![eham 3 maxman](/img/notam-images/flight-model/EHAM-3-Maxman.png)
 
 ##### Autobrake Medium
 
-![conf full chart abm](/img/notam-images/flight-model/conf-f-abm.png)
+![eham f med](/img/notam-images/flight-model/EHAM-F-Med.png)
 
-![conf 3 chart abm](/img/notam-images/flight-model/conf-3-abm.png)
-
+![eham 3 med](/img/notam-images/flight-model/EHAM-3-Med.png)
 
 #### EDDW (Bremen Airport) 27, ISA, No Wind, CG=27%
 
+![eddw full](/img/notam-images/flight-model/EDDW-F.png)
 
-![conf full chart EDDW](/img/notam-images/flight-model/conffull-eddw.png)
-
-![conf 3 chart EDDW](/img/notam-images/flight-model/conf3-eddw.png)
-
+![eddw 3](/img/notam-images/flight-model/EDDW-3.png)
 ---
 
 ## Pilot Comments on Pitch and Roll Response
