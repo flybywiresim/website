@@ -180,4 +180,4 @@ Editors: Kevin, Cdr_Maverick
 
 ---
 
-Corrections: We fixed some text and added some minor clarifications to the overview that missed publish date. 
+Corrections: We fixed some text and added some minor clarifications to the work in progress section that was missed at publication. 
