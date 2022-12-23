@@ -23,7 +23,7 @@ Credits:
 - Taz for the engine modelling,
 - Davy for the simulation of the autobrake system.
 
-**Note:** Some of the smaller more data heavy images can be clicked on so you can view the data in full.
+**Note:** Some of the smaller, more data-heavy images can be clicked on so you can view the data in full.
 
 ---
 
