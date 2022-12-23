@@ -12,7 +12,7 @@ metaAlt: 'FlyByWire Simulations'
 ## Overview
 
 We have gone to great lengths to ensure that the A32NX flight model is as realistic as it gets. Collaborating with our own A320 pilot staff at FlyByWire Simulations and testing each change 
-meticulously, the flight model is based on matching the data and other information obtained from the A320NEO Airplane Flight Manual, Flight Crew Operating Manual, Flight Crew Techniques Manual, 
+meticulously, we have adjusted the flight model to data and other information obtained from the A320NEO Airplane Flight Manual, Flight Crew Operating Manual, Flight Crew Techniques Manual, 
 Quick Reference Handbook, FlySmart electronic flight bag, and our A320NEO piloting team.
 
 If you are a more data oriented reader, below you can find comparisons between the reference data and our tests in MSFS. We have included a plethora of tables and charts for you.
