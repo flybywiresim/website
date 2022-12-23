@@ -35,7 +35,8 @@ retraction, lower your pitch rate and pitch target, and apply appropriate rudder
 and Experimental versions of the A32NX).
 
 We are currently fine-tuning the landing gear drag to better match climb, cruise, and descent data for gear down operations. The results of our WIP tuning are included in the tables below. We 
-expect to add these changes to the A32NX soon - first in the Experimental version, followed by the Development version, and then our Stable releases.
+expect to add these changes to the A32NX soon - we will start testing these in the Experimental version, then once they are sufficiently tested and stable we will publish it to the Development 
+version, and eventually to our Stable releases. 
 
 We hope to continue bringing the best and most accurate flight model of the A320neo to Microsoft Flight Simulator.
 
