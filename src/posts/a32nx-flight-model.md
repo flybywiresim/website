@@ -38,6 +38,9 @@ We are currently fine-tuning the landing gear drag to better match climb, cruise
 expect to add these changes to the A32NX soon - we will start testing these in the Experimental version, then once they are sufficiently tested and stable we will publish it to the Development 
 version, and eventually to our Stable releases. 
 
+We've also paid ample attention to the overall flying qualities -- such as including correct pitch changes ("ballooning") occurring with certain flap and spoiler deployment/retraction, 
+accurate roll response, and we corrected the excessive pitch sensitivity that afflicts many MSFS airplanes. 
+
 We hope to continue bringing the best and most accurate flight model of the A320neo to Microsoft Flight Simulator.
 
 ### Climb Performance - Gear Down
@@ -172,3 +175,9 @@ Download the latest version of the A32NX:
 Safe skies and happy flying!
 
 Feature Image Courtesy of Maphol - FBW Media Team
+
+Editors: Kevin, Cdr_Maverick
+
+---
+
+Corrections: We fixed some text and added some minor clarifications to the overview that missed publish date. 
