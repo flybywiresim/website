@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Section from '../../components/Utils/Section';
 import { getAllPostIds, getPostContent, PostContent } from '../../lib/notams/posts';
 import Container from '../../components/Utils/Container';
-import Tag from '../../components/Notam/Tag';
+import Tag from '../../components/Utils/Tag';
 
 const NOTAMS_EMBED_PREVIEWS_DIR = 'public/img/notams-embed-previews';
 const NOTAMS_EMBED_PREVIEWS_PUBLIC_DIR = 'img/notams-embed-previews';
