@@ -22,51 +22,54 @@ const NavItem = (props: {label: string, href: string}) => (
 
 const Footer = () => (
     <footer>
-        <Section className="py-14">
-            <Container className="gap-y-8" display="grid">
-                <Image src="/svg/tail/tail.svg" alt="FlyByWire Simulations Logo" width={40} height={40} />
+        <Section theme="light" className="py-14">
+            <Container>
+                <div className="text-md grid justify-center py-4">
+                    <div className="my-4">
+                        <Image src="/svg/tail/tail.svg" alt="FlyByWire Simulations Logo" width={40} height={40} />
+                        <h4>Contact Us</h4>
+                        <p className="font-semibold">contact@flybywiresim.com</p>
+                    </div>
+                    <div className="grid grid-cols-3 items-start gap-y-5">
+                        <NavWrapper label="Projects">
+                            <NavItem label="Installer" href="/" />
+                            <NavItem label="A32NX" href="/" />
+                            <NavItem label="A380X" href="/" />
+                            <NavItem label="EFB" href="/" />
+                        </NavWrapper>
 
-                <div className="text-dark">
-                    <h4>Contact Us</h4>
-                    <p className="font-semibold">contact@flybywiresim.com</p>
-                    <div className="text-md py-4">
-                        <div className="grid grid-cols-3 items-start gap-y-5">
-                            <NavWrapper label="Projects">
-                                <NavItem label="Installer" href="/" />
-                                <NavItem label="A32NX" href="/" />
-                                <NavItem label="A380X" href="/" />
-                                <NavItem label="EFB" href="/" />
-                            </NavWrapper>
+                        <NavWrapper label="Menu">
+                            <NavItem label="NOTAMs" href="/" />
+                            <NavItem label="Projects" href="/" />
+                            <NavItem label="Docs" href="/" />
+                            <NavItem label="Map" href="/" />
+                        </NavWrapper>
 
-                            <NavWrapper label="Menu">
-                                <NavItem label="NOTAMs" href="/" />
-                                <NavItem label="Projects" href="/" />
-                                <NavItem label="Docs" href="/" />
-                                <NavItem label="Map" href="/" />
-                            </NavWrapper>
+                        <NavWrapper label="Socials">
+                            <NavItem label="Discord" href="/" />
+                            <NavItem label="Twitter" href="/" />
+                            <NavItem label="Facebook" href="/" />
+                            <NavItem label="YouTube" href="/" />
+                            <NavItem label="Twitch" href="/" />
+                        </NavWrapper>
+                    </div>
 
-                            <NavWrapper label="Socials">
-                                <NavItem label="Discord" href="/" />
-                                <NavItem label="Twitter" href="/" />
-                                <NavItem label="Facebook" href="/" />
-                                <NavItem label="YouTube" href="/" />
-                                <NavItem label="Twitch" href="/" />
-                            </NavWrapper>
-                        </div>
+                    <div className="top-4 grid justify-center py-8">
+                        <span className="grid grid-cols-3 divide-x text-center">
+                            <a href="https://github.com/flybywiresim/manuals/blob/master/pdf/FBW%20Terms%20of%20Services.pdf" target="_blank" rel="noreferrer">Terms of Use</a>
+                            <a href="https://github.com/flybywiresim/manuals/blob/master/pdf/FBW%20Privacy%20Policy.pdf" target="_blank" rel="noreferrer">Privacy Policy</a>
+                            <a href="https://github.com/flybywiresim/" target="_blank" rel="noreferrer">Source Code</a>
+                        </span>
 
-                        <div className="relative">
-                            <div className="absolute top-4 py-8">
-                                <span className="grid grid-cols-3 divide-x text-center">
-                                    <a href="https://github.com/flybywiresim/manuals/blob/master/pdf/FBW%20Terms%20of%20Services.pdf" target="_blank" rel="noreferrer">Terms of Use</a>
-                                    <a href="https://github.com/flybywiresim/manuals/blob/master/pdf/FBW%20Privacy%20Policy.pdf" target="_blank" rel="noreferrer">Privacy Policy</a>
-                                    <a href="https://github.com/flybywiresim/" target="_blank" rel="noreferrer">Source Code</a>
-                                </span>
-                                <small className="text-dark/50">
-                                    &copy; FlyByWire Simulations and its contributors 2020-
-                                    {new Date().getFullYear()}
-                                </small>
-                            </div>
-                        </div>
+                        <p className="text-center text-sm text-dark/50">
+                            &copy; FlyByWire Simulations and its contributors 2020-
+                            {new Date().getFullYear()}
+                        </p>
+
+                        <a href="https://vercel.com" className="flex justify-center gap-1 text-dark/50">
+                            Powered by
+                            <Image src="/svg/vercel.svg" alt="Vercel" width={50} height={50} />
+                        </a>
                     </div>
                 </div>
             </Container>
