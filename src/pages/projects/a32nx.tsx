@@ -35,7 +35,8 @@ const A32NX = () => (
                         Fidelity
                     </h3>
                     <p className="py-4">
-                        The volunteers in our community work hard around the clock to consistently bring new features and create the best A320neo possible. Let's take a look at some of the features the A32NX has to offer!
+                        The volunteers in our community work hard around the clock to consistently bring new features and create the best A320neo possible.
+                        Let's take a look at some of the features the A32NX has to offer!
                     </p>
                 </div>
 
@@ -45,7 +46,11 @@ const A32NX = () => (
                         <div>
                             <h4>Hyper Percise</h4>
                             <h3>Avionics and Displays</h3>
-                            <p>Every display in the A32NX is programmed to extreme accuracy, using thousands of references from the real plane, taken by our team of real-world pilots and maintenance personnel.</p>
+                            <p>
+                                Every display in the A32NX is programmed to extreme accuracy,
+                                using thousands of references from the real plane,
+                                taken by our team of real-world pilots and maintenance personnel.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -63,7 +68,8 @@ const A32NX = () => (
                             The sound set included with the A32NX has recieved very high praise from A320neo pilots, ground workers and simmers alike.
                             <br />
                             <br />
-                            Entirely recorded from the real aircraft and Including a wide variety of unique effects like an entirely dynamic PTU (power transfer unit) sound simulation, it is sure to bring the entire aircraft to life in your simulator.
+                            Entirely recorded from the real aircraft and Including a wide variety of unique effects like an entirely dynamic PTU (power transfer unit) sound simulation,
+                            it is sure to bring the entire aircraft to life in your simulator.
                         </p>
                     </div>
                 </div>
