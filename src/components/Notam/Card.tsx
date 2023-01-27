@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Container from '../Utils/Container';
-import Tag from './Tag';
+import Tag from '../Utils/Tag';
 import { PostListing } from '../../lib/notams/posts';
 
 const Card = (props: PostListing) => (
