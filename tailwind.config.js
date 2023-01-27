@@ -27,6 +27,7 @@ module.exports = {
                 'secondary-accent-light': '#1F2A3D',
                 'secondary-accent-dark': '#0E131B',
             },
+            opacity: { 3: '3%' },
         },
     },
     plugins: [

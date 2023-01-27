@@ -23,7 +23,7 @@ const Card = ({
     href,
     downloadURL,
 }: CardProps) => (
-    <div className="grid cursor-pointer bg-secondary-accent-dark">
+    <div className="grid bg-secondary-accent-dark">
         <span className="relative h-40 w-full">
             <Image src={metaImage} alt={metaAlt} layout="fill" objectFit="cover" />
         </span>

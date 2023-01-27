@@ -4,7 +4,7 @@ import Container from '../../components/Utils/Container';
 import Button from '../../components/Button/Button';
 
 const BackgroundImage = () => (
-    <div className="h-full w-screen">
+    <div className="h-full w-screen opacity-3">
         <Image src="/pages/index/Airfoil.png" layout="fill" objectFit="cover" />
     </div>
 );
