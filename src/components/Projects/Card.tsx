@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Container from '../Utils/Container';
 import Tag from '../Utils/Tag';
 import Button from '../Button/Button';
@@ -9,7 +10,8 @@ type CardProps = {
     category: any,
     metaImage: string,
     metaAlt: string,
-    isDownloadable?: boolean
+    href: string,
+    downloadURL: string
 }
 
 const Card = ({
@@ -18,7 +20,8 @@ const Card = ({
     title,
     description,
     category,
-    isDownloadable,
+    href,
+    downloadURL,
 }: CardProps) => (
     <div className="grid cursor-pointer bg-secondary-accent-dark">
         <span className="relative h-40 w-full">
@@ -32,9 +35,17 @@ const Card = ({
                 {description}
             </p>
             <span className="grid gap-2 py-4">
-                <Button label="Learn More" theme="secondary" />
-                {isDownloadable
-                    && <Button label="Download" theme="primary" />}
+                <Link href={href}>
+                    <Button label="Learn More" theme="secondary" />
+                </Link>
+                {downloadURL
+                    && (
+                        <>
+                            <a href={downloadURL}>
+                                <Button label="Download" theme="primary" />
+                            </a>
+                        </>
+                    )}
             </span>
         </Container>
     </div>

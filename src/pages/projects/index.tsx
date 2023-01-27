@@ -2,6 +2,8 @@ import Section from '../../components/Utils/Section';
 import Container from '../../components/Utils/Container';
 import Card from '../../components/Projects/Card';
 
+const A32NX_DOWNLOAD_URL = 'https://github.com/flybywiresim/a32nx/releases/download/assets/master/A32NX-master.zip';
+
 const index = () => (
     <Section theme="dark">
         <Container>
@@ -14,32 +16,9 @@ const index = () => (
                     title="A32NX"
                     category="Aircraft"
                     description="All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary."
-                    isDownloadable
+                    downloadURL={A32NX_DOWNLOAD_URL}
+                    href="/projects/a32nx"
                 />
-                <Card
-                    metaImage="/img/a32nxwing.png"
-                    metaAlt="A32NX"
-                    title="A380X"
-                    category="Aircraft"
-                    description="All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary."
-                    isDownloadable
-                />
-                <Card
-                    metaImage="/img/a32nxwing.png"
-                    metaAlt="A32NX"
-                    title="Installer"
-                    category="Software"
-                    description="All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary."
-                    isDownloadable
-                />
-                <Card
-                    metaImage="/img/a32nxwing.png"
-                    metaAlt="A32NX"
-                    title="EFB"
-                    category="Software"
-                    description="All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary."
-                />
-
             </div>
         </Container>
     </Section>
