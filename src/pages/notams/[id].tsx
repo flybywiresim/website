@@ -40,7 +40,7 @@ const Post = ({ content: { category, title, metaImage, metaAlt, readingStats, au
             </div>
         </Section>
         <Section theme="light">
-            <Container>
+            <Container className="grid justify-center">
                 <article
                     className="prose-xl prose prose-slate"
                     /* eslint-disable-next-line react/no-danger */
