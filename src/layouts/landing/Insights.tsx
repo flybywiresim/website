@@ -9,7 +9,7 @@ import Discord from '../../components/Discord/Discord';
 const Statistic = (props: { value: string, label: string }) => (
     <div>
         <h2>{props.value}</h2>
-        <p className="te text-sm">{props.label}</p>
+        <p className="text-sm">{props.label}</p>
     </div>
 );
 const Insights = () => {
@@ -33,28 +33,36 @@ const Insights = () => {
     }, []);
 
     return (
-        <Section theme="light" className="relative z-20">
-            <Container display="grid gap-y-5 text-center">
-                <Image src="/svg/tail/tail.svg" width={40} height={40} />
+        <Section theme="light" className="relative flex flex-col py-0 lg:flex-row-reverse">
+            <Container display="flex flex-col items-center justify-center py-20">
+                <Container className="grid gap-y-4 text-center lg:text-left">
+                    <div className="flex flex-col items-center gap-4 lg:flex-row">
+                        <Image src="/svg/tail/tail.svg" width={40} height={40} />
+                        <h2>Community Insights</h2>
+                    </div>
 
-                <h2>Community Insights</h2>
-                <p>Discover the extensive community behind every FlyByWire Simulations aircraft.</p>
+                    <div className="max-w-prose">
+                        <p>
+                            Discover the extensive community behind every FlyByWire Simulations aircraft - a vibrant and active online group that prioritises collaborative work and openness.
+                        </p>
 
-                <ul className="grid grid-cols-2 gap-5">
-                    <Statistic value={liveFlights} label="Live Flights" />
-                    <Statistic value={commitCount} label="Commits" />
-                    <Statistic value={contributorCount} label="Contributors" />
-                    <Statistic value="2M+" label="Downloads" />
-                </ul>
+                        <ul className="grid grid-cols-2 gap-5 lg:grid-cols-4">
+                            <Statistic value={liveFlights} label="Live Flights" />
+                            <Statistic value={commitCount} label="Commits" />
+                            <Statistic value={contributorCount} label="Contributors" />
+                            <Statistic value="2M+" label="Downloads" />
+                        </ul>
+                        <hr className="my-6" />
 
-                <div className="mt-8 h-144">
-                    <Map refreshInterval={mapRefreshInterval} disableMenu disableWeather={false} disableScroll forceTileset="dark" />
-                </div>
+                        <Discord />
+                    </div>
 
-                <div className="pt-8">
-                    <Discord />
-                </div>
+                </Container>
             </Container>
+
+            <div className="relative z-10 h-[40em] w-full px-8 pb-4 lg:w-2/3 lg:p-0">
+                <Map refreshInterval={mapRefreshInterval} disableMenu disableWeather={false} disableScroll forceTileset="carto-light" />
+            </div>
         </Section>
     );
 };

@@ -2,8 +2,8 @@ import Image from 'next/image';
 import Button from '../Button/Button';
 
 const Discord = () => (
-    <div className="grid gap-y-5">
-        <span className="flex justify-center gap-x-5">
+    <div className="grid gap-y-2">
+        <span className="flex justify-center gap-x-5 lg:justify-start">
             <Image src="/svg/discord.svg" layout="intrinsic" width={40} height={40} />
             <h3 className="text-discord">Discord</h3>
         </span>

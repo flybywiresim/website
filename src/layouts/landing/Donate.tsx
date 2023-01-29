@@ -12,7 +12,7 @@ const BackgroundImage = () => (
 const Donate = () => (
     <Section className="relative h-full w-screen bg-dark">
         <BackgroundImage />
-        <Container className="relative h-full items-center justify-center gap-y-5" display="flex flex-col">
+        <Container className="relative h-full justify-center gap-y-5 lg:justify-start" display="flex flex-col">
             <h2 className="text-primary">Donate</h2>
             <p>
                 Contributions allow FlyByWire Simulations to provide better services for our users,
