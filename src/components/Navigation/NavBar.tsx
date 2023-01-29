@@ -40,7 +40,7 @@ const NavBar = () => {
 
     return (
         <nav
-            className={`fixed w-full py-4 text-white transition ${isScrolled || isOpen ? 'bg-secondary-accent-dark' : 'bg-transparent'}`}
+            className={`fixed z-50 w-full py-4 text-white transition ${isScrolled || isOpen ? 'bg-secondary-accent-dark' : 'bg-transparent'}`}
             onClick={handleClick}
         >
             <Container className="flex items-center justify-between">
