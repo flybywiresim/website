@@ -2,7 +2,7 @@
 
 @layer base {
   html {
-    @apply bg-light text-dark;
+    @apply bg-light text-dark overflow-x-hidden;
     font-size: 12px;
   }
 
