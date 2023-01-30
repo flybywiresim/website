@@ -41,7 +41,7 @@ const NavBar = () => {
     return (
         <nav
             className={`fixed z-50 w-full py-4 text-white transition ${isScrolled || isOpen ? 'bg-secondary-accent-dark' : 'bg-transparent'}`}
-            onClick={handleClick}
+
         >
             <Container className="flex items-center justify-between">
                 <Link href="/">
@@ -64,7 +64,7 @@ const NavBar = () => {
                 <NavLinkGroup />
             </Container>
 
-            <div className={`absolute h-screen w-full ${!isOpen && 'hidden'}`} />
+            <div className={`absolute h-screen w-full ${!isOpen && 'hidden'}`} onClick={handleClick} />
         </nav>
     );
 };
