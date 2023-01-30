@@ -12,6 +12,11 @@ const index = ({ listings }: BlogProps) => (
     <>
         <Head>
             <title>NOTAMs - FlyByWire Simulations</title>
+            <meta
+                key="og:title"
+                name="og:title"
+                content="NOTAMs - FlyByWire Simulations"
+            />
         </Head>
         <Section theme="dark">
             <Container>

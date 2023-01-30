@@ -10,6 +10,11 @@ const index: NextPage = () => (
     <>
         <Head>
             <title>Our Projects - FlyByWire Simulations</title>
+            <meta
+                key="og:title"
+                name="og:title"
+                content="Our Projects - FlyByWire Simulations"
+            />
         </Head>
         <Section theme="dark">
             <Container>
