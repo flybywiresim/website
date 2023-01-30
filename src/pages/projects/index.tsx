@@ -1,11 +1,12 @@
 import Head from 'next/head';
+import { NextPage } from 'next';
 import Section from '../../components/Utils/Section';
 import Container from '../../components/Utils/Container';
 import Card from '../../components/Projects/Card';
 
 const A32NX_DOWNLOAD_URL = 'https://github.com/flybywiresim/a32nx/releases/download/assets/master/A32NX-master.zip';
 
-const index = () => (
+const index: NextPage = () => (
     <>
         <Head>
             <title>Our Projects - FlyByWire Simulations</title>

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Head from 'next/head';
+import { NextPage } from 'next';
 import Section from '../../components/Utils/Section';
 import Container from '../../components/Utils/Container';
 import Button from '../../components/Button/Button';
@@ -10,7 +11,7 @@ const BackgroundImage = () => (
     </div>
 );
 
-const A32NX = () => (
+const A32NX: NextPage = () => (
     <>
         <Head>
             <title>A32NX - FlyByWire Simulations</title>
