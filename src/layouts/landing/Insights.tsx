@@ -34,8 +34,8 @@ const Insights = () => {
 
     return (
         <Section theme="light" className="relative flex flex-col py-0 lg:flex-row-reverse">
-            <Container display="flex flex-col items-center justify-center py-20">
-                <Container className="grid gap-y-4 text-center lg:text-left">
+            <Container display="flex flex-col items-center justify-center  py-20">
+                <Container className="grid gap-y-4 px-4 text-center lg:text-left">
                     <div className="flex flex-col items-center gap-4 lg:flex-row">
                         <Image src="/svg/tail/tail.svg" width={40} height={40} />
                         <h2>Community Insights</h2>
@@ -60,7 +60,7 @@ const Insights = () => {
                 </Container>
             </Container>
 
-            <div className="relative z-10 h-[40em] w-full px-8 pb-4 lg:w-2/3 lg:p-0">
+            <div className="relative z-10 h-[45em] w-full px-8 pb-4 lg:w-2/3 lg:p-0">
                 <Map refreshInterval={mapRefreshInterval} disableMenu disableWeather={false} disableScroll forceTileset="carto-light" />
             </div>
         </Section>
