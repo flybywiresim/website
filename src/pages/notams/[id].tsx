@@ -3,6 +3,7 @@ import nodeHtmlToImage from 'node-html-to-image';
 import { v4 } from 'uuid';
 import * as fs from 'fs';
 import Image from 'next/image';
+import Head from 'next/head';
 import Section from '../../components/Utils/Section';
 import { getAllPostIds, getPostContent, PostContent } from '../../lib/notams/posts';
 import Container from '../../components/Utils/Container';
@@ -15,6 +16,33 @@ export type PostProps = { content: PostContent, embedPreviewPath: string }
 
 const Post = ({ content: { category, title, metaImage, metaAlt, readingStats, authors, date, contentHtml } }: PostProps) => (
     <>
+        <Head>
+            <title>
+                {title}
+                {' '}
+                - FlyByWire Simulations
+            </title>
+            <meta
+                key="description"
+                name="description"
+                content="A NOTAM on the FlyByWire Simulations website."
+            />
+            <meta
+                key="og:title"
+                name="og:title"
+                content={`${title} - FlyByWire Simulations`}
+            />
+            <meta
+                key="og:description"
+                name="og:description"
+                content="A NOTAM on the FlyByWire Simulations website."
+            />
+            <meta
+                key="og:image"
+                name="og:image"
+                content={metaImage}
+            />
+        </Head>
         <Section theme="dark" className="relative">
             <div className="grid">
                 <Image src={metaImage} alt={metaAlt} layout="fill" objectFit="cover" className="bg-secondary opacity-20 blur-sm" />

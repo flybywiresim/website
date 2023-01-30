@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Head from 'next/head';
 import Section from '../../components/Utils/Section';
 import Container from '../../components/Utils/Container';
 import Button from '../../components/Button/Button';
@@ -11,6 +12,9 @@ const BackgroundImage = () => (
 
 const A32NX = () => (
     <>
+        <Head>
+            <title>A32NX - FlyByWire Simulations</title>
+        </Head>
         <Section theme="dark">
             <Container>
                 <h4>Discover the</h4>
