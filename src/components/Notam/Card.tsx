@@ -4,7 +4,7 @@ import Tag from '../Utils/Tag';
 import { PostListing } from '../../lib/notams/posts';
 
 const Card = (props: PostListing) => (
-    <div className="grid cursor-pointer rounded-t-lg bg-secondary-accent-dark">
+    <div className="grid cursor-pointer rounded-lg bg-secondary-accent-dark">
         <span className="relative h-40 w-full">
             <Image src={props.metaImage} alt={props.metaAlt} layout="fill" objectFit="cover" className="rounded-t-lg" />
         </span>
