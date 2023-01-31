@@ -59,14 +59,14 @@ const Footer = () => (
                         </div>
                     </div>
 
-                    <div className="top-4 grid justify-center gap-4 py-8 text-center lg:grid-cols-2 lg:text-left">
+                    <div className="top-4 grid items-center justify-center gap-4 py-8 text-center lg:grid-cols-2 lg:text-left">
                         <span className="flex gap-8 underline underline-offset-4">
                             <a href="https://github.com/flybywiresim/manuals/blob/master/pdf/FBW%20Terms%20of%20Services.pdf" target="_blank" rel="noreferrer">Terms of Use</a>
                             <a href="https://github.com/flybywiresim/manuals/blob/master/pdf/FBW%20Privacy%20Policy.pdf" target="_blank" rel="noreferrer">Privacy Policy</a>
                             <a href="https://github.com/flybywiresim/" target="_blank" rel="noreferrer">Source Code</a>
                         </span>
 
-                        <a href="https://vercel.com" className="flex justify-center gap-1 text-dark/50 lg:justify-end">
+                        <a href="https://vercel.com" className="flex items-center justify-center gap-1 text-dark/50 lg:justify-end">
                             Powered by
                             <Image src="/svg/vercel.svg" alt="Vercel" width={50} height={50} />
                         </a>
