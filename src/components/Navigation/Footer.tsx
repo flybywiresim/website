@@ -1,4 +1,4 @@
-import Image from 'next/dist/client/future/image';
+import Image from 'next/image';
 import { ReactNode } from 'react';
 import Container from '../Utils/Container';
 import Section from '../Utils/Section';
