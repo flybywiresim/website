@@ -67,7 +67,7 @@ const Footer = () => (
                         </span>
 
                         <a href="https://vercel.com" className="flex items-center justify-center gap-1 text-dark/50 lg:justify-end">
-                            Powered by
+                            <span className="mb-1 mr-1">Powered by</span>
                             <Image src="/svg/vercel.svg" alt="Vercel" width={50} height={50} />
                         </a>
                         <p className=" text-sm text-dark/50">
