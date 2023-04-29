@@ -19,7 +19,6 @@ const index: NextPage = () => (
         <Section theme="dark">
             <Container>
                 <h2>Our Projects</h2>
-                {' '}
                 <div className="my-4 grid gap-4 md:grid-cols-2">
                     <Card
                         metaImage="/img/a32nxwing.png"
