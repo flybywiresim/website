@@ -26,7 +26,9 @@ const Card = ({
     <div className="grid bg-secondary-accent-dark xl:grid-cols-2">
         <Image src={metaImage} alt={metaAlt} width={800} height={300} objectFit="cover" />
         <Container className="grid gap-2 py-4">
-            <Tag category={category} />
+            <div>
+                <Tag category={category} />
+            </div>
             <h2>{title}</h2>
             <p>
                 {description}
