@@ -23,18 +23,15 @@ const Card = ({
     href,
     downloadURL,
 }: CardProps) => (
-    <div className="grid rounded-lg bg-secondary-accent-dark">
-        <span className="relative h-40 w-full">
-            <Image src={metaImage} alt={metaAlt} layout="fill" objectFit="cover" className="rounded-t-lg" />
-        </span>
-
+    <div className="grid min-w-fit rounded-lg bg-secondary-accent-dark">
+        <Image src={metaImage} alt={metaAlt} width={800} height={300} objectFit="cover" className="rounded-t-lg" />
         <Container className="grid gap-2 py-4">
             <Tag category={category} />
             <h2>{title}</h2>
             <p>
                 {description}
             </p>
-            <span className="grid gap-2 py-4">
+            <span className="flex flex-wrap gap-2 py-4">
                 <Link href={href}>
                     <Button label="Learn More" theme="secondary" />
                 </Link>
