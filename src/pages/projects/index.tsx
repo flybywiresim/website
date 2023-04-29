@@ -20,7 +20,9 @@ const index: NextPage = () => (
             <Container>
                 <h2>Our Projects</h2>
 
-                <div className="my-4 grid grid-cols-1 gap-4">
+                §§
+                {' '}
+                <div className="my-4 grid gap-4 md:grid-cols-2">
                     <Card
                         metaImage="/img/a32nxwing.png"
                         metaAlt="A32NX"
@@ -29,6 +31,33 @@ const index: NextPage = () => (
                         description="All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary."
                         downloadURL={A32NX_DOWNLOAD_URL}
                         href="/projects/a32nx"
+                    />
+                    <Card
+                        metaImage="/img/a32nxwing.png"
+                        metaAlt="A380X"
+                        title="A380X"
+                        category="Aircraft"
+                        description="All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary."
+                        downloadURL={A32NX_DOWNLOAD_URL}
+                        href="/projects/a380x"
+                    />
+                    <Card
+                        metaImage="/img/a32nxwing.png"
+                        metaAlt="Installer"
+                        title="Installer"
+                        category="Software"
+                        description="All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary."
+                        downloadURL={A32NX_DOWNLOAD_URL}
+                        href="/projects/installer"
+                    />
+                    <Card
+                        metaImage="/img/a32nxwing.png"
+                        metaAlt="EFB"
+                        title="EFB"
+                        category="Software"
+                        description="All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary."
+                        downloadURL={A32NX_DOWNLOAD_URL}
+                        href="/projects/efb"
                     />
                 </div>
             </Container>
