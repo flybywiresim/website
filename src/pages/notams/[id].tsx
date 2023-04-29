@@ -44,7 +44,7 @@ const Post = ({ content: { category, title, metaImage, metaAlt, readingStats, au
                     <div className="relative top-1/4 my-4">
                         <span className="flex items-center gap-x-2">
                             <Tag category={category} />
-                            <small className="text-gray-400">{readingStats.text}</small>
+                            <p className="text-gray-400">{readingStats.text}</p>
                         </span>
                         <h2>{title}</h2>
                         <p className="text-gray-400">

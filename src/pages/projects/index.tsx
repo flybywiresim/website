@@ -53,7 +53,6 @@ const index: NextPage = () => (
                         title="EFB"
                         category="Software"
                         description="All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary."
-                        downloadURL={A32NX_DOWNLOAD_URL}
                         href="/projects/efb"
                     />
                 </div>

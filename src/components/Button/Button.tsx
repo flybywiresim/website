@@ -10,7 +10,7 @@ const Button = ({ label, theme, className, onClick }: ButtonProps) => (
         onClick={onClick}
         className={`
         ${theme === 'primary' ? 'bg-primary-accent text-secondary' : 'bg-secondary-accent-light text-light'} 
-        w-56 rounded-md px-4 py-2 font-body text-lg font-semibold
+        h-10 w-56 rounded-md px-3 py-1 font-body text-lg font-semibold
         ${className}
     `}
     >

@@ -13,9 +13,9 @@ const handleCategory = (category: string) => {
 
 const Tag = ({ category }: TagProps) => (
     <div className={`max-w-min rounded-lg py-0.5 px-4 ${handleCategory(category)}`}>
-        <small>
+        <p>
             {category.charAt(0).toUpperCase() + category.slice(1).toLowerCase()}
-        </small>
+        </p>
     </div>
 );
 

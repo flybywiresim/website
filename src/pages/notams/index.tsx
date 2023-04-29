@@ -21,7 +21,7 @@ const index = ({ listings }: BlogProps) => (
         <Section theme="dark">
             <Container>
                 <h2>NOTAMs</h2>
-                <div className="my-4 grid grid-cols-1 gap-4">
+                <div className="my-4 grid gap-4 xl:grid-cols-3">
                     {listings.map(({
                         id,
                         category,
@@ -31,11 +31,11 @@ const index = ({ listings }: BlogProps) => (
                         metaImage,
                         metaAlt,
                         readingStats,
-                    }) => (
+                    }, index) => (
                         <Link key={id} href={`/notams/${id}`}>
-                            <a>
+                            <a className={index === 0 ? 'xl:col-span-3' : ''}>
                                 <Card
-                                    category={category}
+                                    category={index === 0 ? 'LATEST' : category}
                                     title={title}
                                     date={date}
                                     description={description}
