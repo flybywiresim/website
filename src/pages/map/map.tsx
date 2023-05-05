@@ -29,7 +29,7 @@ const LeafletMap: FC = () => {
     const position = [51.505, -0.09];
 
     return (
-        <Section theme="dark">
+        <Section theme="dark" className="py-0">
             <MapContainer center={position as any} zoom={13} scrollWheelZoom={false} style={{ width: '100%', height: '100vh' }}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

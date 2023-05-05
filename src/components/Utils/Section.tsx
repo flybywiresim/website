@@ -1,5 +1,7 @@
 import { ReactNode } from 'react';
 
+import { twMerge } from 'tailwind-merge'
+
 type SectionProps = {
     id?: string
     theme?: 'light' | 'dark';
@@ -18,7 +20,7 @@ const Section = ({ id, theme, className, children }: SectionProps) => {
         }
     };
     return (
-        <section id={id} className={`${handleTheme()} ${className}`}>
+        <section id={id} className={twMerge(handleTheme(), 'py-20', className)}>
             {children}
         </section>
     );
