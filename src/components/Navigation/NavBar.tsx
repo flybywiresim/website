@@ -17,6 +17,7 @@ const NavLinkGroup = () => (
         <NavLink href="/" label="Home" />
         <NavLink href="/projects" label="Projects" />
         <NavLink href="/notams" label="NOTAMs" />
+        <NavLink href="/map" label="Map" />
         <NavLink href="/" label="Documentation" />
     </ul>
 );
