@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { CloseOutlined, MenuOutlined } from '@ant-design/icons';
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import Container from '../Utils/Container';
 
 const NavLink = (props: {href: string, label: string}) => (
@@ -23,6 +24,8 @@ const NavLinkGroup = () => (
 );
 
 const NavBar = () => {
+    const { route } = useRouter();
+
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -39,10 +42,19 @@ const NavBar = () => {
         return () => window.removeEventListener('scroll', scrollHandler);
     }, [isScrolled]);
 
+    let bgClass;
+    if (route.indexOf('map') !== -1) {
+        bgClass = 'bg-secondary-accent-dark/60';
+    } else if (isScrolled || isOpen) {
+        bgClass = 'bg-secondary-accent-dark';
+    } else {
+        bgClass = 'bg-transparent';
+    }
+
     return (
         <nav
-            className={`fixed z-50 w-full py-4 text-white transition ${isScrolled || isOpen ? 'bg-secondary-accent-dark' : 'bg-transparent'}`}
-
+            className={`fixed z-50 w-full py-4 text-white transition ${bgClass}`}
+            style={{ zIndex: '9999' }}
         >
             <Container className="flex items-center justify-between">
                 <Link href="/">
