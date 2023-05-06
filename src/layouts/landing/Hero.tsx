@@ -24,7 +24,10 @@ const Hero = () => (
                 <div className="max-w-prose">
                     <h4 className="font-normal leading-4 text-primary">FlyByWire Simulations</h4>
                     <h1>A32NX</h1>
-                    <p className="max-w-xl">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alternation in some form, by injected humor...</p>
+                    <p className="max-w-xl">
+                        The leading free and open-source community aiming for high fidelity aircraft in Microsoft Flight Simulator,
+                        fly with our in-depth systems or put your skills to the test by contributing to the project.
+                    </p>
                     <ButtonGroup>
                         <Button label="Download" theme="primary" />
                         <Button label="More Info" theme="secondary" />
