@@ -7,21 +7,22 @@
   display: none;
 }
 
+.leaflet-popup-content * {
+  margin: 0 !important;
+}
 .leaflet-popup-content-wrapper {
   background: none !important;
   padding: 0 !important;
   box-shadow: none !important;
+  min-width: fit-content !important;
 }
 
 .leaflet-popup-content {
   margin: 0 !important;
+  min-width: max-content !important;
 }
 
 .leaflet-popup-tip {
   background-color: #1b2434 !important; /* TODO replace with tw */
   box-shadow: none !important;
-}
-
-.leaflet-top {
-  margin-top: 60px;
 }
