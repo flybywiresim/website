@@ -44,7 +44,7 @@ const NavBar = () => {
 
     let bgClass;
     if (route.indexOf('map') !== -1) {
-        bgClass = 'bg-secondary-accent-dark/60';
+        bgClass = 'bg-secondary-accent-dark';
     } else if (isScrolled || isOpen) {
         bgClass = 'bg-secondary-accent-dark';
     } else {
@@ -53,7 +53,7 @@ const NavBar = () => {
 
     return (
         <nav
-            className={`fixed z-50 w-full py-4 text-white transition ${bgClass}`}
+            className={`fixed w-full py-4 text-white transition ${bgClass}`}
             style={{ zIndex: '9999' }}
         >
             <Container className="flex items-center justify-between">
