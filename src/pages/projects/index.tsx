@@ -21,7 +21,7 @@ const index: NextPage = () => (
                 <h2>Our Projects</h2>
                 <div className="my-4 grid gap-4 md:grid-cols-2">
                     <Card
-                        metaImage="/img/a32nxwing.png"
+                        metaImage="/img.png"
                         metaAlt="A32NX"
                         title="A32NX"
                         category="Aircraft"
@@ -30,7 +30,7 @@ const index: NextPage = () => (
                         href="/projects/a32nx"
                     />
                     <Card
-                        metaImage="/img/a32nxwing.png"
+                        metaImage="/pages/projects/a380x/a380Project.png"
                         metaAlt="A380X"
                         title="A380X"
                         category="Aircraft"
@@ -39,8 +39,6 @@ const index: NextPage = () => (
                         href="/projects/a380x"
                     />
                     <Card
-                        metaImage="/img/a32nxwing.png"
-                        metaAlt="Installer"
                         title="Installer"
                         category="Software"
                         description="Our custom-built, open-source installer is where we keep our projects for you to easily install."
@@ -48,8 +46,6 @@ const index: NextPage = () => (
                         href="/projects/installer"
                     />
                     <Card
-                        metaImage="/img/a32nxwing.png"
-                        metaAlt="EFB"
                         title="EFB"
                         category="Software"
                         description="The Electronic Flight Bag is an integrated tablet with a wide array of tools, settings and more."

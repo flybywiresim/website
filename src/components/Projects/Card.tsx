@@ -9,8 +9,8 @@ type CardProps = {
     title: string,
     description: string,
     category: any,
-    metaImage: string,
-    metaAlt: string,
+    metaImage?: string,
+    metaAlt?: string,
     href: string,
     downloadURL?: string
 }
@@ -25,7 +25,7 @@ const Card = ({
     downloadURL,
 }: CardProps) => (
     <div className="grid bg-secondary-accent-dark xl:grid-cols-3">
-        <Image src={metaImage} alt={metaAlt} width={800} height={300} objectFit="cover" />
+        {metaImage && <Image src={metaImage} alt={metaAlt} width={800} height={300} objectFit="cover" /> }
         <div className="grid xl:col-span-2">
             <Container className="grid gap-2 py-4">
                 <div>
