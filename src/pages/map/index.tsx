@@ -1,11 +1,10 @@
-import { FC } from 'react';
 import dynamic from 'next/dynamic';
-
 import 'leaflet/dist/leaflet.css';
+import { NextPage } from 'next';
 
-const LeafletMap = dynamic(() => import('./map'), { ssr: false });
+const LeafletMap = dynamic(() => import('../../components/Map/Map'), { ssr: false });
 
-const Map: FC = () => (
+const Map: NextPage = () => (
     <LeafletMap />
 );
 

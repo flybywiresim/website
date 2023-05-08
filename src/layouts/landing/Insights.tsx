@@ -1,10 +1,13 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import dynamic from 'next/dynamic';
 import Section from '../../components/Utils/Section';
 import Container from '../../components/Utils/Container';
-import Map from '../../components/Map/Map';
 import { fetchInsightData } from '../../hooks/fetchInsightData';
 import Discord from '../../components/Discord/Discord';
+import 'leaflet/dist/leaflet.css';
+
+const LeafletMap = dynamic(() => import('../../components/Map/Map'), { ssr: false });
 
 const Statistic = (props: { value: string, label: string }) => (
     <div>
@@ -16,7 +19,6 @@ const Insights = () => {
     const [liveFlights, setLiveFlights] = useState('0');
     const [commitCount, setCommitCount] = useState('0');
     const [contributorCount, setContributorCount] = useState('0');
-    const [mapRefreshInterval, setMapRefreshInterval] = useState(5_000);
 
     useEffect(() => {
         fetchInsightData().then((res) => {
@@ -24,12 +26,6 @@ const Insights = () => {
             setCommitCount(res.commitCount);
             setContributorCount(res.contributorCount);
         });
-
-        const interval = setInterval(() => {
-            setMapRefreshInterval(document.visibilityState === 'visible' ? 10_000 : 100_000);
-        }, 100);
-
-        return () => clearInterval(interval);
     }, []);
 
     return (
@@ -60,8 +56,8 @@ const Insights = () => {
                 </Container>
             </Container>
 
-            <div className="relative z-10 h-[45em] w-full px-8 pb-4 lg:w-2/3 lg:p-0">
-                <Map refreshInterval={mapRefreshInterval} disableMenu disableWeather={false} disableScroll forceTileset="carto-light" />
+            <div className="relative w-full px-8 pb-4 lg:w-2/3 lg:p-0">
+                <LeafletMap />
             </div>
         </Section>
     );
