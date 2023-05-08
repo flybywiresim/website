@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { DownloadOutlined } from '@ant-design/icons';
 import Container from '../Utils/Container';
 import Tag from '../Utils/Tag';
 import Button from '../Button/Button';
@@ -41,7 +42,7 @@ const Card = ({
                     && (
                         <>
                             <a href={downloadURL}>
-                                <Button label="Download" theme="primary" />
+                                <Button label={<DownloadOutlined />} theme="primary" className="max-w-min" />
                             </a>
                         </>
                     )}
