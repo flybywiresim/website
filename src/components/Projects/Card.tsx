@@ -24,30 +24,32 @@ const Card = ({
     href,
     downloadURL,
 }: CardProps) => (
-    <div className="grid bg-secondary-accent-dark xl:grid-cols-2">
+    <div className="grid bg-secondary-accent-dark xl:grid-cols-3">
         <Image src={metaImage} alt={metaAlt} width={800} height={300} objectFit="cover" />
-        <Container className="grid gap-2 py-4">
-            <div>
-                <Tag category={category} />
-            </div>
-            <h2>{title}</h2>
-            <p>
-                {description}
-            </p>
-            <span className="flex flex-wrap gap-2 py-4">
-                <Link href={href}>
-                    <Button label="Learn More" theme="secondary" />
-                </Link>
-                {downloadURL
-                    && (
-                        <>
-                            <a href={downloadURL}>
-                                <Button label={<DownloadOutlined />} theme="primary" className="max-w-min" />
-                            </a>
-                        </>
-                    )}
-            </span>
-        </Container>
+        <div className="grid xl:col-span-2">
+            <Container className="grid gap-2 py-4">
+                <div>
+                    <Tag category={category} />
+                </div>
+                <h2>{title}</h2>
+                <p>
+                    {description}
+                </p>
+                <span className="flex flex-wrap gap-2 py-4">
+                    <Link href={href}>
+                        <Button label="Learn More" theme="secondary" />
+                    </Link>
+                    {downloadURL
+                        && (
+                            <>
+                                <a href={downloadURL}>
+                                    <Button label={<DownloadOutlined />} theme="primary" className="max-w-min" />
+                                </a>
+                            </>
+                        )}
+                </span>
+            </Container>
+        </div>
     </div>
 );
 
