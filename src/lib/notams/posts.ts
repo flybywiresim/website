@@ -6,6 +6,7 @@ import html from 'remark-html';
 import readingTime from 'reading-time';
 
 export type PostListing = {
+    index: number;
     id?: string,
     readingStats: any,
     date: string,

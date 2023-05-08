@@ -23,6 +23,7 @@ const index = ({ listings }: BlogProps) => (
                 <h2>NOTAMs</h2>
                 <div className="my-4 grid gap-4 xl:grid-cols-3">
                     {listings.map(({
+                        id,
                         category,
                         title,
                         date,
@@ -31,7 +32,7 @@ const index = ({ listings }: BlogProps) => (
                         metaAlt,
                         readingStats,
                     }, index) => (
-                        <Link key={index} href={`/notams/${index}`}>
+                        <Link key={id} href={`/notams/${id}`}>
                             <a className={index === 0 ? 'xl:col-span-3' : ''}>
                                 <Card
                                     index={index}

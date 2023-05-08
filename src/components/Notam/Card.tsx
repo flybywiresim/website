@@ -10,8 +10,10 @@ const Card = (props: PostListing) => (
         </span>
         <Container className="grid py-4">
             <span className="flex justify-between">
-                {props.index === 0 && <Tag category="Latest" />}
-                <Tag category={props.category} />
+                <div className="grid grid-cols-2">
+                    {props.index === 0 && <Tag category="Latest" />}
+                    <Tag category={props.category} />
+                </div>
                 <p className="text-gray-400">
                     {new Date(props.date).toLocaleDateString('en-US', { dateStyle: 'long' })}
                 </p>
