@@ -31,7 +31,9 @@ const Footer = () => (
                                 <Image src="/svg/tail/tail.svg" alt="FlyByWire Simulations Logo" width={50} height={50} />
                             </div>
                             <h4>Contact Us</h4>
-                            <p className="font-semibold">contact@flybywiresim.com</p>
+                            <a href="mailto:contact@flybywiresim.com">
+                                <p className="font-semibold">contact@flybywiresim.com</p>
+                            </a>
                         </div>
 
                         <div className="grid grid-cols-3 items-start gap-x-8 gap-y-5">
