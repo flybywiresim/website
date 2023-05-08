@@ -1,6 +1,5 @@
 import { ReactNode } from 'react';
-
-import { twMerge } from 'tailwind-merge'
+import { twMerge } from 'tailwind-merge';
 
 type SectionProps = {
     id?: string
