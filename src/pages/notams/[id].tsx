@@ -42,21 +42,19 @@ const Post = ({ content: { category, title, metaImage, metaAlt, readingStats, au
                 <Image src={metaImage} alt={metaAlt} layout="fill" objectFit="cover" className="bg-secondary opacity-20 blur-sm" />
                 <Container className="grid py-8">
                     <div className="relative top-1/4 my-4">
-                        <span className="flex items-center gap-x-2">
+                        <span className="flex items-center gap-x-4">
                             <Tag category={category} />
-                            <p className="text-gray-400">{readingStats.text}</p>
+                            <p>
+                                {new Date(date).toLocaleDateString('en-US', { dateStyle: 'full' })}
+                            </p>
                         </span>
                         <h2>{title}</h2>
-                        <p className="text-gray-400">
+                        <small>
                             by
                             {' '}
                             {authors?.join(', ')}
-                        </p>
-                        <p className="text-gray-400">
-                            Posted:
-                            {' '}
-                            {`${date.substring(8)}/${date.substring(5, 7)}/${date.substring(0, 4)}`}
-                        </p>
+                        </small>
+                        <p className="text-white/50">{readingStats.text}</p>
                     </div>
                 </Container>
             </div>
