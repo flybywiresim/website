@@ -9,7 +9,7 @@ const Card = (props: PostListing) => (
             <Image src={props.metaImage} alt={props.metaAlt} layout="fill" objectFit="cover" />
         </span>
         <Container className="grid py-4">
-            <span className="flex justify-between">
+            <span className="grid gap-4 justify-between">
                 <div className="grid grid-cols-2">
                     {props.index === 0 && <Tag category="Latest" />}
                     <Tag category={props.category} />

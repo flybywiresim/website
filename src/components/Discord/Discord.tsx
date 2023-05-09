@@ -14,7 +14,7 @@ const Discord = () => (
             target="_blank"
             rel="noreferrer"
         >
-            <Button label="Join our Community!" className="bg-discord" />
+            <Button label="Join Community!" className="bg-discord" />
         </a>
     </div>
 );

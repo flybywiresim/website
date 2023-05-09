@@ -44,7 +44,7 @@ const NavBar = () => {
 
     let bgClass;
     if (route.indexOf('map') !== -1) {
-        bgClass = 'bg-secondary-accent-dark';
+        bgClass = 'bg-secondary-accent-dark/90';
     } else if (isScrolled || isOpen) {
         bgClass = 'bg-secondary-accent-dark';
     } else {

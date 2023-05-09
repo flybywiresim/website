@@ -23,6 +23,10 @@
 }
 
 .leaflet-popup-tip {
-  background-color: #1b2434 !important; /* TODO replace with tw */
+  background-color: #171E2C !important;
   box-shadow: none !important;
+}
+
+.leaflet-control-zoom {
+  margin-top: 80px !important;
 }
