@@ -43,7 +43,7 @@ const Card = ({
                         && (
                             <>
                                 <a href={downloadURL}>
-                                    <Button label={<DownloadOutlined />} theme="primary" className="max-w-min flex justify-center items-center" />
+                                    <Button label={<DownloadOutlined />} theme="primary" className="flex max-w-min items-center justify-center" />
                                 </a>
                             </>
                         )}

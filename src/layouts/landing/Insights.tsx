@@ -31,7 +31,7 @@ const Insights = () => {
     return (
         <Section theme="light" className="relative flex flex-col py-0 lg:flex-row-reverse">
             <Container display="flex flex-col items-center justify-center  py-20">
-                <Container className="grid gap-y-4 px-4 xl:px-20 text-center lg:text-left">
+                <Container className="grid gap-y-4 px-4 text-center lg:text-left xl:px-20">
                     <div className="flex flex-col items-center gap-4 lg:flex-row">
                         <Image src="/svg/tail/tail.svg" width={40} height={40} />
                         <h2>Community Insights</h2>
