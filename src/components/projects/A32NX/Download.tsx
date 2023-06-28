@@ -79,9 +79,9 @@ export const Download = ({ expOnHold }: { expOnHold?: boolean }) => {
                                     </div>
                                     {expOnHold && (
                                         <span className="flex-wrap mb-8 text-gray-300">
-                                            Our experimental branch is temporarily
+                                            Our Experimental Version is temporarily
                                             <a href="https://docs.flybywiresim.com/fbw-a32nx/support/exp/" className="text-blue-light">&#32;on hold&#32;</a>
-                                            and all of its features have been moved to the development build.
+                                            and all of its features have been moved to the Development Version.
                                         </span>
                                     )}
                                 </div>
