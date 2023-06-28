@@ -21,7 +21,7 @@ const index: NextPage = () => (
                 <h2>Our Projects</h2>
                 <div className="my-4 grid gap-4 md:grid-cols-2">
                     <Card
-                        metaImage="/img.png"
+                        metaImage="/img/rear_a32nx.jpg"
                         metaAlt="A32NX"
                         title="A32NX"
                         category="Aircraft"
@@ -35,7 +35,6 @@ const index: NextPage = () => (
                         title="A380X"
                         category="Aircraft"
                         description="The A380X is the upcoming first high fidelity and free simulation of the A380 for Microsoft Flight Simulator."
-                        downloadURL={A32NX_DOWNLOAD_URL}
                         href="/projects/a380x"
                     />
                     <Card

@@ -20,7 +20,7 @@ const A32NX: NextPage = () => (
             <Container>
                 <h4>Discover the</h4>
                 <h1>A32NX</h1>
-                <p>Erat imperdiet sed euismod nisi porta. Malesuada proin libero nunc consequat interdum varius. Lacus luctus accumsan tortor posuere. </p>
+                <p>A community developed Airbus A320Neo for Microsoft Flight Simulator providing a high fidelity simulation of the aircraft.</p>
 
                 <div className="py-8">
                     <Button label="Download" theme="primary" />
@@ -83,8 +83,8 @@ const A32NX: NextPage = () => (
 
         <Section theme="light">
             <Container>
-                <Image src="/pages/projects/a32nx/FMSLine.png" width={300} height={200} objectFit="contain" />
                 <div className="grid gap-8">
+                    <Image src="/pages/projects/a32nx/FMSLine.png" width={300} height={200} objectFit="contain" />
                     <div>
                         <h4>Advanced</h4>
                         <h3>Flight Management System</h3>
