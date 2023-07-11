@@ -5,7 +5,7 @@ authors:
     - 'BlueberryKing'
     - 'Holland'
     - 'Tracernz'
-category: 'UPDATE'
+category: 'Update'
 metaImage: '/img/cfms-notam-feature.jpg'
 metaAlt: 'FlyByWire Simulations'
 ---

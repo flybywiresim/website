@@ -10,6 +10,7 @@ export type PostListing = {
     readingStats: any,
     date: string,
     title: string,
+    summary?: string,
     authors: string[],
     category: string,
     metaImage: string,

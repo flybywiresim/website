@@ -3,7 +3,7 @@ title: 'FlyByWire, MSFS Marketplace and Xbox'
 date: '2021-09-16'
 authors:
     - 'Iceman'
-category: 'ANNOUNCEMENT'
+category: 'Announcements'
 metaImage: '/img/a32nxwing2.jpg'
 metaAlt: 'FlyByWire Simulations'
 ---

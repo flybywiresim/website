@@ -1,11 +1,12 @@
 ---
 title: 'The New flyPadOS 3 - A Best in Class EFB Experience'
+summary: 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.'
 date: '2022-05-28'
 authors:
   - 'Cdr_Maverick'
   - 'DirtyFormal'
   - 'Valastiri'
-category: 'UPDATE'
+category: 'Update'
 metaImage: '/img/notam-images/flypados3/flypad-hero.png'
 metaAlt: 'FlyByWire Simulations'
 ---

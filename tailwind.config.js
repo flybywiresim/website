@@ -15,7 +15,7 @@ module.exports = {
             center: true,
             padding: '2rem',
         },
-        fontFamily: { sans: ['Nunito Sans', ...defaultTheme.fontFamily.sans] },
+        fontFamily: { sans: ['Inter', ...defaultTheme.fontFamily.sans] },
         extend: {
             height: { 200: '50rem', ...defaultTheme.height },
             screens: {
@@ -35,12 +35,43 @@ module.exports = {
             },
             colors: {
                 colors,
-                blue: { 'dark-contrast': 'hsl(216,32%,17%)' },
-                midnight: { DEFAULT: 'hsl(218, 42%, 10%)' },
-                discord: {
+                'quasi-white': '#FAFAFA',
+                'cyan': {
+                    DEFAULT: 'rgb(var(--color-brand-cyan-main) / <alpha-value>)',
+                    dark: 'rgb(var(--color-brand-cyan-dark) / <alpha-value>)',
+                    light: 'rgb(var(--color-brand-cyan-light) / <alpha-value>)',
+                },
+                'navy': {
+                    DEFAULT: 'rgb(var(--color-brand-navy-main) / <alpha-value>)',
+                    dark: 'rgb(var(--color-brand-navy-dark) / <alpha-value>)',
+                    light: 'rgb(var(--color-brand-navy-light) / <alpha-value>)',
+                },
+                'utility': {
+                    'red': 'rgb(var(--color-utility-red) / <alpha-value>)',
+                    'green': 'rgb(var(--color-utility-green) / <alpha-value>)',
+                    'light-green': 'rgb(var(--color-utility-light-green) / <alpha-value>)',
+                    'orange': 'rgb(var(--color-utility-orange) / <alpha-value>)',
+                    'yellow': 'rgb(var(--color-utility-yellow) / <alpha-value>)',
+                    'amber': 'rgb(var(--color-utility-amber) / <alpha-value>)',
+                    'blue': 'rgb(var(--color-utility-blue) / <alpha-value>)',
+                    'purple': 'rgb(var(--color-utility-purple) / <alpha-value>)',
+                    'pink': 'rgb(var(--color-utility-pink) / <alpha-value>)',
+                    'salmon': 'rgb(var(--color-utility-salmon) / <alpha-value>)',
+                    'grey': 'rgb(var(--color-utility-grey) / <alpha-value>)',
+                    'dark-grey': 'rgb(var(--color-utility-dark-grey) / <alpha-value>)',
+                    'grey-blue': 'rgb(var(--color-utility-grey-blue) / <alpha-value>)',
+                },
+                'blue': { 'dark-contrast': 'hsl(216,32%,17%)' },
+                'midnight': { DEFAULT: 'hsl(218, 42%, 10%)' },
+                'discord': {
                     DEFAULT: 'hsl(235,86%,65%)',
                     dark: 'hsl(235,60%,54%)',
                 },
+            },
+            fontFamily: {
+                inter: ['Inter', 'sans-serif'],
+                manrope: ['Manrope', 'sans-serif'],
+                mono: ['JetBrains Mono', 'monospace'],
             },
             zIndex: { '-10': '-10' },
             typography: {

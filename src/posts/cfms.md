@@ -5,7 +5,7 @@ authors:
   - 'Holland'
   - 'Valastiri'
   - 'Kevin'
-category: 'UPDATE'
+category: 'Update'
 metaImage: '/img/rear_a32nx.jpg'
 metaAlt: 'FlyByWire Simulations'
 ---

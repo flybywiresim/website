@@ -8,7 +8,7 @@ authors:
   - 'Kevin'
   - 'Sven [de en]'
   - 'Valastiri'
-category: 'UPDATE'
+category: 'Update'
 metaImage: '/img/notam-images/march2022/dcdu-dep-req.png'
 metaAlt: 'FlyByWire Simulations'
 ---

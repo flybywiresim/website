@@ -3,7 +3,7 @@ title: 'Hydraulics Development Update'
 date: '2022-02-25'
 authors:
   - 'Davy'
-category: 'UPDATE'
+category: 'Update'
 metaImage: '/img/hydraulics-feature.png'
 metaAlt: 'FlyByWire Simulations'
 ---

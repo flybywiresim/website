@@ -8,7 +8,7 @@ authors:
   - 'Bouveng'
   - 'Ibrahim'
   - 'Kevin'
-category: 'UPDATE'
+category: 'Update'
 metaImage: '/img/a380x.jpg'
 metaAlt: 'FlyByWire Simulations'
 ---

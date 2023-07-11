@@ -8,7 +8,7 @@ authors:
   - 'Boris'
   - 'Kevin'
   - 'Holland'
-category: 'UPDATE'
+category: 'Update'
 metaImage: '/img/notam-images/efb-featured.png'
 metaAlt: 'FlyByWire Simulations'
 ---
