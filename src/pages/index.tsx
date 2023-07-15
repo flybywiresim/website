@@ -9,7 +9,7 @@ const Index = () => (
         <A320Header />
         <Installer />
         <Community />
-        <PartnerSection />
+        {/* <PartnerSection /> */}
         <Donate />
     </>
 );
