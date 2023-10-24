@@ -48,7 +48,7 @@ const Tos = () => {
                     <p>Author: Nathan Innes</p>
                 </div>
                 <div className="w-0">
-                    <a className="hover:text-blue-light underline" href="https://github.com/flybywiresim/manuals/raw/master/pdf/Terms%20of%20Service.pdf" target="_blank" rel="noreferrer">
+                    <a className="hover:text-blue-light underline" href="https://raw.githubusercontent.com/flybywiresim/manuals/master/pdf/FBW%20Terms%20of%20Services.pdf" target="_blank" rel="noreferrer">
                         <p>Download</p>
                     </a>
                 </div>
