@@ -61,7 +61,7 @@ export const Footer = () => (
                     <Image src="/svg/vercel.svg" alt="Vercel" width={60} height={20} />
                 </span>
             </a>
-            <em className="text-center text-teal-100">&copy; FlyByWire Simulations and its contributors 2020-2021</em>
+            <em className="text-center text-teal-100">&copy; FlyByWire Simulations and its contributors 2020-2023</em>
         </Container>
     </footer>
 );

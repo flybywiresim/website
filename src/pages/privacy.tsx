@@ -50,7 +50,7 @@ const Privacy = () => {
                     <p>Author: Nathan Innes</p>
                 </div>
                 <div className="w-0">
-                    <a className="hover:text-blue-light underline" href="https://github.com/flybywiresim/manuals/raw/master/pdf/Privacy%20Policy.pdf" target="_blank" rel="noreferrer">
+                    <a className="hover:text-blue-light underline" href="https://raw.githubusercontent.com/flybywiresim/manuals/master/pdf/FBW%20Privacy%20Policy.pdf" target="_blank" rel="noreferrer">
                         <p>Download</p>
                     </a>
                 </div>
