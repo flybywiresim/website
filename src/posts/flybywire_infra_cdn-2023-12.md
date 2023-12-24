@@ -44,7 +44,7 @@ Below you can see how that impacts the use of our CDN in multiple graphs. The ti
 
 [![Weekly CDN Bandwidth usage](/img/notam-images/infrastructure/worker-bandwidth-weekly.png)](/img/notam-images/infrastructure/worker-bandwidth-weekly.png)
 
-The above graph represents the bandwidth usage per hour for the time period of December 12th, 2023 at 12:00 UTC till December 24th, 2023 at 12:00 UTC.
+The above graph represents the bandwidth usage per hour for the time period of December 17th, 2023 at 12:00 UTC till December 24th, 2023 at 12:00 UTC.
 
 You can see that earlier in the week the bandwidth on our CDN was rather low. It goes up during the day in Europe and US and it goes down a little when less people are trying to download data from the CDN.
 
