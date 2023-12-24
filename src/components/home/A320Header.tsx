@@ -13,15 +13,15 @@ export const A320Header = () => {
     return (
         <header>
             <video
-                className="object-cover fixed -z-10 w-screen h-screen opacity-10"
+                className="fixed -z-10 h-screen w-screen object-cover opacity-10"
                 src="https://cdn.flybywiresim.com/assets/website/video/A32NX.mp4"
                 playsInline
                 autoPlay
                 muted
                 loop
             />
-            <Container className="relative max-w-6xl min-h-screen">
-                <div className="absolute bottom-0 left-0 h-2/3 px-page">
+            <Container className="relative min-h-screen max-w-6xl">
+                <div className="px-page absolute bottom-0 left-0 h-2/3">
                     <h1 className="text-8xl font-bold">
                         <span className="text-teal">A32</span>
                         <span className="text-blue">N</span>
@@ -31,17 +31,17 @@ export const A320Header = () => {
                         A community built and maintained project aiming to provide high quality and detailed aircraft
                         for Microsoft Flight Simulator.
                     </p>
-                    <div className="flex gap-4 my-5 max-w-md">
+                    <div className="my-5 flex max-w-md gap-4">
                         <Button
                             onClick={handleClick}
-                            className="w-40 hover:text-blue-light bg-blue-light hover:bg-white border-2 border-blue-light"
+                            className="w-40 border-2 border-blue-light bg-blue-light hover:bg-white hover:text-blue-light"
                         >
                             Installer
                         </Button>
 
                         <Link href="/a32nx">
                             <Button
-                                className="w-44 text-blue-light hover:text-blue-light hover:bg-white border-2 border-blue-light"
+                                className="w-44 border-2 border-blue-light text-blue-light hover:bg-white hover:text-blue-light"
                             >
                                 Learn More
                             </Button>

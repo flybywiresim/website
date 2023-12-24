@@ -3,13 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 export const ExtendedFeatures = () => (
-    <section className="py-4 pb-20 mx-auto max-w-screen-2xl rounded-lg sm:px-6 lg:px-8 px-page">
-        <div className="grid
+    <section className="px-page mx-auto max-w-screen-2xl rounded-lg py-4 pb-20 sm:px-6 lg:px-8">
+        <div className="mx-auto
+                        grid
+                        max-w-max
                         grid-cols-1
-                        md:grid-cols-2
-                        xl:grid-cols-3
-                        2xl:grid-cols-4
-                        max-w-max mx-auto gap-x-16 gap-y-20"
+                        gap-x-16
+                        gap-y-20 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
         >
             <Feature key="EFB">
                 <FeatureTitle>
@@ -88,8 +88,8 @@ export const ExtendedFeatures = () => (
 );
 
 const Feature: FC = ({ children }) => (
-    <div className="flex flex-row max-w-prose md:w-96">
-        <FontAwesomeIcon className="mt-1 mr-5 mb-auto text-2xl text-green-500" size="1x" icon={faCheck} />
+    <div className="flex max-w-prose flex-row md:w-96">
+        <FontAwesomeIcon className="mb-auto mr-5 mt-1 text-2xl text-green-500" size="1x" icon={faCheck} />
         <div className="space-y-3">
             {children}
         </div>
@@ -101,7 +101,7 @@ const FeatureTitle: FC = ({ children }) => (
 );
 
 const FeatureBody: FC<{ className?: string }> = ({ children, className }) => (
-    <p className={`text-lg text-left ${className}`}>
+    <p className={`text-left text-lg ${className}`}>
         {children}
     </p>
 );

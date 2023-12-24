@@ -12,7 +12,7 @@ const Privacy = () => {
     return (
         <>
             <header>
-                <div className="object-cover relative z-0 w-screen h-screen shadow-2xl opacity-20">
+                <div className="relative z-0 h-screen w-screen object-cover opacity-20 shadow-2xl">
                     <Image
                         src="/img/a32nxwing.png"
                         alt="Privacy policy"
@@ -20,12 +20,12 @@ const Privacy = () => {
                         objectFit="cover"
                     />
                 </div>
-                <div className="flex absolute top-0 bottom-0 z-20 justify-center w-full">
-                    <div className="relative justify-center my-auto text-center sm:flex sm:space-x-10 sm:divide-x md:w-4/5 xl:justify-start xl:w-3/4 sm:item-center">
-                        <FontAwesomeIcon className="self-center mb-3 sm:mb-0" icon={faUserShield} size="7x" />
+                <div className="absolute inset-y-0 z-20 flex w-full justify-center">
+                    <div className="sm:item-center relative my-auto justify-center text-center sm:flex sm:space-x-10 sm:divide-x md:w-4/5 xl:w-3/4 xl:justify-start">
+                        <FontAwesomeIcon className="mb-3 self-center sm:mb-0" icon={faUserShield} size="7x" />
 
                         <div className="mx-auto w-1/2 text-center sm:space-x-10 md:text-left">
-                            <div className="space-y-2 w-full divide-y divide-gray-400 sm:ml-10">
+                            <div className="w-full space-y-2 divide-y divide-gray-400 sm:ml-10">
                                 <h1 className="text-4xl font-medium text-blue-light sm:text-8xl md:text-7xl">
                                     Privacy Policy
                                 </h1>
@@ -43,14 +43,14 @@ const Privacy = () => {
             {/* HandleScroll scrolls to this div */}
             <div ref={bodyRef} />
 
-            <article className="px-20 my-40 w-full max-w-6xl md:mx-auto xl:px-0">
+            <article className="my-40 w-full max-w-6xl px-20 md:mx-auto xl:px-0">
                 <h1 className="mt-40 text-6xl font-semibold text-blue-light">Privacy Policy</h1>
                 <div className="mt-2">
                     <p>Effective: 21/12/2020</p>
                     <p>Author: Nathan Innes</p>
                 </div>
                 <div className="w-0">
-                    <a className="hover:text-blue-light underline" href="https://github.com/flybywiresim/manuals/raw/master/pdf/Privacy%20Policy.pdf" target="_blank" rel="noreferrer">
+                    <a className="underline hover:text-blue-light" href="https://github.com/flybywiresim/manuals/raw/master/pdf/Privacy%20Policy.pdf" target="_blank" rel="noreferrer">
                         <p>Download</p>
                     </a>
                 </div>
