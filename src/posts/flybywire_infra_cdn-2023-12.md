@@ -3,7 +3,7 @@ title: 'Infrastructure and impact of an improved cockpit'
 date: '2023-12-25'
 authors:
   - 'straks'
-category: 'UPDATE'
+category: 'INFO'
 metaImage: '/img/notam-images/infrastructure/cockpit-header.png'
 metaAlt: 'FlyByWire Simulations'
 ---
