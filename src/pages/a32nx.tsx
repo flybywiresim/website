@@ -8,7 +8,7 @@ const A32nx = () => (
         <Hero />
         <Features />
         <ExtendedFeatures />
-        <Download expOnHold/>
+        <Download expOnHold />
     </>
 );
 

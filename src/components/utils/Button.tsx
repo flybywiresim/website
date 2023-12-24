@@ -10,7 +10,7 @@ export const Button = (props: ButtonProps) => (
     <button
         onClick={props.onClick}
         type="button"
-        className={`focus:outline-none transition rounded-full py-3 text-xl shadow-md-dark-contrast font-bold ${props.className}`}
+        className={`rounded-full py-3 text-xl font-bold shadow-md-dark-contrast transition focus:outline-none ${props.className}`}
     >
         {props.children}
     </button>

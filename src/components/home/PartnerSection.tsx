@@ -18,7 +18,7 @@ export const PartnerImage = (props: ImageProps) => (
 );
 
 export const Partner = (props: PropsWithChildren<PartnerProps>) => (
-    <span id={props.name} className={`flex justify-center items-center ${props.className}`}>
+    <span id={props.name} className={`flex items-center justify-center ${props.className}`}>
         <a href={props.path} target="_blank" rel="noreferrer">
             {props.children}
         </a>
@@ -27,7 +27,7 @@ export const Partner = (props: PropsWithChildren<PartnerProps>) => (
 
 export const PartnerSection = () => (
     <section className="bg-blue-dark">
-        <Container className="grid grid-cols-1 gap-x-16 max-w-screen-2xl md:grid-cols-2 lg:grid-cols-4">
+        <Container className="grid max-w-screen-2xl grid-cols-1 gap-x-16 md:grid-cols-2 lg:grid-cols-4">
             <Partner name="Flightsim.to" path="https://flightsim.to/">
                 <PartnerImage src="/img/partners/flightsimto.png" />
             </Partner>

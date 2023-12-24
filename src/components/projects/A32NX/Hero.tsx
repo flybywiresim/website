@@ -2,10 +2,10 @@ import { Button } from '../../utils/Button';
 
 export const Hero = () => (
     <>
-        <header className="absolute inset-y-1/3 inset-x-2 z-30 mx-auto max-w-7xl px-page">
-            <div className="flex flex-row justify-between items-end">
+        <header className="px-page absolute inset-x-2 inset-y-1/3 z-30 mx-auto max-w-7xl">
+            <div className="flex flex-row items-end justify-between">
                 <div>
-                    <h2 className="mb-2 ml-2 text-2xl font-medium tracking-widest uppercase">
+                    <h2 className="mb-2 ml-2 text-2xl font-medium uppercase tracking-widest">
                         DISCOVER THE
                     </h2>
                     <h1 className="text-7xl font-medium sm:text-8xl">
@@ -19,11 +19,11 @@ export const Hero = () => (
                     <p className="mt-4 text-xl text-gray-200">
                         - Dan, Real Airbus A320 Pilot
                     </p>
-                    <div className="flex py-5 max-w-md">
+                    <div className="flex max-w-md py-5">
 
                         <a href="https://api.flybywiresim.com/installer">
                             <Button
-                                className="mr-3 w-40 text-xl font-bold hover:text-blue-light bg-blue-light hover:bg-white border-2 border-blue-light"
+                                className="mr-3 w-40 border-2 border-blue-light bg-blue-light text-xl font-bold hover:bg-white hover:text-blue-light"
                             >
                                 Installer
                             </Button>
@@ -31,7 +31,7 @@ export const Hero = () => (
 
                         <a href="#download">
                             <Button
-                                className="w-40 text-xl font-bold text-blue-light hover:text-blue-light hover:bg-white border-2 border-blue-light"
+                                className="w-40 border-2 border-blue-light text-xl font-bold text-blue-light hover:bg-white hover:text-blue-light"
                             >
                                 Download
                             </Button>
@@ -40,6 +40,6 @@ export const Hero = () => (
                 </div>
             </div>
         </header>
-        <img draggable="false" className="object-cover relative z-0 w-screen h-screen opacity-30 select-none" src="/img/discord.jpg" alt="" />
+        <img draggable="false" className="relative z-0 h-screen w-screen select-none object-cover opacity-30" src="/img/discord.jpg" alt="" />
     </>
 );

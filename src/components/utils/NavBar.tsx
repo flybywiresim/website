@@ -35,7 +35,7 @@ export const NavBar = () => {
     }
     return (
         <nav
-            className={`fixed w-full z-50 ${scroll || isOpen ? 'transition bg-blue-dark-contrast shadow-lg-dark' : 'transition bg-transparent'}`}
+            className={`fixed z-50 w-full ${scroll || isOpen ? 'bg-blue-dark-contrast shadow-lg-dark transition' : 'bg-transparent transition'}`}
             onClick={handleClick}
         >
             <Container className="p-4">
@@ -43,16 +43,16 @@ export const NavBar = () => {
                     <Link href="/">
                         <Image className="cursor-pointer" src="/svg/white/FBW-Logo-WHITE.svg" width={180} height={40} />
                     </Link>
-                    <span className="flex flex-col place-content-center w-7 h-10 transition cursor-pointer md:hidden" onClick={() => setOpen(!isOpen)}>
-                        <div className={`${isOpen && 'rotate-45 translate-y-[3px]'} duration-200 h-[3px] bg-white rounded-full`} />
-                        <div className={`${isOpen ? 'h-0' : 'h-[3px] my-[5px]'} bg-white rounded-full`} />
-                        <div className={`${isOpen && '-rotate-45'}  duration-200 h-[3px] bg-white rounded-full`} />
+                    <span className="flex h-10 w-7 cursor-pointer flex-col place-content-center transition md:hidden" onClick={() => setOpen(!isOpen)}>
+                        <div className={`${isOpen && 'translate-y-[3px] rotate-45'} h-[3px] rounded-full bg-white duration-200`} />
+                        <div className={`${isOpen ? 'h-0' : 'my-[5px] h-[3px]'} rounded-full bg-white`} />
+                        <div className={`${isOpen && '-rotate-45'}  h-[3px] rounded-full bg-white duration-200`} />
                     </span>
                     <NavLinks className="hidden md:flex md:flex-row" />
                 </div>
                 <NavLinks className={`${isOpen ? 'py-1 md:hidden' : 'hidden'}`} />
             </Container>
-            <div className={`absolute w-full h-screen ${!isOpen && 'hidden'}`} />
+            <div className={`absolute h-screen w-full ${!isOpen && 'hidden'}`} />
         </nav>
     );
 };

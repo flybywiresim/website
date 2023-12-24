@@ -11,16 +11,16 @@ type IconItemProp = {
 }
 
 export const FooterIconItem = (props: IconItemProp) => (
-    <a href={props.href} target="_blank" rel="noreferrer">
-        <FontAwesomeIcon className="hover:text-blue-light transition" icon={props.icon} size="lg" />
+    <a href={props.href} aria-label={props.href} target="_blank" rel="noreferrer">
+        <FontAwesomeIcon className="transition hover:text-blue-light" icon={props.icon} size="lg" />
     </a>
 );
 
 export const Footer = () => (
-    <footer className="py-8 bg-blue-dark">
+    <footer className="bg-blue-dark py-8">
         <Container className="flex flex-col space-y-2">
 
-            <div className="flex gap-x-4 justify-center">
+            <div className="flex justify-center gap-x-4">
                 <FooterIconItem icon={faGithub} href="https://github.com/flybywiresim" />
                 <FooterIconItem icon={faTwitter} href="https://twitter.com/FlyByWireSim" />
                 <FooterIconItem icon={faFacebook} href="https://www.facebook.com/FlyByWireSimulations" />
@@ -29,7 +29,7 @@ export const Footer = () => (
                 <FooterIconItem icon={faYoutube} href="https://www.youtube.com/c/FlyByWireSimulations" />
             </div>
 
-            <div className="flex gap-x-4 justify-center text-center">
+            <div className="flex justify-center gap-x-4 text-center">
                 <a
                     className="hover:underline"
                     href="https://github.com/flybywiresim/flybywiresim-website/"
@@ -38,12 +38,12 @@ export const Footer = () => (
                 >
                     Source Code
                 </a>
-                <span className="hover:underline cursor-pointer">
+                <span className="cursor-pointer hover:underline">
                     <Link href="/tos">
                         Terms of Service
                     </Link>
                 </span>
-                <span className="hover:underline cursor-pointer">
+                <span className="cursor-pointer hover:underline">
                     <Link href="/privacy">
                         Privacy Policy
                     </Link>
