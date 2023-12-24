@@ -7,10 +7,10 @@ import Container from '../utils/Container';
 export const installerRef = createRef<HTMLDivElement>();
 
 export const Installer = forwardRef(() => (
-    <section ref={installerRef} className="overflow-hidden py-12 bg-blue-dark">
+    <section ref={installerRef} className="overflow-hidden bg-blue-dark py-12">
         <Container className="flex flex-col items-center 3xl:flex-row 3xl:justify-center">
             <div className="mb-4 text-center 2xl:mr-12 3xl:text-left">
-                <IconPackage className="p-2 mx-auto mb-4 bg-blue-light-contrast rounded-xl 3xl:mx-0" size={55} stroke={1.5} />
+                <IconPackage className="mx-auto mb-4 rounded-xl bg-blue-light-contrast p-2 3xl:mx-0" size={55} stroke={1.5} />
                 <h1 className="font-extrabold">
                     Custom-built Installer
                 </h1>
@@ -20,12 +20,12 @@ export const Installer = forwardRef(() => (
                     proper folder.
                 </p>
                 <a href="https://api.flybywiresim.com/installer">
-                    <Button className="mt-8 w-40 hover:text-teal-light-contrast bg-teal-light-contrast hover:bg-white border-2 border-teal-light-contrast">
+                    <Button className="mt-8 w-40 border-2 border-teal-light-contrast bg-teal-light-contrast hover:bg-white hover:text-teal-light-contrast">
                         Download
                     </Button>
                 </a>
             </div>
-            <div className="-mb-[125px] w-11/12 xl:w-5/6 3xl:-mb-3 3xl:w-320">
+            <div className="mb-[-125px] w-11/12 xl:w-5/6 3xl:-mb-3 3xl:w-320">
                 <Image
                     src="/img/InstallerScreenshot.png"
                     alt="Installer"

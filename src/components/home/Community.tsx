@@ -49,15 +49,15 @@ export const Community = () => {
         return () => clearInterval(interval);
     }, []);
     return (
-        <section id="community" className="flex flex-col justify-between items-center text-blue-dark-contrast bg-gray-50 lg:flex-row">
-            <Container className="flex flex-col py-12 max-w-6xl lg:px-24">
-                <span className="mb-3 w-24 h-2 bg-teal-light-contrast rounded-full" />
+        <section id="community" className="flex flex-col items-center justify-between bg-gray-50 text-blue-dark-contrast lg:flex-row">
+            <Container className="flex max-w-6xl flex-col py-12 lg:px-24">
+                <span className="mb-3 h-2 w-24 rounded-full bg-teal-light-contrast" />
                 <h1>Community Insights</h1>
                 <p className="max-w-prose text-gray-800">
                     Discover the extensive community behind every FlyByWire Simulations aircraft - a vibrant and active online group that prioritises collaborative work and openness.
                 </p>
 
-                <div className="grid grid-cols-2 gap-y-8 my-6 sm:grid-cols-4">
+                <div className="my-6 grid grid-cols-2 gap-y-8 sm:grid-cols-4">
                     <Statistic statCount={liveFlights} statName="Live Flights" />
                     <Statistic statCount={commitCount} statName="Commits" />
                     <Statistic statCount={contributorCount} statName="Contributors" />
@@ -67,7 +67,7 @@ export const Community = () => {
                 <div className="my-8">
                     <Card bgColour="gray-100" className="border-discord shadow-lg">
                         <CardTitle>
-                            <span className="flex justify-center items-center p-2 mr-2 bg-discord rounded-xl">
+                            <span className="mr-2 flex items-center justify-center rounded-xl bg-discord p-2">
                                 <Image src="/svg/discordLogo.svg" width={23} height={23} />
                             </span>
                             Discord
@@ -78,18 +78,18 @@ export const Community = () => {
                         </CardBody>
 
                         <a
-                            className="self-center py-2 px-3 text-xl font-semibold text-white bg-discord hover:bg-discord-dark rounded-xl transition"
+                            className="self-center rounded-xl bg-discord px-3 py-2 text-xl font-semibold text-white transition hover:bg-discord-dark"
                             href="https://discord.gg/flybywire"
                             target="_blank"
                             rel="noreferrer"
                         >
                             Join the Community
-                            <IconArrowRight className="inline-flex mb-1 ml-1" size={20} stroke={2} />
+                            <IconArrowRight className="mb-1 ml-1 inline-flex" size={20} stroke={2} />
                         </a>
                     </Card>
                 </div>
             </Container>
-            <div className="relative z-10 w-full h-144 lg:w-1/2 lg:h-200">
+            <div className="relative z-10 h-144 w-full lg:h-200 lg:w-1/2">
                 <MapDisplay refreshInterval={mapRefreshInterval} disableMenu disableWeather={false} disableScroll forceTileset="carto-light" />
             </div>
         </section>
