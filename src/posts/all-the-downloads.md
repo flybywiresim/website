@@ -1,5 +1,5 @@
 ---
-title: 'Infrastructure and impact of an improved cockpit'
+title: 'All the Downloads! A Story of a Large Release'
 date: '2023-12-25'
 authors:
   - 'straks'
@@ -44,7 +44,7 @@ Below you can see how that impacts the use of our CDN in multiple graphs. The ti
 
 [![Weekly CDN Bandwidth usage](/img/notam-images/infrastructure/worker-bandwidth-weekly.png)](/img/notam-images/infrastructure/worker-bandwidth-weekly.png)
 
-The above graph represents the bandwidth usage per hour for the time period of December 17th, 2023 at 12:00 UTC till December 24th, 2023 at 12:00 UTC.
+The above graph represents the bandwidth usage per hour for the time period of December 18th, 2023 at 09:00 UTC till December 25th, 2023 at 09:00 UTC.
 
 You can see that earlier in the week the bandwidth on our CDN was rather low. It goes up during the day in Europe and US and it goes down a little when less people are trying to download data from the CDN.
 
@@ -58,7 +58,7 @@ And finally we hit the weekend, which is always a more busier time for our CDN, 
 
 [![Monthly CDN Requests](/img/notam-images/infrastructure/total-requests-monthly.png)](/img/notam-images/infrastructure/total-requests-monthly.png)
 
-The next graph shows the number of requests our CDN receives per hour for the time period of November 24th, 2023 at 01:00 UTC till December 24th, 2023 at 01:00 UTC.
+The next graph shows the number of requests our CDN receives per hour for the time period of November 25th, 2023 at 09:00 UTC till December 25th, 2023 at 09:00 UTC.
 
 As you can see, the use of our CDN fluctuates heavily based on the time of day, and the day of the week. Every day we reach a peak during the time when most of Europe and the US are awake (around 17:00 UTC) and more users are getting data from our CDN. Additionally, during the weekends there's more requests then during the week. Neither of these are unexpected, as people tend to fly more in the evening or in the weekend.
 
@@ -70,7 +70,7 @@ The other two peaks that follow show that once news started spreading, a lot of 
 
 [![Monthly CDN Bandwidth caching](/img/notam-images/infrastructure/bandwidth-caching-monthly.png)](/img/notam-images/infrastructure/bandwidth-caching-monthly.png)
 
-We'll end with a graph which represents the bandwidth usage per day for the time period of November 24th, 2023 at 00:00 UTC till December 24th, 2023 at 00:00 UTC.
+We'll end with a graph which represents the bandwidth usage per day for the time period of November 25th, 2023 at 00:00 UTC till December 25th, 2023 at 00:00 UTC.
 
 This is another view on the bandwidth usage, what's important for this graph is to notice the cached bandwidth versus uncached.
 
