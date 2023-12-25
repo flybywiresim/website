@@ -48,9 +48,9 @@ The above graph represents the bandwidth usage per hour for the time period of D
 
 You can see that earlier in the week the bandwidth on our CDN was rather low. It goes up during the day in Europe and US and it goes down a little when less people are trying to download data from the CDN.
 
-On Thursday December 21st, at around 22:49 UTC we posted an announcement on the FlyByWire Simulations Discord server and immediately a big peak can be seen of all the people that are now downloading this new update. There's a lot of bandwidth usage, because the update in itself is pretty big as it contains a lot of new textures and other data. This peak reaches **1.36 Terabyte** of data served in one hour.
+On Thursday December 21st, at around 22:49 UTC we posted an announcement on the FlyByWire Simulations Discord server and immediately a big peak can be seen of all the people that are now downloading this new update. There's a lot of bandwidth usage, because the update in itself is pretty big as it contains a lot of new textures and other data. This peak reaches **1.36 Terabytes** of data served in one hour.
 
-After an initial surge of downloads, things slow down a bit until the news spreads more and during the day on Friday an even higher peak is seen on December 22nd, at 16:00 UTC of **2.1 Terabyte** of data served in one hour.
+After an initial surge of downloads, things slow down a bit until the news spreads more and during the day on Friday an even higher peak is seen on December 22nd, at 16:00 UTC of **2.1 Terabytes** of data served in one hour.
 
 And finally we hit the weekend, which is always a more busier time for our CDN, as a lot of people will only fly (and thus update) the A32NX during the weekend. During this time, a lot of people have already updated, so the bandwidth usage, while high, is not reaching new peak values.
 
@@ -76,7 +76,7 @@ This is another view on the bandwidth usage, what's important for this graph is 
 
 For a CDN to work as optimized as possible, it's important that the data should be stored (cached) as close as possible to the user. Uncached data means that while the Worker of the CDN is running close to the user, the data needs to be copied from a remote location, slowing down the download a little bit.
 
-At the peak of the graph, between Friday 22nd, 2023 at 00:00 UTC and Saturday 23rd, 2023 at 00:00 UTC, a total of **28 Terabyte of data** was served by the CDN in a single day, of which **26.47 Terabyte** was cached data. This means 95% of all the downloads were fully optimized.
+At the peak of the graph, between Friday 22nd, 2023 at 00:00 UTC and Saturday 23rd, 2023 at 00:00 UTC, a total of **28 Terabytes of data** was served by the CDN in a single day, of which **26.47 Terabytes** was cached data. This means 95% of all the downloads were fully optimized.
 
 ## Conclusion
 
