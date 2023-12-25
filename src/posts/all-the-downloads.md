@@ -85,3 +85,28 @@ Our team doesn't only develop the A32NX as an add-on to Microsoft Flight Simulat
 All of this infrastructure and hosting are financed from the [donations from generous users](https://opencollective.com/flybywire), which we immensely appreciate, as we all volunteer our time and effort together.
 
 Hopefully the above helped you understand a little of what goes on behind the scenes of providing our users with new updates of the aircraft. There's a lot more to discuss on the infrastructure, including for instance the API which is used for the TELEX system and the EFB weather information.
+
+---
+
+## General Information
+
+Stay up to date with information from FlyByWire Simulations by following our social media!
+
+- [Twitter](https://twitter.com/FlyByWireSim)
+- [Facebook](https://www.facebook.com/FlyByWireSimulations/)
+
+If you require support or would like to submit a bug report please see the links below:
+
+- [Support Guide](https://docs.flybywiresim.com/fbw-a32nx/support/)
+- [Discord Support](https://discord.gg/flybywire)
+- [GitHub Issues](https://github.com/flybywiresim/a32nx/issues/new/choose)
+
+When submitting an issue or asking for support to do the following:
+
+- Visit our [Reported Issues Documentation](https://docs.flybywiresim.com/fbw-a32nx/support/reported-issues/) for common problems and workarounds.
+- Ensure that your issue has not already been reported on our GitHub.
+
+Download the latest version of the A32NX:
+
+- [Installer](https://api.flybywiresim.com/installer)
+- [Standalone Versions](https://flybywiresim.com/a32nx/#download)
