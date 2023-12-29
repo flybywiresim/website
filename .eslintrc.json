@@ -80,6 +80,7 @@
         ],
         "jsx-a11y/no-noninteractive-element-interactions": "off",
         "tailwindcss/no-custom-classname": "off",
-        "global-require": 0
+        "global-require": 0,
+        "react/no-array-index-key": "off"
     }
 }
