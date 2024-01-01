@@ -7,7 +7,8 @@ import { ArrowRightOutlined } from '@ant-design/icons';
 const AircraftIcon = (heading: number, aircraftId: string) => new DivIcon({
     iconSize: [0, 0],
     iconAnchor: [15, 10],
-    html: `<img src="/meta/aircraft-icon.png" alt="${aircraftId}" style="transform: rotate(${heading}deg); transform-origin: center; width: 32px; height: 32px; filter: drop-shadow(0 0 2px rgba(0 0 0 /0.5))"/>`,
+    html: `<img src="/meta/aircraft-icon.png" alt="${aircraftId}" style="transform: rotate(${heading}deg); 
+    transform-origin: center; width: 32px; height: 32px; filter: drop-shadow(0 0 2px rgba(0 0 0 /0.5))"/>`,
 });
 
 const numberFormat = new Intl.NumberFormat();

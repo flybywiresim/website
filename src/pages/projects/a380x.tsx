@@ -14,6 +14,6 @@ const A380X: NextPage = () => (
             </div>
         </Container>
     </Section>
-)
+);
 
 export default A380X;
