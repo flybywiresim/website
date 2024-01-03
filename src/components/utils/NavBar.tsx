@@ -41,7 +41,7 @@ export const NavBar = () => {
             <Container className="p-4">
                 <div className="flex justify-between space-x-4">
                     <Link href="/">
-                        <Image className="cursor-pointer" src="/svg/white/FBW-Logo-WHITE.svg" width={180} height={40} />
+                        <Image className="cursor-pointer" src="/img/FBW-Logo.png" width={190} height={40} />
                     </Link>
                     <span className="flex h-10 w-7 cursor-pointer flex-col place-content-center transition md:hidden" onClick={() => setOpen(!isOpen)}>
                         <div className={`${isOpen && 'translate-y-[3px] rotate-45'} h-[3px] rounded-full bg-white duration-200`} />
