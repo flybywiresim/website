@@ -13,11 +13,14 @@ metaAlt: 'FlyByWire Simulations'
 We typically see a lot of progress happen in the background that we don't always get to share with you through our other platforms. While these progress updates always 
 happen first on our Discord, we'd like to introduce a new NOTAM series that records our these updates in a singular format to keep the rest of our community informed.
 
-While those of you already on Discord have seen these, feel free to join us there if you haven't already.
+While those of you already on Discord have seen these, feel free to join us there if you haven't already. For your convenience we have included the dates when each update was 
+announced on Discord and hope to commit to a regular schedule of collating our progress into this new NOTAM series.
 
 [Join FBW Discord](https://discord.gg/flybywire)
 
 ## METAR Source Updates - EFB
+
+*October 27, 2023*
 
 NOAA recently gave aviationweather.gov a huge overhaul and with that added a new API. We've now been able to add NOAA as a METAR source for FBW aircraft, providing worldwide 
 coverage. The option is selectable on the flyPad ATSU/AOC settings page in the dev version. Additionally the NOAA TAF source has been fixed in line with the new API, and a couple of other no-longer working options are removed.
@@ -28,11 +31,15 @@ NOAA TAFs are also fixed for stable edition users.
 
 ## Model Improvements - EFB
 
+*December 22, 2023*
+
 The flyPad is now bigger and oriented to the pilot eyepoint. 
 
 This nice little quality of life improvement is available in the dev version now, alongside all the other model improvements.
 
 ## GSX Integration Improvements - EFB
+
+*January 25, 2024*
 
 We made some changes to the A32NX Development Version for better integration with GSX Pro (thanks to Fragtality and Chaoz).
 
@@ -44,6 +51,8 @@ We made some changes to the A32NX Development Version for better integration wit
 [Image here]
 
 ## PERF Page Changes - MCDU
+
+*October 28, 2023*
 
 We've made various changes to the PERF pages in the MCDU. The changes include:
 
@@ -59,6 +68,8 @@ We've made various changes to the PERF pages in the MCDU. The changes include:
 
 ## Ground Air Start - New Feature!
 
+*November 08, 2023*
+
 Building on the great work by BlueberryKing you are now able to simulate an INOP APU.
 Using the newly implemented air starter unit (ASU) to start the first engine you can set the conditions for a crossbleed engine start of the second engine to complete that scenario!
 
@@ -68,6 +79,8 @@ We have also created additional documentation which now fully describes the proc
 
 ## Improved Realistic Flare Law
 
+*February 08, 2024*
+
 We have just implemented a more realistic flare law in manual flight. Here is a description from Airbus:
 https://safetyfirst.airbus.com/app/themes/mh_newsdesk/documents/archives/a320-prevention-of-tailstrikes.pdf
 
@@ -76,6 +89,8 @@ This new flare law is more in line with the real airplane and allows good contro
 In addition to the new flare law, the autopilot has also been slightly improved. The performance during a late go-around is better and the landing in crosswinds has been further improved.
 
 ### Flare Law Behavior
+
+*February 11, 2024*
 
 After the release of our updated flare law we received multiple reports of strange behavior in connection with it.
 
