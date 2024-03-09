@@ -27,8 +27,6 @@ coverage. The option is selectable on the flyPad ATSU/AOC settings page in the d
 
 NOAA TAFs are also fixed for stable edition users.
 
-[image here]
-
 ## Model Improvements - EFB
 
 *December 22, 2023*
@@ -48,7 +46,7 @@ We made some changes to the A32NX Development Version for better integration wit
     - To do so, you have to activate the chocks and cones in the EFB settings again (Settings > Sim Options). Remember to set the parking brake before the tug will be connected though.
 - We changed the refueling process with GSX so that the aircraft gets fueled as soon as the service personnel connects the hose.
 
-[Image here]
+![flypad-settings-sim-options.jpg](/img/notam-images/2024/march-24/flypad-settings-sim-options.jpg)
 
 ## PERF Page Changes - MCDU
 
@@ -64,7 +62,9 @@ We've made various changes to the PERF pages in the MCDU. The changes include:
 - Implemented an option to modify PRED TO altitude on PERF CLB and PERF DES pages.
 - Added altitude predictions in selected modes on the PERF DES page.
 
-[3 images here]
+![Climb Example](/img/notam-images/2024/march-24/perf-3.png)
+![Descend Example](/img/notam-images/2024/march-24/perf-2.png)
+![Cruise Example](/img/notam-images/2024/march-24/perf-1.png)
 
 ## Ground Air Start - New Feature!
 
@@ -82,7 +82,7 @@ We have also created additional documentation which now fully describes the proc
 *February 08, 2024*
 
 We have just implemented a more realistic flare law in manual flight. Here is a description from Airbus:
-https://safetyfirst.airbus.com/app/themes/mh_newsdesk/documents/archives/a320-prevention-of-tailstrikes.pdf
+[A320 Prevention of Tailstrikes](https://safetyfirst.airbus.com/app/themes/mh_newsdesk/documents/archives/a320-prevention-of-tailstrikes.pdf)
 
 This new flare law is more in line with the real airplane and allows good control of pitch attitude on landing. It will take some adjustment and practice to get used to it.
 
@@ -100,3 +100,28 @@ development version.
 For a preview of the Autoland in crosswind see the video below:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5T3Pr_EeQfM?si=8tPqk7FkIaSgTMNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+---
+
+## General Information
+
+Stay up to date with information from FlyByWire Simulations by following our social media!
+
+- [Twitter](https://twitter.com/FlyByWireSim)
+- [Facebook](https://www.facebook.com/FlyByWireSimulations/)
+
+If you require support or would like to submit a bug report please see the links below:
+
+- [Support Guide](https://docs.flybywiresim.com/fbw-a32nx/support/)
+- [Discord Support](https://discord.gg/flybywire)
+- [GitHub Issues](https://github.com/flybywiresim/a32nx/issues/new/choose)
+
+When submitting an issue or asking for support to do the following:
+
+- Visit our [Reported Issues Documentation](https://docs.flybywiresim.com/fbw-a32nx/support/reported-issues/) for common problems and workarounds.
+- Ensure that your issue has not already been reported on our GitHub.
+
+Download the latest version of the A32NX:
+
+- [Installer](https://api.flybywiresim.com/installer)
+- [Standalone Versions](https://flybywiresim.com/a32nx/#download)
