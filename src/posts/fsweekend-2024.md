@@ -102,3 +102,5 @@ Download the latest version of the A32NX:
 
 - [Installer](https://api.flybywiresim.com/installer)
 - [Standalone Versions](https://flybywiresim.com/a32nx/#download)
+
+*Pictures in this article are made and provided by our team members Davy and Komp. They retain the exclusive rights*
