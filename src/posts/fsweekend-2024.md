@@ -12,7 +12,7 @@ A few weeks ago, over the weekend of March 16th and March 17th, 2024, the [FS We
 
 FlyByWire Simulations was present at FS Weekend with a large booth and fourteen of our most dedicated developers and team members. We welcomed hundreds of fans to our booth who got to try out flying the A32NX and our new project, the A380X.
 
-## Out Booth and Team
+## Our Booth and Team
 
 For the FlyByWire Simulations team, events like this are the perfect time to meet up with each other in person and build our personal bonds even more, while also showing what an Free and Open Source developer group can achieve when working together on a passion in the flight simulation community.
 
@@ -22,7 +22,7 @@ As a team, we worked on designing a booth with great marketing material and grap
 
 The booth also had two setups where visitors could fly the A32NX and the A380X. A lot of people were very excited about flying the A380X as it was the first time we gave people the opportunity to actually fly it in Microsoft Flight Simulator 2020.
 
-Out booth was a huge success and there was always a buzz of activity with many fans coming up, sharing their experiences and asking questions about the organization, the different aircraft and our progress on different features. We also gave out a lot of stickers to anyone who visited, so hopefully you'll see these pop up in the wild more and more!
+Our booth was a huge success and there was always a buzz of activity with many fans coming up, sharing their experiences and asking questions about the organization, the different aircraft and our progress on different features. We also gave out a lot of stickers to anyone who visited, so hopefully you'll see these pop up in the wild more and more!
 
 [![FlyByWire Simulations Stickers](/img/notam-images/fsweekend2024/stickers.png)](/img/notam-images/fsweekend2024/stickers.png)
 
