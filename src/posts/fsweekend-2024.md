@@ -8,7 +8,7 @@ metaImage: '/img/notam-images/fsweekend2024/header.png'
 metaAlt: 'FlyByWire Simulations at FS Weekend 2024'
 ---
 
-A few weeks ago, over the weekend of March 16th and March 17th, 2024, the [FS Weekend](https://fsweekend.nl/) conference took place in the [Aviodrome Museum](https://www.aviodrome.nl/) in Lelystad in the Netherlands. This conference brings together Flight Simulation enthousiasts and professionals from around the world. The Aviodrome Museum presents the perfect environment for a flight simulation event with its rich presentation of the history of aviation through several exhibits and a large range of aircraft from different time periods.
+A few weeks ago, over the weekend of March 16th and March 17th, 2024, the [FS Weekend](https://fsweekend.nl/) conference took place in the [Aviodrome Museum](https://www.aviodrome.nl/) in Lelystad in the Netherlands. This conference brings together Flight Simulation enthusiasts and professionals from around the world. The Aviodrome Museum presents the perfect environment for a flight simulation event with its rich presentation of the history of aviation through several exhibits and a large range of aircraft from different time periods.
 
 FlyByWire Simulations was present at FS Weekend with a large booth and fourteen of our most dedicated developers and team members. We welcomed hundreds of fans to our booth who got to try out flying the A32NX and our new project, the A380X.
 
