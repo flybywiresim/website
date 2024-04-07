@@ -28,7 +28,7 @@ Out booth was a huge success and there was always a buzz of activity with many f
 
 Several streamers and Flight Simulation media outlets came by and had chats with us, including FSElite with an interview of one of our team members. Be sure to look for more articles and recordings from your favorite channels to catch a glimpse of all the activity at our booth!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VdwAZtcxvCA?si=BheFqldxG2iZvBxu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="860" height="500" src="https://www.youtube.com/embed/VdwAZtcxvCA?si=BheFqldxG2iZvBxu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width:860px; height:500px;"></iframe>
 
 Our team was very delighted to be talking to all of you that came to visit us. It is amazing to feel that appreciation and support from the community!
 
@@ -44,7 +44,7 @@ After that we played our new A380X trailer for the first time, while it was also
 
 In the style of "One more thing", we decided to show off the work that has gone in our cabin in the final 30 seconds of the video as a surprise. Stay tuned for more!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nyqyL8QcAhs?si=HWekuQAZ1QQJJeJf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="860" height="500" src="https://www.youtube.com/embed/nyqyL8QcAhs?si=HWekuQAZ1QQJJeJf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width:860px; height:500px;"></iframe>
 
 ## A32NX Live VATSIM Flight
 
