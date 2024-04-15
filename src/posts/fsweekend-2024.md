@@ -22,7 +22,7 @@ As a team, we worked on designing a booth with great marketing material and grap
 
 The booth also had two setups where visitors could fly the A32NX and the A380X. A lot of people were very excited about flying the A380X as it was the first time we gave people the opportunity to actually fly it in Microsoft Flight Simulator 2020.
 
-Our booth was a huge success and there was always a buzz of activity with many fans coming up, sharing their experiences and asking questions about the organization, the different aircraft and our progress on different features. We also gave out a lot of stickers to anyone who visited, so hopefully you'll see these pop up in the wild more and more!
+Our booth was a huge success and there was always a buzz of activity with many fans coming up. They shared their experiences and asked questions about the organization, the different aircraft and our progress on different features. We also gave out a lot of stickers to anyone who visited, so hopefully you'll see these pop up in the wild more and more!
 
 [![FlyByWire Simulations Stickers](/img/notam-images/fsweekend2024/stickers.png)](/img/notam-images/fsweekend2024/stickers.png)
 
