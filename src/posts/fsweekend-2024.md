@@ -58,7 +58,7 @@ While two team members of FlyByWire Simulations were flying and communicating wi
 
 ## What's Next?
 
-As FS Weekend 2024, our team started packing up and immediately started to think about the next event where we want to show you all the amazing things we do.
+As FS Weekend 2024 came to a close, our team started packing up and immediately started to think about the next event where we want to show you all the amazing things we do.
 
 ### FlightSimExpo 2024 in Las Vegas - June 21-23, 2024
 
