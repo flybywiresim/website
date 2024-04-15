@@ -1,16 +1,16 @@
 ---
-title: 'FlyByWire Simulations at FS Weekend 2024'
+title: 'FlyByWire Simulations at FSWeekend 2024'
 date: '2024-04-07'
 authors:
   - 'straks'
 category: 'INFO'
 metaImage: '/img/notam-images/fsweekend2024/header.png'
-metaAlt: 'FlyByWire Simulations at FS Weekend 2024'
+metaAlt: 'FlyByWire Simulations at FSWeekend 2024'
 ---
 
-A few weeks ago, over the weekend of March 16th and March 17th, 2024, the [FS Weekend](https://fsweekend.nl/) conference took place in the [Aviodrome Museum](https://www.aviodrome.nl/) in Lelystad in the Netherlands. This conference brings together Flight Simulation enthusiasts and professionals from around the world. The Aviodrome Museum presents the perfect environment for a flight simulation event with its rich presentation of the history of aviation through several exhibits and a large range of aircraft from different time periods.
+A few weeks ago, over the weekend of March 16th and March 17th, 2024, the [FSWeekend](https://fsweekend.nl/) conference took place in the [Aviodrome Museum](https://www.aviodrome.nl/) in Lelystad in the Netherlands. This conference brings together Flight Simulation enthusiasts and professionals from around the world. The Aviodrome Museum presents the perfect environment for a flight simulation event with its rich presentation of the history of aviation through several exhibits and a large range of aircraft from different time periods.
 
-FlyByWire Simulations was present at FS Weekend with a large booth and fourteen of our most dedicated developers and team members. We welcomed hundreds of fans to our booth who got to try out flying the A32NX and our new project, the A380X.
+FlyByWire Simulations was present at FSWeekend with a large booth and fourteen of our most dedicated developers and team members. We welcomed hundreds of fans to our booth who got to try out flying the A32NX and our new project, the A380X.
 
 ## Our Booth and Team
 
@@ -34,7 +34,7 @@ Our team was very delighted to be talking to all of you that came to visit us. I
 
 ## A380X Trailer Reveal
 
-This year, a new concept was introduced by the FS Weekend organizers, where the theatre was managed by [FSElite](https://fselite.net/) and where exhibitors could give a presentation or showcase about their products or latest developments. Of course, we jumped on the opportunity to create a new trailer of the A380X to be released and revealed at FS Weekend.
+This year, a new concept was introduced by the FSWeekend organizers, where the theatre was managed by [FSElite](https://fselite.net/) and where exhibitors could give a presentation or showcase about their products or latest developments. Of course, we jumped on the opportunity to create a new trailer of the A380X to be released and revealed at FSWeekend.
 
 [![Packed room in anticipation of our presentation](/img/notam-images/fsweekend2024/packed-room.png)](/img/notam-images/fsweekend2024/packed-room.png)
 
@@ -58,23 +58,25 @@ While two team members of FlyByWire Simulations were flying and communicating wi
 
 ## What's Next?
 
-As FS Weekend 2024 came to a close, our team started packing up and immediately started to think about the next event where we want to show you all the amazing things we do.
+As FSWeekend 2024 came to a close, our team started packing up and immediately started to think about the next event where we want to show you all the amazing things we do.
 
 ### FlightSimExpo 2024 in Las Vegas - June 21-23, 2024
 
-Our first stop will be [FlightSimExpo 2024](https://flightsimexpo.com/) in Las Vegas in the United States of America. This expo will take place between June 21st and 23rd. Our team will be present with a large booth, similar to the setup of FS Weekend, where we will offer people to fly the A32NX and the A380X in Microsoft Flight Simulator 2020.
+Our first stop will be [FlightSimExpo 2024](https://flightsimexpo.com/) in Las Vegas in the United States of America. This expo will take place between June 21st and 23rd. Our team will be present with a large booth, similar to the setup of FSWeekend, where we will offer people to fly the A32NX and the A380X in Microsoft Flight Simulator 2020.
 
 We are looking forward to meeting all of you there!
 
 #### Support Our Booth at FlightSimExpo 2024
 
-As you are aware, we are a group of volunteers, who spend our spare time working on Free and Open Source projects for the global Flight Simulation community. All our team members that join us at these conference do so on their own expense.
+As you are aware, we are a group of volunteers, who spend our spare time working on Free and Open Source projects for the global Flight Simulation community. All our team members who join us at these conference do so on their own expense.
 
-If you want to help us out, please register for FlightSimExpo 2024 using [**our affiliation link**](https://flightsimexpo.com/register?t=flybywire). By using this link, you indirectly help us pay for our booth as every registration lowers our cost to rent the booth. If you've already registered and want to support us, please ping a moderator in our Discord server, and we can help move your registration to our link, so you support us!
+You can help us out by registering for FlightSimExpo 2024 using [**our affiliation link**](https://flightsimexpo.com/register?t=flybywire).
 
-### FS Weekend 2025 - March 15-16, 2025
+By using this link, you help us finance our booth as every registration lowers the cost. If you've already registered and want to support us, please ping a moderator in our Discord server, and we can help move your registration to our link, so you support us!
 
-FS Weekend has also announced their dates for 2025 and FlyByWire Simulations will be present at this event again. We had an amazing time this year with all of you and we are looking forward to repeat that experience for all of us.
+### FSWeekend 2025 - March 15-16, 2025
+
+FSWeekend has also announced their dates for 2025 and FlyByWire Simulations will be present at this event again. We had an amazing time this year with all of you and we are looking forward to repeat that experience for all of us.
 
 Stay tuned for more information as we get closer to the event!
 
