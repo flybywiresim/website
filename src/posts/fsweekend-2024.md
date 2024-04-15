@@ -14,9 +14,9 @@ FlyByWire Simulations was present at FS Weekend with a large booth and fourteen 
 
 ## Our Booth and Team
 
-For the FlyByWire Simulations team, events like this are the perfect time to meet up with each other in person and build our personal bonds even more, while also showing what a Free and Open Source developer group can achieve when working together on a passion in the flight simulation community.
+For the FlyByWire Simulations team, events like this are the perfect time to meet up with each other in person and build our personal bonds even more, while also showing what a Free and Open Source developer group can achieve when working together on a passion in the flight simulation community. This included having several dinners as a group and some even rented a house together!
 
-As a team, we worked on designing a booth with great marketing material and graphics, making sure everything is in our branding style. We brought together skills and people from around the world to set up a booth that looked amazing and inviting to our visitors.
+As a team, we worked on designing a booth with great marketing material and graphics, making sure everything is in our branding style. This included multiple stand-up banners to highlight how people could join and support our community, a large backdrop with the outlines of our two projects and multiple stickers for people to take home. We brought together skills and people from around the world to set up a booth that looked amazing and inviting to our visitors as you can see below.
 
 [![FlyByWire Simulations Booth](/img/notam-images/fsweekend2024/booth.png)](/img/notam-images/fsweekend2024/booth.png)
 
