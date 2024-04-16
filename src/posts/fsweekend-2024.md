@@ -106,3 +106,4 @@ Download the latest version of the A32NX:
 - [Standalone Versions](https://flybywiresim.com/a32nx/#download)
 
 *Pictures in this article are made and provided by our team members Davy and Komp. They retain the exclusive rights*
+*Editors: Valastiri, Holland*
