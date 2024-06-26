@@ -18,7 +18,7 @@ const ButtonGroup = (props: {children: ReactNode}) => (
 
 const Hero = () => (
     <>
-        <Section className="h-screen bg-black/50 bg-gradient-to-bl from-primary/30 to-secondary">
+        <Section className="flex h-screen flex-col justify-center bg-black/50 bg-gradient-to-bl from-primary/30 to-secondary">
             <BackgroundImage />
             <Container className="h-144 justify-center" display="flex flex-col">
                 <div className="max-w-prose">
