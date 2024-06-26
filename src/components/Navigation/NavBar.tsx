@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { CloseOutlined, MenuOutlined } from '@ant-design/icons';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import { twMerge } from 'tailwind-merge';
 import Container from '../Utils/Container';
 
 const NavLink = (props: {href: string, label: string}) => (
@@ -14,7 +15,7 @@ const NavLink = (props: {href: string, label: string}) => (
 );
 
 const NavLinkGroup = () => (
-    <ul className="flex flex-col gap-y-4 md:flex-row md:gap-x-8">
+    <ul className="max-md:items-end max-md:mt-5 flex flex-col gap-y-4 md:flex-row md:gap-x-8">
         <NavLink href="/" label="Home" />
         <NavLink href="/projects" label="Projects" />
         <NavLink href="/notams" label="NOTAMs" />
@@ -53,7 +54,7 @@ const NavBar = () => {
 
     return (
         <nav
-            className={`fixed w-full py-4 text-white transition ${bgClass}`}
+            className={twMerge('fixed w-full py-4 text-white transition', bgClass)}
             style={{ zIndex: '9999' }}
         >
             <Container className="flex items-center justify-between">
@@ -73,11 +74,11 @@ const NavBar = () => {
 
             </Container>
 
-            <Container className={`text-center ${isOpen ? 'md:hidden' : 'hidden'}`}>
+            <Container className={twMerge('text-center', isOpen ? 'md:hidden' : 'hidden')}>
                 <NavLinkGroup />
             </Container>
 
-            <div className={`absolute h-screen w-full ${!isOpen && 'hidden'}`} onClick={handleClick} />
+            <div className={twMerge('absolute h-screen w-full', !isOpen && 'hidden')} onClick={handleClick} />
         </nav>
     );
 };
