@@ -36,7 +36,7 @@ const Footer = () => (
                             </a>
                         </div>
 
-                        <div className="grid grid-cols-3 items-start gap-x-8 gap-y-5">
+                        <div className="grid grid-cols-3 items-start gap-x-32 gap-y-5">
                             <NavWrapper label="Projects">
                                 <NavItem label="Installer" href="/" />
                                 <NavItem label="A32NX" href="/" />

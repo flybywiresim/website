@@ -30,8 +30,8 @@ const Insights = () => {
 
     return (
         <Section theme="light" className="relative flex flex-col py-0 lg:flex-row-reverse">
-            <Container display="flex flex-col items-center justify-center  py-20">
-                <Container className="grid gap-y-4 px-4 text-center lg:text-left xl:px-20">
+            <div className="flex flex-col items-center justify-center py-20">
+                <div className="grid gap-y-4 px-4 text-center lg:text-left lg:px-16 2xl:px-28">
                     <div className="flex flex-col items-center gap-4 lg:flex-row">
                         <Image src="/svg/tail/tail.svg" width={40} height={40} />
                         <h2>Community Insights</h2>
@@ -42,7 +42,7 @@ const Insights = () => {
                             Discover the extensive community behind every FlyByWire Simulations aircraft - a vibrant and active online group that prioritises collaborative work and openness.
                         </p>
 
-                        <ul className="grid grid-cols-2 gap-5 py-2 lg:grid-cols-4">
+                        <ul className="grid grid-cols-2 gap-20 py-2 lg:grid-cols-4">
                             <Statistic value={liveFlights} label="Live Flights" />
                             <Statistic value={commitCount} label="Commits" />
                             <Statistic value={contributorCount} label="Contributors" />
@@ -53,10 +53,10 @@ const Insights = () => {
                         <Discord />
                     </div>
 
-                </Container>
-            </Container>
+                </div>
+            </div>
 
-            <div className="relative w-full px-8 pb-4 lg:w-2/3 lg:p-0">
+            <div className="relative w-[75%] px-8 pb-4 lg:mr-auto lg:p-0">
                 <LeafletMap />
             </div>
         </Section>
