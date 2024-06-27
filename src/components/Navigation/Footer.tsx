@@ -15,7 +15,7 @@ const NavWrapper = (props: { label: string, children: ReactNode }) => (
 const NavItem = (props: {label: string, href: string}) => (
     <li>
         <a href={props.href}>
-            <p>{props.label}</p>
+            <p className="hover:font-medium hover:underline min-w-24">{props.label}</p>
         </a>
     </li>
 );
