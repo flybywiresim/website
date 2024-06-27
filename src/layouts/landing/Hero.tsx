@@ -22,7 +22,7 @@ const Hero = () => (
         <Container className="h-144 justify-center" display="flex flex-col">
             <div className="max-w-prose">
                 <h4 className="font-normal leading-4 text-primary">FlyByWire Simulations</h4>
-                <h1>A32NX</h1>
+                <Image src="/pages/index/A32NX-Color-Dark.svg" width={310} height={131} />
                 <p className="max-w-xl">
                     The leading free and open-source community aiming for high fidelity aircraft in Microsoft Flight Simulator,
                     fly with our in-depth systems or put your skills to the test by contributing to the project.
