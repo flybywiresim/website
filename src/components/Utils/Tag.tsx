@@ -1,5 +1,9 @@
+import { twMerge } from 'tailwind-merge';
+
 export interface TagProps {
-    category: 'Update' | 'News' | 'Aircraft' | 'Software' | 'Latest' ;
+    category: 'Update' | 'News' | 'Aircraft' | 'Software' | 'Latest',
+    className?: string
+    ;
 }
 
 const handleCategory = (category: string) => {
@@ -13,8 +17,8 @@ const handleCategory = (category: string) => {
     }
 };
 
-const Tag = ({ category }: TagProps) => (
-    <a className={`flex h-8 max-w-min items-center justify-center rounded-lg border py-0.5 px-4 ${handleCategory(category)}`}>
+const Tag = ({ category, className }: TagProps) => (
+    <a className={twMerge(`flex h-8 max-w-min items-center justify-center rounded-lg border py-0.5 px-4 ${handleCategory(category)}`, className)}>
         {category.charAt(0).toUpperCase() + category.slice(1).toLowerCase()}
     </a>
 );

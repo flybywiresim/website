@@ -12,7 +12,8 @@ type CardProps = {
     metaImage?: string,
     metaAlt?: string,
     href: string,
-    downloadURL?: string
+    downloadURL?: string,
+    direction: 'horizontal' | 'vertical',
 }
 
 const Card = ({
@@ -23,15 +24,14 @@ const Card = ({
     category,
     href,
     downloadURL,
+    direction,
 }: CardProps) => (
-    <div className="grid bg-secondary-accent-dark xl:grid-cols-3">
-        {metaImage && <Image src={metaImage} alt={metaAlt} width={800} height={300} objectFit="cover" /> }
-        <div className="grid xl:col-span-2">
-            <Container className="grid gap-2 py-4">
-                <div>
-                    <Tag category={category} />
-                </div>
-                <h2>{title}</h2>
+    <div className="grid bg-secondary-accent-dark rounded-md overflow-hidden">
+        {metaImage && <Image src={metaImage} alt={metaAlt} width={800} height={350} objectFit="cover" /> }
+        <div className="grid relative">
+            <Container className="grid gap-2 px-12 py-8">
+                <Tag className={`${direction === 'horizontal' && 'absolute top-8 right-8'}`} category={category} />
+                <h3 className={`${direction === 'vertical' && 'text-6xl'}`}>{title}</h3>
                 <p>
                     {description}
                 </p>
