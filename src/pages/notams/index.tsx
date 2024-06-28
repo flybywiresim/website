@@ -31,6 +31,7 @@ const index = ({ listings }: BlogProps) => (
                         metaImage,
                         metaAlt,
                         readingStats,
+                        authors,
                     }, index) => (
                         <Link key={id} href={`/notams/${id}`}>
                             <a className={index === 0 ? 'xl:col-span-3' : ''}>
@@ -43,6 +44,7 @@ const index = ({ listings }: BlogProps) => (
                                     metaImage={metaImage}
                                     metaAlt={metaAlt}
                                     readingStats={readingStats.text}
+                                    authors={authors}
                                 />
                             </a>
                         </Link>

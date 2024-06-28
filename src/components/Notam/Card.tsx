@@ -1,26 +1,42 @@
 import Image from 'next/image';
-import Container from '../Utils/Container';
 import Tag from '../Utils/Tag';
 import { PostListing } from '../../lib/notams/posts';
 
 const Card = (props: PostListing) => (
-    <div className="grid cursor-pointer bg-secondary-accent-dark">
-        <span className="relative h-40 w-full">
+    <div className={`
+    ${props.index === 0
+        ? 'grid grid-rows-2 xl:grid-rows-none xl:grid-cols-2 text-left min-h-[441px]'
+        : 'grid-rows-2 text-left min-h-[441px]'
+    } 
+        grid bg-secondary-accent-dark rounded-md overflow-hidden
+    `}
+    >
+        <span className="relative">
             <Image src={props.metaImage} alt={props.metaAlt} layout="fill" objectFit="cover" />
         </span>
-        <Container className="grid py-4">
-            <span className="grid justify-between gap-4">
-                <div className="grid grid-cols-2">
-                    {props.index === 0 && <Tag category="Latest" />}
-                    <Tag category={props.category} />
-                </div>
+        <div className="">
+            <div className="px-8 py-6 flex justify-between">
                 <p className="text-gray-400">
+                    Posted:
+                    {' '}
                     {new Date(props.date).toLocaleDateString('en-US', { dateStyle: 'long' })}
                 </p>
-            </span>
-            <h3>{props.title}</h3>
-            <p className="max-w-prose py-4">{props.description}</p>
-        </Container>
+                <span className="grid">
+                    <div className="flex gap-x-3">
+                        {props.index === 0 && <Tag category="Latest" />}
+                        <Tag category={props.category} />
+                    </div>
+                </span>
+            </div>
+            <div className="px-8 flex-col items-center">
+                <h3 className={props.index === 0 ? 'xl:text-7xl' : 'text-2xl'}>{props.title}</h3>
+                <small>
+                    By
+                    {' '}
+                    {props.authors?.join(', ')}
+                </small>
+            </div>
+        </div>
     </div>
 );
 

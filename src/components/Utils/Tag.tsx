@@ -9,7 +9,7 @@ export interface TagProps {
 const handleCategory = (category: string) => {
     switch (category) {
     case 'UPDATE' || 'Update':
-        return 'border-primary bg-primary/20 text-primary';
+        return 'border-yellow-500 bg-yellow-500/20 text-yellow-500';
     case 'Latest' || 'LATEST':
         return 'border-green-500 bg-green-500/20 text-green-500';
     default:
