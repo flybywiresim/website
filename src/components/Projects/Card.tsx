@@ -26,29 +26,31 @@ const Card = ({
     downloadURL,
     direction,
 }: CardProps) => (
-    <div className="grid bg-secondary-accent-dark rounded-md overflow-hidden">
-        {metaImage && <Image src={metaImage} alt={metaAlt} width={800} height={350} objectFit="cover" /> }
-        <div className="grid relative">
-            <Container className="grid gap-2 px-12 py-8">
-                <Tag className={`${direction === 'horizontal' && 'absolute top-8 right-8'}`} category={category} />
-                <h3 className={`${direction === 'vertical' && 'text-6xl'}`}>{title}</h3>
-                <p>
-                    {description}
-                </p>
-                <span className="flex flex-wrap gap-2 py-4">
+    <div className="border-2 border-transparent hover:border-primary rounded-md overflow-hidden">
+        <div className="grid bg-secondary-accent-dark">
+            {metaImage && <Image src={metaImage} alt={metaAlt} width={800} height={350} objectFit="cover" /> }
+            <div className="grid relative">
+                <Container className="grid gap-2 px-12 py-8">
+                    <Tag className={`${direction === 'horizontal' && 'absolute top-8 right-8'}`} category={category} />
+                    <h3 className={`${direction === 'vertical' && 'text-6xl'}`}>{title}</h3>
+                    <p>
+                        {description}
+                    </p>
+                    <span className="flex flex-wrap gap-2 py-4">
                     <Link href={href}>
                         <Button label="Learn More" theme="secondary" />
                     </Link>
-                    {downloadURL
-                        && (
-                            <>
-                                <a href={downloadURL}>
-                                    <Button label={<DownloadOutlined />} theme="primary" className="flex max-w-min items-center justify-center" />
-                                </a>
-                            </>
-                        )}
+                        {downloadURL
+                            && (
+                                <>
+                                    <a href={downloadURL}>
+                                        <Button label={<DownloadOutlined />} theme="primary" className="flex max-w-min items-center justify-center" />
+                                    </a>
+                                </>
+                            )}
                 </span>
-            </Container>
+                </Container>
+            </div>
         </div>
     </div>
 );
