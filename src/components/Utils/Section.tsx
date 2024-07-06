@@ -13,7 +13,7 @@ const Section = ({ id, theme, className, children }: SectionProps) => {
         case 'light':
             return 'bg-light text-dark';
         case 'dark':
-            return 'bg-dark text-light bg-gradient-to-r from-transparent to-secondary-accent-light/50';
+            return 'bg-secondary text-light';
         default:
             return 'text-light';
         }
