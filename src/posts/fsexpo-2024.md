@@ -5,7 +5,7 @@ authors:
   - 'straks'
 category: 'INFO'
 metaImage: '/img/notam-images/fsexpo2024/busy-booth.jpeg'
-metaAlt: 'What Happens in Vegas, Flies Out of Vegas: FlyByWire Simulations at FSExpo 2024!'
+metaAlt: 'What Happens in Vegas, Flies Out of Vegas - FSExpo 2024!'
 ---
 
 On the weekend of June 22nd and 23d, 2024, the FlyByWire team descended upon Las Vegas to show our latest development and progress to the Flight Simulation enthusiasts that visited FlightSimExpo 2024. FlightSimExpo has been the largest Flight Simulation relates expo in the Americas for years and attracts all the big names in this space, including Microsoft.
