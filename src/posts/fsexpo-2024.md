@@ -8,15 +8,15 @@ metaImage: '/img/notam-images/fsexpo2024/busy-booth.jpeg'
 metaAlt: 'What Happens in Vegas, Flies Out of Vegas - FSExpo 2024!'
 ---
 
-On the weekend of June 22nd and 23d, 2024, the FlyByWire team descended upon Las Vegas to show our latest development and progress to the Flight Simulation enthusiasts that visited FlightSimExpo 2024. FlightSimExpo has been the largest Flight Simulation relates expo in the Americas for years and attracts all the big names in this space, including Microsoft.
+On the weekend of June 22nd and 23rd, 2024, the FlyByWire team descended upon Las Vegas to show our latest development and progress to the Flight Simulation enthusiasts who visited FlightSimExpo 2024. FlightSimExpo has been the largest Flight Simulation-related expo in the Americas for years and attracts all the big names in this space, including Microsoft.
 
-This year we were able to get a double sized booth close to the center of the exhibition hall where people could fly both the A32NX and the A380X. We also had a 45 minute slot on the FSElite stage to showcase the latest development of our A380X project. Our team of 8 very dedicated volunteers had a great time managing these activities and talking to all our visitors.
+This year we were able to get a double-sized booth close to the center of the exhibition hall where people could fly both the A32NX and the A380X. We also had a 45-minute slot on the FSElite stage to showcase the latest development of our A380X project. Our team of 8 very dedicated volunteers had a great time managing these activities and talking to all our visitors.
 
 ## Hands-On With Our Aircraft and Chatting with the Team
 
-With a large team spread around the world, conferences like this are the perfect opportunity for our team to meet each other and to meet everyone who is interested and supporting our community. For the team, people from both Europe and North America joined this event and we had a great time hanging out in the Entertainment Capital of the world, with all its lights, shows, events, *heat* and great restaurants.
+With a large team spread across the world, conferences like this are the perfect opportunity for our team to meet each other and to meet everyone interested and supporting our community. For the team, people from both Europe and North America joined this event and we had a great time hanging out in the Entertainment Capital of the world, with all its lights, shows, events, *heat* and great restaurants.
 
-For our booth, we brought over several ideas and the actual marketing material from our [FSWeekend 2024 presence](/notams/fsweekend-2024/). We did improve the use of our backdrop this time to make it easier to manage and set up, as well as provide a cleaner design. The extra space we had at FSExpo this year allowed us to set up two setups, just like at FSWeekend. This gave all our visitors the opportunity to fly both the A32NX and the A380X projects in Microsoft Flight Simulator 2022.
+For our booth, we brought over several ideas and the actual marketing material from our [FSWeekend 2024 presence](/notams/fsweekend-2024/). We did improve the use of our backdrop this time to make it easier to manage and set up, as well as provide a cleaner design. The extra space we had at FSExpo this year allowed us to create two setups, just like at FSWeekend. This allowed all our visitors to fly both the A32NX and the A380X projects in Microsoft Flight Simulator 2022.
 
 [![FlyByWire Simulations Booth](/img/notam-images/fsexpo2024/empty-booth.jpeg)](/img/notam-images/fsexpo2024/empty-booth.jpeg)
 
