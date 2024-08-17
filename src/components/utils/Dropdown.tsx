@@ -28,7 +28,7 @@ export const Dropdown = (props: DropdownProps) => {
                 </span>
                 {isShown && (
                     <div className="relative">
-                        <ul className="right-0 mt-4 flex w-56 flex-col gap-y-3 rounded-md py-1 ring-black/10 md:absolute md:bg-white md:shadow-lg md:ring-1 bg-gray-900">
+                        <ul className="right-0 mt-4 flex w-56 flex-col gap-y-3 rounded-md py-1 ring-black/10 md:absolute md:shadow-lg md:ring-1 bg-gray-900">
                             {props.children}
                         </ul>
                     </div>
