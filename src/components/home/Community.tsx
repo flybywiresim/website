@@ -52,7 +52,7 @@ export const Community = () => {
         <section id="community" className="flex flex-col items-center justify-between bg-gray-800 text-blue-dark-contrast lg:flex-row">
             <Container className="flex max-w-6xl flex-col py-12 lg:px-24">
                 <span className="mb-3 h-2 w-24 rounded-full bg-teal-light-contrast" />
-                <h1 class="text-slate-50">Community Insights</h1>
+                <h1 className="text-slate-50">Community Insights</h1>
                 <p className="max-w-prose text-slate-300">
                     Discover the extensive community behind every FlyByWire Simulations aircraft - a vibrant and active online group that prioritises collaborative work and openness.
                 </p>
