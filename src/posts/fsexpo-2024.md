@@ -1,6 +1,6 @@
 ---
 title: 'What Happens in Vegas, Flies Out of Vegas - FSExpo 2024!'
-date: '2024-07-08'
+date: '2024-08-18'
 authors:
   - 'straks'
 category: 'INFO'
