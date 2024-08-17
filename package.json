@@ -6,15 +6,19 @@
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@flybywiresim/api-client": "^0.16.2",
+    "@vcarl/remark-headings": "^0.1.0",
     "gray-matter": "^4.0.3",
     "leaflet": "^1.9.3",
-    "next": "^12.3.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "next": "^13.5.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-leaflet": "^4.2.1",
     "reading-time": "^1.5.0",
-    "remark": "^14.0.2",
-    "remark-html": "^15.0.1",
+    "rehype": "^13.0.1",
+    "rehype-slug-custom-id": "^2.0.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "remark-parse": "^11.0.0",
     "tailwind-merge": "^1.14.0",
     "typescript": "^4.8.3"
   },
@@ -23,8 +27,8 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
-    "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
-    "lint:fix": "eslint '**/*.{js,jsx,ts,tsx}' --fix"
+    "lint": "eslint **/*.{js,jsx,ts,tsx}",
+    "lint:fix": "npm run lint -- --fix"
   },
   "browserslist": {
     "production": [
@@ -52,9 +56,10 @@
     "@typescript-eslint/parser": "^4.33.0",
     "autoprefixer": "^10.4.11",
     "eslint": "^7.32.0",
-    "eslint-config-next": "^12.3.1",
+    "eslint-config-next": "^13.5.6",
     "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-tailwindcss": "^3.6.2",
+    "github-slugger": "^2.0.0",
     "node-html-to-image": "^3.2.4",
     "postcss": "^8.4.38",
     "sass": "^1.54.9",

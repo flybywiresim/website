@@ -33,7 +33,7 @@ const index = ({ listings }: BlogProps) => (
                         readingStats,
                         authors,
                     }, index) => (
-                        <Link key={id} href={`/notams/${id}`}>
+                        <Link legacyBehavior key={id} href={`/notams/${id}`}>
                             <a className={index === 0 ? 'xl:col-span-3' : ''}>
                                 <Card
                                     index={index}

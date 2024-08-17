@@ -1,6 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import Head from 'next/head';
+import { twMerge } from 'tailwind-merge';
 import Section from '../../components/Utils/Section';
 import { getAllPostIds, getPostContent, PostContent } from '../../lib/notams/posts';
 import Container from '../../components/Utils/Container';
@@ -8,7 +9,19 @@ import Tag from '../../components/Utils/Tag';
 
 export type PostProps = { content: PostContent }
 
-const Post = ({ content: { category, title, metaImage, metaAlt, readingStats, authors, date, contentHtml } }: PostProps) => (
+const Post = ({
+    content: {
+        category,
+        title,
+        metaImage,
+        metaAlt,
+        readingStats,
+        authors,
+        date,
+        headings,
+        contentHtml,
+    },
+}: PostProps) => (
     <>
         <Head>
             <title>
@@ -37,30 +50,63 @@ const Post = ({ content: { category, title, metaImage, metaAlt, readingStats, au
                 content={metaImage}
             />
         </Head>
+
         <Section theme="dark" className="relative">
             <div className="grid">
-                <Image src={metaImage} alt={metaAlt} layout="fill" objectFit="cover" className="bg-secondary opacity-20 blur-sm" />
+                <Image
+                    src={metaImage}
+                    alt={metaAlt}
+                    layout="fill"
+                    objectFit="cover"
+                    className="bg-secondary opacity-20 blur-sm"
+                />
                 <Container className="grid py-8">
                     <div className="relative top-1/4 my-4">
                         <span className="flex items-center gap-x-4">
                             <Tag category={category} />
-                            <p>
+                            <p className="font-semibold">
                                 {new Date(date).toLocaleDateString('en-US', { dateStyle: 'full' })}
+                            </p>
+                            <p>
+                                by
+                                {' '}
+                                {authors?.join(', ')}
                             </p>
                         </span>
                         <h2>{title}</h2>
-                        <small>
-                            by
-                            {' '}
-                            {authors?.join(', ')}
-                        </small>
                         <p className="text-white/50">{readingStats.text}</p>
                     </div>
                 </Container>
             </div>
         </Section>
+
         <Section theme="light">
-            <Container className="grid justify-center">
+            <Container className="grid justify-center grid-cols-[1fr_auto_1fr] gap-x-10">
+                <div>
+                    <aside className="hidden 2xl:flex sticky top-20 flex-col gap-y-2.5">
+                        {headings.map((it, index) => {
+                            const bold = it.depth === 2;
+
+                            return (
+                                <a
+                                    key={index}
+                                    className={twMerge('hover:underline hover:font-semibold target:text-red-500', bold && 'font-semibold hover:text-cyan-medium')}
+                                    href={`#${it.id}`}
+                                    style={{ paddingLeft: `${it.depth * 16}px` }}
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        const y = document.getElementById(it.id)!.getBoundingClientRect().top + window.scrollY - 64;
+
+                                        window.scrollTo({ top: y, behavior: 'smooth' });
+                                        window.history.replaceState(null, '', `#${it.id}`);
+                                    }}
+                                >
+                                    {it.value}
+                                </a>
+                            );
+                        })}
+                    </aside>
+                </div>
                 <article
                     className="prose-xl prose prose-slate"
                     /* eslint-disable-next-line react/no-danger */

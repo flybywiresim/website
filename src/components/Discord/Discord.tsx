@@ -1,5 +1,6 @@
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import Button from '../Button/Button';
+import { links } from '../../constants/links';
 
 const Discord = () => (
     <div className="grid gap-y-2">
@@ -10,7 +11,7 @@ const Discord = () => (
         <p>Join us to chat with other members of the community, get started with contributing, or ask us a question!</p>
 
         <a
-            href="https://discord.gg/flybywire"
+            href={links.discord}
             target="_blank"
             rel="noreferrer"
         >

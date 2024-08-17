@@ -33,7 +33,7 @@
     @apply font-body font-light text-lg tracking-[-2%] leading-relaxed;
   }
   a {
-    @apply font-display
+    @apply font-body;
   }
 }
 @tailwind components;

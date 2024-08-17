@@ -1,11 +1,16 @@
 import path from 'path';
 import fs from 'fs';
 import matter from 'gray-matter';
-import { remark } from 'remark';
 import html from 'remark-html';
+import remarkParse from 'remark-parse';
 import readingTime from 'reading-time';
+import remarkHeadings, { Heading } from '@vcarl/remark-headings';
+import rehypeSlug from 'rehype-slug-custom-id';
+import { remark } from 'remark';
+import { rehype } from 'rehype';
+import { slug } from 'github-slugger';
 
-export type PostListing = {
+export interface PostListing {
     index: number;
     id?: string,
     readingStats: any,
@@ -13,12 +18,12 @@ export type PostListing = {
     title: string,
     description: string,
     authors?: string[],
-    category: any,
+    category: string,
     metaImage: string,
     metaAlt: string,
 }
 
-export type PostContent = PostListing & { contentHtml: string }
+export type PostContent = PostListing & { contentHtml: string, headings: (Heading & { id: string })[] }
 
 const postsDirectory = path.join(process.cwd(), 'src/posts');
 
@@ -38,9 +43,17 @@ export const getPostContent = async (id: string): Promise<PostContent> => {
 
     const metadata = { ...matterResult.data };
 
-    const processedContent = await remark().use(html, { sanitize: false }).process(matterResult.content);
+    const processedContent = await remark()
+        .use(remarkParse)
+        .use(remarkHeadings)
+        .use(html, { sanitize: false })
+        .process(matterResult.content);
 
-    const contentHtml = processedContent.toString();
+    const processedHtml = await rehype()
+        .use(rehypeSlug)
+        .process(processedContent.toString());
+
+    const contentHtml = processedHtml.toString();
 
     const readingStats = readingTime(fileContents);
 
@@ -48,6 +61,7 @@ export const getPostContent = async (id: string): Promise<PostContent> => {
         id,
         contentHtml,
         readingStats,
+        headings: (processedContent.data.headings as Heading[]).map((it) => ({ ...it, id: slug(it.value) })),
         ...metadata,
     } as PostContent;
 };

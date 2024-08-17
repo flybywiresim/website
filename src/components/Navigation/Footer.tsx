@@ -1,7 +1,8 @@
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import { ReactNode } from 'react';
 import Container from '../Utils/Container';
 import Section from '../Utils/Section';
+import { links } from '../../constants/links';
 
 const NavWrapper = (props: { label: string, children: ReactNode }) => (
     <div className="grid">
@@ -39,24 +40,24 @@ const Footer = () => (
                         <div className="grid grid-cols-3 items-start gap-x-32 gap-y-5">
                             <NavWrapper label="Projects">
                                 <NavItem label="Installer" href="/" />
-                                <NavItem label="A32NX" href="/" />
-                                <NavItem label="A380X" href="/" />
+                                <NavItem label="A32NX" href="/projects/downloadLinks" />
+                                <NavItem label="A380X" href="/projects/a380x" />
                                 <NavItem label="EFB" href="/" />
                             </NavWrapper>
 
                             <NavWrapper label="Menu">
-                                <NavItem label="NOTAMs" href="/" />
-                                <NavItem label="Projects" href="/" />
-                                <NavItem label="Docs" href="/" />
-                                <NavItem label="Map" href="/" />
+                                <NavItem label="NOTAMs" href="/notams" />
+                                <NavItem label="Projects" href="/projects" />
+                                <NavItem label="Docs" href={links.docs} />
+                                <NavItem label="Map" href="/map" />
                             </NavWrapper>
 
                             <NavWrapper label="Socials">
-                                <NavItem label="Discord" href="/" />
-                                <NavItem label="Twitter" href="/" />
-                                <NavItem label="Facebook" href="/" />
-                                <NavItem label="YouTube" href="/" />
-                                <NavItem label="Twitch" href="/" />
+                                <NavItem label="Discord" href={links.discord} />
+                                <NavItem label="Twitter" href={links.twitter} />
+                                <NavItem label="Facebook" href={links.facebook} />
+                                <NavItem label="YouTube" href={links.youtube} />
+                                <NavItem label="Twitch" href={links.twitch} />
                             </NavWrapper>
                         </div>
                     </div>

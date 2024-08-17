@@ -36,6 +36,7 @@ const index: NextPage = () => (
                 content="/A32NX_Front.jpeg"
             />
         </Head>
+
         <Hero />
         <Installer />
         <Insights />

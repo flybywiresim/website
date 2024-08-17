@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 export enum ButtonType {
   Neutral,
@@ -48,7 +49,7 @@ const Button: FC<ButtonProps> = ({
     }
 
     return (
-        <button disabled={disabled} className={`button ${buttonClass} ${className}`} onClick={onClick}>
+        <button type="button" disabled={disabled} className={twMerge('button', buttonClass, disabled && 'pointer-events-none', className)} onClick={onClick}>
             {children || label}
         </button>
     );

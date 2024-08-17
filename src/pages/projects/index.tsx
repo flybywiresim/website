@@ -19,16 +19,17 @@ const index: NextPage = () => (
         <Section theme="dark">
             <Container>
                 <h2>Our Projects</h2>
-                <div className="my-4 grid gap-4 md:grid-cols-2">
+                <div className="my-4 grid gap-4 lg:grid-cols-2">
                     <Card
                         metaImage="/img/rear_a32nx.jpg"
                         metaAlt="A32NX"
                         title="A32NX"
                         category="Aircraft"
                         description="The A32NX is a high fidelity and free solution for Microsoft Flight Simulator, built and maintained by the open source community."
-                        downloadURL={A32NX_DOWNLOAD_URL}
+                        downloadURL="/downloads"
                         href="/projects/a32nx"
                         direction="vertical"
+                        disabled={false}
                     />
                     <Card
                         metaImage="/pages/projects/a380x/a380Project.png"
@@ -36,16 +37,19 @@ const index: NextPage = () => (
                         title="A380X"
                         category="Aircraft"
                         description="The A380X is the upcoming first high fidelity and free simulation of the A380 for Microsoft Flight Simulator."
+                        downloadURL="/downloads"
                         href="/projects/a380x"
                         direction="vertical"
+                        disabled
                     />
                     <Card
                         title="Installer"
                         category="Software"
                         description="Our custom-built, open-source installer is where we keep our projects for you to easily install."
-                        downloadURL={A32NX_DOWNLOAD_URL}
+                        downloadURL="/downloads"
                         href="/projects/installer"
                         direction="horizontal"
+                        disabled={false}
                     />
                     <Card
                         title="EFB"

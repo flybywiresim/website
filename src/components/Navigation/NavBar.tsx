@@ -1,13 +1,14 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import { CloseOutlined, MenuOutlined } from '@ant-design/icons';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { twMerge } from 'tailwind-merge';
 import Container from '../Utils/Container';
+import { links } from '../../constants/links';
 
 const NavLink = (props: {href: string, label: string}) => (
-    <Link href={props.href} passHref>
+    <Link legacyBehavior href={props.href} passHref>
         <a className="cursor-pointer text-xl transition hover:text-primary">
             {props.label}
         </a>
@@ -20,7 +21,7 @@ const NavLinkGroup = () => (
         <NavLink href="/projects" label="Projects" />
         <NavLink href="/notams" label="NOTAMs" />
         <NavLink href="/map" label="Map" />
-        <NavLink href="/" label="Documentation" />
+        <NavLink href={links.docs} label="Documentation" />
     </ul>
 );
 
@@ -58,8 +59,8 @@ const NavBar = () => {
             style={{ zIndex: '9999' }}
         >
             <Container className="flex items-center justify-between">
-                <Link href="/">
-                    <Image className="cursor-pointer" src="/svg/tail/tail.svg" width={30} height={30} />
+                <Link legacyBehavior href="/">
+                    <Image className="cursor-pointer" src="/svg/tail/tail.svg" alt="FlyByWire Simulations" width={30} height={30} />
                 </Link>
 
                 <Container className="hidden md:block">
