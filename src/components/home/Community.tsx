@@ -17,7 +17,7 @@ const CONTRIBUTOR_COUNT_ENDPOINT = 'https://api.github.com/repos/flybywiresim/a3
 
 const Statistic = (props: {statCount: string, statName: string}) => (
     <div id={props.statName}>
-        <h1 className="text-5xl font-bold text-blue-dark-contrast">{props.statCount}</h1>
+        <h1 className="text-5xl font-bold text-slate-50">{props.statCount}</h1>
         <p>{props.statName}</p>
     </div>
 );
@@ -57,7 +57,7 @@ export const Community = () => {
                     Discover the extensive community behind every FlyByWire Simulations aircraft - a vibrant and active online group that prioritises collaborative work and openness.
                 </p>
 
-                <div className="my-6 grid grid-cols-2 gap-y-8 sm:grid-cols-4 text-slate-50">
+                <div className="my-6 grid grid-cols-2 gap-y-8 sm:grid-cols-4 text-slate-300">
                     <Statistic statCount={liveFlights} statName="Live Flights" />
                     <Statistic statCount={commitCount} statName="Commits" />
                     <Statistic statCount={contributorCount} statName="Contributors" />
