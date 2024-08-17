@@ -8,7 +8,7 @@ type DropdownProps = {
 }
 
 export const DropdownItem = (props: { children: ReactNode }) => (
-    <li className="px-4 py-1 text-slate-50 hover:text-teal md:text-slate-50 md:hover:bg-slate-200 md:hover:text-slate-400">
+    <li className="px-4 py-1 text-slate-50 hover:text-teal md:text-slate-50 md:hover:bg-slate-200 md:hover:text-slate-400 bg-gray-900">
         {props.children}
     </li>
 );
@@ -16,7 +16,7 @@ export const DropdownItem = (props: { children: ReactNode }) => (
 export const Dropdown = (props: DropdownProps) => {
     const [isShown, setIsShown] = useState(false);
     return (
-        <li className={`cursor-pointer list-none bg-gray-900 ${props.className}`} onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
+        <li className={`cursor-pointer list-none ${props.className}`} onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
             <span
                 draggable="false"
                 onClick={() => setIsShown(!isShown)}
