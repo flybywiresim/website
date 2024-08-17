@@ -16,7 +16,7 @@ export const DropdownItem = (props: { children: ReactNode }) => (
 export const Dropdown = (props: DropdownProps) => {
     const [isShown, setIsShown] = useState(false);
     return (
-        <li className={`cursor-pointer list-none bg-gray-400 ${props.className}`} onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
+        <li className={`cursor-pointer list-none bg-gray-900 ${props.className}`} onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
             <span
                 draggable="false"
                 onClick={() => setIsShown(!isShown)}
