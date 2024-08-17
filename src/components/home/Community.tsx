@@ -49,15 +49,15 @@ export const Community = () => {
         return () => clearInterval(interval);
     }, []);
     return (
-        <section id="community" className="flex flex-col items-center justify-between bg-gray-50 text-blue-dark-contrast lg:flex-row">
+        <section id="community" className="flex flex-col items-center justify-between bg-gray-800 text-blue-dark-contrast lg:flex-row">
             <Container className="flex max-w-6xl flex-col py-12 lg:px-24">
                 <span className="mb-3 h-2 w-24 rounded-full bg-teal-light-contrast" />
-                <h1>Community Insights</h1>
-                <p className="max-w-prose text-gray-800">
+                <h1 class="text-slate-50">Community Insights</h1>
+                <p className="max-w-prose text-slate-300">
                     Discover the extensive community behind every FlyByWire Simulations aircraft - a vibrant and active online group that prioritises collaborative work and openness.
                 </p>
 
-                <div className="my-6 grid grid-cols-2 gap-y-8 sm:grid-cols-4">
+                <div className="my-6 grid grid-cols-2 gap-y-8 sm:grid-cols-4 text-slate-50">
                     <Statistic statCount={liveFlights} statName="Live Flights" />
                     <Statistic statCount={commitCount} statName="Commits" />
                     <Statistic statCount={contributorCount} statName="Contributors" />
@@ -65,7 +65,7 @@ export const Community = () => {
                 </div>
 
                 <div className="my-8">
-                    <Card bgColour="gray-100" className="border-discord shadow-lg">
+                    <Card bgColour="blue-dark-contrast" className="border-discord shadow-lg text-white">
                         <CardTitle>
                             <span className="mr-2 flex items-center justify-center rounded-xl bg-discord p-2">
                                 <Image src="/svg/discordLogo.svg" width={23} height={23} />
@@ -90,7 +90,7 @@ export const Community = () => {
                 </div>
             </Container>
             <div className="relative z-10 h-144 w-full lg:h-200 lg:w-1/2">
-                <MapDisplay refreshInterval={mapRefreshInterval} disableMenu disableWeather={false} disableScroll forceTileset="carto-light" />
+                <MapDisplay refreshInterval={mapRefreshInterval} disableMenu disableWeather={false} disableScroll forceTileset="carto-dark" />
             </div>
         </section>
     );
