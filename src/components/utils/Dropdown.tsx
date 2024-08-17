@@ -8,7 +8,7 @@ type DropdownProps = {
 }
 
 export const DropdownItem = (props: { children: ReactNode }) => (
-    <li className="px-4 py-1 text-slate-50 hover:text-teal md:text-slate-300 md:hover:text-slate-500 md:hover:text-slate-600">
+    <li className="px-4 py-1 text-slate-50 hover:text-teal md:text-slate-300 md:hover:bg-slate-500 md:hover:text-slate-600">
         {props.children}
     </li>
 );
