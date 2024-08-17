@@ -4,11 +4,15 @@ import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import { DivIcon } from 'leaflet';
 import { ArrowRightOutlined } from '@ant-design/icons';
 
-const AircraftIcon = (heading: number, aircraftId: string) => new DivIcon({
-    iconSize: [0, 0],
-    iconAnchor: [15, 10],
-    html: `<img src="/meta/aircraft-icon.png" alt="${aircraftId}" style="transform: rotate(${heading}deg); transform-origin: center; width: 32px; height: 32px; filter: drop-shadow(0 0 2px rgba(0 0 0 /0.5))"/>`,
-});
+const AircraftIcon = (heading: number, aircraftId: string) => {
+    const aircraftStyle = `transform: rotate(${heading}deg); transform-origin: center; width: 32px; height: 32px; filter: drop-shadow(0 0 2px rgba(0 0 0 /0.5))`;
+
+    return new DivIcon({
+        iconSize: [0, 0],
+        iconAnchor: [15, 10],
+        html: `<img src="/meta/aircraft-icon.png" alt="${aircraftId}" style="${aircraftStyle}"/>`,
+    });
+};
 
 const numberFormat = new Intl.NumberFormat();
 

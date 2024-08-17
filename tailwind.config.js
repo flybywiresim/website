@@ -61,9 +61,9 @@ module.exports = {
             opacity: { 3: '3%' },
         },
         fontFamily: {
-          display: ['Manrope', ...defaultTheme.fontFamily.sans],
-          body: ['Inter', ...defaultTheme.fontFamily.sans],
-          mono: ['JetBrains Mono', ...defaultTheme.fontFamily.mono],
+            display: ['Manrope', ...defaultTheme.fontFamily.sans],
+            body: ['Inter', ...defaultTheme.fontFamily.sans],
+            mono: ['JetBrains Mono', ...defaultTheme.fontFamily.mono],
         },
     },
     plugins: [

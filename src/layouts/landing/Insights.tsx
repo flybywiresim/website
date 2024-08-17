@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import Section from '../../components/Utils/Section';
-import Container from '../../components/Utils/Container';
 import { fetchInsightData } from '../../hooks/fetchInsightData';
 import Discord from '../../components/Discord/Discord';
 import 'leaflet/dist/leaflet.css';

@@ -48,7 +48,7 @@ const Button: FC<ButtonProps> = ({
     }
 
     return (
-        <button disabled={disabled} className={`button ${buttonClass} ${className}`} onClick={onClick}>
+        <button type="button" disabled={disabled} className={`button ${buttonClass} ${className}`} onClick={onClick}>
             {children || label}
         </button>
     );
