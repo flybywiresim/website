@@ -1,5 +1,5 @@
 /* eslint-disable */
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Tag from '../Utils/Tag';
 import { PostListing } from '../../lib/notams/posts';
 
