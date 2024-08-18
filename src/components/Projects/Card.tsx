@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import Link from 'next/link';
 import { DownloadOutlined } from '@ant-design/icons';
 import Container from '../Utils/Container';

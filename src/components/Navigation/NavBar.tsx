@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import { CloseOutlined, MenuOutlined } from '@ant-design/icons';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';

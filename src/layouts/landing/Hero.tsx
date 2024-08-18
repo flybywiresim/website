@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import Section from '../../components/Utils/Section';
 import Container from '../../components/Utils/Container';
 import Button from '../../components/Button/Button';

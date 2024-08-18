@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import Head from 'next/head';
 import { twMerge } from 'tailwind-merge';
 import Section from '../../components/Utils/Section';

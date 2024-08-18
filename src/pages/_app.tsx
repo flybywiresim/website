@@ -1,12 +1,12 @@
 import type { AppProps } from 'next/app';
-import localFont from 'next/font/local'
+import localFont from 'next/font/local';
 import '../styles/global.scss';
 import Head from 'next/head';
 import NavBar from '../components/Navigation/NavBar';
 import Footer from '../components/Navigation/Footer';
 import ScrollToTopButton from '../components/Button/ScrollToTopButton';
 
-const myFont = localFont({ src: './InterVariable.woff2', variable: '--font-inter' })
+const myFont = localFont({ src: './InterVariable.woff2', variable: '--font-inter' });
 
 const App = ({ Component, pageProps }: AppProps) => (
     <div className={myFont.variable}>

@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import { ReactNode } from 'react';
 import Container from '../Utils/Container';
 import Section from '../Utils/Section';

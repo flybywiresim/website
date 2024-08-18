@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import Head from 'next/head';
 import { NextPage } from 'next';
 import Section from '../../components/Utils/Section';
