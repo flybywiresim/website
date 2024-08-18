@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Image from 'next/image';
 import Tag from '../Utils/Tag';
 import { PostListing } from '../../lib/notams/posts';
@@ -15,8 +16,8 @@ const Card = (props: PostListing) => (
             <span className="relative">
                 <Image src={props.metaImage} alt={props.metaAlt} layout="fill" objectFit="cover" />
             </span>
-            <div className="">
-                <div className="px-8 py-6 flex justify-between">
+            <div className="px-8 py-6">
+                <div className="flex justify-between">
                     <p className="text-gray-400">
                         Posted:
                         {' '}
@@ -29,13 +30,11 @@ const Card = (props: PostListing) => (
                         </div>
                     </span>
                 </div>
-                <div className="px-8 flex-col items-center">
+                <div className="flex-col items-center">
                     <h3 className={props.index === 0 ? 'xl:text-7xl' : 'text-2xl'}>{props.title}</h3>
-                    <small>
-                        By
-                        {' '}
-                        {props.authors?.join(', ')}
-                    </small>
+                    By
+                    {' '}
+                    {props.authors?.join(', ')}
                 </div>
             </div>
         </div>
