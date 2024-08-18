@@ -62,7 +62,7 @@ module.exports = {
         },
         fontFamily: {
             display: ['Manrope', ...defaultTheme.fontFamily.sans],
-            body: ['Inter', ...defaultTheme.fontFamily.sans],
+            body: ['var(--font-inter)', ...defaultTheme.fontFamily.sans],
             mono: ['JetBrains Mono', ...defaultTheme.fontFamily.mono],
         },
     },
