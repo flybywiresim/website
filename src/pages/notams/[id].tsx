@@ -98,7 +98,7 @@ const Post = ({
                                         const y = document.getElementById(it.id)!.getBoundingClientRect().top + window.scrollY - 64;
 
                                         window.scrollTo({ top: y, behavior: 'smooth' });
-                                        history.replaceState(null, '', `#${it.id}`);
+                                        window.history.replaceState(null, '', `#${it.id}`);
                                     }}
                                 >
                                     {it.value}
