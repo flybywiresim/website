@@ -14,7 +14,7 @@ export const A320Header = () => {
         <header>
             <video
                 className="fixed -z-10 h-screen w-screen object-cover opacity-10"
-                src="https://cdn.flybywiresim.com/assets/website/video/A32NX.mp4"
+                src="https://flybywirecdn.com/assets/website/video/A32NX.mp4"
                 playsInline
                 autoPlay
                 muted
