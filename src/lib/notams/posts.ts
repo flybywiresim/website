@@ -6,12 +6,14 @@ import html from 'remark-html';
 import readingTime from 'reading-time';
 
 export type PostListing = {
-    id: string,
+    index: number;
+    id?: string,
     readingStats: any,
     date: string,
     title: string,
-    authors: string[],
-    category: string,
+    description: string,
+    authors?: string[],
+    category: any,
     metaImage: string,
     metaAlt: string,
 }
