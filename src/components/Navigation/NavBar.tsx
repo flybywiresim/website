@@ -4,6 +4,7 @@ import { CloseOutlined, MenuOutlined } from '@ant-design/icons';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Container from '../Utils/Container';
+import { links } from '../../constants/links';
 
 const NavLink = (props: {href: string, label: string}) => (
     <Link href={props.href} passHref>
@@ -19,7 +20,7 @@ const NavLinkGroup = () => (
         <NavLink href="/projects" label="Projects" />
         <NavLink href="/notams" label="NOTAMs" />
         <NavLink href="/map" label="Map" />
-        <NavLink href="/" label="Documentation" />
+        <NavLink href={links.docs} label="Documentation" />
     </ul>
 );
 
