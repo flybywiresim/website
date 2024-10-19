@@ -32,7 +32,7 @@ const Hero = () => {
                         fly with our in-depth systems or put your skills to the test by contributing to the project.
                     </p>
                     <ButtonGroup>
-                        <Button label="Download" theme="primary" />
+                        <Button label="Download" theme="primary" onClick={() => router.push('/downloads')} />
                         <Button label="More Info" theme="secondary" onClick={() => router.push('/projects/a32nx')} />
                     </ButtonGroup>
                 </div>

@@ -40,8 +40,8 @@ const Footer = () => (
                         <div className="grid grid-cols-3 items-start gap-x-32 gap-y-5">
                             <NavWrapper label="Projects">
                                 <NavItem label="Installer" href="/" />
-                                <NavItem label="A32NX" href="/projects/a32nx" />
-                                <NavItem label="A380X" href="/projects/a380X" />
+                                <NavItem label="A32NX" href="/projects/downloadLinks" />
+                                <NavItem label="A380X" href="/projects/a380x" />
                                 <NavItem label="EFB" href="/" />
                             </NavWrapper>
 

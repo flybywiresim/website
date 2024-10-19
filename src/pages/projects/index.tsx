@@ -26,7 +26,7 @@ const index: NextPage = () => (
                         title="A32NX"
                         category="Aircraft"
                         description="The A32NX is a high fidelity and free solution for Microsoft Flight Simulator, built and maintained by the open source community."
-                        downloadURL={A32NX_DOWNLOAD_URL}
+                        downloadURL={"/downloads"}
                         href="/projects/a32nx"
                         direction="vertical"
                     />
@@ -43,7 +43,7 @@ const index: NextPage = () => (
                         title="Installer"
                         category="Software"
                         description="Our custom-built, open-source installer is where we keep our projects for you to easily install."
-                        downloadURL={A32NX_DOWNLOAD_URL}
+                        downloadURL={'/downloads'}
                         href="/projects/installer"
                         direction="horizontal"
                     />

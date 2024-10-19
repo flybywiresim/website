@@ -1,8 +1,11 @@
 import Section from '../../components/Utils/Section';
 import Container from '../../components/Utils/Container';
 import Button from '../../components/Button/Button';
+import { useRouter } from "next/router";
 
-const Installer = () => (
+const Installer = () => {
+    const router = useRouter();
+    return (
     <Section theme="dark">
         <Container className="grid gap-y-20 lg:grid-cols-3">
             <div className="flex items-center justify-center">
@@ -11,7 +14,7 @@ const Installer = () => (
                     <p>
                         Our custom-built, open-source installer is where we keep our projects for you to easily install.
                     </p>
-                    <Button label="Download" theme="primary" />
+                    <Button label="Download" theme="primary" onClick={() => router.push('/downloads')}/>
                 </div>
             </div>
 
@@ -21,6 +24,6 @@ const Installer = () => (
             </div>
         </Container>
     </Section>
-);
+)};
 
 export default Installer;
