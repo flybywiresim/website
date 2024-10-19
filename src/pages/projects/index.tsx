@@ -29,6 +29,7 @@ const index: NextPage = () => (
                         downloadURL={"/downloads"}
                         href="/projects/a32nx"
                         direction="vertical"
+                        disabled={false}
                     />
                     <Card
                         metaImage="/pages/projects/a380x/a380Project.png"
@@ -36,8 +37,10 @@ const index: NextPage = () => (
                         title="A380X"
                         category="Aircraft"
                         description="The A380X is the upcoming first high fidelity and free simulation of the A380 for Microsoft Flight Simulator."
+                        downloadURL={"/downloads"}
                         href="/projects/a380x"
                         direction="vertical"
+                        disabled={true}
                     />
                     <Card
                         title="Installer"
@@ -46,6 +49,7 @@ const index: NextPage = () => (
                         downloadURL={'/downloads'}
                         href="/projects/installer"
                         direction="horizontal"
+                        disabled={false}
                     />
                     <Card
                         title="EFB"

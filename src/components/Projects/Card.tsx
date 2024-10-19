@@ -14,6 +14,7 @@ type CardProps = {
     href: string,
     downloadURL?: string,
     direction: 'horizontal' | 'vertical',
+    disabled?: boolean,
 }
 
 const Card = ({
@@ -25,6 +26,7 @@ const Card = ({
     href,
     downloadURL,
     direction,
+    disabled,
 }: CardProps) => (
     <div className="border-2 border-transparent hover:border-primary rounded-md overflow-hidden">
         <div className="grid bg-secondary-accent-dark">
@@ -44,7 +46,7 @@ const Card = ({
                             && (
                                 <>
                                     <a href={downloadURL}>
-                                        <Button label={<DownloadOutlined />} theme="primary" className="flex max-w-min items-center justify-center" />
+                                        <Button label={<DownloadOutlined />} theme="primary" className="flex max-w-min items-center justify-center" disabled={disabled} />
                                     </a>
                                 </>
                             )}
