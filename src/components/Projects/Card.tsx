@@ -28,17 +28,17 @@ const Card = ({
     direction,
     disabled,
 }: CardProps) => (
-    <div className="border-2 border-transparent hover:border-primary rounded-md overflow-hidden">
-        <div className="grid bg-secondary-accent-dark">
+    <div className="flex border-2 border-transparent hover:border-primary rounded-md overflow-hidden">
+        <div className="flex flex-col bg-secondary-accent-dark">
             {metaImage && <Image src={metaImage} alt={metaAlt} width={800} height={350} objectFit="cover" /> }
-            <div className="grid relative">
+            <div className="grid grow">
                 <Container className="grid gap-2 px-12 py-8">
                     <Tag className={`${direction === 'horizontal' && 'absolute top-8 right-8'}`} category={category} />
                     <h3 className={`${direction === 'vertical' && 'text-6xl'}`}>{title}</h3>
                     <p>
                         {description}
                     </p>
-                    <span className="flex flex-wrap gap-2 py-4">
+                    <span className="flex flex-wrap gap-2 py-4 mt-auto">
                         <Link href={href}>
                             <Button label="Learn More" theme="secondary" />
                         </Link>
