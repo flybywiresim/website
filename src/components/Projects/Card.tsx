@@ -34,8 +34,10 @@ const Card = ({
             {metaImage && <Image src={metaImage} alt={metaAlt} width={800} height={350} objectFit="cover" /> }
             <div className="grid grow">
                 <Container className="grid gap-2 px-12 py-8">
-                    <Tag className={`${direction === 'horizontal' && 'absolute top-8 right-8'}`} category={category} />
-                    <h3 className={`${direction === 'vertical' && 'text-6xl'}`}>{title}</h3>
+                    <span className="flex justify-between items-center">
+                        <h3 className={`${direction === 'vertical' && 'text-6xl'}`}>{title}</h3>
+                        <Tag category={category} />
+                    </span>
                     <p>
                         {description}
                     </p>

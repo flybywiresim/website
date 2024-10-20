@@ -18,7 +18,7 @@ export interface PostListing {
     title: string,
     description: string,
     authors?: string[],
-    category: any,
+    category: string,
     metaImage: string,
     metaAlt: string,
 }
