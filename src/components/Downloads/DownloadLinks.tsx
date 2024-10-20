@@ -1,4 +1,4 @@
-import Button from "../Button/Button";
+import Button from '../Button/Button';
 
 type DownloadProps = {
     stableLink: string,
@@ -7,12 +7,14 @@ type DownloadProps = {
 
 }
 
-const downloadLinks = ({stableLink, devLink, aircraft}: DownloadProps) => (
-    <>
+const downloadLinks = ({ aircraft }: DownloadProps) => (
+    <span className="flex flex-col gap-y-1.5">
         <h3>{aircraft}</h3>
-        <Button label="Stable" />
-        <Button label="Development" />
-    </>
+        <span className="flex gap-x-2.5">
+            <Button label="Stable" />
+            <Button theme="secondary" label="Development" />
+        </span>
+    </span>
 );
 
 export default downloadLinks;
