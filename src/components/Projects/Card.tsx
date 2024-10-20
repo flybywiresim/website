@@ -1,6 +1,7 @@
 import Image from 'next/legacy/image';
 import Link from 'next/link';
 import { DownloadOutlined } from '@ant-design/icons';
+import { twJoin } from 'tailwind-merge';
 import Container from '../Utils/Container';
 import Tag from '../Utils/Tag';
 import Button from '../Button/Button';
@@ -45,7 +46,7 @@ const Card = ({
                         {downloadURL
                             && (
                                 <>
-                                    <a href={downloadURL}>
+                                    <a href={downloadURL} className={twJoin(disabled && 'pointer-events-none')}>
                                         <Button label={<DownloadOutlined />} theme="primary" className="flex max-w-min items-center justify-center" disabled={disabled} />
                                     </a>
                                 </>
