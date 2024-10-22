@@ -10,7 +10,7 @@ metaAlt: 'A380X: Full Speed Ahead'
 
 ## Introduction
 
-FlyByWire Simulations was created with the goal of elevating the default A320 experience in Microsoft Flight Simulator (MSFS) 2020. Over the past four years, we’ve grown into a community of over 170 dedicated contributors for our first project the A32NX. Our open-source project has allowed our team to gain essential knowledge in programming, sound design, and aircraft modelling.
+FlyByWire Simulations was created with the goal of elevating the default A320 experience in Microsoft Flight Simulator (MSFS) 2020. Over the past four years, we’ve grown into a community of over 170 dedicated contributors for our first project: the A32NX. Our open-source project has allowed our team to gain essential knowledge in programming, sound design and aircraft modelling.
 
 We have also set our sights on something bigger - the A380X. Announced four years ago, this project has evolved alongside our continuous updates to the A32NX, bringing our advanced systems, refined sounds, and an intricately detailed interior and exterior model to the simulator.
 
@@ -54,15 +54,13 @@ If you attempt to break the plane deliberately, you will likely succeed i.e. exc
 
 ## Developer and Contributor Expectations
 
-For our developer community, we are excited to open up the A380X project to external contributors through our GitHub repository. If you're a developer eager to make an impact, this is your chance to join the FlyByWire team in shaping the future of this iconic aircraft. We welcome contributions, bug fixes, and system enhancements, and will provide guidelines on how to collaborate effectively.
+For our developer community, we have been excited to open up the A380X project to external contributors through our GitHub repository. If you're a developer eager to make an impact, this is your chance to join the FlyByWire team in shaping the future of this iconic aircraft. We welcome contributions, bug fixes, and system enhancements, and will provide guidelines on how to collaborate effectively.
 
 As always all are welcome, and we are always willing to share knowledge and experience to those who are willing and eager to learn.
 
 ## A380X Features and Capabilities
 
 With the above in mind, we shall detail what you will be able to do in the A380X on alpha preview release. Our developers have taken extreme care and time to ensure that we will feature several core systems allowing an immersive flight experience from the beginning.
-
-These include:
 
 #### Flight Management and Navigation Systems
 
@@ -86,13 +84,24 @@ Brake to Vacate (BTV) plays a crucial role in automatically managing braking to 
 
 Runway Overrun Warning/Protection (ROW/ROP), which helps minimise the risk of runway overrun at landing. The ROW and ROP are available as soon as the autobrake mode is armed and can be used independently from the BTV.
 
+**ROP**
+![a380-notam-media-1.png](/img/notam-images/a380x/a380-notam-media-1.png)
+
 Onboard Airport Navigation System (OANS), which enhances the flight crew's situational awareness by displaying a moving map of the airport. Additionally, we implemented Radio Altimeters (RAs) simulated as three independent units, the Ground Proximity Warning System (GPWS) with messages on the Primary Flight Display (PFD), and the Terrain Display featuring A380-specific animations.
+
+**OANS on the Ground**
+![a380-notam-media-4.png](/img/notam-images/a380x/a380-notam-media-4.png)
+
+**OANS in the Air**
+![a380-notam-media-2.png](/img/notam-images/a380x/a380-notam-media-2.png)
 
 #### Landing Gear and Taxi Systems
 
 Tilting landing gear, with realistic NWS (Nose Wheel Steering) and BWS (Body Wheel Steering), with high-detail modelling and textures, powered by 5000 PSI Hydraulic lines, valves and actuators which are fully and realistically simulated. 
 
 We have also managed to implement HCF (Heading Control Function) which assists taxi operations by countering any crosswind or ground slope without ay pilot input.
+
+![a380-notam-media-3.png](/img/notam-images/a380x/a380-notam-media-3.png)
 
 #### FlyPadOS v3 and Aircraft Configuration
 
