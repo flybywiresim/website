@@ -26,7 +26,7 @@ Regarding performance and system requirements in this open alpha period, please 
 
 Here are some preliminary system requirements for the first alpha release in MSFS 2020.
 
-**Minimum (1080p30 Low/Medium)**
+**Minimum (1080p30 Low)**
 - CPU: Intel i5-4460 or Ryzen 3 1400
 - GPU: Nvidia GTX 1060 6GB or AMD RX 480 8GB
 - Memory: 8GB
@@ -76,7 +76,7 @@ Systems like electrical, pneumatic, environmental (air conditioning, ventilation
 
 #### Flight Control Surfaces and Wing Flex Simulation
 
-Flap load relief systems (FLRS) and auto extension/retraction (AES/ARS) with an accurate hydraulic and electronic actuation of flight control surfaces (except for flaps and slats still to do) with the triple aileron simulation on each wing, resulting in the “Valse Des Ailerons” (VDA/Aileron Dance) and custom physical based flex system for wings/rudder/elevator. Wings are simulated as soft bodies and react to fuel load, with wing loading on take-off and dynamic wing flex that is accurate and responsive.
+Flap load relief systems (FLRS) and auto extension/retraction (AES/ARS) have been accurately modeled with hydraulic and electrical actuation of flight control surfaces, though flaps and slats are still to be completed. The triple aileron simulation on each wing creates the “Valse Des Ailerons” (VDA/Aileron Dance). Additionally, a custom physics-based flex system for wings, rudder, and elevator has been implemented. The wings, simulated as soft bodies, react to fuel load, wing loading during take-off, and feature accurate and responsive dynamic wing flex.
 
 #### Protection Features and Enhanced Awareness
 
