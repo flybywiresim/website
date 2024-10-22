@@ -2,7 +2,7 @@
 title: 'A380X: Full Speed Ahead'
 date: '2024-10-23'
 authors:
-  - 'Valastiri, 2cas, floridude, Tarek, Bernardo'
+  - 'Valastiri, 2cas, floridude, Tarek'
 category: 'ANNOUNCEMENTS'
 metaImage: '/img/notam-images/a380x/a380x-a32nx.png'
 metaAlt: 'A380X: Full Speed Ahead'
@@ -171,6 +171,6 @@ Download the latest version of the A32NX:
 - [Installer](https://api.flybywiresim.com/installer)
 - [Standalone Versions](https://flybywiresim.com/a32nx/#download)
 
-*Media in this article were provided by floridude, Popespice. They retain the exclusive rights.*
+*Media in this article were provided by floridude, Tarek. They retain the exclusive rights.*
 
-*Editors: Commander Ga, Davy, RogePete*
+*Editors: Commander Ga, Bernardo, Davy, RogePete*
