@@ -50,7 +50,6 @@ Here are some preliminary system requirements for the first alpha release in MSF
 Expect future updates to roll out frequently with new features and improvements as we obtain feedback and garner more interest in the project from a developer standpoint.
 
 > Please note this will not be a finished/polished product. The plane will not be unflyable or broken, however during further development, bugs will appear that may require some temporary workaround or procedure to overcome.
-
 If you attempt to break the plane deliberately, you will likely succeed i.e. exceeding normal law protections, locking the A/P in an invalid state, or otherwise exiting normal flight limits. In this regard, it will be fragile when compared to the current state of the A32NX -  as a reference.
 
 ## Developer and Contributor Expectations
@@ -93,7 +92,7 @@ Onboard Airport Navigation System (OANS), which enhances the flight crew's situa
 
 Tilting landing gear, with realistic NWS (Nose Wheel Steering) and BWS (Body Wheel Steering), with high-detail modelling and textures, powered by 5000 PSI Hydraulic lines, valves and actuators which are fully and realistically simulated. 
 
-We've also managed to implement HCF (Heading Control Function) which assists taxi operations by countering any crosswind or ground slope without ay pilot input.
+We have also managed to implement HCF (Heading Control Function) which assists taxi operations by countering any crosswind or ground slope without ay pilot input.
 
 #### FlyPadOS v3 and Aircraft Configuration
 
@@ -104,13 +103,13 @@ And much, much more.
 
 ### A Word on Textures and Models
 
-Our modelling and texture team has put extraordinary effort into crafting an experience that feels as realistic as possible, both inside and outside the cockpit. Repsol has lead the way in creating custom-built model in conjunction with Mike who can texture with photorealism using the latest Adobe Substance Painter tools. We have leveraged actual photos as the base texture and the associated roughness maps using clever techniques learned over time from experimentation within the simulator and how it “looks” in sim versus real life.
+Our modelling and texture team has put extraordinary effort into crafting an experience that feels as realistic as possible, both inside and outside the cockpit. Repsol has led the way in creating custom-built model in conjunction with Mike who has textured with photorealism using the latest Adobe Substance Painter tools. We have leveraged actual photos as the base texture and the associated roughness maps using clever techniques learned over time from experimentation within the simulator and how it “looks” in sim versus real life.
 
 These insane textures are a result from Mike’s experience in real life flying aircraft, as well as the constant positive feedback from our modelling team for the past 3 years of development.
 
-We would like to point out however that using clear skies in MSFS 2020 comes with a skybox texture which ends up washes our our textures.
+We would like to point out however that using clear skies in MSFS 2020 comes with a skybox texture which ends up washing out our textures.
 
-The modelling team hopes that you enjoy the visual work that brings to life the A380X in the simulator from the thousands of hours of volunteer time.
+The modelling team hopes that you enjoy the visual work that brings to life the A380X in the simulator from their thousands of hours of volunteer time.
 
 ## INOP Systems
 
