@@ -10,7 +10,7 @@ metaAlt: 'A380X: Full Speed Ahead'
 
 ## Introduction
 
-FlyByWire Simulations was created with the goal of elevating the default A320 experience in Microsoft Flight Simulator (MSFS) 2020. Over the past four years, we’ve grown into a community of over 170 dedicated contributors for our first project: the A32NX. Our open-source project has allowed our team to gain essential knowledge in programming, sound design and aircraft modelling.
+FlyByWire Simulations was created with the goal of elevating the default A320 experience in Microsoft Flight Simulator (MSFS) 2020. Over the past four years, we’ve grown into a community of over 170 dedicated contributors for our first project: the A32NX. Our open-source project has allowed our team to develop essential knowledge in programming, sound design and aircraft modelling.
 
 We have also set our sights on something bigger - the A380X. Announced four years ago, this project has evolved alongside our continuous updates to the A32NX, bringing our advanced systems, refined sounds, and an intricately detailed interior and exterior model to the simulator.
 
@@ -18,13 +18,13 @@ This NOTAM aims to set clear expectations for our end-users and contributors reg
 
 ## Expectations for End-Users
 
-To be crystal clear: the upcoming A380X “developer preview” release - **will be in an open alpha stage**. While some features will be operational and we can under most circumstances guarantee a decent A to B flight on VATSIM, what is not there will still be in development. Features that currently are inoperative will be added in time as our primary goal is to simulate all features from the real aircraft.
+To be crystal clear: the upcoming A380X “developer preview” release - **will be in an open alpha stage**. While some features will be operational and we can under most circumstances guarantee a decent A to B flight on VATSIM, many systems are still in active development. Features that are currently inoperative will be added over time in order to achieve our primary goal to simulate all features from the real aircraft.
 
-Our goal with this release is to enable access to outside contributors/developers, and to provide an early look at the aircraft. In the meantime, much like the A32NX, we will continue to build toward a more complete experience. This is extremely similar to the previous process of the A32NX’s development through Year 1-2 (2021/2022).
+Our goal with this release is to enable access to outside contributors/developers, and to provide you with an early look at the aircraft. In the meantime, much like the A32NX, we will continue to build toward a more complete experience. This is extremely similar to the previous process of the A32NX’s development through Years 1-2 (2021/2022).
 
 Regarding performance and system requirements in this open alpha period, please note that the current 3D model and system code is not yet fully optimised, and we are pushing the limitations of the MSFS 2020 Engine in both graphical fidelity and system depth. Expect performance to be on average 25% lower than in the A32NX across the board as a point of reference.
 
-Here are some preliminary system requirements for the first alpha release in MSFS 2020.
+Here are the preliminary system requirements for the first alpha release in MSFS 2020.
 
 **Minimum (1080p30 Low)**
 - CPU: Intel i5-4460 or Ryzen 3 1400
@@ -49,18 +49,18 @@ Here are some preliminary system requirements for the first alpha release in MSF
 
 Expect future updates to roll out frequently with new features and improvements as we obtain feedback and garner more interest in the project from a developer standpoint.
 
-> Please note this will not be a finished/polished product. The plane will not be unflyable or broken, however during further development, bugs will appear that may require some temporary workaround or procedure to overcome.
+> Please note this will not be a finished/polished product. The plane will not be unflyable or broken, however during further development, bugs will appear that may require some temporary workaround or procedure to mitigate.
 If you attempt to break the plane deliberately, you will likely succeed i.e. exceeding normal law protections, locking the A/P in an invalid state, or otherwise exiting normal flight limits. In this regard, it will be fragile when compared to the current state of the A32NX -  as a reference.
 
 ## Developer and Contributor Expectations
 
 For our developer community, we have been excited to open up the A380X project to external contributors through our GitHub repository. If you are a developer eager to make an impact, this is your chance to join the FlyByWire team in shaping the future of this iconic aircraft. We welcome contributions, bug fixes, and system enhancements, and will provide guidelines on how to collaborate effectively.
 
-As always all are welcome, and we are always willing to share knowledge and experience to those who are willing and eager to learn.
+All are welcome, and we are always willing to share knowledge and experience to those who are willing and eager to learn and get involved.
 
 ## A380X Features and Capabilities
 
-With the above in mind, we shall detail what you will be able to do in the A380X on alpha preview release. Our developers have taken extreme care and time to ensure that we will feature several core systems allowing an immersive flight experience from the beginning.
+With the above in mind, we shall detail the current functionality of the A380X alpha preview release. Our developers have worked hard to implement a number of core systems to allow for an immersive flight.
 
 #### Flight Management and Navigation Systems
 
@@ -72,11 +72,11 @@ Accurate representations of the Primary Flight Display (PFD), Navigation Display
 
 #### Core Aircraft Systems and Failure Simulations
 
-Systems like electrical, pneumatic, environmental (air conditioning, ventilation, and pressurization), APU, and fire protection are fully modeled, including their inner components, logic, and communication protocols. Over 140 failures are available via the EFB, though, as with everything else, full simulation is not always guaranteed.
+Systems including electrical, pneumatic, environmental (air conditioning, ventilation, and pressurization), APU, and fire protection are fully modelled, including their inner components, logic, and communication protocols. Over 140 failures are available via the EFB, though, as with everything else, full simulation is not always guaranteed.
 
 #### Flight Control Surfaces and Wing Flex Simulation
 
-Flap load relief systems (FLRS) and auto extension/retraction (AES/ARS) have been accurately modeled with hydraulic and electrical actuation of flight control surfaces, though flaps and slats are still to be completed. The triple aileron simulation on each wing creates the “Valse Des Ailerons” (VDA/Aileron Dance). Additionally, a custom physics-based flex system for wings, rudder, and elevator has been implemented. The wings, simulated as soft bodies, react to fuel load, wing loading during take-off, and feature accurate and responsive dynamic wing flex.
+Flap load relief systems (FLRS) and auto extension/retraction (AES/ARS) have been accurately modelled with hydraulic and electrical actuation of flight control surfaces, though flaps and slats are still to be completed. The triple aileron simulation on each wing creates the “Valse Des Ailerons” (VDA/Aileron Dance). Additionally, a custom physics-based flex system for wings, rudder, and elevator has been implemented. The wings, simulated as soft bodies, react to fuel load, wing loading during take-off, and feature accurate and responsive dynamic wing flex.
 
 #### Protection Features and Enhanced Awareness
 
@@ -112,23 +112,19 @@ And much, much more.
 
 ### A Word on Textures and Models
 
-Our modelling and texture team has put extraordinary effort into crafting an experience that feels as realistic as possible, both inside and outside the cockpit. Repsol has led the way in creating a custom-built model in conjunction with Mike who has textured with photorealism using the latest Adobe Substance Painter tools. We have leveraged actual photos as the base texture and the associated roughness maps using clever techniques learned over time from experimentation within the simulator and how it “looks” in sim versus real life.
+Our modelling and texture team has invested thousands of hours into crafting an experience that feels as realistic as possible, both inside and outside the cockpit. Repsol has led the way in creating a custom-built model in conjunction with Mike who has textured with photorealism using the latest Adobe Substance Painter tools. We have leveraged actual photos as the base texture and the associated roughness maps using clever techniques learned over time from experimentation within the simulator and how it “looks” in sim versus real life.
 
 These insane textures are a result from Mike’s experience in real life flying aircraft, as well as the constant positive feedback from our modelling team for the past 3 years of development.
 
-We would like to point out however that using clear skies in MSFS 2020 comes with a skybox texture which ends up washing out our textures.
+**Note:** Using clear skies in MSFS 2020 comes with a skybox texture which ends up washing out our textures.
 
 The modelling team hopes that you enjoy the visual work that brings to life the A380X in the simulator from their thousands of hours of volunteer time.
 
-## INOP Systems
+### INOP Systems
 
 The A380X is rated as capable for point A to point B on VATSIM but the development team would like to point out that much like in the past with the A32NX development process some systems may not be operable from the start.
 
-Having the  underlying system architecture in place is vital, but also requires time and iteration. As a result, placeholder systems used for development may still exist during the open alpha. Examples include the current fuel system, flight computers, engine model and SFD/SND (Standby Flight Display/Standby Navigation Display).
-
 The full list of INOP systems will be available in our documentation at a later time. We will be updating this list as we progress through the development of the A380X.
-
-While the above is simply a slice of the larger picture, we hope nonetheless that you will enjoy flying the aircraft and provide feedback, so that we can improve, refine, and develop what is still missing.
 
 ## Tutorials and Documentation
 
@@ -138,12 +134,10 @@ This project will evolve with time, releasing new features and adding more funct
 
 ## MSFS 2024 Compatibility
 
-While we know many are eagerly awaiting the release of MSFS 2024, it is important to note that a 2024-specific version of the A380X will not immediately launch with it.
+While we know many are eagerly awaiting the release of MSFS 2024, it is important to note that a 2024-specific version of the A380X will not immediately launch with it. It has been revealed that MSFS 2024 does include built-in backwards compatibility with MSFS 2020 addons, and while the 2020 version of the A380X may be loaded into the new simulator on day 1, we cannot guarantee that the functionality that exists in MSFS 2020 will translate to MSFS 2024.
 
-It has been revealed that MSFS 2024 does include built-in backwards compatibility with MSFS 2020 addons, and while the 2020 version of the A380X may be loaded into the new simulator on day 1, we cannot at this time officially certify that any functionality that exists in MSFS 2020 will work seamlessly in MSFS 2024. MSFS 2024 exclusive features would also not work with MSFS 2020 aircraft, nor is it possible to backport this to MSFS 2020 (forwards compatibility).
-
-Adapting the A380X for MSFS 2024 may require some significant effort due to differences in system requirements and optimizations needed for the 3D model. Although we plan to make this transition as smooth as possible, it could take a few weeks or months depending on the required changes.
-Importantly, Career mode will not be supported outside the marketplace. Since we have no plans to join the marketplace (as outlined in our [Marketplace Announcement NOTAM](https://flybywiresim.com/notams/marketplace-announcement/)), this remains a hard limitation for the foreseeable future.
+Adapting the A380X for MSFS 2024 will require some significant effort due to differences in system requirements and optimizations needed for the 3D model. Although we plan to make this transition as smooth as possible, it could take a few weeks or months depending on the required changes.
+Importantly, since Career mode will not be supported outside the marketplace and we have no plans to join the marketplace (as outlined in our [Marketplace Announcement NOTAM](https://flybywiresim.com/notams/marketplace-announcement/)), this remains a hard limitation for the foreseeable future.
 As always in regards to how long this will take, we will be sticking with no timelines, no stated delivery date approach and we thank you for your patience and understanding.
 
 ## Conclusion
