@@ -138,7 +138,8 @@ While we know many are eagerly awaiting the release of MSFS 2024, it is importan
 
 Adapting the A380X for MSFS 2024 will require some significant effort due to differences in system requirements and optimizations needed for the 3D model. Although we plan to make this transition as smooth as possible, it could take a few weeks or months depending on the required changes.
 Importantly, since Career mode will not be supported outside the marketplace and we have no plans to join the marketplace (as outlined in our [Marketplace Announcement NOTAM](https://flybywiresim.com/notams/marketplace-announcement/)), this remains a hard limitation for the foreseeable future.
-As always in regards to how long this will take, we will be sticking with no timelines, no stated delivery date approach and we thank you for your patience and understanding.
+
+Regarding how long compatibility development will take, we will be sticking with no timelines, no stated delivery date approach and we thank you for your patience and understanding.
 
 ## Conclusion
 
