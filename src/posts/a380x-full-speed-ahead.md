@@ -62,6 +62,7 @@ As always all are welcome, and we are always willing to share knowledge and expe
 ## A380X Features and Capabilities
 
 With the above in mind, we shall detail what you will be able to do in the A380X on alpha preview release. Our developers have taken extreme care and time to ensure that we will feature several core systems allowing an immersive flight experience from the beginning.
+
 These include:
 
 Custom flight management system (FMS), based on the updated fms-v2 implementation. All ARINC424 leg types are supported, with an aim for precise and accurate drawing of all procedures, robust sequencing of waypoints and accurate MFD F-PLN pages, including support for holdings.
