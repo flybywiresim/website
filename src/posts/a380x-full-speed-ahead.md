@@ -1,6 +1,6 @@
 ---
 title: 'A380X: Full Speed Ahead'
-date: '2024-10-22'
+date: '2024-10-23'
 authors:
   - 'Valastiri, 2cas, floridude, Tarek'
 category: 'INFO'
