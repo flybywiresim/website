@@ -112,7 +112,7 @@ And much, much more.
 
 ### A Word on Textures and Models
 
-Our modelling and texture team has put extraordinary effort into crafting an experience that feels as realistic as possible, both inside and outside the cockpit. Repsol has led the way in creating custom-built model in conjunction with Mike who has textured with photorealism using the latest Adobe Substance Painter tools. We have leveraged actual photos as the base texture and the associated roughness maps using clever techniques learned over time from experimentation within the simulator and how it “looks” in sim versus real life.
+Our modelling and texture team has put extraordinary effort into crafting an experience that feels as realistic as possible, both inside and outside the cockpit. Repsol has led the way in creating a custom-built model in conjunction with Mike who has textured with photorealism using the latest Adobe Substance Painter tools. We have leveraged actual photos as the base texture and the associated roughness maps using clever techniques learned over time from experimentation within the simulator and how it “looks” in sim versus real life.
 
 These insane textures are a result from Mike’s experience in real life flying aircraft, as well as the constant positive feedback from our modelling team for the past 3 years of development.
 
