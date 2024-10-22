@@ -99,7 +99,7 @@ Onboard Airport Navigation System (OANS), which enhances the flight crew's situa
 
 Tilting landing gear, with realistic NWS (Nose Wheel Steering) and BWS (Body Wheel Steering), with high-detail modelling and textures, powered by 5000 PSI Hydraulic lines, valves and actuators which are fully and realistically simulated. 
 
-We have also managed to implement HCF (Heading Control Function) which assists taxi operations by countering any crosswind or ground slope without ay pilot input.
+We have also managed to implement HCF (Heading Control Function) which assists taxi operations by countering any crosswind or ground slope without any pilot input.
 
 [![a380-notam-media-3.png](/img/notam-images/a380x/a380-notam-media-3.png)](/img/notam-images/a380x/a380-notam-media-3.png)
 
