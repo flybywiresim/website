@@ -2,7 +2,7 @@
 title: 'A380X: Full Speed Ahead'
 date: '2024-10-22'
 authors:
-  - 'Valastiri'
+  - 'Valastiri, 2cas, floridude, Tarek'
 category: 'INFO'
 metaImage: '/img/notam-images/a380x/a380x-a32nx.png'
 metaAlt: 'A380X: Full Speed Ahead'
@@ -65,13 +65,23 @@ With the above in mind, we shall detail what you will be able to do in the A380X
 
 These include:
 
+#### Flight Management and Navigation Systems
+
 Custom flight management system (FMS), based on the updated fms-v2 implementation. All ARINC424 leg types are supported, with an aim for precise and accurate drawing of all procedures, robust sequencing of waypoints and accurate MFD F-PLN pages, including support for holdings.
+
+#### Flight Displays and Electronic Checklists
 
 Accurate representations of the Primary Flight Display (PFD), Navigation Display (ND), Engine and Warning Display (EWD), and System Display (SD) featuring precise MEMOs for numerous systems. We’ve also implemented electronic checklists for both normal procedures and some abnormal procedures, along with QNH pre-selection in the Flight Control Unit (FCU).
 
+#### Core Aircraft Systems and Failure Simulations
+
 Systems like electrical, pneumatic, environmental (air conditioning, ventilation, and pressurization), APU, and fire protection are fully modeled, including their inner components, logic, and communication protocols. Over 140 failures are available via the EFB, though, as with everything else, full simulation is not always guaranteed.
 
+#### Flight Control Surfaces and Wing Flex Simulation
+
 Flap load relief systems (FLRS) and auto extension/retraction (AES/ARS) with an accurate hydraulic and electronic actuation of flight control surfaces (except for flaps and slats still to do) with the triple aileron simulation on each wing, resulting in the “Valse Des Ailerons” (VDA/Aileron Dance) and custom physical based flex system for wings/rudder/elevator. Wings are simulated as soft bodies and react to fuel load, with wing loading on take-off and dynamic wing flex that is accurate and responsive.
+
+#### Protection Features and Enhanced Awareness
 
 Brake to Vacate (BTV) plays a crucial role in automatically managing braking to reach a runway exit preselected by the flight crew. It also enhances pilot awareness of braking distances before and during landing.
 
@@ -79,7 +89,13 @@ Runway Overrun Warning/Protection (ROW/ROP), which helps minimise the risk of ru
 
 Onboard Airport Navigation System (OANS), which enhances the flight crew's situational awareness by displaying a moving map of the airport. Additionally, we implemented Radio Altimeters (RAs) simulated as three independent units, the Ground Proximity Warning System (GPWS) with messages on the Primary Flight Display (PFD), and the Terrain Display featuring A380-specific animations.
 
-Tilting landing gear, with realistic NWS (Nose Wheel Steering) and BWS (Body Wheel Steering), with high-detail modelling and textures, powered by 5000 PSI Hydraulic lines, valves and actuators which are fully and realistically simulated. We've also managed to implement HCF (Heading Control System) which assists taxi operations by countering any crosswind or ground slope without ay pilot input.
+#### Landing Gear and Taxi Systems
+
+Tilting landing gear, with realistic NWS (Nose Wheel Steering) and BWS (Body Wheel Steering), with high-detail modelling and textures, powered by 5000 PSI Hydraulic lines, valves and actuators which are fully and realistically simulated. 
+
+We've also managed to implement HCF (Heading Control System) which assists taxi operations by countering any crosswind or ground slope without ay pilot input.
+
+#### FlyPadOS v3 and Aircraft Configuration
 
 FlyPadOS v3 remixed with A380X features such as the throttle calibration for 4 throttles/2 throttle/1 throttle hardware configurations, payload weight and balance page with  Main and Upper Deck divided into 4 Class configuration: Economy, Premium Economy, Business and First Class Suites and with the corresponding refuelling page.
 Support for default ground services, and preliminary support for GSX included either in the initial release or soon after.
@@ -102,7 +118,7 @@ The A380X is rated as capable for point A to point B on VATSIM but the developme
 
 Having the  underlying system architecture in place is vital, but also requires time and iteration. As a result, placeholder systems used for development may still exist during the open alpha. Examples include the current fuel System, flight computers, engine model and standby PFD/ND.
 
-Our full list of INOP systems will be available in our documentation and we will be updating this list as we progress through the development process. [Link](#)
+Our full list of INOP systems will be available in our documentation at a later time. We will be updating this list as we progress through the development of the A380X.
 
 While the above is simply a slice of the larger picture, we hope nonetheless you’ll enjoy flying the aircraft and providing feedback so we can improve, refine, and develop what is still missing. .
 
@@ -113,6 +129,7 @@ To assist users in flying, our beginner's guide will be released alongside the a
 This project will evolve with time , releasing new features and adding more functionality to the A380X.
 
 ## MSFS 2024 Compatibility
+
 While we know many are eagerly awaiting the release of MSFS 2024, it’s important to note that a 2024-specific version of the A380X will not immediately launch with it.
 
 It has been revealed that MSFS 2024 does include built-in backwards compatibility with MSFS 2020 addons, and while the 2020 version of the A380X may be loaded into the new simulator on day 1, we cannot at this time officially certify that any functionality that exists in MSFS 2020 will work seamlessly in MSFS 2024. MSFS 2024 exclusive features would also not work with MSFS 2020 aircraft, nor is it possible to backport this to MSFS 2020 (forwards compatibility).
@@ -150,3 +167,7 @@ Download the latest version of the A32NX:
 
 - [Installer](https://api.flybywiresim.com/installer)
 - [Standalone Versions](https://flybywiresim.com/a32nx/#download)
+
+*Pictures in this article are made and provided by [insert here]. They retain the exclusive rights*
+
+*Editors: Commander Ga, Davy, RogePete*
