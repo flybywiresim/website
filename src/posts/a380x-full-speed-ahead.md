@@ -3,7 +3,7 @@ title: 'A380X: Full Speed Ahead'
 date: '2024-10-23'
 authors:
   - 'Valastiri, 2cas, floridude, Tarek, Bernardo'
-category: 'INFO'
+category: 'ANNOUNCEMENTS'
 metaImage: '/img/notam-images/a380x/a380x-a32nx.png'
 metaAlt: 'A380X: Full Speed Ahead'
 ---
