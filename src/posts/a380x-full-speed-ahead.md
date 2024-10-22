@@ -2,7 +2,7 @@
 title: 'A380X: Full Speed Ahead'
 date: '2024-10-23'
 authors:
-  - 'Valastiri, 2cas, floridude, Tarek'
+  - 'Valastiri, 2cas, floridude, Tarek, Bernardo'
 category: 'INFO'
 metaImage: '/img/notam-images/a380x/a380x-a32nx.png'
 metaAlt: 'A380X: Full Speed Ahead'
@@ -54,7 +54,7 @@ If you attempt to break the plane deliberately, you will likely succeed i.e. exc
 
 ## Developer and Contributor Expectations
 
-For our developer community, we have been excited to open up the A380X project to external contributors through our GitHub repository. If you're a developer eager to make an impact, this is your chance to join the FlyByWire team in shaping the future of this iconic aircraft. We welcome contributions, bug fixes, and system enhancements, and will provide guidelines on how to collaborate effectively.
+For our developer community, we have been excited to open up the A380X project to external contributors through our GitHub repository. If you are a developer eager to make an impact, this is your chance to join the FlyByWire team in shaping the future of this iconic aircraft. We welcome contributions, bug fixes, and system enhancements, and will provide guidelines on how to collaborate effectively.
 
 As always all are welcome, and we are always willing to share knowledge and experience to those who are willing and eager to learn.
 
@@ -124,31 +124,31 @@ The modelling team hopes that you enjoy the visual work that brings to life the 
 
 The A380X is rated as capable for point A to point B on VATSIM but the development team would like to point out that much like in the past with the A32NX development process some systems may not be operable from the start.
 
-Having the  underlying system architecture in place is vital, but also requires time and iteration. As a result, placeholder systems used for development may still exist during the open alpha. Examples include the current fuel System, flight computers, engine model and standby PFD/ND.
+Having the  underlying system architecture in place is vital, but also requires time and iteration. As a result, placeholder systems used for development may still exist during the open alpha. Examples include the current fuel system, flight computers, engine model and SFD/SND (Standby Flight Display/Standby Navigation Display).
 
-Our full list of INOP systems will be available in our documentation at a later time. We will be updating this list as we progress through the development of the A380X.
+The full list of INOP systems will be available in our documentation at a later time. We will be updating this list as we progress through the development of the A380X.
 
-While the above is simply a slice of the larger picture, we hope nonetheless you’ll enjoy flying the aircraft and providing feedback so we can improve, refine, and develop what is still missing. .
+While the above is simply a slice of the larger picture, we hope nonetheless that you will enjoy flying the aircraft and provide feedback, so that we can improve, refine, and develop what is still missing.
 
 ## Tutorials and Documentation
 
 To assist users in flying, our beginner's guide will be released alongside the aircraft. Our documentation team will be working with type-rated A380 pilots to ensure that every stage of flight is covered to get you from point A to point B.
 
-This project will evolve with time , releasing new features and adding more functionality to the A380X.
+This project will evolve with time, releasing new features and adding more functionality to the A380X.
 
 ## MSFS 2024 Compatibility
 
-While we know many are eagerly awaiting the release of MSFS 2024, it’s important to note that a 2024-specific version of the A380X will not immediately launch with it.
+While we know many are eagerly awaiting the release of MSFS 2024, it is important to note that a 2024-specific version of the A380X will not immediately launch with it.
 
 It has been revealed that MSFS 2024 does include built-in backwards compatibility with MSFS 2020 addons, and while the 2020 version of the A380X may be loaded into the new simulator on day 1, we cannot at this time officially certify that any functionality that exists in MSFS 2020 will work seamlessly in MSFS 2024. MSFS 2024 exclusive features would also not work with MSFS 2020 aircraft, nor is it possible to backport this to MSFS 2020 (forwards compatibility).
 
-Adapting the A380X for MSFS 2024 may require some significant effort due to differences in system requirements and optimizations needed for the 3D model. Although we plan to make this transition as smooth as possible, it could take a few weeks or months depending on the changes.
+Adapting the A380X for MSFS 2024 may require some significant effort due to differences in system requirements and optimizations needed for the 3D model. Although we plan to make this transition as smooth as possible, it could take a few weeks or months depending on required the changes.
 Importantly, Career mode will not be supported outside the marketplace. Since we have no plans to join the marketplace (as outlined in our [Marketplace Announcement NOTAM](https://flybywiresim.com/notams/marketplace-announcement/)), this remains a hard limitation for the foreseeable future.
-As always in regards to how long this will take, we will be sticking with the no timelines, no stated delivery date approach, and we thank you for your patience and understanding.
+As always in regards to how long this will take, we will be sticking with no timelines, no stated delivery date approach and we thank you for your patience and understanding.
 
 ## Conclusion
 
-It’s been a long and exciting journey for us, but this is merely the beginning for the A380X.
+It has been a long and exciting journey for us, but this is merely the beginning for the A380X.
 We would like to extend a heartfelt thank you to all our contributors and the flight sim community from all of us at FlyByWire, for your ongoing support and feedback, patience and understanding. See you all in the skies above!
 
 ---
