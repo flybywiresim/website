@@ -93,7 +93,7 @@ Onboard Airport Navigation System (OANS), which enhances the flight crew's situa
 
 Tilting landing gear, with realistic NWS (Nose Wheel Steering) and BWS (Body Wheel Steering), with high-detail modelling and textures, powered by 5000 PSI Hydraulic lines, valves and actuators which are fully and realistically simulated. 
 
-We've also managed to implement HCF (Heading Control System) which assists taxi operations by countering any crosswind or ground slope without ay pilot input.
+We've also managed to implement HCF (Heading Control Function) which assists taxi operations by countering any crosswind or ground slope without ay pilot input.
 
 #### FlyPadOS v3 and Aircraft Configuration
 
