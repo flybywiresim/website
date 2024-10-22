@@ -85,15 +85,15 @@ Brake to Vacate (BTV) plays a crucial role in automatically managing braking to 
 Runway Overrun Warning/Protection (ROW/ROP), which helps minimise the risk of runway overrun at landing. The ROW and ROP are available as soon as the autobrake mode is armed and can be used independently from the BTV.
 
 **ROP**
-![a380-notam-media-1.png](/img/notam-images/a380x/a380-notam-media-1.png)
+[![a380-notam-media-1.png](/img/notam-images/a380x/a380-notam-media-1.png)](/img/notam-images/a380x/a380-notam-media-1.png)
 
 Onboard Airport Navigation System (OANS), which enhances the flight crew's situational awareness by displaying a moving map of the airport. Additionally, we implemented Radio Altimeters (RAs) simulated as three independent units, the Ground Proximity Warning System (GPWS) with messages on the Primary Flight Display (PFD), and the Terrain Display featuring A380-specific animations.
 
 **OANS on the Ground**
-![a380-notam-media-4.png](/img/notam-images/a380x/a380-notam-media-4.png)
+[![a380-notam-media-4.png](/img/notam-images/a380x/a380-notam-media-4.png)](/img/notam-images/a380x/a380-notam-media-4.png)
 
 **OANS in the Air**
-![a380-notam-media-2.png](/img/notam-images/a380x/a380-notam-media-2.png)
+[![a380-notam-media-2.png](/img/notam-images/a380x/a380-notam-media-2.png)](/img/notam-images/a380x/a380-notam-media-2.png)
 
 #### Landing Gear and Taxi Systems
 
@@ -101,7 +101,7 @@ Tilting landing gear, with realistic NWS (Nose Wheel Steering) and BWS (Body Whe
 
 We have also managed to implement HCF (Heading Control Function) which assists taxi operations by countering any crosswind or ground slope without ay pilot input.
 
-![a380-notam-media-3.png](/img/notam-images/a380x/a380-notam-media-3.png)
+[![a380-notam-media-3.png](/img/notam-images/a380x/a380-notam-media-3.png)](/img/notam-images/a380x/a380-notam-media-3.png)
 
 #### FlyPadOS v3 and Aircraft Configuration
 
