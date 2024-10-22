@@ -142,7 +142,7 @@ While we know many are eagerly awaiting the release of MSFS 2024, it is importan
 
 It has been revealed that MSFS 2024 does include built-in backwards compatibility with MSFS 2020 addons, and while the 2020 version of the A380X may be loaded into the new simulator on day 1, we cannot at this time officially certify that any functionality that exists in MSFS 2020 will work seamlessly in MSFS 2024. MSFS 2024 exclusive features would also not work with MSFS 2020 aircraft, nor is it possible to backport this to MSFS 2020 (forwards compatibility).
 
-Adapting the A380X for MSFS 2024 may require some significant effort due to differences in system requirements and optimizations needed for the 3D model. Although we plan to make this transition as smooth as possible, it could take a few weeks or months depending on required the changes.
+Adapting the A380X for MSFS 2024 may require some significant effort due to differences in system requirements and optimizations needed for the 3D model. Although we plan to make this transition as smooth as possible, it could take a few weeks or months depending on the required changes.
 Importantly, Career mode will not be supported outside the marketplace. Since we have no plans to join the marketplace (as outlined in our [Marketplace Announcement NOTAM](https://flybywiresim.com/notams/marketplace-announcement/)), this remains a hard limitation for the foreseeable future.
 As always in regards to how long this will take, we will be sticking with no timelines, no stated delivery date approach and we thank you for your patience and understanding.
 
