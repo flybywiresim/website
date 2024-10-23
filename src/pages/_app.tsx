@@ -1,16 +1,22 @@
-import Head from 'next/head';
 import type { AppProps } from 'next/app';
-import { NavBar } from '../components/utils/NavBar';
-import { ScrollToTopButton } from '../components/utils/ScrollToTopButton';
-import { Footer } from '../components/utils/Footer';
-import '../styles/main.scss';
+import '../styles/global.scss';
+import Head from 'next/head';
+import NavBar from '../components/Navigation/NavBar';
+import Footer from '../components/Navigation/Footer';
+import ScrollToTopButton from '../components/Button/ScrollToTopButton';
 
 const App = ({ Component, pageProps }: AppProps) => (
-    <div className="root">
+    <>
         <Head>
             <meta charSet="utf-8" />
 
-            <meta name="theme-color" content="#00c2cc" />
+            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+            <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png" />
+            <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png" />
+            <link rel="manifest" href="/meta/site.webmanifest" />
+            <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5" />
+            <meta name="msapplication-TileColor" content="#2b5797" />
+            <meta name="theme-color" content="#00E0FE" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
 
             <title>FlyByWire Simulations</title>
@@ -36,11 +42,12 @@ const App = ({ Component, pageProps }: AppProps) => (
                 content="/A32NX_Front.jpeg"
             />
         </Head>
+
         <NavBar />
-        <ScrollToTopButton />
         <Component {...pageProps} />
         <Footer />
-    </div>
+        <ScrollToTopButton />
+    </>
 );
 
 export default App;

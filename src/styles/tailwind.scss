@@ -1,50 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-
 @tailwind base;
+
 @layer base {
-
   html {
-    font-size: 14px;
-    scroll-behavior: smooth;
+    @apply bg-light text-dark overflow-x-hidden;
+    font-size: 12px;
   }
 
-  body {
-    @apply overflow-x-hidden bg-blue-darker text-white;
-  }
-  li {
-    @apply text-xl font-semibold
-  }
-  h1,h2,h3,h4 {
-    @apply font-extrabold mb-3
-  }
-  h1 {
-    @apply text-5xl md:text-6xl
-  }
-  h2 {
-    @apply text-4xl
-  }
-  h3 {
-    @apply text-3xl
-  }
-  h4 {
-    @apply text-2xl
-  }
-  p {
-    @apply text-xl
-  }
-
-  iframe {
-    @apply my-2
-  }
-}
-
-@tailwind components;
-@tailwind utilities;
-
-@layer utilities {
-  @variants hover, focus {
-    .px-page {
-      @apply px-5 md:px-8;
+  @screen xs {
+    html {
+      font-size: 16px;
     }
   }
+
+  h1,h2,h3,h4 {
+    @apply font-bold font-display leading-relaxed py-2;
+  }
+
+  h1 {
+    @apply text-8xl;
+  }
+  h2 {
+    @apply text-5xl;
+  }
+  h3 {
+    @apply text-4xl;
+  }
+  h4 {
+    @apply text-2xl font-normal;
+  }
+
+  p {
+    @apply font-body font-light text-lg tracking-[-2%] leading-relaxed;
+  }
+  a {
+    @apply font-display
+  }
 }
+@tailwind components;
+@tailwind utilities;
