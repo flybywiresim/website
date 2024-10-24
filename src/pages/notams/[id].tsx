@@ -153,7 +153,7 @@ export const getStaticProps: GetStaticProps<PostProps> = async ({ params }) => {
             html,
             content: {
                 title: content.title,
-                category: content.category,
+                category: content.category.charAt(0).toUpperCase() + content.category.slice(1).toLowerCase(),
                 readingStats: content.readingStats.text,
                 authors: (content.authors ?? []).join(', '),
                 date: content.date,
@@ -167,7 +167,7 @@ export const getStaticProps: GetStaticProps<PostProps> = async ({ params }) => {
             },
         });
 
-        return { props: { content, embedPreviewPath: `${NOTAMS_EMBED_PREVIEWS_PUBLIC_DIR}/${previewFileName}` } };
+        return { props: { content: { ...content, metaImage: `${NOTAMS_EMBED_PREVIEWS_PUBLIC_DIR}/${previewFileName}` } } };
     }
 
     return Promise.reject(new Error('no id parameter'));
