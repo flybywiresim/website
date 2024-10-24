@@ -3,11 +3,13 @@ import { twMerge } from 'tailwind-merge';
 export type TagType = 'Update' | 'News' | 'Aircraft' | 'Software' | 'Latest'
 
 export interface TagProps {
-    category: TagType | Uppercase<TagType> | Lowercase<TagType>;
+    category: AnyTag;
     className?: string;
 }
 
-const handleCategory = (category: TagType) => {
+export type AnyTag = TagType | Uppercase<TagType> | Lowercase<TagType>
+
+const handleCategory = (category: AnyTag) => {
     switch (category.toLowerCase() as Lowercase<TagType>) {
     case 'update':
         return 'border-yellow-500 bg-yellow-500/20 text-yellow-500';
