@@ -59,7 +59,7 @@ const Insights = () => {
                 </div>
             </div>
 
-            <div className="min-w-[600px] max-xl:h-96 bg-red-500 grow-[3]">
+            <div className="md:min-w-[600px] max-xl:h-96 bg-red-500 grow-[3]">
                 <LeafletMap isFullPageMap={false} className="size-full" />
             </div>
         </Section>

@@ -4,7 +4,7 @@ import Section from '../../components/Utils/Section';
 import Container from '../../components/Utils/Container';
 import Card from '../../components/Projects/Card';
 
-const A32NX_DOWNLOAD_URL = 'https://github.com/flybywiresim/a32nx/releases/download/assets/master/A32NX-master.zip';
+// const A32NX_DOWNLOAD_URL = 'https://github.com/flybywiresim/a32nx/releases/download/assets/master/A32NX-master.zip';
 
 const index: NextPage = () => (
     <>
@@ -27,9 +27,7 @@ const index: NextPage = () => (
                         category="Aircraft"
                         description="The A32NX is a high fidelity and free solution for Microsoft Flight Simulator, built and maintained by the open source community."
                         downloadURL="/downloads"
-                        href="/projects/a32nx"
                         direction="vertical"
-                        disabled={false}
                     />
                     <Card
                         metaImage="/pages/projects/a380x/a380Project.png"
@@ -38,24 +36,20 @@ const index: NextPage = () => (
                         category="Aircraft"
                         description="The A380X is the upcoming first high fidelity and free simulation of the A380 for Microsoft Flight Simulator."
                         downloadURL="/downloads"
-                        href="/projects/a380x"
                         direction="vertical"
-                        disabled
                     />
                     <Card
                         title="Installer"
                         category="Software"
                         description="Our custom-built, open-source installer is where we keep our projects for you to easily install."
                         downloadURL="/downloads"
-                        href="/projects/installer"
                         direction="horizontal"
-                        disabled={false}
                     />
                     <Card
                         title="EFB"
                         category="Software"
                         description="The Electronic Flight Bag is an integrated tablet with a wide array of tools, settings and more."
-                        href="/projects/efb"
+                        href="https://docs.flybywiresim.com/fbw-a32nx/feature-guides/flypados3/"
                         direction="horizontal"
                     />
                 </div>

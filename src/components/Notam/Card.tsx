@@ -3,7 +3,7 @@ import Image from "next/legacy/image";
 import Tag from '../Utils/Tag';
 import { PostListing } from '../../lib/notams/posts';
 
-const Card = (props: PostListing) => (
+const Card = (props: Omit<PostListing, 'embedPreviewImage'>) => (
     <div className="border-2 border-transparent hover:border-primary rounded-md overflow-hidden">
         <div className={`
         ${props.index === 0

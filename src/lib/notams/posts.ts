@@ -9,6 +9,7 @@ import rehypeSlug from 'rehype-slug-custom-id';
 import { remark } from 'remark';
 import { rehype } from 'rehype';
 import { slug } from 'github-slugger';
+import { TagType } from '../../components/Utils/Tag';
 
 export interface PostListing {
     index: number;
@@ -18,7 +19,8 @@ export interface PostListing {
     title: string,
     description: string,
     authors?: string[],
-    category: string,
+    category: TagType | Uppercase<TagType> | Lowercase<TagType>,
+    embedPreviewImage: string,
     metaImage: string,
     metaAlt: string,
 }
