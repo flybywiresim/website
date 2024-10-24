@@ -1,9 +1,9 @@
 import { twMerge } from 'tailwind-merge';
 
-type TagType = 'Update' | 'News' | 'Aircraft' | 'Software' | 'Latest'
+export type TagType = 'Update' | 'News' | 'Aircraft' | 'Software' | 'Latest'
 
 export interface TagProps {
-    category: TagType;
+    category: TagType | Uppercase<TagType> | Lowercase<TagType>;
     className?: string;
 }
 
