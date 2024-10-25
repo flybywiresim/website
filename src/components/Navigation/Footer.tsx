@@ -50,6 +50,7 @@ const Footer = () => (
                                 <NavItem label="Projects" href="/projects" />
                                 <NavItem label="Docs" href={links.docs} />
                                 <NavItem label="Map" href="/map" />
+                                <NavItem label="FAQ" href="/faq" />
                             </NavWrapper>
 
                             <NavWrapper label="Socials">
