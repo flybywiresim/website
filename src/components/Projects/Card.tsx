@@ -12,7 +12,7 @@ type CardProps = {
     category: any,
     metaImage?: string,
     metaAlt?: string,
-    href: string,
+    href?: string,
     downloadURL?: string,
     direction: 'horizontal' | 'vertical',
     disabled?: boolean,
@@ -42,14 +42,16 @@ const Card = ({
                         {description}
                     </p>
                     <span className="flex flex-wrap gap-2 py-4 mt-auto">
-                        <Link href={href}>
-                            <Button label="Learn More" theme="secondary" />
-                        </Link>
+                        {href !== undefined && (
+                            <Link href={href}>
+                                <Button theme="secondary">Learn More</Button>
+                            </Link>
+                        )}
                         {downloadURL
                             && (
                                 <>
                                     <Link href={downloadURL} className={twJoin(disabled && 'pointer-events-none')}>
-                                        <Button label={<DownloadOutlined />} theme="primary" className="flex max-w-min items-center justify-center" disabled={disabled} />
+                                        <Button label={<DownloadOutlined />} theme="primary" className="flex max-w-min items-center justify-center" disabled={disabled}>Download</Button>
                                     </Link>
                                 </>
                             )}

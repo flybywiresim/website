@@ -14,6 +14,7 @@ const BackgroundImage = () => (
 
 const A32NX: NextPage = () => {
     const router = useRouter();
+
     return (
         <>
             <Head>

@@ -11,7 +11,7 @@ export enum ButtonType {
 
 export interface ButtonProps {
   theme?: 'primary' | 'secondary' | 'positive' | 'caution' | 'danger' | 'discord';
-  label: string | JSX.Element;
+  label?: string | JSX.Element;
   disabled?: boolean;
   className?: string;
   onClick?: () => void;
@@ -49,8 +49,9 @@ const Button: FC<ButtonProps> = ({
     }
 
     return (
-        <button type="button" disabled={disabled} className={twMerge('button', buttonClass, disabled && 'pointer-events-none', className)} onClick={onClick}>
-            {children || label}
+        <button type="button" disabled={disabled} className={twMerge('button flex gap-x-2 items-center', buttonClass, disabled && 'pointer-events-none', className)} onClick={onClick}>
+            {label}
+            {children}
         </button>
     );
 };
