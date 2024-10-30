@@ -6,4 +6,5 @@ export const links: {[name: string]: string} = {
     twitter: 'https://x.com/flybywiresim',
     facebook: 'https://www.facebook.com/FlyByWireSimulations/',
     opencollective: 'https://opencollective.com/flybywire',
+    docsfaq: 'https://docs.flybywiresim.com/faq',
 };
