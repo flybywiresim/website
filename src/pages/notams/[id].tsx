@@ -43,7 +43,7 @@ const Post = ({
             <meta key="og:site_name" name="og:site_name" content="FlyByWire Simulations" />
             <meta key="og:title" name="og:title" content={title} />
             <meta key="og:description" name="og:description" content="A NOTAM on the FlyByWire Simulations website" />
-            <meta key="og:image" name="og:image" content={`https://flybywiresim.com/${embedPreviewImage}`} />
+            <meta key="og:image" name="og:image" content={embedPreviewImage} />
             <meta key="og:image:alt" name="og:image:alt" content={`${title} - FlyByWire Simulations`} />
             <meta key="og:image:width" name="og:image:width" content="1200" />
             <meta key="og:image:height" name="og:image:height" content="600" />
