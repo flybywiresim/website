@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import Head from 'next/head';
 import { twMerge } from 'tailwind-merge';
 import nodeHtmlToImage from 'node-html-to-image';
@@ -19,6 +19,7 @@ const Post = ({
     content: {
         category,
         title,
+        embedPreviewImage,
         metaImage,
         metaAlt,
         readingStats,
@@ -53,7 +54,7 @@ const Post = ({
             <meta
                 key="og:image"
                 name="og:image"
-                content={metaImage}
+                content={embedPreviewImage}
             />
         </Head>
 
@@ -68,7 +69,7 @@ const Post = ({
                 />
                 <Container className="grid py-8">
                     <div className="relative top-1/4 my-4">
-                        <span className="flex items-center gap-x-4">
+                        <span className="flex flex-wrap items-center gap-x-4 gap-y-3">
                             <Tag category={category} />
                             <p className="font-semibold">
                                 {new Date(date).toLocaleDateString('en-US', { dateStyle: 'full' })}
@@ -87,9 +88,9 @@ const Post = ({
         </Section>
 
         <Section theme="light">
-            <Container className="grid justify-center grid-cols-[1fr_auto_1fr] gap-x-10">
+            <Container className="grid justify-center grid-cols-[1fr_auto_1fr]">
                 <div>
-                    <aside className="hidden 2xl:flex sticky top-20 flex-col gap-y-2.5">
+                    <aside className="hidden 2xl:flex 2xl:mr-10 sticky top-20 flex-col gap-y-2.5">
                         {headings.map((it, index) => {
                             const bold = it.depth === 2;
 
@@ -167,7 +168,14 @@ export const getStaticProps: GetStaticProps<PostProps> = async ({ params }) => {
             },
         });
 
-        return { props: { content: { ...content, metaImage: `${NOTAMS_EMBED_PREVIEWS_PUBLIC_DIR}/${previewFileName}` } } };
+        return {
+            props: {
+                content: {
+                    ...content,
+                    embedPreviewImage: `/${NOTAMS_EMBED_PREVIEWS_PUBLIC_DIR}/${previewFileName}`,
+                },
+            },
+        };
     }
 
     return Promise.reject(new Error('no id parameter'));

@@ -20,6 +20,7 @@ export interface PostListing {
     description: string,
     authors?: string[],
     category: TagType | Uppercase<TagType> | Lowercase<TagType>,
+    embedPreviewImage: string,
     metaImage: string,
     metaAlt: string,
 }
