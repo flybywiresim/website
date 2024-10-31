@@ -56,6 +56,25 @@ const Post = ({
                 name="og:image"
                 content={embedPreviewImage}
             />
+            <meta
+                key="og:image:alt"
+                name="og:image:alt"
+                content={`${title} - FlyByWire Simulations`}
+            />
+            <meta
+                key="og:image:width"
+                name="og:image:width"
+                content="1200"
+            />
+            <meta
+                key="og:image:height"
+                name="og:image:height"
+                content="600"
+            />
+            <meta
+                name="twitter:image"
+                content={embedPreviewImage}
+            />
         </Head>
 
         <Section theme="dark" className="relative">
