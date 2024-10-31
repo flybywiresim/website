@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import Link from 'next/link';
 import Section from '../../components/Utils/Section';
 import Container from '../../components/Utils/Container';
 import Button from '../../components/Button/Button';
@@ -24,7 +25,9 @@ const Downloads: NextPage = () => (
                         Our easy-to-use installer is the easiest way to get started with our addons. Simply launch and
                         install any addon you want, with only two clicks.
                     </p>
-                    <Button label="Download" theme="primary" className="mt-auto" />
+                    <Link href="https://cdn.flybywiresim.com/installer/release/FlyByWire_Installer_Setup.exe">
+                        <Button label="Download" theme="primary" className="mt-auto" />
+                    </Link>
                 </div>
 
                 <span className="w-full h-px 2xl:w-px 2xl:h-full bg-gray-500" />
@@ -33,7 +36,11 @@ const Downloads: NextPage = () => (
                     <h2>Direct Download</h2>
                     <p className="pb-6">If you prefer a direct download, the following links are available.</p>
                     <div className="flex flex-col lg:flex-row gap-8">
-                        <DownloadLinks aircraft="A32NX" stableLink="" devLink="" />
+                        <DownloadLinks
+                            aircraft="A32NX"
+                            stableLink="https://github.com/flybywiresim/aircraft/releases/download/assets/stable/A32NX-stable.zip"
+                            devLink="https://github.com/flybywiresim/aircraft/releases/download/assets/master/A32NX-master.7z"
+                        />
                         <DownloadLinks aircraft="A380X" stableLink="" devLink="" />
                     </div>
                 </div>
