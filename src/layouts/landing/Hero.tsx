@@ -33,7 +33,6 @@ const Hero = () => {
                     </p>
                     <ButtonGroup>
                         <Button label="Download" theme="primary" onClick={() => router.push('/downloads')} />
-                        <Button label="More Info" theme="secondary" onClick={() => router.push('/projects/a32nx')} />
                     </ButtonGroup>
                 </div>
             </Container>
