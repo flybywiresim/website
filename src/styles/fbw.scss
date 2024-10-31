@@ -3,6 +3,11 @@
  * v1.0 - CoherentGT compatible - made for TailwindCSS v3.0 with @flybywiresim/tailwind-config v(TBD)
  */
 
+/*
+ * Website mods
+ * - Buttons modified to fit light background
+ */
+
 :root {
     --color-brand-cyan-main: rgb(0, 224, 254);
     --color-brand-cyan-dark: rgb(0, 202, 229);
@@ -62,6 +67,8 @@
             border-color: $borderColorHoverValue;
             @if $textColorHover {
                 color: $background;
+            } @else {
+                color: $borderColorHoverValue;
             }
         }
     }

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Button from '../Button/Button';
 
 type DownloadProps = {
@@ -13,8 +14,12 @@ const downloadLinks = ({ stableLink, devLink, aircraft }: DownloadProps) => (
         {stableLink && devLink ? (
             <>
                 <span className="flex gap-x-2.5">
-                    <Button label="Stable" />
-                    <Button theme="secondary" label="Development" />
+                    <Link href={stableLink}>
+                        <Button>Stable</Button>
+                    </Link>
+                    <Link href={devLink}>
+                        <Button theme="secondary">Development</Button>
+                    </Link>
                 </span>
             </>
         ) : (
