@@ -31,7 +31,6 @@
                 font-size: 1.25em;
             }
 
-
             h1, h2 {
                 margin: 0;
             }
@@ -45,6 +44,13 @@
 
                 background-color: var(--navy);
                 opacity: 0.9;
+            }
+
+            #BackgroundImage {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
             }
 
             #MainContainer {
@@ -139,6 +145,6 @@
 
         <div id="BackgroundContainer"></div>
 
-        <img src="{{metaImage}}" width="100%" />
+        <img id="BackgroundImage" src="{{metaImage}}" />
     </body>
 </html>
