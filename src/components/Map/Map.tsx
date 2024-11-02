@@ -4,13 +4,17 @@ import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import { DivIcon } from 'leaflet';
 import { ArrowRightOutlined } from '@ant-design/icons';
 
-const AircraftIcon = (heading: number, aircraftId: string) => {
-    const aircraftStyle = `transform: rotate(${heading}deg); transform-origin: center; width: 32px; height: 32px; filter: drop-shadow(0 0 2px rgba(0 0 0 /0.5))`;
+const AircraftIcon = (heading: number, aircraftId: string, aircraftType: string) => {
+    var aircraftIconUrl = "/meta/aircraft-icon.png";
+    var aircraftIconSize = 28
+    if (aircraftType.includes("A32")) {  aircraftIconUrl = "/meta/aircraft-icon-a32nx.png"; }
+    if (aircraftType.includes("A38")) {  aircraftIconUrl = "/meta/aircraft-icon-a380x.png"; aircraftIconSize = 38; }
+    const aircraftIconStyle = `transform: rotate(${heading}deg); transform-origin: center; width: ${aircraftIconSize}px; height: ${aircraftIconSize}px; filter: drop-shadow(0 0 2px rgba(0 0 0 /0.5))`;
 
     return new DivIcon({
         iconSize: [0, 0],
         iconAnchor: [15, 10],
-        html: `<img src="/meta/aircraft-icon.png" alt="${aircraftId}" style="${aircraftStyle}"/>`,
+        html: `<img src="${aircraftIconUrl}" alt="${aircraftId}" style="${aircraftIconStyle}"/>`,
     });
 };
 
@@ -24,6 +28,26 @@ export interface LeafletMapProps {
 
 const LeafletMap: FC<LeafletMapProps> = ({ isFullPageMap, className }) => {
     const [flights, setFlights] = useState<TelexConnection[]>([]);
+
+    const MapLegend = () => {
+        return(
+          <div className="leaflet-bottom leaflet-left hidden lg:block">
+            <div className="leaflet-control">
+              <div className="bg-light p-4 text-secondary font-mono">
+                <span className="flex items-center gap-x-4">
+                    <img className="inline" src="/meta/aircraft-icon-a32nx.png" style={{height:28, width:28}}/> <h4>FlyByWire A32NX</h4>
+                </span>
+                <span className="flex items-center gap-x-4">
+                    <img className="inline" src="/meta/aircraft-icon-a380x.png" style={{height:28, width:28}}/> <h4>FlyByWire A380X</h4>
+                </span>
+                <span className="flex items-center gap-x-4">
+                    <img className="inline" src="/meta/aircraft-icon.png" style={{height:28, width:28}}/> <h4>Others</h4>
+                </span>
+              </div>
+            </div>
+          </div>
+        )
+      }
 
     useEffect(() => {
         Telex.fetchAllConnections().then((flights) => setFlights(flights));
@@ -40,7 +64,7 @@ const LeafletMap: FC<LeafletMapProps> = ({ isFullPageMap, className }) => {
                 />
 
                 {flights.map((it) => (
-                    <Marker key={it.id} icon={AircraftIcon(it.heading, it.id)} position={[it.location.y, it.location.x]}>
+                    <Marker key={it.id} icon={AircraftIcon(it.heading, it.id, it.aircraftType)} position={[it.location.y, it.location.x]}>
                         <Popup>
                             <div className="bg-secondary p-4 text-white">
                                 <span className="flex items-center justify-between gap-x-4">
@@ -74,6 +98,7 @@ const LeafletMap: FC<LeafletMapProps> = ({ isFullPageMap, className }) => {
                         </Popup>
                     </Marker>
                 ))}
+                <MapLegend />
             </MapContainer>
         </div>
     );
