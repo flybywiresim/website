@@ -5,10 +5,14 @@ import { DivIcon } from 'leaflet';
 import { ArrowRightOutlined } from '@ant-design/icons';
 
 const AircraftIcon = (heading: number, aircraftId: string, aircraftType: string) => {
-    var aircraftIconUrl = "/meta/aircraft-icon.png";
-    var aircraftIconSize = 28
-    if (aircraftType.includes("A32")) {  aircraftIconUrl = "/meta/aircraft-icon-a32nx.png"; }
-    if (aircraftType.includes("A38")) {  aircraftIconUrl = "/meta/aircraft-icon-a380x.png"; aircraftIconSize = 38; }
+    let aircraftIconUrl = '/meta/aircraft-icon.png';
+    let aircraftIconSize = 28;
+    if (aircraftType.includes('A32')) {
+        aircraftIconUrl = '/meta/aircraft-icon-a32nx.png';
+    }
+    if (aircraftType.includes('A38')) {
+        aircraftIconUrl = '/meta/aircraft-icon-a380x.png'; aircraftIconSize = 38;
+    }
     const aircraftIconStyle = `transform:rotate(${heading}deg);transform-origin:center;width:${aircraftIconSize}px;height:${aircraftIconSize}px;filter:drop-shadow(0 0 2px rgba(0 0 0 /0.5))`;
 
     return new DivIcon({
@@ -29,25 +33,26 @@ export interface LeafletMapProps {
 const LeafletMap: FC<LeafletMapProps> = ({ isFullPageMap, className }) => {
     const [flights, setFlights] = useState<TelexConnection[]>([]);
 
-    const MapLegend = () => {
-        return(
-          <div className="leaflet-bottom leaflet-left hidden lg:block">
+    const MapLegend = () => (
+        <div className="leaflet-bottom leaflet-left hidden lg:block">
             <div className="leaflet-control">
-              <div className="bg-light p-4 text-secondary font-mono">
-                <span className="flex items-center gap-x-4">
-                    <img className="inline" src="/meta/aircraft-icon-a32nx.png" style={{height:28, width:28}}/> <h4>FlyByWire A32NX</h4>
-                </span>
-                <span className="flex items-center gap-x-4">
-                    <img className="inline" src="/meta/aircraft-icon-a380x.png" style={{height:28, width:28}}/> <h4>FlyByWire A380X</h4>
-                </span>
-                <span className="flex items-center gap-x-4">
-                    <img className="inline" src="/meta/aircraft-icon.png" style={{height:28, width:28}}/> <h4>Others</h4>
-                </span>
-              </div>
+                <div className="bg-light p-4 text-secondary font-mono">
+                    <span className="flex items-center gap-x-4">
+                        <img className="inline" src="/meta/aircraft-icon-a32nx.png" style={{ height: 28, width: 28 }} />
+                        <h4>FlyByWire A32NX</h4>
+                    </span>
+                    <span className="flex items-center gap-x-4">
+                        <img className="inline" src="/meta/aircraft-icon-a380x.png" style={{ height: 28, width: 28 }} />
+                        <h4>FlyByWire A380X</h4>
+                    </span>
+                    <span className="flex items-center gap-x-4">
+                        <img className="inline" src="/meta/aircraft-icon.png" style={{ height: 28, width: 28 }} />
+                        <h4>Others</h4>
+                    </span>
+                </div>
             </div>
-          </div>
-        )
-      }
+        </div>
+    );
 
     useEffect(() => {
         Telex.fetchAllConnections().then((flights) => setFlights(flights));
