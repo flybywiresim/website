@@ -34,18 +34,18 @@ const LeafletMap: FC<LeafletMapProps> = ({ isFullPageMap, className }) => {
     const [flights, setFlights] = useState<TelexConnection[]>([]);
 
     const MapLegend = () => (
-        <div className="leaflet-bottom leaflet-left hidden lg:block">
+        <div className="leaflet-bottom leaflet-left">
             <div className="leaflet-control">
                 <div className="bg-light p-4 text-secondary font-mono">
-                    <span className="flex items-center gap-x-4">
+                    <span className="items-center inline-flex gap-x-2 mr-4 xl:flex xl:gap-x-4 xl:mr-0">
                         <img className="inline" src="/meta/aircraft-icon-a32nx.png" style={{ height: 28, width: 28 }} />
-                        <h4>FlyByWire A32NX</h4>
+                        <h4><span className="hidden lg:inline">FlyByWire </span>A32NX</h4>
                     </span>
-                    <span className="flex items-center gap-x-4">
+                    <span className="items-center inline-flex gap-x-2 mr-4 xl:flex xl:gap-x-4 xl:mr-0">
                         <img className="inline" src="/meta/aircraft-icon-a380x.png" style={{ height: 28, width: 28 }} />
-                        <h4>FlyByWire A380X</h4>
+                        <h4><span className="hidden lg:inline">FlyByWire </span>A380X</h4>
                     </span>
-                    <span className="flex items-center gap-x-4">
+                    <span className="items-center inline-flex gap-x-2 mr-4 xl:flex xl:gap-x-4 xl:mr-0">
                         <img className="inline" src="/meta/aircraft-icon.png" style={{ height: 28, width: 28 }} />
                         <h4>Others</h4>
                     </span>
