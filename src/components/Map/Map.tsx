@@ -9,7 +9,7 @@ const AircraftIcon = (heading: number, aircraftId: string, aircraftType: string)
     var aircraftIconSize = 28
     if (aircraftType.includes("A32")) {  aircraftIconUrl = "/meta/aircraft-icon-a32nx.png"; }
     if (aircraftType.includes("A38")) {  aircraftIconUrl = "/meta/aircraft-icon-a380x.png"; aircraftIconSize = 38; }
-    const aircraftIconStyle = `transform: rotate(${heading}deg); transform-origin: center; width: ${aircraftIconSize}px; height: ${aircraftIconSize}px; filter: drop-shadow(0 0 2px rgba(0 0 0 /0.5))`;
+    const aircraftIconStyle = `transform:rotate(${heading}deg);transform-origin:center;width:${aircraftIconSize}px;height:${aircraftIconSize}px;filter:drop-shadow(0 0 2px rgba(0 0 0 /0.5))`;
 
     return new DivIcon({
         iconSize: [0, 0],
