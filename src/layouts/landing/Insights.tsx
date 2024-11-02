@@ -30,7 +30,7 @@ const Insights = () => {
     return (
         <Section
             theme="light"
-            className="dark:bg-navy-dark dark:text-quasi-white transition-colors relative flex flex-col py-0 xl:flex-row-reverse"
+            className="dark:bg-navy-dark dark:text-light transition-colors relative flex flex-col py-0 xl:flex-row-reverse"
         >
             <div className="grow flex flex-col items-center justify-center py-20">
                 <div className="grid gap-y-4 px-4 text-center lg:text-left lg:px-16 2xl:px-28">

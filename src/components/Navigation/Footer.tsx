@@ -25,7 +25,7 @@ const NavItem = (props: { label: string, href: string }) => (
 
 const Footer = () => (
     <footer>
-        <Section theme="light" className="pb-0 dark:bg-navy-dark dark:text-quasi-white transition-colors">
+        <Section theme="light" className="pb-0 dark:bg-navy-dark dark:text-light transition-colors">
             <Container>
                 <div className="text-md justify-center py-4">
                     <div className="flex flex-col justify-between lg:flex-row">
@@ -105,7 +105,7 @@ const Footer = () => (
 
                         <a
                             href="https://vercel.com"
-                            className="flex items-center justify-center gap-1 text-dark/50 dark:text-quasi-white lg:justify-end"
+                            className="flex items-center justify-center gap-1 text-dark/50 dark:text-light lg:justify-end"
                         >
                             <span className="mb-1 mr-1">Powered by</span>
                             <picture>
@@ -121,7 +121,7 @@ const Footer = () => (
                                 />
                             </picture>
                         </a>
-                        <p className=" text-sm text-dark/50">
+                        <p className="text-sm text-dark/50 dark:text-light transition-colors">
                             &copy; FlyByWire Simulations and its contributors
                             2020-
                             {new Date().getFullYear()}
