@@ -28,19 +28,6 @@ const LeafletMap: FC<LeafletMapProps> = ({ isFullPageMap, className }) => {
         Telex.fetchAllConnections().then((flights) => setFlights(flights));
     }, []);
 
-    useEffect(() => {
-        const footer = document.querySelector('footer');
-        if (isFullPageMap && footer) {
-            footer.style.display = 'none';
-        }
-
-        return () => {
-            if (footer) {
-                footer.style.display = '';
-            }
-        };
-    }, [isFullPageMap]);
-
     const position = [51, 5];
 
     return (
