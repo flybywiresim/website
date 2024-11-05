@@ -35,3 +35,7 @@
 .leaflet-div-icon {
   border: none !important; 
 }
+
+.leaflet-container {
+  z-index: 999;
+}
