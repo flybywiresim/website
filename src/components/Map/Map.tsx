@@ -18,6 +18,7 @@ const numberFormat = new Intl.NumberFormat();
 
 export interface LeafletMapProps {
     isFullPageMap: boolean;
+
     className?: string;
 }
 
