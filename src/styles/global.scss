@@ -31,3 +31,7 @@
 .full-page-map .leaflet-control-zoom {
   margin-top: 72px !important;
 }
+
+.leaflet-container {
+  z-index: 999;
+}
