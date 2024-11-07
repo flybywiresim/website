@@ -70,7 +70,7 @@ const Footer = () => (
                             <a href="https://github.com/flybywiresim/" target="_blank" rel="noreferrer">Source Code</a>
                         </span>
 
-                        <a href="https://vercel.com" className="flex items-center justify-center gap-1 text-dark/50 lg:justify-end">
+                        <a href="https://pages.cloudflare.com/" className="flex items-center justify-center gap-1 text-dark/50 lg:justify-end">
                             <span className="mb-1 mr-1">Runs on Cloudflare®</span>
                             <Image src="/img/cloudflare-logo.png" alt="CloudFlare" width={146} height={50} />
                         </a>
