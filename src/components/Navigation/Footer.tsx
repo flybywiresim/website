@@ -59,6 +59,7 @@ const Footer = () => (
                                 <NavItem label="Facebook" href={links.facebook} />
                                 <NavItem label="YouTube" href={links.youtube} />
                                 <NavItem label="Twitch" href={links.twitch} />
+                                <NavItem label="Press Kit" href={links.pressKit} />
                             </NavWrapper>
                         </div>
                     </div>
