@@ -9,4 +9,5 @@ export const links: {[name: string]: string} = {
     docsfaq: 'https://docs.flybywiresim.com/faq',
     installer: 'https://flybywirecdn.com/installer/release/FlyByWire_Installer_Setup.exe',
     efb: 'https://docs.flybywiresim.com/aircraft/common/flypados3',
+    pressKit: 'https://github.com/flybywiresim/branding',
 };
