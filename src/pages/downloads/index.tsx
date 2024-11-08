@@ -4,6 +4,7 @@ import Section from '../../components/Utils/Section';
 import Container from '../../components/Utils/Container';
 import Button from '../../components/Button/Button';
 import DownloadLinks from '../../components/Downloads/DownloadLinks';
+import { links } from '../../constants/links';
 
 const Downloads: NextPage = () => (
     <>
@@ -25,7 +26,7 @@ const Downloads: NextPage = () => (
                         Our easy-to-use installer is the easiest way to get started with our addons. Simply launch and
                         install any addon you want, with only two clicks.
                     </p>
-                    <Link href="https://cdn.flybywiresim.com/installer/release/FlyByWire_Installer_Setup.exe">
+                    <Link href={links.installer}>
                         <Button label="Download" theme="primary" className="mt-auto" />
                     </Link>
                 </div>
