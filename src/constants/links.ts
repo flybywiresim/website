@@ -7,4 +7,6 @@ export const links: {[name: string]: string} = {
     facebook: 'https://www.facebook.com/FlyByWireSimulations/',
     opencollective: 'https://opencollective.com/flybywire',
     docsfaq: 'https://docs.flybywiresim.com/faq',
+    installer: 'https://cdn.flybywiresim.com/installer/release/FlyByWire_Installer_Setup.exe',
+    efb: 'https://docs.flybywiresim.com/aircraft/common/flypados3',
 };
