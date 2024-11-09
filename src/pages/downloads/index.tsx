@@ -39,7 +39,7 @@ const Downloads: NextPage = () => (
                     <div className="flex flex-col lg:flex-row gap-8">
                         <DownloadLinks
                             aircraft="A32NX"
-                            stableLink="https://github.com/flybywiresim/aircraft/releases/download/assets/stable/A32NX-stable.zip"
+                            stableLink="https://github.com/flybywiresim/aircraft/releases/download/assets/stable/A32NX-stable.7z"
                             devLink="https://github.com/flybywiresim/aircraft/releases/download/assets/master/A32NX-master.7z"
                         />
                         <DownloadLinks aircraft="A380X" stableLink="" devLink="" />
