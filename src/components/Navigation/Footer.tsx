@@ -39,10 +39,10 @@ const Footer = () => (
 
                         <div className="grid grid-cols-3 items-start gap-x-32 gap-y-5">
                             <NavWrapper label="Projects">
-                                <NavItem label="Installer" href="/" />
+                                <NavItem label="Installer" href={links.installer} />
                                 <NavItem label="A32NX" href="/projects/downloadLinks" />
                                 <NavItem label="A380X" href="/projects/a380x" />
-                                <NavItem label="EFB" href="/" />
+                                <NavItem label="EFB" href={links.efb} />
                             </NavWrapper>
 
                             <NavWrapper label="Menu">
@@ -59,6 +59,7 @@ const Footer = () => (
                                 <NavItem label="Facebook" href={links.facebook} />
                                 <NavItem label="YouTube" href={links.youtube} />
                                 <NavItem label="Twitch" href={links.twitch} />
+                                <NavItem label="Press Kit" href={links.pressKit} />
                             </NavWrapper>
                         </div>
                     </div>
@@ -70,10 +71,11 @@ const Footer = () => (
                             <a href="https://github.com/flybywiresim/" target="_blank" rel="noreferrer">Source Code</a>
                         </span>
 
-                        <a href="https://vercel.com" className="flex items-center justify-center gap-1 text-dark/50 lg:justify-end">
-                            <span className="mb-1 mr-1">Powered by</span>
-                            <Image src="/svg/vercel.svg" alt="Vercel" width={50} height={50} />
+                        <a href="https://pages.cloudflare.com/" className="flex items-center justify-center gap-1 text-dark/50 lg:justify-end">
+                            <span className="mb-1 mr-1">Runs on Cloudflare®</span>
+                            <Image src="/img/cloudflare-logo.png" alt="CloudFlare" width={146} height={50} />
                         </a>
+
                         <p className=" text-sm text-dark/50">
                             &copy; FlyByWire Simulations and its contributors 2020-
                             {new Date().getFullYear()}

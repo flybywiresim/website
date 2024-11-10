@@ -3,8 +3,7 @@ import { NextPage } from 'next';
 import Section from '../../components/Utils/Section';
 import Container from '../../components/Utils/Container';
 import Card from '../../components/Projects/Card';
-
-// const A32NX_DOWNLOAD_URL = 'https://github.com/flybywiresim/a32nx/releases/download/assets/master/A32NX-master.zip';
+import { links } from '../../constants/links';
 
 const index: NextPage = () => (
     <>
@@ -49,7 +48,7 @@ const index: NextPage = () => (
                         title="EFB"
                         category="Software"
                         description="The Electronic Flight Bag is an integrated tablet with a wide array of tools, settings and more."
-                        href="https://docs.flybywiresim.com/fbw-a32nx/feature-guides/flypados3/"
+                        href={links.efb}
                         direction="horizontal"
                     />
                 </div>
