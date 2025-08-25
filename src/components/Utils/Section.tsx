@@ -7,17 +7,20 @@ type SectionProps = {
     className?: string
     children?: ReactNode
 }
-const Section = ({ id, theme, className, children }: SectionProps) => {
-    const handleTheme = () => {
-        switch (theme) {
-        case 'light':
-            return 'bg-light text-dark';
-        case 'dark':
-            return 'bg-secondary text-light';
-        default:
-            return 'text-light';
-        }
-    };
+
+const themeClasses = {
+  light: 'bg-light text-dark',
+  dark: 'bg-secondary text-light',
+};
+
+const Section = ({ theme = 'light', className, children }: SectionProps) => {
+  return (
+
+    <section className={twMerge(themeClasses[theme], 'py-20', className)}>
+      {children}
+    </section>
+  );
+};
     return (
         <section id={id} className={twMerge(handleTheme(), 'py-20', className)}>
             {children}
