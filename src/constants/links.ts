@@ -1,4 +1,4 @@
-export const links: {[name: string]: string} = {
+export const links: { [name: string]: string } = {
     discord: 'https://discord.gg/flybywire',
     docs: 'https://docs.flybywiresim.com/',
     twitch: 'https://www.twitch.tv/flybywiresimulations',
@@ -7,7 +7,12 @@ export const links: {[name: string]: string} = {
     facebook: 'https://www.facebook.com/FlyByWireSimulations/',
     opencollective: 'https://opencollective.com/flybywire',
     docsfaq: 'https://docs.flybywiresim.com/faq',
-    installer: 'https://flybywirecdn.com/installer/release/FlyByWire_Installer_Setup.exe',
+    installer_x64_exe: 'https://flybywirecdn.com/installer/release/FlyByWire-Installer-x64.exe',
+    installer_amd64_deb: 'https://flybywirecdn.com/installer/release/FlyByWire-Installer-amd64.deb',
+    installer_x86_64_rpm: 'https://flybywirecdn.com/installer/release/FlyByWire-Installer-x86_64.rpm',
+    installer_x86_64_appimage: 'https://flybywirecdn.com/installer/release/FlyByWire-Installer-x86_64.AppImage',
+    installer_x86_64_flatpak: 'https://flybywirecdn.com/installer/release/FlyByWire-Installer-x86_64.flatpak',
+    installer_amd64_snap: 'https://flybywirecdn.com/installer/release/FlyByWire-Installer-amd64.snap',
     efb: 'https://docs.flybywiresim.com/aircraft/common/flypados3',
     pressKit: 'https://github.com/flybywiresim/branding',
 };
