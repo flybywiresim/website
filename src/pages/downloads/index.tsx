@@ -36,13 +36,39 @@ const Downloads: NextPage = () => (
                 <div className="grow">
                     <h2>Direct Download</h2>
                     <p className="pb-6">If you prefer a direct download, the following links are available.</p>
-                    <div className="flex flex-col lg:flex-row gap-8">
+                    <div className="flex flex-col gap-8">
                         <DownloadLinks
                             aircraft="A32NX"
-                            stableLink="https://github.com/flybywiresim/aircraft/releases/download/assets/stable/A32NX-stable.7z"
-                            devLink="https://github.com/flybywiresim/aircraft/releases/download/assets/master/A32NX-master.7z"
+                            versions={[
+                                {
+                                    name: 'Stable',
+                                    links: ['https://github.com/flybywiresim/aircraft/releases/download/assets/stable/A32NX-stable.7z'],
+                                },
+                                {
+                                    name: 'Development',
+                                    links: ['https://github.com/flybywiresim/aircraft/releases/download/assets/master/A32NX-master.7z'],
+                                },
+                            ]}
                         />
-                        <DownloadLinks aircraft="A380X" stableLink="" devLink="" />
+
+                        <DownloadLinks
+                            aircraft="A380X"
+                            note="The 8K version must be installed in multiple packages. Download all parts and open the .001 with 7-Zip."
+                            versions={[
+                                {
+                                    name: 'Stable (4K)',
+                                    links: ['https://github.com/flybywiresim/aircraft/releases/download/assets/stable/A380X-stable-4K.7z'],
+                                },
+                                {
+                                    name: 'Stable (8K)',
+                                    links: [
+                                        'https://github.com/flybywiresim/aircraft/releases/download/assets/stable/A380X-stable-8K.7z.001',
+                                        'https://github.com/flybywiresim/aircraft/releases/download/assets/stable/A380X-stable-8K.7z.002',
+                                        'https://github.com/flybywiresim/aircraft/releases/download/assets/stable/A380X-stable-8K.7z.003',
+                                    ],
+                                },
+                            ]}
+                        />
                     </div>
                 </div>
             </Container>
