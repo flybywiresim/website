@@ -15,4 +15,8 @@ export const links: { [name: string]: string } = {
     installer_amd64_snap: 'https://flybywirecdn.com/installer/release/FlyByWire-Installer-amd64.snap',
     efb: 'https://docs.flybywiresim.com/aircraft/common/flypados3',
     pressKit: 'https://github.com/flybywiresim/branding',
+    msfs2020_a32nx_stable_standalone_github: 'https://github.com/flybywiresim/aircraft/releases/download/assets/msfs2020/stable/A32NX-stable.7z',
+    msfs2020_a32nx_dev_standalone_github: 'https://github.com/flybywiresim/aircraft/releases/download/assets/msfs2020/master/A32NX-master.7z',
+    msfs2024_a32nx_stable_standalone_github: 'https://github.com/flybywiresim/aircraft/releases/download/assets/msfs2024/stable/A32NX-stable.7z',
+    msfs2024_a32nx_dev_standalone_github: 'https://github.com/flybywiresim/aircraft/releases/download/assets/msfs2024/master/A32NX-master.7z',
 };

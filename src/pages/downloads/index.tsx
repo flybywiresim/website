@@ -124,15 +124,31 @@ const Downloads: NextPage = () => {
 
                     <div className="grow">
                         <h2>Direct Download</h2>
-                        <p className="pb-6">
+                        <p>
                             If you prefer a direct download, the following links are
                             available.
                         </p>
-                        <div className="flex flex-col lg:flex-row gap-8">
+                        <h3 className="mt-8">Microsoft Flight Simulator 2020</h3>
+                        <div className="w-full h-px bg-gray-500" />
+                        <div className="flex flex-col gap-8 lg:flex-row">
                             <DownloadLinks
                                 aircraft="A32NX"
-                                stableLink="https://github.com/flybywiresim/aircraft/releases/download/assets/stable/A32NX-stable.7z"
-                                devLink="https://github.com/flybywiresim/aircraft/releases/download/assets/master/A32NX-master.7z"
+                                stableLink={links.msfs2020_a32nx_stable_standalone_github}
+                                devLink={links.msfs2020_a32nx_dev_standalone_github}
+                            />
+                            <DownloadLinks
+                                aircraft="A380X"
+                                stableLink=""
+                                devLink=""
+                            />
+                        </div>
+                        <h3 className="mt-8">Microsoft Flight Simulator 2024</h3>
+                        <div className="w-full h-px bg-gray-500" />
+                        <div className="flex flex-col gap-8 lg:flex-row">
+                            <DownloadLinks
+                                aircraft="A32NX"
+                                stableLink={links.msfs2024_a32nx_stable_standalone_github}
+                                devLink={links.msfs2024_a32nx_dev_standalone_github}
                             />
                             <DownloadLinks
                                 aircraft="A380X"
