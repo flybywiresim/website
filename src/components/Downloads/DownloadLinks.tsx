@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Button, { ButtonProps } from '../Button/Button';
 import React from 'react';
+import Button, { ButtonProps } from '../Button/Button';
 
 type Version = {
     link: string
@@ -40,13 +40,13 @@ const versionButtons = (versions: Record<string, Version>) => (
                             </div>
                         </div>
                     </div>
-                )
+                );
             }
             return (
                 <Link key={name} href={version.link}>
                     <Button theme={version.theme || 'primary'}>{name}</Button>
                 </Link>
-            )
+            );
         })}
     </span>
 );

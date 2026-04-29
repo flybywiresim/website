@@ -136,7 +136,7 @@ const Downloads: NextPage = () => {
                                 versions={
                                     {
                                         Stable: { link: links.msfs2020_a32nx_stable_standalone_github },
-                                        Development: { link: links.msfs2020_a32nx_dev_standalone_github, theme: 'secondary' }
+                                        Development: { link: links.msfs2020_a32nx_dev_standalone_github, theme: 'secondary' },
                                     }
                                 }
                             />
