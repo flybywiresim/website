@@ -132,28 +132,44 @@ const Downloads: NextPage = () => {
                         <div className="w-full h-px bg-gray-500" />
                         <div className="flex flex-col gap-8 lg:flex-row">
                             <DownloadLinks
-                                aircraft="A32NX"
-                                stableLink={links.msfs2020_a32nx_stable_standalone_github}
-                                devLink={links.msfs2020_a32nx_dev_standalone_github}
+                                addon="A32NX"
+                                versions={
+                                    {
+                                        Stable: { link: links.msfs2020_a32nx_stable_standalone_github },
+                                        Development: { link: links.msfs2020_a32nx_dev_standalone_github, theme: 'secondary' }
+                                    }
+                                }
                             />
                             <DownloadLinks
-                                aircraft="A380X"
-                                stableLink=""
-                                devLink=""
+                                addon="A380X"
+                                versions={
+                                    {
+                                        'Stable (4K)': { link: links.msfs2020_a380x_stable_4k_standalone_github },
+                                        'Development (4K)': { link: links.msfs2020_a380x_dev_4k_standalone_github, theme: 'secondary' }
+                                    }
+                                }
                             />
                         </div>
                         <h3 className="mt-8">Microsoft Flight Simulator 2024</h3>
                         <div className="w-full h-px bg-gray-500" />
                         <div className="flex flex-col gap-8 lg:flex-row">
                             <DownloadLinks
-                                aircraft="A32NX"
-                                stableLink={links.msfs2024_a32nx_stable_standalone_github}
-                                devLink={links.msfs2024_a32nx_dev_standalone_github}
+                                addon="A32NX"
+                                versions={
+                                    {
+                                        Stable: { link: links.msfs2020_a32nx_stable_standalone_github },
+                                        Development: { link: links.msfs2020_a32nx_dev_standalone_github, theme: 'secondary' }
+                                    }
+                                }
                             />
                             <DownloadLinks
-                                aircraft="A380X"
-                                stableLink=""
-                                devLink=""
+                                addon="A380X"
+                                versions={
+                                    {
+                                        'Stable (4K)': { link: links.msfs2024_a380x_stable_4k_standalone_github },
+                                        'Development (4K)': { link: links.msfs2024_a380x_dev_4k_standalone_github, theme: 'secondary' }
+                                    }
+                                }
                             />
                         </div>
                     </div>

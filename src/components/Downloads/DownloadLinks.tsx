@@ -1,27 +1,34 @@
 import Link from 'next/link';
-import Button from '../Button/Button';
+import Button, { ButtonProps } from '../Button/Button';
 
-type DownloadProps = {
-    stableLink?: string,
-    devLink?: string,
-    aircraft: string,
+type Version = {
+    link: string
+    parts?: number
+    theme?: ButtonProps['theme']
 
 }
 
-const downloadLinks = ({ stableLink, devLink, aircraft }: DownloadProps) => (
+type DownloadProps = {
+    addon: string,
+    versions?: Record<string, Version>,
+
+}
+
+const versionButtons = (versions: Record<string, Version>) => (
+    <span className="flex gap-x-2.5">
+        {Object.entries(versions).map(([name, version]) => (
+            <Link key={name} href={version.link}>
+                <Button theme={version.theme || 'primary'}>{name}</Button>
+            </Link>
+        ))}
+    </span>
+);
+
+const downloadLinks = ({ addon, versions }: DownloadProps) => (
     <span className="flex flex-col gap-y-1.5">
-        <h3>{aircraft}</h3>
-        {stableLink && devLink ? (
-            <>
-                <span className="flex gap-x-2.5">
-                    <Link href={stableLink}>
-                        <Button>Stable</Button>
-                    </Link>
-                    <Link href={devLink}>
-                        <Button theme="secondary">Development</Button>
-                    </Link>
-                </span>
-            </>
+        <h3>{addon}</h3>
+        {versions ? (
+            versionButtons(versions)
         ) : (
             <p>Use our installer to download.</p>
         )}
