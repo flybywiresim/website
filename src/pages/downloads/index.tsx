@@ -19,7 +19,7 @@ const Downloads: NextPage = () => {
             <Section theme="dark">
                 <Container>
                     <h4>Ready to fly?</h4>
-                    <h1>Download</h1>
+                    <h1 className="text-7xl 2xl:text-8xl">Download</h1>
                     <p className="max-w-prose">
                         We have included many options to download our addons, you
                         can use our custom and simple installer to always keep your
@@ -43,13 +43,13 @@ const Downloads: NextPage = () => {
                                 <Button
                                     label="Download for Windows"
                                     theme="primary"
-                                    className="flex-1"
+                                    className="md:min-h-0 flex-1 min-h-16"
                                     onClick={() => handleTabToggle('windows')}
                                 />
                                 <Button
                                     label="Download for Linux"
                                     theme="primary"
-                                    className="flex-1"
+                                    className="md:min-h-0 flex-1 min-h-16"
                                     onClick={() => handleTabToggle('linux')}
                                 />
                             </div>
