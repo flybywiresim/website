@@ -14,5 +14,7 @@ export const links: { [name: string]: string } = {
     installer_x86_64_flatpak: 'https://flybywirecdn.com/installer/release/FlyByWire-Installer-x86_64.flatpak',
     installer_amd64_snap: 'https://flybywirecdn.com/installer/release/FlyByWire-Installer-amd64.snap',
     efb: 'https://docs.flybywiresim.com/aircraft/common/flypados3',
+    a32nx: 'https://flybywiresim.com/projects/a32nx',
+    a380x: 'https://flybywiresim.com/projects/a380x',
     pressKit: 'https://github.com/flybywiresim/branding',
 };
