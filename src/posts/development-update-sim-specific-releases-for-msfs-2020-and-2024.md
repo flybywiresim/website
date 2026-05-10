@@ -47,7 +47,7 @@ To reflect this split, version numbers will now be simulator-specific. This chan
 
 There are many features in MSFS2024 which our developers have been working on. These include a MSFS2024 specific flight model, a 2024 native aircraft package, and many more features in the MSFS2024 SDK. Expect to see continued development of both the A32NX and A380X as more systems and features are implemented in both aircraft.
 
-MSFS2020 will continue to be supported. Development priorities may change depending on the simulator versions that our volunteer developers and contributors are working with as time passes. As a matured simulator, there might be more focus on stability and incremental improvements rather than major reworks for MSFS2020. Some features implemented in the MSFS2024 version might be ported to MSFS2020 if possible but once again there is no guarantee of feature parity.
+MSFS2020 will continue to be supported. Development priorities may change depending on the simulator versions that our volunteer developers and contributors are working with as time passes. As a matured simulator, there might be more focus on stability and incremental improvements rather than major reworks for MSFS2020.
 
 This approach allows us to push boundaries where possible, while maintaining a solid experience for existing users.
 
@@ -92,4 +92,4 @@ There are a number of 2024 progress features and development that have been in t
 
 **I am using the stable release of the A32NX/A380X. Will there be a new stable release?**
 
-A stable release will come after the split. We considered doing another stable release for both sims before the split but there were a few critical 2024-specific updates that we wanted to include for the next stable release.Thus, a new stable release will only come after those updates have been pushed into the development branch. We still encourage all users to use the development branch as their first choice as it is the more reliable branch, with more up to date fixes and an improved feature set. The stable branch is a snapshot that is occasionally updated for users that have more complex hardware integrations and require an aircraft version that isn’t updated frequently.
+A stable release will come after the split. We considered doing another stable release for both sims before the split but there were a few critical 2024-specific updates that we wanted to include for the next stable release. Thus, a new stable release will only come after those updates have been pushed into the development branch. We still encourage all users to use the development branch as their first choice as it is the more reliable branch, with more up to date fixes and an improved feature set. The stable branch is a snapshot that is occasionally updated for users that have more complex hardware integrations and require an aircraft version that isn’t updated frequently.
