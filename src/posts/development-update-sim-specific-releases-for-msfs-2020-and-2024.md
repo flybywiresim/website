@@ -43,6 +43,8 @@ Development will continue across both versions. This is a shift to enable higher
 
 To reflect this split, version numbers will now be simulator-specific. This change makes simulator compatibility immediately clear and simplifies tracking updates across both simulators. MSFS2020 releases will be prefixed with 2020 and the next stable release will be numbered 2020.15. MSFS 2024 releases will be prefixed with 2024 and the next stable release will be numbered 2024.1. The reset of the minor version number marks the first 2024 specific release and distinguishes it from the 2020 version numbering as there will not be feature parity between both releases. 
 
+![New version number scheme](/img/notam-images/branch-split/versioning-change-diagram.png)
+
 ## Development Direction
 
 There are many features in MSFS2024 which our developers have been working on. These include a MSFS2024 specific flight model, a 2024 native aircraft package, and many more features in the MSFS2024 SDK. Expect to see continued development of both the A32NX and A380X as more systems and features are implemented in both aircraft.
