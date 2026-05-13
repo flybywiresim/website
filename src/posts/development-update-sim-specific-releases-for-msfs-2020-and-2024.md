@@ -1,6 +1,6 @@
 ---
 title: 'Development Update: Sim-Specific Releases for MSFS 2020 & 2024'
-date: '2026-05-10'
+date: '2026-05-13'
 authors:
   - 'Heclak, straks, Valastiri'
 category: 'ANNOUNCEMENTS'
