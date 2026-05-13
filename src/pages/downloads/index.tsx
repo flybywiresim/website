@@ -19,7 +19,7 @@ const Downloads: NextPage = () => {
             <Section theme="dark">
                 <Container>
                     <h4>Ready to fly?</h4>
-                    <h1>Download</h1>
+                    <h1 className="text-7xl 2xl:text-8xl">Download</h1>
                     <p className="max-w-prose">
                         We have included many options to download our addons, you
                         can use our custom and simple installer to always keep your
@@ -43,13 +43,13 @@ const Downloads: NextPage = () => {
                                 <Button
                                     label="Download for Windows"
                                     theme="primary"
-                                    className="flex-1"
+                                    className="md:min-h-0 flex-1 min-h-16"
                                     onClick={() => handleTabToggle('windows')}
                                 />
                                 <Button
                                     label="Download for Linux"
                                     theme="primary"
-                                    className="flex-1"
+                                    className="md:min-h-0 flex-1 min-h-16"
                                     onClick={() => handleTabToggle('linux')}
                                 />
                             </div>
@@ -124,20 +124,56 @@ const Downloads: NextPage = () => {
 
                     <div className="grow">
                         <h2>Direct Download</h2>
-                        <p className="pb-6">
+                        <p>
                             If you prefer a direct download, the following links are
                             available.
                         </p>
-                        <div className="flex flex-col lg:flex-row gap-8">
+                        <h3 className="mt-8">Microsoft Flight Simulator 2020</h3>
+                        <div className="w-full h-px bg-gray-500" />
+                        <div className="flex flex-col gap-8 lg:flex-row">
                             <DownloadLinks
-                                aircraft="A32NX"
-                                stableLink="https://github.com/flybywiresim/aircraft/releases/download/assets/stable/A32NX-stable.7z"
-                                devLink="https://github.com/flybywiresim/aircraft/releases/download/assets/master/A32NX-master.7z"
+                                addon="A32NX"
+                                versions={
+                                    {
+                                        Stable: { link: links.msfs2020_a32nx_stable_standalone_github },
+                                        Development: { link: links.msfs2020_a32nx_dev_standalone_github, theme: 'secondary' },
+                                    }
+                                }
                             />
                             <DownloadLinks
-                                aircraft="A380X"
-                                stableLink=""
-                                devLink=""
+                                addon="A380X"
+                                versions={
+                                    {
+                                        'Stable (4K)': { link: links.msfs2020_a380x_stable_4k_standalone_github },
+                                        'Development (4K)': { link: links.msfs2020_a380x_dev_4k_standalone_github, theme: 'secondary' },
+                                        'Stable (8K)': { link: links.msfs2020_a380x_stable_8k_standalone_github, parts: 3 },
+                                        'Development (8K)': { link: links.msfs2020_a380x_dev_8k_standalone_github, parts: 3, theme: 'secondary' },
+                                    }
+                                }
+                            />
+                        </div>
+                        <h3 className="mt-8">Microsoft Flight Simulator 2024</h3>
+                        <div className="w-full h-px bg-gray-500" />
+                        <div className="flex flex-col gap-8 lg:flex-row">
+                            <DownloadLinks
+                                addon="A32NX"
+                                versions={
+                                    {
+                                        Stable: { link: links.msfs2020_a32nx_stable_standalone_github },
+                                        Development: { link: links.msfs2020_a32nx_dev_standalone_github, theme: 'secondary' },
+                                    }
+                                }
+                            />
+                            <DownloadLinks
+                                addon="A380X"
+                                versions={
+                                    {
+                                        'Stable (4K)': { link: links.msfs2024_a380x_stable_4k_standalone_github },
+                                        'Development (4K)': { link: links.msfs2024_a380x_dev_4k_standalone_github, theme: 'secondary' },
+                                        'Stable (8K)': { link: links.msfs2024_a380x_stable_8k_standalone_github, parts: 3 },
+                                        'Development (8K)': { link: links.msfs2024_a380x_dev_8k_standalone_github, parts: 3, theme: 'secondary' },
+                                    }
+                                }
                             />
                         </div>
                     </div>
