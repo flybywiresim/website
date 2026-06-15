@@ -42,11 +42,6 @@ const Card = ({
                         {description}
                     </p>
                     <span className="flex flex-wrap gap-2 py-4 mt-auto">
-                        {href !== undefined && (
-                            <Link href={href}>
-                                <Button theme="secondary">Learn More</Button>
-                            </Link>
-                        )}
                         {downloadURL
                             && (
                                 <>
@@ -55,6 +50,11 @@ const Card = ({
                                     </Link>
                                 </>
                             )}
+                        {href !== undefined && (
+                            <Link href={href}>
+                                <Button theme="secondary">Learn More</Button>
+                            </Link>
+                        )}
                     </span>
                 </Container>
             </div>

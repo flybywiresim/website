@@ -18,7 +18,7 @@ const Installer = () => {
                     </div>
                 </div>
 
-                <div className="-mr-10 -mb-21 lg:col-span-2 lg:m-0 lg:grid lg:p-12">
+                <div className="-mb-21 -mr-10 lg:col-span-2 lg:m-0 lg:grid lg:p-12">
                     <img
                         alt="FlyByWire Installer screenshot"
                         src="/pages/index/installerPreview.png"
