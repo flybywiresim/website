@@ -1,68 +1,61 @@
-import { NextPage } from 'next';
-import { useRouter } from 'next/router';
+import { ReactNode } from 'react';
 import Section from '../Utils/Section';
 import Container from '../Utils/Container';
-import Button, { ButtonProps } from '../Button/Button';
+import Button from '../Button/Button';
 
-interface DownloadButton {
+interface ButtonConfig {
     label: string;
-    link: string;
-    theme?: ButtonProps['theme'];
+    theme: 'primary' | 'secondary' | 'positive' | 'caution' | 'danger' | 'discord';
+    link?: string;
 }
 
 interface DownloadSectionProps {
-    title?: string;
-    description?: string;
-    buttons?: DownloadButton[];
-    imageSrc?: string;
-    imageAlt?: string;
+    heading?: string;
+    description: string;
+    buttons?: ButtonConfig[];
 }
 
-const DownloadSection: NextPage<DownloadSectionProps> = ({
-    title = 'Available For Free',
-    description = 'Get started by downloading our installer to seamlessly enjoy our projects.',
-    buttons = [],
-    imageSrc = '/pages/index/installerPreview.png',
-    imageAlt = 'Installer screenshot',
-}) => {
-    const router = useRouter();
+const ButtonGroup = (props: { children: ReactNode }) => (
+    <ul className="flex flex-col md:flex-row gap-4 justify-center mt-2 items-center">
+        {props.children}
+    </ul>
+);
+
+const DownloadSectionComponent = ({
+    heading,
+    description,
+    buttons,
+}: DownloadSectionProps) => {
+    const defaultButtons: ButtonConfig[] = [
+        { label: 'Direct Downloads', theme: 'secondary' },
+        { label: 'Download Installer', theme: 'primary', link: '/community' },
+        { label: 'Installation Guide', theme: 'secondary' },
+    ];
+
+    const buttonsToRender = buttons ?? defaultButtons;
 
     return (
-        <Section theme="light">
-            <Container className="flex flex-col md:flex-row gap-0 md:gap-6 items-center md:items-start">
-                <div className="flex flex-col gap-0 md:gap-6">
-                    <h2>{title}</h2>
-                    <p>{description}</p>
-                    {buttons.length > 0 && (
-                        <div className="flex flex-col md:flex-row gap-0 md:gap-6">
-                            {buttons.map((button, index) => (
-                                <Button
-                                    key={index}
-                                    label={button.label}
-                                    theme={button.theme || 'secondary'}
-                                    onClick={() => router.push(button.link)}
-                                />
-                            ))}
-                        </div>
+        <Section className="relative flex flex-col justify-center bg-quasi-white text-black">
+            <Container className="justify-center" display="flex flex-col">
+                <div className="flex flex-col text-center justify-center gap-6">
+                    {heading && (
+                        <h2 className="font-semibold text-black">{heading}</h2>
                     )}
+                    <p className="max-w-xl mx-auto text-center">{description}</p>
+                    <ButtonGroup>
+                        {buttonsToRender.map((button, index) => (
+                            <Button
+                                key={index}
+                                label={button.label}
+                                theme={button.theme}
+                                link={button.link}
+                            />
+                        ))}
+                    </ButtonGroup>
                 </div>
-                {imageSrc && (
-                    <div>
-                        <img
-                            alt={imageAlt}
-                            src={imageSrc}
-                            className={`m-0 shadow-2xl 
-                            [transform:perspective(600px)_rotateY(20deg)_rotateX(20deg)_rotateZ(0deg)_scale(0.93)] 
-                            sm:[transform:perspective(800px)_rotateY(20deg)_rotateX(20deg)_rotateZ(0deg)_scale(0.93)] 
-                            md:[transform:perspective(1000px)_rotateY(20deg)_rotateX(20deg)_rotateZ(0deg)_scale(0.93)] 
-                            lg:[transform:perspective(1200px)_rotateY(20deg)_rotateX(20deg)_rotateZ(2deg)_scale(0.95)] 
-                            xl:[transform:perspective(1400px)_rotateY(20deg)_rotateX(20deg)_rotateZ(2deg)_scale(0.90)]`}
-                        />
-                    </div>
-                )}
             </Container>
         </Section>
     );
 };
 
-export default DownloadSection;
+export default DownloadSectionComponent;
