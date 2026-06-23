@@ -14,7 +14,7 @@ Today, we are excited to announce a monumental leap forward. Microsoft Flight Si
 
 ![](/img/notam-images/native-2024-a380x/a380x-native-02.jpg)
 
-Unlocking the native capabilities of the Microsoft Flight Simulator 2024 platform allows us to take this promise a step further, maximizing both visual immersion and system performance without compromising on fidelity. And the open source nature of our developments fosters collaboration and co-learning of how to develop for this next-generation simulation platform.
+Unlocking the native capabilities of the Microsoft Flight Simulator 2024 platform allows us to take this promise a step further, maximizing both visual immersion and system performance without compromising on fidelity. Moreover, the open source nature of our developments fosters collaboration and co-learning of how to develop for this next-generation simulation platform.
 
 ---
 
@@ -36,19 +36,19 @@ Our first practical use case for this modular architecture is the introduction o
 ![](/img/notam-images/native-2024-a380x/a380x-native-03.jpg)
 ![](/img/notam-images/native-2024-a380x/a380x-native-04.jpg)
 
-The "No Cabin" variant is just the first step. This modular framework lays the foundation for future customizations and variants that we have planned to introduce down the line. The next photo should give you a guess of what is the variant that we’re shipping next!
+The "No Cabin" variant is just the first step. This modular framework lays the foundation for future customizations and variants that we have planned to introduce down the line. The next photo should give you a guess of which variant it is that we’re shipping next!
 
 ![](/img/notam-images/native-2024-a380x/a380x-native-05.jpg)
 
 ## Performance Optimization: VRAM and Frame Rate Gains
 
-One of our primary goals with this native port was ensuring that the A380X runs smoothly across a broader range of hardware configurations. We have heard your voices of wanting more performance out of this massive beast of an aircraft and we have worked hard over the past year to try and integrate as much as we can in this first phase of the MSFS2024 native release. Thanks to the optimizations available in MSFS2024 and a highly optimized implementation of Level of Detail (LOD) models, users will see substantial performance improvements.
+One of our primary goals with this native port was to ensure that the A380X runs smoothly across a broader range of hardware configurations. We have heard your voices of wanting more performance out of this massive beast of an aircraft and we have worked hard over the past year to try and integrate as much as we can in this first phase of the MSFS2024 native release. Thanks to the optimizations available in MSFS2024 and a highly optimized implementation of Level of Detail (LOD) models, users will see substantial performance improvements.
 
 We have used a combination of techniques to optimise the aircraft for lower end machines. More mipmaps are used now to benefit from the sim’s texture management system so no texture resolution mods are required anymore. The appropriate texture resolution will be loaded based on your sim’s texture resolution setting for improved VRAM management. Great care was also taken to ensure the aircraft still looks great so you get the same visual fidelity as before.
 
 Our internal testing shows an impressive reduction in VRAM utilization alongside noticeable frame rate increases, bringing highly welcome relief to lower-spec systems. Lower spec systems using lower settings in the sim have been reported to gain up to 1 - 2GB of VRAM usage reduction and up to 50% increase in FPS. Higher end systems running higher sim settings might not see as huge a reduction statistically but have all reported a significantly smoother experience when using the aircraft even in heavy sceneries.
 
-Please note that our current LOD implementation is an initial foundation. Over the coming updates, we will continue refining the LOD system to further enhance draw distances, optimize asset transitions, squeeze out even more performance, and to reduce VRAM usage further.The 2024 LOD system is something that our developers are continuously learning and experimenting with over the past year, creating new artwork while diving deeper into the SDK.
+Please note that our current LOD implementation is an initial foundation. Over the coming updates, we will continue to refine the LOD system to further enhance draw distances, optimize asset transitions, squeeze out even more performance, and to reduce VRAM usage further.The 2024 LOD system is something that our developers are continuously learning and have been experimenting with over the past year, creating new artwork while diving deeper into the SDK.
 
 ## Improved Cockpit and External Lighting
 
@@ -95,7 +95,7 @@ The A380 cabin is still in the process of being fully converted to the MSFS2024 
 
 The FlyByWire development process is an open, volunteer community driven ecosystem. Our progress is solely driven by volunteer contributions and community focused development. If there is a feature that you would like to help add to any of the aircraft, anyone can jump in and contribute to the development of that feature. We have channels on our discord for the community to discuss and gain guidance on how to develop for MSFS. Everyone in the team started our journey in a similar fashion, taking a small curiosity in fixing something small and diving deeper into the rabbit hole after.
 
-If development isn’t something you’re after, we are always looking for more volunteers to join our quality assurance, community support, and the media team. You can ask for more information on our discord and one of our team members can help you out with more information. 
+If development isn’t something you’re after, we are always looking for more volunteers to join our quality assurance, community support, and the media team. You can ask for more information on our discord and one of our team members will be happy to provide you with everything you need to know. 
 
 ## Closing
 
@@ -110,7 +110,7 @@ We want to thank you for your incredible support, patience, and feedback. We loo
 
 **When will feature XYZ come?**
 
-As the development of the FlyByWire projects is community-driven, we do not enforce delivery timelines on our volunteer developers. We value high-quality, polished releases over frequent and quickly-released ones, which means some features might take time to land in a publicly-available build. Rest assured that our developers and contributors are working hard on making every FlyByWire project as bug-free and feature-complete as possible, but that we are not able to provide release dates or estimates for a certain feature/fix. We encourage community contributions for developing new features too so everyone in the community can benefit from the community work. If there is a feature that you would like to see added to the project more quickly, don’t be afraid to ask for help to learn how to start developing it in our discord.
+As the development of the FlyByWire projects is community-driven, we do not enforce delivery timelines on our volunteer developers. We value high-quality, polished releases over frequent and quickly-released ones, which means some features might take time to land in a publicly-available build. Rest assured that our developers and contributors are working hard on making every FlyByWire project as bug-free and feature-complete as possible, but that we are not able to provide release dates or estimates for a certain feature/fix. We encourage community contributions to develop new features too so everyone in the community can benefit from the community work. If there is a feature that you would like to see added to the project more quickly, don’t be afraid to ask for help to learn how to start developing it in our discord.
 
 **What about a native 2024 version of the A32NX?**
 
@@ -126,8 +126,8 @@ The A380 is an extremely large aircraft which means it uses more texture space t
 
 **What other features are currently in development?**
 
-As our development happens openly on Github, you can browse the [Github repository](https://github.com/flybywiresim/aircraft) to see what features are currently being worked on by the community. It can be useful to contribute references to a relevant development if you have access to them. Discussion for development primarily happens on discord but can also take place on Github. Some useful starting points are to browse the pull requests for in-development progress and the issue tracker for reported bugs.
+As our development happens openly on Github, you can browse the [Github repository](https://github.com/flybywiresim/aircraft) to see what features are currently being worked on by the community. It can be useful to contribute references to a relevant development, if you have any. Discussion for development primarily happens on discord but can also take place on Github. Some useful starting points are to browse the pull requests for in-development progress and the issue tracker for reported bugs.
 
 **How do I report a bug or submit a feature request?**
 
-All bugs and feature requests are reported on the issue tracker on Github so any contributor can see it and choose to start working on it. You can see the list of existing issues on our [issue tracker](https://github.com/flybywiresim/aircraft/issues) and submit a new issue for a bug or feature request by opening a new issue. 
+All bugs and feature requests are reported on the issue tracker on Github so any contributor can see it and choose to start working on it. You can see the list of existing issues on our [issue tracker](https://github.com/flybywiresim/aircraft/issues) and submit bug reports or feature request by opening a new issue. 
