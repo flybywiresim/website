@@ -10,6 +10,8 @@ metaAlt: 'Development Update: Introducing the Native MSFS 2024 A380X'
 
 From day one, the FlyByWire project has been fueled by a single, massive dream: to bring world-class, high-fidelity airliners to the flight simulation community, 100% free. As a team driven entirely by volunteer passion and open-source collaboration, your incredible energy and support is what keeps our engines running. So before we share our exciting news, we would like to thank our volunteer developers, contributors, quality assurance, community support, and media teams for their endless hours of dedication. And thank you to our wonderful community for your outstanding support and believing in us. Without which would not allow us to reach this milestone that we are at today. We hope our announcement today can be a gift to everyone in the flight sim community.
 
+## A New Chapter for the A380X
+
 Today, we are excited to announce a monumental leap forward. Microsoft Flight Simulator 2024 opened up a brand-new frontier of technology, and our team has been working hard to learn what new technologies MSFS2024 brings to the table and to push it to its absolute limits. Following our recent transition to simulator-specific development branches, we are thrilled to share the next major milestone for FlyByWire Simulations: the first native MSFS 2024 release of the A380X.
 
 ![](/img/notam-images/native-2024-a380x/a380x-native-02.jpg)
@@ -36,6 +38,10 @@ Our first practical use case for this modular architecture is the introduction o
 ![](/img/notam-images/native-2024-a380x/a380x-native-03.jpg)
 ![](/img/notam-images/native-2024-a380x/a380x-native-04.jpg)
 
+You can select the "No Cabin" variant on the aircraft selection menu as seen in the screenshot below. You will see options for "No Cabin" and "Standard" as current available variants and the same liveries can be used for both variants of the A380X.
+
+![](/img/notam-images/native-2024-a380x/a380x-native-07.jpg)
+
 The "No Cabin" variant is just the first step. This modular framework lays the foundation for future customizations and variants that we have planned to introduce down the line. The next photo should give you a guess of which variant it is that we’re shipping next!
 
 ![](/img/notam-images/native-2024-a380x/a380x-native-05.jpg)
@@ -55,10 +61,18 @@ Please note that our current LOD implementation is an initial foundation. Over t
 As the cockpit is the place you spend the most time in a flight, we endeavour to make it as accurate and immersive as possible. Our cockpit was built off detailed measurements and studying thousands of photo references and is something we are really proud of. With MSFS2024, the lighting system had to be updated to match the new lumen based lighting environment. So we took the time to improve the lighting and integrate some lighting related fixes. Along with a rework of the cockpit lighting featuring a new main instrument panel (MIP) lighting, new lights such as reading lights were added to improve the cockpit lighting experience. We have been waiting for a long time to ship this update to the cockpit lighting. We shared this new MIP lighting a year or so ago but was held back by our common codebase between MSFS2020 and MSFS2024 and we are so excited to finally get it into your hands. For MSFS2020 users, we will also be backporting this updated MIP lights in the MSFS2020 version as promised.
 
 ![](/img/notam-images/native-2024-a380x/a380x-native-06.jpg)
+![](/img/notam-images/native-2024-a380x/a380x-native-11.jpg)
 
 The exterior lighting was also given a full workover, with a more accurate simulation of the A380 exterior lighting system. Taxi cam lights have been added to complete the full complement of the A380 exterior lights with a rework of brightness and angles while comparing to references. The strobe and beacon light timings and patterns were also made more accurate by studying more reference materials.
 
 ![](/img/notam-images/native-2024-a380x/a380x-native-08.jpg)
+![](/img/notam-images/native-2024-a380x/a380x-native-10.jpg)
+
+## Model Improvements and QOL upgrades
+
+While we had the A380X in the workshop, we took the chance to make some improvements to the aircraft. The windshield and windshield wipers now use the 2024 rain and wiper effects. Window plugs were added to the appropriate windows to match the modelled interior. We know many of you struggled to get a good view of the OIT with the sidestick being in the way. So we added the ability to hide the sidestick, giving you an unobstructed view of the OIT for charts and the various OIT functions.
+
+![](/img/notam-images/native-2024-a380x/a380x-native-09.jpg)
 
 ## What is happening to 4K and 8K Variants
 
@@ -75,6 +89,10 @@ Since the release of MSFS2024, we have identified available VRAM on a user’s G
 Using those presets as a starting point, you should have a good experience with the sim and you can tweak some settings higher or lower depending on your current experience. Some settings that have a noticeable negative impact on VRAM usage include increasing Texture Resolution, DLSS, Frame Generation, Raytraced Shadows. We strongly recommend using the MSFS built-in FPS display instead of using task manager or other third party tools. This is because the MSFS FPS display is the only tool that is able to accurately report how much resources MSFS is asking from the operating system and how much is actually being allocated to the sim. You can enable this display by turning on Developer Mode in Settings - Advanced Options, followed by clicking on Display FPS in the debug menu at the toolbar that appears at the top of your screen.
 
 ![](/img/notam-images/native-2024-a380x/devmode-fps-display.png)
+
+## A380X Native 2024 Liveries
+
+As the MSFS2024 native A380X uses a different texture format and aircraft structure, all currently available liveries are not compatible with the aircraft until the livery has been repackaged for 2024. Some minor touchups in the liveries might be required where the window plugs were added to the fuselage. There are currently no other changes to the UV layout of the textures, only a conversion to KTX2 and a repackaging of the livery is required to make a livery compatible.  During the rebuilding of the A380X for MSFS2024, we cleaned up the names of the texture files as there were some inconsistencies in the filenames. We will be providing livery makers the full list of file name changes to assist in their repackaging process. We will also provide a sample livery package so liveries can be packaged to display a single aircraft entry in the MSFS2024 aircraft selection menu and for liveries to show up in both variants of the A380X.
 
 ## What is coming next?
 As always, we want to maintain transparent communication with the community regarding what is included in this initial release. Because the scope of this native port was expanding rapidly, we felt it was important to get these massive performance and structural improvements into your hands now, rather than holding them back to wait for every single feature to be completed. Your feedback on this build will be vital in helping us stabilize and iterate.
