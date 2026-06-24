@@ -14,13 +14,13 @@ From day one, the FlyByWire project has been fueled by a single, massive dream: 
 
 Today, we are excited to announce a monumental leap forward. Microsoft Flight Simulator 2024 opened up a brand-new frontier of technology, and our team has been working hard to learn what new technologies MSFS2024 brings to the table and to push it to its absolute limits. Following our recent transition to simulator-specific development branches, we are thrilled to share the next major milestone for FlyByWire Simulations: the first native MSFS 2024 release of the A380X.
 
-![](/img/notam-images/native-2024-a380x/a380x-native-02.jpg)
+[![](/img/notam-images/native-2024-a380x/a380x-native-02.jpg)](/img/notam-images/native-2024-a380x/a380x-native-02.jpg)
 
 Unlocking the native capabilities of the Microsoft Flight Simulator 2024 platform allows us to take this promise a step further, maximizing both visual immersion and system performance without compromising on fidelity. Moreover, the open source nature of our developments fosters collaboration and co-learning of how to develop for this next-generation simulation platform.
 
 ---
 
-## Summary
+### Summary
 
  - Native MSFS 2024 Architecture: Fully rebuilt using the MSFS 2024 SDK to unlock next-generation platform features.
  - Modular Aircraft System: Introduction of a new component-based architecture, starting with a performance-friendly "No Cabin" variant.
@@ -35,16 +35,16 @@ This release marks the beginning of an exciting new phase in our architecture. B
 
 Our first practical use case for this modular architecture is the introduction of a dedicated No Cabin variant. For users running resource-limited setups, this variant entirely removes the heavy interior cabin geometry to save performance. To ensure external visual fidelity remains intact, we have integrated parallax window textures. This means that when viewing the aircraft from the outside, you will still see a convincing, realistic interior depth through the windows, entirely eliminating the "hollow shell" look of traditional cabinless models. The detail in these parallax windows were taken a step further to reflect the cabin layout of the aircraft. Peek through a window of the first class cabin and see how the luxurious first class cabin compares to the economy class on the lower deck.
 
-![](/img/notam-images/native-2024-a380x/a380x-native-03.jpg)
-![](/img/notam-images/native-2024-a380x/a380x-native-04.jpg)
+[![](/img/notam-images/native-2024-a380x/a380x-native-03.jpg)](/img/notam-images/native-2024-a380x/a380x-native-03.jpg)
+[![](/img/notam-images/native-2024-a380x/a380x-native-04.jpg)](/img/notam-images/native-2024-a380x/a380x-native-04.jpg)
 
 You can select the "No Cabin" variant on the aircraft selection menu as seen in the screenshot below. You will see options for "No Cabin" and "Standard" as current available variants and the same liveries can be used for both variants of the A380X.
 
-![](/img/notam-images/native-2024-a380x/a380x-native-07.jpg)
+[![](/img/notam-images/native-2024-a380x/a380x-native-07.jpg)](/img/notam-images/native-2024-a380x/a380x-native-07.jpg)
 
 The "No Cabin" variant is just the first step. This modular framework lays the foundation for future customizations and variants that we have planned to introduce down the line. The next photo should give you a guess of which variant it is that we’re shipping next!
 
-![](/img/notam-images/native-2024-a380x/a380x-native-05.jpg)
+[![](/img/notam-images/native-2024-a380x/a380x-native-05.jpg)](/img/notam-images/native-2024-a380x/a380x-native-05.jpg)
 
 ## Performance Optimization: VRAM and Frame Rate Gains
 
@@ -60,19 +60,19 @@ Please note that our current LOD implementation is an initial foundation. Over t
 
 As the cockpit is the place you spend the most time in a flight, we endeavour to make it as accurate and immersive as possible. Our cockpit was built off detailed measurements and studying thousands of photo references and is something we are really proud of. With MSFS2024, the lighting system had to be updated to match the new lumen based lighting environment. So we took the time to improve the lighting and integrate some lighting related fixes. Along with a rework of the cockpit lighting featuring a new main instrument panel (MIP) lighting, new lights such as reading lights were added to improve the cockpit lighting experience. We have been waiting for a long time to ship this update to the cockpit lighting. We shared this new MIP lighting a year or so ago but was held back by our common codebase between MSFS2020 and MSFS2024 and we are so excited to finally get it into your hands. For MSFS2020 users, we will also be backporting this updated MIP lights in the MSFS2020 version as promised.
 
-![](/img/notam-images/native-2024-a380x/a380x-native-06.jpg)
-![](/img/notam-images/native-2024-a380x/a380x-native-11.jpg)
+[![](/img/notam-images/native-2024-a380x/a380x-native-06.jpg)](/img/notam-images/native-2024-a380x/a380x-native-06.jpg)
+[![](/img/notam-images/native-2024-a380x/a380x-native-11.jpg)](/img/notam-images/native-2024-a380x/a380x-native-11.jpg)
 
 The exterior lighting was also given a full workover, with a more accurate simulation of the A380 exterior lighting system. Taxi cam lights have been added to complete the full complement of the A380 exterior lights with a rework of brightness and angles while comparing to references. The strobe and beacon light timings and patterns were also made more accurate by studying more reference materials.
 
-![](/img/notam-images/native-2024-a380x/a380x-native-08.jpg)
-![](/img/notam-images/native-2024-a380x/a380x-native-10.jpg)
+[![](/img/notam-images/native-2024-a380x/a380x-native-08.jpg)](/img/notam-images/native-2024-a380x/a380x-native-08.jpg)
+[![](/img/notam-images/native-2024-a380x/a380x-native-10.jpg)](/img/notam-images/native-2024-a380x/a380x-native-10.jpg)
 
 ## Model Improvements and QOL upgrades
 
 While we had the A380X in the workshop, we took the chance to make some improvements to the aircraft. The windshield and windshield wipers now use the 2024 rain and wiper effects. Window plugs were added to the appropriate windows to match the modelled interior. We know many of you struggled to get a good view of the OIT with the sidestick being in the way. So we added the ability to hide the sidestick, giving you an unobstructed view of the OIT for charts and the various OIT functions.
 
-![](/img/notam-images/native-2024-a380x/a380x-native-09.jpg)
+[![](/img/notam-images/native-2024-a380x/a380x-native-09.jpg)](/img/notam-images/native-2024-a380x/a380x-native-09.jpg)
 
 ## What is happening to 4K and 8K Variants
 
@@ -84,11 +84,11 @@ Starting with this native 2024 release, we will no longer be shipping separate 4
 
 Since the release of MSFS2024, we have identified available VRAM on a user’s GPU as a common major limiting factor through our own testing and community reports. To minimise the impact of being VRAM limited, we have developed some recommended settings that aren't specific to FBW aircraft, but also developed to be suitable for use with other addons in scenery heavy scenarios. These may be useful to use as a starting point to ensure you have a seamless experience when switching between addons and scenery.
 
-![](/img/notam-images/native-2024-a380x/recommended-settings.png)
+[![](/img/notam-images/native-2024-a380x/recommended-settings.png)](/img/notam-images/native-2024-a380x/recommended-settings.png)
 
 Using those presets as a starting point, you should have a good experience with the sim and you can tweak some settings higher or lower depending on your current experience. Some settings that have a noticeable negative impact on VRAM usage include increasing Texture Resolution, DLSS, Frame Generation, Raytraced Shadows. We strongly recommend using the MSFS built-in FPS display instead of using task manager or other third party tools. This is because the MSFS FPS display is the only tool that is able to accurately report how much resources MSFS is asking from the operating system and how much is actually being allocated to the sim. You can enable this display by turning on Developer Mode in Settings - Advanced Options, followed by clicking on Display FPS in the debug menu at the toolbar that appears at the top of your screen.
 
-![](/img/notam-images/native-2024-a380x/devmode-fps-display.png)
+[![](/img/notam-images/native-2024-a380x/devmode-fps-display.png)](/img/notam-images/native-2024-a380x/devmode-fps-display.png)
 
 ## A380X Native 2024 Liveries
 
@@ -108,6 +108,10 @@ Where a new system function is fully operational but its final 3D art asset is s
 ### Modular Cabin and Layouts
 
 The A380 cabin is still in the process of being fully converted to the MSFS2024 modular system. This means there is room for performance gains to be achieved in the upcoming updates as the modular cabin is finished. We have some exciting implementations that we are experimenting with to push the boundaries of the modular cabin both visually and in performance optimizations.
+
+## When will this be released?
+
+The FlyByWire A380X native MSFS2024 version is available right now through the FlyByWire installer and [website](https://flybywiresim.com/downloads/). This native version is currently exclusive to the development build, which we strongly recommend for all users since it receives active bug fixes and stability improvements. The stable release is intended only for those who require an unchanging build due to complex hardware integrations and will only receive the the native MSFS2024 version some time in the future.
 
 ## How can you help?
 
