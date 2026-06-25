@@ -42,19 +42,42 @@ You can select the "No Cabin" variant on the aircraft selection menu as seen in 
 
 [![](/img/notam-images/native-2024-a380x/a380x-native-07.jpg)](/img/notam-images/native-2024-a380x/a380x-native-07.jpg)
 
-The "No Cabin" variant is just the first step. This modular framework lays the foundation for future customizations and variants that we have planned to introduce down the line. The next photo should give you a guess of which variant it is that we’re shipping next!
+The "No Cabin" variant is just the first step. This modular framework lays the foundation for future customizations and variants that we have planned to introduce down the line. The next photo should give you a _clear_ idea of which variant it is that we’re shipping next!
 
 [![](/img/notam-images/native-2024-a380x/a380x-native-05.jpg)](/img/notam-images/native-2024-a380x/a380x-native-05.jpg)
 
-## Performance Optimization: VRAM and Frame Rate Gains
+## Performance Optimization: VRAM and Framerate Gains
 
 One of our primary goals with this native port was to ensure that the A380X runs smoothly across a broader range of hardware configurations. We have heard your voices of wanting more performance out of this massive beast of an aircraft and we have worked hard over the past year to try and integrate as much as we can in this first phase of the MSFS2024 native release. Thanks to the optimizations available in MSFS2024 and a highly optimized implementation of Level of Detail (LOD) models, users will see substantial performance improvements.
 
 We have used a combination of techniques to optimise the aircraft for lower end machines. More mipmaps are used now to benefit from the sim’s texture management system so no texture resolution mods are required anymore. The appropriate texture resolution will be loaded based on your sim’s texture resolution setting for improved VRAM management. Great care was also taken to ensure the aircraft still looks great so you get the same visual fidelity as before.
 
-Our internal testing shows an impressive reduction in VRAM utilization alongside noticeable frame rate increases, bringing highly welcome relief to lower-spec systems. Lower spec systems using lower settings in the sim have been reported to gain up to 1 - 2GB of VRAM usage reduction and up to 50% increase in FPS. Higher end systems running higher sim settings might not see as huge a reduction statistically but have all reported a significantly smoother experience when using the aircraft even in heavy sceneries.
+Mesh improvements were also used to reduce CPU and GPU usage by combining meshes to reduce draw calls and node counts. This optimisation process is still on-going as we further modularise our aircraft model.
 
-Please note that our current LOD implementation is an initial foundation. Over the coming updates, we will continue to refine the LOD system to further enhance draw distances, optimize asset transitions, squeeze out even more performance, and to reduce VRAM usage further.The 2024 LOD system is something that our developers are continuously learning and have been experimenting with over the past year, creating new artwork while diving deeper into the SDK.
+### Addressing GPU Out of Memory Issues
+
+VRAM exhaustion is a common occurance in MSFS2024 due to the increased VRAM requirements of the sim. As the A380 is an aircraft that is physically much larger than any other aircraft, this results in requiring much more texture space to wrap around the model with a similar texel density. This can a big problem for GPUs with limited VRAM such as 8GB cards. As such, a lot of our development was done on a RTX 3070 8GB GPU to ensure the aircraft performs decently on a limited VRAM situation, using reasonable sim settings to balance between visual fidelty and simulator performance. 
+
+In our benchmarks of the A380X, we recorded tests of the A380X with a medium/high range of settings at an airport scenery with a heavier demand on resources. The freeware Gatwick addon was used in this situation to simulate a realistic load on the simulator. We don't recommend using these settings on a regular basis but we wanted to prove there was headroom available in difficult situations.Terrain LOD and Object LOD was set to 100, dynamic Settings was disabled, raytraced shadows was enabled, TAA was used for anti-aliasing, and no frame gen was used in our benchmarking.
+
+As seen in the benchmarks shown below, both the native 2024 standard and no cabin variants have a reduced VRAM footprint putting the simulator out of the VRAM exhaustion that the dev build would have been in. The dev build was maxing out the available VRAM and resulted in an unusable average framerate of 10fps, with a wildly unstable frame time. Both native 2024 variants resulted in a 400% increase in fps due to the 1-2GB VRAM usage reduction in this new build. We strongly encourage users with 8GB and even 12GB VRAM to consider using medium texture resolutions to maximise the VRAM gains from MSFS2024. Adding on the use of the No Cabin variant can further reduce the VRAM required, leaving more overhead for scenery before your GPU runs out of memory.
+
+[![](/img/notam-images/native-2024-a380x/a380x-native-12.png)](/img/notam-images/native-2024-a380x/a380x-native-12.png)
+[![](/img/notam-images/native-2024-a380x/a380x-native-13.png)](/img/notam-images/native-2024-a380x/a380x-native-13.png)
+[![](/img/notam-images/native-2024-a380x/a380x-native-14.png)](/img/notam-images/native-2024-a380x/a380x-native-14.png)
+
+### General Framerate Gains
+
+Our internal testing shows an impressive reduction in VRAM utilization alongside noticeable frame rate increases, bringing highly welcome relief to lower-spec systems. Lower spec systems using lower settings in the sim have been reported to gain up to 1 - 2GB of VRAM usage reduction and some users even reporting up to 50% increase in FPS on their usual settings. Higher end systems running higher sim settings might not see as large a reduction statistically but have all reported a significantly smoother experience when using the aircraft even in heavy sceneries. 
+
+Since systems and gains can vary significantly, we have averaged out the performance gains reported by our testers using texture settings instead. The testers were asked to keep to their usual sim settings so the results would reflect real world gains from using the native 2024 build. The following charts show the average framerate improvements and VRAM reduction 
+
+[![](/img/notam-images/native-2024-a380x/a380x-benchmark-medium.png)](/img/notam-images/native-2024-a380x/a380x-benchmark-medium.png)
+[![](/img/notam-images/native-2024-a380x/a380x-benchmark-high.png)](/img/notam-images/native-2024-a380x/a380x-benchmark-high.png)
+
+We are proud to report that the new update delivers a better experience for everyone. Notably, users who previously suffered from low framerates will notice a markedly improved A380X experience.
+
+Please note that our current LOD implementation is an initial foundation. Over the coming updates, we will continue to refine the LOD system to further enhance draw distances, optimize asset transitions, squeeze out even more performance, and to reduce VRAM usage further. The 2024 LOD system is something that our developers are continuously learning and have been experimenting with over the past year, creating new artwork while diving deeper into the SDK.
 
 ## Improved Cockpit and External Lighting
 
