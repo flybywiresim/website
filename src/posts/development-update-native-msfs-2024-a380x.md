@@ -42,7 +42,7 @@ You can select the "No Cabin" variant on the aircraft selection menu as seen in 
 
 [![](/img/notam-images/native-2024-a380x/a380x-native-07.jpg)](/img/notam-images/native-2024-a380x/a380x-native-07.jpg)
 
-The "No Cabin" variant is just the first step. This modular framework lays the foundation for future customizations and variants that we have planned to introduce down the line. The next photo should give you a _clear_ idea of which variant it is that we’re shipping next!
+The "No Cabin" variant is just the first step. This modular framework lays the foundation for future customizations and variants that we have planned to introduce down the line. The next photo should give you a _clear_ idea of which variant we’re shipping next!
 
 [![](/img/notam-images/native-2024-a380x/a380x-native-05.jpg)](/img/notam-images/native-2024-a380x/a380x-native-05.jpg)
 
