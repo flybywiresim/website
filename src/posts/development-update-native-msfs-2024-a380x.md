@@ -1,6 +1,6 @@
 ---
 title: 'Development Update: Introducing the Native MSFS 2024 A380X'
-date: '2026-06-25'
+date: '2026-06-27'
 authors:
   - 'Heclak'
 category: 'ANNOUNCEMENTS'
@@ -60,7 +60,7 @@ VRAM exhaustion is a common occurance in MSFS2024 due to the increased VRAM requ
 
 [![](/img/notam-images/native-2024-a380x/a380x-native-15.jpg)](/img/notam-images/native-2024-a380x/a380x-native-15.jpg)
 
-In our benchmarks of the A380X, we recorded tests of the A380X with a medium/high range of settings at an airport scenery with a heavier demand on resources. The freeware Gatwick airport (EGKK) scenery by mkvy was used in this situation to simulate a realistic heavy load on the simulator. We don't recommend using these settings on a regular basis but we wanted to prove there was headroom available in difficult situations.Terrain LOD and Object LOD was set to 100, dynamic settings was disabled, raytraced shadows was enabled, TAA was used for anti-aliasing, and no frame gen was used in our benchmarking.
+In our benchmarks of the A380X, we recorded tests of the A380X with a medium/high range of settings at an airport scenery with a heavier demand on resources. The freeware Gatwick airport (EGKK) scenery by mkvy was used in this situation to simulate a realistic heavy load on the simulator. We don't recommend using these settings on a regular basis but we wanted to prove there was headroom available in difficult situations. Terrain LOD and Object LOD was set to 100, dynamic settings was disabled, raytraced shadows was enabled, TAA was used for anti-aliasing, and no frame gen was used in our benchmarking.
 
 As seen in the benchmarks shown below, both the native 2024 standard and no cabin variants have a reduced VRAM footprint putting the simulator out of the VRAM exhaustion that the dev build would have been in. The dev build was maxing out the available VRAM and resulted in an unusable average framerate of 10fps, with a wildly unstable frame time. Both native 2024 variants resulted in a 400% increase in fps due to the 1-2GB VRAM usage reduction in this new build. We strongly encourage users with 8GB and even 12GB VRAM to consider using medium texture resolutions to maximise the VRAM gains from MSFS2024. Adding on the use of the No Cabin variant can further reduce the VRAM required, leaving more overhead for scenery before your GPU runs out of memory.
 
@@ -70,7 +70,7 @@ As seen in the benchmarks shown below, both the native 2024 standard and no cabi
 
 ### General Framerate Gains
 
-Our internal testing shows an impressive reduction in VRAM utilization alongside noticeable frame rate increases, bringing highly welcome relief to lower-spec systems. Lower spec systems using lower settings in the sim have been reported to gain up to 1 - 2GB of VRAM usage reduction and some users even reporting up to 50% increase in FPS on their usual settings. Higher end systems running higher sim settings might not see as large a reduction statistically but have all reported a significantly smoother experience when using the aircraft even in heavy sceneries. 
+Our internal testing shows an impressive reduction in VRAM utilization alongside noticeable frame rate increases, bringing highly welcome relief to lower-spec systems. Lower spec systems using lower settings in the sim have been reported to see up to 1 - 2GB of VRAM usage reduction and some users even reporting up to 50% increase in FPS on their usual settings. Higher end systems running higher sim settings might not see as large a reduction statistically but have all reported a significantly smoother experience when using the aircraft even in heavy sceneries. 
 
 Since systems and gains can vary significantly, we have averaged out the performance gains reported by our testers using texture settings instead. The testers were asked to keep to their usual sim settings so the results would reflect real world gains from using the native 2024 build. The following charts show the average framerate improvements and VRAM reduction 
 
@@ -120,6 +120,7 @@ Using those presets as a starting point, you should have a good experience with 
 As the MSFS2024 native A380X uses a different texture format and aircraft structure, all currently available liveries are not compatible with the aircraft until the livery has been repackaged for 2024. Some minor touchups in the liveries might be required where the window plugs were added to the fuselage. There are currently no other changes to the UV layout of the textures, only a conversion to KTX2 and a repackaging of the livery is required to make a livery compatible.  During the rebuilding of the A380X for MSFS2024, we cleaned up the names of the texture files as there were some inconsistencies in the filenames. We will be providing livery makers the full list of file name changes to assist in their repackaging process. We will also provide a sample livery package so liveries can be packaged to display a single aircraft entry in the MSFS2024 aircraft selection menu and for liveries to show up in both variants of the A380X. You can download the [A380X Native 2024 Livery Creator Package](https://flybywirecdn.com/addons/a380x/paintkit/A380X_Native_2024_Livery_Package_v1.1.zip) and [A380X PSD Paintkit](https://flybywirecdn.com/addons/a380x/paintkit/A380X_PAINTKIT_v0.3.rar) here.
 
 ## What is coming next?
+
 As always, we want to maintain transparent communication with the community regarding what is included in this initial release. Because the scope of this native port was expanding rapidly, we felt it was important to get these massive performance and structural improvements into your hands now, rather than holding them back to wait for every single feature to be completed. Your feedback on this build will be vital in helping us stabilize and iterate.
 
 With that in mind, please take note of the following points regarding our development roadmap:
