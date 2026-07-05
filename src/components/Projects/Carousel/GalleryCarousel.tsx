@@ -1,7 +1,7 @@
-import React, { useState, useCallback, useEffect, ReactNode } from 'react';
-import Image from 'next/image';
+import { Children, cloneElement, useState, useCallback, useEffect, ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
-import { CarouselControls, useCarouselTheme, useMediaQuery } from './CarouselPrimitives';
+import { CarouselControls, useCarouselTheme } from './CarouselPrimitives';
+import ViewerModal from '../../Utils/ViewerModal';
 
 type GalleryCarouselProps = {
     children: ReactNode;
@@ -11,81 +11,51 @@ type GalleryCarouselProps = {
 
 const INACTIVE_W_REM = 24; // w-96
 const GAP_REM = 1; // gap-4
-const EXPAND_BREAKPOINT = '(min-width: 768px)'; // md breakpoint
 
-/**
- * FullScreenModal — displays a clicked screenshot at full size.
- */
-const FullScreenModal = ({
-    imageSrc,
-    imageAlt,
-    onClose,
-}: {
-    imageSrc: string;
-    imageAlt: string;
-    onClose: () => void;
-}) => {
-    useEffect(() => {
-        const handleEscape = (e: KeyboardEvent) => {
-            if (e.key === 'Escape') onClose();
-        };
-        document.addEventListener('keydown', handleEscape);
-        return function cleanup() {
-            document.removeEventListener('keydown', handleEscape);
-        };
-    }, [onClose]);
-
-    return (
-        <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 animate-[fade-in_0.3s_ease-in-out]"
-            onClick={onClose}
-            role="dialog"
-            aria-modal="true"
-            aria-label="Image preview"
-        >
-            <style>
-                {`
-                @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
-                @keyframes scale-in { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
-                `}
-            </style>
-            <div
-                className="relative max-h-[90vh] max-w-[90vw]"
-                onClick={(e) => e.stopPropagation()}
-            >
-                <Image
-                    src={imageSrc}
-                    alt={imageAlt}
-                    width={1920}
-                    height={1080}
-                    className="max-h-[85vh] max-w-[95vw] object-contain rounded-lg shadow-2xl"
-                    style={{ animation: 'scale-in 0.3s ease-in-out' }}
-                />
-                <button
-                    type="button"
-                    onClick={onClose}
-                    className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
-                    aria-label="Close modal"
-                >
-                    <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    );
-};
-
-/**
- * GalleryCarousel — Screenshot tiles expand from 1:1 to 16:9 when active on md+ viewports.
- * On sm viewports, tiles remain locked at 1:1 (w-96).
- */
 const GalleryCarousel = ({ children, theme = 'dark', className }: GalleryCarouselProps) => {
-    const slides = React.Children.toArray(children);
+    const slides = Children.toArray(children);
     const total = slides.length;
     const [currentIndex, setCurrentIndex] = useState(0);
     const [modalSlideIndex, setModalSlideIndex] = useState<number | null>(null);
-    const shouldExpand = useMediaQuery(EXPAND_BREAKPOINT);
+    const [isClosing, setIsClosing] = useState(false);
+    const [hasMounted, setHasMounted] = useState(false);
+
+    useEffect(() => {
+        setHasMounted(true);
+    }, []);
+
+    // Lock body scroll when modal is open
+    useEffect(() => {
+        if (modalSlideIndex !== null) {
+            const scrollY = window.scrollY;
+            document.body.style.position = 'fixed';
+            document.body.style.top = `-${scrollY}px`;
+            document.body.style.left = '0';
+            document.body.style.right = '0';
+            document.body.style.overflow = 'hidden';
+        } else {
+            const scrollY = document.body.style.top;
+            document.body.style.position = '';
+            document.body.style.top = '';
+            document.body.style.left = '';
+            document.body.style.right = '';
+            document.body.style.overflow = '';
+            if (scrollY) {
+                window.scrollTo(0, parseInt(scrollY || '0', 10) * -1);
+            }
+        }
+        return () => {
+            const scrollY = document.body.style.top;
+            document.body.style.position = '';
+            document.body.style.top = '';
+            document.body.style.left = '';
+            document.body.style.right = '';
+            document.body.style.overflow = '';
+            if (scrollY) {
+                window.scrollTo(0, parseInt(scrollY || '0', 10) * -1);
+            }
+        };
+    }, [modalSlideIndex]);
 
     const handleNext = useCallback(() => {
         setCurrentIndex((prev) => (prev + 1) % total);
@@ -108,10 +78,21 @@ const GalleryCarousel = ({ children, theme = 'dark', className }: GalleryCarouse
     }, [currentIndex]);
 
     const handleCloseModal = useCallback(() => {
-        setModalSlideIndex(null);
+        setIsClosing(true);
+        setTimeout(() => {
+            setModalSlideIndex(null);
+            setIsClosing(false);
+        }, 300);
     }, []);
 
-    // translateX always uses w-96 (24rem) since tiles are always w-96 in the DOM.
+    const handleModalNext = useCallback(() => {
+        setModalSlideIndex((prev) => (prev !== null ? (prev + 1) % total : null));
+    }, [total]);
+
+    const handleModalPrevious = useCallback(() => {
+        setModalSlideIndex((prev) => (prev !== null ? (prev - 1 + total) % total : null));
+    }, [total]);
+
     const translateX = -(currentIndex * (INACTIVE_W_REM + GAP_REM));
     const { containerTheme } = useCarouselTheme(theme);
 
@@ -128,10 +109,11 @@ const GalleryCarousel = ({ children, theme = 'dark', className }: GalleryCarouse
                     aria-roledescription="carousel"
                     aria-label="Gallery carousel"
                     className="flex h-96 items-center gap-4 will-change-transform transition-transform duration-500 ease-in-out"
-                    style={{ transform: `translateX(${translateX}rem)` }}
+                    style={{ transform: `translateX(${translateX}rem)`, width: 'max-content' }}
                 >
                     {slides.map((slide, index) => {
                         const isActive = index === currentIndex;
+                        const fullWidthWhenActive = (slide as React.ReactElement).props?.fullWidthWhenActive;
                         return (
                             <div
                                 key={index}
@@ -140,15 +122,16 @@ const GalleryCarousel = ({ children, theme = 'dark', className }: GalleryCarouse
                                 aria-label={`Slide ${index + 1} of ${total}`}
                                 aria-hidden={!isActive}
                                 className={twMerge(
-                                    'shrink-0 h-96 cursor-pointer transition-[width] duration-500 ease-in-out',
-                                    'w-96',
-                                    isActive && shouldExpand ? 'md:w-[42.6667rem]' : '',
+                                    'shrink-0 h-96 cursor-pointer w-96',
+                                    isActive && !fullWidthWhenActive && 'md:w-[42.6667rem]',
+                                    isActive && fullWidthWhenActive && 'w-full',
+                                    hasMounted && 'transition-[width] duration-500 ease-in-out',
                                 )}
                                 onClick={() => handleTileClick(index)}
                             >
-                                {React.cloneElement(
-                                    slide as React.ReactElement<{ onClick?: () => void }>,
-                                    { onClick: () => handleTileClick(index) },
+                                {cloneElement(
+                                    slide as React.ReactElement<{ onClick?: () => void; isActive?: boolean }>,
+                                    { onClick: () => handleTileClick(index), isActive },
                                 )}
                             </div>
                         );
@@ -168,10 +151,13 @@ const GalleryCarousel = ({ children, theme = 'dark', className }: GalleryCarouse
 
             {/* Full Screen Modal */}
             {modalSlideIndex !== null && modalImageSrc && (
-                <FullScreenModal
+                <ViewerModal
                     imageSrc={modalImageSrc}
                     imageAlt={modalImageAlt}
                     onClose={handleCloseModal}
+                    onPrevious={handleModalPrevious}
+                    onNext={handleModalNext}
+                    isClosing={isClosing}
                 />
             )}
         </div>
