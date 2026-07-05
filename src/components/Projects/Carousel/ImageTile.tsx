@@ -25,20 +25,27 @@ const ImageTile = ({
 }: ImageTileProps) => (
     <div
         className={twMerge(
-            'relative flex h-96 w-full overflow-hidden rounded-3xl border-2 border-transparent duration-150',
-            !isActive && 'hover:border-[#00cae5]',
+            'group relative flex h-96 w-full overflow-hidden rounded-3xl border-2 border-transparent',
             className,
         )}
     >
-        {/* Background image — fixed dimensions matching tile size */}
-        <div className="absolute inset-0 h-96 w-96 md:w-[42.6667rem]">
-            <Image
-                src={imageSrc}
-                alt={imageAlt}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 24rem, 43rem"
-            />
+        {/* Background image — zooms in on hover */}
+        <div className="absolute inset-0">
+            <div
+                className={twMerge(
+                    'absolute left-0 top-0 h-96 w-96 md:w-[42.6667rem] transition-transform duration-300',
+                    !isActive && 'group-hover:scale-105',
+                )}
+                style={{ transformOrigin: '12rem center' }}
+            >
+                <Image
+                    src={imageSrc}
+                    alt={imageAlt}
+                    fill
+                    className="object-cover object-left"
+                    sizes="(max-width: 768px) 24rem, 43rem"
+                />
+            </div>
         </div>
         {/* Gradient overlay for text readability */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
