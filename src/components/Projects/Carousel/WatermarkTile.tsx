@@ -117,7 +117,7 @@ const WatermarkTile = ({
                 {/* Gradient overlay for text contrast */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/25 pointer-events-none" />
                 {description && (
-                    <span className="relative z-10 p-4 md:p-6 font-display text-right text-white" style={{ textShadow: '0 2px 8px rgba(0, 0, 0, 0.5)' }}>
+                    <span className="relative z-10 p-4 md:p-6 font-display text-right text-white" style={{ textShadow: '0 0px 20px rgba(0, 0, 0, 1)' }}>
                         {description}
                     </span>
                 )}

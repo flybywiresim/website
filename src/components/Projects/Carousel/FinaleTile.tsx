@@ -18,7 +18,6 @@ type FinaleTileProps = {
 const FinaleTile = ({
     title,
     features,
-    description,
     className,
     fullWidthWhenActive = true, // eslint-disable-line
     isActive = false,
@@ -77,7 +76,7 @@ const FinaleTile = ({
                         className="absolute z-10 hidden md:block text-xl font-bold text-[#0a1929]"
                         style={{
                             ...pos,
-                            opacity: animateIn ? 0.5 : 0,
+                            opacity: animateIn ? 0.65 : 0,
                             transform: animateIn ? 'scale(1)' : 'scale(0)',
                             transition: animateIn
                                 ? `opacity 0.1s ease-out ${index * 80}ms, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) ${index * 80}ms`

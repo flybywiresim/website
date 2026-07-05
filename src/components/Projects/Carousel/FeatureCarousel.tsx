@@ -39,7 +39,6 @@ const FeatureCarousel = ({ children, theme = 'dark', className }: FeatureCarouse
 
     const translateX = -(currentIndex * (INACTIVE_W_REM + GAP_REM));
     const { containerTheme } = useCarouselTheme(theme);
-    const activeSlideFeatures = (slides[currentIndex] as React.ReactElement | undefined)?.props?.features;
 
     return (
         <div className={twMerge('flex flex-col gap-6', containerTheme, className)}>
@@ -63,7 +62,8 @@ const FeatureCarousel = ({ children, theme = 'dark', className }: FeatureCarouse
                                 aria-label={`Slide ${index + 1} of ${total}`}
                                 aria-hidden={!isActive}
                                 className={twMerge(
-                                    'shrink-0 h-96 cursor-pointer w-96',
+                                    'shrink-0 h-96 w-96',
+                                    isActive ? 'cursor-default' : 'cursor-pointer',
                                     isActive && !fullWidthWhenActive && 'md:w-[42.6667rem]',
                                     isActive && fullWidthWhenActive && 'w-full',
                                     hasMounted && 'transition-width duration-500 ease-in-out',
@@ -79,19 +79,12 @@ const FeatureCarousel = ({ children, theme = 'dark', className }: FeatureCarouse
                 {/* Mobile Description */}
                 <div
                     className={twMerge(
-                        'overflow-y-auto md:hidden mt-6 h-40 px-5 flex items-center justify-center',
+                        'md:hidden mt-6 px-5 flex items-center justify-center',
                         theme === 'light' ? 'text-dark' : 'text-light',
                     )}
+                    style={{ height: '12.5rem', overflowY: 'auto' }}
                 >
-                    {activeSlideFeatures && Array.isArray(activeSlideFeatures) ? (
-                        <ul className="text-center">
-                            {activeSlideFeatures.map((feature: string, idx: number) => (
-                                <li key={idx}>{feature}</li>
-                            ))}
-                        </ul>
-                    ) : (
-                        (slides[currentIndex] as React.ReactElement | undefined)?.props?.description
-                    )}
+                    {(slides[currentIndex] as React.ReactElement | undefined)?.props?.description}
                 </div>
             </div>
 

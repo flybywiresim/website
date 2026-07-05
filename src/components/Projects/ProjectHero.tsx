@@ -1,5 +1,4 @@
 import { ReactNode, useEffect, useRef } from 'react';
-import { useRouter } from 'next/router';
 import Section from '../Utils/Section';
 import Container from '../Utils/Container';
 import Button from '../Button/Button';
@@ -17,7 +16,6 @@ interface ProjectHeroProps {
     projectTitle?: string;
     projectDescription: string;
     buttons?: ButtonConfig[];
-    fullHeight?: boolean;
     HeroVideo?: string;
     HeroVideoFallback?: string;
     HeroVideoPoster?: string;
@@ -74,31 +72,20 @@ const ButtonGroup = (props: {children: ReactNode}) => (
 );
 
 const Hero = (props: ProjectHeroProps) => {
-    const router = useRouter();
-    const { fullHeight = false } = props;
-
     const strokeStyle: React.CSSProperties = {
         WebkitTextStroke: '3px var(--color-brand-cyan-main)',
         color: 'transparent',
     };
 
     const defaultButtons: ButtonConfig[] = [
-        { label: 'Download', theme: 'primary', onClick: () => router.push('/downloads') },
+        { label: 'Download', theme: 'primary', link: '/downloads' },
         { label: 'Learn More', theme: 'secondary' },
     ];
 
     const buttons = props.buttons ?? defaultButtons;
 
-    const handleButtonClick = (button: ButtonConfig) => {
-        if (button.onClick) {
-            button.onClick();
-        } else if (button.link) {
-            router.push(button.link);
-        }
-    };
-
     return (
-        <Section className={`relative flex ${fullHeight ? 'h-screen' : ''} flex-col justify-center bg-black/50 bg-gradient-to-bl from-primary/30 to-secondary`}>
+        <Section className="relative flex flex-col justify-center bg-black/50 bg-gradient-to-bl from-primary/30 to-secondary">
             {props.backgroundSrc && (
                 <img
                     src={props.backgroundSrc}
@@ -132,7 +119,8 @@ const Hero = (props: ProjectHeroProps) => {
                                 key={index}
                                 label={button.label}
                                 theme={button.theme}
-                                onClick={() => handleButtonClick(button)}
+                                link={button.link}
+                                onClick={button.onClick}
                             />
                         ))}
                     </ButtonGroup>

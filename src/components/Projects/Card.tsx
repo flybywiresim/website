@@ -1,5 +1,4 @@
 import Image from 'next/legacy/image';
-import Link from 'next/link';
 import { DownloadOutlined } from '@ant-design/icons';
 import { twJoin } from 'tailwind-merge';
 import Container from '../Utils/Container';
@@ -44,16 +43,18 @@ const Card = ({
                     <span className="flex flex-wrap gap-2 py-4 mt-auto">
                         {downloadURL
                             && (
-                                <>
-                                    <Link href={downloadURL} className={twJoin(disabled && 'pointer-events-none')}>
-                                        <Button label={<DownloadOutlined />} theme="primary" className="flex max-w-min items-center justify-center" disabled={disabled}>Download</Button>
-                                    </Link>
-                                </>
+                                <Button
+                                    label={<DownloadOutlined />}
+                                    theme="primary"
+                                    className={twJoin('flex max-w-min items-center justify-center', disabled && 'pointer-events-none')}
+                                    disabled={disabled}
+                                    link={downloadURL}
+                                >
+                                    Download
+                                </Button>
                             )}
                         {href !== undefined && (
-                            <Link href={href}>
-                                <Button theme="secondary">Learn More</Button>
-                            </Link>
+                            <Button theme="secondary" link={href}>Learn More</Button>
                         )}
                     </span>
                 </Container>

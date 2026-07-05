@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Button from '../Button/Button';
 
 interface ResourceItem {
@@ -9,12 +8,6 @@ interface ResourceItem {
         link: string;
     };
 }
-
-const ButtonWrapper: React.FC<{ link: string; children: React.ReactNode }> = ({ link, children }) => (
-    <Link href={link} legacyBehavior passHref>
-        <span className="w-fit cursor-pointer">{children}</span>
-    </Link>
-);
 
 interface ResourcesSectionProps {
     title: string;
@@ -35,9 +28,7 @@ const ResourcesSection: React.FC<ResourcesSectionProps> = ({ title, description,
                     className="flex flex-col justify-between min-h-[100%] w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(25%-1.125rem)] gap-4 "
                 >
                     <p>{resource.description}</p>
-                    <ButtonWrapper link={resource.button.link}>
-                        <Button label={resource.button.label} theme={resource.button.theme} />
-                    </ButtonWrapper>
+                    <Button label={resource.button.label} theme={resource.button.theme} link={resource.button.link} />
                 </div>
             ))}
         </div>
