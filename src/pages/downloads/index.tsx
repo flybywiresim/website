@@ -169,9 +169,8 @@ const Downloads: NextPage = () => {
                                 versions={
                                     {
                                         'Stable (4K)': { link: links.msfs2024_a380x_stable_4k_standalone_github },
-                                        'Development (4K)': { link: links.msfs2024_a380x_dev_4k_standalone_github, theme: 'secondary' },
+                                        'Development': { link: links.msfs2024_a380x_dev_standalone_github, theme: 'secondary' },
                                         'Stable (8K)': { link: links.msfs2024_a380x_stable_8k_standalone_github, parts: 3 },
-                                        'Development (8K)': { link: links.msfs2024_a380x_dev_8k_standalone_github, parts: 3, theme: 'secondary' },
                                     }
                                 }
                             />
