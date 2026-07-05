@@ -18,12 +18,13 @@ interface ProjectHeroProps {
     projectDescription: string;
     buttons?: ButtonConfig[];
     fullHeight?: boolean;
-    videoSrc?: string;
-    poster?: string;
+    HeroVideo?: string;
+    HeroVideoFallback?: string;
+    HeroVideoPoster?: string;
     backgroundSrc?: string;
 }
 
-const VideoBackground = (props: { videoSrc?: string; poster?: string }) => {
+const VideoBackground = (props: { HeroVideo?: string; HeroVideoFallback?: string; HeroVideoPoster?: string }) => {
     const videoRef = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
@@ -32,25 +33,22 @@ const VideoBackground = (props: { videoSrc?: string; poster?: string }) => {
         }
     }, []);
 
-    const webmSrc = props.videoSrc ? `${props.videoSrc}.webm` : undefined;
-    const mp4Src = props.videoSrc ? `${props.videoSrc}.mp4` : undefined;
-
-    if (!webmSrc && !mp4Src && !props.poster) {
+    if (!props.HeroVideo && !props.HeroVideoFallback && !props.HeroVideoPoster) {
         return null;
     }
 
-    if (!webmSrc && !mp4Src) {
+    if (!props.HeroVideo && !props.HeroVideoFallback) {
         return (
             <img
-                src={props.poster}
+                src={props.HeroVideoPoster}
                 alt="Background"
-                className="absolute left-0 top-0 -z-10 h-screen w-screen object-cover opacity-90"
+                className="absolute -z-10 h-screen w-screen object-cover"
             />
         );
     }
 
     return (
-        <div className="absolute left-0 top-0 -z-10 h-screen w-screen overflow-hidden">
+        <div className="absolute -z-10 h-screen w-screen">
             <video
                 ref={videoRef}
                 className="h-full w-full object-cover"
@@ -58,12 +56,12 @@ const VideoBackground = (props: { videoSrc?: string; poster?: string }) => {
                 loop
                 muted
                 playsInline
-                poster={props.poster}
+                poster={props.HeroVideoPoster}
                 preload="auto"
                 aria-hidden="true"
             >
-                {webmSrc && <source src={webmSrc} type="video/webm" />}
-                {mp4Src && <source src={mp4Src} type="video/mp4" />}
+                {props.HeroVideo && <source src={props.HeroVideo} type="video/webm" />}
+                {props.HeroVideoFallback && <source src={props.HeroVideoFallback} type="video/mp4" />}
             </video>
         </div>
     );
@@ -105,11 +103,11 @@ const Hero = (props: ProjectHeroProps) => {
                 <img
                     src={props.backgroundSrc}
                     alt="Background"
-                    className="absolute left-0 top-0 -z-10 h-screen w-screen object-cover opacity-90"
+                    className="absolute -z-10 h-screen w-screen object-cover"
                 />
             )}
-            {props.videoSrc && (
-                <VideoBackground videoSrc={props.videoSrc} poster={props.poster} />
+            {(props.HeroVideo || props.HeroVideoFallback || props.HeroVideoPoster) && (
+                <VideoBackground HeroVideo={props.HeroVideo} HeroVideoFallback={props.HeroVideoFallback} HeroVideoPoster={props.HeroVideoPoster} />
             )}
             <Container className="h-144 justify-center" display="flex flex-col">
                 <div className="mx-auto max-w-prose text-center">

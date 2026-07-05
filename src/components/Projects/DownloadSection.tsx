@@ -35,26 +35,22 @@ const DownloadSectionComponent = ({
     const buttonsToRender = buttons ?? defaultButtons;
 
     return (
-        <Section className="relative flex flex-col justify-center bg-quasi-white text-black">
-            <Container className="justify-center" display="flex flex-col">
-                <div className="flex flex-col text-center justify-center gap-6">
-                    {heading && (
-                        <h2 className="font-semibold text-black">{heading}</h2>
-                    )}
-                    <p className="max-w-xl mx-auto text-center">{description}</p>
-                    <ButtonGroup>
-                        {buttonsToRender.map((button, index) => (
-                            <Button
-                                key={index}
-                                label={button.label}
-                                theme={button.theme}
-                                link={button.link}
-                            />
-                        ))}
-                    </ButtonGroup>
-                </div>
-            </Container>
-        </Section>
+        <div className="flex flex-col text-center justify-center gap-6">
+            {heading && (
+                <h2 className="font-semibold text-black">{heading}</h2>
+            )}
+            <p className="max-w-xl mx-auto text-center">{description}</p>
+            <ButtonGroup>
+                {buttonsToRender.map((button, index) => (
+                    <Button
+                        key={index}
+                        label={button.label}
+                        theme={button.theme}
+                        link={button.link}
+                    />
+                ))}
+            </ButtonGroup>
+        </div>
     );
 };
 
