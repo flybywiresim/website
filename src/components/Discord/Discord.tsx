@@ -1,5 +1,4 @@
 import Image from 'next/legacy/image';
-import Link from 'next/link';
 import Button from '../Button/Button';
 import { links } from '../../constants/links';
 
@@ -11,13 +10,7 @@ const Discord = () => (
         </span>
         <p>Join us to chat with other members of the community, get started with contributing, or ask us a question!</p>
 
-        <Link
-            href={links.discord}
-            target="_blank"
-            rel="noreferrer"
-        >
-            <Button label="Join Community!" theme="discord" />
-        </Link>
+        <Button label="Join Community!" theme="discord" link={links.discord} target="_blank" rel="noreferrer" />
     </div>
 );
 

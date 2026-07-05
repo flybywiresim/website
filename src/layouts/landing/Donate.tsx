@@ -20,7 +20,7 @@ const Donate = () => (
                 such as fast and reliable download networks and integrated online features to enrich your flight simulation experience.
             </p>
             <p>We use Open Collective to transparently manage our donations and expenses, which means you can see how we utilize donated funds at any time.</p>
-            <Button label="Donate" theme="primary" onClick={() => window.open(links.opencollective)} />
+            <Button label="Donate" theme="primary" link={links.opencollective} target="_blank" rel="noreferrer" />
             <small className="opacity-75">*No profit is generated from donations. Donating does not guarantee access to additional content nor its exclusivity.</small>
         </Container>
     </Section>

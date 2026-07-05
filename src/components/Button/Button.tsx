@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { useRouter } from 'next/router';
+import Link from 'next/link';
 import { twMerge } from 'tailwind-merge';
 
 export enum ButtonType {
@@ -17,6 +17,8 @@ export interface ButtonProps {
   className?: string;
   onClick?: () => void;
   link?: string;
+  target?: string;
+  rel?: string;
 }
 
 const Button: FC<ButtonProps> = ({
@@ -24,18 +26,12 @@ const Button: FC<ButtonProps> = ({
     label,
     disabled = false,
     className = '',
-    onClick = () => {},
+    onClick,
     link,
+    target,
+    rel,
     children,
 }) => {
-    const router = useRouter();
-
-    const handleClick = () => {
-        if (link) {
-            router.push(link);
-        }
-        onClick();
-    };
     let buttonClass;
     switch (theme) {
     default:
@@ -59,8 +55,32 @@ const Button: FC<ButtonProps> = ({
         break;
     }
 
+    const baseClasses = twMerge('button flex gap-x-2 items-center', buttonClass, disabled && 'pointer-events-none', className);
+
+    if (link) {
+        const isExternal = link.startsWith('http') || link.startsWith('//');
+
+        if (isExternal) {
+            return (
+                <a href={link} className={baseClasses} target={target} rel={rel}>
+                    {label}
+                    {children}
+                </a>
+            );
+        }
+
+        return (
+            <Link href={link} passHref legacyBehavior>
+                <a className={baseClasses} target={target} rel={rel}>
+                    {label}
+                    {children}
+                </a>
+            </Link>
+        );
+    }
+
     return (
-        <button type="button" disabled={disabled} className={twMerge('button flex gap-x-2 items-center', buttonClass, disabled && 'pointer-events-none', className)} onClick={handleClick}>
+        <button type="button" disabled={disabled} className={baseClasses} onClick={onClick}>
             {label}
             {children}
         </button>

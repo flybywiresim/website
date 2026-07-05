@@ -1,5 +1,4 @@
 import { GetStaticProps } from 'next';
-import Link from 'next/link';
 import Head from 'next/head';
 import Section from '../../components/Utils/Section';
 import Container from '../../components/Utils/Container';
@@ -33,21 +32,20 @@ const index = ({ listings }: BlogProps) => (
                         readingStats,
                         authors,
                     }, index) => (
-                        <Link legacyBehavior key={id} href={`/notams/${id}`}>
-                            <a className={index === 0 ? 'xl:col-span-3' : ''}>
-                                <Card
-                                    index={index}
-                                    category={category}
-                                    title={title}
-                                    date={date}
-                                    description={description}
-                                    metaImage={metaImage}
-                                    metaAlt={metaAlt}
-                                    readingStats={readingStats.text}
-                                    authors={authors}
-                                />
-                            </a>
-                        </Link>
+                        <div key={id} className={index === 0 ? 'xl:col-span-3' : ''}>
+                            <Card
+                                href={`/notams/${id}`}
+                                index={index}
+                                category={category}
+                                title={title}
+                                date={date}
+                                description={description}
+                                metaImage={metaImage}
+                                metaAlt={metaAlt}
+                                readingStats={readingStats.text}
+                                authors={authors}
+                            />
+                        </div>
                     ))}
                 </div>
             </Container>
