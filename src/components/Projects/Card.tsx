@@ -46,7 +46,10 @@ const Card = ({
                             && (
                                 <>
                                     <Link href={downloadURL} className={twJoin(disabled && 'pointer-events-none')}>
-                                        <Button label={<DownloadOutlined />} theme="primary" className="flex max-w-min items-center justify-center" disabled={disabled}>Download</Button>
+                                        <Button theme="primary" className="flex max-w-min items-center justify-center" disabled={disabled}>
+                                            <DownloadOutlined />
+                                            Download
+                                        </Button>
                                     </Link>
                                 </>
                             )}

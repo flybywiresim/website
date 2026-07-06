@@ -26,7 +26,7 @@ const index: NextPage = () => (
                         category="Aircraft"
                         description="The A32NX is a high fidelity and free solution for Microsoft Flight Simulator, built and maintained by the open source community."
                         downloadURL="/downloads"
-                        href={links.a32nx}
+                        href="/projects/a32nx"
                         direction="vertical"
                     />
                     <Card
@@ -36,7 +36,7 @@ const index: NextPage = () => (
                         category="Aircraft"
                         description="Open source and free to fly, the A380X is the first high-fidelity simulation of the world’s largest passenger airliner for Microsoft Flight Simulator."
                         downloadURL="/downloads"
-                        href={links.a380x}
+                        href="/projects/a380x"
                         direction="vertical"
                     />
                     <Card

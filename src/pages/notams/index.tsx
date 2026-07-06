@@ -1,5 +1,4 @@
 import { GetStaticProps } from 'next';
-import Link from 'next/link';
 import Head from 'next/head';
 import Section from '../../components/Utils/Section';
 import Container from '../../components/Utils/Container';
@@ -12,11 +11,7 @@ const index = ({ listings }: BlogProps) => (
     <>
         <Head>
             <title>NOTAMs - FlyByWire Simulations</title>
-            <meta
-                key="og:title"
-                name="og:title"
-                content="NOTAMs - FlyByWire Simulations"
-            />
+            <meta name="og:title" content="NOTAMs - FlyByWire Simulations" />
         </Head>
         <Section theme="dark">
             <Container>
@@ -27,27 +22,22 @@ const index = ({ listings }: BlogProps) => (
                         category,
                         title,
                         date,
-                        description,
                         metaImage,
                         metaAlt,
-                        readingStats,
                         authors,
-                    }, index) => (
-                        <Link legacyBehavior key={id} href={`/notams/${id}`}>
-                            <a className={index === 0 ? 'xl:col-span-3' : ''}>
-                                <Card
-                                    index={index}
-                                    category={category}
-                                    title={title}
-                                    date={date}
-                                    description={description}
-                                    metaImage={metaImage}
-                                    metaAlt={metaAlt}
-                                    readingStats={readingStats.text}
-                                    authors={authors}
-                                />
-                            </a>
-                        </Link>
+                    }, cardIndex) => (
+                        <div key={id} className={cardIndex === 0 ? 'xl:col-span-3' : ''}>
+                            <Card
+                                href={`/notams/${id}`}
+                                index={cardIndex}
+                                category={category}
+                                title={title}
+                                date={date}
+                                metaImage={metaImage}
+                                metaAlt={metaAlt}
+                                authors={authors}
+                            />
+                        </div>
                     ))}
                 </div>
             </Container>

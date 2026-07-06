@@ -41,17 +41,19 @@ const Downloads: NextPage = () => {
                         <div className="flex flex-col">
                             <div className="flex gap-4 mb-4">
                                 <Button
-                                    label="Download for Windows"
                                     theme="primary"
                                     className="md:min-h-0 flex-1 min-h-16"
                                     onClick={() => handleTabToggle('windows')}
-                                />
+                                >
+                                    Download for Windows
+                                </Button>
                                 <Button
-                                    label="Download for Linux"
                                     theme="primary"
                                     className="md:min-h-0 flex-1 min-h-16"
                                     onClick={() => handleTabToggle('linux')}
-                                />
+                                >
+                                    Download for Linux
+                                </Button>
                             </div>
 
                             {/* Windows flyout */}
@@ -63,10 +65,11 @@ const Downloads: NextPage = () => {
                                     <h4 className="mb-3 font-semibold">Choose Windows Version:</h4>
                                     <Link href={links.installer_x64_exe}>
                                         <Button
-                                            label="x64.exe (Recommended)"
                                             theme="secondary"
                                             className="mb-2 w-full"
-                                        />
+                                        >
+                                            x64.exe (Recommended)
+                                        </Button>
                                     </Link>
                                 </div>
                             </div>
@@ -81,38 +84,43 @@ const Downloads: NextPage = () => {
                                     <div className="flex flex-col gap-2">
                                         <Link href={links.installer_amd64_deb}>
                                             <Button
-                                                label="amd64.deb (Ubuntu/Debian)"
                                                 theme="secondary"
                                                 className="w-full"
-                                            />
+                                            >
+                                                amd64.deb (Ubuntu/Debian)
+                                            </Button>
                                         </Link>
                                         <Link href={links.installer_x86_64_rpm}>
                                             <Button
-                                                label="x86_64.rpm (RedHat/Fedora)"
                                                 theme="secondary"
                                                 className="w-full"
-                                            />
+                                            >
+                                                x86_64.rpm (RedHat/Fedora)
+                                            </Button>
                                         </Link>
                                         <Link href={links.installer_x86_64_appimage}>
                                             <Button
-                                                label="x86_64.AppImage (Universal)"
                                                 theme="secondary"
                                                 className="w-full"
-                                            />
+                                            >
+                                                x86_64.AppImage (Universal)
+                                            </Button>
                                         </Link>
                                         <Link href={links.installer_x86_64_flatpak}>
                                             <Button
-                                                label="x86_64.flatpak"
                                                 theme="secondary"
                                                 className="w-full"
-                                            />
+                                            >
+                                                x86_64.flatpak
+                                            </Button>
                                         </Link>
                                         <Link href={links.installer_amd64_snap}>
                                             <Button
-                                                label="amd64.snap"
                                                 theme="secondary"
                                                 className="w-full"
-                                            />
+                                            >
+                                                amd64.snap
+                                            </Button>
                                         </Link>
                                     </div>
                                 </div>
