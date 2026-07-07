@@ -6,6 +6,8 @@ interface ButtonConfig {
     label: string;
     theme: 'primary' | 'secondary' | 'positive' | 'caution' | 'danger' | 'discord';
     link?: string;
+    target?: '_blank' | '_parent' | '_self' | '_top';
+    rel?: string;
 }
 
 interface DownloadSectionProps {
@@ -45,10 +47,13 @@ const DownloadSectionComponent = ({
                     {buttonsToRender.map((button, index) => (
                         <Button
                             key={index}
-                            label={button.label}
                             theme={button.theme}
                             link={button.link}
-                        />
+                            target={button.target}
+                            rel={button.rel}
+                        >
+                            {button.label}
+                        </Button>
                     ))}
                 </ButtonGroup>
             </div>

@@ -28,7 +28,7 @@ const Hero = () => (
                     fly with our in-depth systems or put your skills to the test by contributing to the project.
                 </p>
                 <ButtonGroup>
-                    <Button label="Download" theme="primary" link="/downloads" />
+                    <Button theme="primary" link="/downloads">Download</Button>
                 </ButtonGroup>
             </div>
         </Container>

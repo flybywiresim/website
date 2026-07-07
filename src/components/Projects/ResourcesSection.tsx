@@ -6,6 +6,8 @@ interface ResourceItem {
         label: string;
         theme: 'primary' | 'secondary' | 'positive' | 'caution' | 'danger' | 'discord';
         link: string;
+        target?: '_blank' | '_parent' | '_self' | '_top';
+        rel?: string;
     };
 }
 
@@ -28,7 +30,9 @@ const ResourcesSection: React.FC<ResourcesSectionProps> = ({ title, description,
                     className="flex flex-col justify-between min-h-[100%] w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(25%-1.125rem)] gap-4 "
                 >
                     <p>{resource.description}</p>
-                    <Button label={resource.button.label} theme={resource.button.theme} link={resource.button.link} />
+                    <Button theme={resource.button.theme} link={resource.button.link} target={resource.button.target} rel={resource.button.rel}>
+                        {resource.button.label}
+                    </Button>
                 </div>
             ))}
         </div>

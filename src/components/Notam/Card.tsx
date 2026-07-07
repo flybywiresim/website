@@ -1,18 +1,23 @@
-/* eslint-disable */
-import Image from "next/legacy/image";
+import Image from 'next/image';
 import Link from 'next/link';
 import Tag from '../Utils/Tag';
 import { PostListing } from '../../lib/notams/posts';
 
-interface CardProps extends Omit<PostListing, 'embedPreviewImage'> {
+interface CardProps extends Omit<PostListing, 'embedPreviewImage' | 'readingStats' | 'description'> {
     href: string;
 }
 
-const Card = ({ href, ...props }: CardProps) => (
-    <Link href={href} legacyBehavior passHref>
-        <a className="border-2 border-transparent hover:border-primary rounded-md overflow-hidden block">
+const Card = ({ href, index, metaImage, metaAlt, date, category, authors, title }: CardProps) => {
+    const formattedDate = new Date(date).toLocaleDateString('en-US', { dateStyle: 'long' });
+    const authorString = authors?.join(', ');
+
+    return (
+        <Link
+            href={href}
+            className="border-2 border-transparent hover:border-primary rounded-md overflow-hidden block"
+        >
             <div className={`
-            ${props.index === 0
+            ${index === 0
             ? 'grid-rows-2 xl:grid-rows-none xl:grid-cols-2 text-left'
             : 'grid-rows-2 text-left'
         }
@@ -20,32 +25,34 @@ const Card = ({ href, ...props }: CardProps) => (
             `}
             >
                 <span className="relative">
-                    <Image src={props.metaImage} alt={props.metaAlt} layout="fill" objectFit="cover" />
+                    <Image src={metaImage} alt={metaAlt} fill className="object-cover" />
                 </span>
                 <div className="px-8 py-6">
                     <div className="flex justify-between">
                         <p className="text-gray-400">
                             Posted:
                             {' '}
-                            {new Date(props.date).toLocaleDateString('en-US', { dateStyle: 'long' })}
+                            {formattedDate}
                         </p>
-                        <span className="grid">
-                            <div className="flex gap-x-3">
-                                {props.index === 0 && <Tag category="Latest" />}
-                                <Tag category={props.category} />
-                            </div>
-                        </span>
+                        <div className="flex gap-x-3">
+                            {index === 0 && <Tag category="Latest" />}
+                            <Tag category={category} />
+                        </div>
                     </div>
                     <div className="flex-col items-center">
-                        <h3 className={props.index === 0 ? 'xl:text-7xl' : 'text-2xl'}>{props.title}</h3>
-                        By
-                        {' '}
-                        {props.authors?.join(', ')}
+                        <h3 className={index === 0 ? 'xl:text-7xl' : 'text-2xl'}>{title}</h3>
+                        {authorString && (
+                            <>
+                                By
+                                {' '}
+                                {authorString}
+                            </>
+                        )}
                     </div>
                 </div>
             </div>
-        </a>
-    </Link>
-);
+        </Link>
+    );
+};
 
 export default Card;

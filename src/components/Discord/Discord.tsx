@@ -10,7 +10,7 @@ const Discord = () => (
         </span>
         <p>Join us to chat with other members of the community, get started with contributing, or ask us a question!</p>
 
-        <Button label="Join Community!" theme="discord" link={links.discord} target="_blank" rel="noreferrer" />
+        <Button theme="discord" link={links.discord}>Join Community!</Button>
     </div>
 );
 

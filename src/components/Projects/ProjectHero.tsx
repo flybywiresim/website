@@ -8,6 +8,8 @@ interface ButtonConfig {
     theme: 'primary' | 'secondary' | 'positive' | 'caution' | 'danger' | 'discord';
     link?: string;
     onClick?: () => void;
+    target?: '_blank' | '_parent' | '_self' | '_top';
+    rel?: string;
 }
 
 interface ProjectHeroProps {
@@ -117,11 +119,14 @@ const Hero = (props: ProjectHeroProps) => {
                         {buttons.map((button, index) => (
                             <Button
                                 key={index}
-                                label={button.label}
                                 theme={button.theme}
                                 link={button.link}
                                 onClick={button.onClick}
-                            />
+                                target={button.target}
+                                rel={button.rel}
+                            >
+                                {button.label}
+                            </Button>
                         ))}
                     </ButtonGroup>
                 </div>

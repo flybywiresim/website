@@ -11,11 +11,7 @@ const index = ({ listings }: BlogProps) => (
     <>
         <Head>
             <title>NOTAMs - FlyByWire Simulations</title>
-            <meta
-                key="og:title"
-                name="og:title"
-                content="NOTAMs - FlyByWire Simulations"
-            />
+            <meta name="og:title" content="NOTAMs - FlyByWire Simulations" />
         </Head>
         <Section theme="dark">
             <Container>
@@ -26,23 +22,19 @@ const index = ({ listings }: BlogProps) => (
                         category,
                         title,
                         date,
-                        description,
                         metaImage,
                         metaAlt,
-                        readingStats,
                         authors,
-                    }, index) => (
-                        <div key={id} className={index === 0 ? 'xl:col-span-3' : ''}>
+                    }, cardIndex) => (
+                        <div key={id} className={cardIndex === 0 ? 'xl:col-span-3' : ''}>
                             <Card
                                 href={`/notams/${id}`}
-                                index={index}
+                                index={cardIndex}
                                 category={category}
                                 title={title}
                                 date={date}
-                                description={description}
                                 metaImage={metaImage}
                                 metaAlt={metaAlt}
-                                readingStats={readingStats.text}
                                 authors={authors}
                             />
                         </div>

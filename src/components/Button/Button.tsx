@@ -1,87 +1,66 @@
-import React, { FC } from 'react';
 import Link from 'next/link';
 import { twMerge } from 'tailwind-merge';
 
-export enum ButtonType {
-  Neutral,
-  Emphasis,
-  Positive,
-  Caution,
-  Danger,
-}
+const themeToClassMap = {
+    primary: 'button-emphasis',
+    secondary: 'button-neutral',
+    positive: 'button-positive',
+    caution: 'button-caution',
+    danger: 'button-danger',
+    discord: 'button-discord',
+} as const;
+
+export type ButtonTheme = keyof typeof themeToClassMap;
 
 export interface ButtonProps {
-  theme?: 'primary' | 'secondary' | 'positive' | 'caution' | 'danger' | 'discord';
-  label?: string | JSX.Element;
+  theme?: ButtonTheme;
+  children: React.ReactNode;
   disabled?: boolean;
   className?: string;
-  onClick?: () => void;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
   link?: string;
-  target?: string;
+  target?: React.HTMLAttributeAnchorTarget;
   rel?: string;
 }
 
-const Button: FC<ButtonProps> = ({
+const Button = ({
     theme = 'primary',
-    label,
+    children,
     disabled = false,
     className = '',
     onClick,
     link,
     target,
-    rel,
-    children,
-}) => {
-    let buttonClass;
-    switch (theme) {
-    default:
-    case 'primary':
-        buttonClass = 'button-emphasis';
-        break;
-    case 'secondary':
-        buttonClass = 'button-neutral';
-        break;
-    case 'positive':
-        buttonClass = 'button-positive';
-        break;
-    case 'caution':
-        buttonClass = 'button-caution';
-        break;
-    case 'danger':
-        buttonClass = 'button-danger';
-        break;
-    case 'discord':
-        buttonClass = 'button-discord';
-        break;
-    }
+    rel: relProp,
+}: ButtonProps) => {
+    const buttonClass = themeToClassMap[theme] ?? themeToClassMap.primary;
+    const baseClasses = twMerge(
+        'button flex gap-x-2 items-center',
+        buttonClass,
+        disabled && 'pointer-events-none',
+        className,
+    );
 
-    const baseClasses = twMerge('button flex gap-x-2 items-center', buttonClass, disabled && 'pointer-events-none', className);
+    const isExternal = link?.startsWith('http') || link?.startsWith('//');
+    const rel = isExternal ? (relProp ?? 'noopener noreferrer') : relProp;
 
     if (link) {
-        const isExternal = link.startsWith('http') || link.startsWith('//');
-
         if (isExternal) {
             return (
-                <a href={link} className={baseClasses} target={target} rel={rel}>
-                    {label}
+                <a href={link} className={baseClasses} target={target ?? '_blank'} rel={rel} aria-disabled={disabled}>
                     {children}
                 </a>
             );
         }
-
         return (
-            <Link href={link} passHref legacyBehavior>
-                <a className={baseClasses} target={target} rel={rel}>
-                    {label}
-                    {children}
-                </a>
+            <Link href={link} className={baseClasses} target={target} rel={rel}>
+                {children}
             </Link>
         );
     }
 
     return (
         <button type="button" disabled={disabled} className={baseClasses} onClick={onClick}>
-            {label}
             {children}
         </button>
     );

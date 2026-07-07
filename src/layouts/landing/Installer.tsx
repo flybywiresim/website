@@ -11,7 +11,7 @@ const Installer = () => (
                     <p>
                         Our custom-built, open-source installer is where we keep our projects for you to easily install.
                     </p>
-                    <Button label="Download" theme="primary" link="/downloads" />
+                    <Button theme="primary" link="/downloads">Download</Button>
                 </div>
             </div>
 
