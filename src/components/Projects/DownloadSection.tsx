@@ -12,7 +12,6 @@ interface DownloadSectionProps {
     heading?: string;
     description: string;
     buttons?: ButtonConfig[];
-    imageBackgroundSrc?: string;
 }
 
 const ButtonGroup = (props: { children: ReactNode }) => (
@@ -25,7 +24,6 @@ const DownloadSectionComponent = ({
     heading,
     description,
     buttons,
-    imageBackgroundSrc,
 }: DownloadSectionProps) => {
     const defaultButtons: ButtonConfig[] = [
         { label: 'Direct Downloads', theme: 'secondary' },
@@ -37,14 +35,7 @@ const DownloadSectionComponent = ({
 
     return (
         <Section className="relative flex flex-col justify-center">
-            <div className="absolute inset-0 -z-10" style={{ background: 'rgba(255, 255, 255, 0.85)' }} />
-            {imageBackgroundSrc && (
-                <img
-                    src={imageBackgroundSrc}
-                    alt="Background"
-                    className="absolute -z-20 h-full w-full object-cover"
-                />
-            )}
+            <div className="absolute inset-0 -z-10" style={{ background: 'rgba(255, 255, 255, 0.25)' }} />
             <div className="flex flex-col text-center justify-center gap-4">
                 {heading && (
                     <h2 className="font-semibold text-black">{heading}</h2>

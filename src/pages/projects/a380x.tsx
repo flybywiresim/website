@@ -136,7 +136,7 @@ const A380X: NextPage<A380XProps> = ({ galleryImages }) => (
                         imageSrc="/img/a380x/feature-environment.webp"
                         imageAlt="A close-up of the Auto Flight System (AFS) Control Panel, demonstrating the texture work."
                         description={
-                            'From the shape of its distinctive fuselage to individual screws in the flightdeck, each 3D asset and their textures have been meticulously crafted '
+                            'From the shape of its distinctive fuselage to individual screws in the flightdeck, each 3D asset has been meticulously crafted '
                             + 'to produce an immersive environment that truly captures the essense of the world\'s largest commercial airliner.'
                         }
                     />
@@ -261,7 +261,6 @@ const A380X: NextPage<A380XProps> = ({ galleryImages }) => (
                 { label: 'Download Installer', theme: 'primary' as const, link: 'http://api.flybywiresim.com/installer' },
                 { label: 'Installation Guide', theme: 'secondary' as const, link: 'http://docs.flybywiresim.com/aircraft/install/installation/' },
             ]}
-            imageBackgroundSrc="/img/a380x/gallery-12.webp"
         />
         {/* System Requirements Section */}
         <Section className="relative" theme="dark">
