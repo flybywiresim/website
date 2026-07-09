@@ -22,9 +22,9 @@ const handleCategory = (category: AnyTag) => {
 };
 
 const Tag = ({ category, className }: TagProps) => (
-    <a className={twMerge('flex h-8 max-w-min items-center justify-center rounded-lg border py-0.5 px-4', handleCategory(category), className)}>
+    <span className={twMerge('flex h-8 max-w-min items-center justify-center rounded-lg border py-0.5 px-4', handleCategory(category), className)}>
         {category.charAt(0).toUpperCase() + category.slice(1).toLowerCase()}
-    </a>
+    </span>
 );
 
 export default Tag;

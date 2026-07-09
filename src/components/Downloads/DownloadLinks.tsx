@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React from 'react';
 import Button, { ButtonProps } from '../Button/Button';
 
@@ -23,9 +22,7 @@ const versionButtons = (versions: Record<string, Version>) => (
                 const handleToggle = () => setExpanded((prev) => !prev);
 
                 const partLinks = Array.from({ length: version.parts }, (_, i) => (
-                    <Link key={i} href={`${version.link}.${(i + 1).toString().padStart(3, '0')}`}>
-                        <Button className="mb-2" theme={version.theme || 'primary'}>{`Part ${(i + 1)}`}</Button>
-                    </Link>
+                    <Button key={i} className="mb-2" theme={version.theme || 'primary'} link={`${version.link}.${(i + 1).toString().padStart(3, '0')}`}>{`Part ${(i + 1)}`}</Button>
                 ));
 
                 return (
@@ -43,9 +40,7 @@ const versionButtons = (versions: Record<string, Version>) => (
                 );
             }
             return (
-                <Link key={name} href={version.link}>
-                    <Button theme={version.theme || 'primary'}>{name}</Button>
-                </Link>
+                <Button key={name} theme={version.theme || 'primary'} link={version.link}>{name}</Button>
             );
         })}
     </span>
