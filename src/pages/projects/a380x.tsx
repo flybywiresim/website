@@ -1,8 +1,9 @@
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import Head from 'next/head';
 import { NextPage, GetStaticProps } from 'next';
 import fs from 'fs';
 import path from 'path';
+import { generateLQIPMap } from '../../lib/lqip';
 import Section from '../../components/Utils/Section';
 import Container from '../../components/Utils/Container';
 import ProjectHero from '../../components/Projects/ProjectHero';
@@ -17,17 +18,27 @@ import SystemRequirementsSection from '../../components/Projects/SystemRequireme
 import ResourcesSection from '../../components/Projects/ResourcesSection';
 import DownloadSection from '../../components/Projects/DownloadSection';
 
-const BackgroundImage = () => (
+const BackgroundImage = ({ blurDataURL }: { blurDataURL?: string }) => (
     <div className="absolute inset-0 h-full w-screen opacity-5 pointer-events-none">
-        <Image src="/pages/index/Airfoil.png" layout="fill" objectFit="cover" />
+        <Image
+            src="/pages/index/Airfoil.png"
+            alt=""
+            fill
+            className="object-cover"
+            sizes="100vw"
+            quality={50}
+            placeholder="blur"
+            blurDataURL={blurDataURL}
+        />
     </div>
 );
 
 type A380XProps = {
     galleryImages: number[];
+    blurDataURLs: Record<string, string>;
 };
 
-const A380X: NextPage<A380XProps> = ({ galleryImages }) => (
+const A380X: NextPage<A380XProps> = ({ galleryImages, blurDataURLs }) => (
     <>
         <Head>
             <title>A380X - FlyByWire Simulations</title>
@@ -55,6 +66,7 @@ const A380X: NextPage<A380XProps> = ({ galleryImages }) => (
                     <WatermarkTile
                         title="King of the Skies"
                         imageSrc="/img/a380x/feature-a380x-takeoff.webp"
+                        blurDataURL={blurDataURLs['/img/a380x/feature-a380x-takeoff.webp']}
                         imageAlt=""
                         watermarkText="A380X"
                         description={
@@ -65,6 +77,7 @@ const A380X: NextPage<A380XProps> = ({ galleryImages }) => (
                     <ImageTile
                         title="An Advanced Avionics Suite"
                         imageSrc="/img/a380x/feature-avionics-suite.webp"
+                        blurDataURL={blurDataURLs['/img/a380x/feature-avionics-suite.webp']}
                         imageAlt="A close-up of the Primary Flying Display (PFD) with the Navigation Display (ND) in the background."
                         description={
                             'The A380X\'s flightdeck features six integrated displays; the PFD, ND, EWD, SD, MFD, and OIT. '
@@ -75,6 +88,7 @@ const A380X: NextPage<A380XProps> = ({ galleryImages }) => (
                     <ImageTile
                         title="Next-Generation Flight Management"
                         imageSrc="/img/a380x/feature-fms.webp"
+                        blurDataURL={blurDataURLs['/img/a380x/feature-fms.webp']}
                         imageAlt="A close-up of the Multi-Function Display (MFD) on the F-PLN page."
                         description={
                             'The A380X\'s flight management system is built on FlyByWire\'s fms-v2 architecture, delivering accurate VNAV vertical guidance, ARINC 424 leg type support, '
@@ -85,6 +99,7 @@ const A380X: NextPage<A380XProps> = ({ galleryImages }) => (
                         title="Electronic Centralised Aircraft Monitor (ECAM)"
                         watermarkText="ECAM"
                         imageSrc="/img/a380x/feature-ecam.webp"
+                        blurDataURL={blurDataURLs['/img/a380x/feature-ecam.webp']}
                         imageAlt="A graphic of the TAXI checklist on the Electronic Centralised Aircraft Monitor (ECAM) display."
                         description={
                             'The A380\'s sophisticated ECAM system is faithfully reproduced, with 256 abnormal procedures spanning 246 sensed faults, '
@@ -95,6 +110,7 @@ const A380X: NextPage<A380XProps> = ({ galleryImages }) => (
                     <ImageTile
                         title="Onboard Airport Navigation System (OANS)"
                         imageSrc="/img/a380x/feature-oans.webp"
+                        blurDataURL={blurDataURLs['/img/a380x/feature-oans.webp']}
                         imageAlt="A close-up of the Onboard Airport Navigation System (OANS) with the aircraft lined up on runway 30R."
                         description={
                             'The A380X\'s OANS display renders an interactive airport map with RWY AHEAD advisory, ZOOM ranges, Brake-to-Vacate (BTV), flags/crosses integration, '
@@ -105,6 +121,7 @@ const A380X: NextPage<A380XProps> = ({ galleryImages }) => (
                         title="Flight Warning System (FWS) & Emergency Procedures"
                         watermarkText="FWS & EMER PROC "
                         imageSrc="/img/a380x/feature-fws-emer-proc.webp"
+                        blurDataURL={blurDataURLs['/img/a380x/feature-fws-emer-proc.webp']}
                         imageAlt="A graphic of the FIRE SMOKE/FUMES Abnormal Procedure (ABN PROC) checklist."
                         description={
                             'Beyond normal ECAM faults, the FWS includes non-sensed emergency procedures such as EMER DESCENT and EMER EVAC, accessible via the ABN PROC button, '
@@ -114,6 +131,7 @@ const A380X: NextPage<A380XProps> = ({ galleryImages }) => (
                     <ImageTile
                         title="Fly-By-Wire Flight Controls"
                         imageSrc="/img/a380x/feature-fly-by-wire-controls.webp"
+                        blurDataURL={blurDataURLs['/img/a380x/feature-fly-by-wire-controls.webp']}
                         imageAlt="A close-up of the captain's side-stick."
                         description={
                             'The A380\'s fully fly-by-wire control law architecture is modelled in depth, including accurate flap load relief, hydraulic and electronic surface actuation, '
@@ -123,6 +141,7 @@ const A380X: NextPage<A380XProps> = ({ galleryImages }) => (
                     <WatermarkTile
                         title="Fuel, Hydraulics & Electrical Systems"
                         imageSrc="/img/a380x/feature-systems.webp"
+                        blurDataURL={blurDataURLs['/img/a380x/feature-systems.webp']}
                         imageAlt="Multiple graphics of various displays on the System Display (SD), including electrical, fuel, and hydraulics."
                         watermarkText="Systems"
                         description={
@@ -134,6 +153,7 @@ const A380X: NextPage<A380XProps> = ({ galleryImages }) => (
                     <ImageTile
                         title="An Immersive 3D Environment"
                         imageSrc="/img/a380x/feature-environment.webp"
+                        blurDataURL={blurDataURLs['/img/a380x/feature-environment.webp']}
                         imageAlt="A close-up of the Auto Flight System (AFS) Control Panel, demonstrating the texture work."
                         description={
                             'From the shape of its distinctive fuselage to individual screws in the flightdeck, each 3D asset has been meticulously crafted '
@@ -143,6 +163,7 @@ const A380X: NextPage<A380XProps> = ({ galleryImages }) => (
                     <WatermarkTile
                         title="Custom Soundscape"
                         imageSrc="/img/a380x/feature-sounds.webp"
+                        blurDataURL={blurDataURLs['/img/a380x/feature-sounds.webp']}
                         imageAlt="An image of the A380X's massive engines with a soundwave graphic overlaid on top."
                         watermarkText="Sounds"
                         description={
@@ -153,6 +174,7 @@ const A380X: NextPage<A380XProps> = ({ galleryImages }) => (
                     <ImageTile
                         title="Physically-Simulated Wing Flex"
                         imageSrc="/img/a380x/feature-wing-flex.webp"
+                        blurDataURL={blurDataURLs['/img/a380x/feature-wing-flex.webp']}
                         imageAlt="An image of the A380X rotating into the air, with a focus on the aircraft's wing flex as it achieves lift."
                         description={
                             'The A380\'s characteristic wing flex has been modelled as a soft-body system, with wings responding dynamically to fuel load and G-forces, '
@@ -167,12 +189,14 @@ const A380X: NextPage<A380XProps> = ({ galleryImages }) => (
                             + 'Three independently simulated radio altimeters feed a full GPWS suite, triggering aural warnings and visual PFD alerts.'
                         }
                         imageSrc="/svg/feature/TerrainDisplay.svg"
+                        blurDataURL={blurDataURLs['/svg/feature/TerrainDisplay.svg']}
                         imageAlt="A graphic of the Vertical Display and Terrain Radar."
                         watermarkText="VNAV"
                     />
                     <ImageTile
                         title="flyPadOS v3 EFB"
                         imageSrc="/img/a380x/feature-flypadOS.webp"
+                        blurDataURL={blurDataURLs['/img/a380x/feature-flypadOS.webp']}
                         imageAlt="An image of the onboard Electronic Flight Bag (EFB) running FlyByWire's flyPadOS."
                         description={
                             'The A380X features FlyByWire\'s flyPadOS Electronic Flight Bag, which handles throttle calibration for 1/2/4-axis hardware, '
@@ -194,14 +218,13 @@ const A380X: NextPage<A380XProps> = ({ galleryImages }) => (
                             'Physically-Simulated Brake Temps',
                             'Fix Info',
                         ]}
-                        fullWidthWhenActive
                     />
                 </FeatureCarousel>
             </Container>
         </Section>
         {/* Tutorials and Documentation Section */}
         <Section className="relative" theme="dark">
-            <BackgroundImage />
+            <BackgroundImage blurDataURL={blurDataURLs['/pages/index/Airfoil.png']} />
             <Container>
                 <ResourcesSection
                     title="Tutorials and Documentation"
@@ -232,13 +255,17 @@ const A380X: NextPage<A380XProps> = ({ galleryImages }) => (
             <Container className="gap-4">
                 <h2>Gallery</h2>
                 <GalleryCarousel theme="light">
-                    {galleryImages.map((id) => (
-                        <GalleryTile
-                            key={id}
-                            imageSrc={`/img/a380x/gallery-${id}.webp`}
-                            imageAlt={`A380X gallery image ${id}`}
-                        />
-                    ))}
+                    {galleryImages.map((id) => {
+                        const src = `/img/a380x/gallery-${id}.webp`;
+                        return (
+                            <GalleryTile
+                                key={id}
+                                imageSrc={src}
+                                blurDataURL={blurDataURLs[src]}
+                                imageAlt={`A380X gallery image ${id}`}
+                            />
+                        );
+                    })}
                 </GalleryCarousel>
             </Container>
         </Section>
@@ -264,7 +291,7 @@ const A380X: NextPage<A380XProps> = ({ galleryImages }) => (
         />
         {/* System Requirements Section */}
         <Section className="relative" theme="dark">
-            <BackgroundImage />
+            <BackgroundImage blurDataURL={blurDataURLs['/pages/index/Airfoil.png']} />
             <Container>
                 <SystemRequirementsSection
                     project="A380X"
@@ -291,6 +318,24 @@ const A380X: NextPage<A380XProps> = ({ galleryImages }) => (
 
 export default A380X;
 
+const FEATURE_IMAGE_PATHS = [
+    '/img/a380x/feature-a380x-takeoff.webp',
+    '/img/a380x/feature-avionics-suite.webp',
+    '/img/a380x/feature-fms.webp',
+    '/img/a380x/feature-ecam.webp',
+    '/img/a380x/feature-oans.webp',
+    '/img/a380x/feature-fws-emer-proc.webp',
+    '/img/a380x/feature-fly-by-wire-controls.webp',
+    '/img/a380x/feature-systems.webp',
+    '/img/a380x/feature-environment.webp',
+    '/img/a380x/feature-sounds.webp',
+    '/img/a380x/feature-wing-flex.webp',
+    '/svg/feature/TerrainDisplay.svg',
+    '/img/a380x/feature-flypadOS.webp',
+];
+
+const BACKGROUND_IMAGE_PATH = '/pages/index/Airfoil.png';
+
 export const getStaticProps: GetStaticProps<A380XProps> = async () => {
     const publicDir = path.join(process.cwd(), 'public', 'img', 'a380x');
     const files = fs.readdirSync(publicDir);
@@ -304,5 +349,12 @@ export const getStaticProps: GetStaticProps<A380XProps> = async () => {
         .filter((id): id is number => id !== null)
         .sort((a, b) => a - b);
 
-    return { props: { galleryImages } };
+    const galleryPaths = galleryImages.map((id) => `/img/a380x/gallery-${id}.webp`);
+    const blurDataURLs = await generateLQIPMap([
+        ...FEATURE_IMAGE_PATHS,
+        BACKGROUND_IMAGE_PATH,
+        ...galleryPaths,
+    ]);
+
+    return { props: { galleryImages, blurDataURLs } };
 };

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
+import { FALLBACK_BLUR } from './CarouselPrimitives';
 
 type ImageTileProps = {
     title: string;
@@ -8,6 +9,8 @@ type ImageTileProps = {
     description?: string;
     className?: string;
     isActive?: boolean;
+    priority?: boolean;
+    blurDataURL?: string;
 };
 
 /**
@@ -22,6 +25,8 @@ const ImageTile = ({
     description = '',
     className,
     isActive = false,
+    priority = false,
+    blurDataURL,
 }: ImageTileProps) => (
     <div
         className={twMerge(
@@ -44,6 +49,9 @@ const ImageTile = ({
                     fill
                     className="object-cover object-left"
                     sizes="(max-width: 768px) 24rem, 43rem"
+                    placeholder="blur"
+                    blurDataURL={blurDataURL ?? FALLBACK_BLUR}
+                    priority={priority}
                 />
             </div>
         </div>

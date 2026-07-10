@@ -27,7 +27,7 @@ const GalleryCarousel = ({ children, theme = 'dark', className }: GalleryCarouse
     // Lock body scroll when modal is open
     useEffect(() => {
         if (modalSlideIndex !== null) {
-            const scrollY = window.scrollY;
+            const { scrollY } = window;
             document.body.style.position = 'fixed';
             document.body.style.top = `-${scrollY}px`;
             document.body.style.left = '0';
@@ -113,7 +113,8 @@ const GalleryCarousel = ({ children, theme = 'dark', className }: GalleryCarouse
                 >
                     {slides.map((slide, index) => {
                         const isActive = index === currentIndex;
-                        const fullWidthWhenActive = (slide as React.ReactElement).props?.fullWidthWhenActive;
+                        // Prioritise the first slide for LCP on initial render.
+                        const priority = index === 0;
                         return (
                             <div
                                 key={index}
@@ -123,15 +124,14 @@ const GalleryCarousel = ({ children, theme = 'dark', className }: GalleryCarouse
                                 aria-hidden={!isActive}
                                 className={twMerge(
                                     'shrink-0 h-96 cursor-pointer w-96',
-                                    isActive && !fullWidthWhenActive && 'md:w-[42.6667rem]',
-                                    isActive && fullWidthWhenActive && 'w-full',
+                                    isActive && 'md:w-[42.6667rem]',
                                     hasMounted && 'transition-[width] duration-500 ease-in-out',
                                 )}
                                 onClick={() => handleTileClick(index)}
                             >
                                 {cloneElement(
-                                    slide as React.ReactElement<{ onClick?: () => void; isActive?: boolean }>,
-                                    { onClick: () => handleTileClick(index), isActive },
+                                    slide as React.ReactElement<{ onClick?: () => void; isActive?: boolean; priority?: boolean }>,
+                                    { onClick: () => handleTileClick(index), isActive, priority },
                                 )}
                             </div>
                         );

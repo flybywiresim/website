@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
+import { FALLBACK_BLUR } from './CarouselPrimitives';
 
 type GalleryTileProps = {
     imageSrc: string;
@@ -7,12 +8,13 @@ type GalleryTileProps = {
     className?: string;
     onClick?: () => void;
     isActive?: boolean;
+    priority?: boolean;
+    blurDataURL?: string;
 };
 
 /**
  * Gallery Tile
- * Simple image-only tile that expands from 1:1 to 16:9 in the gallery.
- * overflow-hidden ensures rounded-3xl clips the image.
+ * Image tile that expands from 1:1 to 16:9 in the gallery carousel.
  */
 const GalleryTile = ({
     imageSrc,
@@ -20,6 +22,8 @@ const GalleryTile = ({
     className,
     onClick,
     isActive = false,
+    priority = false,
+    blurDataURL,
 }: GalleryTileProps) => (
     <div
         className={twMerge(
@@ -44,6 +48,9 @@ const GalleryTile = ({
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 24rem, 43rem"
+                placeholder="blur"
+                blurDataURL={blurDataURL ?? FALLBACK_BLUR}
+                priority={priority}
             />
         </div>
     </div>

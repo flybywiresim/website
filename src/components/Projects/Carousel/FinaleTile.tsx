@@ -6,20 +6,17 @@ type FinaleTileProps = {
     features?: string[];
     description?: string;
     className?: string;
-    fullWidthWhenActive?: boolean;
     isActive?: boolean;
 };
 
 /**
  * Finale Tile
- * Cyan gradient background with navy text.
- * Title centered, feature labels scattered around it when active.
+ * Simple title text. Features animate in sequentially when active.
  */
 const FinaleTile = ({
     title,
     features,
     className,
-    fullWidthWhenActive = true, // eslint-disable-line
     isActive = false,
 }: FinaleTileProps) => {
     const [animateIn, setAnimateIn] = useState(false);

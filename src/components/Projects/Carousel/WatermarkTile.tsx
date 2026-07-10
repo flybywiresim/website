@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
+import { FALLBACK_BLUR } from './CarouselPrimitives';
 
 type WatermarkTileProps = {
     title: string;
@@ -9,6 +10,8 @@ type WatermarkTileProps = {
     description?: string;
     className?: string;
     isActive?: boolean;
+    priority?: boolean;
+    blurDataURL?: string;
 };
 
 const watermarkRows = Array.from({ length: 12 });
@@ -27,6 +30,8 @@ const WatermarkTile = ({
     description = '',
     className,
     isActive = false,
+    priority = false,
+    blurDataURL,
 }: WatermarkTileProps) => (
     <div
         className={twMerge(
@@ -81,7 +86,7 @@ const WatermarkTile = ({
             </div>
         </div>
 
-        {/* Image — zooms in on hover */}
+        {/* Content Image */}
         <div className="absolute inset-0 overflow-hidden">
             <div
                 className={twMerge(
@@ -96,11 +101,14 @@ const WatermarkTile = ({
                     fill
                     className="object-cover object-left"
                     sizes="(max-width: 768px) 24rem, 43rem"
+                    placeholder="blur"
+                    blurDataURL={blurDataURL ?? FALLBACK_BLUR}
+                    priority={priority}
                 />
             </div>
         </div>
 
-        {/* Gradient overlay for text readability */}
+        {/* Gradient for text readability */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
 
         {/* Content overlay */}
@@ -114,7 +122,7 @@ const WatermarkTile = ({
 
             {/* Right side — fixed width, overflows outside when inactive */}
             <div className="relative flex h-full min-w-[18.6667rem]">
-                {/* Gradient overlay for text contrast */}
+                {/* Gradient for text readability */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/25 pointer-events-none" />
                 {description && (
                     <span className="relative z-10 p-4 md:p-6 font-display text-right text-white" style={{ textShadow: '0 0px 20px rgba(0, 0, 0, 1)' }}>

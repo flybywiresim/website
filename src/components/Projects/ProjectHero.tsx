@@ -42,13 +42,13 @@ const VideoBackground = (props: { HeroVideo?: string; HeroVideoFallback?: string
             <img
                 src={props.HeroVideoPoster}
                 alt="Background"
-                className="absolute -z-10 h-screen w-screen object-cover"
+                className="absolute -z-10 inset-0 object-cover"
             />
         );
     }
 
     return (
-        <div className="absolute -z-10 h-screen w-screen">
+        <div className="absolute -z-10 inset-0">
             <video
                 ref={videoRef}
                 className="h-full w-full object-cover"
@@ -57,7 +57,7 @@ const VideoBackground = (props: { HeroVideo?: string; HeroVideoFallback?: string
                 muted
                 playsInline
                 poster={props.HeroVideoPoster}
-                preload="auto"
+                preload="metadata"
                 aria-hidden="true"
             >
                 {props.HeroVideo && <source src={props.HeroVideo} type="video/webm" />}
@@ -109,7 +109,7 @@ const Hero = (props: ProjectHeroProps) => {
                     {props.projectTitle && (
                         <div className="inline-flex items-baseline">
                             <h1 className="text-white uppercase">{props.projectTitle}</h1>
-                            <h1 style={{ ...strokeStyle, '-webkit-text-stroke-shrink': 1 } as any}>X</h1>
+                            <h1 style={strokeStyle}>X</h1>
                         </div>
                     )}
                     <p className="max-w-xl">

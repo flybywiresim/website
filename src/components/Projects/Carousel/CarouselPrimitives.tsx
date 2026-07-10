@@ -3,6 +3,12 @@ import { twMerge } from 'tailwind-merge';
 
 export type CarouselTheme = 'light' | 'dark';
 
+// Fallback blur placeholder
+
+const FALLBACK_BLUR_SVG = '<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><rect width="8" height="8" fill="#0f1620"/></svg>';
+
+export const FALLBACK_BLUR = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(FALLBACK_BLUR_SVG)}`;
+
 export const useCarouselTheme = (theme: CarouselTheme) => {
     const isLight = theme === 'light';
     return {

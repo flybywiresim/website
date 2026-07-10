@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
 import { NavigationButton } from '../Projects/Carousel/CarouselPrimitives';
 
@@ -11,11 +12,8 @@ type ViewerModalProps = {
     isClosing: boolean;
 };
 
-/**
- * Gallery Modal
- * Full-screen image viewer with loading state, navigation, and smooth animations.
- * Click the image or background to close, use arrow keys or side buttons to navigate.
- */
+// Full-Screen Image Viewer Modal
+
 const ViewerModal = ({
     imageSrc,
     imageAlt,
@@ -73,21 +71,28 @@ const ViewerModal = ({
             >
                 {isLoading && (
                     <div className="absolute inset-0 flex items-center justify-center z-10">
-                        <div className="h-12 w-12 animate-spin rounded-full border-4 border-white/30 border-t-white" />
+                        <svg className="animate-spin h-12 w-12" viewBox="0 0 24 24" fill="none">
+                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="white" strokeWidth="4" />
+                            <path className="opacity-75" fill="white" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                        </svg>
                     </div>
                 )}
                 <div
-                    className="overflow-hidden rounded-2xl shadow-2xl"
+                    className="overflow-hidden rounded-2xl cursor-pointer"
                     onClick={onClose}
                 >
-                    <img
+                    <Image
                         src={imageSrc}
                         alt={imageAlt}
+                        width={1920}
+                        height={1080}
                         className={twMerge(
-                            'mx-auto max-h-[85vh] max-w-[90vw] object-contain transition-opacity duration-300 cursor-pointer',
+                            'object-contain w-full h-full transition-opacity duration-300',
                             isLoading ? 'opacity-0' : 'opacity-100',
                         )}
                         onLoad={() => setIsLoading(false)}
+                        sizes="90vw"
+                        priority
                     />
                 </div>
             </div>

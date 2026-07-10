@@ -53,7 +53,9 @@ const FeatureCarousel = ({ children, theme = 'dark', className }: FeatureCarouse
                 >
                     {slides.map((slide, index) => {
                         const isActive = index === currentIndex;
-                        const fullWidthWhenActive = (slide as React.ReactElement).props?.fullWidthWhenActive;
+                        const isFinale = index === total - 1;
+                        // Prioritise the first slide for LCP on initial render.
+                        const priority = index === 0;
                         return (
                             <div
                                 key={index}
@@ -64,13 +66,15 @@ const FeatureCarousel = ({ children, theme = 'dark', className }: FeatureCarouse
                                 className={twMerge(
                                     'shrink-0 h-96 w-96',
                                     isActive ? 'cursor-default' : 'cursor-pointer',
-                                    isActive && !fullWidthWhenActive && 'md:w-[42.6667rem]',
-                                    isActive && fullWidthWhenActive && 'w-full',
+                                    isActive && (isFinale ? 'w-full' : 'md:w-[42.6667rem]'),
                                     hasMounted && 'transition-width duration-500 ease-in-out',
                                 )}
                                 onClick={() => handleGoTo(index)}
                             >
-                                {cloneElement(slide as React.ReactElement<{ isActive?: boolean }>, { isActive })}
+                                {cloneElement(
+                                    slide as React.ReactElement<{ isActive?: boolean; priority?: boolean }>,
+                                    { isActive, priority },
+                                )}
                             </div>
                         );
                     })}
