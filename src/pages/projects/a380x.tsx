@@ -52,7 +52,7 @@ const A380X: NextPage<A380XProps> = ({ galleryImages, blurDataURLs }) => (
             HeroVideoFallback="/videos/a380x/a380x_showcase_video.mp4"
             HeroVideoPoster="/videos/a380x/a380x_showcase_poster.jpg"
             buttons={[
-                { label: 'Download', theme: 'primary' as const, link: 'http://api.flybywiresim.com/installer' },
+                { label: 'Download', theme: 'primary' as const, link: '/downloads' },
                 { label: 'Learn More', theme: 'secondary' as const, onClick: () => document.getElementById('features-section')?.scrollIntoView({ behavior: 'smooth' }) },
             ]}
         />
@@ -285,7 +285,7 @@ const A380X: NextPage<A380XProps> = ({ galleryImages, blurDataURLs }) => (
             }
             buttons={[
                 { label: 'Direct Downloads', theme: 'secondary' as const, link: '/downloads' },
-                { label: 'Download Installer', theme: 'primary' as const, link: 'http://api.flybywiresim.com/installer' },
+                { label: 'Download Installer', theme: 'primary' as const, link: '/downloads' },
                 { label: 'Installation Guide', theme: 'secondary' as const, link: 'http://docs.flybywiresim.com/aircraft/install/installation/' },
             ]}
         />
