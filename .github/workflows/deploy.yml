@@ -9,11 +9,12 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-    name: Build static site
+    name: Build and Deploy to Cloudflare Pages
     permissions:
       contents: read
+      deployments: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,28 +34,6 @@ jobs:
         run: |
           npm run build
           npm run export
-
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: website-build
-          path: out
-          if-no-files-found: error
-          retention-days: 1
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    name: Deploy to Cloudflare Pages
-    permissions:
-      contents: read
-      deployments: write
-    steps:
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: website-build
-          path: out
 
       - name: Deploy to Cloudflare Pages
         uses: AdrianGonz97/refined-cf-pages-action@v1
