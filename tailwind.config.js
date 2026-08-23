@@ -50,7 +50,7 @@ module.exports = {
 
                 'dark': '#0E131B',
                 'discord': '#5865F2',
-                'light': '#FAFAFA',
+                'light': '#F5F5F7',
 
                 'primary': '#00E0FE',
                 'primary-accent': '#00CBFE',

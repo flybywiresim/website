@@ -58,7 +58,7 @@ const NavBar = () => {
             className={twMerge('fixed w-full py-4 text-white transition', bgClass)}
             style={{ zIndex: '9999' }}
         >
-            <Container className="flex items-center justify-between">
+            <Container className="flex flex-row items-center justify-between">
                 <Link legacyBehavior href="/">
                     <Image className="cursor-pointer" src="/svg/tail/tail.svg" alt="FlyByWire Simulations" width={30} height={30} />
                 </Link>
