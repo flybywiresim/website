@@ -167,8 +167,8 @@ const Downloads: NextPage = () => {
                                 addon="A32NX"
                                 versions={
                                     {
-                                        Stable: { link: links.msfs2020_a32nx_stable_standalone_github },
-                                        Development: { link: links.msfs2020_a32nx_dev_standalone_github, theme: 'secondary' },
+                                        Stable: { link: links.msfs2024_a32nx_stable_standalone_github },
+                                        Development: { link: links.msfs2024_a32nx_dev_standalone_github, theme: 'secondary' },
                                     }
                                 }
                             />
