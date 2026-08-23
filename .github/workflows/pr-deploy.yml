@@ -1,0 +1,39 @@
+name: PR Upload Preview to Cloudflare
+
+on:
+  workflow_run:
+    workflows: ['PR Build Preview for Cloudflare']
+    types:
+      - completed
+
+permissions:
+  actions: read
+  deployments: write
+  contents: read
+  pull-requests: write
+
+jobs:
+  deploy-preview:
+    runs-on: ubuntu-latest
+    if: >-
+      ${{ github.event.workflow_run.event == 'pull_request'
+        && github.event.workflow_run.conclusion == 'success' }}
+    name: Deploy Preview to Cloudflare Pages
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: preview-build
+          path: out
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: ${{ github.event.workflow_run.id }}
+
+      - name: Deploy to Cloudflare Pages
+        uses: AdrianGonz97/refined-cf-pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_PAGES_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_PAGES_ACCOUNT_ID }}
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          projectName: ${{ secrets.CLOUDFLARE_WEBSITE_PROJECT }}
+          deploymentName: Preview
+          directory: out
