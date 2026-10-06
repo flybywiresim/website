@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
+import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
 import useReducedMotion from '../../../hooks/useReducedMotion';
 
@@ -12,6 +13,46 @@ export const DESCRIPTION_BACKDROP = 'before:pointer-events-none before:absolute 
     + 'before:opacity-0 motion-safe:before:transition-opacity motion-safe:before:duration-500';
 
 export const BOTTOM_GRADIENT = 'bg-gradient-to-t from-black/60 via-transparent to-transparent';
+
+export const BlurPlaceholder = ({ src, className }: { src: string; className?: string }) => (
+    <div
+        className={twMerge('absolute inset-0 bg-cover bg-center', className)}
+        style={{ backgroundImage: `url("${src}")`, filter: 'blur(20px)', transform: 'scale(1.2)' }}
+    />
+);
+
+export const TileImage = ({
+    src,
+    alt,
+    blurDataURL,
+    alignLeft = false,
+}: {
+    src: string;
+    alt: string;
+    blurDataURL?: string;
+    alignLeft?: boolean;
+}) => {
+    const [phase, setPhase] = useState<'loading' | 'fading' | 'done'>('loading');
+
+    return (
+        <>
+            {blurDataURL && phase !== 'done' && <BlurPlaceholder src={blurDataURL} className={alignLeft ? 'bg-left' : undefined} />}
+            <Image
+                src={src}
+                alt={alt}
+                fill
+                className={twMerge(
+                    'object-cover',
+                    alignLeft && 'object-left',
+                    phase === 'loading' ? 'opacity-0' : 'animate-[reveal-fade-in_500ms_ease-in-out_forwards]',
+                )}
+                sizes="(max-width: 768px) 24rem, 43rem"
+                onLoad={() => setPhase('fading')}
+                onAnimationEnd={() => setPhase('done')}
+            />
+        </>
+    );
+};
 
 export const useCarouselTheme = (theme: CarouselTheme) => {
     const isLight = theme === 'light';
@@ -74,11 +115,13 @@ export const DotIndicator = ({
         aria-label={isActive ? 'Current slide' : 'Go to slide'}
         aria-current={isActive ? 'true' : undefined}
     >
-        <span className={twMerge(
-            'relative block h-2 overflow-hidden rounded-full motion-safe:transition-[width] motion-safe:duration-300',
-            isActive ? 'w-16' : 'w-2 hover:opacity-75',
-            inactiveColor,
-        )}>
+        <span
+            className={twMerge(
+                'relative block h-2 overflow-hidden rounded-full motion-safe:transition-[width] motion-safe:duration-300',
+                isActive ? 'w-16' : 'w-2 hover:opacity-75',
+                inactiveColor,
+            )}
+        >
             {isActive && progress && (
                 <span
                     className={twMerge('absolute left-0 top-0 bottom-0 rounded-full', activeColor)}

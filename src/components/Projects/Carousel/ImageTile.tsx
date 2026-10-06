@@ -1,6 +1,5 @@
-import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
-import { BOTTOM_GRADIENT, DESCRIPTION_BACKDROP, FALLBACK_BLUR } from './CarouselPrimitives';
+import { BOTTOM_GRADIENT, DESCRIPTION_BACKDROP, FALLBACK_BLUR, TileImage } from './CarouselPrimitives';
 
 type ImageTileProps = {
     title: string;
@@ -32,39 +31,26 @@ const ImageTile = ({
             className,
         )}
     >
-        {/* Background image — zooms in on hover */}
         <div className="absolute inset-0">
             <div
                 className={twMerge(
                     'absolute left-0 top-0 h-96 w-96 md:w-[42.6667rem] motion-safe:transition-transform motion-safe:duration-300',
-                    !isActive && 'motion-safe:group-hover:scale-105',
+                    !isActive && 'motion-safe:can-hover:group-hover:scale-105',
                 )}
                 style={{ transformOrigin: '12rem center' }}
             >
-                <Image
-                    src={imageSrc}
-                    alt={imageAlt}
-                    fill
-                    className="object-cover object-left"
-                    sizes="(max-width: 768px) 24rem, 43rem"
-                    placeholder="blur"
-                    blurDataURL={blurDataURL ?? FALLBACK_BLUR}
-                />
+                <TileImage src={imageSrc} alt={imageAlt} blurDataURL={blurDataURL ?? FALLBACK_BLUR} alignLeft />
             </div>
         </div>
-        {/* Bottom gradient for text readability (static) */}
         <div className={`absolute inset-0 pointer-events-none ${BOTTOM_GRADIENT}`} />
 
-        {/* Content overlay — flex row, always full height of parent */}
         <div className="relative flex h-full w-full items-end">
-            {/* Left 1:1 square — always visible, shrinks to content on mobile */}
             <div className="relative flex h-full w-96 shrink-0 items-end rounded-l-3xl">
                 <span className="relative z-10 p-4 md:p-6 font-display font-bold text-left text-white text-base md:text-lg lg:text-xl">
                     {title}
                 </span>
             </div>
 
-            {/* Right side — fixed width, overflows outside when inactive */}
             <div className="relative flex h-full min-w-[18.6667rem]">
                 {description && (
                     <p

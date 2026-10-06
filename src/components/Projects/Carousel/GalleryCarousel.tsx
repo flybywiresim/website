@@ -1,8 +1,7 @@
 import { Children, cloneElement, useState, useCallback, useEffect, useRef, ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
 import { CarouselControls, useCarouselTheme } from './CarouselPrimitives';
-import ViewerModal from '../../Utils/ViewerModal';
-import useReducedMotion from '../../../hooks/useReducedMotion';
+import ViewerModal, { type ViewerImage } from '../../Utils/ViewerModal';
 import useScrollReveal from '../../../hooks/useScrollReveal';
 
 type GalleryCarouselProps = {
@@ -12,36 +11,21 @@ type GalleryCarouselProps = {
     className?: string;
 };
 
-const INACTIVE_W_REM = 24; // w-96
-const GAP_REM = 1; // gap-4
+const INACTIVE_W_REM = 24;
+const GAP_REM = 1;
 
 const GalleryCarousel = ({ children, title, theme = 'dark', className }: GalleryCarouselProps) => {
     const slides = Children.toArray(children);
     const total = slides.length;
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [modalSlideIndex, setModalSlideIndex] = useState<number | null>(null);
-    const [isClosing, setIsClosing] = useState(false);
-    const reducedMotion = useReducedMotion();
-    const [sourceRect, setSourceRect] = useState<DOMRect | null>(null);
-    const slideRefs = useRef<Map<number, HTMLDivElement>>(new Map());
+    const [modalStartIndex, setModalStartIndex] = useState<number | null>(null);
+    const trackRef = useRef<HTMLDivElement>(null);
     const [hasMounted, setHasMounted] = useState(false);
     const { ref: revealRef, revealed, shouldAnimate } = useScrollReveal<HTMLDivElement>();
 
     useEffect(() => {
         setHasMounted(true);
     }, []);
-
-    // Lock body scroll when modal is open
-    useEffect(() => {
-        if (modalSlideIndex !== null) {
-            document.documentElement.style.overflow = 'hidden';
-        } else {
-            document.documentElement.style.overflow = '';
-        }
-        return () => {
-            document.documentElement.style.overflow = '';
-        };
-    }, [modalSlideIndex]);
 
     const handleNext = useCallback(() => {
         setCurrentIndex((prev) => (prev + 1) % total);
@@ -57,58 +41,35 @@ const GalleryCarousel = ({ children, title, theme = 'dark', className }: Gallery
 
     const handleTileClick = useCallback((index: number) => {
         if (index === currentIndex) {
-            const el = slideRefs.current.get(index);
-            if (el) setSourceRect(el.getBoundingClientRect());
-            setModalSlideIndex(index);
+            setModalStartIndex(index);
         } else {
             setCurrentIndex(index);
         }
     }, [currentIndex]);
 
-    const handleCloseModal = useCallback(() => {
-        let tileVisible = false;
-        if (modalSlideIndex !== null) {
-            const el = slideRefs.current.get(modalSlideIndex);
-            if (el) {
-                const rect = el.getBoundingClientRect();
-                if (rect.right > 0 && rect.left < window.innerWidth) {
-                    setSourceRect(rect);
-                    tileVisible = true;
-                }
-            }
-        }
-        if (!tileVisible) setSourceRect(null);
-        setIsClosing(true);
-        setTimeout(() => {
-            setModalSlideIndex(null);
-            setIsClosing(false);
-            setSourceRect(null);
-        }, reducedMotion ? 10 : 400);
-    }, [modalSlideIndex, reducedMotion]);
+    const getSlideElement = useCallback(
+        (index: number) => (trackRef.current?.children[index]?.firstElementChild as HTMLElement | null | undefined) ?? null,
+        [],
+    );
 
-    const handleModalNext = useCallback(() => {
-        setModalSlideIndex((prev) => (prev !== null ? (prev + 1) % total : null));
-    }, [total]);
-
-    const handleModalPrevious = useCallback(() => {
-        setModalSlideIndex((prev) => (prev !== null ? (prev - 1 + total) % total : null));
-    }, [total]);
+    const handleCloseModal = useCallback(() => setModalStartIndex(null), []);
 
     const translateX = -(currentIndex * (INACTIVE_W_REM + GAP_REM));
     const { containerTheme } = useCarouselTheme(theme);
 
-    const modalSlide = modalSlideIndex !== null ? slides[modalSlideIndex] : null;
-    const modalImageSrc = (modalSlide as React.ReactElement)?.props?.imageSrc || '';
-    const modalImageAlt = (modalSlide as React.ReactElement)?.props?.imageAlt || 'Screenshot';
+    const viewerImages: ViewerImage[] = slides.map((slide) => {
+        const { imageSrc, imageAlt, blurDataURL } = (slide as React.ReactElement).props;
+        return { src: imageSrc, alt: imageAlt || 'Screenshot', blurDataURL };
+    });
 
     return (
         <div ref={revealRef} className={twMerge('flex flex-col gap-6', containerTheme, className)}>
             {title && (
                 <h2 className={twMerge(!revealed && 'motion-safe:opacity-0', shouldAnimate && 'reveal-fade-in')}>{title}</h2>
             )}
-            {/* Viewport */}
             <div className="relative w-full">
                 <div
+                    ref={trackRef}
                     role="region"
                     aria-roledescription="carousel"
                     aria-label="Gallery carousel"
@@ -120,10 +81,6 @@ const GalleryCarousel = ({ children, title, theme = 'dark', className }: Gallery
                         return (
                             <div
                                 key={index}
-                                ref={(el) => {
-                                    if (el) slideRefs.current.set(index, el);
-                                    else slideRefs.current.delete(index);
-                                }}
                                 role="group"
                                 aria-roledescription="slide"
                                 aria-label={`Slide ${index + 1} of ${total}`}
@@ -148,7 +105,6 @@ const GalleryCarousel = ({ children, title, theme = 'dark', className }: Gallery
                 </div>
             </div>
 
-            {/* Controls */}
             <CarouselControls
                 total={total}
                 currentIndex={currentIndex}
@@ -156,20 +112,15 @@ const GalleryCarousel = ({ children, title, theme = 'dark', className }: Gallery
                 onNext={handleNext}
                 onGoTo={handleGoTo}
                 theme={theme}
-                paused={modalSlideIndex !== null}
+                paused={modalStartIndex !== null}
             />
 
-            {/* Full Screen Modal */}
-            {modalSlideIndex !== null && modalImageSrc && (
+            {modalStartIndex !== null && (
                 <ViewerModal
-                    imageSrc={modalImageSrc}
-                    imageAlt={modalImageAlt}
+                    images={viewerImages}
+                    startIndex={modalStartIndex}
+                    getSourceElement={getSlideElement}
                     onClose={handleCloseModal}
-                    onPrevious={handleModalPrevious}
-                    onNext={handleModalNext}
-                    isClosing={isClosing}
-                    sourceRect={sourceRect}
-                    sourceIsActive={modalSlideIndex === currentIndex}
                 />
             )}
         </div>

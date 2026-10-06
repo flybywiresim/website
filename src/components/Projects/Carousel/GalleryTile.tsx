@@ -1,6 +1,5 @@
-import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
-import { FALLBACK_BLUR } from './CarouselPrimitives';
+import { FALLBACK_BLUR, TileImage } from './CarouselPrimitives';
 
 type GalleryTileProps = {
     imageSrc: string;
@@ -39,16 +38,8 @@ const GalleryTile = ({
             }
         }}
     >
-        <div className="absolute inset-0 overflow-hidden motion-safe:transition-transform motion-safe:duration-300 motion-safe:hover:scale-105">
-            <Image
-                src={imageSrc}
-                alt={imageAlt}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 24rem, 43rem"
-                placeholder="blur"
-                blurDataURL={blurDataURL ?? FALLBACK_BLUR}
-            />
+        <div className="absolute inset-0 overflow-hidden motion-safe:transition-transform motion-safe:duration-300 motion-safe:can-hover:hover:scale-105">
+            <TileImage src={imageSrc} alt={imageAlt} blurDataURL={blurDataURL ?? FALLBACK_BLUR} />
         </div>
     </div>
 );

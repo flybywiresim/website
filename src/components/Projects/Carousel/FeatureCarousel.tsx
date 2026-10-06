@@ -10,8 +10,8 @@ type FeatureCarouselProps = {
     className?: string;
 };
 
-const INACTIVE_W_REM = 24; // w-96
-const GAP_REM = 1; // gap-4
+const INACTIVE_W_REM = 24;
+const GAP_REM = 1;
 
 /**
  * FeatureCarousel — Tiles expand from 1:1 to 16:9 when active on md+ viewports.
@@ -48,7 +48,6 @@ const FeatureCarousel = ({ children, title, theme = 'dark', className }: Feature
             {title && (
                 <h2 className={twMerge(!revealed && 'motion-safe:opacity-0', shouldAnimate && 'reveal-fade-in')}>{title}</h2>
             )}
-            {/* Viewport */}
             <div className="w-full">
                 <div
                     role="region"
@@ -87,7 +86,6 @@ const FeatureCarousel = ({ children, title, theme = 'dark', className }: Feature
                     })}
                 </div>
 
-                {/* Mobile Description */}
                 <div
                     className={twMerge(
                         'md:hidden mt-6 px-5 flex items-center justify-center',
@@ -99,7 +97,6 @@ const FeatureCarousel = ({ children, title, theme = 'dark', className }: Feature
                 </div>
             </div>
 
-            {/* Controls */}
             <CarouselControls
                 total={total}
                 currentIndex={currentIndex}
