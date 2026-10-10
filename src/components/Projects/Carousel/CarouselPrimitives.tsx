@@ -58,7 +58,7 @@ export const useCarouselTheme = (theme: CarouselTheme) => {
     const isLight = theme === 'light';
     return {
         buttonBase: 'bg-navy-light border-2 border-navy-light text-quasi-white',
-        buttonHover: 'hover:bg-transparent hover:border-cyan-dark hover:text-cyan-dark',
+        buttonHover: 'can-hover:hover:bg-transparent can-hover:hover:border-cyan-dark can-hover:hover:text-cyan-dark',
         dotActiveColor: isLight ? 'bg-light' : 'bg-quasi-white',
         dotInactiveColor: isLight ? 'bg-light/30' : 'bg-quasi-white/30',
         containerTheme: isLight ? 'bg-light text-dark' : 'bg-secondary text-light',
@@ -67,7 +67,7 @@ export const useCarouselTheme = (theme: CarouselTheme) => {
 
 const AUTOPLAY_INTERVAL = 5000;
 
-const BUTTON_BASE = 'group relative flex h-12 w-12 items-center justify-center rounded-full transition-colors duration-150 text-light';
+const BUTTON_BASE = 'group relative flex h-[48px] w-[48px] items-center justify-center rounded-full transition-colors duration-150 text-light';
 
 export const NavigationButton = ({
     onClick,
@@ -85,7 +85,7 @@ export const NavigationButton = ({
         aria-label={direction === 'previous' ? 'Previous slide' : 'Next slide'}
     >
         <svg
-            className={twMerge('h-4 w-4', direction === 'next' && 'rotate-180')}
+            className={twMerge('h-[16px] w-[16px]', direction === 'next' && 'rotate-180')}
             fill="currentColor"
             viewBox="0 0 16 16"
             aria-hidden="true"
@@ -118,7 +118,7 @@ export const DotIndicator = ({
         <span
             className={twMerge(
                 'relative block h-2 overflow-hidden rounded-full motion-safe:transition-[width] motion-safe:duration-300',
-                isActive ? 'w-16' : 'w-2 hover:opacity-75',
+                isActive ? 'w-16' : 'w-2 can-hover:hover:opacity-75',
                 inactiveColor,
             )}
         >
@@ -188,7 +188,7 @@ export const CarouselControls = ({
                         className={twMerge(BUTTON_BASE, buttonBg)}
                         aria-label={isPlaying ? 'Pause autoplay' : 'Resume autoplay'}
                     >
-                        <svg className="h-4 w-4 transition-transform group-hover:scale-110" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                        <svg className="h-[16px] w-[16px] transition-transform can-hover:group-hover:scale-110" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
                             {isPlaying ? (
                                 <>
                                     <rect x="1" y="0" width="5" height="16" rx="1.5" />
@@ -203,7 +203,7 @@ export const CarouselControls = ({
             )}
 
             {total > 1 && (
-                <div className="hidden md:flex items-center md:col-start-2 md:justify-center">
+                <div className="flex items-center max-md:invisible max-md:absolute md:col-start-2 md:justify-center">
                     <div className={twMerge('flex h-12 items-center rounded-full px-3', buttonBase)}>
                         {Array.from({ length: total }).map((_, index) => (
                             <DotIndicator
