@@ -1,4 +1,4 @@
-import { Children, type ReactNode, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { Children, type ReactNode, useEffect, useRef, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 import useReducedMotion from '../../../hooks/useReducedMotion';
 
@@ -61,7 +61,7 @@ const FinaleTile = ({
         return () => {};
     }, [isActive, reducedMotion]);
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         const content = contentRef.current;
         if (content) content.style.width = isActive ? '' : `${content.offsetWidth}px`;
     }, [isActive]);
