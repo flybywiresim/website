@@ -1,4 +1,4 @@
-import { Children, cloneElement, useState, useCallback, useEffect, useRef, ReactNode } from 'react';
+import { Children, cloneElement, useState, useCallback, useEffect, useRef, ReactElement, ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
 import { CarouselControls, useCarouselTheme } from './CarouselPrimitives';
 import ViewerModal, { type ViewerImage } from '../../Utils/ViewerModal';
@@ -11,14 +11,23 @@ type GalleryCarouselProps = {
     className?: string;
 };
 
+type SlideElement = ReactElement<{
+    imageSrc?: string;
+    imageAlt?: string;
+    blurDataURL?: string;
+    onClick?: () => void;
+    isActive?: boolean;
+}>;
+
 const INACTIVE_W_REM = 24;
 const GAP_REM = 1;
 
 const GalleryCarousel = ({ children, title, theme = 'dark', className }: GalleryCarouselProps) => {
-    const slides = Children.toArray(children);
+    const slides = Children.toArray(children) as SlideElement[];
     const total = slides.length;
     const [currentIndex, setCurrentIndex] = useState(0);
     const [modalStartIndex, setModalStartIndex] = useState<number | null>(null);
+    const [isHoveringLink, setIsHoveringLink] = useState(false);
     const trackRef = useRef<HTMLDivElement>(null);
     const [hasMounted, setHasMounted] = useState(false);
     const { ref: revealRef, revealed, shouldAnimate } = useScrollReveal<HTMLDivElement>();
@@ -39,28 +48,30 @@ const GalleryCarousel = ({ children, title, theme = 'dark', className }: Gallery
         setCurrentIndex(index % total);
     }, [total]);
 
-    const handleTileClick = useCallback((index: number) => {
-        if (index === currentIndex) {
-            setModalStartIndex(index);
-        } else {
-            setCurrentIndex(index);
-        }
-    }, [currentIndex]);
+    const imageSlides = slides.flatMap((slide, index) => (slide.props?.imageSrc ? [index] : []));
 
-    const getSlideElement = useCallback(
-        (index: number) => (trackRef.current?.children[index]?.firstElementChild as HTMLElement | null | undefined) ?? null,
-        [],
-    );
+    const viewerImages: ViewerImage[] = imageSlides.map((index) => {
+        const { imageSrc, imageAlt, blurDataURL } = slides[index].props;
+        return { src: imageSrc!, alt: imageAlt || 'Screenshot', blurDataURL };
+    });
+
+    const handleTileClick = (index: number) => {
+        if (index !== currentIndex) {
+            setCurrentIndex(index);
+            return;
+        }
+        const viewerIndex = imageSlides.indexOf(index);
+        if (viewerIndex !== -1) setModalStartIndex(viewerIndex);
+    };
+
+    const getSlideElement = (viewerIndex: number) => (
+        trackRef.current?.children[imageSlides[viewerIndex]]?.firstElementChild ?? null
+    ) as HTMLElement | null;
 
     const handleCloseModal = useCallback(() => setModalStartIndex(null), []);
 
     const translateX = -(currentIndex * (INACTIVE_W_REM + GAP_REM));
     const { containerTheme } = useCarouselTheme(theme);
-
-    const viewerImages: ViewerImage[] = slides.map((slide) => {
-        const { imageSrc, imageAlt, blurDataURL } = (slide as React.ReactElement).props;
-        return { src: imageSrc, alt: imageAlt || 'Screenshot', blurDataURL };
-    });
 
     return (
         <div ref={revealRef} className={twMerge('flex flex-col gap-6', containerTheme, className)}>
@@ -73,8 +84,10 @@ const GalleryCarousel = ({ children, title, theme = 'dark', className }: Gallery
                     role="region"
                     aria-roledescription="carousel"
                     aria-label="Gallery carousel"
-                    className="flex h-96 items-center gap-4 motion-safe:will-change-transform motion-safe:transition-transform motion-safe:duration-500 motion-safe:ease-in-out"
-                    style={{ transform: `translateX(${translateX}rem)`, width: 'max-content' }}
+                    className="flex h-96 w-full items-center gap-4 motion-safe:will-change-transform motion-safe:transition-transform motion-safe:duration-500 motion-safe:ease-in-out"
+                    style={{ transform: `translateX(${translateX}rem)` }}
+                    onPointerOver={(e) => setIsHoveringLink(!!(e.target as Element).closest('a'))}
+                    onPointerLeave={() => setIsHoveringLink(false)}
                 >
                     {slides.map((slide, index) => {
                         const isActive = index === currentIndex;
@@ -89,16 +102,13 @@ const GalleryCarousel = ({ children, title, theme = 'dark', className }: Gallery
                                     'shrink-0 h-96 cursor-pointer w-96',
                                     !revealed && 'reveal-hidden',
                                     shouldAnimate && 'reveal-animate',
-                                    isActive && 'md:w-[42.6667rem]',
+                                    isActive && (slide.props?.imageSrc ? 'md:w-[42.6667rem]' : 'w-full'),
                                     hasMounted && 'motion-safe:transition-[width] motion-safe:duration-500 motion-safe:ease-in-out',
                                 )}
                                 style={{ animationDelay: `${200 + index * 100}ms` }}
                                 onClick={() => handleTileClick(index)}
                             >
-                                {cloneElement(
-                                    slide as React.ReactElement<{ onClick?: () => void; isActive?: boolean }>,
-                                    { onClick: () => handleTileClick(index), isActive },
-                                )}
+                                {cloneElement(slide, { onClick: () => handleTileClick(index), isActive })}
                             </div>
                         );
                     })}
@@ -112,7 +122,7 @@ const GalleryCarousel = ({ children, title, theme = 'dark', className }: Gallery
                 onNext={handleNext}
                 onGoTo={handleGoTo}
                 theme={theme}
-                paused={modalStartIndex !== null}
+                paused={modalStartIndex !== null || isHoveringLink}
             />
 
             {modalStartIndex !== null && (

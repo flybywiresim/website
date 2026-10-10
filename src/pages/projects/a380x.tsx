@@ -4,6 +4,8 @@ import { NextPage, GetStaticProps } from 'next';
 import fs from 'fs';
 import path from 'path';
 import { generateLQIPMap } from '../../lib/lqip';
+import { links } from '../../constants/links';
+import Button from '../../components/Button/Button';
 import Section from '../../components/Utils/Section';
 import Container from '../../components/Utils/Container';
 import ProjectHero from '../../components/Projects/ProjectHero';
@@ -262,6 +264,21 @@ const A380X: NextPage<A380XProps> = ({ galleryImages, blurDataURLs }) => (
                             />
                         );
                     })}
+                    <FinaleTile
+                        title="Contribute your own!"
+                        backgroundImage="/img/a380x/contribute-background.webp"
+                        background="rgb(23 30 44 / 0.6)"
+                        className="border-0 text-light"
+                    >
+                        <p className="max-w-md">
+                            Got a shot you&apos;re proud of? Join our Discord to share it, meet like-minded simmers,
+                            and chat with the contributors behind the A380X.
+                        </p>
+                        <Button theme="discordSecondary" link={links.discord}>
+                            <span aria-hidden="true" className="h-4 w-5 bg-current [mask:url(/svg/social/discord.svg)_center/contain_no-repeat]" />
+                            Join the Community!
+                        </Button>
+                    </FinaleTile>
                 </GalleryCarousel>
             </Container>
         </Section>
