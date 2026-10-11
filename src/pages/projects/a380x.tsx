@@ -231,19 +231,19 @@ const A380X: NextPage<A380XProps> = ({ galleryImages, blurDataURLs }) => (
                     resources={[
                         {
                             description: 'The A380X Beginner\'s Guide is tailored towards beginners, while also serving as a useful reference for veteran sim pilots.',
-                            button: { label: "Beginner's Guide", theme: 'primary' as const, link: 'http://docs.flybywiresim.com/pilots-corner/a380x/a380x-beginner-guide/overview/' },
+                            button: { label: "Beginner's Guide", theme: 'primary' as const, link: links.a380x_beginner_guide },
                         },
                         {
                             description: 'This is a collection of guides and tutorials for real A380 features which go beyond the scope of our beginner guide.',
-                            button: { label: 'Advanced Guide', theme: 'primary' as const, link: 'http://docs.flybywiresim.com/pilots-corner/a380x/a380x-advanced-guides/overview/' },
+                            button: { label: 'Advanced Guide', theme: 'primary' as const, link: links.a380x_advanced_guides },
                         },
                         {
                             description: 'We have created our very own standard operating procedures (SOP) and checklists valid for the A380X.',
-                            button: { label: 'SOP and Checklist', theme: 'primary' as const, link: 'http://docs.flybywiresim.com/pilots-corner/a380x/a380x-sop' },
+                            button: { label: 'SOP and Checklist', theme: 'primary' as const, link: links.a380x_sop },
                         },
                         {
                             description: 'Explore an interactive overview of the A380\'s flight deck. Hover over elements to see their descriptions and click for more details.',
-                            button: { label: 'Pilot Briefing', theme: 'primary' as const, link: 'http://docs.flybywiresim.com/pilots-corner/a380x/a380x-briefing/' },
+                            button: { label: 'Pilot Briefing', theme: 'primary' as const, link: links.a380x_briefing },
                         },
                     ]}
                 />
@@ -299,7 +299,7 @@ const A380X: NextPage<A380XProps> = ({ galleryImages, blurDataURLs }) => (
             buttons={[
                 { label: 'Direct Downloads', theme: 'secondary' as const, link: '/downloads' },
                 { label: 'Download Installer', theme: 'primary' as const, link: '/downloads' },
-                { label: 'Installation Guide', theme: 'secondary' as const, link: 'http://docs.flybywiresim.com/aircraft/install/installation/' },
+                { label: 'Installation Guide', theme: 'secondary' as const, link: links.installation_guide },
             ]}
         />
         {/* System Requirements Section */}
