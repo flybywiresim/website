@@ -77,7 +77,7 @@ const A380X: NextPage<A380XProps> = ({ galleryImages, blurDataURLs }) => (
                         title="An Advanced Avionics Suite"
                         imageSrc="/img/a380x/feature-avionics-suite.webp"
                         blurDataURL={blurDataURLs['/img/a380x/feature-avionics-suite.webp']}
-                        imageAlt="A close-up of the Primary Flying Display (PFD) with the Navigation Display (ND) in the background."
+                        imageAlt="A close-up of the Primary Flight Display (PFD) with the Navigation Display (ND) in the background."
                         description={
                             'The A380X\'s flightdeck features six integrated displays; the PFD, ND, EWD, SD, MFD, and OIT. '
                             + 'Each display has been meticulously reproduced based on real-world reference material '
@@ -156,7 +156,7 @@ const A380X: NextPage<A380XProps> = ({ galleryImages, blurDataURLs }) => (
                         imageAlt="A close-up of the Auto Flight System (AFS) Control Panel, demonstrating the texture work."
                         description={
                             'From the shape of its distinctive fuselage to individual screws in the flightdeck, each 3D asset has been meticulously crafted '
-                            + 'to produce an immersive environment that truly captures the essense of the world\'s largest commercial airliner.'
+                            + 'to produce an immersive environment that truly captures the essence of the world\'s largest commercial airliner.'
                         }
                     />
                     <WatermarkTile
