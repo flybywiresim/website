@@ -32,7 +32,7 @@ const versionButtons = (versions: Record<string, Version>) => (
                             expanded ? 'mt-4 max-h-96 opacity-100' : 'mt-0 max-h-0 opacity-0'
                         }`}
                         >
-                            <div className="mb-4 p-4 border-l-2 border-primary bg-gray-50 transition-transform duration-300 ease-in-out">
+                            <div className="mb-4 p-4 border-l-2 border-primary transition-transform duration-300 ease-in-out">
                                 {partLinks}
                             </div>
                         </div>
