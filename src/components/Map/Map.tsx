@@ -15,6 +15,8 @@ const AircraftIcon = (heading: number, aircraftId: string) => {
 };
 
 const numberFormat = new Intl.NumberFormat();
+const cartoApiKey = process.env.NEXT_PUBLIC_CARTO_API_KEY;
+const tileUrl = `https://basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}.png${cartoApiKey ? `?key=${cartoApiKey}` : ''}`;
 
 export interface LeafletMapProps {
     isFullPageMap: boolean;
@@ -35,8 +37,8 @@ const LeafletMap: FC<LeafletMapProps> = ({ isFullPageMap, className }) => {
         <div className={`${className} ${isFullPageMap ? 'full-page-map' : ''}`}>
             <MapContainer center={position as any} zoom={5} scrollWheelZoom className="w-full h-full">
                 <TileLayer
-                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                    url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png"
+                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+                    url={tileUrl}
                 />
 
                 {flights.map((it) => (
