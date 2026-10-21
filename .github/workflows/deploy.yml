@@ -31,6 +31,8 @@ jobs:
         run: npm ci
 
       - name: Build static site
+        env:
+          NEXT_PUBLIC_CARTO_API_KEY: ${{ github.ref_name == 'master' && secrets.CARTO_API_KEY || secrets.CARTO_API_KEY_STAGING }}
         run: |
           npm run build
           npm run export

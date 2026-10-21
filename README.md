@@ -6,27 +6,39 @@ This is the website repository for the [FlyByWire Simulations website](https://f
 ## Getting Started
 
 Install dependencies.
+
 ```sh
 npm install
 ```
 
 Start development server.
+
 ```sh
 npm run dev
 ```
+
+The map tiles need a [CARTO basemaps API key](https://carto.com/basemaps/apikey/) restricted to `localhost`. Put it in `.env.local`:
+
+```sh
+NEXT_PUBLIC_CARTO_API_KEY=<your key>
+```
+
 Start a production server
+
 ```sh
 npm run build
 npm run start
 ```
+
 To build the website for production, run the following commands.
+
 ```sh
 npm run build
 npm run export
 ```
 
-
 ## Relevant Documentation
-+ [Next.js](https://nextjs.org) used to build our page.
-+ [React](https://reactjs.org/) javascript library used to make UI.
-+ [tailwindcss](https://tailwindcss.com/) low level CSS classes.
+
+- [Next.js](https://nextjs.org) used to build our page.
+- [React](https://reactjs.org/) javascript library used to make UI.
+- [tailwindcss](https://tailwindcss.com/) low level CSS classes.
