@@ -87,10 +87,15 @@ const Licenses: NextPage = () => (
                 <article className="prose-xl prose prose-slate prose-li:font-body prose-li:text-lg prose-li:font-light prose-li:leading-relaxed prose-li:tracking-[-2%]">
                     <h2>Why we are open source</h2>
                     <p>
-                        Free and open-source software (FOSS) is software that anyone is free to use, copy, study, change and share, and whose source code is openly available. Because everyone can see how the software works, anyone can help improve it, and those improvements can be shared back so the software gets better for everyone.
+                        Free and open-source software (FOSS) is software that anyone is free to use, copy, study, change and share,
+                        and whose source code is openly available. Because everyone can see how the software works, anyone can help improve it,
+                        and those improvements can be shared back so the software gets better for everyone.
                     </p>
                     <p>
-                        The free in FOSS is about freedom. The Free Software Foundation describes it as <a href={links.fsf_free_software_definition} target="_blank" rel="noreferrer">four essential freedoms</a>:
+                        The free in FOSS is about freedom. The Free Software Foundation describes it as
+                        {' '}
+                        <a href={links.fsf_free_software_definition} target="_blank" rel="noreferrer">four essential freedoms</a>
+                        :
                     </p>
                     <ul>
                         <li>The freedom to run the software as you wish, for any purpose.</li>
@@ -99,33 +104,48 @@ const Licenses: NextPage = () => (
                         <li>The freedom to share your modified versions with others, so the whole community can benefit from your changes.</li>
                     </ul>
                     <p>
-                        The Open Source Initiative sets out similar criteria in the <a href={links.osi_open_source_definition} target="_blank" rel="noreferrer">Open Source Definition</a>.
+                        The Open Source Initiative sets out similar criteria in the
+                        {' '}
+                        <a href={links.osi_open_source_definition} target="_blank" rel="noreferrer">Open Source Definition</a>
+                        .
                     </p>
 
                     <h3>Our choice</h3>
                     <p>
-                        FlyByWire Simulations is an open-source community. We develop our projects following the FOSS spirit, and we have deliberately chosen licenses that keep them that way. Our source code uses the copyleft GNU GPLv3, so anyone who distributes a project based on our code must share their source code under the same license.
+                        FlyByWire Simulations is an open-source community. We develop our projects following the FOSS spirit, and we have deliberately
+                        chosen licenses that keep them that way. Our source code uses the copyleft GNU GPLv3, so anyone who distributes a project
+                        based on our code must share their source code under the same license.
                     </p>
                     <p>
-                        Our 3D models are licensed under CC BY-NC 4.0, which allows anyone to share and adapt them, but not for commercial purposes. 
+                        Our 3D models are licensed under CC BY-NC 4.0, which allows anyone to share and adapt them, but not for commercial purposes.
                     </p>
                     <p>
-                        This is part of the beauty of open-source licenses: they allow others to use our work and innovate on top of it. As long as our licenses are followed, others are free to use our source code and models for their own projects.
+                        This is part of the beauty of open-source licenses: they allow others to use our work and innovate on top of it.
+                        As long as our licenses are followed, others are free to use our source code and models for their own projects.
                     </p>
 
                     <h2>Using our source code or models in your own project</h2>
                     <p>
-                        You are free to use our source code and models as long as you follow the rules and specifications of our licenses. Below is an explanation of the licenses and how they relate to our aircraft source code and models.
+                        You are free to use our source code and models as long as you follow the rules and specifications of our licenses.
+                        Below is an explanation of the licenses and how they relate to our aircraft source code and models.
                     </p>
 
                     <h3>Source code: GNU GPLv3</h3>
                     <p>
-                        The systems and other source code in our aircraft repositories are licensed under the GNU General Public License v3.0. If you distribute anything based on this code:
+                        The systems and other source code in our aircraft repositories are licensed under the GNU General Public License v3.0.
+                        If you distribute anything based on this code:
                     </p>
                     <ul>
                         <li>Your project as a whole must be licensed under the GPLv3 as well.</li>
-                        <li>You must make the complete source code available to everyone who receives your project, from the same place they download it and at no extra charge. Publishing it on a platform such as GitHub is the easiest way to do this. Anyone who receives the source code is allowed to share it further.</li>
-                        <li>You must clearly state that you modified our code, and when. Keeping your project in public version control, such as git, makes your changes easy to track.</li>
+                        <li>
+                            You must make the complete source code available to everyone who receives your project, from the same place they
+                            download it and at no extra charge. Publishing it on a platform such as GitHub is the easiest way to do this.
+                            Anyone who receives the source code is allowed to share it further.
+                        </li>
+                        <li>
+                            You must clearly state that you modified our code, and when. Keeping your project in public version control,
+                            such as git, makes your changes easy to track.
+                        </li>
                         <li>You must keep our copyright and license notices, and include a copy of the GPLv3 with your project.</li>
                     </ul>
                     <p>
@@ -135,23 +155,37 @@ const Licenses: NextPage = () => (
 
                     <h3>3D models: CC BY-NC 4.0</h3>
                     <p>
-                        Our 3D models are licensed under the Creative Commons Attribution-NonCommercial 4.0 International license. If you share anything that contains our models, or models based on them:
+                        Our 3D models are licensed under the Creative Commons Attribution-NonCommercial 4.0 International license.
+                        If you share anything that contains our models, or models based on them:
                     </p>
                     <ul>
                         <li>It must be non-commercial. You cannot sell it or put it behind a paywall; it must be available for free.</li>
-                        <li>You must credit our work. For example, mention in your product description that your model is based on, and derived from, the FlyByWire models, with a link to our website.</li>
-                        <li>You must keep our copyright notice, state that the model is licensed under CC BY-NC 4.0 with a link to the license, and link to our original model.</li>
+                        <li>
+                            You must credit our work. For example, mention in your product description that your model is based on, and
+                            derived from, the FlyByWire models, with a link to our website.
+                        </li>
+                        <li>
+                            You must keep our copyright notice, state that the model is licensed under CC BY-NC 4.0 with a link to the
+                            license, and link to our original model.
+                        </li>
                         <li>You must indicate that you modified our model, and keep any earlier notices of modifications.</li>
                         <li>You cannot suggest that your project is official, or endorsed by FlyByWire Simulations.</li>
                     </ul>
 
                     <h3>Microsoft Flight Simulator content</h3>
                     <p>
-                        The FlyByWire A32NX was created under Microsoft&apos;s <a href={links.microsoft_game_content_usage_rules} target="_blank" rel="noreferrer">Game Content Usage Rules</a> using assets from Microsoft Flight Simulator, and our aircraft rely on the Microsoft Flight Simulator SDK, which comes with its own license agreement which you must review and follow. We can not provide guidance on licenses or End-User License Agreements of different projects or companies.
+                        The FlyByWire A32NX was created under Microsoft&apos;s
+                        {' '}
+                        <a href={links.microsoft_game_content_usage_rules} target="_blank" rel="noreferrer">Game Content Usage Rules</a>
+                        {' '}
+                        using assets from Microsoft Flight Simulator, and our aircraft rely on the Microsoft Flight Simulator SDK, which comes
+                        with its own license agreement which you must review and follow. We can not provide guidance on licenses or End-User
+                        License Agreements of different projects or companies.
                     </p>
 
                     <p>
-                        This page does not provide legal advice and is an overview of our projects and licenses. The actual license content is the source of truth and must be complied with.
+                        This page does not provide legal advice and is an overview of our projects and licenses.
+                        The actual license content is the source of truth and must be complied with.
                     </p>
 
                     <h2>Licenses by repository</h2>
