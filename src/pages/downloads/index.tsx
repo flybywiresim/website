@@ -61,7 +61,7 @@ const Downloads: NextPage = () => {
                                 expandedTab === 'windows' ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                             }`}
                             >
-                                <div className="mb-4 p-4 border-l-2 border-primary bg-gray-50 transition-transform duration-300 ease-in-out">
+                                <div className="mb-4 p-4 border-l-2 border-primary transition-transform duration-300 ease-in-out">
                                     <h4 className="mb-3 font-semibold">Choose Windows Version:</h4>
                                     <Link href={links.installer_x64_exe}>
                                         <Button
@@ -79,7 +79,7 @@ const Downloads: NextPage = () => {
                                 expandedTab === 'linux' ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                             }`}
                             >
-                                <div className="mb-4 p-4 border-l-2 border-primary bg-gray-50 transition-transform duration-300 ease-in-out">
+                                <div className="mb-4 p-4 border-l-2 border-primary transition-transform duration-300 ease-in-out">
                                     <h4 className="mb-3 font-semibold">Choose Linux Version:</h4>
                                     <div className="flex flex-col gap-2">
                                         <Link href={links.installer_amd64_deb}>

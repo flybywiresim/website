@@ -33,5 +33,148 @@
 }
 
 .leaflet-div-icon {
-  border: none !important; 
+  border: none !important;
+}
+
+@keyframes fade-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.93);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.reveal-animate {
+  animation: fade-scale-in 0.5s ease-out both;
+}
+
+@keyframes reveal-grow-horizontal {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.reveal-grow-horizontal {
+  animation: reveal-grow-horizontal 0.5s ease-out both;
+}
+
+.reveal-fade-in {
+  animation: reveal-fade-in 0.5s ease-out both;
+}
+
+.reveal-fade-in-up {
+  animation: reveal-fade-in-up 0.5s ease-out both;
+}
+
+.reveal-fade-in-down {
+  animation: reveal-fade-in-down 0.5s ease-out both;
+}
+
+.reveal-glow {
+  animation: reveal-glow 0.8s ease-out both;
+}
+
+.reveal-hidden {
+  opacity: 0;
+  transform: scale(0.93);
+}
+
+@keyframes shimmer-sweep {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0% 0;
+  }
+}
+
+.shimmer-once {
+  background: linear-gradient(
+    105deg,
+    #171e2c 45%,
+    var(--color-brand-cyan-main) 49%,
+    var(--color-brand-cyan-main) 50%,
+    var(--color-brand-cyan-main) 51%,
+    #171e2c 55%
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer-sweep 1.4s 0.4s ease-in-out both;
+}
+
+@keyframes reveal-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 0 transparent);
+  }
+  50% {
+    filter: drop-shadow(0 0 14px var(--color-brand-cyan-main));
+  }
+}
+
+@keyframes reveal-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes reveal-fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes reveal-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes carousel-progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-hidden {
+    opacity: 1;
+    transform: none;
+  }
+  .reveal-animate,
+  .reveal-grow-horizontal,
+  .reveal-fade-in,
+  .reveal-fade-in-up,
+  .reveal-fade-in-down,
+  .reveal-glow {
+    animation: none;
+  }
+  .shimmer-once {
+    background: none;
+    -webkit-text-fill-color: inherit;
+    animation: none;
+  }
 }

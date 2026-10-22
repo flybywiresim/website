@@ -8,6 +8,7 @@ const themeToClassMap = {
     caution: 'button-caution',
     danger: 'button-danger',
     discord: 'button-discord',
+    discordSecondary: 'button-discord-secondary',
 } as const;
 
 export type ButtonTheme = keyof typeof themeToClassMap;

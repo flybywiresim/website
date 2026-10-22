@@ -101,6 +101,10 @@
         @include color(var(--color-utility-blue), false);
     }
 
+    &.button-discord-secondary {
+        @include color(var(--color-utility-blue), false, var(--color-brand-quasi-white));
+    }
+
     &[disabled] {
         @apply pointer-events-none opacity-50;
     }

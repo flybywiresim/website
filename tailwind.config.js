@@ -1,6 +1,7 @@
 'use strict';
 
 const defaultTheme = require('tailwindcss/defaultTheme');
+const plugin = require('tailwindcss/plugin');
 
 module.exports = {
     content: [
@@ -50,7 +51,7 @@ module.exports = {
 
                 'dark': '#0E131B',
                 'discord': '#5865F2',
-                'light': '#FAFAFA',
+                'light': '#F5F5F7',
 
                 'primary': '#00E0FE',
                 'primary-accent': '#00CBFE',
@@ -69,5 +70,6 @@ module.exports = {
     plugins: [
         require('@flybywiresim/tailwind-config'),
         require('@tailwindcss/typography'),
+        plugin(({ addVariant }) => addVariant('can-hover', '@media (hover: hover) and (pointer: fine)')),
     ],
 };
