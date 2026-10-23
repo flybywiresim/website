@@ -73,8 +73,9 @@ const Licenses: NextPage = () => (
                     fill
                     className="bg-secondary object-cover opacity-20 blur-sm"
                 />
-                <Container className="grid py-8">
-                    <div className="relative top-1/4 my-4">
+                <Container className="py-8">
+                    {/* max-w-[65ch] at text-xl matches the width of the prose-xl article below */}
+                    <div className="relative top-1/4 mx-auto my-4 w-full max-w-[65ch] text-xl">
                         <h2>Licenses</h2>
                         <p className="text-white/50">How to interpret our licenses and to use our source code and models.</p>
                     </div>
@@ -117,7 +118,7 @@ const Licenses: NextPage = () => (
                         based on our code must share their source code under the same license.
                     </p>
                     <p>
-                        Our 3D models are licensed under CC BY-NC 4.0, which allows anyone to share and adapt them, but not for commercial purposes.
+                        Our original 3D models are licensed under CC BY-NC 4.0, which allows anyone to share and adapt them, but not for commercial purposes.
                     </p>
                     <p>
                         This is part of the beauty of open-source licenses: they allow others to use our work and innovate on top of it.
@@ -132,8 +133,9 @@ const Licenses: NextPage = () => (
 
                     <h3>Source code: GNU GPLv3</h3>
                     <p>
-                        The systems and other source code in our aircraft repositories are licensed under the GNU General Public License v3.0.
-                        If you distribute anything based on this code:
+                        Most of the systems and other source code in our aircraft repositories is licensed under the GNU General Public License v3.0.
+                        Some files, such as third-party libraries, use other licenses, so check the license header of each file you use and any
+                        license files in its parent directories. If you distribute anything based on our GPLv3 code:
                     </p>
                     <ul>
                         <li>Your project as a whole must be licensed under the GPLv3 as well.</li>
@@ -155,7 +157,7 @@ const Licenses: NextPage = () => (
 
                     <h3>3D models: CC BY-NC 4.0</h3>
                     <p>
-                        Our 3D models are licensed under the Creative Commons Attribution-NonCommercial 4.0 International license.
+                        Our original 3D models are licensed under the Creative Commons Attribution-NonCommercial 4.0 International license.
                         If you share anything that contains our models, or models based on them:
                     </p>
                     <ul>
@@ -178,7 +180,7 @@ const Licenses: NextPage = () => (
                         {' '}
                         <a href={links.microsoft_game_content_usage_rules} target="_blank" rel="noreferrer">Game Content Usage Rules</a>
                         {' '}
-                        using assets from Microsoft Flight Simulator, and our aircraft rely on the Microsoft Flight Simulator SDK, which comes
+                        using assets from Microsoft Flight Simulator, and both our aircraft rely on the Microsoft Flight Simulator SDK, which comes
                         with its own license agreement which you must review and follow. We can not provide guidance on licenses or End-User
                         License Agreements of different projects or companies.
                     </p>
@@ -189,7 +191,11 @@ const Licenses: NextPage = () => (
                     </p>
 
                     <h2>Licenses by repository</h2>
-                    <p>These are the licenses of our active public repositories.</p>
+                    <p>
+                        These are the main licenses of our active public repositories, and are meant as general guidance. Some repositories
+                        include code or assets under other licenses, such as third-party libraries. For the specifics, always check the license
+                        header of each source file and any license files in its parent directories.
+                    </p>
 
                     {licenses.map((license) => (
                         <section key={license.name}>
@@ -212,7 +218,10 @@ const Licenses: NextPage = () => (
 
                     <h2>Questions?</h2>
                     <p>
-                        If you have questions about our licenses, contact one of our Developers, Moderators, or Admins on our Discord server.
+                        If you have questions about our licenses, contact one of our developers, moderators, or admins on our
+                        {' '}
+                        <a href={links.discord}>Discord server</a>
+                        .
                     </p>
                 </article>
             </Container>
