@@ -41,7 +41,7 @@ const licenses: License[] = [
             { name: 'discord-bot-utils' },
             { name: 'website' },
         ],
-        summary: 'Like the GPLv3, but if you let people use a modified version over a network, such as a web service, you must also offer them its source code.',
+        summary: 'Similar to the GPLv3, but if you let others use a modified version over a network, such as a web service, you must also offer them its source code.',
         link: links.tldrlegal_agpl_3,
     },
     {
