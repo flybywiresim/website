@@ -134,7 +134,7 @@ const Licenses: NextPage = () => (
                     <h3>Source code: GNU GPLv3</h3>
                     <p>
                         Most of the systems and other source code in our aircraft repositories is licensed under the GNU General Public License v3.0.
-                        Some files, such as third-party libraries, use other licenses, so check the license header of each file you use and any
+                        Some files, such as third-party libraries, use other licenses. Therefore, you must check the license header of each file you use as well as any
                         license files in its parent directories. If you distribute anything based on our GPLv3 code:
                     </p>
                     <ul>
